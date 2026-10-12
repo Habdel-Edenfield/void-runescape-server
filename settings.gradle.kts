@@ -30,3 +30,6 @@ include("web")
 include("web:site")
 include("web:server")
 includeBuild("build-logic")
+
+// Local tool: exporter for the Montador de Interfaces (kept apart from the upstream modules)
+include("tools:montador")
