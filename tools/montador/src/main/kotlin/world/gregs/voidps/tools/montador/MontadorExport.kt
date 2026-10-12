@@ -1,13 +1,10 @@
 package world.gregs.voidps.tools.montador
 
 import com.displee.cache.CacheLibrary
-import world.gregs.voidps.buffer.read.ArrayReader
 import world.gregs.voidps.cache.CacheDelegate
 import world.gregs.voidps.cache.Index
 import world.gregs.voidps.cache.definition.data.IndexedSprite
-import world.gregs.voidps.cache.definition.data.InterfaceComponentDefinitionFull
 import world.gregs.voidps.cache.definition.decoder.FontDecoder
-import world.gregs.voidps.cache.definition.decoder.InterfaceDecoderFull
 import world.gregs.voidps.cache.definition.decoder.SpriteDecoder
 import java.awt.image.BufferedImage
 import java.io.File
@@ -272,7 +269,6 @@ object MontadorExport {
 
     private fun exportInterfaces(library: CacheLibrary, names: InterfaceNames, directory: File, usage: MutableMap<Int, MutableList<String>>): List<Map<String, Any?>> {
         directory.mkdirs()
-        val decoder = InterfaceDecoderFull()
         val index = library.index(Index.INTERFACES)
         val list = mutableListOf<Map<String, Any?>>()
         for (archive in index.archiveIds()) {
@@ -296,17 +292,16 @@ object MontadorExport {
                     components.add(mapOf("index" to file, "format" to "if1", "size" to data.size))
                     continue
                 }
-                val component = InterfaceComponentDefinitionFull(id = file + (archive shl 16))
-                try {
-                    with(decoder) { component.read(ArrayReader(data)) }
+                val component = try {
+                    Component634.decode(data)
                 } catch (exception: Exception) {
                     failed++
                     components.add(mapOf("index" to file, "format" to "error", "error" to exception.toString()))
                     continue
                 }
-                if (component.type == 5 && component.defaultImage >= 0) {
-                    spriteIds.add(component.defaultImage)
-                    usage.getOrPut(component.defaultImage) { mutableListOf() }.add("$archive:$file")
+                if (component.type == 5 && component.sprite >= 0) {
+                    spriteIds.add(component.sprite)
+                    usage.getOrPut(component.sprite) { mutableListOf() }.add("$archive:$file")
                 }
                 if (component.type == 4 && component.text.isNotBlank() && texts.size < 12) {
                     texts.add(component.text)
@@ -334,121 +329,102 @@ object MontadorExport {
         return list
     }
 
-    private fun componentJson(index: Int, c: InterfaceComponentDefinitionFull, name: String?): Map<String, Any?> {
+    private fun componentJson(index: Int, c: Component634, name: String?): Map<String, Any?> {
         val map = linkedMapOf<String, Any?>(
             "index" to index,
             "name" to name,
             "type" to c.type,
             "contentType" to c.contentType,
             "parent" to c.parent,
-            // the client reads the position as signed and the size as unsigned; Void's decoder does the opposite
-            "x" to c.basePositionX.toShort().toInt(),
-            "y" to c.basePositionY.toShort().toInt(),
-            "width" to (c.baseWidth and 0xffff),
-            "height" to (c.baseHeight and 0xffff),
-            "widthMode" to c.horizontalSizeMode.toInt(),
-            "heightMode" to c.verticalSizeMode.toInt(),
-            "xMode" to c.horizontalPositionMode.toInt(),
-            "yMode" to c.verticalPositionMode.toInt(),
+            "x" to c.x,
+            "y" to c.y,
+            "width" to c.width,
+            "height" to c.height,
+            "widthMode" to c.widthMode,
+            "heightMode" to c.heightMode,
+            "xMode" to c.xMode,
+            "yMode" to c.yMode,
             "hidden" to c.hidden,
         )
-        if (c.unknown != null) {
-            map["unknown"] = c.unknown
+        if (c.typeName != null) {
+            map["typeName"] = c.typeName
         }
         when (c.type) {
             0 -> {
                 map["scrollWidth"] = c.scrollWidth
                 map["scrollHeight"] = c.scrollHeight
-                map["blocksMouse"] = c.disableHover
+                map["blocksMouse"] = c.blocksMouse != 0
             }
             3 -> {
                 map["colour"] = c.colour
-                map["filled"] = c.filled
+                map["filled"] = c.filled != 0
                 map["alpha"] = c.alpha
             }
             4 -> {
-                map["font"] = c.fontId
+                map["font"] = c.font
                 map["text"] = c.text
                 map["lineHeight"] = c.lineHeight
-                map["horizontalAlign"] = c.horizontalTextAlign
-                map["verticalAlign"] = c.verticalTextAlign
-                map["shaded"] = c.shaded
+                map["horizontalAlign"] = c.horizontalAlign
+                map["verticalAlign"] = c.verticalAlign
+                map["shaded"] = c.shaded != 0
                 map["colour"] = c.colour
                 map["alpha"] = c.alpha
             }
             5 -> {
-                // Void's names for these fields don't match what the client does with them (checked in void-client)
-                map["sprite"] = c.defaultImage
-                map["angle"] = c.imageRotation
-                map["tiling"] = c.aBoolean4861
-                map["flag2"] = c.imageRepeat
+                map["sprite"] = c.sprite
+                map["angle"] = c.angle
+                map["tiling"] = c.tiling
+                map["flag2"] = c.spriteFlags and 0x2 != 0
                 map["alpha"] = c.alpha
-                map["outline"] = c.rotation
-                map["shadowColour"] = c.backgroundColour
-                map["flipVertical"] = c.flipVertical
-                map["flipHorizontal"] = c.flipHorizontal
-                map["tint"] = c.colour
+                map["outline"] = c.outline
+                map["shadowColour"] = c.shadowColour
+                map["flipVertical"] = c.flipVertical != 0
+                map["flipHorizontal"] = c.flipHorizontal != 0
+                map["tint"] = c.tint
             }
             6 -> {
-                map["model"] = if (c.defaultMediaId < -1) c.defaultMediaId and 0xffff else c.defaultMediaId
-                map["orthographic"] = c.animated
+                map["model"] = c.model
+                map["orthographic"] = c.modelFlags and 0x4 != 0
                 map["animation"] = c.animation
-                map["centre"] = c.centreType
-                map["ignoreDepth"] = c.ignoreZBuffer
-                map["viewport"] = listOf(c.viewportX.toShort().toInt(), c.viewportY.toShort().toInt(), c.viewportZ.toShort().toInt(), c.viewportWidth, c.viewportHeight)
-                map["camera"] = listOf(c.spritePitch and 0xffff, c.spriteRoll and 0xffff, c.spriteYaw and 0xffff, c.spriteScale)
+                map["modelFlags"] = c.modelFlags
+                map["modelValues"] = c.modelValues
+                map["viewport"] = listOf(c.viewportWidth, c.viewportHeight)
             }
             9 -> {
                 map["lineWidth"] = c.lineWidth
                 map["colour"] = c.colour
-                map["mirrored"] = c.lineMirrored
+                map["mirrored"] = c.mirrored != 0
             }
         }
         if (c.name.isNotEmpty()) {
             map["componentName"] = c.name
         }
-        c.options?.let { map["options"] = it.toList() }
-        c.optionOverride?.let { map["optionOverride"] = it }
+        if (c.options.isNotEmpty()) {
+            map["options"] = c.options
+        }
+        if (c.optionOverride.isNotEmpty()) {
+            map["optionOverride"] = c.optionOverride
+        }
         if (c.useOption.isNotEmpty()) {
             map["useOption"] = c.useOption
         }
-        map["setting"] = c.setting.setting
+        map["setting"] = c.setting
         // hook names as the client fires them (checked in void-client: Class46.method433 and client.method107)
         val hooks = linkedMapOf<String, Any?>()
-        fun hook(key: String, value: Array<Any>?) {
-            if (value != null) {
-                hooks[key] = value.toList()
+        for ((i, hook) in c.hooks.withIndex()) {
+            if (hook != null) {
+                hooks[Component634.HOOKS[i]] = hook
             }
         }
-        hook("onLoad", c.information)
-        hook("onMouseOver", c.mouseEnterHandler)
-        hook("onMouseLeave", c.mouseExitHandler)
-        hook("onTargetLeave", c.anObjectArray4771)
-        hook("onTargetEnter", c.anObjectArray4768)
-        hook("onVarTransmit", c.stateChangeHandler)
-        hook("onInvTransmit", c.invUpdateHandler)
-        hook("onStatTransmit", c.refreshHandler)
-        hook("onTimer", c.updateHandler)
-        hook("onOp", c.anObjectArray4770)
-        hook("onMouseRepeat", c.mouseMotionHandler)
-        hook("onClick", c.mousePressedHandler)
-        hook("onClickRepeat", c.mouseDraggedHandler)
-        hook("onRelease", c.mouseReleasedHandler)
-        hook("onHold", c.mouseDragPassHandler)
-        hook("onDrag", c.anObjectArray4852)
-        hook("onDragComplete", c.anObjectArray4711)
-        hook("onScrollWheel", c.anObjectArray4753)
-        hook("onVarcTransmit", c.anObjectArray4688)
-        hook("onVarcStrTransmit", c.anObjectArray4775)
         if (hooks.isNotEmpty()) {
             map["hooks"] = hooks
         }
         val triggers = linkedMapOf<String, Any?>()
-        c.clientVarp?.let { triggers["varp"] = it }
-        c.inventories?.let { triggers["inventory"] = it }
-        c.anIntArray4789?.let { triggers["stat"] = it }
-        c.clientVarc?.let { triggers["varc"] = it }
-        c.anIntArray4805?.let { triggers["varcString"] = it }
+        for ((i, trigger) in c.triggers.withIndex()) {
+            if (trigger != null) {
+                triggers[Component634.TRIGGERS[i]] = trigger
+            }
+        }
         if (triggers.isNotEmpty()) {
             map["triggers"] = triggers
         }
