@@ -74,7 +74,7 @@ object TutorialIsland {
         interfaces.sendVisibility("tutorial_overlay", "welcome", false)
         val percent = tutorialStage.toDouble() / stages
         set("tutorial_progress", (percent * PROGRESS_SEGMENTS).roundToInt() + 1)
-        interfaces.sendText("tutorial_overlay", "percent", "${(percent * 100).roundToInt()}% Done")
+        interfaces.sendText("tutorial_overlay", "percent", translate("${(percent * 100).roundToInt()}% Done"))
     }
 
     /**

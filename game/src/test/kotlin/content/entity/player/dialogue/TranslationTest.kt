@@ -14,12 +14,14 @@ import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import skipDialogues
+import world.gregs.voidps.engine.client.message
 import world.gregs.voidps.engine.client.ui.dialogue
 import world.gregs.voidps.engine.data.Settings
 import world.gregs.voidps.engine.data.definition.FontDefinitions
 import world.gregs.voidps.engine.data.definition.Rows
 import world.gregs.voidps.engine.data.definition.Tables
 import world.gregs.voidps.engine.entity.character.player.Player
+import world.gregs.voidps.engine.entity.character.player.chat.ChatType
 import world.gregs.voidps.engine.entity.character.player.skill.Skill
 import world.gregs.voidps.engine.get
 import world.gregs.voidps.engine.inv.inventory
@@ -106,6 +108,51 @@ class TranslationTest : WorldTest() {
 
         verify(exactly = 0) { client.interfaceText(any(), "Click here to continue") }
         verify(exactly = 0) { client.interfaceText(any(), "Clique aqui para continuar") }
+    }
+
+    @Test
+    fun `Chat messages are translated once Portuguese is enabled`() {
+        val player = createPlayer()
+        val name = Settings["server.name"]
+
+        player.message("Welcome to $name.")
+        assertTrue(player.containsMessage("Welcome to $name."))
+
+        player["portuguese_dialogue"] = true
+        player.message("Welcome to $name.")
+        assertTrue(player.containsMessage("Bem-vindo a $name."))
+    }
+
+    @Test
+    fun `Console output is never translated`() {
+        val player = createPlayer()
+        player["portuguese_dialogue"] = true
+
+        player.message("Welcome to ${Settings["server.name"]}.", ChatType.Console)
+
+        assertFalse(player.containsMessage("Bem-vindo"))
+    }
+
+    @Test
+    fun `Banker speaks Portuguese`() {
+        mockkStatic("world.gregs.voidps.network.login.protocol.encode.InterfaceEncodersKt")
+        val (player, client) = createClient("customer", Tile(3120, 3123))
+        player["portuguese_dialogue"] = true
+        val banker = createNPC("banker_tutorial_island", Tile(3120, 3125))
+
+        player.npcOption(banker, "Talk-to")
+        tick(3)
+
+        verify { client.interfaceText(any(), "Bom dia. Como posso ajudar?") }
+    }
+
+    @Test
+    fun `How many box and progress bar are translated`() {
+        val player = createPlayer()
+        player["portuguese_dialogue"] = true
+
+        assertEquals("Quantos você quer cozinhar?", player.translate("How many would you like to cook?"))
+        assertEquals("19% concluído", player.translate("19% Done"))
     }
 
     @Test

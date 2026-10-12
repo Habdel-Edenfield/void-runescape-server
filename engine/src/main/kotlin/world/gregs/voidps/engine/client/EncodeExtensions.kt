@@ -19,6 +19,11 @@ import java.util.*
  */
 
 /**
+ * Changes chat box message text before it's sent, e.g. to translate it; unchanged by default.
+ */
+var messageTranslator: (Player, String) -> String = { _, text -> text }
+
+/**
  * A chat box message to display
  * @param type The message type
  * @param tile The tile the message was sent from
@@ -34,9 +39,10 @@ fun Character.message(
     if (this !is Player) {
         return
     }
-    getOrPut("messages") { FixedSizeQueue<String>(100) }.add(text)
+    val translated = if (type == ChatType.Console) text else messageTranslator(this, text)
+    getOrPut("messages") { FixedSizeQueue<String>(100) }.add(translated)
     val font = get<FontDefinitions>().get("p12_full")
-    for (line in font.splitLines(Colours.replaceCustomTags(text), if (type == ChatType.Console) 600 else 484)) {
+    for (line in font.splitLines(Colours.replaceCustomTags(translated), if (type == ChatType.Console) 600 else 484)) {
         client?.message(line, type.id, tile, name, name?.lowercase(Locale.getDefault()))
     }
 }

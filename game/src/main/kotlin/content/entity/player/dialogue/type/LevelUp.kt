@@ -77,7 +77,7 @@ class LevelUp : Script {
             addVarbit("skill_stat_flash", skill.name.lowercase())
             val level = if (skill == Constitution) to / 10 else to
             // https://youtu.be/o6Ga2FGG1Dc?t=326
-            message(translate("You've just advanced${skill.name.an()} ${skill.name} level! You have reached level $level."))
+            message("You've just advanced${skill.name.an()} ${skill.name} level! You have reached level $level.")
             if (get("skip_level_up_dialogues", false)) {
                 return@maxLevelChanged
             }
@@ -92,7 +92,7 @@ class LevelUp : Script {
                 )
                 if (skill == Dungeoneering && level == 120 || level == Level.MAX_LEVEL) {
                     // https://youtu.be/o6Ga2FGG1Dc?t=64
-                    message(translate("<red>Well done! You've achieved the highest possible level in this skill!"))
+                    message("<red>Well done! You've achieved the highest possible level in this skill!")
                 }
             }
         }

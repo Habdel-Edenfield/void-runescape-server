@@ -366,6 +366,60 @@ pt = "O Lumbridge Guide deve estar um pouco a nordeste do pátio do castelo, e o
 en = "If all else fails, visit the RuneScape website for a whole chestload of information on quests, skills and minigames as well as a very good starter's guide."
 pt = "Se nada mais der certo, visite o site do RuneScape para um baú cheio de informações sobre missões, habilidades e minijogos, além de um ótimo guia para iniciantes."
 
+# Banker - every banker, including on Tutorial Island - Tutorial Island
+
+[.banker_1]
+en = "Good day. How may I help you?"
+pt = "Bom dia. Como posso ajudar?"
+
+[.banker_2]
+en = "Before we go any further, I should inform you that an item you lent out has been returned to you."
+pt = "Antes de continuarmos, devo informar que um item que você emprestou foi devolvido a você."
+
+[.banker_3]
+en = "Before we go any further, I should inform you that you have items ready for collection from the Grand Exchange."
+pt = "Antes de continuarmos, devo informar que você tem itens prontos para retirada no Grand Exchange."
+
+[.banker_4]
+en = "I'd like to access my bank account, please."
+pt = "Gostaria de acessar minha conta no banco, por favor."
+
+[.banker_5]
+en = "I'd like to check my PIN settings."
+pt = "Gostaria de ver as configurações do meu PIN."
+
+[.banker_6]
+en = "I'd like to see my collection box."
+pt = "Gostaria de ver minha caixa de retirada (collection box)."
+
+[.banker_7]
+en = "I'd like to see my Returned Items box."
+pt = "Gostaria de ver minha caixa de itens devolvidos (Returned Items)."
+
+[.banker_8]
+en = "What is this place?"
+pt = "Que lugar é este?"
+
+[.banker_9]
+en = "This is a branch of the Bank of %server%. We have branches in many towns."
+pt = "Esta é uma agência do Banco de %server%. Temos agências em muitas cidades."
+
+[.banker_10]
+en = "And what do you do?"
+pt = "E o que vocês fazem?"
+
+[.banker_11]
+en = "We will look after your items and money for you. Leave your valuables with us if you want to keep them safe."
+pt = "Nós cuidamos dos seus itens e do seu dinheiro. Deixe seus objetos de valor conosco se quiser mantê-los em segurança."
+
+[.banker_12]
+en = "Didn't you used to be called the Bank of Varrock?"
+pt = "Vocês não se chamavam Banco de Varrock?"
+
+[.banker_13]
+en = "Yes we did, but people kept on coming into our branches outside of Varrock and telling us that our signs were wrong. They acted as if we didn't know what town we were in or something."
+pt = "Sim, mas as pessoas viviam entrando nas nossas agências fora de Varrock dizendo que as nossas placas estavam erradas. Agiam como se não soubéssemos em que cidade estávamos."
+
 # Level up - LevelUp.kt; skills keep their English names to match the skills tab
 
 [.level_up_congratulations_a]
@@ -395,6 +449,44 @@ pt = "Você subiu um nível em %1%! Agora você está no nível %2%."
 [.level_up_max]
 en = "<red>Well done! You've achieved the highest possible level in this skill!"
 pt = "<red>Muito bem! Você alcançou o nível máximo nesta habilidade!"
+
+# Translation command - Translation.kt
+
+[.translation_enabled]
+en = "Portuguese dialogue enabled."
+pt = "Diálogos em português ativados."
+
+# Tutorial Island progress bar - TutorialIsland.kt
+
+[.tutorial_progress]
+en = "%1%% Done"
+pt = "%1%% concluído"
+
+# How many box - MakeAmount.kt, Cooking.kt and Furnace.kt
+
+[.make_amount_default]
+en = "Choose how many you wish to make, then<br>click on the chosen item to begin."
+pt = "Escolha quantos quer fazer e depois<br>clique no item escolhido para começar."
+
+[.make_amount_cook]
+en = "How many would you like to cook?"
+pt = "Quantos você quer cozinhar?"
+
+[.make_amount_bake]
+en = "How many would you like to bake?"
+pt = "Quantos você quer assar?"
+
+[.make_amount_roast]
+en = "How many would you like to roast?"
+pt = "Quantos você quer assar no espeto?"
+
+[.make_amount_cut]
+en = "How many would you like to cut?"
+pt = "Quantos você quer cortar?"
+
+[.make_amount_heat]
+en = "How many would you like to heat?"
+pt = "Quantos você quer aquecer?"
 
 # Dialogue boxes - text the client fills in from the cache
 

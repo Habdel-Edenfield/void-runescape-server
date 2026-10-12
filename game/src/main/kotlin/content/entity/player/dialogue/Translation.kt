@@ -1,8 +1,10 @@
 package content.entity.player.dialogue
 
+import com.github.michaelbull.logging.InlineLogger
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.command.playerCommand
 import world.gregs.voidps.engine.client.message
+import world.gregs.voidps.engine.client.messageTranslator
 import world.gregs.voidps.engine.data.Settings
 import world.gregs.voidps.engine.data.config.RowDefinition
 import world.gregs.voidps.engine.data.definition.Rows
@@ -16,9 +18,11 @@ import world.gregs.voidps.engine.entity.character.player.Player
 class Translation : Script {
 
     init {
+        messageTranslator = { player, text -> player.translate(text) }
+
         playerCommand("portugues", desc = "Toggle Brazilian Portuguese dialogue") {
             if (toggle("portuguese_dialogue")) {
-                message("Diálogos em português ativados.")
+                message("Portuguese dialogue enabled.")
             } else {
                 message("Portuguese dialogue disabled.")
             }
@@ -47,8 +51,16 @@ fun Player.translate(text: String): String {
         val match = pattern(english).matchEntire(text) ?: continue
         return placeholder.replace(serverName(row.string("pt"))) { match.groups["p${it.groupValues[1]}"]?.value ?: it.value }
     }
+    if (text.isNotBlank() && missing.add(text)) {
+        logger.info { "Missing pt_br translation: $text" }
+    }
     return text
 }
+
+private val logger = InlineLogger("Translation")
+
+/** Untranslated text already logged, so playing through content lists everything left to translate once */
+private val missing = HashSet<String>()
 
 private val placeholder = Regex("%(\\d+)%")
 
@@ -89,5 +101,9 @@ fun Player.translate(row: RowDefinition): RowDefinition {
         return row
     }
     val table = row.stringId.substringBeforeLast('.')
-    return Rows.getOrNull("${table}_pt_br.${row.rowId}") ?: row
+    val translated = Rows.getOrNull("${table}_pt_br.${row.rowId}")
+    if (translated == null && missing.add(row.stringId)) {
+        logger.info { "Missing pt_br translation: row ${row.stringId}" }
+    }
+    return translated ?: row
 }

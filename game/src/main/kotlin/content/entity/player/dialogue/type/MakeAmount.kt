@@ -1,5 +1,6 @@
 package content.entity.player.dialogue.type
 
+import content.entity.player.dialogue.translate
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.ui.close
 import world.gregs.voidps.engine.client.ui.open
@@ -40,7 +41,7 @@ suspend fun Player.makeAmountIndex(
     }
     interfaces.sendVisibility(INTERFACE_ID, "all", allowAll)
     interfaces.sendVisibility(INTERFACE_ID, "custom", false)
-    interfaces.sendText(INTERFACE_AMOUNT_ID, "line1", text)
+    interfaces.sendText(INTERFACE_AMOUNT_ID, "line1", translate(text))
     set("skill_creation_type", type)
 
     setItemOptions(this, items, names)
