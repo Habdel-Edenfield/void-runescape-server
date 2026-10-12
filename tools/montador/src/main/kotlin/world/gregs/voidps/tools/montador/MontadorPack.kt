@@ -6,6 +6,7 @@ import world.gregs.voidps.cache.Index
 import world.gregs.voidps.cache.definition.decoder.InterfaceDecoder
 import world.gregs.voidps.cache.definition.decoder.InterfaceDecoderFull
 import java.io.File
+import java.util.Base64
 import kotlin.system.exitProcess
 
 /**
@@ -13,7 +14,11 @@ import kotlin.system.exitProcess
  * component). Run by the tool's packing command (jogos/runescape/exportador.py), which writes the package file,
  * makes sure the game server is stopped and backs the cache up first.
  *
- * Usage: `MontadorPack <package.json> <cache dir>`
+ * Usage: `MontadorPack <package.json> <cache dir> [undo.json]`
+ *
+ * With `undo.json`, the archive as it was before (its files, or that it didn't exist) is saved there first. Packing
+ * that file back (`{"interface": id, "raw": [...]}` or `{"interface": id, "remove": true}`) undoes just this
+ * interface, leaving every other change made to the cache since then untouched.
  *
  * Package: `{"interface": id, "replace": bool, "components": list}`, each component with the keys the
  * exporter writes for interfaces (type, parent, x, y, width, height, the modes, sprite, text, colour, hooks...)
@@ -36,17 +41,32 @@ object MontadorPack {
         val id = (pack["interface"] as Number).toInt()
         val replace = pack["replace"] == true
 
-        @Suppress("UNCHECKED_CAST")
-        val entries = pack["components"] as List<Map<String, Any?>>
         val library = CacheLibrary(args[1])
         val index = library.index(Index.INTERFACES)
         val exists = index.archive(id) != null
-        if (exists && !replace) {
+        if (exists && !replace && pack["raw"] == null && pack["remove"] != true) {
             System.err.println("Interface $id already exists in the cache; refusing to overwrite it.")
             exitProcess(3)
         }
-        val components = entries.map { build(library, it) }
-        val encoded = components.map { it.encode() }
+        if (args.size > 2) {
+            saveUndo(library, id, exists, File(args[2]))
+        }
+        if (pack["remove"] == true) {
+            index.remove(id)
+            library.update()
+            library.close()
+            val check = CacheLibrary(args[1])
+            require(check.index(Index.INTERFACES).archive(id) == null) { "interface $id is still in the cache" }
+            check.close()
+            println("Removed interface $id")
+            return
+        }
+        val encoded = if (pack["raw"] != null) {
+            (pack["raw"] as List<*>).map { Base64.getDecoder().decode(it as String) }
+        } else {
+            @Suppress("UNCHECKED_CAST")
+            (pack["components"] as List<Map<String, Any?>>).map { build(library, it).encode() }
+        }
         index.archive(id)?.clear()
         for ((file, data) in encoded.withIndex()) {
             library.put(Index.INTERFACES, id, file, data)
@@ -56,6 +76,20 @@ object MontadorPack {
 
         check(args[1], id, encoded)
         println("Packed interface $id with ${encoded.size} components (${encoded.sumOf { it.size }} bytes)${if (exists) ", replacing the previous one" else ""}")
+    }
+
+    /** The archive as it is now, so that packing this file back undoes only this interface. */
+    private fun saveUndo(library: CacheLibrary, id: Int, exists: Boolean, file: File) {
+        val undo = if (!exists) {
+            mapOf("interface" to id, "remove" to true)
+        } else {
+            val files = library.index(Index.INTERFACES).archive(id)?.fileIds() ?: intArrayOf()
+            require(files.toList() == files.indices.toList()) { "interface $id has files ${files.toList()}, not 0..n; can't save it to undo" }
+            val raw = files.map { Base64.getEncoder().encodeToString(library.data(Index.INTERFACES, id, it) ?: ByteArray(0)) }
+            mapOf("interface" to id, "replace" to true, "raw" to raw)
+        }
+        file.parentFile?.mkdirs()
+        file.writeText(Json.write(undo))
     }
 
     /** Reads the archive back from disk and decodes it the ways the server and the tool do. */
