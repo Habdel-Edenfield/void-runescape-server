@@ -10,12 +10,15 @@ Ideias e pendências deste fork. O roadmap do projeto original fica em `docs/Roa
 
 **Objetivo:** cada jogador escolhe "perto / médio / longe / muito longe" (104 / 120 / 136 / 168). Quem tem computador fraco fica no leve; quem quer profundidade escolhe longe.
 
-**Caminho sugerido (só servidor, vale para o cliente do PC e o web):**
-1. Guardar a escolha no save do jogador (uma variável, ex. `map_size`), com o padrão vindo de `world.players.mapSize`.
-2. Em `AccountManager.setup`, usar a escolha do jogador em vez do padrão do servidor ao criar o `Viewport`.
-3. Ao trocar, mudar `viewport.size` e mandar o mapa de novo na hora (`RegionLoading.updateRegion(player, initial = false, force = true)`), sem precisar relogar.
-4. Primeiro um comando simples para testar (ex. `distancia 136`); depois uma opção numa tela de configurações do jogo (Opções gráficas ou uma tela nova feita no Montador de Interfaces).
-5. Testes: trocar a opção manda o mapa com o tamanho novo; o padrão vale para conta nova.
+**Feito:**
+- A escolha fica salva na conta (variável `view_distance`, em tiles). Sem escolha, vale `world.players.mapSize`.
+- `AccountManager.setup` usa a escolha ao criar o `Viewport`.
+- O comando `view_distance` (alias `distancia`) abre um menu Perto / Médio / Longe / Muito longe. A troca manda o mapa de novo na hora, sem relogar (`RegionLoading.setViewDistance`).
+- Comandos também podem ser digitados no chat comum com `::` (ex.: `::distancia`), porque o console (tecla `) não abre em teclado ABNT2 (`Chat.kt`).
+- Testes em `RegionLoadingTest`.
+
+**Falta:**
+- Botões numa tela do jogo, porque jogador comum não usa comandos. A aba Opções não tem botão livre. Plano combinado com o Habdel: seção "View Distance" na tela Graphics Options (742), abaixo de "Screen Sizing", com 4 botões no estilo MIN/LOW/MID/HIGH. A tela é editada e gravada no cache pela sessão do Montador de Interfaces; o servidor trata os cliques chamando `setViewDistance` e realça o botão escolhido.
 
 **Pontos a decidir:**
 - Padrão para conta nova: mais leve (104) e o jogador aumenta, ou longe (168) e quem precisar diminui.
