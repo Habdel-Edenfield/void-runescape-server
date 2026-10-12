@@ -1,5 +1,6 @@
 package content.entity.player.dialogue.type
 
+import content.entity.player.dialogue.translate
 import world.gregs.voidps.engine.client.sendScript
 import world.gregs.voidps.engine.client.ui.close
 import world.gregs.voidps.engine.client.ui.open
@@ -21,7 +22,8 @@ suspend fun Player.item(item: String, text: String, sprite: Int? = null) {
     if (sprite != null) {
         interfaces.sendSprite(ITEM_INTERFACE_ID, "sprite", sprite)
     }
-    val lines = if (text.contains("\n")) text.trimIndent().replace("\n", "<br>") else get<FontDefinitions>().get("q8_full").splitLines(text, 380).joinToString("<br>")
+    val translated = translate(text)
+    val lines = if (translated.contains("\n")) translated.trimIndent().replace("\n", "<br>") else get<FontDefinitions>().get("q8_full").splitLines(translated, 380).joinToString("<br>")
     interfaces.sendText(ITEM_INTERFACE_ID, "line1", lines)
     pauseButton()
     close(ITEM_INTERFACE_ID)
@@ -32,7 +34,8 @@ suspend fun Player.item(sprite: Int, text: String) {
         return
     }
     interfaces.sendSprite(ITEM_INTERFACE_ID, "sprite", sprite)
-    val lines = if (text.contains("\n")) text.trimIndent().replace("\n", "<br>") else get<FontDefinitions>().get("q8_full").splitLines(text, 380).joinToString("<br>")
+    val translated = translate(text)
+    val lines = if (translated.contains("\n")) translated.trimIndent().replace("\n", "<br>") else get<FontDefinitions>().get("q8_full").splitLines(translated, 380).joinToString("<br>")
     interfaces.sendText(ITEM_INTERFACE_ID, "line1", lines)
     pauseButton()
     close(ITEM_INTERFACE_ID)
@@ -44,7 +47,8 @@ suspend fun Player.items(item1: String, item2: String, text: String) {
     }
     interfaces.sendItem(DOUBLE_ITEM_INTERFACE_ID, "model1", ItemDefinitions.get(item1).id)
     interfaces.sendItem(DOUBLE_ITEM_INTERFACE_ID, "model2", ItemDefinitions.get(item2).id)
-    val lines = if (text.contains("\n")) text.trimIndent().replace("\n", "<br>") else get<FontDefinitions>().get("q8_full").splitLines(text, 380).joinToString("<br>")
+    val translated = translate(text)
+    val lines = if (translated.contains("\n")) translated.trimIndent().replace("\n", "<br>") else get<FontDefinitions>().get("q8_full").splitLines(translated, 380).joinToString("<br>")
     interfaces.sendText(DOUBLE_ITEM_INTERFACE_ID, "line1", lines)
     pauseButton()
     close(DOUBLE_ITEM_INTERFACE_ID)

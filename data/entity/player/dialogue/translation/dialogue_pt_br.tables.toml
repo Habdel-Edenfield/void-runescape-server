@@ -1,12 +1,15 @@
 # Brazilian Portuguese dialogue, used by `Player.translate` when `portuguese_dialogue` is on.
 # `en` must match the original text exactly; lines without a row stay in English.
-# Keep NPC and place names as the game shows them so players can find them.
+# `%server%` stands in for the `server.name` setting in both columns.
+# Keep NPC, item and place names as the game shows them so players can find them;
+# items and skills get the English name in brackets the first time they appear.
 
 [dialogue_pt_br]
 en = "string"
 pt = "string"
 
 # RuneScape Guide - Tutorial Island
+
 [.guide_greetings]
 en = "Greetings! I see you are a new arrival to this land. My job is to teach you a few basic skills and functions."
 pt = "Saudações! Vejo que você acabou de chegar a estas terras. Meu trabalho é ensinar algumas habilidades e funções básicas."
@@ -27,14 +30,6 @@ pt = "Não, me mande para o continente."
 en = "As you wish. I'll send you on your way with the usual supplies."
 pt = "Como quiser. Vou mandar você seguir viagem com os suprimentos de sempre."
 
-[.guide_control_panels]
-en = "First we shall go through some of the game's control panels, which you can find at the bottom right of your screen."
-pt = "Primeiro vamos ver alguns dos painéis de controle do jogo, que ficam no canto inferior direito da tela."
-
-[.guide_spanner_icon]
-en = "Click on the flashing spanner icon to open your game options."
-pt = "Clique no ícone de chave inglesa piscando para abrir as opções do jogo."
-
 [.guide_options_panel]
 en = "The options panel lets you change the screen brightness, the volume of the music and sound effects, and whether other players may offer you help."
 pt = "O painel de opções permite mudar o brilho da tela, o volume da música e dos efeitos sonoros, e se outros jogadores podem oferecer ajuda a você."
@@ -51,6 +46,322 @@ pt = "Obrigado, vou fazer isso."
 en = "You've learnt all I have to teach. Follow the arrow to your next instructor."
 pt = "Você já aprendeu tudo o que eu tinha para ensinar. Siga a seta até o seu próximo instrutor."
 
+[.guide_welcome_server]
+en = "Welcome to %server%."
+pt = "Bem-vindo a %server%."
+
 [.guide_welcome_lumbridge]
 en = "Welcome to Lumbridge! To get more help, simply click on the Lumbridge Guide or one of the Tutors - these can be found by looking for the question mark icon on your minimap."
 pt = "Bem-vindo a Lumbridge! Para mais ajuda, clique no Lumbridge Guide ou em um dos Tutors - eles aparecem com o ícone de ponto de interrogação no seu minimapa."
+
+[.guide_control_panels]
+en = "First we shall go through some of the game's control panels, which you can find at the bottom right of your screen."
+pt = "Primeiro vamos ver alguns dos painéis de controle do jogo, que ficam no canto inferior direito da tela."
+
+[.guide_spanner_icon]
+en = "Click on the flashing spanner icon to open your game options."
+pt = "Clique no ícone de chave inglesa piscando para abrir as opções do jogo."
+
+# Survival Expert - Tutorial Island
+
+[.survival_expert_1]
+en = "Hello there! I'm here to teach you how to survive out in the wilds."
+pt = "Olá! Estou aqui para te ensinar a sobreviver na natureza selvagem."
+
+[.survival_expert_2]
+en = "Take this hatchet and tinderbox. Chop down one of these trees, then use the tinderbox on the logs to light a fire."
+pt = "Pegue este machado (hatchet) e esta pederneira (tinderbox). Corte uma destas árvores e depois use a pederneira nas toras (logs) para acender uma fogueira."
+
+[.survival_expert_3]
+en = "The Survival Expert gives you a bronze hatchet and a tinderbox."
+pt = "O Survival Expert te dá um machado de bronze (bronze hatchet) e uma pederneira (tinderbox)."
+
+[.survival_expert_4]
+en = "Well done! Now let's try some fishing."
+pt = "Muito bem! Agora vamos tentar pescar."
+
+[.survival_expert_5]
+en = "Take this small fishing net and use it on the fishing spots in the pond. Then cook what you catch on your fire."
+pt = "Pegue esta rede de pesca pequena (small fishing net) e use-a nos pontos de pesca do lago. Depois cozinhe o que pescar na sua fogueira."
+
+[.survival_expert_6]
+en = "The Survival Expert gives you a small fishing net."
+pt = "O Survival Expert te dá uma rede de pesca pequena (small fishing net)."
+
+[.survival_expert_7]
+en = "Lost your equipment? Here, take another."
+pt = "Perdeu seu equipamento? Tome, pegue outro."
+
+[.survival_expert_8]
+en = "Chop a tree with your hatchet for logs, then use your tinderbox on them to light a fire."
+pt = "Corte uma árvore com o machado para conseguir toras e depois use a pederneira nelas para acender uma fogueira."
+
+[.survival_expert_9]
+en = "Use your net on a fishing spot to catch shrimp, and cook them on a fire once you've caught some."
+pt = "Use a rede num ponto de pesca para pegar camarões (shrimp) e cozinhe-os numa fogueira depois de pescar alguns."
+
+[.survival_expert_10]
+en = "Your skills panel shows how much experience each of those has earned you."
+pt = "O seu painel de habilidades (skills) mostra quanta experiência cada uma dessas atividades já te deu."
+
+# Master Chef - Tutorial Island
+
+[.master_chef_1]
+en = "Hello there! I'm the cook. There's more to cooking than throwing a fish on a fire, you know."
+pt = "Olá! Eu sou o cozinheiro. Sabe, cozinhar é mais do que jogar um peixe no fogo."
+
+[.master_chef_2]
+en = "Take this pot of flour and bucket of water. Use them together to make dough, then cook the dough on my range."
+pt = "Pegue este pote de farinha (pot of flour) e este balde de água (bucket of water). Use um no outro para fazer massa (dough) e depois asse a massa no meu fogão (range)."
+
+[.master_chef_3]
+en = "Use the bucket of water on the pot of flour to make dough, then cook the dough on my range."
+pt = "Use o balde de água no pote de farinha para fazer massa e depois asse a massa no meu fogão."
+
+[.master_chef_4]
+en = "The music player lists every tune you've unlocked. More open up as you explore the world."
+pt = "O tocador de música lista todas as músicas que você já desbloqueou. Mais músicas se abrem conforme você explora o mundo."
+
+[.master_chef_5]
+en = "You've got your dough. Cook it on the range over there."
+pt = "Você já tem a sua massa. Asse no fogão ali."
+
+[.master_chef_6]
+en = "Lost your ingredients? Not to worry, here's some more."
+pt = "Perdeu os ingredientes? Não se preocupe, aqui tem mais."
+
+[.master_chef_7]
+en = "The cook gives you a pot of flour."
+pt = "O cozinheiro te dá um pote de farinha (pot of flour)."
+
+[.master_chef_8]
+en = "The cook gives you a bucket of water."
+pt = "O cozinheiro te dá um balde de água (bucket of water)."
+
+[.master_chef_9]
+en = "The cook gives you a pot of flour and a bucket of water."
+pt = "O cozinheiro te dá um pote de farinha e um balde de água."
+
+# Quest Guide - Tutorial Island
+
+[.quest_guide_1]
+en = "Greetings, traveller. I am the Quest Guide, and I'm here to tell you about quests."
+pt = "Saudações, viajante. Eu sou o Quest Guide e estou aqui para te falar sobre as missões (quests)."
+
+[.quest_guide_2]
+en = "Click on the flashing question mark icon to open your quest journal. It lists every quest, and how far through each one you are."
+pt = "Clique no ícone de ponto de interrogação piscando para abrir o seu diário de missões (Quest Journal). Ele lista todas as missões e o quanto você já avançou em cada uma."
+
+[.quest_guide_3]
+en = "Quests are set by people all over the world. Completing them earns you rewards and quest points."
+pt = "As missões são dadas por pessoas do mundo todo. Completá-las te dá recompensas e pontos de missão (quest points)."
+
+[.quest_guide_4]
+en = "That's everything from me. Climb down the ladder to meet the Mining Instructor."
+pt = "Isso é tudo da minha parte. Desça a escada para encontrar o Mining Instructor."
+
+[.quest_guide_5]
+en = "Check your quest journal whenever you want to know what to do next."
+pt = "Consulte o seu diário de missões sempre que quiser saber o que fazer em seguida."
+
+# Mining Instructor - Tutorial Island
+
+[.mining_instructor_1]
+en = "Hello there. This is where we teach Mining and Smithing."
+pt = "Olá. É aqui que ensinamos Mining e Smithing (mineração e forja)."
+
+[.mining_instructor_2]
+en = "Prospect those rocks to find out what ore they hold. Start with the tin, then the copper."
+pt = "Use 'Prospect' naquelas rochas para descobrir que minério elas têm. Comece pelo estanho (tin) e depois o cobre (copper)."
+
+[.mining_instructor_3]
+en = "Now you know what's in them, you'll want to get it out. Take this pickaxe and mine some tin and some copper."
+pt = "Agora que você sabe o que tem nelas, vai querer tirar de lá. Pegue esta picareta (pickaxe) e minere um pouco de estanho e de cobre."
+
+[.mining_instructor_4]
+en = "The Mining Instructor gives you a bronze pickaxe."
+pt = "O Mining Instructor te dá uma picareta de bronze (bronze pickaxe)."
+
+[.mining_instructor_5]
+en = "A fine bronze bar. Now take this hammer and use the bar on the anvil to smith a dagger."
+pt = "Uma bela barra de bronze. Agora pegue este martelo (hammer) e use a barra na bigorna (anvil) para forjar uma adaga (dagger)."
+
+[.mining_instructor_6]
+en = "The Mining Instructor gives you a hammer."
+pt = "O Mining Instructor te dá um martelo (hammer)."
+
+[.mining_instructor_7]
+en = "Lost your tools? Here's a replacement."
+pt = "Perdeu suas ferramentas? Aqui estão outras."
+
+[.mining_instructor_8]
+en = "Prospecting a rock tells you which ore it holds. Mining it with a pickaxe gets you the ore itself."
+pt = "Usar 'Prospect' numa rocha mostra que minério ela tem. Minerar com a picareta te dá o minério em si."
+
+[.mining_instructor_9]
+en = "Use the ore on the furnace to smelt it into a bar - copper and tin together make bronze."
+pt = "Use o minério na fornalha (furnace) para fundir uma barra - cobre e estanho juntos formam bronze."
+
+[.mining_instructor_10]
+en = "Then use the bar on an anvil while carrying a hammer, and choose what you'd like to smith."
+pt = "Depois use a barra numa bigorna levando um martelo e escolha o que quer forjar."
+
+# Combat Instructor - Tutorial Island
+
+[.combat_instructor_1]
+en = "Hello there! Ready to learn how to fight?"
+pt = "Olá! Pronto para aprender a lutar?"
+
+[.combat_instructor_2]
+en = "First you'll need to wield a weapon. Open your worn equipment tab and take a look at what you're carrying."
+pt = "Primeiro você precisa empunhar uma arma. Abra a aba de equipamento vestido (worn equipment) e veja o que você está carregando."
+
+[.combat_instructor_3]
+en = "Good. A dagger is quick, but a sword hits harder and a shield keeps you alive. Take these and equip them both."
+pt = "Bom. Uma adaga é rápida, mas uma espada bate mais forte e um escudo te mantém vivo. Pegue estes e equipe os dois."
+
+[.combat_instructor_4]
+en = "The Combat Instructor gives you a bronze sword and a wooden shield."
+pt = "O Combat Instructor te dá uma espada de bronze (bronze sword) e um escudo de madeira (wooden shield)."
+
+[.combat_instructor_5]
+en = "Nicely done. Not every fight should be up close, though."
+pt = "Muito bem. Mas nem toda luta precisa ser de perto."
+
+[.combat_instructor_6]
+en = "Take this shortbow and these arrows, then kill another rat from a distance."
+pt = "Pegue este arco curto (shortbow) e estas flechas (arrows) e mate outro rato à distância."
+
+[.combat_instructor_7]
+en = "The Combat Instructor gives you a shortbow and some arrows."
+pt = "O Combat Instructor te dá um arco curto (shortbow) e algumas flechas (arrows)."
+
+[.combat_instructor_8]
+en = "You'll not get far unarmed. Take these."
+pt = "Desarmado você não vai longe. Pegue isto."
+
+[.combat_instructor_9]
+en = "Keep practising. The rats in the cage won't hurt you."
+pt = "Continue praticando. Os ratos da jaula não vão te machucar."
+
+# Financial Advisor - Tutorial Island
+
+[.financial_advisor_1]
+en = "Hello, and welcome to the bank of the future!"
+pt = "Olá, e bem-vindo ao banco do futuro!"
+
+[.financial_advisor_2]
+en = "Your money pouch carries your coins for you, so you'll never need to make room for them in your backpack."
+pt = "A sua bolsa de dinheiro (money pouch) guarda as suas moedas, então você nunca vai precisar abrir espaço para elas na mochila."
+
+[.financial_advisor_3]
+en = "Head through the next door to meet Brother Brace."
+pt = "Passe pela próxima porta para encontrar o Brother Brace."
+
+[.financial_advisor_4]
+en = "Look after your coins and they'll look after you."
+pt = "Cuide das suas moedas e elas cuidarão de você."
+
+# Brother Brace - Tutorial Island
+
+[.brother_brace_1]
+en = "Hello there, and welcome to the church. I'm here to tell you about Prayer."
+pt = "Olá, e bem-vindo à igreja. Estou aqui para te falar sobre Prayer (oração)."
+
+[.brother_brace_2]
+en = "Open your prayer list and take a look at what's available to you."
+pt = "Abra a sua lista de orações (prayer list) e veja o que está disponível para você."
+
+[.brother_brace_3]
+en = "Prayers drain your prayer points while they're active. Bury bones or pray at an altar to restore them."
+pt = "As orações gastam seus pontos de oração enquanto estão ativas. Enterre ossos ou reze num altar para recuperá-los."
+
+[.brother_brace_4]
+en = "Now let me show you the friends list. Open it and you'll see who's online."
+pt = "Agora deixe eu te mostrar a lista de amigos (friends list). Abra e você verá quem está online."
+
+[.brother_brace_5]
+en = "Your ignore list works the same way, but for people you'd rather not hear from."
+pt = "A sua lista de ignorados (ignore list) funciona do mesmo jeito, mas para quem você prefere não ouvir."
+
+[.brother_brace_6]
+en = "That's me done. Head out of the church and speak to the Magic Instructor."
+pt = "Terminei. Saia da igreja e fale com o Magic Instructor."
+
+[.brother_brace_7]
+en = "May Saradomin watch over you."
+pt = "Que Saradomin olhe por você."
+
+# Magic Instructor - Tutorial Island
+
+[.magic_instructor_1]
+en = "Hello."
+pt = "Olá."
+
+[.magic_instructor_2]
+en = "Good day, newcomer. My name is Terrova. I'm here to tell you about Magic. Let's start by opening your spellbook."
+pt = "Bom dia, recém-chegado. Meu nome é Terrova. Estou aqui para te falar sobre Magic (magia). Vamos começar abrindo o seu livro de feitiços (spellbook)."
+
+[.magic_instructor_3]
+en = "Good. This is a list of your spells. Currently you can only cast one offensive spell called Wind Strike. Let's try it out on one of those chickens."
+pt = "Bom. Esta é a lista dos seus feitiços. Por enquanto você só pode lançar um feitiço de ataque, chamado Wind Strike. Vamos testá-lo numa daquelas galinhas."
+
+[.magic_instructor_4]
+en = "Terrova gives you five <blue>air runes</col> and five <blue>mind runes</col>!"
+pt = "Terrova te dá cinco <blue>air runes</col> (runas de ar) e cinco <blue>mind runes</col> (runas da mente)!"
+
+[.magic_instructor_5]
+en = "Out of runes? Take some more."
+pt = "Acabaram as runas? Pegue mais algumas."
+
+[.magic_instructor_6]
+en = "Cast Wind Strike on a chicken to finish your training."
+pt = "Lance Wind Strike numa galinha para terminar o seu treino."
+
+[.magic_instructor_7]
+en = "Well you're all finished here now. I'll give you a reasonable number of runes when you leave."
+pt = "Bem, você terminou tudo aqui. Vou te dar uma boa quantidade de runas quando você sair."
+
+[.magic_instructor_8]
+en = "Do you want to go to the mainland?"
+pt = "Você quer ir para o continente?"
+
+[.magic_instructor_9]
+en = "Yes."
+pt = "Sim."
+
+[.magic_instructor_10]
+en = "No."
+pt = "Não."
+
+[.magic_instructor_11]
+en = "That's fine. Talk to me again whenever you're ready."
+pt = "Tudo bem. Fale comigo de novo quando estiver pronto."
+
+[.magic_instructor_12]
+en = "Yes, I'm ready to leave."
+pt = "Sim, estou pronto para partir."
+
+[.magic_instructor_13]
+en = "Good good. I've deactivated the protective spells around the island, so now you can teleport yourself out of here."
+pt = "Ótimo, ótimo. Desativei os feitiços de proteção em volta da ilha, então agora você pode se teletransportar daqui."
+
+[.magic_instructor_14]
+en = "When you get to the mainland you will find yourself in the town of Lumbridge. If you want some ideas on where to go next, talk to my friend Phileas, also known as the Lumbridge Guide. You can't miss him; he's holding a big staff with a question mark on the end."
+pt = "Quando chegar ao continente, você vai estar na cidade de Lumbridge. Se quiser ideias de para onde ir depois, fale com o meu amigo Phileas, também conhecido como Lumbridge Guide. Não tem como não vê-lo: ele segura um grande cajado com um ponto de interrogação na ponta."
+
+[.magic_instructor_15]
+en = "He also has a white beard and carries a rucksack full of scrolls. There are also tutors willing to teach you about the many skills you could learn."
+pt = "Ele também tem barba branca e carrega uma mochila cheia de pergaminhos. Também há tutores dispostos a te ensinar as muitas habilidades que você pode aprender."
+
+[.magic_instructor_16]
+en = "When you get to Lumbridge, look for this icon on your minimap. The Lumbridge Guide and the other tutors will be standing near one of these."
+pt = "Quando chegar a Lumbridge, procure este ícone no seu minimapa. O Lumbridge Guide e os outros tutores vão estar perto de um destes."
+
+[.magic_instructor_17]
+en = "The Lumbridge Guide should be standing slightly to the north-east of the castle's courtyard and the others you will find scattered around Lumbridge."
+pt = "O Lumbridge Guide deve estar um pouco a nordeste do pátio do castelo, e os outros você vai encontrar espalhados por Lumbridge."
+
+[.magic_instructor_18]
+en = "If all else fails, visit the RuneScape website for a whole chestload of information on quests, skills and minigames as well as a very good starter's guide."
+pt = "Se nada mais der certo, visite o site do RuneScape para um baú cheio de informações sobre missões, habilidades e minijogos, além de um ótimo guia para iniciantes."

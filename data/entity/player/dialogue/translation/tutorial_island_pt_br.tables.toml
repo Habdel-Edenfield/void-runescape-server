@@ -21,3 +21,254 @@ lines = ["No painel lateral você vê várias opções: o brilho da tela, o", "v
 [.stage_3]
 title = "Interagindo com o cenário"
 lines = ["Você pode interagir com muitos objetos do cenário clicando", "neles. O botão direito do mouse mostra mais opções. Fique à", "vontade para testar com as coisas desta sala e depois clique na", "porta indicada pela seta amarela para ir ao próximo instrutor."]
+
+[.stage_4]
+title = "Andando por aí"
+lines = ["Siga o caminho para encontrar o próximo instrutor. Clicar no", "chão faz você andar até aquele ponto. Fale com o Survival", "Expert perto do lago para continuar o tutorial. Lembre-se de", "que dá para girar a câmera com as setas do teclado."]
+
+[.stage_5]
+title = "Vendo os itens que você recebeu."
+lines = ["Clique no ícone de mochila piscando, à direita da janela", "principal, para ver o seu inventário. O inventário é uma lista", "de tudo o que está na sua mochila."]
+
+[.stage_6]
+title = "Corte uma árvore"
+lines = ["Você pode clicar no ícone da mochila a qualquer momento para", "ver os itens do seu inventário. Repare que agora você tem um", "machado (hatchet) no inventário. Use-o para conseguir toras", "(logs) clicando em uma das árvores da área."]
+
+[.stage_7]
+title = "Fazendo uma fogueira"
+lines = ["Muito bem! Você conseguiu cortar toras da árvore! Agora use a", "pederneira (tinderbox) do inventário para acender as toras.", "Primeiro clique na pederneira para usá-la ('Use').", "Depois clique nas toras do inventário para acendê-las."]
+
+[.stage_8]
+lines = ["Você ganhou experiência.", "Clique no ícone de gráfico de barras piscando, perto do botão", "do inventário, para ver as suas habilidades (skills)."]
+
+[.stage_9]
+title = "As suas habilidades."
+lines = ["Aqui você vê o quanto é bom em cada habilidade. Ao passar o", "mouse sobre os ícones deste painel, a caixinha amarela mostra", "exatamente quanta experiência você tem e quanto falta para o", "próximo nível. Fale com o Survival Expert para continuar."]
+
+[.stage_10]
+title = "Pesque alguns camarões"
+lines = ["Clique no ponto de pesca brilhante, indicado pela seta", "piscando. Lembre-se: você pode ver o inventário clicando no", "ícone da mochila."]
+
+[.stage_11]
+title = "Cozinhando os seus camarões."
+lines = ["Agora que você pescou camarões (shrimp), vamos cozinhá-los.", "Primeiro acenda uma fogueira: corte uma árvore e use a", "pederneira nas toras. Se perder o machado ou a pederneira, a", "Brynna te dá outro."]
+
+[.stage_12]
+title = "Queimando os seus camarões."
+lines = ["Você acabou de queimar o seu primeiro camarão. Isso é normal.", "Com mais experiência em Cooking, você vai queimar menos.", "Vamos tentar cozinhar sem queimar desta vez. Primeiro pesque", "mais camarões e depois use-os numa fogueira."]
+
+[.stage_13]
+title = "Sua primeira refeição em %server%!"
+lines = ["Se quiser revisar algo que aprendeu até aqui, fale com o", "Survival Expert. Agora você pode seguir para o próximo", "instrutor. Clique no portão indicado e siga o caminho.", "Lembre-se: você pode mover a câmera com as setas do teclado."]
+
+[.stage_14]
+title = "Encontre o seu próximo instrutor."
+lines = ["Siga o caminho até a porta com a seta amarela em cima.", "Clique na porta para abri-la. Repare no minimapa no canto", "superior direito: ele mostra uma vista de cima da área ao seu", "redor. Ele também pode ser usado para se orientar."]
+
+[.stage_15]
+title = "Encontre o seu próximo instrutor."
+lines = ["Fale com o cozinheiro indicado. Ele vai te ensinar partes mais", "avançadas de Cooking (culinária), como combinar ingredientes.", "Ele também vai te mostrar o menu do tocador de música."]
+
+[.stage_16]
+title = "Fazendo massa."
+lines = ["Esta é a base de muitas refeições. Para fazer massa (dough),", "misture farinha e água. Primeiro clique com o botão direito no", "balde de água e escolha 'Use', depois clique com o botão", "esquerdo no pote de farinha."]
+
+[.stage_17]
+title = "Assando a massa."
+lines = ["Agora que você fez a massa, pode assá-la. Para isso, use a", "massa no fogão (range) indicado pela seta. Se perder a massa,", "fale com o Lev - ele te dá mais ingredientes."]
+
+[.stage_18]
+title = "Assando a massa"
+lines = ["Muito bem! O seu primeiro pão. Conforme ganhar experiência em", "Cooking, você vai poder fazer outras coisas, como tortas, bolos", "e até kebabs. Agora que pegou o jeito, vamos em frente.", "Clique no ícone piscando no canto inferior direito para ver o", "tocador de música."]
+
+[.stage_19]
+title = "O tocador de música."
+lines = ["Nesta tela você controla a música que toca. Conforme explora o", "mundo, mais músicas vão sendo desbloqueadas. Depois de olhar", "este menu, use a próxima porta para continuar. Se precisar", "revisar algo daqui, fale com o Lev."]
+
+[.stage_20]
+title = "Emotes."
+lines = ["", "Que tal mostrar alguns sentimentos? Você vai ver um ícone", "piscando no formato de uma pessoa. Clique nele para ver os", "seus emotes (gestos)."]
+
+[.stage_21]
+title = "Emotes."
+lines = ["Quando as palavras não bastam para dizer como você se sente,", "tente um emote. Vá em frente, teste um! Alguns emotes aparecem", "em cinza e ainda não podem ser usados. Não se preocupe!", "Conforme avança no jogo, você ganha acesso a todo tipo de", "coisa, inclusive emotes mais divertidos."]
+
+[.stage_22]
+title = "Correndo."
+lines = ["Falta pouco para chegar ao próximo guia.", "Que tal ir correndo? Você pode correr clicando", "no ícone da bota ao lado do minimapa ou segurando", "a tecla Ctrl enquanto clica no destino."]
+
+[.stage_23]
+title = "Corra até o próximo guia."
+lines = ["Agora que o botão de correr está ligado, siga o caminho até o", "fim. Talvez você repare que o número no botão vai diminuindo.", "Essa é a sua energia de corrida. Se ela chegar a zero, você", "para de correr. Clique na porta para passar por ela."]
+
+[.stage_24]
+lines = ["Fale com o Quest Guide.", "", "Ele vai te contar tudo sobre as missões (quests).", ""]
+
+[.stage_25]
+lines = ["Abra o diário de missões (Quest Journal).", "", "Clique no ícone piscando ao lado do inventário.", ""]
+
+[.stage_26]
+title = "O seu diário de missões"
+lines = ["", "Este é o Quest Journal, a lista de todas as missões do jogo.", "Fale de novo com o Quest Guide para uma explicação.", ""]
+
+[.stage_27]
+lines = ["Seguindo em frente.", "Hora de entrar em algumas cavernas. Clique na escada para", "descer até a próxima área.", ""]
+
+[.stage_28]
+title = "Mining e Smithing."
+lines = ["Agora vamos arrumar uma arma para você. Melhor ainda: você", "mesmo pode fazer a sua primeira arma. Não se preocupe, o", "Mining Instructor vai te ajudar. Fale com ele e ele explica", "tudo.", ""]
+
+[.stage_29]
+title = "Prospecção."
+lines = ["Para examinar uma rocha minerável, clique nela com o botão", "direito e escolha 'Prospect'. Isso mostra o tipo de minério que", "dá para tirar dela. Tente agora em uma das rochas indicadas.", ""]
+
+[.stage_30]
+title = "É estanho."
+lines = ["", "Agora você sabe que há estanho (tin) nas rochas cinzas. Tente", "examinar as marrons em seguida.", ""]
+
+[.stage_31]
+title = "É cobre."
+lines = ["Fale com o Mining Instructor para saber mais sobre esses tipos", "de minério e como minerá-los. Ele vai até te dar as", "ferramentas necessárias.", ""]
+
+[.stage_32]
+title = "Minerando."
+lines = ["É bem simples. Basta clicar com o botão direito na rocha e", "escolher 'Mine'. Você só consegue minerar com uma picareta", "(pickaxe). Então tente: primeiro minere um minério de estanho.", ""]
+
+[.stage_33]
+title = "Minerando."
+lines = ["Agora que tem minério de estanho, só falta o de cobre (copper).", "Aí você terá tudo para fazer uma barra de bronze. Como antes,", "clique com o botão direito na rocha de cobre e escolha 'Mine'.", ""]
+
+[.stage_34]
+title = "Fundindo."
+lines = ["Agora você deve ter minério de cobre e de estanho. Vamos", "fundi-los numa barra de bronze. Para isso, clique com o botão", "direito no minério de estanho ou de cobre, escolha 'Use' e", "depois clique na fornalha (furnace). Tente agora."]
+
+[.stage_35]
+title = "Você fez uma barra de bronze!"
+lines = ["", "Fale com o Mining Instructor e ele vai te mostrar como", "transformá-la numa arma.", ""]
+
+[.stage_36]
+title = "Forjando uma adaga."
+lines = ["Para forjar, você precisa de um martelo (hammer), barras de", "metal suficientes para o item desejado e uma bigorna (anvil).", "Para começar, clique na bigorna ou use a barra nela.", ""]
+
+[.stage_37]
+title = "Forjando uma adaga."
+lines = ["Com o menu de Smithing aberto, você vê a lista de tudo o que", "pode fazer. No seu nível, só dá para fazer a adaga (dagger);", "isso aparece no texto branco embaixo dela. Escolha a adaga", "para continuar."]
+
+[.stage_38]
+title = "Você terminou nesta área."
+lines = ["Então vamos em frente. Passe pelos portões indicados pela seta.", "Lembre-se: talvez você precise mover a câmera para ver o que", "está ao redor. Fale com o guia para revisar a qualquer momento.", ""]
+
+[.stage_39]
+title = "Combate."
+lines = ["", "Nesta área você vai aprender a lutar com espadas e arcos.", "Fale com o guia e ele vai te contar tudo.", ""]
+
+[.stage_40]
+title = "Empunhando armas."
+lines = ["", "Agora você tem acesso a uma nova tela. Clique no ícone piscando", "de um homem, o que fica à direita do ícone da mochila.", ""]
+
+[.stage_41]
+title = "Este é o seu equipamento vestido."
+lines = ["Aqui você vê os itens que está usando. Repare no botão", "'View equipment stats'. Clique nele agora para ver os", "detalhes do que você está equipando.", ""]
+
+[.stage_42]
+title = "Tela de equipamento"
+lines = ["Você vê os itens que está vestindo no equipamento à esquerda", "da tela, com as estatísticas somadas à direita. Vamos", "adicionar algo. Clique com o botão esquerdo na adaga para", "empunhá-la ('Wield')."]
+
+[.stage_43]
+title = "Agora você está segurando a adaga."
+lines = ["Roupas, armaduras, armas e muitos outros itens são equipados", "assim. Para tirar um item, clique nele no equipamento vestido.", "Você pode fechar esta janela clicando no pequeno 'x' no canto", "superior direito. Fale com o Combat Instructor para continuar."]
+
+[.stage_44]
+title = "Tirando itens."
+lines = ["No painel de equipamento vestido, clique com o botão direito", "na adaga e escolha a opção 'Remove' na lista. Depois de tirar", "a adaga, empunhe a espada e o escudo. Ao passar o mouse sobre", "um item, o nome dele aparece no canto superior esquerdo da", "tela."]
+
+[.stage_45]
+title = "Tela de combate."
+lines = ["", "Clique no ícone piscando de espadas cruzadas para ver a tela", "de combate.", ""]
+
+[.stage_46]
+title = "Esta é a sua tela de combate."
+lines = ["Aqui você escolhe o tipo de ataque que o seu personagem vai", "usar. Monstros diferentes têm fraquezas diferentes. Passe o", "mouse sobre os botões para ver o tipo de XP que cada ataque", "dá. Agora que tem as ferramentas para a batalha, que tal", "enfrentar alguns ratos? Clique nos portões indicados."]
+
+[.stage_47]
+title = "Atacando."
+lines = ["", "Para atacar o rato, clique nele com o botão direito e escolha", "'Attack'. Você vai andar até ele e começar a bater nele.", ""]
+
+[.stage_48]
+title = "Relaxe e assista."
+lines = ["Durante a luta, você vê uma barra sobre a sua cabeça. Ela", "mostra quanta vida (health) você ainda tem. O seu oponente", "também tem uma. Você continua atacando o rato até ele morrer", "ou até você fazer outra coisa."]
+
+[.stage_49]
+title = "Muito bem, sua primeira vitória!"
+lines = ["", "Passe pelo portão e fale com o Combat Instructor; ele vai te", "dar a próxima tarefa.", ""]
+
+[.stage_50]
+title = "Ataque à distância nos ratos."
+lines = ["Agora você tem um arco e algumas flechas. Antes de usá-los,", "você precisa equipá-los. Depois de equipar o equipamento de", "longo alcance (ranged), tente matar outro rato. Lembre-se:", "para atacar, clique com o botão direito e escolha 'Attack'."]
+
+[.stage_51]
+title = "Seguindo em frente."
+lines = ["Você completou as tarefas daqui. Para seguir, clique na escada", "indicada. Se precisar revisar algo que aprendeu aqui, é só", "falar com o Combat Instructor e ele explica o que puder."]
+
+[.stage_52]
+title = "O banco."
+lines = ["Siga o caminho até chegar à frente do prédio. Este é o Banco", "de %server%, onde você pode guardar os seus itens mais", "valiosos. Para abrir o seu cofre, clique com o botão direito", "num guichê aberto indicado e escolha 'Use'."]
+
+[.stage_53]
+title = "Este é o seu cofre do banco."
+lines = ["Aqui você guarda coisas em segurança. Se você morrer, tudo o", "que estiver no banco fica salvo. Para depositar algo, clique", "com o botão direito no item e escolha 'Store'. Depois de", "olhar bem, feche a janela e passe pela porta indicada."]
+
+[.stage_54]
+title = "Conselhos financeiros."
+lines = ["", "O guia daqui vai te contar tudo sobre ganhar dinheiro. É só", "clicar nele para ouvir o que ele tem a dizer.", ""]
+
+[.stage_55]
+lines = ["", "Siga pela próxima porta.", "", ""]
+
+[.stage_56]
+title = "Prayer (oração)."
+lines = ["Siga o caminho até a capela e entre.", "Lá dentro, fale com o monge. Ele vai te contar tudo sobre a", "habilidade Prayer.", ""]
+
+[.stage_57]
+title = "O seu menu de orações."
+lines = ["", "Clique no ícone piscando para abrir o menu de Prayer.", "", ""]
+
+[.stage_58]
+lines = ["O seu menu de orações.", "", "Fale com o Brother Brace e ele vai te explicar as orações.", ""]
+
+[.stage_59]
+lines = ["Lista de amigos.", "Agora você deve ver outro ícone novo. Clique no rosto", "sorridente piscando para abrir a sua lista de amigos.", ""]
+
+[.stage_60]
+title = "Esta é a sua lista de amigos."
+lines = ["", "O Brother Brace vai explicar isto daqui a pouco, mas antes", "clique no botão de ponto vermelho no canto inferior direito", "da lista de amigos."]
+
+[.stage_61]
+title = "Esta é a sua lista de ignorados."
+lines = ["As duas listas - amigos e ignorados - ajudam muito a saber", "quando os seus amigos estão online ou a bloquear mensagens", "de pessoas de quem você simplesmente não gosta. Fale com o", "Brother Brace e ele vai te contar mais."]
+
+[.stage_62]
+lines = ["O seu último instrutor!", "Você está quase terminando a Ilha Tutorial. Passe pela porta", "para encontrar o caminho até o seu último instrutor.", ""]
+
+[.stage_63]
+title = "O seu último instrutor!"
+lines = ["É só seguir o caminho até a casa do mago, onde você vai", "aprender a lançar feitiços. Fale com o mago indicado para", "saber mais.", ""]
+
+[.stage_64]
+title = "Abra a sua última aba."
+lines = ["", "Abra o livro de feitiços (Magic Spellbook) clicando no ícone", "piscando ao lado da aba de orações que você acabou de ver.", ""]
+
+[.stage_65]
+lines = ["Esta é a sua lista de feitiços.", "", "Pergunte ao mago sobre ela.", ""]
+
+[.stage_66]
+title = "Lance Wind Strike numa galinha."
+lines = ["Agora que tem runas, você deve ver o ícone do Wind Strike no", "canto superior esquerdo da tela de magia - o terceiro a partir", "da esquerda. Vá até as galinhas na jaula, clique no ícone do", "Wind Strike e escolha uma galinha como alvo. Pode levar", "algumas tentativas. Se precisar de mais runas, peça a Terrova."]
+
+[.stage_67]
+title = "Você está quase terminando o tutorial!"
+lines = ["", "Agora só falta se teletransportar para o continente. É só", "falar com Terrova e ele vai te explicar como.", ""]
+
+[.stage_68]
+title = "Você está quase terminando o tutorial!"
+lines = ["", "Basta clicar no primeiro feitiço, Home Teleport, no seu livro", "de feitiços (Magic Spellbook). Ele não precisa de runas, mas só", "pode ser lançado uma vez a cada 30 minutos.", ""]

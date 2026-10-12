@@ -1,14 +1,23 @@
 package content.entity.player.dialogue
 
 import WorldTest
+import content.area.misthalin.tutorial_island.inTutorial
 import content.area.misthalin.tutorial_island.tutorialStage
+import dialogueOption
 import npcOption
 import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertFalse
+import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import skipDialogues
+import world.gregs.voidps.engine.data.Settings
+import world.gregs.voidps.engine.data.definition.FontDefinitions
 import world.gregs.voidps.engine.data.definition.Rows
 import world.gregs.voidps.engine.data.definition.Tables
+import world.gregs.voidps.engine.entity.character.player.Player
+import world.gregs.voidps.engine.get
+import world.gregs.voidps.engine.inv.inventory
 import world.gregs.voidps.type.Tile
 
 class TranslationTest : WorldTest() {
@@ -37,6 +46,15 @@ class TranslationTest : WorldTest() {
     }
 
     @Test
+    fun `Server name placeholder is filled in both languages`() {
+        val player = createPlayer()
+        player["portuguese_dialogue"] = true
+        val name = Settings["server.name"]
+
+        assertEquals("Bem-vindo a $name.", player.translate("Welcome to $name."))
+    }
+
+    @Test
     fun `Tutorial instructions use the Portuguese row once enabled`() {
         val player = createPlayer()
         val stage = Rows.get("tutorial_island.stage_0")
@@ -44,16 +62,12 @@ class TranslationTest : WorldTest() {
         assertEquals("Getting started", player.translate(stage).string("title"))
         player["portuguese_dialogue"] = true
         assertEquals("Primeiros passos", player.translate(stage).string("title"))
-        assertEquals("tutorial_island.stage_4", player.translate(Rows.get("tutorial_island.stage_4")).stringId)
+        assertEquals("npc_ranges.hans", player.translate(Rows.get("npc_ranges.hans")).stringId)
     }
 
     @Test
     fun `Guide still advances the tutorial in Portuguese`() {
-        val player = createPlayer(Tile(3095, 3107)) {
-            it["tutorial_stage"] = 0
-            it["tutorial_designed"] = true
-            it["portuguese_dialogue"] = true
-        }
+        val player = createPlayer(Tile(3095, 3107)) { it.startTutorialInPortuguese(0) }
         val guide = createNPC("runescape_guide", Tile(3094, 3107))
 
         player.npcOption(guide, "Talk-to")
@@ -64,6 +78,61 @@ class TranslationTest : WorldTest() {
     }
 
     @Test
+    fun `Survival expert still hands over the kit in Portuguese`() {
+        val player = createPlayer(Tile(3104, 3095)) { it.startTutorialInPortuguese(4) }
+        val expert = createNPC("survival_expert", Tile(3103, 3095))
+
+        player.npcOption(expert, "Talk-to")
+        tick(3)
+        player.skipDialogues()
+
+        assertEquals(5, player.tutorialStage)
+        assertTrue(player.inventory.contains("bronze_hatchet"))
+        assertTrue(player.inventory.contains("tinderbox"))
+    }
+
+    @Test
+    fun `Leaving the island still works in Portuguese`() {
+        settings.setProperty("world.start.tutorial.skippable", "true")
+        val player = createPlayer(Tile(3094, 3106)) { it.startTutorialInPortuguese(0) }
+        val guide = createNPC("runescape_guide", Tile(3094, 3107))
+
+        player.npcOption(guide, "Talk-to")
+        tick(1)
+        player.skipDialogues()
+        player.dialogueOption(2) // Skip
+        player.skipDialogues()
+        tick(1)
+
+        assertFalse(player.inTutorial)
+    }
+
+    @Test
+    fun `Every translated stage replaces an existing one`() {
+        for (row in Tables.get("tutorial_island_pt_br").rows()) {
+            assertNotNull(Rows.getOrNull("tutorial_island.${row.rowId}"), "No English stage for ${row.stringId}")
+        }
+    }
+
+    @Test
+    fun `Translated instructions fit in the box`() {
+        val font = get<FontDefinitions>().get("q8_full")
+        val english = Tables.get("tutorial_island").rows()
+        val maxLine = english.flatMap { it.stringList("lines") }.maxOf { font.textWidth(it) }
+        val maxTitle = english.maxOf { font.textWidth(it.string("title")) }
+        val tooWide = mutableListOf<String>()
+        for (row in Tables.get("tutorial_island_pt_br").rows()) {
+            val lines = row.stringList("lines")
+            assertTrue(lines.size <= 6, "${row.stringId} has ${lines.size} lines")
+            tooWide += lines.filter { font.textWidth(it) > maxLine }
+            if (font.textWidth(row.string("title")) > maxTitle) {
+                tooWide += row.string("title")
+            }
+        }
+        assertTrue(tooWide.isEmpty(), "Too wide (max $maxLine px):\n${tooWide.joinToString("\n") { "${font.textWidth(it)}px $it" }}")
+    }
+
+    @Test
     fun `Translations only use characters the client can display`() {
         // Strings are sent one byte per character, so anything past Latin-1 (curly quotes, em dashes) would be garbled
         val text = Tables.get("dialogue_pt_br").rows().map { it.string("pt") } +
@@ -71,5 +140,11 @@ class TranslationTest : WorldTest() {
         for (line in text) {
             assertTrue(line.all { it.code in 0x20..0xFF }, "Unsupported character in: $line")
         }
+    }
+
+    private fun Player.startTutorialInPortuguese(stage: Int) {
+        set("tutorial_stage", stage)
+        set("tutorial_designed", true)
+        set("portuguese_dialogue", true)
     }
 }

@@ -3,6 +3,7 @@ package content.entity.player.dialogue
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.command.playerCommand
 import world.gregs.voidps.engine.client.message
+import world.gregs.voidps.engine.data.Settings
 import world.gregs.voidps.engine.data.config.RowDefinition
 import world.gregs.voidps.engine.data.definition.Rows
 import world.gregs.voidps.engine.data.definition.Tables
@@ -28,14 +29,17 @@ class Translation : Script {
 /**
  * The `dialogue_pt_br` translation of [text], or [text] unchanged when the player hasn't
  * enabled Portuguese or the line hasn't been translated yet.
+ * `%server%` in either column stands in for the `server.name` setting.
  */
 fun Player.translate(text: String): String {
     if (!get("portuguese_dialogue", false)) {
         return text
     }
-    val row = Tables.get("dialogue_pt_br").rows().firstOrNull { it.string("en") == text } ?: return text
-    return row.string("pt")
+    val row = Tables.get("dialogue_pt_br").rows().firstOrNull { serverName(it.string("en")) == text } ?: return text
+    return serverName(row.string("pt"))
 }
+
+private fun serverName(text: String): String = text.replace("%server%", Settings["server.name"])
 
 /**
  * The `pt_br` copy of [row] (e.g. `tutorial_island_pt_br.stage_0` for `tutorial_island.stage_0`)
