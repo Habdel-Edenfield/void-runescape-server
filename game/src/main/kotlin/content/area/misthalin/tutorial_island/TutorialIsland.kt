@@ -1,5 +1,6 @@
 package content.area.misthalin.tutorial_island
 
+import content.entity.player.dialogue.translate
 import content.entity.player.modal.GameFrame
 import world.gregs.voidps.engine.client.clearHints
 import world.gregs.voidps.engine.client.markHint
@@ -112,7 +113,7 @@ object TutorialIsland {
      * @return whether the box was drawn
      */
     fun sendInstruction(player: Player): Boolean {
-        val row = row(player.tutorialStage) ?: return false
+        val row = player.translate(row(player.tutorialStage) ?: return false)
         if (player.dialogue != null) {
             return false
         }

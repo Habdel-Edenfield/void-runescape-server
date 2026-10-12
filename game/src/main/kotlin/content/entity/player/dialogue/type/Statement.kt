@@ -1,6 +1,7 @@
 package content.entity.player.dialogue.type
 
 import content.entity.player.dialogue.sendLines
+import content.entity.player.dialogue.translate
 import world.gregs.voidps.engine.client.ui.close
 import world.gregs.voidps.engine.client.ui.open
 import world.gregs.voidps.engine.data.definition.FontDefinitions
@@ -11,13 +12,9 @@ import world.gregs.voidps.engine.suspend.pauseButton
 private const val MAXIMUM_STATEMENT_SIZE = 5
 
 suspend fun Player.statement(text: String, clickToContinue: Boolean = true) {
-    val lines = if (text.isBlank()) {
-        listOf("")
-    } else if (text.contains("\n")) {
-        text.trimIndent().lines()
-    } else {
-        get<FontDefinitions>().get("q8_full").splitLines(text, 470)
-    }
+    val translated = statementLines(translate(text))
+    // Translations run longer than the original, so fall back rather than overflow the box
+    val lines = if (translated.size <= MAXIMUM_STATEMENT_SIZE) translated else statementLines(text)
     check(lines.size <= MAXIMUM_STATEMENT_SIZE) { "Maximum statement lines exceeded ${lines.size} for $this" }
     val id = getInterfaceId(lines.size, clickToContinue)
     if (!open(id)) {
@@ -28,6 +25,14 @@ suspend fun Player.statement(text: String, clickToContinue: Boolean = true) {
         pauseButton()
         close(id)
     }
+}
+
+private fun statementLines(text: String): List<String> = if (text.isBlank()) {
+    listOf("")
+} else if (text.contains("\n")) {
+    text.trimIndent().lines()
+} else {
+    get<FontDefinitions>().get("q8_full").splitLines(text, 470)
 }
 
 private fun getInterfaceId(lines: Int, prompt: Boolean): String = "dialogue_message${if (!prompt) "_np" else ""}$lines"

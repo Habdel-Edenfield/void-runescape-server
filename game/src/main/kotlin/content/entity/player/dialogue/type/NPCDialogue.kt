@@ -3,6 +3,7 @@ package content.entity.player.dialogue.type
 import content.entity.player.dialogue.Expression
 import content.entity.player.dialogue.familiarChatheadAnimation
 import content.entity.player.dialogue.sendChat
+import content.entity.player.dialogue.translate
 import net.pearx.kasechange.toSnakeCase
 import world.gregs.voidps.engine.client.ui.close
 import world.gregs.voidps.engine.client.ui.open
@@ -42,7 +43,8 @@ suspend fun Player.npc(expression: String, text: String, largeHead: Boolean? = n
 }
 
 suspend fun Player.npc(npcId: String, expression: String, text: String, largeHead: Boolean? = null, clickToContinue: Boolean = true, title: String? = null) {
-    val lines = if (text.contains("\n")) text.trimIndent().lines() else get<FontDefinitions>().get("q8_full").splitLines(text, 380)
+    val translated = translate(text)
+    val lines = if (translated.contains("\n")) translated.trimIndent().lines() else get<FontDefinitions>().get("q8_full").splitLines(translated, 380)
     if (lines.size > 4) {
         for (chunk in lines.chunked(4)) {
             npc(chunk, clickToContinue, npcId, largeHead, expression, title)

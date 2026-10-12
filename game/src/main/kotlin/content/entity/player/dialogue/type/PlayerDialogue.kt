@@ -2,6 +2,7 @@ package content.entity.player.dialogue.type
 
 import content.entity.player.dialogue.Expression
 import content.entity.player.dialogue.sendChat
+import content.entity.player.dialogue.translate
 import net.pearx.kasechange.toSnakeCase
 import world.gregs.voidps.engine.client.ui.close
 import world.gregs.voidps.engine.client.ui.open
@@ -20,7 +21,8 @@ suspend inline fun <reified E : Expression> Player.player(text: String, largeHea
 
 @JvmName("playerExpression")
 suspend fun Player.player(expression: String, text: String, largeHead: Boolean = false, clickToContinue: Boolean = true, title: String? = null) {
-    val lines = if (text.contains("\n")) text.trimIndent().lines() else get<FontDefinitions>().get("q8_full").splitLines(text, 380)
+    val translated = translate(text)
+    val lines = if (translated.contains("\n")) translated.trimIndent().lines() else get<FontDefinitions>().get("q8_full").splitLines(translated, 380)
     if (lines.size > 4) {
         for (chunk in lines.chunked(4)) {
             player(expression, chunk, largeHead, clickToContinue, title)

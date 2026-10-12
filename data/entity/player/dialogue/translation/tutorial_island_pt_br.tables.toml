@@ -1,0 +1,23 @@
+# Brazilian Portuguese copy of the `tutorial_island` instruction box, swapped in by
+# `Player.translate(row)` when `portuguese_dialogue` is on. Stages without a row stay in English.
+# Each line must fit the box (1 title + 6 lines); `%server%` is replaced with `server.name`.
+
+[tutorial_island_pt_br]
+title = "string"
+lines = "list<string>"
+
+[.stage_0]
+title = "Primeiros passos"
+lines = ["Para começar o tutorial, use o botão esquerdo do mouse e clique", "no %server% Guide nesta sala. Ele está indicado por uma seta", "amarela piscando sobre a cabeça. Se não conseguir vê-lo, use", "as setas do teclado para girar a câmera."]
+
+[.stage_1]
+title = "Controles do jogador"
+lines = ["Clique no ícone de chave inglesa piscando no canto inferior", "direito da tela. Ele mostra os controles do jogador."]
+
+[.stage_2]
+title = "Controles do jogador"
+lines = ["No painel lateral você vê várias opções: o brilho da tela, o", "volume da música e se o seu personagem aceita ajuda de outros", "jogadores. Não se preocupe muito com isso agora. Fale com o", "RuneScape Guide para continuar."]
+
+[.stage_3]
+title = "Interagindo com o cenário"
+lines = ["Você pode interagir com muitos objetos do cenário clicando", "neles. O botão direito do mouse mostra mais opções. Fique à", "vontade para testar com as coisas desta sala e depois clique na", "porta indicada pela seta amarela para ir ao próximo instrutor."]

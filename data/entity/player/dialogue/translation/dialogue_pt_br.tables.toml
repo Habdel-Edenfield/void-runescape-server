@@ -1,0 +1,56 @@
+# Brazilian Portuguese dialogue, used by `Player.translate` when `portuguese_dialogue` is on.
+# `en` must match the original text exactly; lines without a row stay in English.
+# Keep NPC and place names as the game shows them so players can find them.
+
+[dialogue_pt_br]
+en = "string"
+pt = "string"
+
+# RuneScape Guide - Tutorial Island
+[.guide_greetings]
+en = "Greetings! I see you are a new arrival to this land. My job is to teach you a few basic skills and functions."
+pt = "Saudações! Vejo que você acabou de chegar a estas terras. Meu trabalho é ensinar algumas habilidades e funções básicas."
+
+[.guide_tutorial_question]
+en = "Do you want to go through the tutorial?"
+pt = "Você quer fazer o tutorial?"
+
+[.guide_tutorial_yes]
+en = "Yes, show me how to play."
+pt = "Sim, me mostre como jogar."
+
+[.guide_tutorial_no]
+en = "No, send me to the mainland."
+pt = "Não, me mande para o continente."
+
+[.guide_skip_tutorial]
+en = "As you wish. I'll send you on your way with the usual supplies."
+pt = "Como quiser. Vou mandar você seguir viagem com os suprimentos de sempre."
+
+[.guide_control_panels]
+en = "First we shall go through some of the game's control panels, which you can find at the bottom right of your screen."
+pt = "Primeiro vamos ver alguns dos painéis de controle do jogo, que ficam no canto inferior direito da tela."
+
+[.guide_spanner_icon]
+en = "Click on the flashing spanner icon to open your game options."
+pt = "Clique no ícone de chave inglesa piscando para abrir as opções do jogo."
+
+[.guide_options_panel]
+en = "The options panel lets you change the screen brightness, the volume of the music and sound effects, and whether other players may offer you help."
+pt = "O painel de opções permite mudar o brilho da tela, o volume da música e dos efeitos sonoros, e se outros jogadores podem oferecer ajuda a você."
+
+[.guide_next_door]
+en = "That's all I have to teach you. Go through that door and the Survival Expert will show you how to look after yourself."
+pt = "Isso é tudo o que tenho para ensinar. Passe por aquela porta e o Survival Expert vai mostrar como cuidar de si mesmo."
+
+[.guide_player_thanks]
+en = "Thanks, I'll do that."
+pt = "Obrigado, vou fazer isso."
+
+[.guide_learnt_all]
+en = "You've learnt all I have to teach. Follow the arrow to your next instructor."
+pt = "Você já aprendeu tudo o que eu tinha para ensinar. Siga a seta até o seu próximo instrutor."
+
+[.guide_welcome_lumbridge]
+en = "Welcome to Lumbridge! To get more help, simply click on the Lumbridge Guide or one of the Tutors - these can be found by looking for the question mark icon on your minimap."
+pt = "Bem-vindo a Lumbridge! Para mais ajuda, clique no Lumbridge Guide ou em um dos Tutors - eles aparecem com o ícone de ponto de interrogação no seu minimapa."

@@ -1,6 +1,7 @@
 package content.entity.player.dialogue.type
 
 import content.entity.player.dialogue.sendLines
+import content.entity.player.dialogue.translate
 import world.gregs.voidps.engine.client.ui.close
 import world.gregs.voidps.engine.client.ui.open
 import world.gregs.voidps.engine.entity.character.player.Player
@@ -45,10 +46,11 @@ suspend fun Player.choice(title: String? = null, block: suspend ChoiceOption.() 
  */
 suspend fun Player.choice(lines: List<String>, title: String? = null): Int {
     check(lines.size in CHOICE_LINE_RANGE) { "Invalid choice line count ${lines.size} for $this" }
-    val question = title?.trimIndent()?.replace("\n", "<br>")
+    val options = lines.map { translate(it) }
+    val question = title?.let { translate(it) }?.trimIndent()?.replace("\n", "<br>")
     val multilineTitle = question?.contains("<br>") ?: false
-    val multilineOptions = lines.any { isMultiline(it) }
-    val id = getChoiceId(multilineTitle, multilineOptions, lines.size)
+    val multilineOptions = options.any { isMultiline(it) }
+    val id = getChoiceId(multilineTitle, multilineOptions, options.size)
     if (!open(id)) {
         return -1
     }
@@ -59,7 +61,7 @@ suspend fun Player.choice(lines: List<String>, title: String? = null): Int {
         interfaces.sendVisibility(id, "thin_swords", !wide)
         interfaces.sendText(id, "title", question)
     }
-    interfaces.sendLines(id, lines)
+    interfaces.sendLines(id, options)
     val result = pauseInt()
     close(id)
     return result
