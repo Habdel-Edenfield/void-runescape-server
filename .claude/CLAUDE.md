@@ -10,4 +10,4 @@
 - [Testing](testing.md) — WorldTest, integration vs unit patterns
 - [Code Style](code-style.md) — ktlint, structural patterns, naming conventions
 - [Groml Config](groml.md) — config format spec and examples
-
+- [Translation](translation.md) — tradução pt-BR deste fork: como funciona, método por região, armadilhas, pendências
