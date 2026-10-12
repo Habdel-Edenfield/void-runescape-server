@@ -6,6 +6,7 @@ import kotlinx.coroutines.test.runTest
 import kotlinx.io.readByteArray
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
+import world.gregs.voidps.network.client.Client
 
 class JagExtensionsTest {
 
@@ -69,6 +70,17 @@ class JagExtensionsTest {
         channel.close()
         val packet = ByteReadPacket(channel.readRemaining().readByteArray())
         assertEquals(text, packet.readString())
+    }
+
+    @Test
+    fun `Write accented string as one byte per character`() = runTest {
+        val channel = ByteChannel(autoFlush = true)
+        val text = "Ação"
+        channel.writeText(text)
+        channel.close()
+        val bytes = channel.readRemaining().readByteArray()
+        assertEquals(Client.string(text), bytes.size)
+        assertArrayEquals(byteArrayOf(0x41, 0xE7.toByte(), 0xE3.toByte(), 0x6F, 0), bytes)
     }
 
     @Test

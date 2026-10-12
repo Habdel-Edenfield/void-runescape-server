@@ -7,7 +7,6 @@ import kotlinx.io.Source
 import kotlinx.io.readUByte
 import world.gregs.voidps.buffer.write.ArrayWriter
 import kotlin.random.Random
-import kotlin.text.toByteArray
 
 suspend fun ByteReadChannel.readUByte(): Int = readByte().toInt() and 0xff
 
@@ -88,7 +87,8 @@ suspend fun ByteWriteChannel.writeSmart(value: Int) {
 
 suspend fun ByteWriteChannel.writeText(value: String?) {
     if (value != null) {
-        writeFully(value.toByteArray())
+        // One byte per character to match Client.string() packet sizes; UTF-8 would desync the stream on accents
+        writeFully(ByteArray(value.length) { value[it].code.toByte() })
     }
     writeByte(0)
 }
