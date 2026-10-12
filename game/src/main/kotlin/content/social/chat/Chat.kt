@@ -11,6 +11,7 @@ import content.social.report.sendMuteMessage
 import net.pearx.kasechange.toTitleCase
 import world.gregs.voidps.cache.secure.Huffman
 import world.gregs.voidps.engine.Script
+import world.gregs.voidps.engine.client.command.Commands
 import world.gregs.voidps.engine.client.instruction.instruction
 import world.gregs.voidps.engine.client.message
 import world.gregs.voidps.engine.client.update.view.Viewport.Companion.VIEW_RADIUS
@@ -59,6 +60,17 @@ class Chat(val huffman: Huffman) : Script {
         }
 
         instruction<ChatPublic> { player ->
+            // Commands can be typed into chat as "::name" for players who can't open the console
+            if (text.startsWith("::")) {
+                val command = text.removePrefix("::").trim()
+                if (command.isNotEmpty()) {
+                    Script.launch {
+                        AuditLog.event(player, "command", "\"$command\"")
+                        Commands.call(player, command)
+                    }
+                }
+                return@instruction
+            }
             if (player.isMuted) {
                 player.sendMuteMessage()
                 return@instruction
