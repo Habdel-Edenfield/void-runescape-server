@@ -5,6 +5,8 @@ import containsMessage
 import content.area.misthalin.tutorial_island.inTutorial
 import content.area.misthalin.tutorial_island.tutorialStage
 import dialogueOption
+import io.mockk.mockkStatic
+import io.mockk.verify
 import npcOption
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertFalse
@@ -21,6 +23,7 @@ import world.gregs.voidps.engine.entity.character.player.Player
 import world.gregs.voidps.engine.entity.character.player.skill.Skill
 import world.gregs.voidps.engine.get
 import world.gregs.voidps.engine.inv.inventory
+import world.gregs.voidps.network.login.protocol.encode.interfaceText
 import world.gregs.voidps.type.Tile
 
 class TranslationTest : WorldTest() {
@@ -77,6 +80,32 @@ class TranslationTest : WorldTest() {
 
         assertTrue(player.containsMessage("Você subiu um nível em Cooking! Agora você está no nível 2."))
         assertEquals("dialogue_level_up", player.dialogue)
+    }
+
+    @Test
+    fun `Continue prompt is translated in dialogue boxes`() {
+        mockkStatic("world.gregs.voidps.network.login.protocol.encode.InterfaceEncodersKt")
+        val (player, client) = createClient("translated", Tile(3095, 3107))
+        player["portuguese_dialogue"] = true
+        val guide = createNPC("runescape_guide", Tile(3094, 3107))
+
+        player.npcOption(guide, "Talk-to")
+        tick(3)
+
+        verify { client.interfaceText(any(), "Clique aqui para continuar") }
+    }
+
+    @Test
+    fun `Continue prompt is left to the client in English`() {
+        mockkStatic("world.gregs.voidps.network.login.protocol.encode.InterfaceEncodersKt")
+        val (player, client) = createClient("english", Tile(3095, 3107))
+        val guide = createNPC("runescape_guide", Tile(3094, 3107))
+
+        player.npcOption(guide, "Talk-to")
+        tick(3)
+
+        verify(exactly = 0) { client.interfaceText(any(), "Click here to continue") }
+        verify(exactly = 0) { client.interfaceText(any(), "Clique aqui para continuar") }
     }
 
     @Test

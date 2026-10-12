@@ -69,6 +69,17 @@ private fun pattern(english: String): Regex = patterns.getOrPut(english) {
 
 private fun serverName(text: String): String = text.replace("%server%", Settings["server.name"])
 
+/** The dialogue box prompt comes from the cache, so is only replaced once translated */
+fun Player.sendContinue(id: String) = sendTranslated(id, "continue", "Click here to continue")
+
+/** Sends the translation of [text] to a [component] the client fills in itself, only when it differs */
+fun Player.sendTranslated(id: String, component: String, text: String) {
+    val translated = translate(text)
+    if (translated != text) {
+        interfaces.sendText(id, component, translated)
+    }
+}
+
 /**
  * The `pt_br` copy of [row] (e.g. `tutorial_island_pt_br.stage_0` for `tutorial_island.stage_0`)
  * when the player has enabled Portuguese and it exists, otherwise [row].

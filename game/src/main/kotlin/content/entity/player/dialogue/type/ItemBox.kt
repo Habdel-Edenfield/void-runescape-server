@@ -1,5 +1,6 @@
 package content.entity.player.dialogue.type
 
+import content.entity.player.dialogue.sendContinue
 import content.entity.player.dialogue.translate
 import world.gregs.voidps.engine.client.sendScript
 import world.gregs.voidps.engine.client.ui.close
@@ -25,6 +26,7 @@ suspend fun Player.item(item: String, text: String, sprite: Int? = null) {
     val translated = translate(text)
     val lines = if (translated.contains("\n")) translated.trimIndent().replace("\n", "<br>") else get<FontDefinitions>().get("q8_full").splitLines(translated, 380).joinToString("<br>")
     interfaces.sendText(ITEM_INTERFACE_ID, "line1", lines)
+    sendContinue(ITEM_INTERFACE_ID)
     pauseButton()
     close(ITEM_INTERFACE_ID)
 }
@@ -37,6 +39,7 @@ suspend fun Player.item(sprite: Int, text: String) {
     val translated = translate(text)
     val lines = if (translated.contains("\n")) translated.trimIndent().replace("\n", "<br>") else get<FontDefinitions>().get("q8_full").splitLines(translated, 380).joinToString("<br>")
     interfaces.sendText(ITEM_INTERFACE_ID, "line1", lines)
+    sendContinue(ITEM_INTERFACE_ID)
     pauseButton()
     close(ITEM_INTERFACE_ID)
 }
@@ -50,6 +53,7 @@ suspend fun Player.items(item1: String, item2: String, text: String) {
     val translated = translate(text)
     val lines = if (translated.contains("\n")) translated.trimIndent().replace("\n", "<br>") else get<FontDefinitions>().get("q8_full").splitLines(translated, 380).joinToString("<br>")
     interfaces.sendText(DOUBLE_ITEM_INTERFACE_ID, "line1", lines)
+    sendContinue(DOUBLE_ITEM_INTERFACE_ID)
     pauseButton()
     close(DOUBLE_ITEM_INTERFACE_ID)
 }

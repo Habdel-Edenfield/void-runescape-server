@@ -1,5 +1,7 @@
 package content.entity.player.dialogue.type
 
+import content.entity.player.dialogue.sendContinue
+import content.entity.player.dialogue.sendTranslated
 import content.entity.player.dialogue.translate
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.message
@@ -19,7 +21,6 @@ import world.gregs.voidps.engine.suspend.pauseButton
 
 private const val LEVEL_UP_INTERFACE_ID = "dialogue_level_up"
 private const val LEVEL_UP_HINT = "Open your stats menu and click on the flashing icon for more information."
-private const val CLICK_TO_CONTINUE = "Click here to continue"
 
 suspend fun Player.levelUp(skill: Skill, text: String) {
     if (levelUp(this, skill, text)) {
@@ -39,18 +40,10 @@ fun levelUp(player: Player, skill: Skill, text: String): Boolean {
         player.interfaces.sendText(LEVEL_UP_INTERFACE_ID, "line${index + 1}", line)
     }
     if (lines.size < 3) {
-        player.sendTranslated("line3", LEVEL_UP_HINT)
+        player.sendTranslated(LEVEL_UP_INTERFACE_ID, "line3", LEVEL_UP_HINT)
     }
-    player.sendTranslated("continue", CLICK_TO_CONTINUE)
+    player.sendContinue(LEVEL_UP_INTERFACE_ID)
     return true
-}
-
-/** Replaces text the client fills in itself, only when the player has a translation for it */
-private fun Player.sendTranslated(component: String, text: String) {
-    val translated = translate(text)
-    if (translated != text) {
-        interfaces.sendText(LEVEL_UP_INTERFACE_ID, component, translated)
-    }
 }
 
 class LevelUp : Script {

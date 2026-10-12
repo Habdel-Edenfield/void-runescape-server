@@ -3,6 +3,7 @@ package content.entity.player.dialogue.type
 import content.entity.player.dialogue.Expression
 import content.entity.player.dialogue.familiarChatheadAnimation
 import content.entity.player.dialogue.sendChat
+import content.entity.player.dialogue.sendContinue
 import content.entity.player.dialogue.translate
 import net.pearx.kasechange.toSnakeCase
 import world.gregs.voidps.engine.client.ui.close
@@ -65,6 +66,7 @@ private suspend fun Player.npc(lines: List<String>, clickToContinue: Boolean, np
     sendNPCHead(this, id, head, npcDef.id)
     interfaces.sendChat(id, head, if (npcDef.contains("dialogue")) "${npcDef["dialogue", ""]}_$expression" else expression, title ?: npcDef.name, lines)
     if (clickToContinue) {
+        sendContinue(id)
         pauseButton()
         close(id)
     }

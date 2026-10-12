@@ -1,5 +1,6 @@
 package content.entity.player.dialogue.type
 
+import content.entity.player.dialogue.sendContinue
 import content.entity.player.dialogue.sendLines
 import content.entity.player.dialogue.translate
 import world.gregs.voidps.engine.client.ui.close
@@ -22,6 +23,7 @@ suspend fun Player.statement(text: String, clickToContinue: Boolean = true) {
     }
     interfaces.sendLines(id, lines)
     if (clickToContinue) {
+        sendContinue(id)
         pauseButton()
         close(id)
     }

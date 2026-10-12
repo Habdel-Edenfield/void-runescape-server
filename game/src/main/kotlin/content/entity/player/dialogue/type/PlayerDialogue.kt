@@ -2,6 +2,7 @@ package content.entity.player.dialogue.type
 
 import content.entity.player.dialogue.Expression
 import content.entity.player.dialogue.sendChat
+import content.entity.player.dialogue.sendContinue
 import content.entity.player.dialogue.translate
 import net.pearx.kasechange.toSnakeCase
 import world.gregs.voidps.engine.client.ui.close
@@ -41,6 +42,7 @@ private suspend fun Player.player(expression: String, lines: List<String>, large
     sendPlayerHead(this, id, head)
     interfaces.sendChat(id, head, expression, title ?: name, lines)
     if (clickToContinue) {
+        sendContinue(id)
         pauseButton()
         close(id)
     }
