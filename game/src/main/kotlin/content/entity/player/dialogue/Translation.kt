@@ -21,6 +21,11 @@ class Translation : Script {
     init {
         messageTranslator = { player, text -> player.translate(text) }
 
+        // The cache's Task System scripts read it, and a client keeps it from the account logged in before
+        playerSpawn {
+            sendVariable("portuguese_dialogue")
+        }
+
         playerCommand("portugues", desc = "Toggle Brazilian Portuguese dialogue") {
             if (toggle("portuguese_dialogue")) {
                 message("Portuguese dialogue enabled.")
@@ -35,7 +40,8 @@ class Translation : Script {
  * The `dialogue_pt_br` translation of [text], or [text] unchanged when the player hasn't
  * enabled Portuguese or the line hasn't been translated yet.
  * `%server%` in either column stands in for the `server.name` setting, and `%1%`, `%2%`...
- * in `en` match any text which is copied into the same placeholder in `pt`.
+ * in `en` match any text which is copied into the same placeholder in `pt`, translated when it's
+ * a task name, difficulty or set from `interface_pt_br` (e.g. "You have completed the Task 'On the Run'...").
  */
 fun Player.translate(text: String): String {
     if (!get("portuguese_dialogue", false)) {
@@ -49,7 +55,10 @@ fun Player.translate(text: String): String {
     }
     for ((english, portuguese) in index.placeholders) {
         val match = english.matchEntire(text) ?: continue
-        return placeholder.replace(portuguese) { match.groups["p${it.groupValues[1]}"]?.value ?: it.value }
+        return placeholder.replace(portuguese) { token ->
+            val value = match.groups["p${token.groupValues[1]}"]?.value ?: return@replace token.value
+            index.taskNames[value] ?: value
+        }
     }
     missingTranslation(text)
     if (text.isNotBlank() && missing.add(text)) {
@@ -64,18 +73,21 @@ var missingTranslation: (String) -> Unit = {}
 /** Lookups built once per table load, as scanning every row for each line gets slow as the table grows */
 private class TranslationIndex(
     val table: TableDefinition,
+    val tasks: TableDefinition?,
     val serverName: String,
     val exact: Map<String, String>,
     val placeholders: List<Pair<Regex, String>>,
+    val taskNames: Map<String, String>,
 )
 
 private var index: TranslationIndex? = null
 
 private fun index(): TranslationIndex {
     val table = Tables.get("dialogue_pt_br")
+    val tasks = Tables.getOrNull("interface_pt_br")
     val name = Settings["server.name"]
     val current = index
-    if (current != null && current.table === table && current.serverName == name) {
+    if (current != null && current.table === table && current.tasks === tasks && current.serverName == name) {
         return current
     }
     val exact = HashMap<String, String>()
@@ -89,8 +101,17 @@ private fun index(): TranslationIndex {
             exact[english] = portuguese
         }
     }
-    return TranslationIndex(table, name, exact, placeholders).also { index = it }
+    val taskNames = HashMap<String, String>()
+    for (row in tasks?.rows().orEmpty()) {
+        if (taskNamePrefixes.any { row.rowId.startsWith(it) }) {
+            taskNames[row.string("en")] = row.string("pt")
+        }
+    }
+    return TranslationIndex(table, tasks, name, exact, placeholders, taskNames).also { index = it }
 }
+
+/** Rows of `interface_pt_br` the server inserts into task chat messages; the rest only exists in the cache */
+private val taskNamePrefixes = listOf("name_", "difficulty_", "area_", "chat_")
 
 private val logger = InlineLogger("Translation")
 

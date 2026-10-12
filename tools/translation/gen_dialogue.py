@@ -275,7 +275,8 @@ PT = {
 }
 
 if TRANSLATIONS:
-    for file in sorted(glob.glob(TRANSLATIONS + "/pt_*.json")):
+    # pt_tasks*/pt_level_up* belong to the interfaces the client draws from the cache (tools/.../InterfaceTranslation.kt)
+    for file in sorted(f for f in glob.glob(TRANSLATIONS + "/pt_*.json") if not f.split("/")[-1].startswith(("pt_tasks", "pt_level_up"))):
         PT.update({en: pt for en, pt in json.load(open(file)).items() if "\n" not in en})
 
 # Text shared across the game rather than said by one NPC: (header, [(row id, en, pt)]).
@@ -395,11 +396,14 @@ GENERAL = [
         ("rockslug_salt_weak", "The rockslug isn't weak enough to be affected by the salt.", "A rockslug ainda não está fraca o bastante para o sal fazer efeito."),
         ("rockslug_salt_dies", "The rockslug shrivels up and dies.", "A rockslug murcha e morre."),
     ]),
-    ("Chat messages - achievement tasks, the first ones complete as the tutorial ends; task names stay in English", [
-        ("task_completed_set", "You have completed the Task '%1%' in the %2% set!", "Você completou a tarefa '%1%' do conjunto %2%!"),
+    ("Chat messages - achievement tasks (TaskSystem.kt); the task name, difficulty and set come from interface_pt_br like in the Task List", [
+        ("task_completed_set", "You have completed the Task '%1%' in the %2% %3% set!", "Você completou a tarefa '%1%' do conjunto de %3% (%2%)!"),
         ("task_completed", "You have completed the Task '%1%'!", "Você completou a tarefa '%1%'!"),
         ("task_total_one", "You have now completed %1% Task in total.", "Agora você completou %1% tarefa no total."),
         ("task_total", "You have now completed %1% Tasks in total.", "Agora você completou %1% tarefas no total."),
+        # Sent as two lines: "...all of the Beginner Tasks in the Lumbridge and Draynor" / "set. Speak to Explorer Jack in Lumbridge to claim your reward."
+        ("task_set_finished", "Congratulations! You have completed all of the %1% Tasks in the %2%", "Parabéns! Você completou todas as tarefas do conjunto de %2% (%1%)."),
+        ("task_set_reward", "set. Speak to %1% to claim your reward.", "Fale com %1% para receber sua recompensa."),
     ]),
     ("Dialogue boxes - text the client fills in from the cache", [
         ("click_to_continue", "Click here to continue", "Clique aqui para continuar"),

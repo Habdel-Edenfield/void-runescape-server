@@ -109,6 +109,12 @@ id = 19
 [task_main_list_populate]
 id = 3983
 
+[task_system_populate]
+id = 3971
+
+[task_system_progress]
+id = 4002
+
 [task_main_list_filter_done]
 id = 3985
 

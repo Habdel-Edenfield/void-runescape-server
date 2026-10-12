@@ -58,3 +58,10 @@ tasks.register<JavaExec>("fixEnums") {
     mainClass.set("world.gregs.voidps.tools.cache.FixEnums")
     workingDir = rootDir
 }
+
+// Brazilian Portuguese for interfaces the client draws from the cache: --args=dump|table|patch (see InterfaceTranslation)
+tasks.register<JavaExec>("translateInterfaces") {
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass.set("world.gregs.voidps.tools.cache.InterfaceTranslation")
+    workingDir = rootDir
+}

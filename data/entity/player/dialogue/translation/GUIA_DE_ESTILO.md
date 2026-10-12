@@ -46,6 +46,13 @@ Vale para todo texto em `dialogue_pt_br.tables.toml` e `tutorial_island_pt_br.ta
 | coins | moedas |
 | quest / quest points | missão / pontos de missão |
 | task(s) | tarefa(s) (Taskmaster, Task List, Achievement Diary ficam em inglês) |
+| Task names | traduzidos, com o trocadilho quando der ("On the Run" = "Na correria"); nome de missão, NPC ou lugar fica em inglês. O chat usa o mesmo nome da janela |
+| Beginner / Easy / Medium / Hard / Elite | Iniciante / Fácil / Média / Difícil / Elite (concordam com "tarefa"; "de dificuldade Média") |
+| set (de tarefas) | conjunto ("do conjunto de Lumbridge/Draynor (Iniciante)") |
+| Description / Hints / Rewards / Requirements (abas) | Descrição / Dicas / Recompensas / Requisitos |
+| Pin / Back (botões) | Fixar / Voltar (a opção do botão direito continua 'Pin') |
+| Skill Advance Guide | fica em inglês (nome de janela): "Abrir o Skill Advance Guide" |
+| Congratulations! (subiu de nível) | Parabéns! — "Você subiu um nível em Cooking!", "Agora você está no nível 2." |
 | melee / ranged / magic | corpo a corpo / à distância (longo alcance) / magia |
 | rangers | arqueiros |
 | the Duke | o Duke |

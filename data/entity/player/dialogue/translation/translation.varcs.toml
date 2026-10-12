@@ -1,0 +1,6 @@
+# Sent to the client so the interfaces drawn from the cache (Task System, level up pop-up) can pick Portuguese
+# (see cache/.../translation/CacheTranslationPatch.kt). 2000 is past the cache's varcs, inside the client's spare 1000.
+[portuguese_dialogue]
+id = 2000
+format = "boolean"
+persist = true

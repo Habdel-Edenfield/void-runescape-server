@@ -147,12 +147,12 @@ class TranslationTest : WorldTest() {
     }
 
     @Test
-    fun `Task messages keep the task name and count`() {
+    fun `Task messages translate the task name and keep the count`() {
         val player = createPlayer()
         player["portuguese_dialogue"] = true
 
         assertEquals(
-            "Você completou a tarefa 'On the Run' do conjunto Beginner Lumbridge/Draynor!",
+            "Você completou a tarefa 'Na correria' do conjunto de Lumbridge/Draynor (Iniciante)!",
             player.translate("You have completed the Task 'On the Run' in the Beginner Lumbridge/Draynor set!"),
         )
         assertEquals("Agora você completou 1 tarefa no total.", player.translate("You have now completed 1 Task in total."))
