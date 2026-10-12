@@ -10,6 +10,7 @@ kotlin {
         implementation(project(":types"))
         implementation(project(":tools"))
         implementation(libs.displee.cache)
+        implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.16.1")
     }
 }
 
@@ -35,6 +36,15 @@ tasks.register<JavaExec>("renderMinimap") {
     mainClass.set("world.gregs.voidps.mapeditor.RenderMinimap")
     classpath = sourceSets["main"].runtimeClasspath
     jvmArgs("-Djava.awt.headless=true", "-Xmx4g")
+}
+
+tasks.register<JavaExec>("mapEditorServer") {
+    group = "map editor"
+    description = "Serves the 3D map editor api on localhost:8391, writing edits to mapeditor/work/cache/."
+    mainClass.set("world.gregs.voidps.mapeditor.MapEditorServer")
+    classpath = sourceSets["main"].runtimeClasspath
+    jvmArgs("-Xmx2g")
+    cliArgs()
 }
 
 tasks.register<JavaExec>("minimap") {
