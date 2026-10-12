@@ -48,6 +48,9 @@ class MapDecoder(val xteas: Map<Int, IntArray>? = null) : DefinitionDecoder<MapD
         val definition = definitions[id]
         definition.id = region
         loadTiles(reader, definition.tiles)
+        if (reader.remaining > 0) {
+            definition.extras = ByteArray(reader.remaining).also { reader.readBytes(it) }
+        }
         objects.decode(cache, definition, modified)
     }
 

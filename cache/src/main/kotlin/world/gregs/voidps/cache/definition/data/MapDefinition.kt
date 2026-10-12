@@ -6,6 +6,7 @@ class MapDefinition(
     override var id: Int = -1,
     val tiles: LongArray = LongArray(64 * 64 * 4),
     val objects: MutableList<MapObject> = mutableListOf(),
+    var extras: ByteArray? = null,
 ) : Definition {
 
     fun getTile(localX: Int, localY: Int, level: Int) = MapTile(tiles[index(localX, localY, level)])

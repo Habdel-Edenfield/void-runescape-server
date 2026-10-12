@@ -15,23 +15,28 @@ class MapTileEncoder : DefinitionEncoder<MapDefinition> {
             for (localX in 0 until 64) {
                 for (localY in 0 until 64) {
                     val tile = definition.getTile(localX, localY, level)
-                    if (tile.underlayId != 0) {
-                        writeByte(tile.underlayId + 81)
-                    }
-                    if (tile.settings != 0) {
-                        writeByte(tile.settings + 49)
-                    }
                     if (tile.attrOpcode != 0) {
                         writeByte(tile.attrOpcode)
                         writeByte(tile.overlayId)
                     }
+                    if (tile.settings != 0) {
+                        writeByte(tile.settings + 49)
+                    }
+                    if (tile.underlayId != 0) {
+                        writeByte(tile.underlayId + 81)
+                    }
                     if (tile.height != 0) {
                         writeByte(1)
                         writeByte(tile.height)
+                    } else {
+                        writeByte(0)
                     }
-                    writeByte(0)
                 }
             }
+        }
+        val extras = definition.extras
+        if (extras != null) {
+            writeBytes(extras)
         }
     }
 }

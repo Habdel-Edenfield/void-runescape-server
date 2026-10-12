@@ -2,6 +2,7 @@ package world.gregs.voidps.tools.map
 
 import io.mockk.every
 import io.mockk.mockk
+import org.junit.jupiter.api.Assertions.assertArrayEquals
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.BeforeEach
@@ -42,6 +43,20 @@ internal class MapDecoderTest {
         assertEquals(2, def.getTile(1, 0, 0).settings)
         assertEquals(3, def.getTile(0, 1, 0).settings)
         assertEquals(4, def.getTile(0, 0, 1).settings)
+    }
+
+    @Test
+    fun `Read extras after tiles`() {
+        val data = ByteArray((4 * 64 * 64) + 3)
+        data[data.size - 2] = 7
+        data[data.size - 1] = 9
+        every { cache.data(5, 123, 0, null) } returns data
+        every { cache.data(5, "l48_57", any()) } returns null
+
+        decoder.load(definitions, cache, 123)
+        val def = definitions[123]
+
+        assertArrayEquals(byteArrayOf(0, 7, 9), def.extras)
     }
 
     @Test
