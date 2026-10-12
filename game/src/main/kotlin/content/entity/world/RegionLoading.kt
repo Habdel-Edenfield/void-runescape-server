@@ -87,7 +87,7 @@ class RegionLoading(val dynamicZones: DynamicZones) : Script {
         }
     }
 
-    fun needsRegionChange(player: Player) = !inViewOfZone(player, player.viewport!!.lastLoadZone, player.viewport!!.zoneRadius - 2) || crossedDynamicBoarder(player)
+    fun needsRegionChange(player: Player) = !inViewOfZone(player, player.viewport!!.lastLoadZone, Viewport.RELOAD_RADIUS) || crossedDynamicBoarder(player)
 
     /**
      * Check if we're within 4 (default) zones of the last loaded zone.

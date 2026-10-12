@@ -76,7 +76,7 @@ class AccountManager(
         player.client = client
         (player.variables as PlayerVariables).client = client
         if (viewport) {
-            player.viewport = Viewport()
+            player.viewport = Viewport().apply { size = Viewport.sizeIndex(Settings["world.players.mapSize", 104]) }
         }
         player.collision = CollisionStrategyProvider.get(character = player)
     }

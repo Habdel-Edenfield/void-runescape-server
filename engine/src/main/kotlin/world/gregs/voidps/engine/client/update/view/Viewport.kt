@@ -68,5 +68,14 @@ class Viewport {
         // expanding square when loading areas with more than max entities
         const val VIEW_RADIUS = 15
         val VIEWPORT_SIZES = intArrayOf(104, 120, 136, 168)
+
+        // Zones a player can move from the last loaded zone before the map is reloaded.
+        // Kept the same for every size so larger maps keep their extra distance on all sides.
+        const val RELOAD_RADIUS = 4
+
+        /**
+         * Index of the map size [tiles] wide, or the smallest size if it isn't one the client supports
+         */
+        fun sizeIndex(tiles: Int): Int = VIEWPORT_SIZES.indexOf(tiles).coerceAtLeast(0)
     }
 }
