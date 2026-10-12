@@ -413,6 +413,7 @@ object MontadorExport {
             map["useOption"] = c.useOption
         }
         map["setting"] = c.setting.setting
+        // hook names as the client fires them (checked in void-client: Class46.method433 and client.method107)
         val hooks = linkedMapOf<String, Any?>()
         fun hook(key: String, value: Array<Any>?) {
             if (value != null) {
@@ -422,23 +423,23 @@ object MontadorExport {
         hook("onLoad", c.information)
         hook("onMouseOver", c.mouseEnterHandler)
         hook("onMouseLeave", c.mouseExitHandler)
-        hook("handler4771", c.anObjectArray4771)
-        hook("handler4768", c.anObjectArray4768)
+        hook("onTargetLeave", c.anObjectArray4771)
+        hook("onTargetEnter", c.anObjectArray4768)
         hook("onVarTransmit", c.stateChangeHandler)
         hook("onInvTransmit", c.invUpdateHandler)
         hook("onStatTransmit", c.refreshHandler)
         hook("onTimer", c.updateHandler)
-        hook("handler4770", c.anObjectArray4770)
+        hook("onOp", c.anObjectArray4770)
         hook("onMouseRepeat", c.mouseMotionHandler)
         hook("onClick", c.mousePressedHandler)
         hook("onClickRepeat", c.mouseDraggedHandler)
         hook("onRelease", c.mouseReleasedHandler)
         hook("onHold", c.mouseDragPassHandler)
-        hook("handler4852", c.anObjectArray4852)
-        hook("handler4711", c.anObjectArray4711)
-        hook("handler4753", c.anObjectArray4753)
-        hook("handler4688", c.anObjectArray4688)
-        hook("handler4775", c.anObjectArray4775)
+        hook("onDrag", c.anObjectArray4852)
+        hook("onDragComplete", c.anObjectArray4711)
+        hook("onScrollWheel", c.anObjectArray4753)
+        hook("onVarcTransmit", c.anObjectArray4688)
+        hook("onVarcStrTransmit", c.anObjectArray4775)
         if (hooks.isNotEmpty()) {
             map["hooks"] = hooks
         }
