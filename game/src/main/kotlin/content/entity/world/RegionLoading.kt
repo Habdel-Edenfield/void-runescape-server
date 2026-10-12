@@ -1,7 +1,11 @@
 package content.entity.world
 
+import content.entity.player.dialogue.type.choice
 import world.gregs.voidps.engine.Script
+import world.gregs.voidps.engine.client.command.commandAlias
+import world.gregs.voidps.engine.client.command.playerCommand
 import world.gregs.voidps.engine.client.instruction.instruction
+import world.gregs.voidps.engine.client.message
 import world.gregs.voidps.engine.client.update.batch.ZoneBatchUpdates
 import world.gregs.voidps.engine.client.update.view.Viewport
 import world.gregs.voidps.engine.data.AccountManager
@@ -11,6 +15,7 @@ import world.gregs.voidps.engine.entity.character.player.Player
 import world.gregs.voidps.engine.entity.character.player.Players
 import world.gregs.voidps.engine.get
 import world.gregs.voidps.engine.map.zone.DynamicZones
+import world.gregs.voidps.engine.queue.strongQueue
 import world.gregs.voidps.network.client.instruction.FinishRegionLoad
 import world.gregs.voidps.network.login.protocol.encode.dynamicMapRegion
 import world.gregs.voidps.network.login.protocol.encode.mapRegion
@@ -66,6 +71,20 @@ class RegionLoading(val dynamicZones: DynamicZones) : Script {
             playerRegions[index - 1] = 0
         }
 
+        playerCommand("view_distance", desc = "Choose how far away scenery is shown") {
+            val player = this
+            player.strongQueue("view_distance") {
+                val choice = player.choice(VIEW_DISTANCES.map { it.second }, "How far away should scenery be shown?")
+                if (choice == -1) {
+                    return@strongQueue
+                }
+                val (tiles, name) = VIEW_DISTANCES[choice - 1]
+                setViewDistance(player, tiles)
+                player.message("View distance set to ${name.lowercase()}.")
+            }
+        }
+        commandAlias("view_distance", "distancia")
+
         /**
          * A region has been changed and needs updating for all players
          */
@@ -75,6 +94,22 @@ class RegionLoading(val dynamicZones: DynamicZones) : Script {
                     updateRegion(player, initial = false, force = true)
                 }
             }
+        }
+    }
+
+    /**
+     * Save the [tiles] wide map size the player has chosen and reload their map with it
+     */
+    fun setViewDistance(player: Player, tiles: Int) {
+        player["view_distance"] = tiles
+        val viewport = player.viewport ?: return
+        val size = Viewport.sizeIndex(tiles)
+        if (viewport.size == size) {
+            return
+        }
+        viewport.size = size
+        if (player.networked) {
+            updateRegion(player, initial = false, force = true)
         }
     }
 
@@ -192,5 +227,9 @@ class RegionLoading(val dynamicZones: DynamicZones) : Script {
             playerRegions = if (initial) playerRegions else null,
             clientTile = if (initial) player.tile.id else null,
         )
+    }
+
+    companion object {
+        private val VIEW_DISTANCES = listOf(104 to "Near", 120 to "Medium", 136 to "Far", 168 to "Very far")
     }
 }
