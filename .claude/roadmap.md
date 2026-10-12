@@ -18,7 +18,11 @@ Ideias e pendências deste fork. O roadmap do projeto original fica em `docs/Roa
 - Testes em `RegionLoadingTest`.
 
 **Falta:**
-- Botões numa tela do jogo, porque jogador comum não usa comandos. A aba Opções não tem botão livre. Plano combinado com o Habdel: seção "View Distance" na tela Graphics Options (742), abaixo de "Screen Sizing", com 4 botões no estilo MIN/LOW/MID/HIGH. A tela é editada e gravada no cache pela sessão do Montador de Interfaces; o servidor trata os cliques chamando `setViewDistance` e realça o botão escolhido.
+- **Botões na tela Graphics Options (742), para depois.** Jogador comum não usa comandos, e o lugar onde o Habdel procurou a opção é essa tela (ícone do monitor na aba Opções). Plano: seção "View Distance" abaixo de "Screen Sizing", com 4 botões no estilo MIN/LOW/MID/HIGH. O servidor trata os cliques chamando `setViewDistance` e realça o botão escolhido.
+  - Por que ainda não dá (levantado pela sessão do Montador em 2026-10-12, lendo o cache): a 742 no cache é só a moldura (fundo, título, fechar). Todo o conteúdo é criado na hora de abrir pelos scripts de cliente 2594 → 2595 → 2596 (`cc_create`, sub-rotinas 1216-1220, 2918, 3451, 4041). A marcação do botão escolhido vem das preferências do cliente (instruções 3111, 6131), não de varp/varbit, e os cliques mudam a configuração no próprio cliente, sem avisar o servidor. Pôr uma seção ali exige escrever ou alterar CS2. O Void tem `ClientScriptEncoder`, mas não tem montador de texto para CS2, e o Montador só grava interfaces novas.
+  - Também não há botão livre na aba Opções (261), e acrescentar um esbarra no mesmo limite de editar uma interface existente.
+  - Alternativa já disponível: uma interface nova "view_distance" montada no Montador, com 4 botões e realce controlado pelo servidor (visibilidade de componente). Ficou de lado porque só abriria pelo `::distancia`, sem ganho real sobre o menu atual.
+  - Retomar quando o Montador ou o Void conseguirem editar interfaces existentes ou CS2.
 
 **Pontos a decidir:**
 - Padrão para conta nova: mais leve (104) e o jogador aumenta, ou longe (168) e quem precisar diminui.
