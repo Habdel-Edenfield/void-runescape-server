@@ -68,6 +68,8 @@ tasks {
             }
             exclude("world/gregs/voidps/engine/log/**")
             exclude(dependency("ch.qos.logback:logback-classic:.*"))
+            // Loaded via ServiceLoader so minimize can't see it's used
+            exclude(dependency("io.ktor:ktor-serialization-kotlinx-json-jvm:.*"))
         }
         if (db) {
             archiveBaseName.set("void-server-db-$version")
