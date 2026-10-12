@@ -147,6 +147,20 @@ class TranslationTest : WorldTest() {
     }
 
     @Test
+    fun `Task messages keep the task name and count`() {
+        val player = createPlayer()
+        player["portuguese_dialogue"] = true
+
+        assertEquals(
+            "Você completou a tarefa 'On the Run' do conjunto Beginner Lumbridge/Draynor!",
+            player.translate("You have completed the Task 'On the Run' in the Beginner Lumbridge/Draynor set!"),
+        )
+        assertEquals("Agora você completou 1 tarefa no total.", player.translate("You have now completed 1 Task in total."))
+        assertEquals("Agora você completou 2 tarefas no total.", player.translate("You have now completed 2 Tasks in total."))
+        assertEquals("Esta rocha não contém minério.", player.translate("This rock contains no ore."))
+    }
+
+    @Test
     fun `How many box and progress bar are translated`() {
         val player = createPlayer()
         player["portuguese_dialogue"] = true

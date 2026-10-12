@@ -488,6 +488,198 @@ pt = "Quantos você quer cortar?"
 en = "How many would you like to heat?"
 pt = "Quantos você quer aquecer?"
 
+# Chat messages - Tutorial Island activities, measured by playing each one with Portuguese on; item names stay in English
+
+[.chat_cant_reach]
+en = "I can't reach that."
+pt = "Não consigo alcançar isso."
+
+[.chat_nothing_happens]
+en = "Nothing interesting happens."
+pt = "Nada de interessante acontece."
+
+[.chat_level_required]
+en = "You need to have a %1% level of %2%."
+pt = "Você precisa de nível %2% em %1%."
+
+[.chat_instructor_first]
+en = "You should talk to your instructor before going through the %1%."
+pt = "Fale com o seu instrutor antes de passar por aqui."
+
+[.woodcutting_swing_tree]
+en = "You swing your hatchet at the tree."
+pt = "Você golpeia a árvore com o machado."
+
+[.woodcutting_swing_ivy]
+en = "You swing your hatchet at the ivy."
+pt = "Você golpeia a hera com o machado."
+
+[.woodcutting_get_logs]
+en = "You get some %1%."
+pt = "Você conseguiu: %1%."
+
+[.woodcutting_no_hatchet]
+en = "You need a hatchet to chop down this tree."
+pt = "Você precisa de um machado (hatchet) para cortar esta árvore."
+
+[.woodcutting_no_usable_hatchet]
+en = "You do not have a hatchet which you have the woodcutting level to use."
+pt = "Você não tem um machado que o seu nível de Woodcutting permita usar."
+
+[.woodcutting_full]
+en = "Your inventory is too full to hold any more logs."
+pt = "O seu inventário está cheio demais para guardar mais toras."
+
+[.woodcutting_birds_nest]
+en = "<red>A bird's nest falls out of the %1%!"
+pt = "<red>Um ninho de pássaro (bird's nest) caiu da árvore!"
+
+[.firemaking_attempt]
+en = "You attempt to light the logs."
+pt = "Você tenta acender as toras."
+
+[.firemaking_success]
+en = "The fire catches and the logs begin to burn."
+pt = "O fogo pega e as toras começam a queimar."
+
+[.firemaking_cant_here]
+en = "You can't light a fire here."
+pt = "Você não pode acender uma fogueira aqui."
+
+[.fishing_cast_net]
+en = "You cast out your net..."
+pt = "Você lança a sua rede..."
+
+[.fishing_catch]
+en = "You catch some %1%."
+pt = "Você pescou: %1%."
+
+[.fishing_need_tackle]
+en = "You need a %1% to catch these fish."
+pt = "Para pescar estes peixes você precisa de: %1%."
+
+[.fishing_full]
+en = "Your inventory is too full to hold any more fish."
+pt = "O seu inventário está cheio demais para guardar mais peixes."
+
+[.cooking_shrimps]
+en = "You successfully cook some shrimps."
+pt = "Você cozinhou os camarões (shrimps) com sucesso."
+
+[.cooking_shrimps_burnt]
+en = "You accidentally burn the shrimps."
+pt = "Você queimou os camarões sem querer."
+
+[.cooking_bread]
+en = "You successfully bake some bread."
+pt = "Você assou um pão (bread) com sucesso."
+
+[.cooking_bread_burnt]
+en = "You accidentally burn the bread dough."
+pt = "Você queimou a massa de pão sem querer."
+
+[.cooking_bread_dough]
+en = "You mix the water and flour to make some bread dough."
+pt = "Você mistura a água e a farinha e faz massa de pão (bread dough)."
+
+[.cooking_nothing]
+en = "You have nothing to cook."
+pt = "Você não tem nada para cozinhar."
+
+[.mining_prospect]
+en = "You examine the rock for ores..."
+pt = "Você examina a rocha em busca de minério..."
+
+[.mining_no_ore]
+en = "This rock contains no ore."
+pt = "Esta rocha não contém minério."
+
+[.mining_contains]
+en = "This rock contains %1%."
+pt = "Esta rocha contém: %1%."
+
+[.mining_swing]
+en = "You swing your pickaxe at the rock."
+pt = "Você golpeia a rocha com a picareta."
+
+[.mining_get_ore]
+en = "You manage to mine some %1%."
+pt = "Você conseguiu minerar: %1%."
+
+[.mining_no_pickaxe]
+en = "You need a pickaxe to mine this rock."
+pt = "Você precisa de uma picareta (pickaxe) para minerar esta rocha."
+
+[.mining_no_usable_pickaxe]
+en = "You do not have a pickaxe which you have the mining level to use."
+pt = "Você não tem uma picareta que o seu nível de Mining permita usar."
+
+[.mining_full]
+en = "Your inventory is too full to hold any more ore."
+pt = "O seu inventário está cheio demais para guardar mais minério."
+
+[.mining_depleted]
+en = "There is currently no ore available in this rock."
+pt = "No momento não há minério nesta rocha."
+
+[.smelting_bronze]
+en = "You smelt the copper and tin together in the furnace."
+pt = "Você funde o cobre e o estanho juntos na fornalha."
+
+[.smelting_retrieve]
+en = "You retrieve a bar of %1%."
+pt = "Você retira uma barra de %1%."
+
+[.smelting_no_ores]
+en = "You don't have any ores to smelt."
+pt = "Você não tem minérios para fundir."
+
+[.smithing_make_a]
+en = "You hammer the %1% and make a %2%."
+pt = "Você martela o %1% e faz: %2%."
+
+[.smithing_make_an]
+en = "You hammer the %1% and make an %2%."
+pt = "Você martela o %1% e faz: %2%."
+
+[.smithing_no_hammer]
+en = "You need a Hammer to smith items."
+pt = "Você precisa de um martelo (Hammer) para forjar itens."
+
+[.smithing_not_enough_bars]
+en = "You do not have enough bars to smith this item."
+pt = "Você não tem barras suficientes para forjar este item."
+
+[.ranged_no_ammo]
+en = "There is no ammo left in your quiver."
+pt = "Não há mais munição na sua aljava."
+
+[.magic_no_runes]
+en = "You do not have the required items to cast this spell."
+pt = "Você não tem os itens necessários para lançar este feitiço."
+
+[.music_unlocked]
+en = "<red>You have unlocked a new music track: %1%."
+pt = "<red>Você desbloqueou uma nova música: %1%."
+
+# Chat messages - achievement tasks, the first ones complete as the tutorial ends; task names stay in English
+
+[.task_completed_set]
+en = "You have completed the Task '%1%' in the %2% set!"
+pt = "Você completou a tarefa '%1%' do conjunto %2%!"
+
+[.task_completed]
+en = "You have completed the Task '%1%'!"
+pt = "Você completou a tarefa '%1%'!"
+
+[.task_total_one]
+en = "You have now completed %1% Task in total."
+pt = "Agora você completou %1% tarefa no total."
+
+[.task_total]
+en = "You have now completed %1% Tasks in total."
+pt = "Agora você completou %1% tarefas no total."
+
 # Dialogue boxes - text the client fills in from the cache
 
 [.click_to_continue]

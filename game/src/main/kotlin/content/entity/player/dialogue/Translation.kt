@@ -40,11 +40,14 @@ fun Player.translate(text: String): String {
     if (!get("portuguese_dialogue", false)) {
         return text
     }
-    for (row in Tables.get("dialogue_pt_br").rows()) {
+    val rows = Tables.get("dialogue_pt_br").rows()
+    // Exact lines win over placeholders, so "This rock contains no ore." isn't caught by "This rock contains %1%."
+    val exact = rows.firstOrNull { serverName(it.string("en")) == text }
+    if (exact != null) {
+        return serverName(exact.string("pt"))
+    }
+    for (row in rows) {
         val english = serverName(row.string("en"))
-        if (english == text) {
-            return serverName(row.string("pt"))
-        }
         if (!placeholder.containsMatchIn(english)) {
             continue
         }
