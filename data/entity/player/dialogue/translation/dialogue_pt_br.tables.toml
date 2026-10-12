@@ -5422,6 +5422,44 @@ pt = "Parabéns! Você completou todas as tarefas do conjunto de %2% (%1%)."
 en = "set. Speak to %1% to claim your reward."
 pt = "Fale com %1% para receber sua recompensa."
 
+# View distance - RegionLoading.kt, the `view_distance`/`distancia` command
+
+[.view_distance_title]
+en = "How far away should scenery be shown?"
+pt = "Até que distância mostrar o cenário?"
+
+[.view_distance_near]
+en = "Near"
+pt = "Perto"
+
+[.view_distance_medium]
+en = "Medium"
+pt = "Médio"
+
+[.view_distance_far]
+en = "Far"
+pt = "Longe"
+
+[.view_distance_very_far]
+en = "Very far"
+pt = "Muito longe"
+
+[.view_distance_set_near]
+en = "View distance set to near."
+pt = "Distância de visão: perto."
+
+[.view_distance_set_medium]
+en = "View distance set to medium."
+pt = "Distância de visão: média."
+
+[.view_distance_set_far]
+en = "View distance set to far."
+pt = "Distância de visão: longe."
+
+[.view_distance_set_very_far]
+en = "View distance set to very far."
+pt = "Distância de visão: muito longe."
+
 # Dialogue boxes - text the client fills in from the cache
 
 [.click_to_continue]

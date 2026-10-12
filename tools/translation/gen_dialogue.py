@@ -405,6 +405,17 @@ GENERAL = [
         ("task_set_finished", "Congratulations! You have completed all of the %1% Tasks in the %2%", "Parabéns! Você completou todas as tarefas do conjunto de %2% (%1%)."),
         ("task_set_reward", "set. Speak to %1% to claim your reward.", "Fale com %1% para receber sua recompensa."),
     ]),
+    ("View distance - RegionLoading.kt, the `view_distance`/`distancia` command", [
+        ("view_distance_title", "How far away should scenery be shown?", "Até que distância mostrar o cenário?"),
+        ("view_distance_near", "Near", "Perto"),
+        ("view_distance_medium", "Medium", "Médio"),
+        ("view_distance_far", "Far", "Longe"),
+        ("view_distance_very_far", "Very far", "Muito longe"),
+        ("view_distance_set_near", "View distance set to near.", "Distância de visão: perto."),
+        ("view_distance_set_medium", "View distance set to medium.", "Distância de visão: média."),
+        ("view_distance_set_far", "View distance set to far.", "Distância de visão: longe."),
+        ("view_distance_set_very_far", "View distance set to very far.", "Distância de visão: muito longe."),
+    ]),
     ("Dialogue boxes - text the client fills in from the cache", [
         ("click_to_continue", "Click here to continue", "Clique aqui para continuar"),
     ]),
