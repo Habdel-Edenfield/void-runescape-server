@@ -7,6 +7,7 @@ import world.gregs.voidps.engine.client.message
 import world.gregs.voidps.engine.client.messageTranslator
 import world.gregs.voidps.engine.data.Settings
 import world.gregs.voidps.engine.data.config.RowDefinition
+import world.gregs.voidps.engine.data.config.TableDefinition
 import world.gregs.voidps.engine.data.definition.Rows
 import world.gregs.voidps.engine.data.definition.Tables
 import world.gregs.voidps.engine.entity.character.player.Player
@@ -40,24 +41,55 @@ fun Player.translate(text: String): String {
     if (!get("portuguese_dialogue", false)) {
         return text
     }
-    val rows = Tables.get("dialogue_pt_br").rows()
+    val index = index()
     // Exact lines win over placeholders, so "This rock contains no ore." isn't caught by "This rock contains %1%."
-    val exact = rows.firstOrNull { serverName(it.string("en")) == text }
+    val exact = index.exact[text]
     if (exact != null) {
-        return serverName(exact.string("pt"))
+        return exact
     }
-    for (row in rows) {
-        val english = serverName(row.string("en"))
-        if (!placeholder.containsMatchIn(english)) {
-            continue
-        }
-        val match = pattern(english).matchEntire(text) ?: continue
-        return placeholder.replace(serverName(row.string("pt"))) { match.groups["p${it.groupValues[1]}"]?.value ?: it.value }
+    for ((english, portuguese) in index.placeholders) {
+        val match = english.matchEntire(text) ?: continue
+        return placeholder.replace(portuguese) { match.groups["p${it.groupValues[1]}"]?.value ?: it.value }
     }
+    missingTranslation(text)
     if (text.isNotBlank() && missing.add(text)) {
         logger.info { "Missing pt_br translation: $text" }
     }
     return text
+}
+
+/** Called with every untranslated text shown to a Portuguese player, e.g. so tests can list them */
+var missingTranslation: (String) -> Unit = {}
+
+/** Lookups built once per table load, as scanning every row for each line gets slow as the table grows */
+private class TranslationIndex(
+    val table: TableDefinition,
+    val serverName: String,
+    val exact: Map<String, String>,
+    val placeholders: List<Pair<Regex, String>>,
+)
+
+private var index: TranslationIndex? = null
+
+private fun index(): TranslationIndex {
+    val table = Tables.get("dialogue_pt_br")
+    val name = Settings["server.name"]
+    val current = index
+    if (current != null && current.table === table && current.serverName == name) {
+        return current
+    }
+    val exact = HashMap<String, String>()
+    val placeholders = mutableListOf<Pair<Regex, String>>()
+    for (row in table.rows()) {
+        val english = serverName(row.string("en"))
+        val portuguese = serverName(row.string("pt"))
+        if (placeholder.containsMatchIn(english)) {
+            placeholders.add(pattern(english) to portuguese)
+        } else {
+            exact[english] = portuguese
+        }
+    }
+    return TranslationIndex(table, name, exact, placeholders).also { index = it }
 }
 
 private val logger = InlineLogger("Translation")
