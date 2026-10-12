@@ -96,14 +96,12 @@ class AreaSet {
                                 else -> params[key] = value()
                             }
                         }
-                        areas.add(
-                            Area(
-                                name,
-                                level ?: 0,
-                                level ?: 0,
-                                x.mapIndexed { index, m -> Point(m, y.getInt(index)) }.toMutableList(),
-                            ),
-                        )
+                        val points = if (x.size <= 2) {
+                            mutableListOf(Point(x.min(), y.min()), Point(x.max(), y.max()))
+                        } else {
+                            x.mapIndexed { index, m -> Point(m, y.getInt(index)) }.toMutableList()
+                        }
+                        areas.add(Area(name, level ?: 0, level ?: 3, points))
                     }
                 }
             }

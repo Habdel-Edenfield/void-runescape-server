@@ -5,7 +5,7 @@ import world.gregs.voidps.type.Region
 import javax.swing.*
 
 class OptionsPane(private val view: MapView) : JPanel() {
-    private val region = JLabel("16383")
+    private val region = JTextField("16383")
     private val tileX = JTextField("16383")
     private val tileY = JTextField("16383")
     private val tileLevel = JTextField("4")
@@ -36,6 +36,14 @@ class OptionsPane(private val view: MapView) : JPanel() {
         region.text = Region.id(x / 64, y / 64).toString()
     }
 
+    private fun navigateToRegion() {
+        if (updatingFromCamera) return
+        val id = region.text.toIntOrNull() ?: return
+        val centre = Region(id).tile.add(32, 32)
+        view.centreOn(centre.x, view.flipMapY(centre.y), view.level)
+        updatePosition(centre.x, centre.y, view.level)
+    }
+
     init {
         layout = BoxLayout(this, BoxLayout.PAGE_AXIS)
         isOpaque = false
@@ -47,6 +55,7 @@ class OptionsPane(private val view: MapView) : JPanel() {
         }
         add(region)
 
+        this.region.addActionListener { navigateToRegion() }
         tileX.addActionListener { navigateToFields() }
         tileY.addActionListener { navigateToFields() }
         tileLevel.addActionListener { navigateToFields() }
