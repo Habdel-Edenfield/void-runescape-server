@@ -29,14 +29,42 @@ class Translation : Script {
 /**
  * The `dialogue_pt_br` translation of [text], or [text] unchanged when the player hasn't
  * enabled Portuguese or the line hasn't been translated yet.
- * `%server%` in either column stands in for the `server.name` setting.
+ * `%server%` in either column stands in for the `server.name` setting, and `%1%`, `%2%`...
+ * in `en` match any text which is copied into the same placeholder in `pt`.
  */
 fun Player.translate(text: String): String {
     if (!get("portuguese_dialogue", false)) {
         return text
     }
-    val row = Tables.get("dialogue_pt_br").rows().firstOrNull { serverName(it.string("en")) == text } ?: return text
-    return serverName(row.string("pt"))
+    for (row in Tables.get("dialogue_pt_br").rows()) {
+        val english = serverName(row.string("en"))
+        if (english == text) {
+            return serverName(row.string("pt"))
+        }
+        if (!placeholder.containsMatchIn(english)) {
+            continue
+        }
+        val match = pattern(english).matchEntire(text) ?: continue
+        return placeholder.replace(serverName(row.string("pt"))) { match.groups["p${it.groupValues[1]}"]?.value ?: it.value }
+    }
+    return text
+}
+
+private val placeholder = Regex("%(\\d+)%")
+
+private val patterns = HashMap<String, Regex>()
+
+/** [english] as a regex with each `%n%` placeholder captured as group `pn` */
+private fun pattern(english: String): Regex = patterns.getOrPut(english) {
+    val regex = StringBuilder()
+    var last = 0
+    for (match in placeholder.findAll(english)) {
+        regex.append(Regex.escape(english.substring(last, match.range.first)))
+        regex.append("(?<p${match.groupValues[1]}>.*?)")
+        last = match.range.last + 1
+    }
+    regex.append(Regex.escape(english.substring(last)))
+    Regex(regex.toString())
 }
 
 private fun serverName(text: String): String = text.replace("%server%", Settings["server.name"])

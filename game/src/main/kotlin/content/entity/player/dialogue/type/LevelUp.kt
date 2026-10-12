@@ -1,5 +1,6 @@
 package content.entity.player.dialogue.type
 
+import content.entity.player.dialogue.translate
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.message
 import world.gregs.voidps.engine.client.ui.chat.an
@@ -17,6 +18,8 @@ import world.gregs.voidps.engine.queue.engineQueue
 import world.gregs.voidps.engine.suspend.pauseButton
 
 private const val LEVEL_UP_INTERFACE_ID = "dialogue_level_up"
+private const val LEVEL_UP_HINT = "Open your stats menu and click on the flashing icon for more information."
+private const val CLICK_TO_CONTINUE = "Click here to continue"
 
 suspend fun Player.levelUp(skill: Skill, text: String) {
     if (levelUp(this, skill, text)) {
@@ -26,7 +29,7 @@ suspend fun Player.levelUp(skill: Skill, text: String) {
 }
 
 fun levelUp(player: Player, skill: Skill, text: String): Boolean {
-    val lines = text.trimIndent().lines()
+    val lines = text.trimIndent().lines().map { player.translate(it) }
     player["level_up_icon"] = skill.name
     player.sendVariable("level_up_icon")
     if (!player.open(LEVEL_UP_INTERFACE_ID)) {
@@ -35,7 +38,19 @@ fun levelUp(player: Player, skill: Skill, text: String): Boolean {
     for ((index, line) in lines.withIndex()) {
         player.interfaces.sendText(LEVEL_UP_INTERFACE_ID, "line${index + 1}", line)
     }
+    if (lines.size < 3) {
+        player.sendTranslated("line3", LEVEL_UP_HINT)
+    }
+    player.sendTranslated("continue", CLICK_TO_CONTINUE)
     return true
+}
+
+/** Replaces text the client fills in itself, only when the player has a translation for it */
+private fun Player.sendTranslated(component: String, text: String) {
+    val translated = translate(text)
+    if (translated != text) {
+        interfaces.sendText(LEVEL_UP_INTERFACE_ID, component, translated)
+    }
 }
 
 class LevelUp : Script {
@@ -69,7 +84,7 @@ class LevelUp : Script {
             addVarbit("skill_stat_flash", skill.name.lowercase())
             val level = if (skill == Constitution) to / 10 else to
             // https://youtu.be/o6Ga2FGG1Dc?t=326
-            message("You've just advanced${skill.name.an()} ${skill.name} level! You have reached level $level.")
+            message(translate("You've just advanced${skill.name.an()} ${skill.name} level! You have reached level $level."))
             if (get("skip_level_up_dialogues", false)) {
                 return@maxLevelChanged
             }
@@ -84,7 +99,7 @@ class LevelUp : Script {
                 )
                 if (skill == Dungeoneering && level == 120 || level == Level.MAX_LEVEL) {
                     // https://youtu.be/o6Ga2FGG1Dc?t=64
-                    message("<red>Well done! You've achieved the highest possible level in this skill!")
+                    message(translate("<red>Well done! You've achieved the highest possible level in this skill!"))
                 }
             }
         }

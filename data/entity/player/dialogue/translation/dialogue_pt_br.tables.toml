@@ -365,3 +365,39 @@ pt = "O Lumbridge Guide deve estar um pouco a nordeste do pátio do castelo, e o
 [.magic_instructor_18]
 en = "If all else fails, visit the RuneScape website for a whole chestload of information on quests, skills and minigames as well as a very good starter's guide."
 pt = "Se nada mais der certo, visite o site do RuneScape para um baú cheio de informações sobre missões, habilidades e minijogos, além de um ótimo guia para iniciantes."
+
+# Level up - LevelUp.kt; skills keep their English names to match the skills tab
+
+[.level_up_congratulations_a]
+en = "Congratulations! You've just advanced a %1% level!"
+pt = "Parabéns! Você subiu um nível em %1%!"
+
+[.level_up_congratulations_an]
+en = "Congratulations! You've just advanced an %1% level!"
+pt = "Parabéns! Você subiu um nível em %1%!"
+
+[.level_up_reached]
+en = "You have now reached level %1%!"
+pt = "Agora você está no nível %1%!"
+
+[.level_up_hint]
+en = "Open your stats menu and click on the flashing icon for more information."
+pt = "Abra o menu de habilidades e clique no ícone piscando para mais informações."
+
+[.level_up_message_a]
+en = "You've just advanced a %1% level! You have reached level %2%."
+pt = "Você subiu um nível em %1%! Agora você está no nível %2%."
+
+[.level_up_message_an]
+en = "You've just advanced an %1% level! You have reached level %2%."
+pt = "Você subiu um nível em %1%! Agora você está no nível %2%."
+
+[.level_up_max]
+en = "<red>Well done! You've achieved the highest possible level in this skill!"
+pt = "<red>Muito bem! Você alcançou o nível máximo nesta habilidade!"
+
+# Dialogue boxes - text the client fills in from the cache
+
+[.click_to_continue]
+en = "Click here to continue"
+pt = "Clique aqui para continuar"

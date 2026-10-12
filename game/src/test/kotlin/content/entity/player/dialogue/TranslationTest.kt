@@ -1,6 +1,7 @@
 package content.entity.player.dialogue
 
 import WorldTest
+import containsMessage
 import content.area.misthalin.tutorial_island.inTutorial
 import content.area.misthalin.tutorial_island.tutorialStage
 import dialogueOption
@@ -11,11 +12,13 @@ import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import skipDialogues
+import world.gregs.voidps.engine.client.ui.dialogue
 import world.gregs.voidps.engine.data.Settings
 import world.gregs.voidps.engine.data.definition.FontDefinitions
 import world.gregs.voidps.engine.data.definition.Rows
 import world.gregs.voidps.engine.data.definition.Tables
 import world.gregs.voidps.engine.entity.character.player.Player
+import world.gregs.voidps.engine.entity.character.player.skill.Skill
 import world.gregs.voidps.engine.get
 import world.gregs.voidps.engine.inv.inventory
 import world.gregs.voidps.type.Tile
@@ -52,6 +55,28 @@ class TranslationTest : WorldTest() {
         val name = Settings["server.name"]
 
         assertEquals("Bem-vindo a $name.", player.translate("Welcome to $name."))
+    }
+
+    @Test
+    fun `Placeholders carry variable text into the translation`() {
+        val player = createPlayer()
+        player["portuguese_dialogue"] = true
+
+        assertEquals("Parabéns! Você subiu um nível em Agility!", player.translate("Congratulations! You've just advanced an Agility level!"))
+        assertEquals("Agora você está no nível 42!", player.translate("You have now reached level 42!"))
+    }
+
+    @Test
+    fun `Level up is announced in Portuguese`() {
+        val player = createPlayer()
+        player["portuguese_dialogue"] = true
+        player.clear("skip_level_up")
+
+        player.experience.add(Skill.Cooking, 100.0)
+        tick()
+
+        assertTrue(player.containsMessage("Você subiu um nível em Cooking! Agora você está no nível 2."))
+        assertEquals("dialogue_level_up", player.dialogue)
     }
 
     @Test
