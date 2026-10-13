@@ -44,8 +44,8 @@ object CacheTranslationPatch {
     /** Translation sources in tools/translation/sources, `<prefix>*.json` mapping English to Portuguese */
     val SOURCE_PREFIXES = listOf("pt_tasks", "pt_level_up", "pt_labels", "pt_ui")
 
-    /** Task sets translated so far: Lumbridge/Draynor and the tutorial's Unstable Foundations */
-    val AREAS = setOf(1, 60)
+    /** Task sets translated: every area of the task area enum (3487) */
+    val AREAS = (0..19).toSet() + setOf(60, 62, 63)
 
     const val TASK_STRUCTS = 3483
     const val AREA_NAMES = 3487

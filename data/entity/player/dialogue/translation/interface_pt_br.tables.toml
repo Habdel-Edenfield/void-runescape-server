@@ -9,6 +9,530 @@ pt = "string"
 interface = "int"
 component = "int"
 
+[.name_1592]
+en = "The Essence of Magic"
+pt = "A essência da magia"
+
+[.desc_1592]
+en = "Have Wizard Cromperty teleport you to the essence mine."
+pt = "Peça ao Wizard Cromperty para teletransportar você à mina de essência (essence mine)."
+
+[.set_1592]
+en = "This Easy Task is part of the Ardougne set."
+pt = "Esta tarefa Fácil faz parte do conjunto de Ardougne."
+
+[.name_1593]
+en = "Yoink!"
+pt = "Afanei!"
+
+[.desc_1593]
+en = "Attempt to steal from any stall in Ardougne Market, or from any guard."
+pt = "Tente roubar de qualquer barraca (stall) do mercado de Ardougne, ou de qualquer guarda."
+
+[.name_1594]
+en = "Silky Smooth"
+pt = "Liso como seda"
+
+[.desc_1594]
+en = "Sell silk to the silk trader in Ardougne for 60gp each by haggling."
+pt = "Venda seda (silk) ao comerciante de seda (silk trader) de Ardougne por 60 moedas cada, pechinchando."
+
+[.name_1595]
+en = "Preaching to the Infected"
+pt = "Pregando aos infectados"
+
+[.desc_1595]
+en = "Use the altar in West Ardougne's church."
+pt = "Use o altar da igreja de West Ardougne."
+
+[.name_1596]
+en = "Playing the Waiting Game"
+pt = "O jogo da espera"
+
+[.desc_1596]
+en = "Enter the Castle Wars waiting room."
+pt = "Entre na sala de espera da Castle Wars."
+
+[.name_1597]
+en = "Gone Fishing"
+pt = "Fui pescar"
+
+[.desc_1597]
+en = "Go out fishing on the Fishing Trawler."
+pt = "Saia para pescar no Fishing Trawler."
+
+[.name_1598]
+en = "Boot Camp"
+pt = "Vida de recruta"
+
+[.desc_1598]
+en = "Enter the Combat Training Camp north of Ardougne."
+pt = "Entre no Combat Training Camp, ao norte de Ardougne."
+
+[.name_1599]
+en = "A Cat is For Life..."
+pt = "Gato é pra vida toda..."
+
+[.desc_1599]
+en = "Talk to a civilian in West Ardougne about selling a cat."
+pt = "Fale com um cidadão (civilian) de West Ardougne sobre vender um gato."
+
+[.name_1600]
+en = "Creator and Destroyer"
+pt = "Criador e destruidor"
+
+[.desc_1600]
+en = "Kill a unicow in the Tower of Life."
+pt = "Mate um unicow na Tower of Life."
+
+[.name_1601]
+en = "Red Revolution"
+pt = "Revolução vermelha"
+
+[.desc_1601]
+en = "Get a civilian to throw a tomato at the army recruiter in West Ardougne."
+pt = "Faça um cidadão (civilian) jogar um tomate no recrutador do exército (army recruiter) de West Ardougne."
+
+[.name_1602]
+en = "Going on a Summer Holiday"
+pt = "Férias de verão"
+
+[.desc_1602]
+en = "Sail from East Ardougne to Karamja."
+pt = "Navegue de East Ardougne até Karamja."
+
+[.name_1603]
+en = "Breaking and Entering"
+pt = "Invasão de domicílio"
+
+[.desc_1603]
+en = "Attempt to picklock a certain door east of the gem stall in Ardougne's marketplace."
+pt = "Tente arrombar (picklock) uma certa porta a leste da barraca de gemas (gem stall) do mercado de Ardougne."
+
+[.name_1604]
+en = "P-P-P-Pick Up Some Prizes"
+pt = "P-P-P-Pegue uns prêmios"
+
+[.desc_1604]
+en = "Spend some Penguin Points with Larry (or Chuck) at Ardougne Zoo."
+pt = "Gaste alguns Penguin Points com Larry (ou Chuck) no zoológico de Ardougne."
+
+[.name_1605]
+en = "A Gift from Khazard"
+pt = "Um presente de Khazard"
+
+[.desc_1605]
+en = "Use the Summoning obelisk to the east of the Fight Arena."
+pt = "Use o obelisco de Summoning (Summoning obelisk) a leste da Fight Arena."
+
+[.name_1606]
+en = "Party Pooper"
+pt = "Estraga-prazeres"
+
+[.desc_1606]
+en = "Pop a balloon in the monastery south of Ardougne."
+pt = "Estoure um balão no mosteiro ao sul de Ardougne."
+
+[.name_1607]
+en = "Vial Deeds"
+pt = "Frasco vil"
+
+[.desc_1607]
+en = "Buy a water-filled vial from the general store run by Aemad and Kortan."
+pt = "Compre um frasco com água (vial of water) no armazém (general store) de Aemad e Kortan."
+
+[.name_1608]
+en = "Star Seeker"
+pt = "Caçador de estrelas"
+
+[.desc_1608]
+en = "Use the noticeboard near the Observatory to gather information about shooting stars."
+pt = "Use o quadro de avisos perto do Observatory para saber de estrelas cadentes (shooting stars)."
+
+[.name_1609]
+en = "Dukes of Khazard"
+pt = "Os Gatões de Khazard"
+
+[.desc_1609]
+en = "Kill something on the Khazard Battlefield."
+pt = "Mate alguma coisa no Khazard Battlefield."
+
+[.name_1610]
+en = "Don't Eat the Pointy Bit"
+pt = "Não coma a parte pontuda"
+
+[.desc_1610]
+en = "Buy a skewered kebab from the Poison Arrow pub."
+pt = "Compre um kebab no espeto (skewered kebab) no pub Poison Arrow."
+
+[.name_1611]
+en = "Bargain Hunter"
+pt = "Caçador de pechinchas"
+
+[.desc_1611]
+en = "View the Hunter equipment in Aleck's shop in Yanille."
+pt = "Veja o equipamento de Hunter na loja do Aleck, em Yanille."
+
+[.name_1612]
+en = "Are You Being Served?"
+pt = "Já foi atendido?"
+
+[.desc_1612]
+en = "Talk to the chief servant at the servants' guild to find out about servants for your house."
+pt = "Fale com o chefe dos criados (chief servant) na guilda dos criados para saber de criados para a sua casa."
+
+[.name_1613]
+en = "No Time to Lose"
+pt = "Sem tempo a perder"
+
+[.desc_1613]
+en = "Use a ring of duelling to teleport to Castle Wars."
+pt = "Use um anel de duelo (ring of duelling) para se teletransportar à Castle Wars."
+
+[.name_1614]
+en = "They're Long and Pointy"
+pt = "São longas e pontudas"
+
+[.desc_1614]
+en = "Talk to Tindel Marchant about identifying swords on Kandarin's east coast."
+pt = "Fale com Tindel Marchant sobre identificar espadas, na costa leste de Kandarin."
+
+[.name_1576]
+en = "A Visit to Charlie"
+pt = "Uma visita ao Charlie"
+
+[.desc_1576]
+en = "Enter the unicorn pen in Ardougne Zoo using the fairy rings."
+pt = "Entre no cercado dos unicórnios do zoológico de Ardougne usando os fairy rings."
+
+[.set_1576]
+en = "This Medium Task is part of the Ardougne set."
+pt = "Esta tarefa Média faz parte do conjunto de Ardougne."
+
+[.name_1577]
+en = "I Wonder What This Does"
+pt = "O que será que isso faz?"
+
+[.desc_1577]
+en = "Teleport to the Wilderness using the lever in Ardougne."
+pt = "Teletransporte-se para a Wilderness usando a alavanca de Ardougne."
+
+[.name_1578]
+en = "Sandy's Secret Getaway"
+pt = "A fuga secreta da Sandy"
+
+[.desc_1578]
+en = "Grapple over Yanille's south wall."
+pt = "Atravesse a muralha sul de Yanille com um arpéu (grapple)."
+
+[.name_1579]
+en = "I Know a Shortcut"
+pt = "Conheço um atalho"
+
+[.desc_1579]
+en = "Craft some runes at Ourania Altar."
+pt = "Crie algumas runas no Ourania Altar."
+
+[.name_1580]
+en = "Volatile Valuables"
+pt = "Valores voláteis"
+
+[.desc_1580]
+en = "Sell some rubium to Ezekial Lovecraft in Witchaven."
+pt = "Venda um pouco de rubium a Ezekial Lovecraft, em Witchaven."
+
+[.name_1581]
+en = "What, a Melon?"
+pt = "Quê, um melão?"
+
+[.desc_1581]
+en = "Pick watermelons from the Farming patch north of Ardougne."
+pt = "Colha melancias (watermelons) no canteiro de Farming ao norte de Ardougne."
+
+[.name_1635]
+en = "Who Wants to Watch the Watchtower?"
+pt = "Quem vigia a Watchtower?"
+
+[.desc_1635]
+en = "Cast the Watchtower Teleport spell."
+pt = "Lance o feitiço Watchtower Teleport."
+
+[.set_1635]
+en = "This Hard Task is part of the Ardougne set."
+pt = "Esta tarefa Difícil faz parte do conjunto de Ardougne."
+
+[.name_1583]
+en = "Arriving in Style"
+pt = "Chegando com estilo"
+
+[.desc_1583]
+en = "Travel to Castle Wars by hot-air balloon."
+pt = "Viaje até a Castle Wars de balão de ar quente (hot-air balloon)."
+
+[.name_1584]
+en = "By the Bucketload"
+pt = "Aos baldes"
+
+[.desc_1584]
+en = "Claim buckets of sand from Bert in Yanille."
+pt = "Pegue baldes de areia (buckets of sand) com o Bert, em Yanille."
+
+[.name_1585]
+en = "Meeting History, Again"
+pt = "Meeting History, de novo"
+
+[.desc_1585]
+en = "After Meeting History, return to the past and talk to Sarah about Herblore."
+pt = "Depois de Meeting History, volte ao passado e fale com Sarah sobre Herblore."
+
+[.name_1586]
+en = "Fearless Fishing"
+pt = "Pesca destemida"
+
+[.desc_1586]
+en = "Catch a fish at the Fishing Platform using either a net or rod."
+pt = "Pesque um peixe na Fishing Platform usando rede (net) ou vara (rod)."
+
+[.name_1587]
+en = "Water Logged"
+pt = "Tora encharcada"
+
+[.desc_1587]
+en = "Cross the River Dougne using the log balance."
+pt = "Atravesse o River Dougne pela tora de equilíbrio (log balance)."
+
+[.name_1588]
+en = "Green Fingers"
+pt = "Dedo verde"
+
+[.desc_1588]
+en = "Pickpocket the master farmer north of Ardougne."
+pt = "Use 'Pickpocket' no Master Farmer, ao norte de Ardougne."
+
+[.name_1589]
+en = "A Natural Thief"
+pt = "Ladrão nato"
+
+[.desc_1589]
+en = "Attempt to steal a nature rune from a chest in Ardougne."
+pt = "Tente roubar uma runa da natureza (nature rune) de um baú em Ardougne."
+
+[.name_1590]
+en = "The Coal Train"
+pt = "O trem do carvão"
+
+[.desc_1590]
+en = "Mine some coal from the rocks east of Ardougne."
+pt = "Minere carvão (coal) nas rochas a leste de Ardougne."
+
+[.name_1591]
+en = "Are You Chicken?"
+pt = "Amarelou, frango?"
+
+[.desc_1591]
+en = "Kill a swordchick in the Tower of Life."
+pt = "Mate um swordchick na Tower of Life."
+
+[.name_1624]
+en = "Brace Yourself"
+pt = "Pulso firme"
+
+[.desc_1624]
+en = "Recharge a combat bracelet or a skills necklace at the Legends' Guild."
+pt = "Recarregue um bracelete de combate (combat bracelet) ou um colar de habilidades na Legends' Guild."
+
+[.name_1625]
+en = "Shadow Boxing"
+pt = "Briga de sombras"
+
+[.desc_1625]
+en = "Kill a shadow warrior in the Legends' Guild basement."
+pt = "Mate um shadow warrior no porão da Legends' Guild."
+
+[.name_1626]
+en = "Just Like That"
+pt = "Simples assim"
+
+[.desc_1626]
+en = "Enter the Magic Guild in Yanille."
+pt = "Entre na Magic Guild de Yanille."
+
+[.name_1627]
+en = "Nice View"
+pt = "Bela vista"
+
+[.desc_1627]
+en = "Use the portal in the Magic Guild to teleport to Thormac's tower."
+pt = "Use o portal da Magic Guild para se teletransportar à torre do Thormac."
+
+[.name_1628]
+en = "You're the Dirty Rascal"
+pt = "Rei do castelo"
+
+[.desc_1628]
+en = "Be on the winning side in a game of Castle Wars."
+pt = "Fique no lado vencedor numa partida de Castle Wars."
+
+[.name_1629]
+en = "Ourania Mania"
+pt = "Ourania-mania"
+
+[.desc_1629]
+en = "Cast the Ourania Teleport spell."
+pt = "Lance o feitiço Ourania Teleport."
+
+[.name_1630]
+en = "Not on My Watch"
+pt = "Não no meu plantão"
+
+[.desc_1630]
+en = "Pickpocket a watchman in Yanille while wearing gloves of silence."
+pt = "Use 'Pickpocket' num Watchman em Yanille usando luvas do silêncio (gloves of silence)."
+
+[.name_1631]
+en = "It Just Croaked"
+pt = "O último coaxar"
+
+[.desc_1631]
+en = "Kill a frogeel in the Tower of Life."
+pt = "Mate um frogeel na Tower of Life."
+
+[.name_1632]
+en = "Get Your Stinking Hands Off Me"
+pt = "Tire as patas imundas de mim"
+
+[.desc_1632]
+en = "Have a monkey minder put you in Ardougne Zoo's monkey cage."
+pt = "Faça um monkey minder colocar você na jaula dos macacos do Ardougne Zoo."
+
+[.name_1633]
+en = "Vine-detta"
+pt = "Vinha-gança"
+
+[.desc_1633]
+en = "Kill your own jade vine after the Back to my Roots quest."
+pt = "Mate a sua própria trepadeira de jade (jade vine) depois da missão Back to my Roots."
+
+[.name_1634]
+en = "Living on a Prayer"
+pt = "Vivendo de oração"
+
+[.desc_1634]
+en = "Use the Air Guitar emote near the musician outside the monastery south of Ardougne."
+pt = "Use o emote Air Guitar perto do músico do lado de fora do mosteiro ao sul de Ardougne."
+
+[.name_1582]
+en = "Ardougne Express"
+pt = "Expresso Ardougne"
+
+[.desc_1582]
+en = "Cast the Ardougne Teleport spell."
+pt = "Lance o feitiço Ardougne Teleport."
+
+[.name_1636]
+en = "Monkey Business"
+pt = "Macaquices"
+
+[.desc_1636]
+en = "Cross the monkey bars in the Yanille Agility Dungeon."
+pt = "Atravesse as barras (monkey bars) no Yanille Agility Dungeon."
+
+[.name_1637]
+en = "It's My Newt"
+pt = "Tritão novinho"
+
+[.desc_1637]
+en = "Catch a red salamander from the Hunter area outside of Ourania Altar."
+pt = "Capture uma salamandra vermelha (red salamander) na área de Hunter do lado de fora do Ourania Altar."
+
+[.name_1638]
+en = "A Taste of the Exotic"
+pt = "Um gostinho exótico"
+
+[.desc_1638]
+en = "Pick a papaya or coconut from the fruit tree patch near Tree Gnome Village."
+pt = "Colha um mamão (papaya) ou um coco (coconut) no canteiro de árvore frutífera perto da Tree Gnome Village."
+
+[.name_1639]
+en = "Blood Bank Withdrawal"
+pt = "Saque no banco de sangue"
+
+[.desc_1639]
+en = "Attempt to steal blood runes from the chest in the chaos druid tower's dungeon."
+pt = "Tente roubar runas de sangue (blood runes) do baú na masmorra da torre dos chaos druids."
+
+[.name_1640]
+en = "Artillery Strike"
+pt = "Ataque de artilharia"
+
+[.desc_1640]
+en = "Use a catapult in Castle Wars after gaining the knowledge from the Catapult Construction quest."
+pt = "Use uma catapulta em Castle Wars depois de aprender a construí-la na missão Catapult Construction."
+
+[.name_1619]
+en = "Catching Some Rays"
+pt = "Pegando uma raia"
+
+[.desc_1619]
+en = "Catch a manta ray in the Fishing Trawler activity."
+pt = "Pesque uma raia-manta (manta ray) na atividade Fishing Trawler."
+
+[.set_1619]
+en = "This Elite Task is part of the Ardougne set."
+pt = "Esta tarefa Elite faz parte do conjunto de Ardougne."
+
+[.name_1620]
+en = "Abyssal Valet"
+pt = "Mordomo abissal"
+
+[.desc_1620]
+en = "Have an abyssal titan familiar hold essence for you while runecrafting at Ourania Altar."
+pt = "Faça um familiar abyssal titan carregar essência (essence) para você enquanto cria runas no Ourania Altar."
+
+[.name_1621]
+en = "You Could Just Knock"
+pt = "Era só bater"
+
+[.desc_1621]
+en = "Attempt to picklock the door to the basement in Yanille Agility Dungeon."
+pt = "Tente arrombar a fechadura da porta do porão no Yanille Agility Dungeon."
+
+[.name_1622]
+en = "Honestly, It's Not a Purse"
+pt = "Sério, não é uma bolsinha"
+
+[.desc_1622]
+en = "Remove pure essence from a giant pouch at Ourania Altar."
+pt = "Tire essência pura de uma bolsa gigante (giant pouch) no Ourania Altar."
+
+[.name_1623]
+en = "Almost Made in Ardougne"
+pt = "Quase fabricado em Ardougne"
+
+[.desc_1623]
+en = "Make a rune crossbow yourself, from scratch, performing each step within either Witchaven or Yanille."
+pt = "Faça uma besta rúnica (rune crossbow) do zero, com cada etapa feita em Witchaven ou em Yanille."
+
+[.hint1_1623]
+en = "You must perform each of the following steps to complete this Task:"
+pt = "Você precisa fazer cada uma destas etapas para concluir esta tarefa:"
+
+[.hint2_1623]
+en = "Fletch yew logs into a stock and smith a rune bar into crossbow limbs."
+pt = "Faça uma coronha de teixo (yew stock) e forje braços de besta (crossbow limbs) de uma barra rúnica."
+
+[.hint3_1623]
+en = "Make sinew and spin it into a crossbow string."
+pt = "Faça tendão (sinew) e fie-o numa corda de besta (crossbow string)."
+
+[.hint4_1623]
+en = "Fletch the unstrung crossbow."
+pt = "Monte a besta sem corda (unstrung crossbow) com Fletching."
+
+[.hint5_1623]
+en = "String the crossbow."
+pt = "Ponha a corda na besta."
+
 [.name_1214]
 en = "A Grave Consideration"
 pt = "Uma escolha de peso"
@@ -733,6 +1257,2002 @@ pt = "Feito sob encomenda"
 en = "Craft a holy symbol in the furnace in Lumbridge."
 pt = "Faça um símbolo sagrado (holy symbol) na fornalha de Lumbridge."
 
+[.name_1309]
+en = "Amulet of Weedspeak"
+pt = "Amuleto Fala-Mato"
+
+[.desc_1309]
+en = "Buy a Farming amulet from Sarah on the farm north of Port Sarim."
+pt = "Compre um amuleto de agricultura (Farming amulet) da Sarah, na fazenda ao norte de Port Sarim."
+
+[.set_1309]
+en = "This Easy Task is part of the Falador set."
+pt = "Esta tarefa Fácil faz parte do conjunto de Falador."
+
+[.name_1310]
+en = "The Good Stuff"
+pt = "Coisa fina"
+
+[.desc_1310]
+en = "Buy a stat-boosting beer from a waitress in the Rising Sun tavern."
+pt = "Compre de uma garçonete da taverna Rising Sun uma cerveja que aumenta atributos."
+
+[.name_1312]
+en = "Sir Mitt"
+pt = "Sir Cume"
+
+[.desc_1312]
+en = "Climb to the top of the White Knights' Castle."
+pt = "Suba até o topo do White Knights' Castle."
+
+[.name_1313]
+en = "Family Values"
+pt = "Valores de família"
+
+[.desc_1313]
+en = "Discover your family crest from Sir Renitee."
+pt = "Descubra o brasão da sua família com Sir Renitee."
+
+[.name_1314]
+en = "Sniffing Out the Mole"
+pt = "Farejando a toupeira"
+
+[.desc_1314]
+en = "Enter the mole lair under Falador Park."
+pt = "Entre no covil da toupeira embaixo do Falador Park."
+
+[.name_1315]
+en = "Chinchompa Powered!"
+pt = "Movido a chinchompa!"
+
+[.desc_1315]
+en = "Feed Ridgeley, the hairdresser's pet."
+pt = "Alimente o Ridgeley, o bichinho do cabeleireiro."
+
+[.name_1316]
+en = "Fill Yer Bucket"
+pt = "Enche o balde aí"
+
+[.desc_1316]
+en = "Fill a bucket from the pump north of the Falador's west bank."
+pt = "Encha um balde (bucket) na bomba d'água ao norte do banco oeste de Falador."
+
+[.name_1317]
+en = "Elementary Medicine"
+pt = "Medicina elementar"
+
+[.desc_1317]
+en = "Heal an elemental wizard by casting an appropriate elemental spell on him."
+pt = "Cure um mago elemental (elemental wizard) lançando nele um feitiço elemental adequado."
+
+[.name_1318]
+en = "It's Not Wabbit Season"
+pt = "Temporada de pato!"
+
+[.desc_1318]
+en = "Kill a duck in Falador Park."
+pt = "Mate um pato (duck) no Falador Park."
+
+[.name_1319]
+en = "Stand and Deliver"
+pt = "A bolsa ou a vida!"
+
+[.desc_1319]
+en = "Kill a highwayman on the road south of Falador."
+pt = "Mate um salteador (highwayman) na estrada ao sul de Falador."
+
+[.name_1320]
+en = "Making My Mind Up"
+pt = "Fazendo a cabeça"
+
+[.desc_1320]
+en = "Make a mind tiara."
+pt = "Faça uma tiara da mente (mind tiara)."
+
+[.name_1323]
+en = "Going Along With the 'Fro"
+pt = "Na onda do black power"
+
+[.desc_1323]
+en = "Talk to Party Pete in the Party Room."
+pt = "Fale com Party Pete no Party Room."
+
+[.name_1321]
+en = "Mudskip the Light Fantastic"
+pt = "Baile fantástico na lama"
+
+[.desc_1321]
+en = "Recharge your Prayer points at the altar south-west of Port Sarim."
+pt = "Recarregue seus pontos de Prayer no altar a sudoeste de Port Sarim."
+
+[.name_1322]
+en = "Disarm and Embark"
+pt = "Desarme e embarque"
+
+[.desc_1322]
+en = "Take the boat to Entrana."
+pt = "Pegue o barco para Entrana."
+
+[.name_1311]
+en = "Chain Store"
+pt = "Loja de malha"
+
+[.desc_1311]
+en = "Buy a black chainbody from Wayne's Chains, and try it on in the shop."
+pt = "Compre uma cota de malha preta (black chainbody) na Wayne's Chains e prove-a na loja."
+
+[.name_1328]
+en = "Fruit of the Loom"
+pt = "Fruta do tear"
+
+[.desc_1328]
+en = "Craft a fruit basket using the loom at the farm north of Port Sarim."
+pt = "Faça um cesto de frutas (fruit basket) no tear da fazenda ao norte de Port Sarim."
+
+[.set_1328]
+en = "This Medium Task is part of the Falador set."
+pt = "Esta tarefa Média faz parte do conjunto de Falador."
+
+[.name_1329]
+en = "Is It So Hard to Walk Round?"
+pt = "É tão difícil dar a volta?"
+
+[.desc_1329]
+en = "Crawl under Falador's south wall."
+pt = "Rasteje por baixo da muralha sul de Falador."
+
+[.name_1338]
+en = "These Aren't the Coins You're Looking For"
+pt = "Não são as moedas que você procura"
+
+[.desc_1338]
+en = "Travel from Port Sarim to Musa Point for free (with a little help from Charos)."
+pt = "Viaje de Port Sarim a Musa Point de graça (com uma ajudinha de Charos)."
+
+[.name_1330]
+en = "Climbing the Walls"
+pt = "Subindo pelas paredes"
+
+[.desc_1330]
+en = "Grapple up and then jump off Falador's north wall."
+pt = "Suba a muralha norte de Falador com um arpéu (grapple) e depois pule de lá."
+
+[.name_1331]
+en = "It's Nothing Personal"
+pt = "Nada pessoal"
+
+[.desc_1331]
+en = "Increase your reputation with the White Knights by killing a Black Knight."
+pt = "Aumente sua reputação com os White Knights matando um Black Knight."
+
+[.name_1332]
+en = "Ice the Icy"
+pt = "Apague o gelado"
+
+[.desc_1332]
+en = "Kill an ice giant in the Asgarnian Ice Dungeon."
+pt = "Mate um gigante de gelo (ice giant) na Asgarnian Ice Dungeon."
+
+[.name_1333]
+en = "Blinded With Science"
+pt = "Cego pela ciência"
+
+[.desc_1333]
+en = "Light a bullseye lantern in the chemist's."
+pt = "Acenda uma lanterna (bullseye lantern) na loja do químico."
+
+[.name_1334]
+en = "They Have Families to Feed"
+pt = "Têm família pra sustentar"
+
+[.desc_1334]
+en = "Pickpocket a Falador guard."
+pt = "Use 'Pickpocket' num guarda de Falador."
+
+[.name_1335]
+en = "Stoic Sweetcorn Guardian"
+pt = "Guardião estoico do milho"
+
+[.desc_1335]
+en = "Place a scarecrow to protect your sweetcorn in the patch north of Port Sarim."
+pt = "Ponha um espantalho (scarecrow) para proteger seu milho (sweetcorn) no canteiro ao norte de Port Sarim."
+
+[.name_1337]
+en = "Do They Come in Other Colours?"
+pt = "Tem em outras cores?"
+
+[.desc_1337]
+en = "Smith some blurite crossbow limbs on Thurgo's anvil."
+pt = "Forje braços de besta de blurite (blurite limbs) na bigorna do Thurgo."
+
+[.name_1339]
+en = "Fun For the Whole Family"
+pt = "Diversão pra família toda"
+
+[.desc_1339]
+en = "Visit the Port Sarim rat pits."
+pt = "Visite as rinhas de ratos (rat pits) de Port Sarim."
+
+[.name_1336]
+en = "Look Spiffy For Tiffy"
+pt = "Nos trinques pro Tiffy"
+
+[.desc_1336]
+en = "Salute Sir Tiffy while wearing full initiate armour."
+pt = "Bata continência para Sir Tiffy usando armadura de iniciado (initiate) completa."
+
+[.name_1345]
+en = "It Matches My Eyes"
+pt = "Combina com meus olhos"
+
+[.desc_1345]
+en = "Dye a cape pink using dye from Betty in Port Sarim."
+pt = "Tinja uma capa (cape) de rosa com tinta (dye) da Betty, em Port Sarim."
+
+[.set_1345]
+en = "This Hard Task is part of the Falador set."
+pt = "Esta tarefa Difícil faz parte do conjunto de Falador."
+
+[.name_1341]
+en = "Child of Saradomin"
+pt = "Filho de Saradomin"
+
+[.desc_1341]
+en = "Change your family crest to the Saradomin symbol."
+pt = "Troque o brasão da sua família pelo símbolo de Saradomin."
+
+[.name_1342]
+en = "Mass Production"
+pt = "Produção em massa"
+
+[.desc_1342]
+en = "Craft 140 or more mind runes simultaneously."
+pt = "Crie 140 ou mais runas da mente (mind runes) de uma vez."
+
+[.name_1343]
+en = "It Spoiled My View"
+pt = "Atrapalhava a vista"
+
+[.desc_1343]
+en = "Cut down a yew or magic tree that you grew in Falador Park."
+pt = "Corte um teixo (yew) ou uma árvore mágica (magic tree) que você plantou no Falador Park."
+
+[.name_1346]
+en = "The Stonemasons"
+pt = "Os pedreiros"
+
+[.desc_1346]
+en = "Enter the Mining Guild."
+pt = "Entre na Mining Guild."
+
+[.name_1344]
+en = "I Heard You Like Mudskips"
+pt = "Ouvi dizer que curte lama"
+
+[.desc_1344]
+en = "Dial to the fairy ring on Mudskipper Point."
+pt = "Viaje pelo fairy ring até Mudskipper Point."
+
+[.name_1347]
+en = "The Mogre Mash"
+pt = "Purê de mogre"
+
+[.desc_1347]
+en = "Kill a mogre at Mudskipper Point."
+pt = "Mate um mogre em Mudskipper Point."
+
+[.name_1348]
+en = "Why Oh Wyvern"
+pt = "Wyvern, por quê?"
+
+[.desc_1348]
+en = "Kill a skeletal wyvern in the Asgarnian Ice Dungeon."
+pt = "Mate uma wyvern esquelética (skeletal wyvern) na Asgarnian Ice Dungeon."
+
+[.name_1349]
+en = "Banned For Life"
+pt = "Banido pra sempre"
+
+[.desc_1349]
+en = "Summon an ibis in Port Sarim's fishing store."
+pt = "Invoque um íbis (ibis) na loja de pesca de Port Sarim."
+
+[.name_1340]
+en = "A Knight in the Darkness"
+pt = "Um cavaleiro nas trevas"
+
+[.desc_1340]
+en = "Ascend the Dark Wizards' Tower while wearing full proselyte armour."
+pt = "Suba a Dark Wizards' Tower vestindo armadura de prosélito (proselyte) completa."
+
+[.name_1421]
+en = "Bring the Antipoisons"
+pt = "Tragam o antiveneno!"
+
+[.desc_1421]
+en = "Kill a cave crawler in the Fremennik Slayer Dungeon."
+pt = "Mate um rastejador das cavernas (cave crawler) na Fremennik Slayer Dungeon."
+
+[.set_1421]
+en = "This Easy Task is part of the Fremennik set."
+pt = "Esta tarefa Fácil faz parte do conjunto de Fremennik."
+
+[.name_1422]
+en = "Why Won't You Die?"
+pt = "Por que você não morre?"
+
+[.desc_1422]
+en = "Kill five rock crabs on the shore near Rellekka or on Waterbirth Island."
+pt = "Mate cinco caranguejos de pedra (rock crabs) na praia perto de Rellekka ou na Waterbirth Island."
+
+[.name_1423]
+en = "King Conifer"
+pt = "Rei das coníferas"
+
+[.desc_1423]
+en = "Find the highest tree on the Fremennik mainland."
+pt = "Ache a árvore mais alta da parte continental de Fremennik."
+
+[.name_1424]
+en = "Assaulted Goodies"
+pt = "Assalto aos prêmios"
+
+[.desc_1424]
+en = "View the rewards in the Barbarian Assault tutorial."
+pt = "Veja as recompensas no tutorial do Barbarian Assault."
+
+[.name_1425]
+en = "Oxymoron Incarnate"
+pt = "Oxímoro em pessoa"
+
+[.desc_1425]
+en = "Speak to Otto Godblessed about barbarian training."
+pt = "Fale com o Otto Godblessed sobre o treinamento bárbaro."
+
+[.name_1426]
+en = "Why Did the Lobster Blush?"
+pt = "Por que a lagosta corou?"
+
+[.desc_1426]
+en = "Collect three seaweed from the shore north-east of Rellekka."
+pt = "Colete três algas (seaweed) na praia a nordeste de Rellekka."
+
+[.name_1427]
+en = "Hunting the Hunter"
+pt = "Caçando o caçador"
+
+[.desc_1427]
+en = "Find the hunting expert on the northern ice plains."
+pt = "Ache o especialista em caça (hunting expert) nas planícies geladas do norte."
+
+[.name_1428]
+en = "Peer Off the Pier"
+pt = "Peixe no píer"
+
+[.desc_1428]
+en = "Catch a fish off one of Rellekka's piers."
+pt = "Pesque um peixe num dos píeres de Rellekka."
+
+[.name_1429]
+en = "A Familiar Feeling"
+pt = "Uma sensação familiar"
+
+[.desc_1429]
+en = "Recharge your Summoning points near Rellekka's gate."
+pt = "Recarregue seus pontos de Summoning perto do portão de Rellekka."
+
+[.name_1430]
+en = "Endangered Species"
+pt = "Espécie em extinção"
+
+[.desc_1430]
+en = "Kill an adult black unicorn."
+pt = "Mate um unicórnio negro (black unicorn) adulto."
+
+[.name_1431]
+en = "Fremennik History 101"
+pt = "Aula de história Fremennik"
+
+[.desc_1431]
+en = "Learn the history of the Fremennik and outerlanders from Chieftain Brundt."
+pt = "Aprenda com o Chieftain Brundt a história dos Fremennik e dos forasteiros (outerlanders)."
+
+[.set_1431]
+en = "This Medium Task is part of the Fremennik set."
+pt = "Esta tarefa Média faz parte do conjunto de Fremennik."
+
+[.name_1432]
+en = "Cool Story, Bro"
+pt = "Conta outra, mano"
+
+[.desc_1432]
+en = "Watch a shouting match between the Fremennik isles' tower guards."
+pt = "Assista a uma discussão aos gritos entre os guardas das torres das ilhas Fremennik."
+
+[.name_1433]
+en = "Who's a Good Boy?"
+pt = "Quem é o bom menino?"
+
+[.desc_1433]
+en = "Interact with a pet rock."
+pt = "Interaja com uma pedra de estimação (pet rock)."
+
+[.name_1434]
+en = "Only Takes a Little Vial"
+pt = "Num frasco de segundo"
+
+[.desc_1434]
+en = "Make three vials in the furnace building at Rellekka."
+pt = "Faça três frascos (vials) no prédio da fornalha (furnace) de Rellekka."
+
+[.name_1435]
+en = "You Know You Want It!"
+pt = "Você sabe que quer!"
+
+[.desc_1435]
+en = "Go to the Fossegrimen and charm her into accepting a raw bass."
+pt = "Vá até a Fossegrimen e use seu charme para que ela aceite um robalo cru (raw bass)."
+
+[.name_1438]
+en = "Fairy Mountaineering"
+pt = "Alpinismo de fada"
+
+[.desc_1438]
+en = "Use a fairy ring to appear on a mountaintop, near the windswept tree."
+pt = "Use um fairy ring para aparecer no topo de uma montanha, perto da árvore varrida pelo vento (windswept tree)."
+
+[.name_1439]
+en = "You Really Don't Need Any More Shoes"
+pt = "Você não precisa de mais sapato"
+
+[.desc_1439]
+en = "Look at Yrsa's options for recolouring your boots in her clothes shop in Rellekka."
+pt = "Veja as opções da Yrsa para tingir suas botas na loja de roupas dela em Rellekka."
+
+[.name_1440]
+en = "Big Game Hunter"
+pt = "Caça grossa"
+
+[.desc_1440]
+en = "Successfully hunt a sabre-toothed kyatt."
+pt = "Consiga caçar um kyatt dente-de-sabre (sabre-toothed kyatt)."
+
+[.name_1436]
+en = "Yak Attack"
+pt = "Ataque do iaque"
+
+[.desc_1436]
+en = "Wear yak-hide armour and kill an ice troll."
+pt = "Vista armadura de couro de iaque (yak-hide) e mate um troll de gelo."
+
+[.name_1437]
+en = "Fremmental"
+pt = "Fremmental"
+
+[.desc_1437]
+en = "Make cheese in the dairy churn in Rellekka."
+pt = "Faça queijo (cheese) na batedeira (dairy churn) de Rellekka."
+
+[.name_1441]
+en = "Grand Theft Fish"
+pt = "Grand Theft Peixe"
+
+[.desc_1441]
+en = "Steal a fish from Rellekka's market."
+pt = "Roube um peixe do mercado de Rellekka."
+
+[.name_1408]
+en = "Defeating Deadly Dagannoths"
+pt = "Derrotando dagannoths danados"
+
+[.desc_1408]
+en = "Kill three dagannoths in the first layer of Waterbirth Island's dungeon."
+pt = "Mate três dagannoths no primeiro nível da masmorra da Waterbirth Island."
+
+[.set_1408]
+en = "This Hard Task is part of the Fremennik set."
+pt = "Esta tarefa Difícil faz parte do conjunto de Fremennik."
+
+[.name_1409]
+en = "Dress to Impress"
+pt = "Vestido pra arrasar"
+
+[.desc_1409]
+en = "Wear rockshell, spined or skeletal armour and have the locals use an honorific with your Fremennik name."
+pt = "Vista uma armadura rockshell, spined ou skeletal e faça os moradores usarem um título de honra com o seu nome Fremennik."
+
+[.name_1410]
+en = "The Graceful Barbarian"
+pt = "O bárbaro gracioso"
+
+[.desc_1410]
+en = "Complete the Barbarian Outpost Agility Course."
+pt = "Complete o Barbarian Outpost Agility Course."
+
+[.name_1411]
+en = "Runes on the Moon"
+pt = "Runas na Lua"
+
+[.desc_1411]
+en = "Mine pure essence on Lunar Isle."
+pt = "Minere essência pura (pure essence) na Lunar Isle."
+
+[.name_1412]
+en = "Pyre At Will"
+pt = "Pira à vontade"
+
+[.desc_1412]
+en = "Make a barbarian pyre ship from arctic pine."
+pt = "Faça um navio-pira bárbaro (pyre ship) de pinho ártico (arctic pine)."
+
+[.name_1413]
+en = "Fish Fingers"
+pt = "Pescando na unha"
+
+[.desc_1413]
+en = "Catch a tuna without a harpoon."
+pt = "Pesque um atum (tuna) sem arpão (harpoon)."
+
+[.name_1414]
+en = "Easy As Pie"
+pt = "Moleza de torta"
+
+[.desc_1414]
+en = "Bake a pie using Magic."
+pt = "Asse uma torta (pie) usando Magic."
+
+[.name_1415]
+en = "How to Maim Your Dragon"
+pt = "Como abater o seu dragão"
+
+[.desc_1415]
+en = "Kill a mithril dragon."
+pt = "Mate um dragão de mithril (mithril dragon)."
+
+[.name_1416]
+en = "A Periodic Table"
+pt = "Mesa periódica"
+
+[.desc_1416]
+en = "Get mahogany from your Etceterian subjects."
+pt = "Receba mogno (mahogany) dos seus súditos de Etceteria."
+
+[.name_1357]
+en = "Five a Day"
+pt = "Cinco por dia"
+
+[.desc_1357]
+en = "Pick 5 bananas from the plantation located east of the volcano."
+pt = "Colha 5 bananas na plantação a leste do vulcão."
+
+[.set_1357]
+en = "This Easy Task is part of the Karamja set."
+pt = "Esta tarefa Fácil faz parte do conjunto de Karamja."
+
+[.name_1358]
+en = "I'm Lichen This!"
+pt = "Musgostei disso!"
+
+[.desc_1358]
+en = "Use the rope swing to travel to the moss giant island north-west of Karamja."
+pt = "Use o balanço de corda (rope swing) para chegar à ilha dos moss giants, a noroeste de Karamja."
+
+[.name_1359]
+en = "Golden Shores"
+pt = "Praias douradas"
+
+[.desc_1359]
+en = "Mine some gold from the rocks on the north-west peninsula of Karamja."
+pt = "Minere ouro (gold) nas pedras da península a noroeste de Karamja."
+
+[.name_1360]
+en = "Put to Port in Port Sarim"
+pt = "Rumo ao porto de Port Sarim"
+
+[.desc_1360]
+en = "Travel to Port Sarim via the dock east of Musa Point."
+pt = "Viaje até Port Sarim pelo cais a leste de Musa Point."
+
+[.name_1361]
+en = "Avast Ardougne!"
+pt = "Alto lá, Ardougne!"
+
+[.desc_1361]
+en = "Travel to Ardougne via the port near Brimhaven."
+pt = "Viaje até Ardougne pelo porto perto de Brimhaven."
+
+[.name_1362]
+en = "Show That You Cairn"
+pt = "Com Cairnho"
+
+[.desc_1362]
+en = "Explore Cairn Island to the west of Karamja."
+pt = "Explore a Cairn Island, a oeste de Karamja."
+
+[.name_1363]
+en = "Fruity Catch"
+pt = "Pesca frutífera"
+
+[.desc_1363]
+en = "Use the fishing spots north of the banana plantation."
+pt = "Use os pontos de pesca ao norte da plantação de bananas."
+
+[.name_1364]
+en = "Beachcomber"
+pt = "Rato de praia"
+
+[.desc_1364]
+en = "Collect 5 seaweed from anywhere on Karamja."
+pt = "Recolha 5 algas marinhas (seaweed) em qualquer lugar de Karamja."
+
+[.name_1365]
+en = "TzHaar Wars"
+pt = "TzHaar Wars"
+
+[.desc_1365]
+en = "Attempt the TzHaar Fight Pits or Fight Cave."
+pt = "Tente as TzHaar Fight Pits ou a Fight Cave."
+
+[.name_1366]
+en = "It's a Jungle Ogre"
+pt = "Selva de ogros"
+
+[.desc_1366]
+en = "Kill a jogre in the Pothole dungeon."
+pt = "Mate um jogre na Pothole Dungeon."
+
+[.name_1379]
+en = "Just the Ticket"
+pt = "Bilhete premiado"
+
+[.desc_1379]
+en = "Claim a ticket from Brimhaven Agility Arena."
+pt = "Pegue um tíquete (ticket) na Brimhaven Agility Arena."
+
+[.set_1379]
+en = "This Medium Task is part of the Karamja set."
+pt = "Esta tarefa Média faz parte do conjunto de Karamja."
+
+[.name_1380]
+en = "Back Cran-door"
+pt = "Crandor dos fundos"
+
+[.desc_1380]
+en = "Discover the hidden wall in the dungeon below the volcano."
+pt = "Descubra a parede secreta na masmorra embaixo do vulcão."
+
+[.name_1381]
+en = "Dungeons and Dragons"
+pt = "Masmorras e Dragões"
+
+[.desc_1381]
+en = "Visit the isle of Crandor via the dungeon below the volcano."
+pt = "Visite a ilha de Crandor pela masmorra embaixo do vulcão."
+
+[.name_1382]
+en = "Horseless Carriage"
+pt = "Carruagem sem cavalo"
+
+[.desc_1382]
+en = "Use Vigroy and Hajedy's cart service."
+pt = "Use o serviço de carroça de Vigroy e Hajedy."
+
+[.name_1383]
+en = "They Like Me! They Really Like Me!"
+pt = "Eles gostam de mim! Gostam mesmo!"
+
+[.desc_1383]
+en = "Earn 100% favour in the village of Tai Bwo Wannai."
+pt = "Consiga 100% de favor (favour) na vila de Tai Bwo Wannai."
+
+[.name_1384]
+en = "Arachnophagia"
+pt = "Aracnofagia"
+
+[.desc_1384]
+en = "Cook a spider on a stick."
+pt = "Cozinhe uma aranha no espeto (spider on a stick)."
+
+[.name_1385]
+en = "Romancing the Stone"
+pt = "Tudo por um topázio"
+
+[.desc_1385]
+en = "Mine a red topaz from a gem rock."
+pt = "Minere um topázio vermelho (red topaz) numa gem rock."
+
+[.name_1386]
+en = "I'm a Lumberjack and I'm Okay"
+pt = "Sou lenhador e estou bem"
+
+[.desc_1386]
+en = "Cut a log from a teak tree."
+pt = "Corte uma tora (log) de uma árvore de teca (teak)."
+
+[.name_1387]
+en = "I Sleep All Night and I Work All Day"
+pt = "Durmo à noite e trabalho de dia"
+
+[.desc_1387]
+en = "Cut a log from a mahogany tree."
+pt = "Corte uma tora (log) de um mogno (mahogany)."
+
+[.name_1388]
+en = "To Catch a Karambwan"
+pt = "Pescando um karambwan"
+
+[.desc_1388]
+en = "Catch a karambwan."
+pt = "Pesque um karambwan."
+
+[.name_1389]
+en = "That's Not a Knife..."
+pt = "Isso não é uma faca..."
+
+[.desc_1389]
+en = "Exchange gems for a machete."
+pt = "Troque gemas (gems) por um facão (machete)."
+
+[.name_1390]
+en = "Falling With Style"
+pt = "Caindo com estilo"
+
+[.desc_1390]
+en = "Use the gnome glider to travel to Karamja."
+pt = "Use o planador gnomo (gnome glider) para viajar até Karamja."
+
+[.name_1391]
+en = "Scourge of Scurvy"
+pt = "Adeus, escorbuto"
+
+[.desc_1391]
+en = "Grow a healthy fruit tree in the patch near Brimhaven."
+pt = "Cultive uma árvore frutífera saudável no canteiro perto de Brimhaven."
+
+[.name_1392]
+en = "Hunters of the Horned Graahk"
+pt = "Caçadores do Graahk Chifrudo"
+
+[.desc_1392]
+en = "Trap a horned graahk."
+pt = "Capture um horned graahk numa armadilha."
+
+[.name_1393]
+en = "The Roots of All Evil"
+pt = "A raiz de todo o mal"
+
+[.desc_1393]
+en = "Chop the vines to gain deeper access to Brimhaven Dungeon."
+pt = "Corte os cipós (vines) para chegar mais fundo na Brimhaven Dungeon."
+
+[.name_1394]
+en = "Hotfooting It"
+pt = "Pisando em brasa"
+
+[.desc_1394]
+en = "Cross the lava using the stepping stones within Brimhaven Dungeon."
+pt = "Atravesse a lava pelas pedras de passagem (stepping stones) na Brimhaven Dungeon."
+
+[.name_1395]
+en = "Stairway to Haven"
+pt = "Escada para o céu"
+
+[.desc_1395]
+en = "Climb the stairs within Brimhaven Dungeon."
+pt = "Suba a escada na Brimhaven Dungeon."
+
+[.name_1396]
+en = "Thank You, Madam"
+pt = "Obrigado, madame"
+
+[.desc_1396]
+en = "Charter the Lady of the Waves from Cairn Isle to Port Khazard."
+pt = "Alugue o navio Lady of the Waves de Cairn Isle até Port Khazard."
+
+[.name_1397]
+en = "Shipping Out From the Shipyard"
+pt = "Zarpando do estaleiro"
+
+[.desc_1397]
+en = "Charter a ship from the shipyard in the far east of Karamja."
+pt = "Alugue um navio no estaleiro do extremo leste de Karamja."
+
+[.name_1398]
+en = "Flawless Victory"
+pt = "Vitória perfeita"
+
+[.desc_1398]
+en = "Become the champion of the Fight Pits."
+pt = "Torne-se o campeão das Fight Pits."
+
+[.set_1398]
+en = "This Hard Task is part of the Karamja set."
+pt = "Esta tarefa Difícil faz parte do conjunto de Karamja."
+
+[.name_1399]
+en = "Play Dead, Doggy"
+pt = "Finge de morto, totó"
+
+[.desc_1399]
+en = "Kill a Ket-Zek in the Fight Caves."
+pt = "Mate um Ket-Zek nas Fight Caves."
+
+[.name_1400]
+en = "I'd Be Kharazi to Eat This"
+pt = "Tem que ser Kharazi pra comer isso"
+
+[.desc_1400]
+en = "Eat an oomlie wrap."
+pt = "Coma um enrolado de oomlie (oomlie wrap)."
+
+[.name_1401]
+en = "At One With Nature"
+pt = "Um com a natureza"
+
+[.desc_1401]
+en = "Craft some nature runes."
+pt = "Crie algumas runas da natureza (nature runes)."
+
+[.name_1402]
+en = "Drop It Like It's Hot"
+pt = "Solta que tá quente"
+
+[.desc_1402]
+en = "Cook a karambwan thoroughly."
+pt = "Cozinhe um karambwan no ponto certo."
+
+[.name_1403]
+en = "Deadwing"
+pt = "Asa morta"
+
+[.desc_1403]
+en = "Kill a deathwing in the dungeon under the Kharazi Jungle."
+pt = "Mate um deathwing na masmorra embaixo da Kharazi Jungle."
+
+[.name_1404]
+en = "Quick As a Shot"
+pt = "Rápido como um tiro"
+
+[.desc_1404]
+en = "Use the crossbow shortcut south of the volcano."
+pt = "Use o atalho da besta (crossbow) ao sul do vulcão."
+
+[.name_1405]
+en = "A Palm For Each Finger"
+pt = "Uma palma para cada dedo"
+
+[.desc_1405]
+en = "Collect 5 palm leaves."
+pt = "Recolha 5 folhas de palmeira (palm leaves)."
+
+[.name_1406]
+en = "Yes, My Master"
+pt = "Sim, mestre"
+
+[.desc_1406]
+en = "Be assigned a Slayer task in Shilo Village."
+pt = "Receba uma tarefa de Slayer em Shilo Village."
+
+[.name_1407]
+en = "Can Opener"
+pt = "Abre-latas"
+
+[.desc_1407]
+en = "Kill a metal dragon in Brimhaven Dungeon."
+pt = "Mate um dragão de metal na Brimhaven Dungeon."
+
+[.name_1276]
+en = "Reflax Actions"
+pt = "Reflexos de linho"
+
+[.desc_1276]
+en = "Pick five flax from the flax field."
+pt = "Colha linho (flax) cinco vezes no campo de linho."
+
+[.set_1276]
+en = "This Easy Task is part of the Seers' Village set."
+pt = "Esta tarefa Fácil faz parte do conjunto de Seers' Village."
+
+[.name_1277]
+en = "Why?"
+pt = "Por quê?"
+
+[.desc_1277]
+en = "Walk clockwise around the big mysterious statue."
+pt = "Dê a volta na grande estátua misteriosa em sentido horário."
+
+[.name_1283]
+en = "Jute Alors!"
+pt = "Juta alors!"
+
+[.desc_1283]
+en = "Plant some jute."
+pt = "Plante um pouco de juta (jute)."
+
+[.name_1278]
+en = "Stir, Galahad"
+pt = "Mexe, Galahad"
+
+[.desc_1278]
+en = "Have Sir Galahad make you a cup of tea."
+pt = "Peça para Sir Galahad preparar uma xícara de chá para você."
+
+[.name_1279]
+en = "La Morte D'Arthur"
+pt = "La Morte D'Arthur"
+
+[.desc_1279]
+en = "Take a poison chalice to King Arthur."
+pt = "Leve um cálice envenenado (poison chalice) ao King Arthur."
+
+[.name_1280]
+en = "Another String to Your Bow"
+pt = "Mais uma corda no arco"
+
+[.desc_1280]
+en = "Spin five bow strings."
+pt = "Fie cinco cordas de arco (bow strings)."
+
+[.name_1281]
+en = "Bunch of Flours"
+pt = "Buquê de farinhas"
+
+[.desc_1281]
+en = "Fill five pots with flour from the Sinclair Mansion."
+pt = "Encha cinco potes de farinha (pots of flour) na Sinclair Mansion."
+
+[.name_1282]
+en = "Happy Hour"
+pt = "Happy hour"
+
+[.desc_1282]
+en = "Give five locals a glass of cider in the Forester's Arms."
+pt = "Dê um copo de sidra (cider) a cinco moradores no Forester's Arms."
+
+[.name_1284]
+en = "Sinclair Swirling"
+pt = "Batedeira Sinclair"
+
+[.desc_1284]
+en = "Use the churn in the Sinclair Mansion garden."
+pt = "Use a batedeira (churn) no jardim da Sinclair Mansion."
+
+[.name_1285]
+en = "Grand Candle"
+pt = "Vela de gala"
+
+[.desc_1285]
+en = "Buy a candle from the candle-maker."
+pt = "Compre uma vela (candle) com o fabricante de velas."
+
+[.name_1286]
+en = "A Seer-ing Light"
+pt = "Luz de vidente"
+
+[.desc_1286]
+en = "Pray at the Seers' Village altar."
+pt = "Reze no altar de Seers' Village."
+
+[.name_1287]
+en = "Mack Rolled"
+pt = "Cavalgada"
+
+[.desc_1287]
+en = "Catch a mackerel."
+pt = "Pesque uma cavala (mackerel)."
+
+[.name_1293]
+en = "Fleeing the Scene"
+pt = "Saindo de fininho"
+
+[.desc_1293]
+en = "Use the Sinclair Mansion to Fremennik Province Agility shortcut."
+pt = "Use o atalho de Agility da Sinclair Mansion até a Fremennik Province."
+
+[.set_1293]
+en = "This Medium Task is part of the Seers' Village set."
+pt = "Esta tarefa Média faz parte do conjunto de Seers' Village."
+
+[.name_1294]
+en = "It's a Slightly Magical Stick."
+pt = "É um graveto meio mágico."
+
+[.desc_1294]
+en = "Talk to Thormac the sorcerer about making mystic staves."
+pt = "Fale com Thormac, o feiticeiro, sobre fazer cajados místicos (mystic staves)."
+
+[.name_1295]
+en = "King Coal"
+pt = "Rei Carvão"
+
+[.desc_1295]
+en = "Transport a full load (120 pieces) of coal to Seers' Village."
+pt = "Transporte uma carga cheia (120 unidades) de carvão (coal) até Seers' Village."
+
+[.name_1297]
+en = "Mastering the Elements"
+pt = "Dominando os elementos"
+
+[.desc_1297]
+en = "Defeat each type of elemental in the Elemental Workshop."
+pt = "Derrote cada tipo de elemental no Elemental Workshop."
+
+[.name_1298]
+en = "It's Only a Model"
+pt = "É só uma maquete"
+
+[.desc_1298]
+en = "Teleport to Camelot."
+pt = "Teletransporte-se para Camelot."
+
+[.name_1300]
+en = "Arch Archer"
+pt = "Arqui-arqueiro"
+
+[.desc_1300]
+en = "Have the Ranging Guild judge congratulate you for acquiring over 1,000 archery tickets."
+pt = "Faça o juiz da Ranging Guild parabenizar você por juntar mais de 1.000 bilhetes de arquearia (archery tickets)."
+
+[.name_1301]
+en = "What, No Cuddly Toy?"
+pt = "E a pelúcia, cadê?"
+
+[.desc_1301]
+en = "Buy something from the ticket exchange in the Ranging Guild."
+pt = "Compre algo na troca de bilhetes (ticket exchange) da Ranging Guild."
+
+[.name_1296]
+en = "I Can Seer My House From Here"
+pt = "Daqui eu vejo minha casa"
+
+[.desc_1296]
+en = "Find the highest point in Seers' Village."
+pt = "Encontre o ponto mais alto de Seers' Village."
+
+[.name_1302]
+en = "Familiar Fire Familiarity"
+pt = "Familiaridade com fogo familiar"
+
+[.desc_1302]
+en = "Use a familiar to make a maple fire within Seers' Village."
+pt = "Use um familiar para fazer uma fogueira de bordo (maple) em Seers' Village."
+
+[.name_1303]
+en = "At Least It Doesn't Need Walking"
+pt = "Pelo menos não precisa passear"
+
+[.desc_1303]
+en = "Get a pet fish from Harry."
+pt = "Consiga um peixe de estimação (pet fish) com o Harry."
+
+[.name_1304]
+en = "All Your Bass..."
+pt = "Todos os seus robalos..."
+
+[.desc_1304]
+en = "Catch and cook a bass in Catherby."
+pt = "Pesque e cozinhe um robalo (bass) em Catherby."
+
+[.name_1299]
+en = "Sniper Training"
+pt = "Treino de atirador"
+
+[.desc_1299]
+en = "Kill one guard on each tower of the Ranging Guild using a longbow."
+pt = "Mate um guarda em cada torre da Ranging Guild usando um arco longo (longbow)."
+
+[.name_1265]
+en = "At Home on the Range"
+pt = "Em casa no campo de tiro"
+
+[.desc_1265]
+en = "Teleport to the Ranging Guild."
+pt = "Teletransporte-se para a Ranging Guild."
+
+[.set_1265]
+en = "This Hard Task is part of the Seers' Village set."
+pt = "Esta tarefa Difícil faz parte do conjunto de Seers' Village."
+
+[.name_1266]
+en = "See Yew at Five"
+pt = "Teixo às cinco"
+
+[.desc_1266]
+en = "Cut five sets of yew logs."
+pt = "Corte toras de teixo (yew logs) cinco vezes."
+
+[.name_1267]
+en = "The Short of It"
+pt = "Encurtando a história"
+
+[.desc_1267]
+en = "String a magic shortbow in Seers' Village bank."
+pt = "Encordoe um arco curto mágico (magic shortbow) no banco de Seers' Village."
+
+[.name_1268]
+en = "Prayer of Attorney"
+pt = "Procuração divina"
+
+[.desc_1268]
+en = "Enter the Seers' Village courthouse with your Piety prayer turned on."
+pt = "Entre no tribunal de Seers' Village com a oração Piety ativada."
+
+[.name_1269]
+en = "Beware of the Dog"
+pt = "Cuidado com o cão"
+
+[.desc_1269]
+en = "Use the fairy ring in McGrubor's Wood."
+pt = "Use o fairy ring de McGrubor's Wood."
+
+[.name_1270]
+en = "Twisted Fire Starter"
+pt = "Incendiário maluco"
+
+[.desc_1270]
+en = "Burn a magic log in Seers' Village."
+pt = "Queime uma tora mágica (magic log) em Seers' Village."
+
+[.name_1271]
+en = "Alch-aholic"
+pt = "Alquimólatra"
+
+[.desc_1271]
+en = "Cast High-level Alchemy on a magic shortbow in Seers' Village bank."
+pt = "Lance High-level Alchemy num arco curto mágico (magic shortbow) no banco de Seers' Village."
+
+[.name_1275]
+en = "Island Hopper"
+pt = "Pula-ilhas"
+
+[.desc_1275]
+en = "Use the grapple shortcut to get from the water obelisk island to Catherby beach."
+pt = "Use o atalho do arpéu (grapple) para ir da ilha do obelisco de água até a praia de Catherby."
+
+[.name_1272]
+en = "Gonna Need a Bigger Boat"
+pt = "Vai precisar de um barco maior"
+
+[.desc_1272]
+en = "Catch five sharks in Catherby."
+pt = "Pesque cinco tubarões (sharks) em Catherby."
+
+[.name_1273]
+en = "Gonna Need a Bigger Range"
+pt = "Vai precisar de um fogão maior"
+
+[.desc_1273]
+en = "Cook five sharks in Catherby using the cooking gauntlets."
+pt = "Cozinhe cinco tubarões em Catherby usando as manoplas de cozinheiro (cooking gauntlets)."
+
+[.name_1274]
+en = "Water Palaver"
+pt = "Que aguaceiro!"
+
+[.desc_1274]
+en = "Charge five water orbs in one go."
+pt = "Carregue cinco orbes de água (water orbs) de uma só vez."
+
+[.name_1477]
+en = "Strike a Pose"
+pt = "Faça pose"
+
+[.desc_1477]
+en = "Have Thessalia show you what outfits you can wear."
+pt = "Peça para a Thessalia mostrar as roupas que você pode usar."
+
+[.set_1477]
+en = "This Easy Task is part of the Varrock set."
+pt = "Esta tarefa Fácil faz parte do conjunto de Varrock."
+
+[.name_1478]
+en = "Essential Facilitator"
+pt = "Facilitador essencial"
+
+[.desc_1478]
+en = "Have Aubury teleport you to the Rune Essence mine."
+pt = "Peça para o Aubury teletransportar você para a Rune Essence mine."
+
+[.name_1479]
+en = "Doing the Ironing"
+pt = "Passando a ferro"
+
+[.desc_1479]
+en = "Mine some iron ore in the mining spot south-east of Varrock."
+pt = "Minere minério de ferro (iron ore) no ponto de mineração a sudeste de Varrock."
+
+[.name_1480]
+en = "Plank You Very Much"
+pt = "Tábua de salvação"
+
+[.desc_1480]
+en = "Make a plank at the sawmill."
+pt = "Faça uma tábua (plank) na serraria (sawmill)."
+
+[.name_1481]
+en = "Making Learning Fun!"
+pt = "Aprender é divertido!"
+
+[.desc_1481]
+en = "Enter the second level of the Stronghold of Security."
+pt = "Entre no segundo nível da Stronghold of Security."
+
+[.name_1482]
+en = "Jumping-off Point"
+pt = "Pulando a cerca"
+
+[.desc_1482]
+en = "Jump over the fence south of Varrock."
+pt = "Pule a cerca ao sul de Varrock."
+
+[.name_1483]
+en = "Lumbering Around"
+pt = "Lenhando por aí"
+
+[.desc_1483]
+en = "Chop down a dying tree in the Lumber Yard."
+pt = "Derrube uma árvore morrendo (dying tree) no Lumber Yard."
+
+[.name_1484]
+en = "Read All About It"
+pt = "Extra! Extra!"
+
+[.desc_1484]
+en = "Buy a copy of the Varrock Herald."
+pt = "Compre um exemplar do Varrock Herald."
+
+[.name_1485]
+en = "Dog and Bone"
+pt = "Cão e osso"
+
+[.desc_1485]
+en = "Give a stray dog a bone."
+pt = "Dê um osso (bone) a um cachorro de rua (stray dog)."
+
+[.name_1486]
+en = "Pot Stop"
+pt = "Pote stop"
+
+[.desc_1486]
+en = "Make a bowl on a potter's wheel then fire it in the pottery oven, all in Barbarian Village."
+pt = "Faça uma tigela (bowl) na roda de oleiro (potter's wheel) e asse-a no forno de cerâmica (pottery oven), tudo em Barbarian Village."
+
+[.name_1487]
+en = "On the Ragged Edge"
+pt = "À beira do abismo"
+
+[.desc_1487]
+en = "Enter Edgeville Dungeon using the entrance to the south of Edgeville."
+pt = "Entre no Edgeville Dungeon pela entrada ao sul de Edgeville."
+
+[.name_1488]
+en = "Relocation, Relocation, Relocation"
+pt = "Mudança, mudança, mudança"
+
+[.desc_1488]
+en = "Move your player-owned house portal by talking to the Varrock estate agent."
+pt = "Mude o portal da sua casa (player-owned house) de lugar falando com o corretor de imóveis (estate agent) de Varrock."
+
+[.name_1489]
+en = "It Belongs in a Museum"
+pt = "Isso pertence a um museu"
+
+[.desc_1489]
+en = "Speak to Haig Halen after obtaining at least 50 Kudos."
+pt = "Fale com Haig Halen depois de ter pelo menos 50 de Kudos."
+
+[.name_1490]
+en = "Journey to the Centre of the Earth Altar."
+pt = "Viagem ao centro do Earth Altar."
+
+[.desc_1490]
+en = "Enter the Earth Altar using an earth tiara or talisman."
+pt = "Entre no Earth Altar usando uma tiara da terra (earth tiara) ou um talismã (talisman)."
+
+[.name_1491]
+en = "Jackanory"
+pt = "Era uma vez"
+
+[.desc_1491]
+en = "Have Elsie tell you a story."
+pt = "Peça para a Elsie contar uma história."
+
+[.name_1492]
+en = "Limey"
+pt = "Calcário"
+
+[.desc_1492]
+en = "Mine some limestone near Paterdomus, the temple to the east of Varrock."
+pt = "Minere calcário (limestone) perto de Paterdomus, o templo a leste de Varrock."
+
+[.name_1493]
+en = "Sherpa's Delight"
+pt = "Delícia do sherpa"
+
+[.desc_1493]
+en = "Catch a trout in the river to the east of Barbarian Village."
+pt = "Pesque uma truta (trout) no rio a leste de Barbarian Village."
+
+[.name_1494]
+en = "King of the Castle"
+pt = "Rei do castelo"
+
+[.desc_1494]
+en = "Find the highest point in Varrock."
+pt = "Encontre o ponto mais alto de Varrock."
+
+[.name_1495]
+en = "Stick the Knife In"
+pt = "Mete a faca"
+
+[.desc_1495]
+en = "Venture through the cobwebbed corridor in Varrock's sewers."
+pt = "Atravesse o corredor cheio de teias de aranha nos esgotos de Varrock."
+
+[.name_1496]
+en = "Double-strength Weaksauce"
+pt = "Fraquinho em dose dupla"
+
+[.desc_1496]
+en = "Have the apothecary in Varrock make you a strength potion."
+pt = "Peça para o Apothecary de Varrock fazer uma poção de força (strength potion) para você."
+
+[.set_1496]
+en = "This Medium Task is part of the Varrock set."
+pt = "Esta tarefa Média faz parte do conjunto de Varrock."
+
+[.name_1497]
+en = "Champion!"
+pt = "Campeão!"
+
+[.desc_1497]
+en = "Enter the Champions' Guild."
+pt = "Entre no Champions' Guild."
+
+[.name_1498]
+en = "What Lies Below?"
+pt = "O que há lá embaixo?"
+
+[.desc_1498]
+en = "Take the Dagon-hai shortcut to the Chaos Altar."
+pt = "Pegue o atalho dos Dagon-hai até o Chaos Altar."
+
+[.name_1499]
+en = "With a Ten-foot Pole"
+pt = "Nem com vara de 3 metros"
+
+[.desc_1499]
+en = "Get a full complement of rats on your rat pole."
+pt = "Encha a sua vara de ratos (rat pole) até o limite."
+
+[.name_1500]
+en = "Can't Make an Omelette"
+pt = "Não se faz omelete"
+
+[.desc_1500]
+en = "Escape from the spider lair in Varrock's sewers with some red spider eggs."
+pt = "Fuja do covil das aranhas nos esgotos de Varrock com alguns ovos de aranha vermelha (red spider eggs)."
+
+[.name_1501]
+en = "Point of En-tree"
+pt = "Entrada arbórea"
+
+[.desc_1501]
+en = "Use the spirit tree to the north-east of the Grand Exchange."
+pt = "Use a árvore espiritual (spirit tree) a nordeste do Grand Exchange."
+
+[.name_1502]
+en = "Unlocking Your Emotions"
+pt = "Liberando as emoções"
+
+[.desc_1502]
+en = "Perform the four emotes from the Stronghold of Security."
+pt = "Faça os quatro emotes da Stronghold of Security."
+
+[.name_1503]
+en = "A Lick of Paint"
+pt = "Uma demão de tinta"
+
+[.desc_1503]
+en = "Select a colour for a new kitten."
+pt = "Escolha a cor de um novo gatinho (kitten)."
+
+[.name_1504]
+en = "For Fast Transactions"
+pt = "Para transações rápidas"
+
+[.desc_1504]
+en = "Use the shortcut under the wall, north-west of the Grand Exchange."
+pt = "Use o atalho por baixo do muro, a noroeste do Grand Exchange."
+
+[.name_1505]
+en = "You Wouldn't Like Me When I'm Angry"
+pt = "Você não vai gostar de me ver zangado"
+
+[.desc_1505]
+en = "Enter the A Soul's Bane rift."
+pt = "Entre na fenda (rift) de A Soul's Bane."
+
+[.name_1506]
+en = "Return to Senntisten"
+pt = "Retorno a Senntisten"
+
+[.desc_1506]
+en = "Teleport to the Digsite using a digsite pendant."
+pt = "Vá ao Digsite com um pingente de escavação (digsite pendant)."
+
+[.name_1507]
+en = "Promised the Earth"
+pt = "Mundos e fundos"
+
+[.desc_1507]
+en = "Enchant an earth tiara on the Earth Altar."
+pt = "Encante uma tiara da terra (earth tiara) no Earth Altar."
+
+[.name_1508]
+en = "Royale With Thieve"
+pt = "Royale com ladrão"
+
+[.desc_1508]
+en = "Pickpocket a guard in Varrock Palace's courtyard."
+pt = "Bata a carteira de um guarda (guard) no pátio do Varrock Palace."
+
+[.name_1509]
+en = "Like a Varrocket"
+pt = "Feito um Varroguete"
+
+[.desc_1509]
+en = "Cast the Varrock Teleport spell."
+pt = "Lance o feitiço Varrock Teleport."
+
+[.name_1510]
+en = "Challenge Vannaka"
+pt = "Desafie o Vannaka"
+
+[.desc_1510]
+en = "Get a Slayer task from Vannaka."
+pt = "Pegue uma tarefa de Slayer com o Vannaka."
+
+[.name_1511]
+en = "Flatpack Backpack"
+pt = "Mochila de mogno"
+
+[.desc_1511]
+en = "Buy twenty mahogany planks from the sawmill operator in one transaction."
+pt = "Compre vinte tábuas de mogno (mahogany planks) do operador da serraria numa só compra."
+
+[.name_1512]
+en = "Master Scrumper"
+pt = "Ladrão de pomar"
+
+[.desc_1512]
+en = "Pick a fruit from the White Tree."
+pt = "Colha uma fruta da White Tree."
+
+[.name_1513]
+en = "Engage"
+pt = "Acionar!"
+
+[.desc_1513]
+en = "Use the hot-air balloon to travel from Varrock to somewhere else."
+pt = "Use o balão de ar quente para viajar de Varrock para outro lugar."
+
+[.name_1514]
+en = "Faster, Pussycat! Kill! Kill!"
+pt = "Mais rápido, gatinho! Mata! Mata!"
+
+[.desc_1514]
+en = "Get a cat training medal from Gertrude."
+pt = "Consiga da Gertrude uma medalha (cat training medal)."
+
+[.name_1515]
+en = "Dial V For Varrock"
+pt = "Disque V para Varrock"
+
+[.desc_1515]
+en = "Dial to the fairy ring west of Varrock."
+pt = "Disque o código do fairy ring a oeste de Varrock."
+
+[.name_1516]
+en = "The Body Shop"
+pt = "Funilaria"
+
+[.desc_1516]
+en = "Browse through Oziach's Armour Shop."
+pt = "Dê uma olhada na loja Oziach's Armour Shop."
+
+[.name_1460]
+en = "Burning Bush"
+pt = "Sarça ardente"
+
+[.desc_1460]
+en = "Pick poison ivy from your bush farming patch in Varrock."
+pt = "Colha hera venenosa (poison ivy) do seu canteiro de arbustos (bush patch) em Varrock."
+
+[.set_1460]
+en = "This Hard Task is part of the Varrock set."
+pt = "Esta tarefa Difícil faz parte do conjunto de Varrock."
+
+[.name_1461]
+en = "But It Won't Warp You Anywhere"
+pt = "Mas não te leva a outra fase"
+
+[.desc_1461]
+en = "Use the pipe shortcut in Varrock Sewers, near the moss giants."
+pt = "Use o atalho do cano (pipe) no Varrock Sewers, perto dos moss giants."
+
+[.name_1462]
+en = "Lighten Up"
+pt = "Pega leve"
+
+[.desc_1462]
+en = "Trade furs with the fancy dress seller for a spottier cape."
+pt = "Troque peles (furs) com o vendedor de fantasias por uma capa pintadíssima (spottier cape)."
+
+[.name_1463]
+en = "Put Your Smithing Hat On"
+pt = "Ponha a cabeça para forjar"
+
+[.desc_1463]
+en = "Smith an adamant medium helm on the anvil in Varrock next to Aubury's Rune Shop."
+pt = "Forje um elmo médio de adamant (adamant medium helm) na bigorna de Varrock ao lado da Aubury's Rune Shop."
+
+[.name_1464]
+en = "Kudos on the Kudos!"
+pt = "Parabéns pelos Kudos!"
+
+[.desc_1464]
+en = "Speak to Orlando Smith when you have achieved 153 Kudos."
+pt = "Fale com Orlando Smith quando tiver conseguido 153 de Kudos."
+
+[.name_1465]
+en = "Who Ate All the Pie?"
+pt = "Quem comeu a torta toda?"
+
+[.desc_1465]
+en = "Talk to Romily Weaklax and give him a wild pie."
+pt = "Fale com Romily Weaklax e dê a ele uma torta selvagem (wild pie)."
+
+[.name_1466]
+en = "Battle of the Elements"
+pt = "Batalha dos elementos"
+
+[.desc_1466]
+en = "Craft an air battlestaff."
+pt = "Faça um cajado de batalha de ar (air battlestaff)."
+
+[.name_1472]
+en = "Intersceptre"
+pt = "Interceptro"
+
+[.desc_1472]
+en = "Use the skull sceptre to teleport to Barbarian Village."
+pt = "Use o cetro da caveira (skull sceptre) para se teletransportar até Barbarian Village."
+
+[.name_1467]
+en = "Changing Rooms"
+pt = "Reforma total"
+
+[.desc_1467]
+en = "Give your player-owned house a fancy stone or tropical wood finish at the Varrock estate agent."
+pt = "Dê à sua casa (player-owned house) um acabamento de pedra fina (fancy stone) ou madeira tropical (tropical wood) no corretor de imóveis de Varrock."
+
+[.name_1468]
+en = "Keeping Tabs on Varrock"
+pt = "Varrock na palma da mão"
+
+[.desc_1468]
+en = "Make a Varrock Teleport tablet on a mahogany lectern."
+pt = "Faça um tablete Varrock Teleport (tablet) num atril de mogno (mahogany lectern)."
+
+[.name_1469]
+en = "Hand-Me-Downs"
+pt = "De pai para filho"
+
+[.desc_1469]
+en = "Obtain a new set of Family Crest gauntlets from Dimintheis."
+pt = "Consiga com Dimintheis um novo par de manoplas da Family Crest (Family Crest gauntlets)."
+
+[.name_1470]
+en = "Waka-Waka-Waka"
+pt = "Waka-Waka-Waka"
+
+[.desc_1470]
+en = "Make a waka canoe near Edgeville."
+pt = "Faça uma canoa waka (waka canoe) perto de Edgeville."
+
+[.name_1471]
+en = "Living on the Edge"
+pt = "Vivendo no limite"
+
+[.desc_1471]
+en = "Cast the Home Teleport spell in the Ancient Magicks spellbook to teleport to Edgeville."
+pt = "Lance o feitiço Home Teleport do livro Ancient Magicks para se teletransportar até Edgeville."
+
+[.name_1350]
+en = "When This Cavern's Rockin'..."
+pt = "Se a caverna tá no rock..."
+
+[.desc_1350]
+en = "Catch a rocktail in the Living Rock Caverns."
+pt = "Pesque um peixe-rocha (rocktail) nas Living Rock Caverns."
+
+[.set_1350]
+en = "This Elite Task is part of the Falador set."
+pt = "Esta tarefa Elite faz parte do conjunto de Falador."
+
+[.name_1351]
+en = "...You'd Best Come A-cookin'"
+pt = "...manda pro wok"
+
+[.desc_1351]
+en = "Cook a rocktail in the Falador area."
+pt = "Cozinhe um peixe-rocha (rocktail) na região de Falador."
+
+[.name_1352]
+en = "Concentration Is Key"
+pt = "Concentração é tudo"
+
+[.desc_1352]
+en = "Mine concentrated gold in the Living Rock Caverns."
+pt = "Minere ouro concentrado (concentrated gold) nas Living Rock Caverns."
+
+[.name_1353]
+en = "I Swear I Heard It Scream"
+pt = "Juro que ouvi ela gritar"
+
+[.desc_1353]
+en = "Chop down a magic tree grown in your tree patch in Falador Park."
+pt = "Derrube uma árvore mágica (magic tree) plantada no seu canteiro do Falador Park."
+
+[.name_1354]
+en = "I've Changed My Mind!"
+pt = "Mudei de ideia!"
+
+[.desc_1354]
+en = "Use a summoned hydra to regrow a tree in your patch in Falador Park."
+pt = "Use uma hidra (hydra) invocada para fazer uma árvore crescer de novo no seu canteiro do Falador Park."
+
+[.name_1355]
+en = "A String and a Flare"
+pt = "Um fio e uma chama"
+
+[.desc_1355]
+en = "Cast the String Jewellery spell while standing at the furnace in Falador."
+pt = "Lance o feitiço String Jewellery parado junto à fornalha (furnace) de Falador."
+
+[.name_1356]
+en = "Altar-ed State"
+pt = "Estado altar-ado"
+
+[.desc_1356]
+en = "Use the altar in the White Knights' Castle to switch curses off, while you have Turmoil active."
+pt = "Use o altar do White Knights' Castle para desligar as maldições (curses) com Turmoil ativo."
+
+[.name_1442]
+en = "Jaws Breaker"
+pt = "Quebra-queixo"
+
+[.desc_1442]
+en = "Catch a shark with bare hands on Jatizso."
+pt = "Pesque um tubarão (shark) com as próprias mãos em Jatizso."
+
+[.set_1442]
+en = "This Elite Task is part of the Fremennik set."
+pt = "Esta tarefa Elite faz parte do conjunto de Fremennik."
+
+[.name_1443]
+en = "Limber Lumber Jumper"
+pt = "Pulo ligeiro de madeireiro"
+
+[.desc_1443]
+en = "Complete the high-level section of the Barbarian Agility course while wearing an agile top."
+pt = "Complete a parte avançada do Barbarian Agility Course vestindo uma blusa ágil (agile top)."
+
+[.name_1444]
+en = "Astronomical!"
+pt = "Astronômico!"
+
+[.desc_1444]
+en = "Craft at least 56 astral runes simultaneously."
+pt = "Crie pelo menos 56 runas astrais (astral runes) de uma vez."
+
+[.name_1445]
+en = "First Stryke"
+pt = "Primeiro Stryke"
+
+[.desc_1445]
+en = "Kill an ice strykewyrm (you do not need to be assigned these as your slayer target to complete this Task)."
+pt = "Mate um strykewyrm de gelo (ice strykewyrm); ele não precisa ser o seu alvo de Slayer para concluir esta tarefa."
+
+[.name_1446]
+en = "Leap of Faith"
+pt = "Salto de fé"
+
+[.desc_1446]
+en = "Jump the chasm in the Fremennik Slayer Dungeon to gain quick access to the pyrefiends."
+pt = "Pule o abismo na Fremennik Slayer Dungeon para chegar rápido aos pyrefiends."
+
+[.name_1447]
+en = "No Smoke Without Pyre"
+pt = "Onde há fumaça, há pira"
+
+[.desc_1447]
+en = "Make a pyre ship from magic logs."
+pt = "Faça um navio-pira com toras mágicas (magic logs)."
+
+[.name_1448]
+en = "This Hasta Work"
+pt = "Isso hasta!"
+
+[.desc_1448]
+en = "Smith a rune hasta at Otto's anvil."
+pt = "Forje uma hasta rúnica (rune hasta) na bigorna do Otto."
+
+[.name_1449]
+en = "Potting With Otto"
+pt = "Poções com o Otto"
+
+[.desc_1449]
+en = "Make a ranging Mix within Otto's house."
+pt = "Faça uma mistura de alcance (ranging mix) na casa do Otto."
+
+[.name_1371]
+en = "At One Plus Fifty-Five With Nature"
+pt = "Um mais cinquenta e cinco com a natureza"
+
+[.desc_1371]
+en = "Craft 56 nature runes simultaneously."
+pt = "Crie 56 runas da natureza de uma só vez."
+
+[.set_1371]
+en = "This Elite Task is part of the Karamja set."
+pt = "Esta tarefa Elite faz parte do conjunto de Karamja."
+
+[.name_1372]
+en = "The Power of Lava"
+pt = "O poder da lava"
+
+[.desc_1372]
+en = "Equip a TzHaar fire cape while standing in TzHaar."
+pt = "Vista uma capa de fogo (TzHaar fire cape) enquanto estiver em TzHaar."
+
+[.name_1373]
+en = "Boxing Clever"
+pt = "Caixa esperta"
+
+[.desc_1373]
+en = "Box-trap a monkey on Karamja."
+pt = "Pegue um macaco com uma box trap em Karamja."
+
+[.name_1374]
+en = "It's a Snap"
+pt = "Num estalo"
+
+[.desc_1374]
+en = "Buy a snapdragon from Pirate Jackie the Fruit and create a super restore potion in Brimhaven."
+pt = "Compre uma boca-de-leão (snapdragon) com Pirate Jackie the Fruit e faça uma poção super restore (super restore potion) em Brimhaven."
+
+[.name_1375]
+en = "Crunchy Coating"
+pt = "Casquinha crocante"
+
+[.desc_1375]
+en = "Cook a shark on a sulphur vent."
+pt = "Cozinhe um tubarão (shark) numa fenda de enxofre."
+
+[.name_1376]
+en = "Walkies!"
+pt = "Passeio!"
+
+[.desc_1376]
+en = "Take your chameleon for a walk around Cairn Isle to see its egg-home."
+pt = "Leve seu camaleão (chameleon) para passear por Cairn Isle e ver onde ele saiu do ovo."
+
+[.name_1377]
+en = "Tread Carefully"
+pt = "Pise com cuidado"
+
+[.desc_1377]
+en = "Use the stepping stone across the river in Shilo village"
+pt = "Use a pedra de travessia (stepping stone) para cruzar o rio em Shilo Village."
+
+[.name_1378]
+en = "Ten in a Row"
+pt = "Dez seguidas"
+
+[.desc_1378]
+en = "Claim 75+ Slayer points from Lapalok"
+pt = "Resgate 75 ou mais pontos de Slayer com o Lapalok."
+
+[.name_1288]
+en = "It's a Trap! No, Wait, It's a Pie"
+pt = "É uma armadilha! Não, peraí, é uma torta"
+
+[.desc_1288]
+en = "Make an admiral pie from scratch within Seers' Village/Catherby."
+pt = "Faça uma torta do almirante (admiral pie) do zero em Seers' Village/Catherby."
+
+[.hint2_1288]
+en = "Fish for the tuna and salmon."
+pt = "Pesque o atum (tuna) e o salmão (salmon)."
+
+[.hint3_1288]
+en = "Farm a potato."
+pt = "Plante e colha uma batata (potato)."
+
+[.hint4_1288]
+en = "Create pastry dough and make it into a pie shell."
+pt = "Faça massa de torta (pastry dough) e, com ela, uma base (pie shell)."
+
+[.hint5_1288]
+en = "Make the unbaked pie."
+pt = "Faça a torta crua (unbaked pie)."
+
+[.hint6_1288]
+en = "Bake the pie in the oven."
+pt = "Asse a torta no forno."
+
+[.set_1288]
+en = "This Elite Task is part of the Seers' Village set."
+pt = "Esta tarefa Elite faz parte do conjunto de Seers' Village."
+
+[.name_1289]
+en = "Make a Bolt For It"
+pt = "Saindo feito um virote"
+
+[.desc_1289]
+en = "Make an enchanted diamond-tipped bolt from scratch within the Seers' Village area."
+pt = "Faça do zero um virote encantado com ponta de diamante (diamond bolt) na área de Seers' Village."
+
+[.hint2_1289]
+en = "Smith an adamant bolt."
+pt = "Forje um virote de adamante (adamant bolt)."
+
+[.hint3_1289]
+en = "Fletch the bolt."
+pt = "Ponha penas no virote (Fletching)."
+
+[.hint4_1289]
+en = "Make diamond bolt tips and attach them to the bolt."
+pt = "Faça pontas de virote de diamante (diamond bolt tips) e encaixe-as no virote."
+
+[.hint5_1289]
+en = "Enchant the bolt."
+pt = "Encante o virote."
+
+[.name_1290]
+en = "The Long of It"
+pt = "Longa história"
+
+[.desc_1290]
+en = "Make a magic longbow from scratch within the Seers' Village area."
+pt = "Faça do zero um arco longo mágico (magic longbow) na área de Seers' Village."
+
+[.hint2_1290]
+en = "Pick flax and spin it into a bowstring."
+pt = "Colha linho (flax) e fie-o numa corda de arco (bowstring)."
+
+[.hint3_1290]
+en = "Fletch magic logs into an unstrung longbow."
+pt = "Talhe toras mágicas (magic logs) num arco longo sem corda."
+
+[.hint4_1290]
+en = "String the bow."
+pt = "Ponha a corda no arco."
+
+[.name_1291]
+en = "Plentypotionentiary"
+pt = "Plenipoçãotenciário"
+
+[.desc_1291]
+en = "Make an extreme Ranging potion from scratch within the Ranging Guild."
+pt = "Faça do zero uma poção extrema de Ranging (extreme ranging potion) dentro da Ranging Guild."
+
+[.hint2_1291]
+en = "Make a ranging potion."
+pt = "Faça uma poção de Ranging (ranging potion)."
+
+[.hint3_1291]
+en = "Add grenwall spikes to make the extreme potion."
+pt = "Adicione espinhos de grenwall (grenwall spikes) para fazer a poção extrema."
+
+[.hint4_1291]
+en = "Drink the potion."
+pt = "Beba a poção."
+
+[.name_1292]
+en = "Moon Raker"
+pt = "Ancinho lunar"
+
+[.desc_1292]
+en = "Cast Fertile Soil on a patch within the Seers' Village area."
+pt = "Lance Fertile Soil num canteiro (patch) na área de Seers' Village."
+
+[.name_1451]
+en = "Stick a Bork In Him, He's Done"
+pt = "Bork no ponto, pode servir"
+
+[.desc_1451]
+en = "Defeat Bork."
+pt = "Derrote o Bork."
+
+[.set_1451]
+en = "This Elite Task is part of the Varrock set."
+pt = "Esta tarefa Elite faz parte do conjunto de Varrock."
+
+[.name_1452]
+en = "Nomadness"
+pt = "Nomaluquice"
+
+[.desc_1452]
+en = "Speak to Zimberfizz about swapping your Soul Wars cape for one of a different colour."
+pt = "Fale com Zimberfizz para trocar sua capa de Soul Wars (Soul Wars cape) por uma de outra cor."
+
+[.name_1453]
+en = "Double Jointed"
+pt = "Encaixe duplo"
+
+[.desc_1453]
+en = "Complete a large job at the sawmill."
+pt = "Conclua um trabalho grande na serraria (sawmill)."
+
+[.name_1454]
+en = "It All Adze Up"
+pt = "Cheiro de enxofre"
+
+[.desc_1454]
+en = "Incinerate a log with your inferno adze, by cutting a tree in the Varrock Palace farming patch."
+pt = "Incinere uma tora com sua enxó infernal (inferno adze) ao cortar uma árvore no canteiro (farming patch) do Varrock Palace."
+
+[.name_1455]
+en = "Mind Your Back"
+pt = "Virou o feitiço"
+
+[.desc_1455]
+en = "Get a member of the Dagon'hai's mind control spells to backfire on him."
+pt = "Faça o feitiço de controle mental de um membro dos Dagon'hai se voltar contra ele."
+
+[.name_1456]
+en = "Red, Red Pies of Summer"
+pt = "Tortas rubras de verão"
+
+[.desc_1456]
+en = "Bake a summer pie in the Cooking Guild from scratch."
+pt = "Asse uma torta de verão (summer pie) na Cooking Guild, começando do zero."
+
+[.hint2_1456]
+en = "Make pastry dough and turn it into a pie shell."
+pt = "Faça massa de torta (pastry dough) e, com ela, uma base (pie shell)."
+
+[.hint4_1456]
+en = "Bake the pie."
+pt = "Asse a torta."
+
+[.name_1457]
+en = "Splitting Headache"
+pt = "Dor de cabeça de rachar"
+
+[.desc_1457]
+en = "Defeat a skeleton at Senntisten altar (or pray at Senntisten altar) with Soul Split enabled."
+pt = "Derrote um esqueleto no altar de Senntisten (ou reze no altar de Senntisten) com a Soul Split ativada."
+
+[.name_1458]
+en = "A Bolt from the Blue"
+pt = "Um raio em céu azul"
+
+[.desc_1458]
+en = "Smith and fletch 10 rune bolts at once within Varrock."
+pt = "Forje e emplume 10 virotes de runa (rune bolts) de uma vez, em Varrock."
+
+[.name_1459]
+en = "A Ton of Earth"
+pt = "Toneladas de terra"
+
+[.desc_1459]
+en = "Craft 100 earth runes simultaneously."
+pt = "Crie 100 runas de terra (earth runes) de uma só vez."
+
 [.name_1248]
 en = "The Blood Pact"
 pt = "The Blood Pact"
@@ -1135,7 +3655,7 @@ pt = "Bata os calcanhares três vezes"
 
 [.desc_1533]
 en = "Teleport using the Home Teleport spell."
-pt = "Teleporte-se com o feitiço Home Teleport."
+pt = "Teletransporte-se com o feitiço Home Teleport."
 
 [.hint1_1533]
 en = "You may use Home Teleport once every half hour, and it requires no runes."
@@ -1957,6 +4477,766 @@ pt = "O Ellis, em Al Kharid, pode curtir o couro de vaca (cowhide) para você."
 en = "The needle and thread can be bought from a crafting shop such as Dommik's."
 pt = "A agulha e a linha podem ser compradas numa loja de artesanato, como a do Dommik."
 
+[.name_1450]
+en = "Axe'll Grease"
+pt = "Na base do machado"
+
+[.desc_1450]
+en = "Use Balmung to kill a dagganoth."
+pt = "Use a Balmung para matar um dagannoth."
+
+[.name_1652]
+en = "Tears of Guthix"
+pt = "Tears of Guthix"
+
+[.desc_1652]
+en = "Collect tears of power from the rocks beneath Lumbridge."
+pt = "Colete as lágrimas de poder (tears) nas rochas debaixo de Lumbridge."
+
+[.hint1_1652]
+en = "You may collect tears once per week, as long as you have gained a Quest Point or sufficient experience during that period."
+pt = "Você pode colher lágrimas uma vez por semana, desde que tenha ganhado um ponto de missão ou experiência suficiente nesse período."
+
+[.hint2_1652]
+en = "Talk to Juna in the caves beneath Lumbridge Castle to learn more."
+pt = "Fale com Juna nas cavernas debaixo do Lumbridge Castle para saber mais."
+
+[.set_1652]
+en = "Gives experience in your lowest-level skill."
+pt = "Dá experiência na sua habilidade de nível mais baixo."
+
+[.name_1653]
+en = "Conquest"
+pt = "Conquest"
+
+[.desc_1653]
+en = "Engage in tactical combat against your fellow commander aspirants."
+pt = "Lute em combate tático contra outros aspirantes a comandante."
+
+[.hint1_1653]
+en = "You may play this activity as often as you wish."
+pt = "Você pode jogar esta atividade quantas vezes quiser."
+
+[.hint2_1653]
+en = "Talk to Dorian or Ethar in the north-west of the Void Knight Outpost to learn more."
+pt = "Fale com Dorian ou Ethar no noroeste do Void Knight Outpost para saber mais."
+
+[.set_1653]
+en = "Gives commendations, which can be exchanged for armour and experience."
+pt = "Dá menções honrosas (commendations), que podem ser trocadas por armaduras e experiência."
+
+[.name_1646]
+en = "Penguin Hunting"
+pt = "Caça aos pinguins"
+
+[.desc_1646]
+en = "Locate and spy on penguins across the length and breadth of RuneScape."
+pt = "Encontre e espione pinguins por todos os cantos de RuneScape."
+
+[.hint1_1646]
+en = "You may spy on each penguin once per week."
+pt = "Você pode espionar cada pinguim uma vez por semana."
+
+[.hint2_1646]
+en = "Talk to Larry or Chuck at Ardougne Zoo to learn more."
+pt = "Fale com Larry ou Chuck no Ardougne Zoo para saber mais."
+
+[.set_1646]
+en = "Gives points, which can be exchanged for experience or money."
+pt = "Dá pontos, que podem ser trocados por experiência ou dinheiro."
+
+[.name_1647]
+en = "Evil Tree"
+pt = "Árvore maligna"
+
+[.desc_1647]
+en = "Nurture an evil sapling to full growth, then chop and burn it down."
+pt = "Cuide de uma muda maligna (evil sapling) até ela crescer, depois corte e queime a árvore."
+
+[.hint1_1647]
+en = "You may kill two evil trees per day."
+pt = "Você pode derrubar duas árvores malignas por dia."
+
+[.hint2_1647]
+en = "Talk to the spirit tree in the Tree Gnome Village to learn more."
+pt = "Fale com a árvore espiritual (spirit tree) da Tree Gnome Village para saber mais."
+
+[.set_1647]
+en = "Gives experience, material rewards and a boost to Woodcutting."
+pt = "Dá experiência, recompensas em itens e um bônus em Woodcutting."
+
+[.name_1648]
+en = "Shooting Star"
+pt = "Estrela cadente"
+
+[.desc_1648]
+en = "Locate fallen stars across RuneScape and mine them to free their occupants."
+pt = "Encontre estrelas caídas por RuneScape e minere-as para libertar quem está dentro."
+
+[.hint1_1648]
+en = "You may mine as many shooting stars as you can locate."
+pt = "Você pode minerar quantas estrelas cadentes (shooting stars) conseguir encontrar."
+
+[.hint2_1648]
+en = "Talk to the staff at the Observatory to learn more."
+pt = "Fale com os funcionários do Observatory para saber mais."
+
+[.set_1648]
+en = "Gives experience, material rewards and a boost to Mining."
+pt = "Dá experiência, recompensas em itens e um bônus em Mining."
+
+[.name_1649]
+en = "Impetuous Impulses"
+pt = "Impulsos impetuosos"
+
+[.desc_1649]
+en = "Hunt implings in RuneScape, or head to Puro-Puro to hunt them in their native habitat."
+pt = "Cace diabretes (implings) em RuneScape, ou vá a Puro-Puro para caçá-los no seu habitat natural."
+
+[.hint1_1649]
+en = "Entering Puro-Puro through a crop circle in a wheat field outside Zanaris will aid your impling hunting endeavours."
+pt = "Entrar em Puro-Puro pelo círculo na plantação de trigo do lado de fora de Zanaris vai ajudar na sua caça aos diabretes."
+
+[.hint2_1649]
+en = "Talk to the wandering impling by the Zanaris crop circle to learn more."
+pt = "Fale com o diabrete andarilho (wandering impling) perto do círculo na plantação de Zanaris para saber mais."
+
+[.set_1649]
+en = "Gives experience and a variety of material rewards."
+pt = "Dá experiência e várias recompensas em itens."
+
+[.name_1650]
+en = "Vinesweeper"
+pt = "Vinesweeper"
+
+[.desc_1650]
+en = "Use logic to locate and flag potato seeds for harvest. Defend your flags from the rabbit horde!"
+pt = "Use a lógica para achar e marcar com bandeiras as sementes de batata para a colheita. Defenda as bandeiras da horda de coelhos!"
+
+[.hint1_1650]
+en = "You may aid the farmers as much as you wish."
+pt = "Você pode ajudar os fazendeiros o quanto quiser."
+
+[.hint2_1650]
+en = "Talk to any tool leprechaun to be transported to Farmer Winkin's Farm."
+pt = "Fale com qualquer Tool Leprechaun para ser levado à Farmer Winkin's Farm."
+
+[.hint3_1650]
+en = "Replacing lost flags will cost 1,000 coins or 50 points."
+pt = "Repor bandeiras perdidas custa 1.000 moedas (coins) ou 50 pontos."
+
+[.set_1650]
+en = "Gives points which can be exchanged for seeds and experience."
+pt = "Dá pontos, que podem ser trocados por sementes e experiência."
+
+[.name_1651]
+en = "Balthazar's Big Top Bonanza"
+pt = "Balthazar's Big Top Bonanza"
+
+[.desc_1651]
+en = "Perform feats of magic, agility and marksmanship to delight the crowd."
+pt = "Faça proezas de magia, agilidade e pontaria para encantar o público."
+
+[.hint1_1651]
+en = "The circus moves to a new location once a week, and you may perform in it once per week."
+pt = "O circo muda de lugar uma vez por semana, e você pode se apresentar nele uma vez por semana."
+
+[.hint2_1651]
+en = "Talk to a circus barker, found outside many banks in RuneScape, to learn more."
+pt = "Fale com um anunciador do circo (circus barker), encontrado na porta de muitos bancos de RuneScape, para saber mais."
+
+[.set_1651]
+en = "Gives experience and a chance of earning costume rewards."
+pt = "Dá experiência e a chance de ganhar fantasias como recompensa."
+
+[.name_1654]
+en = "Defeat Bork"
+pt = "Derrote Bork"
+
+[.desc_1654]
+en = "Descend into the Chaos Tunnels to kill Bork."
+pt = "Desça aos Chaos Tunnels para matar Bork."
+
+[.hint1_1654]
+en = "You may kill Bork once per day."
+pt = "Você pode matar Bork uma vez por dia."
+
+[.set_1654]
+en = "Gives Slayer experience and rare summoning charms."
+pt = "Dá experiência em Slayer e talismãs de Summoning (summoning charms) raros."
+
+[.name_1655]
+en = "All Fired Up"
+pt = "All Fired Up"
+
+[.desc_1655]
+en = "Test the Varrock beacon network, and keep as many beacons alight as possible."
+pt = "Teste a rede de faróis (beacons) de Varrock e mantenha acesos o máximo de faróis possível."
+
+[.hint1_1655]
+en = "You may make as many attempts as you wish to light the beacon network."
+pt = "Você pode tentar acender a rede de faróis quantas vezes quiser."
+
+[.hint2_1655]
+en = "Talk to any beacon guard to learn more."
+pt = "Fale com um guarda de farol (beacon guard) para saber mais."
+
+[.set_1655]
+en = "Gives Firemaking experience and tools."
+pt = "Dá experiência em Firemaking e ferramentas."
+
+[.name_1656]
+en = "Skeletal Horror"
+pt = "Skeletal Horror"
+
+[.desc_1656]
+en = "Kill the Odd Old Man's undead creation."
+pt = "Mate a criação morta-viva do Odd Old Man."
+
+[.hint1_1656]
+en = "You may kill the Skeletal Horror once per week."
+pt = "Você pode matar o Skeletal Horror uma vez por semana."
+
+[.hint2_1656]
+en = "Talk to the Odd Old Man just west of Paterdomus to learn more."
+pt = "Fale com o Odd Old Man logo a oeste de Paterdomus para saber mais."
+
+[.set_1656]
+en = "Gives Slayer and Prayer experience."
+pt = "Dá experiência em Slayer e Prayer."
+
+[.name_1657]
+en = "Champion's Challenge"
+pt = "Champion's Challenge"
+
+[.desc_1657]
+en = "Fight against representatives of the races of Gielinor in honourable combat."
+pt = "Enfrente em combate honrado os representantes das raças de Gielinor."
+
+[.hint1_1657]
+en = "You must find a challenge scroll from each race you wish to fight."
+pt = "Você precisa achar um pergaminho de desafio (challenge scroll) de cada raça que quiser enfrentar."
+
+[.hint2_1657]
+en = "Talk to the guildmaster at the Champions' Guild, south of Varrock, to learn more."
+pt = "Fale com o mestre da guilda no Champions' Guild, ao sul de Varrock, para saber mais."
+
+[.set_1657]
+en = "Gives Constitution and Slayer experience."
+pt = "Dá experiência em Constitution e Slayer."
+
+[.name_1658]
+en = "Great Orb Project"
+pt = "Great Orb Project"
+
+[.desc_1658]
+en = "Compete with fellow runecrafters to gather orbs of power."
+pt = "Dispute com outros criadores de runas para juntar orbes de poder."
+
+[.hint1_1658]
+en = "You may play the Great Orb Project as often as you wish."
+pt = "Você pode jogar o Great Orb Project quantas vezes quiser."
+
+[.hint2_1658]
+en = "Talk to the staff at the Runecrafting Guild to learn more."
+pt = "Fale com os funcionários do Runecrafting Guild para saber mais."
+
+[.set_1658]
+en = "Gives tokens, which can be exchanged for runecrafting armour and experience."
+pt = "Dá fichas (tokens), que podem ser trocadas por armadura de Runecrafting e experiência."
+
+[.name_1659]
+en = "Pest Control"
+pt = "Pest Control"
+
+[.desc_1659]
+en = "Hold off a horde of invading beasts and destroy their portals."
+pt = "Segure uma horda de feras invasoras e destrua os portais delas."
+
+[.hint2_1659]
+en = "Talk to a Void Knight at their outpost, accessible from Port Sarim, to learn more."
+pt = "Fale com um Void Knight no posto avançado deles, que se alcança a partir de Port Sarim, para saber mais."
+
+[.hint3_1659]
+en = "Extra difficulties are unlocked at Combat Level 70 and 100."
+pt = "Dificuldades extras são liberadas no nível de combate 70 e 100."
+
+[.name_1660]
+en = "Castle Wars"
+pt = "Castle Wars"
+
+[.desc_1660]
+en = "Pit yourself in combat against your fellow players to capture and return the flag."
+pt = "Enfrente outros jogadores em combate para capturar a bandeira e levá-la de volta."
+
+[.hint2_1660]
+en = "Travel to the waiting room, west of Yanille, to learn more."
+pt = "Vá até a sala de espera, a oeste de Yanille, para saber mais."
+
+[.set_1660]
+en = "Gives tickets, which can be exchanged for armour and equipment."
+pt = "Dá bilhetes (tickets), que podem ser trocados por armaduras e equipamentos."
+
+[.name_1661]
+en = "Court Cases"
+pt = "Casos no tribunal"
+
+[.desc_1661]
+en = "Prosecute or defend the accused of RuneScape before a jury of their peers."
+pt = "Acuse ou defenda os réus de RuneScape diante de um júri de seus iguais."
+
+[.hint1_1661]
+en = "You must find court summons to take up a case."
+pt = "Você precisa achar intimações (court summons) para pegar um caso."
+
+[.hint2_1661]
+en = "Talk to the clerk at the Seers' Village courthouse to learn more."
+pt = "Fale com o escrivão do tribunal de Seers' Village para saber mais."
+
+[.hint3_1661]
+en = "You require level 65 Attack to prosecute and 65 Defence to defend a client."
+pt = "Você precisa de nível 65 em Attack para acusar e 65 em Defence para defender um cliente."
+
+[.set_1661]
+en = "Gives experience in Attack or Defence."
+pt = "Dá experiência em Attack ou Defence."
+
+[.name_1662]
+en = "Tai Bwo Wannai Cleanup"
+pt = "Limpeza de Tai Bwo Wannai"
+
+[.desc_1662]
+en = "Hack back the encroaching jungle to protect the village of Tai Bwo Wannai."
+pt = "Corte a selva que avança para proteger a aldeia de Tai Bwo Wannai."
+
+[.hint2_1662]
+en = "Talk to Murcaily, on the east side of Tai Bwo Wannai, to learn more."
+pt = "Fale com Murcaily, no lado leste de Tai Bwo Wannai, para saber mais."
+
+[.hint3_1662]
+en = "You will be attacked and may be poisoned while hacking back the jungle."
+pt = "Você vai ser atacado e pode ser envenenado enquanto corta a selva."
+
+[.set_1662]
+en = "Gives favour, which can be exchanged for trading sticks used to purchase goods and access to hardwood."
+pt = "Dá favor, que pode ser trocado por varetas de troca (trading sticks) para comprar mercadorias e ter acesso a madeira de lei."
+
+[.name_1663]
+en = "Fight Caves"
+pt = "Fight Caves"
+
+[.desc_1663]
+en = "Fight wave-upon-wave of TzHaar in an attempt to reach and defeat TzTok-Jad."
+pt = "Enfrente onda após onda de TzHaar para chegar até TzTok-Jad e derrotá-lo."
+
+[.hint1_1663]
+en = "You may attempt the Fight Caves as often as you wish."
+pt = "Você pode tentar as Fight Caves quantas vezes quiser."
+
+[.hint2_1663]
+en = "Talk to the TzHaar standing outside the Fight Cave entrance to learn more."
+pt = "Fale com o TzHaar parado na entrada da Fight Cave para saber mais."
+
+[.set_1663]
+en = "Gives TokKul (TzHaar currency) and, potentially, a fire cape."
+pt = "Dá TokKul (a moeda dos TzHaar) e, quem sabe, uma capa de fogo (fire cape)."
+
+[.name_1664]
+en = "Fight Pits"
+pt = "Fight Pits"
+
+[.desc_1664]
+en = "Fight your fellow players in a brawl to be the last adventurer standing."
+pt = "Enfrente outros jogadores numa briga para ser o último aventureiro de pé."
+
+[.hint1_1664]
+en = "You may enter the Fight Pits as often as you wish."
+pt = "Você pode entrar nos Fight Pits quantas vezes quiser."
+
+[.hint2_1664]
+en = "Talk to the TzHaar standing outside the Fight Pits to learn more."
+pt = "Fale com o TzHaar parado do lado de fora dos Fight Pits para saber mais."
+
+[.set_1664]
+en = "Victory will provide TokKul, used by the TzHaar as currency."
+pt = "A vitória dá TokKul, usado como moeda pelos TzHaar."
+
+[.name_1665]
+en = "Brimhaven Agility Arena"
+pt = "Brimhaven Agility Arena"
+
+[.desc_1665]
+en = "Traverse obstacles to gather tickets from pillars spaced throughout the arena."
+pt = "Vença obstáculos para juntar bilhetes nos pilares espalhados pela arena."
+
+[.hint1_1665]
+en = "You may brave the arena as often as you wish."
+pt = "Você pode encarar a arena quantas vezes quiser."
+
+[.hint2_1665]
+en = "Talk to Izzy No-Beard or Jackie the Fruit in the arena lobby to learn more."
+pt = "Fale com Izzy No-Beard ou Jackie the Fruit no saguão da arena para saber mais."
+
+[.hint3_1665]
+en = "It costs 200 coins to enter the arena."
+pt = "Custa 200 moedas para entrar na arena."
+
+[.hint4_1665]
+en = "At 20 and 40 Agility, you will be able to attempt more obstacles in the arena."
+pt = "Com 20 e 40 em Agility, você vai poder tentar mais obstáculos na arena."
+
+[.set_1665]
+en = "Gives tickets, which can be exchanged for rare herbs and Agility experience."
+pt = "Dá bilhetes (tickets), que podem ser trocados por ervas raras e experiência em Agility."
+
+[.name_1666]
+en = "Barbarian Assault"
+pt = "Barbarian Assault"
+
+[.desc_1666]
+en = "Work as a team to defeat the Penance monsters and their Queen."
+pt = "Trabalhe em equipe para derrotar os monstros Penance e a rainha deles."
+
+[.hint1_1666]
+en = "You may join the assault as often as you wish."
+pt = "Você pode participar do ataque quantas vezes quiser."
+
+[.hint2_1666]
+en = "Talk to Captain Cain at the Barbarian Outpost to learn more."
+pt = "Fale com o Captain Cain no Barbarian Outpost para saber mais."
+
+[.set_1666]
+en = "Gives honour points, usable for game upgrades, items or experience boosts."
+pt = "Dá pontos de honra, usados em melhorias do jogo, itens ou bônus de experiência."
+
+[.name_1667]
+en = "Blast Furnace"
+pt = "Blast Furnace"
+
+[.desc_1667]
+en = "Work with other players to collectively improve your smithing output."
+pt = "Trabalhe com outros jogadores para aumentar juntos a sua produção de Smithing."
+
+[.hint1_1667]
+en = "You may work the Blast Furnace as often as you wish."
+pt = "Você pode trabalhar no Blast Furnace quantas vezes quiser."
+
+[.hint2_1667]
+en = "Talk to the staff at the furnace to learn more."
+pt = "Fale com os funcionários da fornalha para saber mais."
+
+[.hint3_1667]
+en = "While this is not a combat-based activity, you may still take damage if you operate the pump incorrectly."
+pt = "Esta atividade não é de combate, mas você ainda pode se ferir se operar a bomba do jeito errado."
+
+[.hint4_1667]
+en = "Remember to bring sufficient ore and coal to smelt!"
+pt = "Lembre-se de levar minério (ore) e carvão (coal) suficientes para fundir!"
+
+[.hint5_1667]
+en = "Your team must collectively have 30 Firemaking, Strength, Agility and Crafting."
+pt = "A sua equipe precisa ter, somando todos, 30 em Firemaking, Strength, Agility e Crafting."
+
+[.hint6_1667]
+en = "In addition, if you do not have level 60 Smithing, you must pay 2,500 coins per ten minutes of using the Furnace."
+pt = "Além disso, se você não tiver nível 60 em Smithing, precisa pagar 2.500 moedas a cada dez minutos de uso da fornalha."
+
+[.set_1667]
+en = "Increases the rate of Smithing experience gain, and halves the amount of coal required per bar."
+pt = "Aumenta o ritmo de ganho de experiência em Smithing e reduz pela metade o carvão necessário por barra."
+
+[.name_1668]
+en = "Shades of Mort'ton"
+pt = "Shades of Mort'ton"
+
+[.desc_1668]
+en = "Rebuild the Mort'ton temple and use its powers to lay the undead to rest."
+pt = "Reconstrua o templo de Mort'ton e use os poderes dele para fazer os mortos-vivos descansarem."
+
+[.hint1_1668]
+en = "You may perform these actions as often as you wish."
+pt = "Você pode fazer essas ações quantas vezes quiser."
+
+[.hint2_1668]
+en = "Talk to Razmire in Mort'ton to learn more. You may require Serum 207."
+pt = "Fale com Razmire em Mort'ton para saber mais. Talvez você precise do Serum 207."
+
+[.set_1668]
+en = "Gives experience in Prayer, Crafting and Firemaking."
+pt = "Dá experiência em Prayer, Crafting e Firemaking."
+
+[.name_1669]
+en = "Barrows"
+pt = "Barrows"
+
+[.desc_1669]
+en = "Defeat the six undead Barrows Brothers in their graves beneath Morytania."
+pt = "Derrote os seis Barrows Brothers mortos-vivos nos túmulos deles, debaixo de Morytania."
+
+[.hint1_1669]
+en = "You may brave the Barrows as often as you dare."
+pt = "Você pode encarar os Barrows quantas vezes tiver coragem."
+
+[.hint2_1669]
+en = "Talk to the Strange Old Man near the Barrows to learn more."
+pt = "Fale com o Strange Old Man perto dos Barrows para saber mais."
+
+[.set_1669]
+en = "Gives material rewards, including a chance of winning a powerful piece of armour."
+pt = "Dá recompensas em itens, incluindo a chance de ganhar uma peça de armadura poderosa."
+
+[.name_1670]
+en = "Pyramid Plunder"
+pt = "Pyramid Plunder"
+
+[.desc_1670]
+en = "Disarm traps and avoid poisonous snakes as you search an ancient pyramid for treasure."
+pt = "Desarme armadilhas e fuja das cobras venenosas enquanto procura tesouros numa pirâmide antiga."
+
+[.hint1_1670]
+en = "You may attempt the pyramid as often as you wish."
+pt = "Você pode tentar a pirâmide quantas vezes quiser."
+
+[.hint2_1670]
+en = "Talk to the guardian within the pyramid, or Tarik outside it, to learn more."
+pt = "Fale com o guardião dentro da pirâmide, ou com Tarik do lado de fora, para saber mais."
+
+[.hint3_1670]
+en = "Every ten Thieving levels after 21, another floor of Jalsavrah becomes accessible."
+pt = "A cada dez níveis de Thieving depois do 21, mais um andar de Jalsavrah fica acessível."
+
+[.set_1670]
+en = "Gives Thieving experience and treasures which can be sold for cash."
+pt = "Dá experiência em Thieving e tesouros que podem ser vendidos por dinheiro."
+
+[.name_1671]
+en = "Sorceress' Garden"
+pt = "Sorceress' Garden"
+
+[.desc_1671]
+en = "Avoid the sorceress' guards and steal her fruit for Osman."
+pt = "Fuja dos guardas da feiticeira e roube as frutas dela para Osman."
+
+[.hint1_1671]
+en = "You may attempt the gardens as often as you wish."
+pt = "Você pode tentar os jardins quantas vezes quiser."
+
+[.hint2_1671]
+en = "Talk to Osman in Al Kharid to learn more."
+pt = "Fale com Osman em Al Kharid para saber mais."
+
+[.hint3_1671]
+en = "The spring, autumn and summer gardens give better experience than the winter, and unlock at 25, 45 and 65 Thieving respectively."
+pt = "Os jardins da primavera, do outono e do verão dão mais experiência que o do inverno e são liberados com 25, 45 e 65 de Thieving, nessa ordem."
+
+[.set_1671]
+en = "Crush the fruit into empty glasses and hand it to Osman for Thieving experience. Also gives some Farming experience."
+pt = "Esprema a fruta em copos vazios e entregue a Osman para ganhar experiência em Thieving. Também dá um pouco de experiência em Farming."
+
+[.name_1672]
+en = "Mage Training Arena"
+pt = "Mage Training Arena"
+
+[.desc_1672]
+en = "Practice your non-combat spells and display your pizazz."
+pt = "Pratique os seus feitiços fora de combate e mostre o seu pizazz."
+
+[.hint1_1672]
+en = "You may train as much as you wish in the arena."
+pt = "Você pode treinar o quanto quiser na arena."
+
+[.hint2_1672]
+en = "Talk to the staff at the arena to learn more."
+pt = "Fale com os funcionários da arena para saber mais."
+
+[.hint3_1672]
+en = "You will need to bring your own runes for enchanting, alchemy and telegrab spells."
+pt = "Você vai precisar levar as suas próprias runas para os feitiços de encantamento, alquimia e telecaptura (telegrab)."
+
+[.hint4_1672]
+en = "While you may enter the Arena at level 7 Magic, some spells require up to level 33 Magic."
+pt = "Você pode entrar na arena com nível 7 em Magic, mas alguns feitiços exigem até nível 33 em Magic."
+
+[.set_1672]
+en = "Gives Pizazz Points which can be exchanged for armour, runes and spells."
+pt = "Dá Pizazz Points, que podem ser trocados por armaduras, runas e feitiços."
+
+[.name_1673]
+en = "Duel Arena"
+pt = "Duel Arena"
+
+[.desc_1673]
+en = "Fight your friends to the death!"
+pt = "Lute com seus amigos até a morte!"
+
+[.hint1_1673]
+en = "You may try to kill your friends for as long as you both agree."
+pt = "Você pode tentar matar seus amigos enquanto os dois concordarem."
+
+[.hint2_1673]
+en = "Talk to the registrar under the buildings to the north of the arena to learn more."
+pt = "Fale com o escrivão (registrar) sob os prédios ao norte da arena para saber mais."
+
+[.set_1673]
+en = "You may risk a stake for a chance to win your opponent's items."
+pt = "Você pode arriscar uma aposta (stake) pela chance de ganhar os itens do oponente."
+
+[.name_1674]
+en = "Fist of Guthix"
+pt = "Fist of Guthix"
+
+[.desc_1674]
+en = "Survive as long as possible while gathering power from the Fist. Then, prevent your opponent from doing the same."
+pt = "Sobreviva o máximo possível enquanto junta poder do Punho (Fist). Depois, impeça o oponente de fazer o mesmo."
+
+[.hint1_1674]
+en = "You may play Fist of Guthix as often as you wish."
+pt = "Você pode jogar Fist of Guthix quantas vezes quiser."
+
+[.hint2_1674]
+en = "Talk to Fiara in the anteroom to learn more."
+pt = "Fale com Fiara na antessala para saber mais."
+
+[.set_1674]
+en = "Gives tokens, which can be exchanged for armour and experience-boosting equipment."
+pt = "Dá fichas (tokens), que podem ser trocadas por armaduras e equipamentos que aumentam a experiência."
+
+[.name_1675]
+en = "Stealing Creation"
+pt = "Stealing Creation"
+
+[.desc_1675]
+en = "Use gathering skills to claim sacred clay for your team, or combat skills to prevent your opponents doing the same."
+pt = "Use habilidades de coleta para conquistar argila sagrada (sacred clay) para a sua equipe, ou de combate para impedir que os oponentes façam o mesmo."
+
+[.hint2_1675]
+en = "Talk to the Head Mystic in the Stealing Creation camp to learn more."
+pt = "Fale com o Head Mystic no acampamento de Stealing Creation para saber mais."
+
+[.hint3_1675]
+en = "You cannot bring any of your own items through the Stealing Creation portal."
+pt = "Você não pode levar nenhum item seu pelo portal de Stealing Creation."
+
+[.hint4_1675]
+en = "You can harvest better clay deposits with 20, 40, 60 and 80 levels in a skill."
+pt = "Você pode extrair depósitos de argila melhores com nível 20, 40, 60 e 80 numa habilidade."
+
+[.set_1675]
+en = "Gives points, which can be exchanged for experience-boosting equipment and armour."
+pt = "Dá pontos, que podem ser trocados por equipamentos que aumentam a experiência e armaduras."
+
+[.name_1676]
+en = "Soul Wars"
+pt = "Soul Wars"
+
+[.desc_1676]
+en = "Gather soul fragments in an attempt to weaken and destroy your opponents' Avatar."
+pt = "Junte fragmentos de alma (soul fragments) para tentar enfraquecer e destruir o Avatar dos oponentes."
+
+[.hint1_1676]
+en = "You may join a soul war as often as you wish."
+pt = "Você pode entrar numa partida de Soul Wars quantas vezes quiser."
+
+[.hint2_1676]
+en = "Enter the portal in the south-west of Edgeville and talk to Nomad or Zimberfizz in the camp to learn more."
+pt = "Entre no portal a sudoeste de Edgeville e fale com Nomad ou Zimberfizz no acampamento para saber mais."
+
+[.set_1676]
+en = "Gives Zeal, which can be exchanged for combat experience, charms and pets."
+pt = "Dá Zeal, que pode ser trocado por experiência de combate, charms e mascotes (pets)."
+
+[.name_1677]
+en = "Clan Wars"
+pt = "Clan Wars"
+
+[.desc_1677]
+en = "Stand with your clan to destroy your opponents!"
+pt = "Lute ao lado do seu clã para destruir os oponentes!"
+
+[.hint1_1677]
+en = "You may fight in clan wars as often as you wish."
+pt = "Você pode lutar em guerras de clãs quantas vezes quiser."
+
+[.hint2_1677]
+en = "Talk to the staff at the Clan Wars waiting area to learn more."
+pt = "Fale com os funcionários da área de espera da Clan Wars para saber mais."
+
+[.hint3_1677]
+en = "While the requirement for this activity is a Combat level of 48, higher Combat levels will be highly useful."
+pt = "Embora o requisito desta atividade seja nível de combate 48, níveis de combate mais altos serão muito úteis."
+
+[.set_1677]
+en = "The honour of victory."
+pt = "A honra da vitória."
+
+[.name_1678]
+en = "Gnome Restaurant"
+pt = "Gnome Restaurant"
+
+[.desc_1678]
+en = "Create tasty treats and deliver them across RuneScape."
+pt = "Prepare petiscos gostosos e entregue-os por todo o RuneScape."
+
+[.hint1_1678]
+en = "You may work for the restaurant as often as you wish."
+pt = "Você pode trabalhar para o restaurante quantas vezes quiser."
+
+[.hint2_1678]
+en = "Talk to Aluft Gianne Jr at the restaurant in the Grand Tree to learn more."
+pt = "Fale com Aluft Gianne Jr no restaurante da Grand Tree para saber mais."
+
+[.hint3_1678]
+en = "You will need level 42 Cooking to create every possible dish required."
+pt = "Você vai precisar de nível 42 em Cooking (culinária) para preparar todos os pratos pedidos."
+
+[.set_1678]
+en = "Gives tips, including rare herbs, gems and unique costumes."
+pt = "Dá gorjetas, incluindo ervas raras, gemas e fantasias únicas."
+
+[.name_1679]
+en = "Mobilising Armies"
+pt = "Mobilising Armies"
+
+[.desc_1679]
+en = "Engage in strategic combat against your fellow commander aspirants."
+pt = "Trave combates estratégicos contra outros aspirantes a comandante."
+
+[.hint1_1679]
+en = "You may join the battle as often as you wish."
+pt = "Você pode entrar na batalha quantas vezes quiser."
+
+[.hint2_1679]
+en = "Talk to the staff in the Mobilising Armies camp to learn more."
+pt = "Fale com os funcionários do acampamento de Mobilising Armies para saber mais."
+
+[.hint3_1679]
+en = "You will need items to trade for credits to purchase your armies."
+pt = "Você vai precisar de itens para trocar por créditos e comprar seus exércitos."
+
+[.set_1679]
+en = "Gives reward credits, which can be exchanged for armour, ranks, uniforms, ring upgrades and other goods."
+pt = "Dá créditos de recompensa, que podem ser trocados por armaduras, patentes, uniformes, melhorias de anel e outros bens."
+
+[.name_1680]
+en = "Warriors' Guild"
+pt = "Warriors' Guild"
+
+[.desc_1680]
+en = "Practice your melee skills against living or stationary opponents."
+pt = "Pratique suas habilidades corpo a corpo contra oponentes vivos ou parados."
+
+[.hint1_1680]
+en = "You may train as much as you wish in the guild."
+pt = "Você pode treinar o quanto quiser na guilda."
+
+[.hint2_1680]
+en = "Talk to the guild staff to learn more."
+pt = "Fale com os funcionários da guilda para saber mais."
+
+[.set_1680]
+en = "Gives tokens, which allow access to the cyclopes, who may drop the powerful defender weapons."
+pt = "Dá fichas (tokens), que dão acesso aos ciclopes (cyclopes), que podem deixar cair os poderosos defenders."
+
 [.name_1703]
 en = "Talk to Sir Vant"
 pt = "Fale com Sir Vant"
@@ -2423,7 +5703,7 @@ pt = "- Recarregar 50% da energia de corrida (run energy) três vezes por dia."
 
 [.hint3_1220]
 en = "- Free teleports to the cabbage field south of Falador."
-pt = "- Teleportes grátis para o campo de repolhos ao sul de Falador."
+pt = "- Teletransportes grátis para o campo de repolhos ao sul de Falador."
 
 [.set_1220]
 en = "Explorer's ring 3 and a magic lamp worth 1,500xp in a skill of your choice."
@@ -2456,6 +5736,590 @@ pt = "- Pegar uma cesta de comida (hamper) com o cozinheiro (Cook) do Lumbridge 
 [.set_1221]
 en = "Explorer's ring 4 and a magic lamp worth 9,000xp in a skill of your choice."
 pt = "Explorer's ring 4 (anel de explorador) e uma lâmpada mágica de 9.000xp numa habilidade à sua escolha."
+
+[.name_1615]
+en = "Ardougne Set Tasks - Easy"
+pt = "Tarefas do conjunto de Ardougne - Fácil"
+
+[.desc_1615]
+en = "Given by Doctor Orbon in Ardougne Church for completing all Easy Tasks in Ardougne."
+pt = "Entregue pelo Doctor Orbon, na igreja de Ardougne, por completar todas as tarefas de dificuldade Fácil em Ardougne."
+
+[.hint1_1615]
+en = "The cloak confers the following benefits:"
+pt = "A capa dá os seguintes benefícios:"
+
+[.hint2_1615]
+en = "- Unlimited teleports to the monastery south of Ardougne."
+pt = "- Teletransportes ilimitados para o mosteiro ao sul de Ardougne."
+
+[.hint3_1615]
+en = "- 40% of items dropped in the Tower of Life will be noted."
+pt = "- 40% dos itens que caem na Tower of Life vêm em nota (noted)."
+
+[.hint4_1615]
+en = "- Improved rate of success when stealing from stalls in East Ardougne's market."
+pt = "- Mais chance de sucesso ao roubar das barracas do mercado de East Ardougne."
+
+[.hint5_1615]
+en = "You will be able to sell cats to citizens for double the normal number of death runes."
+pt = "Você poderá vender gatos aos cidadãos pelo dobro do número normal de runas da morte (death runes)."
+
+[.hint6_1615]
+en = "On entering a game of Castle Wars your Prayer points will be boosted by 10%."
+pt = "Ao entrar numa partida de Castle Wars, seus pontos de Prayer (oração) sobem 10%."
+
+[.set_1615]
+en = "Ardougne cloak 1 and a magic lamp worth 1,000xp in a skill of your choice."
+pt = "Ardougne cloak 1 (capa de Ardougne) e uma lâmpada mágica de 1.000xp numa habilidade à sua escolha."
+
+[.name_1616]
+en = "Ardougne Set Tasks - Medium"
+pt = "Tarefas do conjunto de Ardougne - Média"
+
+[.desc_1616]
+en = "Given by the town crier in East Ardougne's market for completing all Medium Tasks in Ardougne."
+pt = "Entregue pelo Town Crier, no mercado de East Ardougne, por completar todas as tarefas de dificuldade Média em Ardougne."
+
+[.hint1_1616]
+en = "The cloak gains the following extra benefits:"
+pt = "A capa ganha estes benefícios extras:"
+
+[.hint2_1616]
+en = "- Teleport to the Farming patch north of Ardougne once per day."
+pt = "- Teletransportar para o canteiro de Farming ao norte de Ardougne uma vez por dia."
+
+[.hint3_1616]
+en = "- Improved rate of success when picking pockets in Ardougne."
+pt = "- Mais chance de sucesso ao bater carteiras em Ardougne."
+
+[.hint4_1616]
+en = "- Double length PvP immunity after pulling the Wilderness teleport lever."
+pt = "- Imunidade PvP com o dobro da duração depois de puxar a alavanca de teletransporte da Wilderness."
+
+[.hint5_1616]
+en = "- 60% of items dropped in the Tower of Life will be noted."
+pt = "- 60% dos itens que caem na Tower of Life vêm em nota (noted)."
+
+[.hint6_1616]
+en = "- Improved yield from crafting runes at Ourania Altar."
+pt = "- Mais runas ao criar runas no Ourania Altar."
+
+[.set_1616]
+en = "Ardougne cloak 2 and a magic lamp worth 7,500xp in a skill of your choice. Wizard Cromperty will offer you 100 noted essence per day."
+pt = "Ardougne cloak 2 (capa de Ardougne) e uma lâmpada mágica de 7.500xp numa habilidade à sua escolha. Wizard Cromperty vai oferecer a você 100 essências em nota (noted) por dia."
+
+[.name_1617]
+en = "Ardougne Set Tasks - Hard"
+pt = "Tarefas do conjunto de Ardougne - Difícil"
+
+[.desc_1617]
+en = "Given by Aleck in Yanille for completing all Hard Tasks in Ardougne."
+pt = "Entregue pelo Aleck, em Yanille, por completar todas as tarefas de dificuldade Difícil em Ardougne."
+
+[.hint2_1617]
+en = "- Improved rate of success when picking pockets or shoplifting from stalls anywhere in RuneScape."
+pt = "- Mais chance de sucesso ao bater carteiras ou furtar barracas em qualquer lugar de RuneScape."
+
+[.hint3_1617]
+en = "- Teleport traps on chests will always teleport you to Ardougne's north bank."
+pt = "- As armadilhas de teletransporte dos baús sempre vão mandar você para o banco norte de Ardougne."
+
+[.hint4_1617]
+en = "- 80% of items dropped in the Tower of Life will be noted."
+pt = "- 80% dos itens que caem na Tower of Life vêm em nota (noted)."
+
+[.hint5_1617]
+en = "Talk to Aleck in Yanille to toggle your Watchtower Teleport destination to Yanille town centre."
+pt = "Fale com o Aleck, em Yanille, para alternar o destino do Watchtower Teleport para o centro de Yanille."
+
+[.set_1617]
+en = "Ardougne cloak 3 and a magic lamp worth 28,000xp in a skill of your choice. Wizard Cromperty will offer you 150 noted essence per day."
+pt = "Ardougne cloak 3 (capa de Ardougne) e uma lâmpada mágica de 28.000xp numa habilidade à sua escolha. Wizard Cromperty vai oferecer a você 150 essências em nota (noted) por dia."
+
+[.name_1618]
+en = "Ardougne Set Tasks - Elite"
+pt = "Tarefas do conjunto de Ardougne - Elite"
+
+[.desc_1618]
+en = "Given by Aleck in Yanille for completing all Elite Tasks in Ardougne."
+pt = "Entregue pelo Aleck, em Yanille, por completar todas as tarefas de dificuldade Elite em Ardougne."
+
+[.hint2_1618]
+en = "- Unlimited teleports to the Farming patch north of Ardougne."
+pt = "- Teletransportes ilimitados para o canteiro de Farming ao norte de Ardougne."
+
+[.hint3_1618]
+en = "- Recharge 100% of your Summoning points once per day."
+pt = "- Recarregar 100% dos seus pontos de Summoning uma vez por dia."
+
+[.hint4_1618]
+en = "- The least valuable rewards from the Fishing Trawler will now be more valuable."
+pt = "- As recompensas menos valiosas do Fishing Trawler passam a valer mais."
+
+[.hint5_1618]
+en = "- 5% chance of smithing two rune crossbow limbs at once in Yanille."
+pt = "- 5% de chance de forjar dois braços de besta rúnica (rune crossbow limbs) de uma vez em Yanille."
+
+[.set_1618]
+en = "Ardougne cloak 4 and a magic lamp worth 150,000xp in a skill of your choice. Bert the Sandman will offer you 120 buckets of sand per day."
+pt = "Ardougne cloak 4 (capa de Ardougne) e uma lâmpada mágica de 150.000xp numa habilidade à sua escolha. Bert the Sandman vai oferecer a você 120 baldes de areia (buckets of sand) por dia."
+
+[.name_1324]
+en = "Falador Set Tasks - Easy"
+pt = "Tarefas do conjunto de Falador - Fácil"
+
+[.desc_1324]
+en = "Given by Redbeard Frank in Port Sarim for completing all Easy Tasks in Falador."
+pt = "Entregue pelo Redbeard Frank, em Port Sarim, por completar todas as tarefas de dificuldade Fácil em Falador."
+
+[.hint1_1324]
+en = "The shield confers the following benefits:"
+pt = "O escudo dá os seguintes benefícios:"
+
+[.hint2_1324]
+en = "- Recharge 25% of your Prayer points once per day."
+pt = "- Recarregar 25% dos seus pontos de Prayer uma vez por dia."
+
+[.hint3_1324]
+en = "- Allows you to perform an emote using the shield when it is wielded."
+pt = "- Permite fazer um emote com o escudo quando ele está empunhado."
+
+[.set_1324]
+en = "Falador shield 1 and a magic lamp worth 1,000xp in a skill of your choice."
+pt = "Falador shield 1 (escudo de Falador) e uma lâmpada mágica de 1.000xp numa habilidade à sua escolha."
+
+[.name_1325]
+en = "Falador Set Tasks - Medium"
+pt = "Tarefas do conjunto de Falador - Média"
+
+[.desc_1325]
+en = "Given by the chemist in Rimmington for completing all Medium Tasks in Falador."
+pt = "Entregue pelo químico (chemist) de Rimmington por completar todas as tarefas de dificuldade Média em Falador."
+
+[.hint1_1325]
+en = "The shield gains the following extra benefits:"
+pt = "O escudo ganha estes benefícios extras:"
+
+[.hint2_1325]
+en = "- Recharge 50% of your Prayer points once per day."
+pt = "- Recarregar 50% dos seus pontos de Prayer uma vez por dia."
+
+[.hint3_1325]
+en = "- You will receive a 10% experience bonus from farming the patches north of Port Sarim while this shield is wielded."
+pt = "- 10% de bônus de experiência ao cultivar os canteiros ao norte de Port Sarim com este escudo empunhado."
+
+[.set_1325]
+en = "Falador shield 2 and a magic lamp worth 5,000xp in a skill of your choice."
+pt = "Falador shield 2 (escudo de Falador) e uma lâmpada mágica de 5.000xp numa habilidade à sua escolha."
+
+[.name_1326]
+en = "Falador Set Tasks - Hard"
+pt = "Tarefas do conjunto de Falador - Difícil"
+
+[.desc_1326]
+en = "Given by Sir Vyvin's squire in Falador Castle for completing all Hard Tasks in Falador."
+pt = "Entregue pelo escudeiro de Sir Vyvin, no Falador Castle, por completar todas as tarefas de dificuldade Difícil em Falador."
+
+[.hint2_1326]
+en = "- Recharge 100% of your Prayer points once per day."
+pt = "- Recarregar 100% dos seus pontos de Prayer uma vez por dia."
+
+[.hint3_1326]
+en = "- Wysin will trade mole skins for white lily seeds when this shield is carried."
+pt = "- O Wysin troca peles de toupeira (mole skins) por sementes de lírio branco (white lily seeds) se você levar este escudo."
+
+[.set_1326]
+en = "Falador shield 3 and a magic lamp worth 10,000xp in a skill of your choice."
+pt = "Falador shield 3 (escudo de Falador) e uma lâmpada mágica de 10.000xp numa habilidade à sua escolha."
+
+[.name_1327]
+en = "Falador Set Tasks - Elite"
+pt = "Tarefas do conjunto de Falador - Elite"
+
+[.desc_1327]
+en = "Given by Sir Vyvin's squire in Falador Castle for completing all Elite Tasks in Falador."
+pt = "Entregue pelo escudeiro de Sir Vyvin, no Falador Castle, por completar todas as tarefas de dificuldade Elite em Falador."
+
+[.hint2_1327]
+en = "- Recharge 100% of your Prayer twice per day."
+pt = "- Recarregue 100% da sua Prayer duas vezes por dia."
+
+[.hint3_1327]
+en = "- Operate the shield to help locate the giant mole when in its lair."
+pt = "- Use 'Operate' no escudo para ajudar a achar a Giant Mole quando estiver na toca dela."
+
+[.hint4_1327]
+en = "- The mole has a chance of dropping a mole nose, which you may trade with Wyson for higher-value nests."
+pt = "- A toupeira pode deixar cair um focinho de toupeira (mole nose), que você pode trocar com o Wyson por ninhos mais valiosos."
+
+[.hint5_1327]
+en = "When using the altar in Falador Castle to recharge Prayer points, you will gain an additional 2 points."
+pt = "Ao usar o altar do Falador Castle para recarregar pontos de Prayer, você ganha 2 pontos a mais."
+
+[.hint6_1327]
+en = "Ability to use the ancient hymnal on the Falador Castle altar to convert it to a Zaros altar."
+pt = "Poder usar o hinário antigo (ancient hymnal) no altar do Falador Castle para convertê-lo num altar de Zaros."
+
+[.set_1327]
+en = "Falador shield 4 and a set of magic lamps worth 160,000xp in four skills of your choice."
+pt = "Falador shield 4 (escudo de Falador) e um conjunto de lâmpadas mágicas de 160.000xp em quatro habilidades à sua escolha."
+
+[.name_1417]
+en = "Fremennik Set Tasks - Easy"
+pt = "Tarefas do conjunto de Fremennik - Fácil"
+
+[.desc_1417]
+en = "Given by the council workman on the bridge south of Rellekka for completing all Easy Tasks in the Fremennik Province."
+pt = "Entregue pelo operário do conselho (council workman), na ponte ao sul de Rellekka, por completar todas as tarefas de dificuldade Fácil na Fremennik Province."
+
+[.hint1_1417]
+en = "The boots confer the following benefits:"
+pt = "As botas dão os seguintes benefícios:"
+
+[.hint2_1417]
+en = "- Contact the Fossegrimmen at a distance to recharge your lyre with one fewer charge."
+pt = "- Contate a Fossegrimen à distância para recarregar a lira (lyre), com uma carga a menos."
+
+[.hint3_1417]
+en = "Peer the Seer will deposit items into your bank for you."
+pt = "O Peer the Seer deposita itens no seu banco por você."
+
+[.hint4_1417]
+en = "When charging your lyre at the Fossegrimmen's altar you will receive one extra charge."
+pt = "Ao carregar a lira no altar da Fossegrimen, você recebe uma carga extra."
+
+[.set_1417]
+en = "Fremennik sea boots 1 and a magic lamp worth 5,000xp in a skill of your choice."
+pt = "Fremennik sea boots 1 (botas do mar) e uma lâmpada mágica de 5.000xp numa habilidade à sua escolha."
+
+[.name_1418]
+en = "Fremennik Set Tasks - Medium"
+pt = "Tarefas do conjunto de Fremennik - Média"
+
+[.desc_1418]
+en = "Given by Yrsa in Rellekka for completing all Medium Tasks in the Fremennik Province."
+pt = "Entregue pela Yrsa, em Rellekka, por completar todas as tarefas de dificuldade Média na Fremennik Province."
+
+[.hint1_1418]
+en = "The boots gain the following extra benefits:"
+pt = "As botas ganham estes benefícios extras:"
+
+[.hint2_1418]
+en = "- One chargeless teleport with the lyre per day."
+pt = "- Um teletransporte por dia com a lira, sem gastar carga."
+
+[.hint3_1418]
+en = "- Shortcut between the piers of Etceteria and Miscellania."
+pt = "- Atalho entre os píeres de Etceteria e Miscellania."
+
+[.hint4_1418]
+en = "Your kingdom's approval rating will increase faster."
+pt = "A aprovação do seu reino sobe mais rápido."
+
+[.set_1418]
+en = "Fremennik sea boots 2 and a magic lamp worth 10,000xp in a skill of your choice."
+pt = "Fremennik sea boots 2 (botas do mar) e uma lâmpada mágica de 10.000xp numa habilidade à sua escolha."
+
+[.name_1419]
+en = "Fremennik Set Tasks - Hard"
+pt = "Tarefas do conjunto de Fremennik - Difícil"
+
+[.desc_1419]
+en = "Given by Advisor Ghrim in Miscellania for completing all Hard Tasks in the Fremennik Province."
+pt = "Entregue pelo Advisor Ghrim, em Miscellania, por completar todas as tarefas de dificuldade Difícil na Fremennik Province."
+
+[.hint1_1419]
+en = "You will gain the following extra benefits:"
+pt = "Você ganha estes benefícios extras:"
+
+[.hint2_1419]
+en = "Talk to the bard in Rellekka to toggle your lyre teleport destination to Waterbirth Island."
+pt = "Fale com o bardo (bard) de Rellekka para trocar o destino do teletransporte da lira para a Waterbirth Island."
+
+[.hint3_1419]
+en = "Advisor Ghrim will accept flatpack furniture as donations to your kingdom's treasury."
+pt = "O Advisor Ghrim aceita móveis desmontados (flatpacks) como doação para o tesouro do seu reino."
+
+[.set_1419]
+en = "Fremennik sea boots 3 and a magic lamp worth 15,000xp in a skill of your choice."
+pt = "Fremennik sea boots 3 (botas do mar) e uma lâmpada mágica de 15.000xp numa habilidade à sua escolha."
+
+[.name_1420]
+en = "Fremennik Set Tasks - Elite"
+pt = "Tarefas do conjunto de Fremennik - Elite"
+
+[.desc_1420]
+en = "Given by Advisor Ghrim in Miscellania for completing all Elite Tasks in the Fremennik Province."
+pt = "Entregue pelo Advisor Ghrim, em Miscellania, por completar todas as tarefas de dificuldade Elite na Fremennik Province."
+
+[.hint2_1420]
+en = "- The Dagganoth Kings will drop some items noted."
+pt = "- Os Dagannoth Kings deixam cair alguns itens em nota (noted)."
+
+[.hint3_1420]
+en = "- I will also deal more damage to the Dagganoth Kings."
+pt = "- Você também causa mais dano aos Dagannoth Kings."
+
+[.hint4_1420]
+en = "- I can access a new section of Jatizso's mine."
+pt = "- Você pode entrar numa parte nova da mina de Jatizso."
+
+[.hint5_1420]
+en = "Talk to Chieftain Brundt in Relekka to no longer require a seal of passage on Lunar Isle."
+pt = "Fale com o Chieftain Brundt, em Rellekka, para não precisar mais do selo de passagem (seal of passage) na Lunar Isle."
+
+[.hint6_1420]
+en = "Talk to Olaf the Bard in Relekka to toggle your lyre teleport to Jatizso or Neitiznot."
+pt = "Fale com o Olaf the Bard, em Rellekka, para trocar o teletransporte da lira para Jatizso ou Neitiznot."
+
+[.set_1420]
+en = "Fremennik sea boots 4 and a set of magic lamps worth a total of 160,000xp in five skills of your choice."
+pt = "Fremennik sea boots 4 (botas do mar) e um conjunto de lâmpadas mágicas que somam 160.000xp em cinco habilidades à sua escolha."
+
+[.name_1367]
+en = "Karamja Set Tasks - Easy"
+pt = "Tarefas do conjunto de Karamja - Fácil"
+
+[.desc_1367]
+en = "Given by Pirate Jackie the Fruit outside Brimhaven Agility Arena for completing all Easy Tasks in Karamja."
+pt = "Entregue pelo Pirate Jackie the Fruit, na entrada da Brimhaven Agility Arena, por completar todas as tarefas de dificuldade Fácil em Karamja."
+
+[.hint1_1367]
+en = "The gloves confer the following benefits:"
+pt = "As luvas dão os seguintes benefícios:"
+
+[.hint2_1367]
+en = "- Half-price travel on the Port Sarim-Musa Point and Ardougne-Brimhaven boats (15gp)."
+pt = "- Viagem pela metade do preço (15 moedas) nos barcos Port Sarim-Musa Point e Ardougne-Brimhaven."
+
+[.hint3_1367]
+en = "- You may claim 40 pineapples a day from Dell Monti."
+pt = "- Você pode pegar 40 abacaxis (pineapples) por dia com o Dell Monti."
+
+[.set_1367]
+en = "Karamja gloves 1 and a magic lamp worth 1,000xp in a skill of your choice."
+pt = "Karamja gloves 1 (luvas de Karamja) e uma lâmpada mágica de 1.000xp numa habilidade à sua escolha."
+
+[.name_1368]
+en = "Karamja Set Tasks - Medium"
+pt = "Tarefas do conjunto de Karamja - Média"
+
+[.desc_1368]
+en = "Given by Kaleb Paramaya in Shilo Village for completing all Medium Tasks in Karamja."
+pt = "Entregue pelo Kaleb Paramaya, em Shilo Village, por completar todas as tarefas de dificuldade Média em Karamja."
+
+[.hint1_1368]
+en = "The gloves gain the following extra benefits:"
+pt = "As luvas ganham estes benefícios extras:"
+
+[.hint2_1368]
+en = "- 10% experience bonus from the Brimhaven Agility Arena."
+pt = "- 10% de bônus de experiência na Brimhaven Agility Arena."
+
+[.set_1368]
+en = "Karamja gloves 2 and a magic lamp worth 5,000xp in a skill of your choice."
+pt = "Karamja gloves 2 (luvas de Karamja) e uma lâmpada mágica de 5.000xp numa habilidade à sua escolha."
+
+[.name_1369]
+en = "Karamja Set Tasks - Hard"
+pt = "Tarefas do conjunto de Karamja - Difícil"
+
+[.desc_1369]
+en = "Given by any jungle forester north of Kharazi Jungle for completing all Hard Tasks in Karamja."
+pt = "Entregue por qualquer guarda florestal (jungle forester) ao norte da Kharazi Jungle, por completar todas as tarefas de dificuldade Difícil em Karamja."
+
+[.hint2_1369]
+en = "- Free entry to Brimhaven Dungeon."
+pt = "- Entrada grátis na Brimhaven Dungeon."
+
+[.hint3_1369]
+en = "- Access to the gem mine under Shilo Village."
+pt = "- Acesso à mina de gemas embaixo de Shilo Village."
+
+[.hint4_1369]
+en = "- Free teleport to the Shilo Village gem mine."
+pt = "- Teletransporte grátis para a mina de gemas de Shilo Village."
+
+[.set_1369]
+en = "Karamja gloves 3 and a magic lamp worth 10,000xp in a skill of your choice."
+pt = "Karamja gloves 3 (luvas de Karamja) e uma lâmpada mágica de 10.000xp numa habilidade à sua escolha."
+
+[.name_1370]
+en = "Karamja Set Tasks - Elite"
+pt = "Tarefas do conjunto de Karamja - Elite"
+
+[.desc_1370]
+en = "Given by any jungle forester north of Kharazi Jungle for completing all Elite Tasks in Karamja."
+pt = "Entregue por qualquer guarda florestal (jungle forester) ao norte da Kharazi Jungle, por completar todas as tarefas de dificuldade Elite em Karamja."
+
+[.hint2_1370]
+en = "- 25% chance of receiving double tickets in Brimhaven Agility Arena."
+pt = "- 25% de chance de receber tíquetes em dobro na Brimhaven Agility Arena."
+
+[.hint3_1370]
+en = "- Double damage against wild dogs in Brimhaven Dungeon, and access to a shortcut to the red dragon area of the dungeon."
+pt = "- Dano em dobro contra cães selvagens (wild dogs) na Brimhaven Dungeon e acesso a um atalho para a área dos dragões vermelhos da masmorra."
+
+[.hint4_1370]
+en = "- Once per day, if I am killed in the Fight Caves/Pits, I will be resurrected on the spot."
+pt = "- Uma vez por dia, se você morrer nas Fight Caves/Pits, ressuscita ali mesmo."
+
+[.hint5_1370]
+en = "Lapalok will give me more Slayer points."
+pt = "O Lapalok passa a dar mais pontos de Slayer."
+
+[.hint6_1370]
+en = "Once per day, the TzHaar banker will give me 8,000 Tok-Kul and Dell Monti will give me 40 apples ."
+pt = "Uma vez por dia, o bancário TzHaar dá 8.000 Tok-Kul, e o Dell Monti dá 40 maçãs."
+
+[.set_1370]
+en = "Karamja gloves 4 and a set of magic lamps worth a total of 140,000xp in three skills of your choice."
+pt = "Karamja gloves 4 (luvas de Karamja) e lâmpadas mágicas que somam 140.000xp em três habilidades à sua escolha."
+
+[.name_1305]
+en = "Seers' Village Set Tasks - Easy"
+pt = "Tarefas do conjunto de Seers' Village - Fácil"
+
+[.desc_1305]
+en = "Given by any seer in Seers' Village for completing all Easy Tasks in Seers' Village."
+pt = "Entregue por qualquer vidente (seer) de Seers' Village por completar todas as tarefas de dificuldade Fácil em Seers' Village."
+
+[.hint1_1305]
+en = "The headband confers the following benefits:"
+pt = "A faixa de cabeça (headband) dá os seguintes benefícios:"
+
+[.hint2_1305]
+en = "- Provides a constant source of weak light (subsequent headbands will provide stronger light)."
+pt = "- Dá uma luz fraca constante (as próximas faixas darão uma luz mais forte)."
+
+[.hint3_1305]
+en = "- 100% chance of receiving two logs when cutting normal trees."
+pt = "- 100% de chance de ganhar duas toras ao cortar árvores comuns."
+
+[.hint4_1305]
+en = "Geoffrey in the flax field near Seers' Village will give you 30 flax per day."
+pt = "Geoffrey, no campo de linho perto de Seers' Village, vai te dar 30 linhos (flax) por dia."
+
+[.set_1305]
+en = "Seers' headband 1 and a magic lamp worth 1,000xp in a skill of your choice. The coal trucks at the Seers' Village coal mine will now hold 140 coal."
+pt = "Seers' headband 1 (faixa de vidente) e uma lâmpada mágica de 1.000xp numa habilidade à sua escolha. Os vagões de carvão (coal trucks) da mina de Seers' Village agora guardam 140 carvões."
+
+[.name_1306]
+en = "Seers' Village Set Tasks - Medium"
+pt = "Tarefas do conjunto de Seers' Village - Média"
+
+[.desc_1306]
+en = "Given by Stankers at the coal mine west of Seers' Village for completing all Medium Tasks in Seers' Village."
+pt = "Entregue pelo Stankers, na mina de carvão a oeste de Seers' Village, por completar todas as tarefas de dificuldade Média em Seers' Village."
+
+[.hint1_1306]
+en = "The headband gains the following extra benefits:"
+pt = "A faixa ganha os seguintes benefícios extras:"
+
+[.hint2_1306]
+en = "- 10% bonus experience when cutting maple trees."
+pt = "- 10% de experiência bônus ao cortar bordos (maple trees)."
+
+[.hint3_1306]
+en = "- Faster spinning when using the spinning wheel in Seers' Village."
+pt = "- Fiação mais rápida na roda de fiar (spinning wheel) de Seers' Village."
+
+[.hint4_1306]
+en = "Geoffrey in the flax field near Seers' Village will give you 60 flax per day."
+pt = "Geoffrey, no campo de linho perto de Seers' Village, vai te dar 60 linhos (flax) por dia."
+
+[.set_1306]
+en = "Seers' headband 2 and a magic lamp worth 5,000xp in a skill of your choice. The coal trucks at the Seers' Village coal mine will now hold 168 coal."
+pt = "Seers' headband 2 (faixa de vidente) e uma lâmpada mágica de 5.000xp numa habilidade à sua escolha. Os vagões de carvão (coal trucks) da mina de Seers' Village agora guardam 168 carvões."
+
+[.name_1307]
+en = "Seers' Village Set Tasks - Hard"
+pt = "Tarefas do conjunto de Seers' Village - Difícil"
+
+[.desc_1307]
+en = "Given by Sir Kay in Camelot Castle for completing all Hard Tasks in Seers' Village."
+pt = "Entregue por Sir Kay, no Camelot Castle, por completar todas as tarefas de dificuldade Difícil em Seers' Village."
+
+[.hint2_1307]
+en = "- Thormac at the Sorcerer's Tower will enchant mystic staves for 27,000 coins instead of 40,000."
+pt = "- Thormac, na Sorcerer's Tower, vai encantar cajados místicos (mystic staves) por 27.000 moedas em vez de 40.000."
+
+[.hint3_1307]
+en = "- The Lady of the Lake will enhance Excalibur for you."
+pt = "- A Lady of the Lake vai aprimorar a Excalibur para você."
+
+[.hint4_1307]
+en = "Talk to any seer to change your Camelot Teleport destination to the centre of Seers' Village."
+pt = "Fale com qualquer vidente para mudar o destino do seu Camelot Teleport para o centro de Seers' Village."
+
+[.hint5_1307]
+en = "The Seers' Village altar will give a +2 boost to Prayer."
+pt = "O altar de Seers' Village dá um bônus de +2 em Prayer."
+
+[.hint6_1307]
+en = "Geoffrey in the flax field near Seers' Village will give you 120 flax per day."
+pt = "Geoffrey, no campo de linho perto de Seers' Village, vai te dar 120 linhos (flax) por dia."
+
+[.set_1307]
+en = "Seers' headband 3 and a magic lamp worth 10,000xp in a skill of your choice. The coal trucks at the Seers' Village coal mine will now hold 196 coal."
+pt = "Seers' headband 3 (faixa de vidente) e uma lâmpada mágica de 10.000xp numa habilidade à sua escolha. Os vagões de carvão (coal trucks) da mina de Seers' Village agora guardam 196 carvões."
+
+[.name_1308]
+en = "Seers' Village Set Tasks - Elite"
+pt = "Tarefas do conjunto de Seers' Village - Elite"
+
+[.desc_1308]
+en = "Given by Sir Kay in Camelot Castle for completing all Elite Tasks in Seers' Village."
+pt = "Entregue por Sir Kay, no Camelot Castle, por completar todas as tarefas de dificuldade Elite em Seers' Village."
+
+[.hint2_1308]
+en = "- The Camelot Teleport spell will teleport you to the centre of Seers' Village."
+pt = "- O feitiço Camelot Teleport vai levar você ao centro de Seers' Village."
+
+[.hint3_1308]
+en = "Enhanced Excalibur's special attack will heal you for twice as much."
+pt = "O ataque especial da Enhanced Excalibur vai curar você o dobro."
+
+[.hint4_1308]
+en = "Up to 200 coal a day will be transferred directly to your bank if placed in the coal trucks."
+pt = "Até 200 carvões por dia vão direto para o seu banco se forem postos nos vagões de carvão."
+
+[.hint5_1308]
+en = "Increased chance of activating the special effect of an enchanted bolt."
+pt = "Mais chance de ativar o efeito especial de um virote encantado."
+
+[.hint6_1308]
+en = "Geoffrey in the flax field near Seers' Village will give you 200 flax per day."
+pt = "Geoffrey, no campo de linho perto de Seers' Village, vai te dar 200 linhos (flax) por dia."
+
+[.set_1308]
+en = "Seers' headband 4 and a set of magic lamps worth 145,000xp in five skills of your choice."
+pt = "Seers' headband 4 (faixa de vidente) e um conjunto de lâmpadas mágicas de 145.000xp em cinco habilidades à sua escolha."
+
+[.name_1642]
+en = "No Task Available"
+pt = "Sem tarefa disponível"
+
+[.desc_1642]
+en = "There are no Tasks in this locality. Enter another locality or pin a Task from the full list."
+pt = "Não há tarefas neste lugar. Vá para outro lugar ou fixe uma tarefa da lista completa."
+
+[.desc_1643]
+en = "You have completed all of the Tasks in this locality. Enter another locality or pin a Task from the full list."
+pt = "Você concluiu todas as tarefas deste lugar. Vá para outro lugar ou fixe uma tarefa da lista completa."
+
+[.name_1644]
+en = "No Pinned Task"
+pt = "Sem tarefa fixada"
+
+[.desc_1644]
+en = "You currently have no Task pinned. Click on a Task to pin it or select one from the full list."
+pt = "Você não tem nenhuma tarefa fixada. Clique numa tarefa para fixá-la ou escolha uma da lista completa."
+
+[.hint1_1644]
+en = "Clear current hint arrow:"
+pt = "Limpar a seta de dica atual:"
 
 [.difficulty_1]
 en = "Beginner"

@@ -3622,7 +3622,7 @@ pt = "Se você estiver num clã, junte alguns membros e experimente o Clan Wars.
 
 [.meleetutor_20]
 en = "Both activities are safe minigame, which means if you die you will not loose any of your items. You can get to them by using the teleport option in your minigames tab."
-pt = "As duas atividades são minigames seguros, ou seja, se você morrer não perde nenhum item. Você chega até elas usando a opção de teleporte na aba Minigames."
+pt = "As duas atividades são minigames seguros, ou seja, se você morrer não perde nenhum item. Você chega até elas usando a opção de teletransporte na aba Minigames."
 
 [.meleetutor_21]
 en = "There is also the wilderness. The wilderness is north of Varrock and you can fight other players there. But bare in mind if you die to another player in the wilderness you will lose your stuff."
@@ -6336,7 +6336,7 @@ pt = "Você só pode trancar a sua própria casa."
 
 [.skill_construction_houseportal_5]
 en = "You don't have a house to teleport to."
-pt = "Você não tem uma casa para onde se teleportar."
+pt = "Você não tem uma casa para onde se teletransportar."
 
 [.skill_construction_houseportal_6]
 en = "That player is offline, or has privacy mode enabled."
@@ -8002,11 +8002,11 @@ pt = "Você não pode usar isso contra um NPC."
 
 [.skill_magic_book_modern_teleportblock_3]
 en = "You have been teleblocked."
-pt = "Você foi bloqueado contra teleporte (teleblock)."
+pt = "Você foi bloqueado contra teletransporte (teleblock)."
 
 [.skill_magic_book_modern_teleportblock_4]
 en = "Your teleblock has worn off."
-pt = "O seu bloqueio de teleporte (teleblock) acabou."
+pt = "O seu bloqueio de teletransporte (teleblock) acabou."
 
 [.skill_magic_book_modern_teleportblock_5]
 en = "Your teleblock resistance has worn off."
@@ -8034,7 +8034,7 @@ pt = "Esse jogador está ocupado."
 
 [.skill_magic_jewellery_amuletofglory_1]
 en = "Where would you like to teleport to?"
-pt = "Para onde você quer se teleportar?"
+pt = "Para onde você quer se teletransportar?"
 
 [.skill_magic_jewellery_amuletofglory_2]
 en = "Edgeville"
@@ -8110,7 +8110,7 @@ pt = "Lugar nenhum."
 
 [.skill_magic_jewellery_gamesnecklace_7]
 en = "You need to have completed The Darkness of Hallowvale quest to teleport to this location."
-pt = "Você precisa ter concluído a missão The Darkness of Hallowvale para se teleportar para este local."
+pt = "Você precisa ter concluído a missão The Darkness of Hallowvale para se teletransportar para este local."
 
 # Skills - magic/jewellery/RingOfDuelling.kt
 
@@ -8852,7 +8852,7 @@ pt = "Você precisa concluir Rune Mysteries antes de fazer isso."
 
 [.skill_runecrafting_essencemine_2]
 en = "Your scrying orb has absorbed enough teleportation information."
-pt = "O seu orbe de vidência (scrying orb) já absorveu informações de teleporte suficientes."
+pt = "O seu orbe de vidência (scrying orb) já absorveu informações de teletransporte suficientes."
 
 # Skills - runecrafting/EssencePouch.kt
 
@@ -8904,7 +8904,7 @@ pt = "Você sente uma força poderosa tomar conta de você..."
 
 [.skill_runecrafting_mysteriousruins_3]
 en = "Warning! This portal will teleport you into the Wilderness."
-pt = "Atenção! Este portal vai teleportar você para a Wilderness."
+pt = "Atenção! Este portal vai teletransportar você para a Wilderness."
 
 [.skill_runecrafting_mysteriousruins_4]
 en = "Are you sure you wish to use this portal?"
@@ -9518,7 +9518,7 @@ pt = "O seu familiar não tem nenhum alvo para atacar."
 
 [.skill_summoning_familiarteleport_1]
 en = "You cannot teleport with %1% above level %2% wilderness."
-pt = "Você não pode se teleportar com %1% acima do nível %2% da Wilderness."
+pt = "Você não pode se teletransportar com %1% acima do nível %2% da Wilderness."
 
 # Skills - summoning/FamiliarUtilitySpecials.kt
 
@@ -12078,11 +12078,11 @@ pt = "Conversar"
 
 [.skill_summoning_familiar_lavatitan_2]
 en = "Teleport to Lava Maze"
-pt = "Teleportar para o Lava Maze"
+pt = "Teletransportar para o Lava Maze"
 
 [.skill_summoning_familiar_lavatitan_3]
 en = "Are you sure you want to teleport here? It's very high wilderness."
-pt = "Tem certeza de que quer se teleportar para lá? É Wilderness de nível muito alto."
+pt = "Tem certeza de que quer se teletransportar para lá? É Wilderness de nível muito alto."
 
 [.skill_summoning_familiar_lavatitan_4]
 en = "Yes. I'm sure."
@@ -14938,7 +14938,7 @@ pt = "Posso te ensinar a devastar, se quiser..."
 
 [.skill_summoning_familiar_voidshifter_1]
 en = "Your void shifter teleports you to safety."
-pt = "O seu void shifter teleporta você para um lugar seguro."
+pt = "O seu void shifter teletransporta você para um lugar seguro."
 
 [.skill_summoning_familiar_voidshifter_2]
 en = "What a splendid day, sir!"
@@ -19400,11 +19400,11 @@ pt = "Quantos conjuntos de 10 você quer encaixar pontas?"
 
 [.data_skill_fletching_bolt_tip_recipes_3]
 en = "You fletch an unfinished mithril grapple."
-pt = "Você faz um gancho de mithril (mithril grapple) inacabado."
+pt = "Você faz um arpéu de mithril (mithril grapple) inacabado."
 
 [.data_skill_fletching_bolt_tip_recipes_4]
 en = "You fletch a mithril grapple."
-pt = "Você faz um gancho de mithril (mithril grapple)."
+pt = "Você faz um arpéu de mithril (mithril grapple)."
 
 # Skill data - data/skill/fletching/bow.recipes.toml
 
@@ -20202,7 +20202,7 @@ pt = "Gargoyles são criaturas aladas de pedra. Você vai ter que lutar até que
 
 [.data_skill_slayer_master_duradel_tables_14]
 en = "Goraks are extremely aggressive creatures. They have been imprisoned on an alternate plane, which is only accessible by using the fairy rings. Be extremely careful: their touch drains life points as well as skills!"
-pt = "Goraks são criaturas extremamente agressivas. Foram aprisionados num plano alternativo, que só se alcança pelos anéis de fadas (fairy rings). Tome muito cuidado: o toque deles drena pontos de vida e também habilidades!"
+pt = "Goraks são criaturas extremamente agressivas. Foram aprisionados num plano alternativo, que só se alcança pelos fairy rings. Tome muito cuidado: o toque deles drena pontos de vida e também habilidades!"
 
 [.data_skill_slayer_master_duradel_tables_15]
 en = "Greater demons are weak to ranged attacks. Though not the strongest of the demons, they are still dangerous. Slaughter them easily in Brimhaven's depths, and revel in your power."

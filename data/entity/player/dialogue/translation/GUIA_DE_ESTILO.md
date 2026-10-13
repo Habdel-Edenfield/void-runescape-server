@@ -67,6 +67,15 @@ Vale para todo texto em `dialogue_pt_br.tables.toml` e `tutorial_island_pt_br.ta
 | the Thing (Fred the Farmer) | a Coisa |
 | Danger Tutor (Doomsayer) | Tutor do Perigo |
 | Click here to continue | Clique aqui para continuar |
+| teleport (verbo e nome) | teletransportar / teletransporte (o nome do feitiço ou item fica em inglês: Varrock Teleport) |
+| fairy ring | fica em inglês (o fairy ring, os fairy rings) |
+| grapple | arpéu (grapple) |
+| crossbow / bolts / limbs | besta / virotes / braços de besta |
+| pouch (Runecrafting, Summoning) | bolsa (pouch) |
+| pet | mascote |
+| collection box | caixa de coleta |
+| dungeon | masmorra (nome próprio em inglês: Brimhaven Dungeon); "calabouço" ficou nas recompensas de Lumbridge |
+| Task names (conjuntos) | traduzidos com o trocadilho refeito em português ("Doing the Ironing" = "Passando a ferro"); nome de minijogo, missão, NPC e lugar fica em inglês |
 
 Habilidades com glosa usada: Woodcutting, Firemaking, Fishing, Cooking (culinária), Mining e Smithing (mineração e forja), Prayer (oração), Magic (magia), Runecrafting (criação de runas), Fletching (confecção de arcos e flechas), Farming (agricultura), Crafting (artesanato).
 
