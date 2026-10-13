@@ -1,6 +1,7 @@
 package content.social.trade
 
 import com.github.michaelbull.logging.InlineLogger
+import content.entity.player.dialogue.translate
 import content.social.trade.Trade.getPartner
 import content.social.trade.lend.Loan
 import world.gregs.voidps.engine.Script
@@ -33,8 +34,8 @@ class TradeConfirm : Script {
                 message("You don't have enough inventory space to accept this trade.")
                 return@interfaceOption
             }
-            interfaces.sendText("trade_main", "status", "Waiting for other ..")
-            partner.interfaces.sendText("trade_main", "status", "Other player has accepted.")
+            interfaces.sendText("trade_main", "status", translate("Waiting for other .."))
+            partner.interfaces.sendText("trade_main", "status", partner.translate("Other player has accepted."))
             request(partner, "accept_trade") { requester, acceptor ->
                 confirm(requester)
                 confirm(acceptor)
@@ -47,8 +48,8 @@ class TradeConfirm : Script {
          */
         interfaceOption("Accept", "trade_confirm:accept") {
             val partner = getPartner(this) ?: return@interfaceOption
-            interfaces.sendText("trade_confirm", "status", "Waiting for other ..")
-            partner.interfaces.sendText("trade_confirm", "status", "Other player has accepted.")
+            interfaces.sendText("trade_confirm", "status", translate("Waiting for other .."))
+            partner.interfaces.sendText("trade_confirm", "status", partner.translate("Other player has accepted."))
             request(partner, "confirm_trade") { requester, acceptor ->
                 val requesterLoan = requester.loan[0]
                 val acceptorLoan = acceptor.loan[0]
@@ -92,7 +93,7 @@ class TradeConfirm : Script {
             sendItemsList(player, "receive", player.otherOffer)
             sendLoan(player)
         }
-        player.interfaces.sendText("trade_confirm", "status", "Are you sure you want to make this trade?")
+        player.interfaces.sendText("trade_confirm", "status", player.translate("Are you sure you want to make this trade?"))
     }
 
     fun loanItem(player: Player, loanItem: Item, other: Player) {

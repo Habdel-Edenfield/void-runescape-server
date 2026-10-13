@@ -3205,6 +3205,312 @@ pt = "<u=0000FF>Abrir o Skill Advance Guide</u>"
 interface = 741
 component = 10
 
+[.label_371_2]
+en = "Tutorial Island Progress"
+pt = "Progresso na Tutorial Island"
+interface = 371
+component = 2
+
+[.label_371_27]
+en = "Please follow the instructions below to advance in the tutorial."
+pt = "Siga as instruções abaixo para avançar no tutorial."
+interface = 371
+component = 27
+
+[.label_277_3]
+en = "Congratulations!"
+pt = "Parabéns!"
+interface = 277
+component = 3
+
+[.label_277_6]
+en = "Quest Points:"
+pt = "Pontos de missão:"
+interface = 277
+component = 6
+
+[.label_277_9]
+en = "You are awarded:"
+pt = "Você recebeu:"
+interface = 277
+component = 9
+
+[.label_178_15]
+en = "Start point:"
+pt = "Onde começa:"
+interface = 178
+component = 15
+
+[.label_178_16]
+en = "Start requirements:"
+pt = "Requisitos:"
+interface = 178
+component = 16
+
+[.label_178_17]
+en = "Rewards:"
+pt = "Recompensas:"
+interface = 178
+component = 17
+
+[.label_178_18]
+en = "Combat:"
+pt = "Combate:"
+interface = 178
+component = 18
+
+[.label_178_19]
+en = "Required items:"
+pt = "Itens necessários:"
+interface = 178
+component = 19
+
+[.label_178_30]
+en = "Click here to show"
+pt = "Clique para mostrar"
+interface = 178
+component = 30
+
+[.label_178_57]
+en = "Click here to show"
+pt = "Clique para mostrar"
+interface = 178
+component = 57
+
+[.label_178_67]
+en = "Quest progress:"
+pt = "Progresso da missão:"
+interface = 178
+component = 67
+
+[.label_178_72]
+en = "Start this quest?"
+pt = "Começar esta missão?"
+interface = 178
+component = 72
+
+[.label_178_76]
+en = "Mark on map"
+pt = "Marcar no mapa"
+interface = 178
+component = 76
+
+[.label_178_77]
+en = "No"
+pt = "Não"
+interface = 178
+component = 77
+
+[.label_178_78]
+en = "Yes"
+pt = "Sim"
+interface = 178
+component = 78
+
+[.label_335_17]
+en = "Accept"
+pt = "Aceitar"
+interface = 335
+component = 17
+
+[.label_335_19]
+en = "Decline"
+pt = "Recusar"
+interface = 335
+component = 19
+
+[.label_335_36]
+en = "Trader's Offer"
+pt = "Oferta do outro"
+interface = 335
+component = 36
+
+[.label_335_37]
+en = "Your Offer"
+pt = "Sua oferta"
+interface = 335
+component = 37
+
+[.label_335_40]
+en = "Trade modified"
+pt = "Troca alterada"
+interface = 335
+component = 40
+
+[.label_335_41]
+en = "Trade modified"
+pt = "Troca alterada"
+interface = 335
+component = 41
+
+[.label_335_83]
+en = "Loan:"
+pt = "Empréstimo:"
+interface = 335
+component = 83
+
+[.label_335_87]
+en = "Loan:"
+pt = "Empréstimo:"
+interface = 335
+component = 87
+
+[.label_334_31]
+en = "You are about to give:"
+pt = "Você vai dar:"
+interface = 334
+component = 31
+
+[.label_334_32]
+en = "In return you will receive:"
+pt = "Em troca, você vai receber:"
+interface = 334
+component = 32
+
+[.label_334_34]
+en = "There is <col=ff0000>NO WAY<col=ffffff> to reverse a trade if you change your mind."
+pt = "<col=ff0000>NÃO HÁ COMO<col=ffffff> desfazer uma troca se você mudar de ideia."
+interface = 334
+component = 34
+
+[.label_334_35]
+en = "Accept"
+pt = "Aceitar"
+interface = 334
+component = 35
+
+[.label_334_36]
+en = "Decline"
+pt = "Recusar"
+interface = 334
+component = 36
+
+[.label_334_45]
+en = "Trading with:"
+pt = "Trocando com:"
+interface = 334
+component = 45
+
+[.label_667_27]
+en = "Attack Bonuses"
+pt = "Bônus de ataque"
+interface = 667
+component = 27
+
+[.label_667_28]
+en = "Defence Bonuses"
+pt = "Bônus de defesa"
+interface = 667
+component = 28
+
+[.label_667_29]
+en = "Other Bonuses"
+pt = "Outros bônus"
+interface = 667
+component = 29
+
+[.label_667_65]
+en = "Done"
+pt = "Pronto"
+interface = 667
+component = 65
+
+[.label_102_25]
+en = "Information:"
+pt = "Informações:"
+interface = 102
+component = 25
+
+[.label_13_30]
+en = "Exit"
+pt = "Sair"
+interface = 13
+component = 30
+
+[.label_14_60]
+en = "Set a PIN"
+pt = "Criar um PIN"
+interface = 14
+component = 60
+
+[.label_14_61]
+en = "Change your recovery delay"
+pt = "Mudar o prazo de recuperação"
+interface = 14
+component = 61
+
+[.label_14_62]
+en = "Change your PIN"
+pt = "Mudar o seu PIN"
+interface = 14
+component = 62
+
+[.label_14_63]
+en = "Delete your PIN"
+pt = "Apagar o seu PIN"
+interface = 14
+component = 63
+
+[.label_14_64]
+en = "Change your recovery delay"
+pt = "Mudar o prazo de recuperação"
+interface = 14
+component = 64
+
+[.label_14_65]
+en = "Cancel the PIN that's pending"
+pt = "Cancelar o PIN pendente"
+interface = 14
+component = 65
+
+[.label_14_68]
+en = "Your Bank PIN status:"
+pt = "Situação do seu PIN:"
+interface = 14
+component = 68
+
+[.label_14_70]
+en = "Recovery delay:"
+pt = "Prazo de recuperação:"
+interface = 14
+component = 70
+
+[.label_620_21]
+en = "Free sample items"
+pt = "Amostras grátis"
+interface = 620
+component = 21
+
+[.label_620_22]
+en = "Main stock"
+pt = "Estoque principal"
+interface = 620
+component = 22
+
+[.label_620_23]
+en = "Key"
+pt = "Legenda"
+interface = 620
+component = 23
+
+[.label_620_24]
+en = "Right-click on an item in the shop or your inventory to see the available options."
+pt = "Clique com o botão direito num item da loja ou do inventário para ver as opções."
+interface = 620
+component = 24
+
+[.label_620_30]
+en = "Price"
+pt = "Preço"
+interface = 620
+component = 30
+
+[.label_620_31]
+en = "Stock"
+pt = "Estoque"
+interface = 620
+component = 31
+
 [.chat_0]
 en = "Lumbridge and Draynor"
 pt = "Lumbridge e Draynor"

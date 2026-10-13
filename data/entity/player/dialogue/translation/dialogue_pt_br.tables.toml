@@ -5422,6 +5422,52 @@ pt = "Parabéns! Você completou todas as tarefas do conjunto de %2% (%1%)."
 en = "set. Speak to %1% to claim your reward."
 pt = "Fale com %1% para receber sua recompensa."
 
+# Interfaces the server fills in - quest complete scroll (Quest.kt, rewards joined with <br>), trade (Trade*.kt)
+
+[.quest_complete_title]
+en = "You have completed %1%!"
+pt = "Você completou %1%!"
+
+[.quest_rewards_cooks_assistant]
+en = "1 Quest Point<br>300 Cooking XP<br>500 coins<br>20 sardines<br>Access to the cook's range"
+pt = "1 ponto de missão<br>300 de XP em Cooking<br>500 moedas (coins)<br>20 sardinhas (sardines)<br>Acesso ao fogão do cozinheiro"
+
+[.quest_rewards_restless_ghost]
+en = "1 Quest Point<br>1,125 Prayer XP<br>A Ghostspeak Amulet"
+pt = "1 ponto de missão<br>1.125 de XP em Prayer<br>Um amuleto da fala fantasma"
+
+[.quest_rewards_lost_city]
+en = "3 Quest Points<br>Access to Zanaris"
+pt = "3 pontos de missão<br>Acesso a Zanaris"
+
+[.quest_rewards_tears_of_guthix]
+en = "1 Quest Point<br>1000 Crafting XP<br>Access to the Tears of Guthix<br>cave"
+pt = "1 ponto de missão<br>1000 de XP em Crafting<br>Acesso à caverna das<br>Tears of Guthix"
+
+[.quest_rewards_blood_pact]
+en = "1 Quest Point<br>Kayle's sling, Caitlin's staff<br>and Reese's sword<br>100 Attack, Strength,<br>Defence, Ranged and Magic<br>XP<br>Access to the Lumbridge<br>Catacombs dungeon"
+pt = "1 ponto de missão<br>Kayle's sling, Caitlin's staff<br>e Reese's sword<br>100 de XP em Attack, Strength,<br>Defence, Ranged e Magic<br>Acesso ao calabouço<br>Lumbridge Catacombs"
+
+[.trade_with]
+en = "Trading with: %1%"
+pt = "Trocando com: %1%"
+
+[.trade_slots]
+en = "has %1% free inventory slots."
+pt = "tem %1% espaços livres no inventário."
+
+[.trade_waiting]
+en = "Waiting for other .."
+pt = "Esperando o outro jogador.."
+
+[.trade_other_accepted]
+en = "Other player has accepted."
+pt = "O outro jogador aceitou."
+
+[.trade_confirm_sure]
+en = "Are you sure you want to make this trade?"
+pt = "Tem certeza de que quer fazer esta troca?"
+
 # View distance - RegionLoading.kt, the `view_distance`/`distancia` command
 
 [.view_distance_title]

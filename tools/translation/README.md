@@ -12,7 +12,7 @@ O sistema todo está explicado em [`.claude/translation.md`](../../.claude/trans
 | `split_groups.py` | Divide `sources/missing.json` em grupos equilibrados para tradução em paralelo. |
 | `validate.py` | Confere um arquivo de tradução contra o seu grupo (falta, caractere proibido, marcador ou tag perdidos, tamanho). |
 | `gen_stages.py` | Escreve `tutorial_island_pt_br.tables.toml` (caixa de instruções da Ilha Tutorial). |
-| `./gradlew :tools:translateInterfaces --args=dump\|table\|patch` | Janelas que o cliente desenha do cache (tarefas, subiu de nível): lista o que falta (`sources/missing_interfaces.json`), gera `interface_pt_br.tables.toml` a partir de `sources/pt_tasks*.json` e `pt_level_up*.json` e grava no cache (servidor desligado). Ver `.claude/translation.md`. |
+| `./gradlew :tools:translateInterfaces --args=dump\|table\|patch` | Janelas que o cliente desenha do cache (tarefas, subiu de nível): lista o que falta (`sources/missing_interfaces.json`), gera `interface_pt_br.tables.toml` a partir de `sources/pt_tasks*.json`, `pt_level_up*.json` e `pt_labels*.json` (rótulos fixos que o servidor manda) e grava no cache (servidor desligado). Ver `.claude/translation.md`. |
 | `sources/` | Fontes da tradução: `<regiao>_scripts.json` (lista de scripts da região) e `pt_*.json` (en → pt). A tabela é gerada a partir daqui; edite aqui, não na tabela. |
 
 ## Traduzir uma região, na ordem
@@ -40,4 +40,4 @@ python3 -I tools/translation/gen_dialogue.py "$PWD" tools/translation/sources
 LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 ./gradlew :game:test --tests "content.entity.player.dialogue.LumbridgeTranslationTest"
 ```
 
-`missing.json`, `missing_interfaces.json` e `group_*.json` são intermediários e ficam fora do Git. `gen_dialogue.py` ignora os `pt_tasks*`/`pt_level_up*`, que são das janelas do cache.
+`missing.json`, `missing_interfaces.json` e `group_*.json` são intermediários e ficam fora do Git. `gen_dialogue.py` ignora os `pt_tasks*`/`pt_level_up*`/`pt_labels*`, que são das janelas do cache.

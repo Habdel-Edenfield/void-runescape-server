@@ -51,15 +51,16 @@ class CacheTranslationPatchTest {
 
     @Test
     fun `Every fixed label is translated or kept on purpose`() {
-        val scripts = taskScripts(source.scriptIds().associateWith { source.script(it)!! })
-        val referenced = scripts.values.flatMap { script -> script.instructions.indices.filter { script.instructions[it] == Op.PUSH_INT }.map { script.intOperands!![it] } }.toSet()
+        // Components a script names may be written by it, so only the ones no script names have to be listed
+        val scripts = source.scriptIds().mapNotNull { source.script(it) }
+        val referenced = scripts.flatMap { script -> script.instructions.indices.filter { script.instructions[it] == Op.PUSH_INT }.map { script.intOperands!![it] } }.toSet()
         val unknown = mutableListOf<String>()
-        for ((name, id) in CacheTranslationPatch.INTERFACES) {
+        for (id in CacheTranslationPatch.LABELS.keys) {
             val listed = CacheTranslationPatch.LABELS.getValue(id) + CacheTranslationPatch.LABELS_KEPT.getValue(id)
             for (component in source.interfaces[id].components!!) {
                 val index = component.id and 0xffff
                 if (component.type == 4 && component.text.isNotBlank() && ((id shl 16) or index) !in referenced && index !in listed) {
-                    unknown.add("$name:$index \"${component.text}\"")
+                    unknown.add("$id:$index \"${component.text}\"")
                 }
             }
         }
@@ -142,9 +143,6 @@ class CacheTranslationPatchTest {
                 "./gradlew :tools:translateInterfaces --args=patch\nOut of date: ${differences.joinToString()}",
         )
     }
-
-    /** Task and level up scripts only: generic ones (tooltips, sprites, menus) are shared by every interface */
-    private fun taskScripts(scripts: Map<Int, ClientScriptDefinition>) = scripts.filterKeys { it in 3222..3227 || it in 3960..4105 || it in levelUp }
 
     /** The level up pop-up's own scripts; the skill guide scripts it borrows its list of unlocks from are left out */
     private val levelUp = setOf(972, 973, 974, 975, 976, 1023, 1025)

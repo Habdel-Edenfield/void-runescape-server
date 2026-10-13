@@ -1,5 +1,6 @@
 package content.quest
 
+import content.entity.player.dialogue.translate
 import world.gregs.voidps.engine.client.sendScript
 import world.gregs.voidps.engine.client.ui.open
 import world.gregs.voidps.engine.data.Settings
@@ -87,13 +88,15 @@ fun Player.questComplete(name: String, vararg lines: String, item: String = "") 
 
 fun Player.questComplete(name: String, lines: List<String>, item: Item = Item.EMPTY) {
     open("quest_complete")
-    interfaces.sendText("quest_complete", "quest_name", "You have completed $name!")
+    interfaces.sendText("quest_complete", "quest_name", translate("You have completed $name!"))
     interfaces.sendText("quest_complete", "quest_points", get("quest_points", 0).toString())
     if (item != Item.EMPTY) {
         interfaces.sendItem("quest_complete", "item_slot", item)
     }
+    // Rewards are translated as a whole, as a sentence often runs over two lines
+    val rewards = if (lines.isEmpty()) lines else translate(lines.joinToString("<br>")).split("<br>")
     for (i in 0 until 8) {
-        interfaces.sendText("quest_complete", "line${i + 1}", lines.getOrNull(i) ?: "")
+        interfaces.sendText("quest_complete", "line${i + 1}", rewards.getOrNull(i) ?: "")
     }
 }
 

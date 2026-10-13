@@ -275,8 +275,8 @@ PT = {
 }
 
 if TRANSLATIONS:
-    # pt_tasks*/pt_level_up* belong to the interfaces the client draws from the cache (tools/.../InterfaceTranslation.kt)
-    for file in sorted(f for f in glob.glob(TRANSLATIONS + "/pt_*.json") if not f.split("/")[-1].startswith(("pt_tasks", "pt_level_up"))):
+    # pt_tasks*/pt_level_up*/pt_labels* belong to the interfaces the client draws from the cache (tools/.../InterfaceTranslation.kt)
+    for file in sorted(f for f in glob.glob(TRANSLATIONS + "/pt_*.json") if not f.split("/")[-1].startswith(("pt_tasks", "pt_level_up", "pt_labels"))):
         PT.update({en: pt for en, pt in json.load(open(file)).items() if "\n" not in en})
 
 # Text shared across the game rather than said by one NPC: (header, [(row id, en, pt)]).
@@ -404,6 +404,19 @@ GENERAL = [
         # Sent as two lines: "...all of the Beginner Tasks in the Lumbridge and Draynor" / "set. Speak to Explorer Jack in Lumbridge to claim your reward."
         ("task_set_finished", "Congratulations! You have completed all of the %1% Tasks in the %2%", "Parabéns! Você completou todas as tarefas do conjunto de %2% (%1%)."),
         ("task_set_reward", "set. Speak to %1% to claim your reward.", "Fale com %1% para receber sua recompensa."),
+    ]),
+    ("Interfaces the server fills in - quest complete scroll (Quest.kt, rewards joined with <br>), trade (Trade*.kt)", [
+        ("quest_complete_title", "You have completed %1%!", "Você completou %1%!"),
+        ("quest_rewards_cooks_assistant", "1 Quest Point<br>300 Cooking XP<br>500 coins<br>20 sardines<br>Access to the cook's range", "1 ponto de missão<br>300 de XP em Cooking<br>500 moedas (coins)<br>20 sardinhas (sardines)<br>Acesso ao fogão do cozinheiro"),
+        ("quest_rewards_restless_ghost", "1 Quest Point<br>1,125 Prayer XP<br>A Ghostspeak Amulet", "1 ponto de missão<br>1.125 de XP em Prayer<br>Um amuleto da fala fantasma"),
+        ("quest_rewards_lost_city", "3 Quest Points<br>Access to Zanaris", "3 pontos de missão<br>Acesso a Zanaris"),
+        ("quest_rewards_tears_of_guthix", "1 Quest Point<br>1000 Crafting XP<br>Access to the Tears of Guthix<br>cave", "1 ponto de missão<br>1000 de XP em Crafting<br>Acesso à caverna das<br>Tears of Guthix"),
+        ("quest_rewards_blood_pact", "1 Quest Point<br>Kayle's sling, Caitlin's staff<br>and Reese's sword<br>100 Attack, Strength,<br>Defence, Ranged and Magic<br>XP<br>Access to the Lumbridge<br>Catacombs dungeon", "1 ponto de missão<br>Kayle's sling, Caitlin's staff<br>e Reese's sword<br>100 de XP em Attack, Strength,<br>Defence, Ranged e Magic<br>Acesso ao calabouço<br>Lumbridge Catacombs"),
+        ("trade_with", "Trading with: %1%", "Trocando com: %1%"),
+        ("trade_slots", "has %1% free inventory slots.", "tem %1% espaços livres no inventário."),
+        ("trade_waiting", "Waiting for other ..", "Esperando o outro jogador.."),
+        ("trade_other_accepted", "Other player has accepted.", "O outro jogador aceitou."),
+        ("trade_confirm_sure", "Are you sure you want to make this trade?", "Tem certeza de que quer fazer esta troca?"),
     ]),
     ("View distance - RegionLoading.kt, the `view_distance`/`distancia` command", [
         ("view_distance_title", "How far away should scenery be shown?", "Até que distância mostrar o cenário?"),

@@ -1,5 +1,6 @@
 package content.social.trade
 
+import content.entity.player.dialogue.translate
 import content.entity.player.modal.Tab
 import content.entity.player.modal.tab
 import content.social.friend.friend
@@ -61,7 +62,7 @@ class TradeRequest : Script {
             open("trade_main")
             close("inventory")
             open("trade_side")
-            sendText("trade_main", "title", "Trading with: ${partner.name}")
+            sendText("trade_main", "title", player.translate("Trading with: ${partner.name}"))
             sendText("trade_main", "status", "")
         }
         player["offer_modified"] = false
@@ -84,7 +85,7 @@ class TradeRequest : Script {
     }
 
     fun updateInventorySpaces(player: Player, other: Player) {
-        player.interfaces.sendText("trade_main", "slots", "has ${other.inventory.spaces} free inventory slots.")
+        player.interfaces.sendText("trade_main", "slots", player.translate("has ${other.inventory.spaces} free inventory slots."))
     }
 
     fun reset(player: Player, other: Player) {

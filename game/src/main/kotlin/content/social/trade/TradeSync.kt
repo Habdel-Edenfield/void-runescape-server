@@ -1,5 +1,6 @@
 package content.social.trade
 
+import content.entity.player.dialogue.translate
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.sendScript
 import world.gregs.voidps.engine.data.definition.InterfaceDefinitions
@@ -87,6 +88,6 @@ class TradeSync(val inventoryDefinitions: InventoryDefinitions) : Script {
      */
 
     fun updateInventorySpaces(player: Player, other: Player) {
-        player.interfaces.sendText("trade_main", "slots", "has ${other.inventory.spaces} free inventory slots.")
+        player.interfaces.sendText("trade_main", "slots", player.translate("has ${other.inventory.spaces} free inventory slots."))
     }
 }

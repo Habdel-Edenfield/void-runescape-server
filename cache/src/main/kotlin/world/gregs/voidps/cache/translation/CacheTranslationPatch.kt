@@ -41,7 +41,7 @@ object CacheTranslationPatch {
     const val TABLE_PATH = "data/entity/player/dialogue/translation/interface_pt_br.tables.toml"
 
     /** Translation sources in tools/translation/sources, `<prefix>*.json` mapping English to Portuguese */
-    val SOURCE_PREFIXES = listOf("pt_tasks", "pt_level_up")
+    val SOURCE_PREFIXES = listOf("pt_tasks", "pt_level_up", "pt_labels")
 
     /** Task sets translated so far: Lumbridge/Draynor and the tutorial's Unstable Foundations */
     val AREAS = setOf(1, 60)
@@ -141,20 +141,46 @@ object CacheTranslationPatch {
     /** The argument types a script hook is registered with, e.g. "IIsii" */
     fun isSignature(text: String) = text.isNotEmpty() && text.all { it in "iIsl1Y" }
 
-    /** Fixed interface labels the server replaces when the interface opens, as no script writes them */
+    /**
+     * Fixed interface labels (interface to components) the server replaces when the interface opens, as no script
+     * writes them. Any interface listed here is checked for labels nobody translates; see [LABELS_KEPT].
+     */
     val LABELS = mapOf(
         917 to listOf(16, 20, 24, 28, 59, 95, 141, 145, 147),
         1056 to listOf(10, 15, 20, 25, 30, 35, 43, 48, 53, 113, 170, 172, 176, 178, 179, 180),
         1055 to listOf(4),
         741 to listOf(5, 10),
+        371 to listOf(2, 27), // tutorial_overlay
+        277 to listOf(3, 6, 9), // quest_complete
+        178 to listOf(15, 16, 17, 18, 19, 30, 57, 67, 72, 76, 77, 78), // quest_intro
+        335 to listOf(17, 19, 36, 37, 40, 41, 83, 87), // trade_main
+        334 to listOf(31, 32, 34, 35, 36, 45), // trade_confirm
+        667 to listOf(27, 28, 29, 65), // equipment_bonuses
+        102 to listOf(25), // items_kept_on_death
+        13 to listOf(30), // bank_pin
+        14 to listOf(60, 61, 62, 63, 64, 65, 68, 70), // bank_pin_settings
+        620 to listOf(21, 22, 23, 24, 30, 31), // shop
     )
 
-    /** Fixed labels which stay as they are: the interface's name, place names, numbers and "OK" */
+    /**
+     * Fixed labels which stay as they are: interface names (Task List, Equipment Bonuses...), place names, numbers,
+     * attack types and stat names, and placeholders the server or a script overwrites (left for when those are done).
+     */
     val LABELS_KEPT = mapOf(
         917 to listOf(70, 107, 119, 121, 123, 125, 127, 129, 131, 143),
         1056 to listOf(107, 117),
         1055 to listOf(),
         741 to listOf(),
+        371 to listOf(1), // server: percent
+        277 to listOf(4, 7) + (10..17), // server: quest name, points, rewards
+        178 to (9..14) + 70, // "( ? )", divider, server: status
+        335 to listOf(15, 38, 43, 44, 45), // server: title, status; script 694: wealth limit
+        334 to listOf(33, 37, 38, 39, 41, 42, 43), // server: status and item lists
+        667 to (30..47) + 75, // server: bonus lines; window name
+        102 to listOf(15, 17, 20, 34), // window name; script 118
+        13 to (11..20) + listOf(28, 31), // digits; server: instruction, deletion
+        14 to listOf(40, 41, 69, 71, 73, 86, 89, 91), // window name; server: messages, status, confirm
+        620 to listOf(20), // server: shop name
     )
 
     /** Text the server puts into task chat messages next to the task name and difficulty (see TaskSystem.kt) */
