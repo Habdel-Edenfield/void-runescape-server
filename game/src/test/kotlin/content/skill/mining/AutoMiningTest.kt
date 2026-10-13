@@ -19,7 +19,6 @@ import world.gregs.voidps.engine.entity.obj.GameObjects
 import world.gregs.voidps.engine.entity.obj.ObjectLayer
 import world.gregs.voidps.engine.inv.add
 import world.gregs.voidps.engine.inv.inventory
-import world.gregs.voidps.network.login.protocol.encode.HintType
 import world.gregs.voidps.type.Tile
 import world.gregs.voidps.type.area.Rectangle
 import world.gregs.voidps.type.setRandom
@@ -96,18 +95,14 @@ internal class AutoMiningTest : WorldTest() {
         assertNotEquals(rock, next)
         assertTrue(next.id.startsWith("copper_rocks"))
         assertTrue(player.softTimers.contains("mining"))
-        assertEquals(HintType.TILE, player.viewport!!.hints[1])
     }
 
     @Test
-    fun `Auto-mine marks the rock with an arrow until turned off`() {
+    fun `Auto-mine shows no arrow over the rock`() {
         val player = miner()
         player.objectOption(rock, "Auto-mine")
         tick()
-        assertEquals(HintType.TILE, player.viewport!!.hints[1])
 
-        player.objectOption(rock, "Auto-mine")
-        tick(2)
         assertEquals(0, player.viewport!!.hints[1])
     }
 

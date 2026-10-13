@@ -2,9 +2,7 @@ package content.skill.mining
 
 import content.entity.combat.inCombat
 import world.gregs.voidps.engine.Script
-import world.gregs.voidps.engine.client.clearHint
 import world.gregs.voidps.engine.client.instruction.handle.interactObject
-import world.gregs.voidps.engine.client.markHint
 import world.gregs.voidps.engine.client.message
 import world.gregs.voidps.engine.client.ui.dialogue
 import world.gregs.voidps.engine.client.ui.menu
@@ -18,13 +16,12 @@ import world.gregs.voidps.engine.entity.obj.GameObjects
 import world.gregs.voidps.engine.entity.obj.ObjectLayer
 import world.gregs.voidps.engine.inv.inventory
 import world.gregs.voidps.engine.timer.Timer
-import world.gregs.voidps.network.login.protocol.encode.HintType
 import world.gregs.voidps.type.Tile
 
 /**
  * "Auto-mine" on a rock inside an area tagged `auto_mining` (data/skill/mining/auto_mining.areas.toml) mines that rock
  * again whenever the player stands idle near it, until the inventory is full. When it runs out, the closest rock of
- * the same ore is mined instead, if there is one free. A yellow arrow marks the rock meanwhile. It only repeats the "Mine" click, so
+ * the same ore is mined instead, if there is one free. It only repeats the "Mine" click, so
  * experience, ore chance and speed are those of normal mining.
  *
  * The option comes from a copy of each rock the client switches to while [AREA] is set
@@ -65,7 +62,6 @@ class AutoMining : Script {
             // Mine on the next tick rather than after standing still
             set(IDLE, IDLE_TICKS - 1)
             softTimers.start(TIMER)
-            markHint(target.tile, height = ARROW_HEIGHT)
             message(ON)
         }
 
@@ -99,7 +95,6 @@ class AutoMining : Script {
                 if (next != null) {
                     set(ROCK, next)
                     set(IDLE, 0)
-                    markHint(next.tile, height = ARROW_HEIGHT)
                     interactObject(next, "Mine")
                     return@timerTick Timer.CONTINUE
                 }
@@ -116,7 +111,6 @@ class AutoMining : Script {
         }
 
         timerStop(TIMER) {
-            clearHint(HintType.TILE)
             clear(ROCK)
             clear(IDLE)
             clear(MINING)
@@ -172,9 +166,6 @@ class AutoMining : Script {
         private const val FULL = "Your inventory is too full to hold any more ore."
         private const val ON = "<green>Auto-mining on."
         private const val OFF = "<orange>Auto-mining off."
-
-        /** Arrow over the rock being auto-mined, in 4 unit steps above the ground (a tile is 512 units across) */
-        private const val ARROW_HEIGHT = 30
 
         /** How far from a depleted rock to look for another one of the same ore */
         private const val NEXT_ROCK_RANGE = 8
