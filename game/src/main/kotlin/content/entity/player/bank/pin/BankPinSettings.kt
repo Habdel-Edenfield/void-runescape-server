@@ -1,5 +1,7 @@
 package content.entity.player.bank.pin
 
+import content.entity.player.dialogue.translate
+import content.entity.player.dialogue.translateLines
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.message
 import world.gregs.voidps.engine.client.ui.close
@@ -188,18 +190,19 @@ class BankPinSettings : Script {
     fun refresh(player: Player, messages: List<String>) {
         val id = "bank_pin_settings"
         player.set("bank_pin_confirm", "")
-        player.interfaces.sendText(id, "message_header", "Messages")
-        player.interfaces.sendText(id, "hint", "Use the buttons below to change your PIN settings")
-        player.interfaces.sendText(id, "delay", "${BankPin.recoveryDays(player)} days")
+        player.interfaces.sendText(id, "message_header", player.translate("Messages"))
+        player.interfaces.sendText(id, "hint", player.translate("Use the buttons below to change your PIN settings"))
+        player.interfaces.sendText(id, "delay", player.translate("${BankPin.recoveryDays(player)} days"))
+        val lines = player.translateLines(messages)
         for (i in 1..13) {
-            player.interfaces.sendText(id, "message_$i", messages.getOrNull(i - 1) ?: "")
+            player.interfaces.sendText(id, "message_$i", lines.getOrNull(i - 1) ?: "")
         }
         val active = BankPin.hasPin(player)
         val pending = BankPin.isPending(player) || BankPin.isDeletePending(player)
         val status = when {
-            pending -> "PIN coming soon"
-            active -> "You have a PIN"
-            else -> "NO PIN set"
+            pending -> player.translate("PIN coming soon")
+            active -> player.translate("You have a PIN")
+            else -> player.translate("NO PIN set")
         }
         player.interfaces.sendText(id, "status", status)
         for (i in 1..3) {
@@ -225,9 +228,9 @@ class BankPinSettings : Script {
         player.interfaces.sendVisibility(id, "confirm_overlay", true)
         player.interfaces.sendVisibility(id, "confirm", true)
         player.interfaces.sendVisibility(id, "cancel", true)
-        player.interfaces.sendText(id, "confirm_text", text)
-        player.interfaces.sendText(id, "confirm", yes)
-        player.interfaces.sendText(id, "cancel", no)
+        player.interfaces.sendText(id, "confirm_text", player.translate(text))
+        player.interfaces.sendText(id, "confirm", player.translate(yes))
+        player.interfaces.sendText(id, "cancel", player.translate(no))
         player.sound("bank_pin_pending")
     }
 

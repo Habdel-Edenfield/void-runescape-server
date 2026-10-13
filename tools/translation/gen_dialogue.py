@@ -262,7 +262,7 @@ PT = {
     "I'd like to check my PIN settings.":
         "Gostaria de ver as configurações do meu PIN.",
     "I'd like to see my collection box.":
-        "Gostaria de ver minha caixa de retirada (collection box).",
+        "Gostaria de ver minha caixa de coleta (collection box).",
     "I'd like to see my Returned Items box.":
         "Gostaria de ver minha caixa de itens devolvidos (Returned Items).",
     "What is this place?":
@@ -281,8 +281,8 @@ PT = {
 
 if TRANSLATIONS:
     # pt_tasks*/pt_level_up*/pt_labels*/pt_ui* belong to the interfaces the client draws from the cache (tools/.../InterfaceTranslation.kt)
-    # pt_skills_runtime* holds text only seen while playing (SkillActionTranslationTest), written as is
-    for file in sorted(f for f in glob.glob(TRANSLATIONS + "/pt_*.json") if not f.split("/")[-1].startswith(("pt_tasks", "pt_level_up", "pt_labels", "pt_ui", "pt_skills_runtime"))):
+    # pt_*_runtime.json hold text only seen while playing (SkillActionTranslationTest, BankPinTranslationTest), written as is
+    for file in sorted(f for f in glob.glob(TRANSLATIONS + "/pt_*.json") if not f.split("/")[-1].startswith(("pt_tasks", "pt_level_up", "pt_labels", "pt_ui")) and not f.endswith("_runtime.json")):
         PT.update({en: pt for en, pt in json.load(open(file)).items() if "\n" not in en})
 
 # Text shared across the game rather than said by one NPC: (header, [(row id, en, pt)]).
@@ -585,20 +585,28 @@ def skill_rows(seen):
         # The dump keeps whether each line is chat or dialogue; the table only needs the text
         kinds = {key: kind for kind, keys in entries for key in keys}
         section(f"Skills - {rel}", prefix, list(kinds), "skill/" + rel, lambda key: kinds[key])
+    for folder in skill_text.FOLDERS:
+        by_file = {}
+        for rel, kind, _, keys in skill_text.code_texts(ROOT, folder):
+            by_file.setdefault(rel, []).append((kind, keys))
+        for rel, entries in by_file.items():
+            path = f"{folder}/{rel}"
+            kinds = {key: kind for kind, keys in entries for key in keys}
+            section(f"Text - {path}", "text_" + re.sub(r"[^a-z0-9]+", "_", path.removesuffix(".kt").lower()), list(kinds), path, lambda key: kinds[key])
     for rel, texts in skill_text.data_texts(ROOT):
         name = re.sub(r"[^a-z0-9]+", "_", rel.removesuffix(".toml").lower())
         section(f"Skill data - data/{rel}", "data_" + name, texts, "data/" + rel, "data")
     runtime = {}
-    for file in sorted(glob.glob(TRANSLATIONS + "/pt_skills_runtime*.json")):
+    for file in sorted(glob.glob(TRANSLATIONS + "/pt_*_runtime.json")):
         runtime.update(json.load(open(file)))
     rows = []
     for en, pt in runtime.items():
         if en in seen:
             continue
         seen.add(en)
-        rows += ["", f"[.skill_runtime_{len(rows) // 4 + 1}]", f"en = {toml(en)}", f"pt = {toml(pt)}"]
+        rows += ["", f"[.runtime_{len(rows) // 4 + 1}]", f"en = {toml(en)}", f"pt = {toml(pt)}"]
     if rows:
-        out.extend(["", "# Skills - text only seen while playing (SkillActionTranslationTest): built from data the code reads, or sent by scripts outside content/skill"] + rows)
+        out.extend(["", "# Text only seen while playing (SkillActionTranslationTest, BankPinTranslationTest): built from data the code reads, passed in as variables, or Bank PIN messages joined line by line with <br>"] + rows)
     return out, missing
 
 

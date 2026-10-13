@@ -1,6 +1,7 @@
 """Reads the text the skills show the player, the same way SkillTranslationTest does.
 
-Code: chat messages and dialogue lines in game/src/main/kotlin/content/skill/**. Words the code chooses
+Code: chat messages and dialogue lines in game/src/main/kotlin/content/skill/**, and in the [FOLDERS] around them
+(shops, trading, the bank, Lumbridge and its quests), which aren't split by NPC like the Lumbridge walk. Words the code chooses
 between (if/else, when, "slot".plural(n), .an()) become one line per word, the rest `%1%`, `%2%`...
 Data: message columns of data/skill/**/*.tables.toml and *.recipes.toml, and items' eat_message.
 
@@ -22,12 +23,17 @@ CALLS = [
     ("dialogue", re.compile(r'\bitems\(\s*"[a-z0-9_]+"\s*,\s*"[a-z0-9_]+"\s*,\s*(?=")')),
     # The title of the how-many box: makeAmount(..., text = "How many would you like to make?")
     ("dialogue", re.compile(r'\btext\s*=\s*(?=")')),
+    # Interface text the server translates before sending it: translate("You have a PIN")
+    ("dialogue", re.compile(r'\btranslate\(\s*(?=")')),
 ]
 # message(when (x) { 1 -> "..." else -> "..." }): each branch is a chat message
 MESSAGE_WHEN = re.compile(r"\bmessage\(\s*when\b[^{]*\{")
 BRANCH = re.compile(r'->\s*(?=")')
+CONSOLE = re.compile(r"\s*,\s*(?:type\s*=\s*)?ChatType\.Console\b")
 # Ids passed to calls with the same names: Tables.npc("traps.$trap.npc"), row.npc("caught")
-ID = re.compile(r"^[a-z0-9_.%]*[._][a-z0-9_.%]*$|^[a-z]+$")
+# Folders of content/ translated whole besides content/skill, checked by SkillTranslationTest too
+FOLDERS = ["entity/npc/shop", "social/trade", "entity/player/bank", "area/misthalin/lumbridge", "quest/free/the_restless_ghost"]
+ID = re.compile(r"^[a-z0-9_%]+(?:[._][a-z0-9_%]+)+$|^[a-z]+$")
 NOT_TEXT = {"  Room at (%1%, %2%) [%3%] contains key(s): [ %4% ]"}
 
 TABLE_COLUMNS = {"message", "cooked_message", "burnt_message", "tip", "question", "failure", "requires_message"}
@@ -212,9 +218,9 @@ def pattern(parts):
     return "".join(text)
 
 
-def code_texts(root):
-    """[(skill file relative to content/skill, kind, pattern, [keys])] in file order"""
-    skills = os.path.join(root, "game/src/main/kotlin/content/skill")
+def code_texts(root, folder="skill"):
+    """[(file relative to content/<folder>, kind, pattern, [keys])] in file order"""
+    skills = os.path.join(root, "game/src/main/kotlin/content", folder)
     found = []
     for path in sorted(glob.glob(skills + "/**/*.kt", recursive=True)):
         rel = os.path.relpath(path, skills)
@@ -233,7 +239,10 @@ def code_texts(root):
             if code.startswith('"""', start):
                 continue
             kind = starts[start]
-            parts = read(code, start)[0]
+            parts, end = read(code, start)
+            # The console is never translated
+            if CONSOLE.match(code, end):
+                continue
             if not any(k == "text" and re.search("[A-Za-z]", v) for k, v in parts) or any(k == "text" and "\n" in v for k, v in parts):
                 continue
             text = pattern(parts)

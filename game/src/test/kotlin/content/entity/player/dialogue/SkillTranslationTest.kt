@@ -28,6 +28,12 @@ class SkillTranslationTest : WorldTest() {
     }
 
     @TestFactory
+    fun `Text in shops, trading, the bank and Lumbridge is in Portuguese`(): List<DynamicTest> = FOLDERS.map { path ->
+        val folder = File(content, path)
+        dynamicTest(path) { assertTranslated(folder.walkTopDown().filter { it.extension == "kt" }.toList(), folder) }
+    }
+
+    @TestFactory
     fun `Text in each skill's data tables is in Portuguese`(): List<DynamicTest> {
         val data = File(root, "data")
         val skills = File(data, "skill")
@@ -84,7 +90,8 @@ class SkillTranslationTest : WorldTest() {
                 if (template.parts.none { it is Literal && it.text.any(Char::isLetter) } || template.parts.any { it is Literal && '\n' in it.text }) {
                     continue
                 }
-                if (template.pattern in NOT_TEXT || ID.matches(template.pattern)) {
+                // Tables reject strings over 512 bytes, so the generator leaves these in English (see translation.md)
+                if (template.pattern in NOT_TEXT || ID.matches(template.pattern) || template.pattern.toByteArray().size > 500) {
                     continue
                 }
                 for (sample in template.samples()) {
@@ -122,12 +129,15 @@ class SkillTranslationTest : WorldTest() {
     }
 
     companion object {
+        /** Folders of content/ translated whole besides the skills, as in tools/translation/skill_text.py */
+        private val FOLDERS = listOf("entity/npc/shop", "social/trade", "entity/player/bank", "area/misthalin/lumbridge", "quest/free/the_restless_ghost")
+
         /** Columns holding text sent to the player; pets' hungry phrases are said overhead, which isn't translated */
         private val TABLE_COLUMNS = setOf("message", "cooked_message", "burnt_message", "tip", "question", "failure", "requires_message")
         private val ITEM_COLUMNS = setOf("eat_message", "cast")
 
         /** Ids passed to calls with the same names, e.g. `Tables.npc("traps.$trap.npc")`, `npc("spirit_wolf_familiar")`, `row.npc("caught")` */
-        private val ID = Regex("^[a-z0-9_.%]*[._][a-z0-9_.%]*$|^[a-z]+$")
+        private val ID = Regex("^[a-z0-9_%]+(?:[._][a-z0-9_%]+)+$|^[a-z]+$")
 
         /** Matches of the call patterns below which aren't text shown to the player */
         private val NOT_TEXT = setOf(
@@ -148,11 +158,14 @@ class SkillTranslationTest : WorldTest() {
             Regex("""\bitems\(\s*"[a-z0-9_]+"\s*,\s*"[a-z0-9_]+"\s*,\s*(?=")"""),
             // The title of the how-many box: makeAmount(..., text = "How many would you like to make?")
             Regex("""\btext\s*=\s*(?=")"""),
+            // Interface text the server translates before sending it: translate("You have a PIN")
+            Regex("""\btranslate\(\s*(?=")"""),
         )
 
         /** `message(when (x) { 1 -> "..." else -> "..." })`: each branch is a chat message */
         private val MESSAGE_WHEN = Regex("""\bmessage\(\s*when\b[^{]*\{""")
         private val BRANCH = Regex("""->\s*(?=")""")
+        private val CONSOLE = Regex("""\s*,\s*(?:type\s*=\s*)?ChatType\.Console\b""")
 
         private fun templates(source: String): List<Template> {
             val code = withoutComments(source)
@@ -171,7 +184,14 @@ class SkillTranslationTest : WorldTest() {
                     starts.add(match.range.last + 1)
                 }
             }
-            return starts.mapNotNull { start -> if (code.startsWith("\"\"\"", start)) null else Template(read(code, start).first) }.distinctBy { it.pattern }
+            return starts.mapNotNull { start ->
+                if (code.startsWith("\"\"\"", start)) {
+                    return@mapNotNull null
+                }
+                val (parts, end) = read(code, start)
+                // The console is never translated
+                if (CONSOLE.matchesAt(code, end)) null else Template(parts)
+            }.distinctBy { it.pattern }
         }
 
         /** Blanks out comments, keeping string literals (which may contain "//") intact */

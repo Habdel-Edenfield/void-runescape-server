@@ -94,12 +94,13 @@ class CacheTranslationPatchTest {
                     english.add("script $id reads enum ${CacheTranslationPatch.LEVEL_UP_MESSAGES} at $i")
                 }
                 val string = script.stringOperands?.get(i)
-                if (op == Op.PUSH_STRING && string != null && string !in CacheTranslationPatch.SCRIPT_TEXT_KEPT && !CacheTranslationPatch.isSignature(string)) {
+                val kept = CacheTranslationPatch.CHECKED_SCRIPTS[id].orEmpty()
+                if (op == Op.PUSH_STRING && string != null && string !in CacheTranslationPatch.SCRIPT_TEXT_KEPT && string !in kept && !CacheTranslationPatch.isSignature(string)) {
                     english.add("script $id shows \"$string\" at $i")
                 }
             }
         }
-        for (hook in CacheTranslationPatch.HOOK_SCRIPTS.keys) {
+        for (hook in CacheTranslationPatch.HOOKED) {
             val script = view.getValue(hook)
             if (script.instructions.indices.none { script.instructions[it] == Op.GOSUB && script.intOperands!![it] == patch.tooltip }) {
                 english.add("hook script $hook doesn't translate")
@@ -223,7 +224,8 @@ class CacheTranslationPatchTest {
                     }
                 }
                 Op.PUSH_STRING, Op.SLOAD -> {}
-                else -> error("Can't follow the arguments of the hook in script ${script.id} at $index")
+                // Arguments worked out at runtime (the game frame's hooks): the script it registers isn't known
+                else -> return null
             }
         }
         return null

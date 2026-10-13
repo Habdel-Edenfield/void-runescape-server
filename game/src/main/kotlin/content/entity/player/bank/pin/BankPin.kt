@@ -1,5 +1,6 @@
 package content.entity.player.bank.pin
 
+import content.entity.player.dialogue.translate
 import content.entity.player.dialogue.type.statement
 import world.gregs.voidps.engine.client.message
 import world.gregs.voidps.engine.client.ui.close
@@ -207,10 +208,10 @@ suspend fun Player.requestPin(instruction: String, new: Boolean = false): String
     }
     interfaces.sendVisibility("bank_pin", "forgot", !new)
     if (!new) {
-        interfaces.sendText("bank_pin", "forgot", "I don't know it.")
+        interfaces.sendText("bank_pin", "forgot", translate("I don't know it."))
         interfaceOptions.unlockAll("bank_pin", "forgot")
     }
-    interfaces.sendText("bank_pin", "instruction", instruction)
+    interfaces.sendText("bank_pin", "instruction", translate(instruction))
     return pauseString()
 }
 

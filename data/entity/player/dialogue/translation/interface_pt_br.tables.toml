@@ -3797,6 +3797,198 @@ pt = "N/D"
 en = "Free"
 pt = "Grátis"
 
+[.script_1888_220]
+en = "Your health is low! Run away from your attacker and speak to Xenia."
+pt = "Sua vida está baixa! Fuja do atacante e fale com a Xenia."
+
+[.script_1888_221]
+en = "Your health is low! Find a safe place away from your attacker"
+pt = "Sua vida está baixa! Vá para um lugar seguro, longe do atacante,"
+
+[.script_1888_222]
+en = "or eat some food to heal yourself."
+pt = "ou coma algo para se curar."
+
+[.script_118_223]
+en = "Items you will keep on death:"
+pt = "Itens que você mantém ao morrer:"
+
+[.script_118_224]
+en = "Items you will lose on death:"
+pt = "Itens que você perde ao morrer:"
+
+[.script_118_225]
+en = "Items you will keep on death (if not skulled):"
+pt = "Itens que você mantém ao morrer (sem caveira):"
+
+[.script_118_226]
+en = "Items you will lose on death (if not skulled):"
+pt = "Itens que você perde ao morrer (sem caveira):"
+
+[.script_118_227]
+en = "The normal amount of items kept is three."
+pt = "Normalmente você mantém três itens."
+
+[.script_118_228]
+en = " This reduces the items you keep from three to zero!"
+pt = " Isso reduz os itens que você mantém de três para zero!"
+
+[.script_118_229]
+en = "However, you also have the "
+pt = "Mas você também está com "
+
+[.script_118_230]
+en = " curse active, which saves you one extra item!"
+pt = " (maldição) ativa, o que salva um item a mais!"
+
+[.script_118_231]
+en = " prayer active, which saves you one extra item!"
+pt = " (oração) ativa, o que salva um item a mais!"
+
+[.script_118_232]
+en = "You have no factors affecting the items you keep."
+pt = "Nada está alterando os itens que você mantém."
+
+[.script_118_233]
+en = "You have the "
+pt = "Você está com "
+
+[.script_118_234]
+en = "Items with a "
+pt = "Itens com "
+
+[.script_118_235]
+en = "white outline"
+pt = "contorno branco"
+
+[.script_118_236]
+en = " are ones you will always lose."
+pt = " são os que você sempre perde."
+
+[.script_118_237]
+en = "You have items in a creature's inventory, which will be dropped where it is standing if it or you die."
+pt = "Você tem itens no inventário de uma criatura, que vão cair onde ela estiver se ela ou você morrer."
+
+[.script_118_238]
+en = "Max items kept on death :"
+pt = "Máx. de itens mantidos ao morrer:"
+
+[.script_118_239]
+en = "Carried wealth:"
+pt = "Riqueza carregada:"
+
+[.script_118_240]
+en = "Risked wealth:"
+pt = "Riqueza em risco:"
+
+[.script_118_241]
+en = "You're in a "
+pt = "Você está numa "
+
+[.script_118_242]
+en = "player-owned house"
+pt = "casa de jogador"
+
+[.script_118_243]
+en = "which is a "
+pt = "que é uma "
+
+[.script_118_244]
+en = "safe area"
+pt = "área segura"
+
+[.script_118_245]
+en = " If you die you will keep all your items except the items you would lose on leaving the house via the portal."
+pt = " Se você morrer, mantém todos os itens, menos os que perderia ao sair da casa pelo portal."
+
+[.script_118_246]
+en = "You're in a game of "
+pt = "Você está numa partida de "
+
+[.script_118_247]
+en = " If you die you will keep all your items, except the team banner should you be carrying it."
+pt = " Se você morrer, mantém todos os itens, menos o estandarte da equipe, se estiver com ele."
+
+[.script_118_248]
+en = " If you die you will keep all your items brought with you, including the Trouble Brewing manual, but will lose everything else."
+pt = " Se você morrer, mantém todos os itens que trouxe, inclusive o manual do Trouble Brewing, mas perde todo o resto."
+
+[.script_118_249]
+en = " If you die you will keep all your items, except items from the dispensors, logs, hammers and Penance eggs."
+pt = " Se você morrer, mantém todos os itens, menos os dos distribuidores, toras, martelos e ovos de Penance."
+
+[.script_118_250]
+en = " If you die you will keep all the items you brought with you."
+pt = " Se você morrer, mantém todos os itens que trouxe."
+
+[.script_118_251]
+en = ". See information to the left for a more detailed description."
+pt = ". Veja as informações à esquerda para mais detalhes."
+
+[.script_118_252]
+en = "All items !"
+pt = "Todos os itens!"
+
+[.script_2184_253]
+en = "Click on items in your inventory to check their values."
+pt = "Clique nos itens do inventário para ver quanto valem."
+
+[.script_2184_254]
+en = "Total value:"
+pt = "Valor total:"
+
+[.script_2184_255]
+en = "Current trade limit:"
+pt = "Limite de troca atual:"
+
+[.script_2505_256]
+en = "Limit: "
+pt = "Limite: "
+
+[.script_713_257]
+en = "Until"
+pt = "Até"
+
+[.script_713_258]
+en = "logout"
+pt = "sair"
+
+[.script_713_259]
+en = "1 hour"
+pt = "1 hora"
+
+[.script_713_260]
+en = " hours"
+pt = " horas"
+
+[.script_713_261]
+en = "Duration"
+pt = "Duração"
+
+[.script_776_262]
+en = "Multiplier:"
+pt = "Multipl.:"
+
+[.script_776_263]
+en = "Bonus:"
+pt = "Bônus:"
+
+[.script_776_264]
+en = "Elapsed:"
+pt = "Tempo:"
+
+[.script_517_265]
+en = "Lots!"
+pt = "Muito!"
+
+[.script_2268_266]
+en = "Click the object to see more options."
+pt = "Clique no objeto para ver mais opções."
+
+[.script_2268_267]
+en = "Right-click the object to see more options."
+pt = "Botão direito no objeto para mais opções."
+
 [.tooltip_0]
 en = "Click to toggle a map hint for this step."
 pt = "Clique para mostrar ou esconder a marca deste passo no mapa."
@@ -3936,6 +4128,62 @@ pt = "Ver os bônus do equipamento"
 [.tooltip_34]
 en = "This is a General Store; it will buy most tradeable items from you."
 pt = "Este é um armazém (General Store): ele compra quase todos os itens negociáveis."
+
+[.tooltip_35]
+en = "Start Point: This is where you need to go in order to start the quest."
+pt = "Onde começa: é aqui que você precisa ir para começar a missão."
+
+[.tooltip_36]
+en = "Start Requirements: These are the requirements you need in order to start the quest."
+pt = "Requisitos: o que você precisa ter para começar a missão."
+
+[.tooltip_37]
+en = "Required Items: It's suggested that you gather these items before starting the quest. You can't count on finding or being given them whilst playing the quest. If you were to mark the quest on your map, you shouldn't rely on finding these items in the marked area."
+pt = "Itens necessários: é bom juntar estes itens antes de começar a missão. Não conte com encontrá-los ou recebê-los durante a missão. Se marcar a missão no mapa, não espere achar estes itens na área marcada."
+
+[.tooltip_38]
+en = "Combat: This details the main combat that you can expect to encounter during the quest."
+pt = "Combate: os principais combates que você pode encontrar durante a missão."
+
+[.tooltip_39]
+en = "Rewards: These are the rewards you will get during or at the end of the quest."
+pt = "Recompensas: o que você vai ganhar durante a missão ou no fim dela."
+
+[.tooltip_40]
+en = "Music"
+pt = "Música"
+
+[.tooltip_41]
+en = "Sound Effects"
+pt = "Efeitos sonoros"
+
+[.tooltip_42]
+en = "Ambient Sounds"
+pt = "Sons do ambiente"
+
+[.tooltip_43]
+en = "Multiway Combat"
+pt = "Combate múltiplo"
+
+[.tooltip_44]
+en = "Assisted"
+pt = "Com assistência"
+
+[.tooltip_45]
+en = "PvP Safe Area"
+pt = "Área segura de PvP"
+
+[.tooltip_46]
+en = "Time Until Safe"
+pt = "Tempo até ficar seguro"
+
+[.tooltip_47]
+en = "PvP Hot Spot"
+pt = "Ponto quente de PvP"
+
+[.tooltip_48]
+en = "Time Until Grave Marker Collapses"
+pt = "Tempo até a lápide desabar"
 
 [.label_917_16]
 en = "Requirements"
@@ -4242,6 +4490,12 @@ en = "Trade modified"
 pt = "Troca alterada"
 interface = 335
 component = 41
+
+[.label_335_44]
+en = "Wealth transfer"
+pt = "Riqueza transferida"
+interface = 335
+component = 44
 
 [.label_335_83]
 en = "Loan:"
@@ -4686,6 +4940,72 @@ en = "No search term entered!"
 pt = "Nenhuma busca digitada!"
 interface = 762
 component = 116
+
+[.label_743_50]
+en = "Mono"
+pt = "Mono"
+interface = 743
+component = 50
+
+[.label_743_52]
+en = "Stereo"
+pt = "Estéreo"
+interface = 743
+component = 52
+
+[.label_944_7]
+en = "Right-click the object to see more options"
+pt = "Botão direito no objeto para mais opções"
+interface = 944
+component = 7
+
+[.label_944_15]
+en = "Choose a resource..."
+pt = "Escolha um recurso..."
+interface = 944
+component = 15
+
+[.label_944_21]
+en = "What would you like to make?"
+pt = "O que você quer fazer?"
+interface = 944
+component = 21
+
+[.label_548_38]
+en = "XP:"
+pt = "XP:"
+interface = 548
+component = 38
+
+[.label_548_62]
+en = "XP:"
+pt = "XP:"
+interface = 548
+component = 62
+
+[.label_548_64]
+en = "Time:"
+pt = "Tempo:"
+interface = 548
+component = 64
+
+[.label_746_197]
+en = "XP:"
+pt = "XP:"
+interface = 746
+component = 197
+
+[.label_746_211]
+en = "Time:"
+pt = "Tempo:"
+interface = 746
+component = 211
+
+[.label_746_215]
+en = "XP:"
+pt = "XP:"
+interface = 746
+component = 215
 
 [.chat_0]
 en = "Lumbridge and Draynor"

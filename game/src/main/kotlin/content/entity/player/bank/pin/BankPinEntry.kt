@@ -1,5 +1,6 @@
 package content.entity.player.bank.pin
 
+import content.entity.player.dialogue.translate
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.ui.close
 import world.gregs.voidps.engine.entity.character.sound
@@ -11,7 +12,7 @@ class BankPinEntry : Script {
         interfaceOpened("bank_pin") {
             if (BankPin.isDeletePending(this)) {
                 val days = BankPin.pendingDays(this)
-                interfaces.sendText("bank_pin", "deletion", "YOUR PIN WILL BE DELETED IN $days DAY${if (days == 1) "" else "S"}")
+                interfaces.sendText("bank_pin", "deletion", translate("YOUR PIN WILL BE DELETED IN $days DAY${if (days == 1) "" else "S"}"))
             } else {
                 interfaces.sendText("bank_pin", "deletion", "")
             }

@@ -70,6 +70,16 @@ fun Player.translate(text: String): String {
     return text
 }
 
+/**
+ * [lines] the server already broke to fit a box line by line, translated as one text joined by `<br>`
+ * so the Portuguese breaks its lines in its own places (e.g. the Bank PIN messages).
+ */
+fun Player.translateLines(lines: List<String>): List<String> {
+    val text = lines.joinToString("<br>")
+    val translated = translate(text)
+    return if (translated == text) lines else translated.split("<br>")
+}
+
 /** Called with every untranslated text shown to a Portuguese player, e.g. so tests can list them */
 var missingTranslation: (String) -> Unit = {}
 

@@ -71,6 +71,7 @@ object CacheTranslationPatch {
         "logout" to 182, "options" to 261, "stats" to 320, "quest_journals" to 190, "combat_styles" to 884, "prayer_list" to 271,
         "friends_list" to 550, "ignore_list" to 551, "clan_chat" to 589, "chat_background" to 137, "filter_buttons" to 751,
         "bank" to 762, "shop" to 620,
+        "quest_intro" to 178, "audio_options" to 743, "area_status_icon" to 745, "toplevel" to 548, "toplevel_full" to 746,
     )
 
     /** Month names, read with `enum` by the date of birth box and other dates */
@@ -83,9 +84,19 @@ object CacheTranslationPatch {
     val HOOK_SCRIPTS = mapOf(
         TOOLTIP_SCRIPT to (intArrayOf(Op.ILOAD, Op.PUSH_INT, Op.ILOAD, Op.SLOAD, Op.ILOAD, Op.ILOAD, Op.GOSUB, Op.RETURN) to 4),
         2381 to (intArrayOf(Op.SLOAD, Op.ILOAD, 2112, Op.ILOAD, Op.ILOAD, 2101, Op.RETURN) to 1),
-        // The bank's tooltips
+        // The bank's and the quest intro's tooltips
         1160 to (intArrayOf(Op.ILOAD, Op.ILOAD, Op.ILOAD, Op.SLOAD, Op.ILOAD, Op.ILOAD, Op.GOSUB, Op.RETURN) to 4),
     )
+
+    /**
+     * Longer hook scripts, full of jumps, translated by three instructions put before everything else
+     * (load the string argument, translate it, store it back), so no jump moves: script to its instruction count
+     * and string argument. 724 is the area status icon's tooltip ("Multiway Combat", "PvP Safe Area").
+     */
+    val PREFIX_HOOK_SCRIPTS = mapOf(724 to (113 to 0))
+
+    /** Every script whose hooks pass text the tooltip script translates */
+    val HOOKED = HOOK_SCRIPTS.keys + PREFIX_HOOK_SCRIPTS.keys
 
     const val PARAM_TEXT = "pt_br_param_text"
 
@@ -315,6 +326,61 @@ object CacheTranslationPatch {
         ScriptText(2706, "You do not meet the requirements to wear this item."),
         ScriptText(2723, "N/A"),
         ScriptText(2726, "Free"),
+        // Low health warning
+        ScriptText(1888, "Your health is low! Run away from your attacker and speak to Xenia."),
+        ScriptText(1888, "Your health is low! Find a safe place away from your attacker"),
+        ScriptText(1888, "or eat some food to heal yourself."),
+        // Items kept on death
+        ScriptText(118, "Items you will keep on death:"),
+        ScriptText(118, "Items you will lose on death:"),
+        ScriptText(118, "Items you will keep on death (if not skulled):"),
+        ScriptText(118, "Items you will lose on death (if not skulled):"),
+        // The information panel, put together in pieces: "You have the " + "Protect Item" + " prayer active..."
+        ScriptText(118, "The normal amount of items kept is three."),
+        ScriptText(118, " This reduces the items you keep from three to zero!"),
+        ScriptText(118, "However, you also have the "),
+        ScriptText(118, " curse active, which saves you one extra item!"),
+        ScriptText(118, " prayer active, which saves you one extra item!"),
+        ScriptText(118, "You have no factors affecting the items you keep."),
+        ScriptText(118, "You have the "),
+        ScriptText(118, "Items with a "),
+        ScriptText(118, "white outline"),
+        ScriptText(118, " are ones you will always lose."),
+        ScriptText(118, "You have items in a creature's inventory, which will be dropped where it is standing if it or you die."),
+        ScriptText(118, "Max items kept on death :"),
+        ScriptText(118, "Carried wealth:"),
+        ScriptText(118, "Risked wealth:"),
+        ScriptText(118, "You're in a "),
+        ScriptText(118, "player-owned house"),
+        ScriptText(118, "which is a "),
+        ScriptText(118, "safe area"),
+        ScriptText(118, " If you die you will keep all your items except the items you would lose on leaving the house via the portal."),
+        ScriptText(118, "You're in a game of "),
+        ScriptText(118, " If you die you will keep all your items, except the team banner should you be carrying it."),
+        ScriptText(118, " If you die you will keep all your items brought with you, including the Trouble Brewing manual, but will lose everything else."),
+        ScriptText(118, " If you die you will keep all your items, except items from the dispensors, logs, hammers and Penance eggs."),
+        ScriptText(118, " If you die you will keep all the items you brought with you."),
+        ScriptText(118, ". See information to the left for a more detailed description."),
+        ScriptText(118, "All items !"),
+        // Price checker
+        ScriptText(2184, "Click on items in your inventory to check their values."),
+        ScriptText(2184, "Total value:"),
+        ScriptText(2184, "Current trade limit:"),
+        // Trade: wealth limit and loan duration
+        ScriptText(2505, "Limit: "),
+        ScriptText(713, "Until"),
+        ScriptText(713, "logout"),
+        ScriptText(713, "1 hour"),
+        ScriptText(713, " hours"),
+        ScriptText(713, "Duration"),
+        // XP counter
+        ScriptText(776, "Multiplier:"),
+        ScriptText(776, "Bonus:"),
+        ScriptText(776, "Elapsed:"),
+        ScriptText(517, "Lots!"),
+        // What would you like to make? box
+        ScriptText(2268, "Click the object to see more options."),
+        ScriptText(2268, "Right-click the object to see more options."),
     )
 
     /** Scripts of the translated tabs checked for English left over, with what stays in English in each */
@@ -359,6 +425,14 @@ object CacheTranslationPatch {
         2706 to setOf("Wield", "Wear"),
         2723 to setOf("Info", "Buy 1", "Examine", "Buy 5", "Buy 10", "Buy 50", "Buy 500"),
         2726 to setOf("Info", "Take 1", "Take 5", "Take 10", "Take 50", "Examine"),
+        // Small windows: low health, items kept on death, price checker, trade limit and loan, XP counter, make box
+        1888 to setOf(), 2505 to setOf(),
+        // Prayer and minigame names, and the item label
+        118 to setOf("Protect Item", "Castle Wars", "Trouble Brewing", "Barbarian Assault", "Item : "),
+        2184 to setOf("Remove-1", "Remove-5", "Remove-10", "Remove-All", "Remove-X", "Examine", " x "),
+        713 to setOf("'Until logout'", "Remove", "Examine", "Specify", "Edit"),
+        776 to setOf("1.1x", "Hello", "xp"), 517 to setOf(), 337 to setOf("xp"), 3368 to setOf("xp"),
+        2268 to setOf(),
     )
 
     /**
@@ -372,6 +446,8 @@ object CacheTranslationPatch {
         "Summary for", "Summary", "Pin", "Unpin", "Pin/Unpin Task", "Turn-on", "Turn-off",
         ",", ": ", "/", " / ", "%", "+", "%)", "<col=ff9040>",
         "Couldn't find the Task's struct.",
+        // The task tab's name, reached from the game frame's hooks
+        "Task List",
     )
 
     /** The argument types a script hook is registered with, e.g. "IIsii" */
@@ -389,7 +465,7 @@ object CacheTranslationPatch {
         371 to listOf(2, 27), // tutorial_overlay
         277 to listOf(3, 6, 9), // quest_complete
         178 to listOf(15, 16, 17, 18, 19, 30, 57, 67, 72, 76, 77, 78), // quest_intro
-        335 to listOf(17, 19, 36, 37, 40, 41, 83, 87), // trade_main
+        335 to listOf(17, 19, 36, 37, 40, 41, 44, 83, 87), // trade_main
         334 to listOf(31, 32, 34, 35, 36, 45), // trade_confirm
         667 to listOf(27, 28, 29, 65), // equipment_bonuses
         102 to listOf(25), // items_kept_on_death
@@ -407,6 +483,11 @@ object CacheTranslationPatch {
         589 to listOf(16), // clan_chat
         137 to listOf(10, 64, 110, 158, 169, 171), // chat_background
         762 to listOf(94, 98, 99, 100, 101, 102, 103, 104, 105, 115, 116), // bank
+        743 to listOf(50, 52), // audio_options
+        206 to listOf(), // price_checker
+        944 to listOf(7, 15, 21), // dialogue_make_amount
+        548 to listOf(38, 62, 64), // toplevel: XP counter
+        746 to listOf(197, 211, 215), // toplevel_full: XP counter
     )
 
     /**
@@ -421,7 +502,7 @@ object CacheTranslationPatch {
         371 to listOf(1), // server: percent
         277 to listOf(4, 7) + (10..17), // server: quest name, points, rewards
         178 to (9..14) + 70, // "( ? )", divider, server: status
-        335 to listOf(15, 38, 43, 44, 45), // server: title, status; script 694: wealth limit
+        335 to listOf(15, 38, 43, 45), // server: title, status; script 2505: wealth limit
         334 to listOf(33, 37, 38, 39, 41, 42, 43), // server: status and item lists
         667 to (30..47) + 75, // server: bonus lines; window name
         102 to listOf(15, 17, 20, 34), // window name; script 118
@@ -439,6 +520,11 @@ object CacheTranslationPatch {
         589 to listOf(4, 5, 14, 15), // script 197; Clan Chat, the interface name
         137 to listOf(8, 14, 125, 140), // scripts 1047, 1037/1900, 2334, 2316
         762 to listOf(25, 26, 29, 30, 31, 32, 42, 45), // counts; script 1465; Bank PIN, the feature's name; script 1474: the bank's name
+        743 to listOf(21), // Audio Options, the window's name
+        206 to listOf(17), // Price Checker, the window's name
+        944 to listOf(),
+        548 to listOf(53, 58, 59, 60, 61, 63), // XP counter placeholders scripts overwrite
+        746 to listOf(210, 212, 214, 217, 218, 219), // XP counter placeholders scripts overwrite
     )
 
     /** Text the server puts into task chat messages next to the task name and difficulty (see TaskSystem.kt) */
@@ -569,7 +655,7 @@ object CacheTranslationPatch {
         for (id in INTERFACES.values) {
             for (component in source.interfaces[id].components!!) {
                 for (hook in component.hooks()) {
-                    if (hook.firstOrNull() in HOOK_SCRIPTS) {
+                    if (hook.firstOrNull() in HOOKED) {
                         hook.filterIsInstance<String>().forEach { tooltips.add(it) }
                     }
                 }
@@ -706,6 +792,16 @@ object CacheTranslationPatch {
                     strings[i] = target.stringOperands!![3]
                 }
                 TOOLTIP -> {
+                    // A prefix hook: sload, gosub, sstore before the original first instruction
+                    if (i == 1 && instructions[0] == Op.SLOAD && instructions[2] == Op.SSTORE) {
+                        repeat(3) {
+                            instructions.removeAt(0)
+                            ints.removeAt(0)
+                            strings.removeAt(0)
+                        }
+                        i = 0
+                        continue
+                    }
                     check(instructions.none { it in Op.BRANCHES }) { "Can't remove an instruction from script $id with jumps." }
                     instructions.removeAt(i)
                     ints.removeAt(i)
@@ -1044,6 +1140,17 @@ object CacheTranslationPatch {
                 instructions = generic.instructions.toMutableList().apply { add(at, Op.GOSUB) }.toIntArray(),
                 intOperands = generic.intOperands!!.toMutableList().apply { add(at, tooltip) }.toIntArray(),
                 stringOperands = (generic.stringOperands ?: arrayOfNulls(generic.instructions.size)).toMutableList().apply { add(at, null) }.toTypedArray(),
+            )
+        }
+
+        for ((id, shape) in PREFIX_HOOK_SCRIPTS) {
+            val (size, argument) = shape
+            val generic = source.script(id)!!.original(source)
+            check(generic.instructions.size == size) { "Hook script $id changed." }
+            scripts[id] = generic.copy(
+                instructions = (intArrayOf(Op.SLOAD, Op.GOSUB, Op.SSTORE) + generic.instructions),
+                intOperands = (intArrayOf(argument, tooltip, argument) + generic.intOperands!!),
+                stringOperands = arrayOf<String?>(null, null, null) + (generic.stringOperands ?: arrayOfNulls(generic.instructions.size)),
             )
         }
 

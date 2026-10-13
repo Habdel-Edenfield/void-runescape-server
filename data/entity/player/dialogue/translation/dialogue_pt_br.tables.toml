@@ -390,7 +390,7 @@ pt = "Gostaria de ver as configurações do meu PIN."
 
 [.banker_6]
 en = "I'd like to see my collection box."
-pt = "Gostaria de ver minha caixa de retirada (collection box)."
+pt = "Gostaria de ver minha caixa de coleta (collection box)."
 
 [.banker_7]
 en = "I'd like to see my Returned Items box."
@@ -6701,12 +6701,6 @@ pt = "Você não pode vender este item para esta loja."
 [.skill_dungeoneering_dungeonshop_2]
 en = "%1%: shop will buy for %2% coins."
 pt = "%1%: a loja compra por %2% moedas."
-
-# Skills - dungeoneering/Dungeoneering.kt
-
-[.skill_dungeoneering_dungeoneering_1]
-en = "  No keys placed."
-pt = "  Nenhuma chave colocada."
 
 # Skills - dungeoneering/ItemBinding.kt
 
@@ -16112,6 +16106,2112 @@ pt = "Você corta um pouco da hera (ivy) com sucesso."
 en = "The logs are magically escorted to your bank."
 pt = "As toras são levadas magicamente para o seu banco."
 
+# Text - entity/npc/shop/CapeMerchant.kt
+
+[.text_entity_npc_shop_capemerchant_1]
+en = "Hello there! Are you interested in buying one of my special capes?"
+pt = "Olá! Tem interesse em comprar uma das minhas capas especiais?"
+
+[.text_entity_npc_shop_capemerchant_2]
+en = "What do team capes do?"
+pt = "Para que servem as capas de equipe (team capes)?"
+
+[.text_entity_npc_shop_capemerchant_3]
+en = "If you and your friends all wear the same team cape, you'll be less likely to attack your friends by accident, and you'll find it easier to attack everyone else."
+pt = "Se você e seus amigos usarem a mesma capa de equipe, vai ser mais difícil atacar seus amigos sem querer, e mais fácil atacar todo o resto."
+
+[.text_entity_npc_shop_capemerchant_4]
+en = "They're very useful in Clan Wars and other player-vs-player combat areas where you might come across friends you don't want to harm."
+pt = "Elas são muito úteis em Clan Wars e em outras áreas de combate entre jogadores, onde você pode cruzar com amigos que não quer machucar."
+
+[.text_entity_npc_shop_capemerchant_5]
+en = "So would you like to buy one?"
+pt = "Então, quer comprar uma?"
+
+# Text - entity/npc/shop/buy/ShopBuy.kt
+
+[.text_entity_npc_shop_buy_shopbuy_1]
+en = "Shop has run out of stock."
+pt = "Acabou o estoque da loja."
+
+[.text_entity_npc_shop_buy_shopbuy_2]
+en = "The shop has run out of stock."
+pt = "A loja ficou sem estoque."
+
+# Text - entity/npc/shop/sell/ShopSell.kt
+
+[.text_entity_npc_shop_sell_shopsell_1]
+en = "%1%: shop will buy for %2% %3%."
+pt = "%1%: a loja compra por %2% %3%."
+
+[.text_entity_npc_shop_sell_shopsell_2]
+en = "The shop is currently full."
+pt = "A loja está cheia no momento."
+
+# Text - social/trade/TradeConfirm.kt
+
+[.text_social_trade_tradeconfirm_1]
+en = "Other player doesn't have enough inventory space to accept this trade."
+pt = "O outro jogador não tem espaço no inventário para aceitar esta troca."
+
+[.text_social_trade_tradeconfirm_2]
+en = "You don't have enough inventory space to accept this trade."
+pt = "Você não tem espaço no inventário para aceitar esta troca."
+
+[.text_social_trade_tradeconfirm_3]
+en = "Accepted trade."
+pt = "Troca aceita."
+
+# Text - social/trade/TradeDecline.kt
+
+[.text_social_trade_tradedecline_1]
+en = "Other player declined trade."
+pt = "O outro jogador recusou a troca."
+
+[.text_social_trade_tradedecline_2]
+en = "Declined trade."
+pt = "Troca recusada."
+
+# Text - social/trade/TradeLending.kt
+
+[.text_social_trade_tradelending_1]
+en = "You are already lending an item, you can't lend another."
+pt = "Você já está emprestando um item e não pode emprestar outro."
+
+[.text_social_trade_tradelending_2]
+en = "They are already borrowing an item and can't borrow another."
+pt = "O outro jogador já pegou um item emprestado e não pode pegar outro."
+
+[.text_social_trade_tradelending_3]
+en = "That item cannot be lent."
+pt = "Esse item não pode ser emprestado."
+
+# Text - social/trade/TradeOffer.kt
+
+[.text_social_trade_tradeoffer_1]
+en = "%1% is priceless!"
+pt = "%1% não tem preço!"
+
+[.text_social_trade_tradeoffer_2]
+en = "That item is not tradeable."
+pt = "Esse item não pode ser trocado."
+
+# Text - social/trade/TradeRequest.kt
+
+[.text_social_trade_traderequest_1]
+en = "Sending trade offer..."
+pt = "Enviando oferta de troca..."
+
+[.text_social_trade_traderequest_2]
+en = "wishes to trade with you."
+pt = "quer fazer uma troca com você."
+
+# Text - social/trade/exchange/GrandExchange.kt
+
+[.text_social_trade_exchange_grandexchange_1]
+en = "You have items waiting in your Grand Exchange collection box!"
+pt = "Você tem itens esperando na sua caixa de coleta do Grand Exchange!"
+
+[.text_social_trade_exchange_grandexchange_2]
+en = "One or more of your Grand Exchange offers have been updated."
+pt = "Uma ou mais ofertas suas no Grand Exchange foram atualizadas."
+
+# Text - social/trade/exchange/GrandExchangeCollection.kt
+
+[.text_social_trade_exchange_grandexchangecollection_1]
+en = "Abort request acknowledged. Please be aware that your offer may have already been completed."
+pt = "Pedido de cancelamento recebido. Atenção: a sua oferta pode já ter sido concluída."
+
+# Text - social/trade/exchange/GrandExchangeConfirm.kt
+
+[.text_social_trade_exchange_grandexchangeconfirm_1]
+en = "You must choose an item first."
+pt = "Escolha um item primeiro."
+
+[.text_social_trade_exchange_grandexchangeconfirm_2]
+en = "Your offer is incomplete, please try again."
+pt = "A sua oferta está incompleta, tente de novo."
+
+[.text_social_trade_exchange_grandexchangeconfirm_3]
+en = "You must enter a valid quantity and price."
+pt = "Digite uma quantidade e um preço válidos."
+
+[.text_social_trade_exchange_grandexchangeconfirm_4]
+en = "The total value of your offer cannot exceed 2147m coins."
+pt = "O valor total da sua oferta não pode passar de 2.147m moedas."
+
+[.text_social_trade_exchange_grandexchangeconfirm_5]
+en = "Payment has been taken from your bank."
+pt = "O pagamento foi tirado do seu banco."
+
+# Text - social/trade/exchange/GrandExchangeItemSets.kt
+
+[.text_social_trade_exchange_grandexchangeitemsets_1]
+en = "You don't have the parts that make up this set."
+pt = "Você não tem as peças que formam este conjunto."
+
+[.text_social_trade_exchange_grandexchangeitemsets_2]
+en = "You successfully traded your item components for a set!"
+pt = "Você trocou as peças por um conjunto com sucesso!"
+
+[.text_social_trade_exchange_grandexchangeitemsets_3]
+en = "That isn't a set item."
+pt = "Isso não é um item de conjunto."
+
+[.text_social_trade_exchange_grandexchangeitemsets_4]
+en = "That isn't a set item, you can't break it up into component parts."
+pt = "Isso não é um item de conjunto; não dá para separá-lo em peças."
+
+[.text_social_trade_exchange_grandexchangeitemsets_5]
+en = "You successfully traded your set for its component items!"
+pt = "Você trocou o seu conjunto pelas peças com sucesso!"
+
+# Text - social/trade/exchange/GrandExchangeOffers.kt
+
+[.text_social_trade_exchange_grandexchangeoffers_1]
+en = "You can't trade that item on the Grand Exchange."
+pt = "Você não pode negociar esse item no Grand Exchange."
+
+# Text - social/trade/lend/ItemDiscard.kt
+
+[.text_social_trade_lend_itemdiscard_1]
+en = "Really discard item?"
+pt = "Descartar mesmo o item?"
+
+[.text_social_trade_lend_itemdiscard_2]
+en = "Yes, discard it. I won't need it again."
+pt = "Sim, descarte. Não vou precisar mais dele."
+
+[.text_social_trade_lend_itemdiscard_3]
+en = "The item has been returned to it's owner."
+pt = "O item foi devolvido ao dono."
+
+[.text_social_trade_lend_itemdiscard_4]
+en = "No, I'll keep hold of it."
+pt = "Não, vou ficar com ele."
+
+# Text - social/trade/lend/ItemLending.kt
+
+[.text_social_trade_lend_itemlending_1]
+en = "Your loan has expired; the item you borrowed will now be returned to its owner."
+pt = "O seu empréstimo acabou; o item que você pegou emprestado será devolvido ao dono agora."
+
+[.text_social_trade_lend_itemlending_2]
+en = "The item you borrowed will be returned to its owner in a minute."
+pt = "O item que você pegou emprestado será devolvido ao dono em um minuto."
+
+[.text_social_trade_lend_itemlending_3]
+en = "The item you borrowed has been returned to its owner."
+pt = "O item que você pegou emprestado foi devolvido ao dono."
+
+[.text_social_trade_lend_itemlending_4]
+en = "The item you lent has been returned to your collection box."
+pt = "O item que você emprestou voltou para a sua caixa de coleta."
+
+# Text - social/trade/lend/ItemReturning.kt
+
+[.text_social_trade_lend_itemreturning_1]
+en = "Your item will be returned to you %1%."
+pt = "Seu item será devolvido %1%."
+
+[.text_social_trade_lend_itemreturning_2]
+en = "Demanding return of item."
+pt = "Exigindo a devolução do item."
+
+[.text_social_trade_lend_itemreturning_3]
+en = "There was an issue returning your item."
+pt = "Houve um problema ao devolver o seu item."
+
+[.text_social_trade_lend_itemreturning_4]
+en = "Your item has been returned."
+pt = "Seu item foi devolvido."
+
+# Text - entity/player/bank/BankDeposit.kt
+
+[.text_entity_player_bank_bankdeposit_1]
+en = "You have no items in your inventory to deposit."
+pt = "Você não tem itens no inventário para depositar."
+
+[.text_entity_player_bank_bankdeposit_2]
+en = "You have no equipped items to deposit."
+pt = "Você não tem itens equipados para depositar."
+
+[.text_entity_player_bank_bankdeposit_3]
+en = "Your familiar has no items to deposit."
+pt = "O seu familiar não tem itens para depositar."
+
+[.text_entity_player_bank_bankdeposit_4]
+en = "This item cannot be banked."
+pt = "Este item não pode ir para o banco."
+
+[.text_entity_player_bank_bankdeposit_5]
+en = "Your bank is too full to deposit any more."
+pt = "O seu banco está cheio demais para depositar mais."
+
+[.text_entity_player_bank_bankdeposit_6]
+en = "How many would you like to deposit?"
+pt = "Quantos você quer depositar?"
+
+[.text_entity_player_bank_bankdeposit_7]
+en = "One"
+pt = "Um"
+
+[.text_entity_player_bank_bankdeposit_8]
+en = "Both"
+pt = "Os dois"
+
+[.text_entity_player_bank_bankdeposit_9]
+en = "Five"
+pt = "Cinco"
+
+[.text_entity_player_bank_bankdeposit_10]
+en = "X"
+pt = "X"
+
+[.text_entity_player_bank_bankdeposit_11]
+en = "All"
+pt = "Todos"
+
+# Text - entity/player/bank/BankOpen.kt
+
+[.text_entity_player_bank_bankopen_1]
+en = "%1%Note: modifications won't effect target players bank!"
+pt = "%1%Nota: as alterações não afetam o banco do jogador-alvo!"
+
+# Text - entity/player/bank/BankWithdraw.kt
+
+[.text_entity_player_bank_bankwithdraw_1]
+en = "This item cannot be withdrawn as a note."
+pt = "Este item não pode ser sacado como nota (note)."
+
+# Text - entity/player/bank/pin/BankPin.kt
+
+[.text_entity_player_bank_pin_bankpin_1]
+en = "You have correctly entered your PIN."
+pt = "Você digitou o PIN corretamente."
+
+[.text_entity_player_bank_pin_bankpin_2]
+en = "I don't know it."
+pt = "Não sei o PIN."
+
+[.text_entity_player_bank_pin_bankpin_3]
+en = "Your PIN will be deleted in %1% day. If you remember it, you can cancel the deletion from your Bank PIN settings."
+pt = "Seu PIN será apagado em %1% dia. Se você se lembrar dele, pode cancelar a exclusão nas configurações do Bank PIN."
+
+[.text_entity_player_bank_pin_bankpin_4]
+en = "Your PIN will be deleted in %1% days. If you remember it, you can cancel the deletion from your Bank PIN settings."
+pt = "Seu PIN será apagado em %1% dias. Se você se lembrar dele, pode cancelar a exclusão nas configurações do Bank PIN."
+
+[.text_entity_player_bank_pin_bankpin_5]
+en = "The PIN you entered is incorrect."
+pt = "O PIN digitado está incorreto."
+
+[.text_entity_player_bank_pin_bankpin_6]
+en = "You will be able to access your bank in less than 1 minute."
+pt = "Você vai poder acessar o seu banco em menos de 1 minuto."
+
+[.text_entity_player_bank_pin_bankpin_7]
+en = "You will be able to access your bank pin in %1% minutes."
+pt = "Você vai poder acessar o PIN do seu banco em %1% minutos."
+
+# Text - entity/player/bank/pin/BankPinEntry.kt
+
+[.text_entity_player_bank_pin_bankpinentry_1]
+en = "YOUR PIN WILL BE DELETED IN %1% DAY"
+pt = "O SEU PIN SERÁ APAGADO EM %1% DIA"
+
+[.text_entity_player_bank_pin_bankpinentry_2]
+en = "YOUR PIN WILL BE DELETED IN %1% DAYS"
+pt = "O SEU PIN SERÁ APAGADO EM %1% DIAS"
+
+# Text - entity/player/bank/pin/BankPinSettings.kt
+
+[.text_entity_player_bank_pin_bankpinsettings_1]
+en = "Your current PIN matches your new one."
+pt = "O seu PIN atual é igual ao novo."
+
+[.text_entity_player_bank_pin_bankpinsettings_2]
+en = "Your PIN change will take effect in %1% days."
+pt = "A troca do seu PIN vai valer daqui a %1% dias."
+
+[.text_entity_player_bank_pin_bankpinsettings_3]
+en = "Messages"
+pt = "Mensagens"
+
+[.text_entity_player_bank_pin_bankpinsettings_4]
+en = "Use the buttons below to change your PIN settings"
+pt = "Use os botões abaixo para mudar as opções do seu PIN"
+
+[.text_entity_player_bank_pin_bankpinsettings_5]
+en = "%1% days"
+pt = "%1% dias"
+
+[.text_entity_player_bank_pin_bankpinsettings_6]
+en = "PIN coming soon"
+pt = "PIN em breve"
+
+[.text_entity_player_bank_pin_bankpinsettings_7]
+en = "You have a PIN"
+pt = "Você tem um PIN"
+
+[.text_entity_player_bank_pin_bankpinsettings_8]
+en = "NO PIN set"
+pt = "SEM PIN"
+
+# Text - area/misthalin/lumbridge/CowFieldSignpost.kt
+
+[.text_area_misthalin_lumbridge_cowfieldsignpost_1]
+en = "Local cowherders have reported that %1% cows have been slain in this field today by passing adventurers. Farmers throughout the land fear this may be an epidemic."
+pt = "Os vaqueiros da região relatam que %1% vacas foram abatidas neste campo hoje por aventureiros de passagem. Fazendeiros de todo o reino temem que seja uma epidemia."
+
+[.text_area_misthalin_lumbridge_cowfieldsignpost_2]
+en = "The Lumbridge cow population has been thriving today, without a single cow death to worry about!"
+pt = "A população de vacas de Lumbridge está prosperando hoje, sem uma única morte de vaca com que se preocupar!"
+
+# Text - area/misthalin/lumbridge/ExplorerJack.kt
+
+[.text_area_misthalin_lumbridge_explorerjack_1]
+en = "Ah! Welcome to %1%, lad. My name's Explorer jack. I'm an explorer by trade, and I'm one of the Taskmasters around these parts"
+pt = "Ah! Bem-vindo a %1%, rapaz. Meu nome é Explorer Jack. Sou explorador de profissão e um dos Taskmasters destas bandas"
+
+# Text - area/misthalin/lumbridge/LumbridgeBookcase.kt
+
+[.text_area_misthalin_lumbridge_lumbridgebookcase_1]
+en = "You search the books..."
+pt = "Você examina os livros..."
+
+[.text_area_misthalin_lumbridge_lumbridgebookcase_2]
+en = "None of them look very interesting."
+pt = "Nenhum deles parece muito interessante."
+
+[.text_area_misthalin_lumbridge_lumbridgebookcase_3]
+en = "You find nothing to interest you."
+pt = "Você não encontra nada que lhe interesse."
+
+[.text_area_misthalin_lumbridge_lumbridgebookcase_4]
+en = "You don't find anything that you'd ever want to read."
+pt = "Você não encontra nada que um dia queira ler."
+
+# Text - area/misthalin/lumbridge/Men.kt
+
+[.text_area_misthalin_lumbridge_men_1]
+en = "Hello, how's it going?"
+pt = "Olá, como vão as coisas?"
+
+[.text_area_misthalin_lumbridge_men_2]
+en = "Not too bad, but I'm a little worried about the increase of goblins these days."
+pt = "Nada mal, mas ando um pouco preocupado com o aumento de goblins ultimamente."
+
+[.text_area_misthalin_lumbridge_men_3]
+en = "Don't worry, I'll kill them."
+pt = "Não se preocupe, eu dou cabo deles."
+
+[.text_area_misthalin_lumbridge_men_4]
+en = "How can I help you?"
+pt = "Como posso ajudar?"
+
+[.text_area_misthalin_lumbridge_men_5]
+en = "Do you wish to trade?"
+pt = "Quer negociar?"
+
+[.text_area_misthalin_lumbridge_men_6]
+en = "No, I have nothing I wish to get rid of. If you want to do some trading, there are plenty of shops and market stalls around though."
+pt = "Não, não tenho nada de que eu queira me livrar. Mas se quer negociar, tem muitas lojas e barracas de mercado por aí."
+
+[.text_area_misthalin_lumbridge_men_7]
+en = "I'm in search of a quest."
+pt = "Estou em busca de uma missão."
+
+[.text_area_misthalin_lumbridge_men_8]
+en = "I'm sorry I can't help you there."
+pt = "Sinto muito, não posso ajudar com isso."
+
+[.text_area_misthalin_lumbridge_men_9]
+en = "I'm in search of enemies to kill."
+pt = "Estou em busca de inimigos para matar."
+
+[.text_area_misthalin_lumbridge_men_10]
+en = "I've heard there are many fearsome creatures that dwell under the ground..."
+pt = "Ouvi dizer que há muitas criaturas temíveis vivendo debaixo da terra..."
+
+[.text_area_misthalin_lumbridge_men_11]
+en = "Get out of my way, I'm in a hurry!"
+pt = "Sai da frente, estou com pressa!"
+
+[.text_area_misthalin_lumbridge_men_12]
+en = "I'm fine, how are you?"
+pt = "Estou bem, e você?"
+
+[.text_area_misthalin_lumbridge_men_13]
+en = "Very well thank you."
+pt = "Muito bem, obrigado."
+
+[.text_area_misthalin_lumbridge_men_14]
+en = "Hello there! Nice weather we've been having."
+pt = "Olá! Que tempo bom tem feito, hein?"
+
+[.text_area_misthalin_lumbridge_men_15]
+en = "I'm very well thank you."
+pt = "Estou muito bem, obrigado."
+
+[.text_area_misthalin_lumbridge_men_16]
+en = "I'm a bold adventurer."
+pt = "Sou um aventureiro destemido."
+
+[.text_area_misthalin_lumbridge_men_17]
+en = "Ah, a very noble profession."
+pt = "Ah, uma profissão muito nobre."
+
+[.text_area_misthalin_lumbridge_men_18]
+en = "Do I know you? I'm in a hurry!"
+pt = "Eu te conheço? Estou com pressa!"
+
+[.text_area_misthalin_lumbridge_men_19]
+en = "I think we need a new king. The one we've got isn't very good."
+pt = "Acho que precisamos de um rei novo. Esse que temos não é lá muito bom."
+
+[.text_area_misthalin_lumbridge_men_20]
+en = "Not too bad thanks."
+pt = "Nada mal, obrigado."
+
+[.text_area_misthalin_lumbridge_men_21]
+en = "Are you asking for a fight?"
+pt = "Está procurando briga?"
+
+[.text_area_misthalin_lumbridge_men_22]
+en = "I'm busy right now."
+pt = "Estou ocupado agora."
+
+[.text_area_misthalin_lumbridge_men_23]
+en = "None of your business."
+pt = "Não é da sua conta."
+
+[.text_area_misthalin_lumbridge_men_24]
+en = "No I don't have any spare change."
+pt = "Não, não tenho nenhum trocado."
+
+[.text_area_misthalin_lumbridge_men_25]
+en = "I'm a little worried - I've heard there's lots of people going about, killing citizens at random."
+pt = "Ando meio preocupado - ouvi dizer que tem muita gente por aí matando cidadãos a esmo."
+
+[.text_area_misthalin_lumbridge_men_26]
+en = "No, I don't want to buy anything!"
+pt = "Não, não quero comprar nada!"
+
+[.text_area_misthalin_lumbridge_men_27]
+en = "That is classified information."
+pt = "Isso é informação confidencial."
+
+[.text_area_misthalin_lumbridge_men_28]
+en = "Have this flyer..."
+pt = "Pegue este panfleto..."
+
+[.text_area_misthalin_lumbridge_men_29]
+en = "Yo, wassup!"
+pt = "E aí, beleza?!"
+
+# Text - area/misthalin/lumbridge/PlayerDeathSignpost.kt
+
+[.text_area_misthalin_lumbridge_playerdeathsignpost_1]
+en = "So far today, %1% unlucky adventurers have died on %2% and been sent to their respawn location. Be careful out there."
+pt = "Hoje, até agora, %1% aventureiros azarados morreram em %2% e voltaram ao ponto de renascimento. Cuidado por aí."
+
+[.text_area_misthalin_lumbridge_playerdeathsignpost_2]
+en = "So far today, not a single adventurer on %1% has met their end grisly or otherwise. Either the streets are getting safer or adventurers are getting warier."
+pt = "Hoje, até agora, nenhum aventureiro em %1% encontrou seu fim, horrível ou não. Ou as ruas estão mais seguras, ou os aventureiros mais cautelosos."
+
+# Text - area/misthalin/lumbridge/blood_pact/Caitlin.kt
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_1]
+en = "What are you waiting for? Finish me!"
+pt = "Está esperando o quê? Acabe comigo!"
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_2]
+en = "I have some questions."
+pt = "Tenho algumas perguntas."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_3]
+en = "Time for you to die!"
+pt = "Chegou a sua hora de morrer!"
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_4]
+en = "I'm not killing you. Just give me your stuff and get out of here."
+pt = "Não vou matar você. Só me dê as suas coisas e suma daqui."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_5]
+en = "I am the wizard Caitlin."
+pt = "Sou a maga Caitlin."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_6]
+en = "Who are the others?"
+pt = "Quem são os outros?"
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_7]
+en = "Reese used to be an acolyte at Lumbridge Church. He and I came up with this whole idea."
+pt = "Reese era acólito na igreja de Lumbridge. Ele e eu tivemos essa ideia toda."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_8]
+en = "Kayle's just some idiot Reese roped into helping us. I heard you let him go. It's more than he deserved. He's useless."
+pt = "O Kayle é só um idiota que o Reese arrastou para nos ajudar. Soube que você o deixou ir. É mais do que ele merecia. Ele é um inútil."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_9]
+en = "Kayle was just some idiot Reese roped into helping us. I heard you killed him and I can't say I mind. If I'd had my way we'd have used him as the sacrifice."
+pt = "O Kayle era só um idiota que o Reese arrastou para nos ajudar. Soube que você o matou, e não posso dizer que me importo. Se dependesse de mim, ele teria sido o sacrifício."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_10]
+en = "What were you planning to do down here?"
+pt = "O que vocês estavam planejando fazer aqui embaixo?"
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_11]
+en = "Idiot hero! You don't even know what this place is, do you?"
+pt = "Herói idiota! Você nem sabe que lugar é este, não é?"
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_12]
+en = "This is the tomb of Dragith Nurn!"
+pt = "Esta é a tumba de Dragith Nurn!"
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_13]
+en = "Dragith Nurn was a necromancer. He lived in Lumbridge decades ago."
+pt = "Dragith Nurn era um necromante. Ele viveu em Lumbridge décadas atrás."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_14]
+en = "He kept his necromancy secret. Everyone thought he was just a wealthy nobleman and wizard. He paid for these catacombs to be built, and he's interred here in a special tomb."
+pt = "Ele mantinha a necromancia em segredo. Todos achavam que ele era só um nobre rico e mago. Ele pagou pela construção destas catacumbas e está sepultado aqui, numa tumba especial."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_15]
+en = "Reese was an acolyte here at the church. He learned that Dragith Nurn was buried here."
+pt = "Reese era acólito aqui na igreja. Ele descobriu que Dragith Nurn estava enterrado aqui."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_16]
+en = "I was a student at the Wizards' Tower. In the library, I discovered a note left by Dragith Nurn."
+pt = "Eu era estudante na Wizards' Tower. Na biblioteca, descobri um bilhete deixado por Dragith Nurn."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_17]
+en = "The body of a necromancer contains powerful magic. We learned we could perform a ritual on his tomb to unlock the secrets of his work."
+pt = "O corpo de um necromante guarda uma magia poderosa. Descobrimos que podíamos fazer um ritual na tumba dele para desvendar os segredos do seu trabalho."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_18]
+en = "We would have gained mastery over life and death!"
+pt = "Teríamos conquistado o domínio sobre a vida e a morte!"
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_19]
+en = "All right. Now finish me!"
+pt = "Pronto. Agora acabe comigo!"
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_20]
+en = "The second cultist came past me on her way out. I don't think she'll be any more trouble. I'm glad you didn't have to kill her."
+pt = "A segunda cultista passou por mim na saída. Acho que ela não vai dar mais trabalho. Fico feliz que você não precisou matá-la."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_21]
+en = "I heard you killed the second cultist. It's a pity it had to come to that...but I'm not questioning your judgment."
+pt = "Soube que você matou a segunda cultista. Pena que precisou chegar a isso... mas não estou questionando o seu julgamento."
+
+[.text_area_misthalin_lumbridge_blood_pact_caitlin_22]
+en = "I think the third cultist is a swordsman. Magic is the best thing to use against melee fighters. Speak to me if you need any help."
+pt = "Acho que o terceiro cultista é um espadachim. Magic (magia) é a melhor coisa contra lutadores corpo a corpo. Fale comigo se precisar de ajuda."
+
+# Text - area/misthalin/lumbridge/blood_pact/DragithMask.kt
+
+[.text_area_misthalin_lumbridge_blood_pact_dragithmask_1]
+en = "You need all five parts of the mask in order to combine them."
+pt = "Você precisa das cinco partes da máscara para juntá-las."
+
+[.text_area_misthalin_lumbridge_blood_pact_dragithmask_2]
+en = "You combine the parts and assemble the Mask of Dragith Nurn."
+pt = "Você junta as partes e monta a máscara de Dragith Nurn (Mask of Dragith Nurn)."
+
+# Text - area/misthalin/lumbridge/blood_pact/Ilona.kt
+
+[.text_area_misthalin_lumbridge_blood_pact_ilona_1]
+en = "Yes, rescue Ilona."
+pt = "Sim, resgatar a Ilona."
+
+[.text_area_misthalin_lumbridge_blood_pact_ilona_2]
+en = "You untie Ilona and return to the surface."
+pt = "Você desamarra a Ilona e volta para a superfície."
+
+[.text_area_misthalin_lumbridge_blood_pact_ilona_3]
+en = "Thank the gods. We're out."
+pt = "Graças aos deuses. Saímos."
+
+[.text_area_misthalin_lumbridge_blood_pact_ilona_4]
+en = "I thought I was going to die down there."
+pt = "Achei que eu ia morrer lá embaixo."
+
+[.text_area_misthalin_lumbridge_blood_pact_ilona_5]
+en = "You saved my life, whoever you are. Thank you."
+pt = "Você salvou a minha vida, seja lá quem for. Obrigada."
+
+[.text_area_misthalin_lumbridge_blood_pact_ilona_6]
+en = "Well, adventurer, it looks like you have prevailed. You should keep the cultists' weapons as a reward."
+pt = "Bem, aventureiro, parece que você venceu. Fique com as armas dos cultistas como recompensa."
+
+[.text_area_misthalin_lumbridge_blood_pact_ilona_7]
+en = "I took the liberty of retrieving the weapons you missed."
+pt = "Tomei a liberdade de recuperar as armas que você deixou para trás."
+
+[.text_area_misthalin_lumbridge_blood_pact_ilona_8]
+en = "You don't have room in your inventory to receive your last reward. Speak to Xenia again when you have dropped, destroyed or banked some of your items."
+pt = "Você não tem espaço no inventário para receber sua última recompensa. Fale com a Xenia de novo depois de largar, destruir ou guardar no banco alguns itens."
+
+[.text_area_misthalin_lumbridge_blood_pact_ilona_9]
+en = "Ilona departs."
+pt = "Ilona vai embora."
+
+# Text - area/misthalin/lumbridge/blood_pact/Kayle.kt
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_1]
+en = "Are - are you going to kill me?"
+pt = "Você - você vai me matar?"
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_2]
+en = "Y-yes! I'll tell you anything!"
+pt = "S-sim! Eu conto tudo!"
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_3]
+en = "Yes. Now die!"
+pt = "Vou. Agora morra!"
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_4]
+en = "No. Just give me your stuff and get out of here."
+pt = "Não. Só me passa as suas coisas e some daqui."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_5]
+en = "I- My name's Kayle. I'm a ranger. Well, I'd been practising the sling... I guess I wasn't as good as I'd thought."
+pt = "Eu- Meu nome é Kayle. Sou arqueiro. Bem, eu andava treinando com a funda... acho que eu não era tão bom quanto pensava."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_6]
+en = "Reese is the leader. All this, the blood pact, it was his idea. He doesn't know magic but he's a strong fighter."
+pt = "O Reese é o líder. Tudo isso, o pacto de sangue, foi ideia dele. Ele não sabe magia, mas é um lutador forte."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_7]
+en = "Caitlin is a wizard. She was a student at the Wizards' Tower, but she left. She wanted to study dark magic."
+pt = "A Caitlin é maga. Ela estudava na Wizards' Tower, mas saiu. Queria estudar magia negra."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_8]
+en = "I - I don't really know! Honestly!"
+pt = "Eu - eu não sei direito! Sério!"
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_9]
+en = "Listen...Reese used to be an acolyte at the church here. He discovered something about these catacombs; I don't know what. Something about how they were built, I think."
+pt = "Escuta...o Reese era acólito na igreja daqui. Ele descobriu alguma coisa sobre estas catacumbas; não sei o quê. Algo sobre como foram construídas, eu acho."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_10]
+en = "Caitlin was a student at the Wizards' Tower. She found something too, in the ruins of the old tower, from back when Zamorakian wizards used it."
+pt = "A Caitlin estudava na Wizards' Tower. Ela também achou uma coisa, nas ruínas da torre antiga, do tempo em que os magos zamorakianos a usavam."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_11]
+en = "Caitlin and Reese put what they'd found together. They said they'd discovered a ritual they could perform, something that could give them power over life and death."
+pt = "A Caitlin e o Reese juntaram o que tinham achado. Disseram que descobriram um ritual que podiam fazer, algo que lhes daria poder sobre a vida e a morte."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_12]
+en = "We made a blood pact, the three of us. So that we'd be in it together, whatever happened."
+pt = "Fizemos um pacto de sangue, nós três. Para ficarmos juntos nessa, acontecesse o que acontecesse."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_13]
+en = "Then we kidnapped Ilona. She was another apprentice from the Wizards' Tower, someone Caitlin had known there."
+pt = "Aí a gente sequestrou a Ilona. Ela era outra aprendiz da Wizards' Tower, alguém que a Caitlin conheceu lá."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_14]
+en = "Reese and Caitlin are going down there to perform the ritual. I don't - I don't know what it involves."
+pt = "O Reese e a Caitlin vão descer lá para fazer o ritual. Eu não - eu não sei o que ele envolve."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_15]
+en = "Are - are you going to kill me now?"
+pt = "Você - você vai me matar agora?"
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_16]
+en = "I don't think that cultist will be any more trouble. I'm glad you didn't have to kill him."
+pt = "Acho que aquele cultista não vai dar mais trabalho. Fico feliz que você não precisou matá-lo."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_17]
+en = "It's a pity you had to kill that man...but I'm not questioning your judgment."
+pt = "É uma pena você ter precisado matar aquele homem...mas não estou questionando o seu julgamento."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_18]
+en = "I think the second cultist was using magic. You should use a ranged weapon to defeat magic-users. Ask me if you need any help."
+pt = "Acho que a segunda cultista estava usando magia. Use uma arma de longo alcance para derrotar magos. Me pergunte se precisar de ajuda."
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_19]
+en = "And you just went along with this?"
+pt = "E você simplesmente topou isso?"
+
+[.text_area_misthalin_lumbridge_blood_pact_kayle_20]
+en = "The blood pact! We'd made a blood pact, and Reese said that bound me to him. It meant I had to do anything he said. He...he said he could curse me."
+pt = "O pacto de sangue! A gente tinha feito um pacto de sangue, e o Reese disse que isso me prendia a ele. Que eu tinha que fazer tudo o que ele mandasse. Ele...ele disse que podia me amaldiçoar."
+
+# Text - area/misthalin/lumbridge/blood_pact/Reese.kt
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_1]
+en = "This gate won't budge."
+pt = "Este portão não se mexe."
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_2]
+en = "The potion is complete. Where are they? The whole group should be present."
+pt = "A poção está pronta. Onde eles estão? O grupo inteiro devia estar aqui."
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_3]
+en = "Let me go, you-"
+pt = "Me solte, seu-"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_4]
+en = "Shut up!"
+pt = "Cale a boca!"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_5]
+en = "Who are you? What are you doing here?"
+pt = "Quem é você? O que está fazendo aqui?"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_6]
+en = "You've beaten me, adventurer."
+pt = "Você me derrotou, aventureiro."
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_7]
+en = "Now strike the final blow! End the blood pact in this tomb."
+pt = "Agora dê o golpe final! Encerre o pacto de sangue nesta tumba."
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_8]
+en = "Ask your questions."
+pt = "Faça suas perguntas."
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_9]
+en = "I'm not killing you. Give me your stuff and get out of here."
+pt = "Não vou matar você. Me dê as suas coisas e suma daqui."
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_10]
+en = "No! There must be a death! The blood pact must be complete!"
+pt = "Não! Alguém tem que morrer! O pacto de sangue precisa se completar!"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_11]
+en = "My Name is %1%. I'm an adventurer"
+pt = "Meu nome é %1%. Sou um aventureiro"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_12]
+en = "This will be your tomb, adventurer. The blood pact will prevail!"
+pt = "Esta será a sua tumba, aventureiro. O pacto de sangue vai prevalecer!"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_13]
+en = "I'm %1%. Don't worry, Ilona, I'm here to rescue you."
+pt = "Sou %1%. Não se preocupe, Ilona, vim resgatar você."
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_14]
+en = "Thank Saradomin! He's insane! He's going to kill me!"
+pt = "Graças a Saradomin! Ele é louco! Ele vai me matar!"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_15]
+en = "Maybe you can take her place as the sacrifice, adventurer. Stand and fight!"
+pt = "Talvez você possa tomar o lugar dela como sacrifício, aventureiro. Fique e lute!"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_16]
+en = "I'm the one who killed your lackeys. Think you can do better?"
+pt = "Fui eu que matei os seus capangas. Acha que se sai melhor?"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_17]
+en = "They were weak. Zamorak will turn his face from them - but he will smile on me when I offer him your blood!"
+pt = "Eles eram fracos. Zamorak vai virar o rosto para eles - mas vai sorrir para mim quando eu lhe oferecer o seu sangue!"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_18]
+en = "I let both the others live. This doesn't have to end in violence."
+pt = "Deixei os outros dois viverem. Isto não precisa terminar em violência."
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_19]
+en = "I'm the one who defeated your lackeys. Think you can do better?"
+pt = "Fui eu que derrotei os seus capangas. Acha que se sai melhor?"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_20]
+en = "I'm your worst nightmare, Zamorakian scum!"
+pt = "Sou o seu pior pesadelo, escória zamorakiana!"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_21]
+en = "Help! Untie me so we can get out of here!"
+pt = "Socorro! Me desamarre para a gente sair daqui!"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_22]
+en = "I am Reese! Warrior of Zamorak and leader of the blood pact!"
+pt = "Eu sou Reese! Guerreiro de Zamorak e líder do pacto de sangue!"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_23]
+en = "Who were the others?"
+pt = "Quem eram os outros?"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_24]
+en = "Faithful servants of Zamorak! He is the god of chaos and destruction. We bound ourselves to his service!"
+pt = "Servos fiéis de Zamorak! Ele é o deus do caos e da destruição. Nós nos entregamos ao serviço dele!"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_25]
+en = "End Saradomin's dominance over Lumbridge! The tyrant god shall fall."
+pt = "Acabar com o domínio de Saradomin sobre Lumbridge! O deus tirano vai cair."
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_26]
+en = "With the blood pact, and the power of the tomb of Dragith Nurn, we would send an army of the dead to claim this town for Zamorak!"
+pt = "Com o pacto de sangue e o poder da tumba de Dragith Nurn, mandaríamos um exército de mortos tomar esta cidade para Zamorak!"
+
+[.text_area_misthalin_lumbridge_blood_pact_reese_27]
+en = "Now strike the final blow!"
+pt = "Agora dê o golpe final!"
+
+# Text - area/misthalin/lumbridge/castle/Cook.kt
+
+[.text_area_misthalin_lumbridge_castle_cook_1]
+en = "You still need to get: %1%%2%"
+pt = "Você ainda precisa conseguir: %1%%2%"
+
+[.text_area_misthalin_lumbridge_castle_cook_2]
+en = "You still need to get: %1%"
+pt = "Você ainda precisa conseguir: %1%"
+
+[.text_area_misthalin_lumbridge_castle_cook_3]
+en = "You still need to get: "
+pt = "Você ainda precisa conseguir: "
+
+# Text - area/misthalin/lumbridge/castle/LumbridgeCellar.kt
+
+[.text_area_misthalin_lumbridge_castle_lumbridgecellar_1]
+en = "You should find a light source and a tinderbox before going down there."
+pt = "É bom arranjar uma fonte de luz e uma pederneira (tinderbox) antes de descer aí."
+
+# Text - area/misthalin/lumbridge/castle/LumbridgeWinch.kt
+
+[.text_area_misthalin_lumbridge_castle_lumbridgewinch_1]
+en = "It seems the winch is jammed. You can't move it."
+pt = "Parece que o guincho está emperrado. Você não consegue movê-lo."
+
+# Text - area/misthalin/lumbridge/castle/Sigmund.kt
+
+[.text_area_misthalin_lumbridge_castle_sigmund_1]
+en = "Can I help you?"
+pt = "Posso ajudar?"
+
+[.text_area_misthalin_lumbridge_castle_sigmund_2]
+en = "Do you have any quests for me?"
+pt = "Você tem alguma missão para mim?"
+
+[.text_area_misthalin_lumbridge_castle_sigmund_3]
+en = "I hear the Duke has a task for an adventurer. Otherwise, if you want to make yourself useful, there are always evil monsters to slay."
+pt = "Ouvi dizer que o Duke tem uma tarefa para um aventureiro. Fora isso, se quiser ser útil, sempre há monstros malignos para matar."
+
+[.text_area_misthalin_lumbridge_castle_sigmund_4]
+en = "Okay, I might just do that."
+pt = "Certo, talvez eu faça isso."
+
+[.text_area_misthalin_lumbridge_castle_sigmund_5]
+en = "I'm the Duke's advisor."
+pt = "Sou o conselheiro do Duke."
+
+[.text_area_misthalin_lumbridge_castle_sigmund_6]
+en = "Can you give me any advice then?"
+pt = "Então pode me dar algum conselho?"
+
+[.text_area_misthalin_lumbridge_castle_sigmund_7]
+en = "I only advice the Duke. But if you want to make yourself useful, there are evil goblins to slay on the other side of the river."
+pt = "Só aconselho o Duke. Mas, se quiser ser útil, há goblins malignos para matar do outro lado do rio."
+
+[.text_area_misthalin_lumbridge_castle_sigmund_8]
+en = "Sigmund doesn't seem to have anything of value."
+pt = "Sigmund não parece ter nada de valor."
+
+# Text - area/misthalin/lumbridge/catacomb/LumbridgeCatacombs.kt
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_1]
+en = "Hey! I want to talk to you!"
+pt = "Ei! Quero falar com você!"
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_2]
+en = "You should deal with the second Cultist, before trying to operate the winch."
+pt = "Você deve cuidar da segunda cultista antes de tentar mexer no guincho."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_3]
+en = "There's no reason to operate this."
+pt = "Não há motivo para mexer nisto."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_4]
+en = "You operate the winch. The gates creak open."
+pt = "Você gira o guincho. Os portões se abrem rangendo."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_5]
+en = "You should deal with the second Cultist first."
+pt = "Você deve cuidar da segunda cultista primeiro."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_6]
+en = "You should deal with the third Cultist first."
+pt = "Você deve cuidar do terceiro cultista primeiro."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_7]
+en = "You should take the prisoner to the surface and speak to Xenia before you venture deeper into the dungeon."
+pt = "Leve a prisioneira à superfície e fale com a Xenia antes de se aventurar mais fundo no calabouço."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_8]
+en = "A magical barrier prevents you from taking this statuette."
+pt = "Uma barreira mágica impede você de pegar esta estatueta."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_9]
+en = "You don't have enough inventory space to take the statuette."
+pt = "Você não tem espaço no inventário para pegar a estatueta."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_10]
+en = "You think that Xenia might be interested in seeing this statuette."
+pt = "Você acha que a Xenia talvez queira ver esta estatueta."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_11]
+en = "You've already taken this statue."
+pt = "Você já pegou esta estátua."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_12]
+en = "The monsters around you seem to become agitated as you approach the statue. You think one of them might attack if you were to take it."
+pt = "Os monstros ao redor parecem ficar agitados quando você se aproxima da estátua. Talvez um deles ataque se você pegá-la."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_13]
+en = "Take the statue."
+pt = "Pegar a estátua."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_14]
+en = "Leave the statue alone."
+pt = "Deixar a estátua em paz."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_15]
+en = "You should deal with the first Cultist before advancing further."
+pt = "Você deve cuidar do primeiro cultista antes de seguir em frente."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_16]
+en = "Come on, Kayle! We don't have forever."
+pt = "Anda logo, Kayle! Não temos a eternidade."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_17]
+en = "Look, Reese; are you sure about this? There must be some other way we can..."
+pt = "Olha, Reese, tem certeza disso? Deve haver outro jeito de a gente..."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_18]
+en = "We made a blood pact, Kayle! The three of us are in this all the way."
+pt = "Fizemos um pacto de sangue, Kayle! Nós três vamos nisso até o fim."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_19]
+en = "Yes, but..."
+pt = "Sim, mas..."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_20]
+en = "Do we have to take this idiot?"
+pt = "A gente precisa mesmo levar esse idiota?"
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_21]
+en = "Yes! The blood pact! You read the book!"
+pt = "Sim! O pacto de sangue! Você leu o livro!"
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_22]
+en = "Let me go! I didn't make any blood pact with-"
+pt = "Me soltem! Eu não fiz pacto de sangue nenhum com-"
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_23]
+en = "Kayle, you stay here. Guard the door."
+pt = "Kayle, você fica aqui. Vigie a porta."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_24]
+en = "You, come on."
+pt = "Você, vem."
+
+[.text_area_misthalin_lumbridge_catacomb_lumbridgecatacombs_25]
+en = "Looks like there's a guard ahead. We should take him together."
+pt = "Parece que tem um guarda mais à frente. Vamos enfrentá-lo juntos."
+
+# Text - area/misthalin/lumbridge/church/Gravestone.kt
+
+[.text_area_misthalin_lumbridge_church_gravestone_1]
+en = "Your gravestone has appeared and will last %1% minute before crumbling to dust. You"
+pt = "Sua lápide (gravestone) apareceu e vai durar %1% minuto antes de virar pó. Você"
+
+[.text_area_misthalin_lumbridge_church_gravestone_2]
+en = "Your gravestone has appeared and will last %1% minutes before crumbling to dust. You"
+pt = "Sua lápide (gravestone) apareceu e vai durar %1% minutos antes de virar pó. Você"
+
+[.text_area_misthalin_lumbridge_church_gravestone_3]
+en = "can find the location of your gravestone by looking at the world map."
+pt = "pode ver onde ela está olhando o mapa do mundo (world map)."
+
+# Text - area/misthalin/lumbridge/church/Gravestones.kt
+
+[.text_area_misthalin_lumbridge_church_gravestones_1]
+en = "Isn't there something a bit odd about reading your own gravestone?"
+pt = "Não é meio estranho ler a sua própria lápide?"
+
+[.text_area_misthalin_lumbridge_church_gravestones_2]
+en = "The inscription is too unclear to read."
+pt = "A inscrição está apagada demais para ler."
+
+[.text_area_misthalin_lumbridge_church_gravestones_3]
+en = "The gods don't seem to approve of people attempting to repair their own gravestones."
+pt = "Os deuses não parecem aprovar quem tenta consertar a própria lápide."
+
+[.text_area_misthalin_lumbridge_church_gravestones_4]
+en = "This gravestone can no longer be repaired."
+pt = "Esta lápide não pode mais ser consertada."
+
+[.text_area_misthalin_lumbridge_church_gravestones_5]
+en = "You need a Prayer level of 2 to repair a gravestone."
+pt = "Você precisa de nível 2 em Prayer para consertar uma lápide."
+
+[.text_area_misthalin_lumbridge_church_gravestones_6]
+en = "%1% has repaired your gravestone. It should survive another %2% minute."
+pt = "%1% consertou a sua lápide. Ela deve durar mais %2% minuto."
+
+[.text_area_misthalin_lumbridge_church_gravestones_7]
+en = "%1% has repaired your gravestone. It should survive another %2% minutes."
+pt = "%1% consertou a sua lápide. Ela deve durar mais %2% minutos."
+
+[.text_area_misthalin_lumbridge_church_gravestones_8]
+en = "The gods don't seem to approve of people attempting to bless their own gravestones."
+pt = "Os deuses não parecem aprovar quem tenta abençoar a própria lápide."
+
+[.text_area_misthalin_lumbridge_church_gravestones_9]
+en = "You need a prayer level of 70 to bless a gravestone."
+pt = "Você precisa de nível 70 em Prayer para abençoar uma lápide."
+
+[.text_area_misthalin_lumbridge_church_gravestones_10]
+en = "You don't have enough prayer points to bless the gravestone."
+pt = "Você não tem pontos de oração suficientes para abençoar a lápide."
+
+[.text_area_misthalin_lumbridge_church_gravestones_11]
+en = "This gravestone has already been blessed."
+pt = "Esta lápide já foi abençoada."
+
+[.text_area_misthalin_lumbridge_church_gravestones_12]
+en = "The gods hear your prayers; the gravestone will remain for a little longer."
+pt = "Os deuses ouvem suas preces; a lápide vai durar mais um pouco."
+
+[.text_area_misthalin_lumbridge_church_gravestones_13]
+en = "%1% has blessed your gravestone. It should survive another %2% minute."
+pt = "%1% abençoou a sua lápide. Ela deve durar mais %2% minuto."
+
+[.text_area_misthalin_lumbridge_church_gravestones_14]
+en = "%1% has blessed your gravestone. It should survive another %2% minutes."
+pt = "%1% abençoou a sua lápide. Ela deve durar mais %2% minutos."
+
+[.text_area_misthalin_lumbridge_church_gravestones_15]
+en = "It would be impolite to demolish someone else's gravestone."
+pt = "Seria falta de educação demolir a lápide de outra pessoa."
+
+[.text_area_misthalin_lumbridge_church_gravestones_16]
+en = "It looks like it'll survive another %1% minute. You demolish it anyway."
+pt = "Parece que ela duraria mais %1% minuto. Você a demole mesmo assim."
+
+[.text_area_misthalin_lumbridge_church_gravestones_17]
+en = "It looks like it'll survive another %1% minutes. You demolish it anyway."
+pt = "Parece que ela duraria mais %1% minutos. Você a demole mesmo assim."
+
+[.text_area_misthalin_lumbridge_church_gravestones_18]
+en = "Surely you aren't going to drop litter on your own grave!"
+pt = "Você não vai jogar lixo no seu próprio túmulo, né?!"
+
+[.text_area_misthalin_lumbridge_church_gravestones_19]
+en = "Your gravestone has collapsed."
+pt = "A sua lápide desmoronou."
+
+[.text_area_misthalin_lumbridge_church_gravestones_20]
+en = "It's about to collapse!"
+pt = "Está prestes a desmoronar!"
+
+[.text_area_misthalin_lumbridge_church_gravestones_21]
+en = "It looks like it'll survive another %1%."
+pt = "Parece que ainda vai durar: %1%."
+
+# Text - area/misthalin/lumbridge/church/LumbridgeChurch.kt
+
+[.text_area_misthalin_lumbridge_church_lumbridgechurch_1]
+en = "You ring the church bell, confusing the citizens of Lumbridge."
+pt = "Você toca o sino da igreja, confundindo os cidadãos de Lumbridge."
+
+[.text_area_misthalin_lumbridge_church_lumbridgechurch_2]
+en = "You close the coffin."
+pt = "Você fecha o caixão."
+
+[.text_area_misthalin_lumbridge_church_lumbridgechurch_3]
+en = "There's a nice and complete skeleton in here!"
+pt = "Tem um esqueleto bonito e completinho aqui dentro!"
+
+[.text_area_misthalin_lumbridge_church_lumbridgechurch_4]
+en = "You search the coffin and find some human remains."
+pt = "Você revista o caixão e encontra restos humanos."
+
+[.text_area_misthalin_lumbridge_church_lumbridgechurch_5]
+en = "Maybe I should open it first."
+pt = "Talvez eu deva abrir primeiro."
+
+[.text_area_misthalin_lumbridge_church_lumbridgechurch_6]
+en = "You open the coffin."
+pt = "Você abre o caixão."
+
+[.text_area_misthalin_lumbridge_church_lumbridgechurch_7]
+en = "You put the skull in the coffin."
+pt = "Você coloca o crânio no caixão."
+
+[.text_area_misthalin_lumbridge_church_lumbridgechurch_8]
+en = "Release! Thank you stranger."
+pt = "Liberdade! Obrigado, estranho."
+
+[.text_area_misthalin_lumbridge_church_lumbridgechurch_9]
+en = "There's a skeleton without a skull in here. There's no point in disturbing it."
+pt = "Tem um esqueleto sem crânio aqui dentro. Não adianta mexer nele."
+
+# Text - area/misthalin/lumbridge/combat_hall/ArcheryTarget.kt
+
+[.text_area_misthalin_lumbridge_combat_hall_archerytarget_1]
+en = "You can only use Ranged against this target."
+pt = "Neste alvo você só pode usar Ranged."
+
+[.text_area_misthalin_lumbridge_combat_hall_archerytarget_2]
+en = "You can only use a Training bow and arrows against this target."
+pt = "Neste alvo você só pode usar o Training bow e flechas de treino."
+
+[.text_area_misthalin_lumbridge_combat_hall_archerytarget_3]
+en = "You are already in combat."
+pt = "Você já está em combate."
+
+[.text_area_misthalin_lumbridge_combat_hall_archerytarget_4]
+en = "You can't use that ammo with your bow."
+pt = "Você não pode usar essa munição com o seu arco."
+
+# Text - area/misthalin/lumbridge/combat_hall/CombatDummy.kt
+
+[.text_area_misthalin_lumbridge_combat_hall_combatdummy_1]
+en = "You can only use Magic against this dummy."
+pt = "Só dá para usar magia (Magic) contra este boneco."
+
+[.text_area_misthalin_lumbridge_combat_hall_combatdummy_2]
+en = "You can only use Melee against this dummy."
+pt = "Só dá para usar corpo a corpo (Melee) contra este boneco."
+
+# Text - area/misthalin/lumbridge/farm/HayBales.kt
+
+[.text_area_misthalin_lumbridge_farm_haybales_1]
+en = "You search the hay bale..."
+pt = "Você revista o fardo de feno..."
+
+[.text_area_misthalin_lumbridge_farm_haybales_2]
+en = "You search the hay bales..."
+pt = "Você revista os fardos de feno..."
+
+[.text_area_misthalin_lumbridge_farm_haybales_3]
+en = "Ow! There's something sharp in there!"
+pt = "Ai! Tem algo pontudo aí dentro!"
+
+[.text_area_misthalin_lumbridge_farm_haybales_4]
+en = "Wow! A needle!<br> Now what are the chances of finding that?"
+pt = "Uau! Uma agulha (needle)!<br> Qual era a chance de achar isso?"
+
+[.text_area_misthalin_lumbridge_farm_haybales_5]
+en = "You find nothing of interest."
+pt = "Você não encontra nada de interessante."
+
+# Text - area/misthalin/lumbridge/farm/Sacks.kt
+
+[.text_area_misthalin_lumbridge_farm_sacks_1]
+en = "There's nothing interesting in these sacks."
+pt = "Não há nada de interessante nestes sacos."
+
+# Text - area/misthalin/lumbridge/farm/SethGroatsFarm.kt
+
+[.text_area_misthalin_lumbridge_farm_sethgroatsfarm_1]
+en = "You've no reason to pick that up; eggs of that size are only useful for royal cakes."
+pt = "Não há motivo para pegar isso; ovos desse tamanho só servem para bolos reais."
+
+[.text_area_misthalin_lumbridge_farm_sethgroatsfarm_2]
+en = "You've already got one of those eggs and one's enough."
+pt = "Você já tem um desses ovos, e um basta."
+
+[.text_area_misthalin_lumbridge_farm_sethgroatsfarm_3]
+en = "The crate is empty."
+pt = "O caixote está vazio."
+
+# Text - area/misthalin/lumbridge/roddecks_house/RoddecksBookcase.kt
+
+[.text_area_misthalin_lumbridge_roddecks_house_roddecksbookcase_1]
+en = "There's nothing particularly interesting here."
+pt = "Não há nada de especialmente interessante aqui."
+
+# Text - area/misthalin/lumbridge/roddecks_house/RoddecksHouseDrawers.kt
+
+[.text_area_misthalin_lumbridge_roddecks_house_roddeckshousedrawers_1]
+en = "Nothing terribly interesting in here."
+pt = "Nada de muito interessante aqui."
+
+# Text - area/misthalin/lumbridge/swamp/LumbridgeSwamp.kt
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswamp_1]
+en = "There's nothing of any interest."
+pt = "Não há nada de interessante."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswamp_2]
+en = "You already have the ghost's skull."
+pt = "Você já tem o crânio do fantasma."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswamp_3]
+en = "There's nothing there of any use to you."
+pt = "Não há nada aí que sirva para você."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswamp_4]
+en = "You can see the skull under the rocks, but you don't have enough space to carry it."
+pt = "Você vê o crânio debaixo das pedras, mas não tem espaço para carregá-lo."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswamp_5]
+en = "You take the skull from the pile of rocks."
+pt = "Você pega o crânio do monte de pedras."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswamp_6]
+en = "A skeleton warlock has appeared."
+pt = "Um skeleton warlock apareceu."
+
+# Text - area/misthalin/lumbridge/swamp/LumbridgeSwampCave.kt
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampcave_1]
+en = "You should find a tinderbox before going down there."
+pt = "É bom arranjar uma pederneira (tinderbox) antes de descer aí."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampcave_2]
+en = "Attach a rope to the top of the hole?"
+pt = "Amarrar uma corda (rope) na beira do buraco?"
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampcave_3]
+en = "You tie the rope to the top of the hole and throw it down."
+pt = "Você amarra a corda na beira do buraco e a joga para baixo."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampcave_4]
+en = "There is a sheer drop below the hole. You will need a rope."
+pt = "Há uma queda vertical embaixo do buraco. Você vai precisar de uma corda (rope)."
+
+# Text - area/misthalin/lumbridge/swamp/LumbridgeSwampShed.kt
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampshed_1]
+en = "The world starts to shimmer..."
+pt = "O mundo começa a tremeluzir..."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampshed_2]
+en = "You haven't got room to hold them."
+pt = "Você não tem espaço para carregá-los."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampshed_3]
+en = "You've already got a spade and a rake."
+pt = "Você já tem uma pá (spade) e um ancinho (rake)."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampshed_4]
+en = "Which would you like to take?"
+pt = "Qual você quer pegar?"
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampshed_5]
+en = "Rake"
+pt = "Ancinho (rake)"
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampshed_6]
+en = "You 'borrow' a rake."
+pt = "Você 'pega emprestado' um ancinho (rake)."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampshed_7]
+en = "Spade"
+pt = "Pá (spade)"
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampshed_8]
+en = "You 'borrow' a spade."
+pt = "Você 'pega emprestada' uma pá (spade)."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampshed_9]
+en = "You 'borrow' a rake and a spade."
+pt = "Você 'pega emprestados' um ancinho (rake) e uma pá (spade)."
+
+[.text_area_misthalin_lumbridge_swamp_lumbridgeswampshed_10]
+en = "Congratulations, Quest complete!"
+pt = "Parabéns, missão concluída!"
+
+# Text - area/misthalin/lumbridge/swamp/Shamus.kt
+
+[.text_area_misthalin_lumbridge_swamp_shamus_1]
+en = "Ay yer big elephant! Yer've caught me, to be sure! What would an elephant like yer be wanting wid ol' Shamus then?"
+pt = "Ô seu elefantão! Cê me pegou, pode crer! O que um elefante feito ocê quer com o véio Shamus, hein?"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_2]
+en = "I'm not sure."
+pt = "Não sei bem."
+
+[.text_area_misthalin_lumbridge_swamp_shamus_3]
+en = "Well you'll have to be catchin' me again when yer are, elephant!"
+pt = "Pois então cê vai ter que me pegar de novo quando souber, elefante!"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_4]
+en = "The leprechaun magically disappears."
+pt = "O duende (leprechaun) desaparece como mágica."
+
+[.text_area_misthalin_lumbridge_swamp_shamus_5]
+en = "I want to find Zanaris."
+pt = "Quero encontrar Zanaris."
+
+[.text_area_misthalin_lumbridge_swamp_shamus_6]
+en = "Zanaris is it now? Well well well... Yer'll be needing to be going to that funny little shed out there in the swamp, so you will."
+pt = "Zanaris, é? Ora, ora, ora... Cê vai ter que ir naquele barracão esquisito lá no meio do pântano, vai sim."
+
+[.text_area_misthalin_lumbridge_swamp_shamus_7]
+en = "...but... I thought... Zanaris was a city...?"
+pt = "...mas... eu achei... que Zanaris fosse uma cidade...?"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_8]
+en = "Aye that it is!"
+pt = "E é mesmo, sô!"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_9]
+en = "How does it fit in a shed then?"
+pt = "Então como ela cabe num barracão?"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_10]
+en = "...How does it fit in a shed then?"
+pt = "...Então como ela cabe num barracão?"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_11]
+en = "Ah yer stupid elephant! The city isn't IN the shed! The doorway to the shed is being a portal to Zanaris, so it is."
+pt = "Ah, seu elefante burro! A cidade num tá DENTRO do barracão! A porta do barracão é um portal pra Zanaris, é sim."
+
+[.text_area_misthalin_lumbridge_swamp_shamus_12]
+en = "So I just walk into the shed and end up in Zanaris then?"
+pt = "Então é só eu entrar no barracão que vou parar em Zanaris?"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_13]
+en = "I've been in that shed, I didn't see a city."
+pt = "Já entrei nesse barracão e não vi cidade nenhuma."
+
+[.text_area_misthalin_lumbridge_swamp_shamus_14]
+en = "Ha! Look at yer! Look at the stupid elephant who tries to go catching a leprechaun when he don't even be knowing what he wants!"
+pt = "Rá! Olha só ocê! Olha o elefante burro que sai caçando duende sem nem saber o que quer!"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_15]
+en = "How do I get to Zanaris again?"
+pt = "Como eu chego em Zanaris mesmo?"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_16]
+en = "Yer stupid elephant! I'll tell yer again! Yer need to be entering the shed in the middle of the swamp while holding a dramenwood staff! Yer can make the Dramen staff"
+pt = "Seu elefante burro! Vou falar de novo! Cê tem que entrar no barracão no meio do pântano segurando um cajado de dramen (Dramen staff)! Cê pode fazer o Dramen staff"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_17]
+en = "from a dramen tree branch, and there's a Dramen tree on Entrana! Now leave me alone yer great elephant!"
+pt = "com um galho (branch) da árvore Dramen, e tem uma árvore Dramen em Entrana! Agora me deixa em paz, seu elefantão!"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_18]
+en = "Hey! Yer big elephant! Don't go choppin' down me house, now!"
+pt = "Ei! Seu elefantão! Num vai cortar minha casa, não!"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_19]
+en = "Oh, was I fergetting to say? Yer need to be carrying a Dramenwood staff to be getting there! Otherwise Yer'll just be ending up in the shed."
+pt = "Ih, esqueci de falar? Cê precisa tá carregando um Dramen staff pra chegar lá! Senão cê só vai parar no barracão mesmo."
+
+[.text_area_misthalin_lumbridge_swamp_shamus_20]
+en = "So where would I get a staff?"
+pt = "E onde eu arranjo um cajado?"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_21]
+en = "Dramenwood staffs are crafted from branches of the Dramen tree, so they are. I hear there's a Dramen tree over on the island of Entrana in a cave"
+pt = "Os cajados de dramen são feitos de galho da árvore Dramen, são sim. Ouvi dizer que tem uma árvore Dramen lá na ilha de Entrana, numa caverna"
+
+[.text_area_misthalin_lumbridge_swamp_shamus_22]
+en = "or some such. There would probably be a good place for an elephant like yer to be starting looking I reckon."
+pt = "ou coisa assim. Deve de ser um bom lugar pra um elefante feito ocê começar a procurar, eu acho."
+
+[.text_area_misthalin_lumbridge_swamp_shamus_23]
+en = "The monks are running a ship from Port Sarim to Entrana, I hear too. Now leave me alone yer elephant!"
+pt = "Ouvi dizer também que os monges têm um navio de Port Sarim pra Entrana. Agora me deixa em paz, seu elefante!"
+
+# Text - area/misthalin/lumbridge/swamp/WallBeast.kt
+
+[.text_area_misthalin_lumbridge_swamp_wallbeast_1]
+en = "Your helmet repels the wall beast!"
+pt = "O seu capacete repele a fera da parede (wall beast)!"
+
+[.text_area_misthalin_lumbridge_swamp_wallbeast_2]
+en = "A giant hand appears and grabs your head!"
+pt = "Uma mão gigante aparece e agarra a sua cabeça!"
+
+# Text - area/misthalin/lumbridge/swamp/chams_of_tears/ChasmOfTears.kt
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_chasmoftears_1]
+en = "You could climb down here, but it is too uneven to climb up."
+pt = "Dá para descer por aqui, mas é irregular demais para subir."
+
+# Text - area/misthalin/lumbridge/swamp/chams_of_tears/Juna.kt
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_1]
+en = "I will not permit you to be in the cave for long. Collect as many tears as you can."
+pt = "Não vou permitir que você fique muito tempo na caverna. Colete o máximo de lágrimas que puder."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_2]
+en = "Okay."
+pt = "Certo."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_3]
+en = "I want to get out now."
+pt = "Quero sair agora."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_4]
+en = "Before you can collect the Tears of Guthix you must make a bowl out of the stone in the cave on the south of the chasm."
+pt = "Antes de coletar as Tears of Guthix, você precisa fazer uma tigela (bowl) com a pedra da caverna ao sul do abismo."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_5]
+en = "I have a bowl."
+pt = "Eu tenho uma tigela."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_6]
+en = "I will keep your bowl for you, so that you may collect the tears many times in the future."
+pt = "Vou guardar a sua tigela, para que você possa coletar as lágrimas muitas vezes no futuro."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_7]
+en = "Now... tell me another story, and I will let you collect the tears for the first time."
+pt = "Agora... conte-me outra história, e deixarei você coletar as lágrimas pela primeira vez."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_8]
+en = "Tell me... a story..."
+pt = "Conte-me... uma história..."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_9]
+en = "A story?"
+pt = "Uma história?"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_10]
+en = "I have been waiting here three thousand years, guarding the Tears of Guthix. I serve my master faithfully, but I am bored."
+pt = "Estou esperando aqui há três mil anos, guardando as Tears of Guthix. Sirvo ao meu mestre com fidelidade, mas estou entediada."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_11]
+en = "An adventurer such as yourself must have many tales to tell. If you can entertain me, I will let you into the cave for a time."
+pt = "Um aventureiro como você deve ter muitas histórias para contar. Se conseguir me entreter, deixarei você entrar na caverna por um tempo."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_12]
+en = "The more I enjoy your story, the more time I will give you in the cave."
+pt = "Quanto mais eu gostar da sua história, mais tempo darei a você na caverna."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_13]
+en = "Then you can drink of the power of balance, which will make you stronger in whatever area you are weakest."
+pt = "Então você poderá beber do poder do equilíbrio, que vai fortalecê-lo naquilo em que você for mais fraco."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_14]
+en = "What are the Tears of Guthix?"
+pt = "O que são as Tears of Guthix?"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_15]
+en = "Not now."
+pt = "Agora não."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_16]
+en = "You tell me a story."
+pt = "Você é que me conta uma história."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_17]
+en = "Tell me about the Tears of Guthix"
+pt = "Me fale sobre as Tears of Guthix"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_18]
+en = "Very well, when you are eligible to drink from the Tears, you shall be reminded daily."
+pt = "Muito bem, quando você puder beber das lágrimas, será lembrado todos os dias."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_19]
+en = "Very well, it will be up to you to remember when you can return. It is good that you are willing to take responsibility for yourself in this way."
+pt = "Muito bem, caberá a você lembrar quando pode voltar. É bom que esteja disposto a assumir essa responsabilidade por si mesmo."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_20]
+en = "If you wish to tell me more stories, come out here first."
+pt = "Se quiser me contar mais histórias, saia da caverna primeiro."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_21]
+en = "Your time in the caves is up."
+pt = "O seu tempo nas cavernas acabou."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_22]
+en = "<col=ef1020>You are eligible to drink from the Tears of Guthix."
+pt = "<col=ef1020>Você já pode beber das Tears of Guthix."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_23]
+en = "Well... Um..."
+pt = "Bem... Hã..."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_24]
+en = "You try to tell a story, but Juna does not seem impressed."
+pt = "Você tenta contar uma história, mas Juna não parece impressionada."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_25]
+en = "Hmm. Maybe you should come back when you can tell a good story."
+pt = "Hmm. Talvez você deva voltar quando souber contar uma boa história."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_26]
+en = "You need at least 43 Quest Points to start this quest."
+pt = "Você precisa de pelo menos 43 pontos de missão para começar esta missão."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_27]
+en = "I will tell you the story of the light-creatures."
+pt = "Vou contar a história das criaturas de luz."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_28]
+en = "Myriad and beautiful were the creatures and civilizations of the early ages of the world. Gielinor was a work of art, shaped lovingly over the millennia by the creative mind of Guthix."
+pt = "Inúmeras e belas eram as criaturas e civilizações das primeiras eras do mundo. Gielinor era uma obra de arte, moldada com amor ao longo dos milênios pela mente criadora de Guthix."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_29]
+en = "Only the sturdiest races survived the Godwars, and even then only by abandoning their high culture and gearing their societies towards war. Of the more delicate races there is now no trace, and almost no memory."
+pt = "Só as raças mais resistentes sobreviveram às Godwars, e mesmo assim só abandonando sua alta cultura e voltando suas sociedades para a guerra. Das raças mais delicadas não resta hoje nenhum vestígio, e quase nenhuma lembrança."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_30]
+en = "One such race had bodies as fragile as snowflakes, yet they built crystal cities that stood for a thousand years."
+pt = "Uma dessas raças tinha corpos frágeis como flocos de neve, mas construiu cidades de cristal que resistiram por mil anos."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_31]
+en = "The wind would whisper through the spires and fill them with sweet harmonies, and the rising sun would shine through the precious gems that studded the towers and create inter plays of light as if rainbows were dancing."
+pt = "O vento sussurrava pelas torres e as enchia de doces harmonias, e o sol nascente brilhava através das pedras preciosas que cravejavam as torres, criando jogos de luz como se arco-íris dançassem."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_32]
+en = "Indeed, so marvellous was this light-show at its height that the patterns of light themselves became alive, and great flocks of luminous creatures rode along the gem- cast beams, each drawn to its own colour."
+pt = "De fato, tão maravilhoso era esse espetáculo de luz no seu auge que os próprios padrões de luz ganharam vida, e grandes bandos de criaturas luminosas cavalgavam os raios lançados pelas gemas, cada uma atraída pela sua própria cor."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_33]
+en = "The creatures you see floating in this chasm are the last sorry remnants of that age. I do not know how they made their way here and survived to this time, but I am grateful for their company."
+pt = "As criaturas que você vê flutuando neste abismo são os últimos e tristes restos daquela era. Não sei como chegaram aqui e sobreviveram até hoje, mas sou grata pela companhia delas."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_34]
+en = "Not long after the start of my vigil a party of goblins happened on my cave. These were the ugly brutes of the gods' armies, but their armour bore a faded patch where the symbol of a god had been removed."
+pt = "Pouco depois do início da minha vigília, um bando de goblins deu com a minha caverna. Eram os brutos feios dos exércitos dos deuses, mas suas armaduras tinham uma marca desbotada onde o símbolo de um deus fora retirado."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_35]
+en = "They looked around hesitantly, squinting in the light of crude torches, but as soon as they saw me they raised their spears and charged."
+pt = "Olharam em volta, hesitantes, apertando os olhos à luz de tochas toscas, mas assim que me viram ergueram as lanças e atacaram."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_36]
+en = "No one may access the Tears of Guthix by force. I sent them tumbling into the chasm."
+pt = "Ninguém pode chegar às Tears of Guthix pela força. Eu os mandei rolando para o abismo."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_37]
+en = "Two hundred years later another goblin found me. This one was unarmed, and although she was very wary I succeeded in engaging her in conversation."
+pt = "Duzentos anos depois, outra goblin me encontrou. Esta estava desarmada e, embora muito desconfiada, consegui puxar conversa com ela."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_38]
+en = "Since then I have had many more visits from the descendants of those lost warriors, and over the centuries I have seen them change."
+pt = "Desde então recebi muitas outras visitas dos descendentes daqueles guerreiros perdidos e, ao longo dos séculos, eu os vi mudar."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_39]
+en = "They have become timid rather than aggressive, and I have seen the light of intelligence grow in their bulging eyes."
+pt = "Deixaram de ser agressivos e ficaram tímidos, e vi a luz da inteligência crescer em seus olhos esbugalhados."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_40]
+en = "Their stories are repetitive and grim, of scraping a living out of the harsh rock and through ingenuity and toil shaping it into a home."
+pt = "Suas histórias são repetitivas e sombrias: arrancar o sustento da rocha dura e, com engenho e suor, transformá-la num lar."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_41]
+en = "I have followed the progress of their race, but their individual stories hold little interest for me."
+pt = "Acompanhei o progresso da raça deles, mas suas histórias individuais pouco me interessam."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_42]
+en = "The Third Age of the world was a time of great conflict, of destruction never seen before or since, when all the gods save Guthix warred for control."
+pt = "A Terceira Era do mundo foi um tempo de grandes conflitos, de uma destruição nunca vista antes nem depois, quando todos os deuses, exceto Guthix, guerrearam pelo controle."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_43]
+en = "The colossal Wyrms, of whom today's dragons are a pale reflection, turned all the sky to fire, while on the ground armies of foot soldiers, goblins and trolls and humans, filled the valleys and plains with blood."
+pt = "Os colossais Wyrms, dos quais os dragões de hoje são um pálido reflexo, incendiaram o céu inteiro, enquanto em terra exércitos de soldados a pé, goblins, trolls e humanos, enchiam de sangue os vales e as planícies."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_44]
+en = "In time the noise of the conflict woke Guthix from His deep slumber, and He rose and stood in the centre of the battlefield so that the splendour of His wrath filled the world, and He called for the conflict to cease!"
+pt = "Com o tempo, o barulho do conflito despertou Guthix de Seu sono profundo, e Ele se ergueu e ficou no centro do campo de batalha, e o esplendor de Sua ira encheu o mundo, e Ele ordenou que o conflito cessasse!"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_45]
+en = "Silence fell, for the gods knew that none could challenge the power of the mighty Guthix -- for His power is that of nature itself, to which all other things are subject, in the end."
+pt = "Fez-se silêncio, pois os deuses sabiam que ninguém podia desafiar o poder do grandioso Guthix -- pois o poder Dele é o da própria natureza, à qual todas as outras coisas se sujeitam, no fim."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_46]
+en = "Guthix reclaimed that which had been stolen from Him, and went back underground to return to His sleep and continue to draw the world's power into Himself."
+pt = "Guthix tomou de volta aquilo que Lhe fora roubado e voltou para debaixo da terra, para retornar ao Seu sono e continuar a atrair para Si o poder do mundo."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_47]
+en = "But on His way into the depths of the earth He sat and rested in this cave; and, thinking of the battle-scarred desert that now stretched from one side of His world to the other, He wept."
+pt = "Mas, a caminho das profundezas da terra, Ele se sentou e descansou nesta caverna; e, pensando no deserto marcado pela guerra que agora se estendia de um lado a outro do Seu mundo, Ele chorou."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_48]
+en = "And so great was His sorrow, and so great was His life- giving power, that the rocks themselves began to weep with Him."
+pt = "E tão grande era Sua tristeza, e tão grande Seu poder de dar vida, que as próprias rochas começaram a chorar com Ele."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_49]
+en = "Later, Guthix noticed that the rocks continued to weep, and that their tears were infused with a small part of His power."
+pt = "Mais tarde, Guthix percebeu que as rochas continuavam a chorar, e que suas lágrimas estavam impregnadas de uma pequena parte do Seu poder."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_50]
+en = "So He set me, His servant, to guard the cave, and He entrusted to me the task of judging who was and was not worthy to access the tears."
+pt = "Então Ele me pôs, Sua serva, para guardar a caverna, e me confiou a tarefa de julgar quem era e quem não era digno de chegar às lágrimas."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_51]
+en = "Congratulations, you've completed a quest: <navy>tears of guthix"
+pt = "Parabéns, você completou uma missão: <navy>Tears of Guthix"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_52]
+en = "Perhaps you should empty your hands before you begin."
+pt = "Talvez você deva esvaziar as mãos antes de começar."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_53]
+en = "You tell Juna some stories of your adventures."
+pt = "Você conta a Juna algumas histórias das suas aventuras."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_54]
+en = "Your stories have entertained me. But I will not permit any adventurer to access the tears more than once a week. Come back in %1%."
+pt = "Suas histórias me entretiveram. Mas não permito que nenhum aventureiro chegue às lágrimas mais de uma vez por semana. Volte daqui a %1%."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_55]
+en = "Your stories have entertained me. I will let you into the cave for a short time."
+pt = "Suas histórias me entretiveram. Vou deixar você entrar na caverna por pouco tempo."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_56]
+en = "But first you will need to make a bowl in which to collect the tears."
+pt = "Mas antes você precisa fazer uma tigela (bowl) para coletar as lágrimas."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_57]
+en = "There is a cave on the south side of the chasm that is similarly infused with the power of Guthix. The stone in that cave is the only substance that can catch the Tears of Guthix."
+pt = "Há uma caverna no lado sul do abismo que também está impregnada do poder de Guthix. A pedra daquela caverna é a única substância capaz de recolher as Tears of Guthix."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_58]
+en = "Mine some stone from that cave, make it into a bowl, and bring it to me, and then I will let you catch the Tears."
+pt = "Minere um pouco de pedra daquela caverna, faça uma tigela com ela e traga-a para mim; então deixarei você recolher as lágrimas."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_juna_59]
+en = "Collect as much as you can from the blue streams. If you let in water from the green streams, it will take away from the blue. For Guthix is god of balance, and balance lies in the juxtaposition of opposites."
+pt = "Colete o máximo que puder dos fios d'água azuis. Se deixar entrar água dos fios verdes, ela vai tirar do azul. Pois Guthix é o deus do equilíbrio, e o equilíbrio está na justaposição dos opostos."
+
+# Text - area/misthalin/lumbridge/swamp/chams_of_tears/QuestStories.kt
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_1]
+en = "... and in the end I found all the ingredients, so the Duke of Lumbridge had a birthday cake after all."
+pt = "... e no fim eu achei todos os ingredientes, e o Duke de Lumbridge teve o seu bolo de aniversário afinal."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_2]
+en = "Ah, a happy ending. It would not be good for such an anniversary to go unmarked."
+pt = "Ah, um final feliz. Não seria bom deixar uma data dessas passar em branco."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_3]
+en = "... So I destroyed the demon Delrith and saved Varrock!"
+pt = "... Então eu destruí o demônio Delrith e salvei Varrock!"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_4]
+en = "I remember Delrith. A most unpleasant character; I am glad he has been dispatched."
+pt = "Eu me lembro de Delrith. Um sujeito dos mais desagradáveis; fico contente que tenha sido despachado."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_5]
+en = "... So once I had got all the ores he wanted, Doric let me use his anvils."
+pt = "... Então, depois que juntei todos os minérios que ele queria, o Doric me deixou usar as bigornas dele."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_6]
+en = "Such a small task hardly seems worthy of the term 'quest'."
+pt = "Uma tarefa tão pequena mal parece digna do nome 'missão'."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_7]
+en = "...and the chieftain agreed to settle on the land that his ancestors had won."
+pt = "...e o chefe concordou em se fixar na terra que seus ancestrais tinham conquistado."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_8]
+en = "These militant Fremennik think they serve Guthix, but they serve only themselves."
+pt = "Esses Fremennik militantes acham que servem a Guthix, mas só servem a si mesmos."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_9]
+en = "... and once I returned the skull, the ghost was able to rest."
+pt = "... e quando eu devolvi o crânio, o fantasma pôde descansar."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_10]
+en = "A strange attachment to an item that has no use after one's death."
+pt = "Um apego estranho a um item que não tem uso nenhum depois da morte."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_11]
+en = "... So I brought Aubury's notes to Sedridor the Head Wizard, and from then on I was able to mine Rune Essence."
+pt = "... Então levei as anotações do Aubury ao Sedridor, o Head Wizard, e desde então posso minerar essência rúnica (Rune Essence)."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_12]
+en = "So the mortals above have discovered magic once more? Very interesting."
+pt = "Então os mortais lá de cima redescobriram a magia? Muito interessante."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_13]
+en = "...that was how I found the Imcando Dwarves and got the knight a new sword."
+pt = "...foi assim que eu achei os anões Imcando e consegui uma espada nova para o cavaleiro."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_14]
+en = "... and I had to disguise Prince Ali in order to smuggle him out!"
+pt = "... e tive que disfarçar o Prince Ali para tirá-lo de lá escondido!"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_15]
+en = "... It took some time, but I finally got all four beads back, and Mizgog gave me my reward."
+pt = "... Levou um tempo, mas finalmente recuperei as quatro contas (beads), e o Mizgog me deu a recompensa."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_16]
+en = "Imps! I remember the age of great war, when armies of Zamorak's imps bloodied the ankles of the other gods' creatures."
+pt = "Imps! Eu me lembro da era da grande guerra, quando exércitos de imps de Zamorak ensanguentavam os tornozelos das criaturas dos outros deuses."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_17]
+en = "... So Kaqemeex taught me how to use the Herblore skill."
+pt = "... Então o Kaqemeex me ensinou a usar a habilidade Herblore (herbologia)."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_18]
+en = "A generous reward indeed."
+pt = "Uma recompensa generosa, de fato."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_19]
+en = "... and that was how I rescued Elena from West Ardougne."
+pt = "... e foi assim que eu resgatei a Elena de West Ardougne."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_20]
+en = "... and when I entered the door carrying the Dramen Staff, I was transported to a whole new world -- a world populated by magical fairies!"
+pt = "... e quando passei pela porta carregando o Dramen Staff, fui levado para um mundo totalmente novo -- um mundo povoado por fadas mágicas!"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_21]
+en = "I gained access to the Abyss."
+pt = "Consegui acesso ao Abyss."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_22]
+en = "... so I presented the head of the Troll King to the Burgher and he gave me his own helm!"
+pt = "... então entreguei a cabeça do Troll King ao Burgher e ele me deu o próprio elmo!"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_23]
+en = "... the machine revealed that the cute creatures were actually Arposandran spies! I destroyed them, and King Narnode gave me a crystal seed that belonged to Oaknock the Engineer."
+pt = "... a máquina revelou que as criaturinhas fofas eram na verdade espiões de Arposandra! Eu os destruí, e o King Narnode me deu uma semente de cristal (crystal seed) que era do Oaknock the Engineer."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_24]
+en = "... and the examiner was very impressed that I had discovered an ancient altar of Zaros."
+pt = "... e o examinador ficou muito impressionado por eu ter descoberto um antigo altar de Zaros."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_25]
+en = "Zaros? I had not heard that name for a thousand years even before the start of my sojourn here."
+pt = "Zaros? Eu já não ouvia esse nome havia mil anos, antes mesmo de começar a minha estadia aqui."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_26]
+en = "... and when I planted the shard, it grew into a crystal tree!"
+pt = "... e quando plantei o fragmento, ele virou uma árvore de cristal!"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_27]
+en = "... So all three parts of the family crest were reunited."
+pt = "... Então as três partes do brasão da família (family crest) foram reunidas."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_28]
+en = "... So after I had retrieved all the items, I became a member of the Heroes' Guild!"
+pt = "... Então, depois de recuperar todos os itens, virei membro da Heroes' Guild!"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_29]
+en = "... Veliaf was very impressed by the 'Rod of Ivandis', and I can use it to kill Juves and the Juvinates!"
+pt = "... O Veliaf ficou muito impressionado com a 'Rod of Ivandis', e eu posso usá-la para matar Juves e Juvinates!"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_30]
+en = "... So I figured out their weird puzzles, and the Temple Knights asked me to join as an initiate member!"
+pt = "... Então eu resolvi os enigmas esquisitos deles, e os Temple Knights me convidaram para entrar como membro iniciante!"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_31]
+en = "I have heard tales of these 'Temple Knights' from many years past. Be wary, their motivations are not what they might lead you to believe."
+pt = "Ouvi histórias sobre esses 'Temple Knights' há muitos anos. Cuidado: as motivações deles não são o que eles querem que você acredite."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_32]
+en = "... So what Rashiliyia wanted all along was to be reunited with her son in the afterlife."
+pt = "... Então o que a Rashiliyia queria desde o começo era se reunir com o filho na vida após a morte."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_33]
+en = "... when I told Sir Tiffy that I had accidentally freed the Mother Mallum, he promoted me to the rank of Proselyte within the Temple Knights."
+pt = "... quando contei ao Sir Tiffy que eu tinha libertado a Mother Mallum sem querer, ele me promoveu ao posto de Proselyte nos Temple Knights."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_34]
+en = "That was a strange response to such an unfortunate event. But the motives of the Temple Knights have always been incomprehensibly unbalanced."
+pt = "Foi uma reação estranha a um acontecimento tão infeliz. Mas os motivos dos Temple Knights sempre foram incompreensivelmente desequilibrados."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_35]
+en = "... So the people of Port Phasmatys were finally able to rest."
+pt = "... Então o povo de Port Phasmatys finalmente pôde descansar."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_36]
+en = "... the Fairy Queen awoke, and we realised that the Godfather had betrayed her!"
+pt = "... a Fairy Queen acordou, e percebemos que o Godfather tinha traído ela!"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_37]
+en = "Politics is never straightforward."
+pt = "A política nunca é simples."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_38]
+en = "... and once I had gathered all the herbs, Trufitus Shakaya was able to commune with his gods."
+pt = "... e depois que juntei todas as ervas, o Trufitus Shakaya pôde comungar com os seus deuses."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_39]
+en = "... So I defeated the Jungle Demon and stopped the Monkeys' plot to take over Karamja."
+pt = "... Então derrotei o Jungle Demon e acabei com o plano dos macacos de tomar Karamja."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_40]
+en = "I see they couldn't make a monkey out of you!"
+pt = "Pelo visto não conseguiram te fazer de macaco!"
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_queststories_41]
+en = "Well, actually, I was a monkey for a bit."
+pt = "Bem, na verdade, eu fui macaco por um tempo."
+
+# Text - area/misthalin/lumbridge/swamp/chams_of_tears/TormentedDemon.kt
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_tormenteddemon_1]
+en = "The demon is temporarily weakened by your weapon."
+pt = "A sua arma enfraquece o demônio por um tempo."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_tormenteddemon_2]
+en = "The Tormented demon regains its strength against your weapon."
+pt = "O Tormented demon recupera a força contra a sua arma."
+
+[.text_area_misthalin_lumbridge_swamp_chams_of_tears_tormenteddemon_3]
+en = "The demon's magical attack splashes on you."
+pt = "O ataque mágico do demônio respinga em você."
+
+# Text - quest/free/the_restless_ghost/RestlessGhost.kt
+
+[.text_quest_free_the_restless_ghost_restlessghost_1]
+en = "Wooooo! Ooooooh!"
+pt = "Wooooo! Ooooooh!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_2]
+en = "I can't understand a word you are saying. Maybe Father Aereck will be able to help."
+pt = "Não entendo uma palavra do que você diz. Talvez o Father Aereck possa ajudar."
+
+[.text_quest_free_the_restless_ghost_restlessghost_3]
+en = "The ghost doesn't appear to be interested in talking."
+pt = "O fantasma não parece interessado em conversar."
+
+[.text_quest_free_the_restless_ghost_restlessghost_4]
+en = "Hello ghost, how are you?"
+pt = "Olá, fantasma, como vai?"
+
+[.text_quest_free_the_restless_ghost_restlessghost_5]
+en = "Not very good actually."
+pt = "Não muito bem, na verdade."
+
+[.text_quest_free_the_restless_ghost_restlessghost_6]
+en = "What's the problem then?"
+pt = "Qual é o problema, então?"
+
+[.text_quest_free_the_restless_ghost_restlessghost_7]
+en = "Did you just understand what I said???"
+pt = "Você acabou de entender o que eu disse???"
+
+[.text_quest_free_the_restless_ghost_restlessghost_8]
+en = "Yep, now tell me what the problem is."
+pt = "Entendi, agora me diga qual é o problema."
+
+[.text_quest_free_the_restless_ghost_restlessghost_9]
+en = "WOW! This is INCREDIBLE! I didn't expect anyone to ever understand me again!"
+pt = "UAU! Isso é INCRÍVEL! Nunca achei que alguém fosse me entender de novo!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_10]
+en = "Ok, Ok, I can understand you!"
+pt = "Tá, tá, eu entendo você!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_11]
+en = "But have you any idea WHY you're doomed to be a ghost?"
+pt = "Mas você tem ideia de POR QUE está condenado a ser um fantasma?"
+
+[.text_quest_free_the_restless_ghost_restlessghost_12]
+en = "Well, to be honest, I'm not sure."
+pt = "Bem, para ser sincero, não tenho certeza."
+
+[.text_quest_free_the_restless_ghost_restlessghost_13]
+en = "No, you sound like you're speaking nonsense to me."
+pt = "Não, para mim você só fala bobagem."
+
+[.text_quest_free_the_restless_ghost_restlessghost_14]
+en = "Oh that's a pity. You got my hopes up there."
+pt = "Ah, que pena. Você me deu esperanças."
+
+[.text_quest_free_the_restless_ghost_restlessghost_15]
+en = "Yeah, it is a pity. Sorry about that."
+pt = "É, é uma pena. Desculpe."
+
+[.text_quest_free_the_restless_ghost_restlessghost_16]
+en = "Hang on a second... you CAN understand me!"
+pt = "Espere um pouco... você ENTENDE, sim!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_17]
+en = "No I can't."
+pt = "Não entendo, não."
+
+[.text_quest_free_the_restless_ghost_restlessghost_18]
+en = "Great."
+pt = "Que ótimo."
+
+[.text_quest_free_the_restless_ghost_restlessghost_19]
+en = "The first person I can speak to in ages..."
+pt = "A primeira pessoa com quem consigo falar em séculos..."
+
+[.text_quest_free_the_restless_ghost_restlessghost_20]
+en = "..and they're a moron."
+pt = "..e é um imbecil."
+
+[.text_quest_free_the_restless_ghost_restlessghost_21]
+en = "Yep, clever aren't I?"
+pt = "Pois é, sou esperto, né?"
+
+[.text_quest_free_the_restless_ghost_restlessghost_22]
+en = "I'm impressed. You must be very powerful. I don't suppose you can stop me being a ghost?"
+pt = "Estou impressionado. Você deve ser muito poderoso. Será que você consegue me livrar de ser fantasma?"
+
+[.text_quest_free_the_restless_ghost_restlessghost_23]
+en = "Wow, this amulet works!"
+pt = "Uau, este amuleto funciona!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_24]
+en = "Oh! It's your amulet that's doing it! I did wonder. I don't suppose you can help me? I don't like being a ghost."
+pt = "Ah! É o seu amuleto que faz isso! Bem que eu desconfiei. Será que você pode me ajudar? Não gosto de ser fantasma."
+
+[.text_quest_free_the_restless_ghost_restlessghost_25]
+en = "Wooo wooo wooooo!"
+pt = "Wooo wooo wooooo!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_26]
+en = "Why can't I understand you? Oh, yeah, it might help if I wear this amulet!"
+pt = "Por que não entendo você? Ah, é, talvez ajude se eu usar este amuleto!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_27]
+en = "Sorry, I don't speak ghost."
+pt = "Desculpe, não falo fantasmês."
+
+[.text_quest_free_the_restless_ghost_restlessghost_28]
+en = "Ooh... THAT'S interesting."
+pt = "Ooh... ISSO é interessante."
+
+[.text_quest_free_the_restless_ghost_restlessghost_29]
+en = "Woo wooo. Woooooooooooooooooo!"
+pt = "Woo wooo. Woooooooooooooooooo!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_30]
+en = "Did he really?"
+pt = "Ele fez isso mesmo?"
+
+[.text_quest_free_the_restless_ghost_restlessghost_31]
+en = "Woo."
+pt = "Woo."
+
+[.text_quest_free_the_restless_ghost_restlessghost_32]
+en = "My brother had EXACTLY the same problem."
+pt = "Meu irmão teve EXATAMENTE o mesmo problema."
+
+[.text_quest_free_the_restless_ghost_restlessghost_33]
+en = "Woo Wooooo!"
+pt = "Woo Wooooo!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_34]
+en = "Wooooo Woo woo woo!"
+pt = "Wooooo Woo woo woo!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_35]
+en = "Goodbye. Thanks for the chat."
+pt = "Tchau. Obrigado pela conversa."
+
+[.text_quest_free_the_restless_ghost_restlessghost_36]
+en = "Wooo wooo?"
+pt = "Wooo wooo?"
+
+[.text_quest_free_the_restless_ghost_restlessghost_37]
+en = "You'll have to give me the recipe some time..."
+pt = "Um dia você vai ter que me passar a receita..."
+
+[.text_quest_free_the_restless_ghost_restlessghost_38]
+en = "Wooooooo woo woooooooo."
+pt = "Wooooooo woo woooooooo."
+
+[.text_quest_free_the_restless_ghost_restlessghost_39]
+en = "Hmm... I'm not so sure about that."
+pt = "Hmm... Não tenho tanta certeza disso."
+
+[.text_quest_free_the_restless_ghost_restlessghost_40]
+en = "Yeah, that's what I thought."
+pt = "É, foi o que eu pensei."
+
+[.text_quest_free_the_restless_ghost_restlessghost_41]
+en = "Wooo woooooooooooooo..."
+pt = "Wooo woooooooooooooo..."
+
+[.text_quest_free_the_restless_ghost_restlessghost_42]
+en = "Any hints where I can find some treasure?"
+pt = "Alguma dica de onde achar um tesouro?"
+
+[.text_quest_free_the_restless_ghost_restlessghost_43]
+en = "Wooooooo woo! Wooooo woo wooooo woowoowoo woo Woo wooo. Wooooo woo woo? Woooooooooooooooooo!"
+pt = "Wooooooo woo! Wooooo woo wooooo woowoowoo woo Woo wooo. Wooooo woo woo? Woooooooooooooooooo!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_44]
+en = "Thank you. You've been very helpful."
+pt = "Obrigado. Você ajudou muito."
+
+[.text_quest_free_the_restless_ghost_restlessghost_45]
+en = "Wooooooo."
+pt = "Wooooooo."
+
+[.text_quest_free_the_restless_ghost_restlessghost_46]
+en = "Woo woo?"
+pt = "Woo woo?"
+
+[.text_quest_free_the_restless_ghost_restlessghost_47]
+en = "Nope, still don't understand you."
+pt = "Não, continuo sem entender."
+
+[.text_quest_free_the_restless_ghost_restlessghost_48]
+en = "WOOOOOOOOO!"
+pt = "WOOOOOOOOO!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_49]
+en = "Wooo woo?"
+pt = "Wooo woo?"
+
+[.text_quest_free_the_restless_ghost_restlessghost_50]
+en = "Well, if you INSIST."
+pt = "Bem, se você INSISTE."
+
+[.text_quest_free_the_restless_ghost_restlessghost_51]
+en = "Wooooooooo!"
+pt = "Wooooooooo!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_52]
+en = "Ah well, better be off now..."
+pt = "Bom, é melhor eu ir andando..."
+
+[.text_quest_free_the_restless_ghost_restlessghost_53]
+en = "I should think it's because I've lost my head."
+pt = "Acho que é porque perdi a cabeça."
+
+[.text_quest_free_the_restless_ghost_restlessghost_54]
+en = "What? I can see your head perfectly fine well, see through it at least."
+pt = "O quê? Estou vendo a sua cabeça direitinho... bem, vendo através dela, pelo menos."
+
+[.text_quest_free_the_restless_ghost_restlessghost_55]
+en = "No, no, I mean from my REAL body. If you look in my coffin you'll see my corpse is without its skull. Last thing I remember was being attacked by a warlock while I was mining. It was at the mine just south of this"
+pt = "Não, não, do meu corpo DE VERDADE. Se olhar no meu caixão, vai ver que meu cadáver está sem o crânio. A última coisa de que me lembro é de ser atacado por um bruxo enquanto minerava. Foi na mina logo ao sul deste"
+
+[.text_quest_free_the_restless_ghost_restlessghost_56]
+en = "graveyard."
+pt = "cemitério."
+
+[.text_quest_free_the_restless_ghost_restlessghost_57]
+en = "Okay. I'll try to get your skull back for you so you can rest in peace."
+pt = "Certo. Vou tentar recuperar o seu crânio para você descansar em paz."
+
+[.text_quest_free_the_restless_ghost_restlessghost_58]
+en = "Yes, ok. Do you know WHY you're a ghost?"
+pt = "Tá bom. Você sabe POR QUE é um fantasma?"
+
+[.text_quest_free_the_restless_ghost_restlessghost_59]
+en = "No, you're scary!"
+pt = "Não, você dá medo!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_60]
+en = "..and they're an idiot."
+pt = "..e é um idiota."
+
+[.text_quest_free_the_restless_ghost_restlessghost_61]
+en = "How are you doing finding my skull?"
+pt = "Como vai a busca pelo meu crânio?"
+
+[.text_quest_free_the_restless_ghost_restlessghost_62]
+en = "I have found it!"
+pt = "Encontrei!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_63]
+en = "Hurrah! Now I can stop being a ghost! You just need to put it in my coffin there, and I will be free!"
+pt = "Viva! Agora posso deixar de ser fantasma! É só colocar o crânio no meu caixão ali que eu fico livre!"
+
+[.text_quest_free_the_restless_ghost_restlessghost_64]
+en = "Sorry, I can't find it at the moment."
+pt = "Desculpe, ainda não encontrei."
+
+[.text_quest_free_the_restless_ghost_restlessghost_65]
+en = "Ah well. Keep on looking."
+pt = "Ah, tudo bem. Continue procurando."
+
+[.text_quest_free_the_restless_ghost_restlessghost_66]
+en = "I'm pretty sure it's somewhere near the mining spot south of here. I really hope it's still there somewhere."
+pt = "Tenho quase certeza de que está perto da mina ao sul daqui. Espero mesmo que ainda esteja por lá."
+
 # Skill data - data/area/fremennik_province/rellekka/rellekka.items.toml
 
 [.data_area_fremennik_province_rellekka_rellekka_items_1]
@@ -18700,80 +20800,172 @@ pt = "Você põe o adamantite e seis porções de carvão (coal) na fornalha."
 en = "You place the runite and six heaps of coal into the furnace."
 pt = "Você põe o runite e seis porções de carvão (coal) na fornalha."
 
-# Skills - text only seen while playing (SkillActionTranslationTest): built from data the code reads, or sent by scripts outside content/skill
+# Text only seen while playing (SkillActionTranslationTest, BankPinTranslationTest): built from data the code reads, passed in as variables, or Bank PIN messages joined line by line with <br>
 
-[.skill_runtime_1]
+[.runtime_1]
+en = "Please enter your PIN using the buttons below."
+pt = "Digite o seu PIN usando os botões abaixo."
+
+[.runtime_2]
+en = "Please choose a new FOUR DIGIT PIN using the buttons below."
+pt = "Escolha um novo PIN de QUATRO DÍGITOS usando os botões abaixo."
+
+[.runtime_3]
+en = "Now please enter that number again!"
+pt = "Agora digite esse número de novo!"
+
+[.runtime_4]
+en = "Do you really wish to set a PIN on your bank account?"
+pt = "Você quer mesmo colocar um PIN na sua conta do banco?"
+
+[.runtime_5]
+en = "Yes, I really want a Bank PIN. I will never forget it!"
+pt = "Sim, quero um PIN no banco. Nunca vou esquecê-lo!"
+
+[.runtime_6]
+en = "No, I might forget it!"
+pt = "Não, posso esquecer!"
+
+[.runtime_7]
+en = "Do you really wish to delete your Bank PIN?"
+pt = "Você quer mesmo apagar o seu PIN do banco?"
+
+[.runtime_8]
+en = "Yes, I don't need a PIN anymore."
+pt = "Sim, não preciso mais de um PIN."
+
+[.runtime_9]
+en = "No thanks, I'd rather keep the extra security."
+pt = "Não, obrigado, prefiro manter a segurança extra."
+
+[.runtime_10]
+en = "Customers are reminded that<br>they should NEVER tell<br>anyone their Bank PINs or<br>passwords, nor should they<br>ever enter their PINs on any<br>website form.<br><br>Have you read the PIN guide<br>on the website?"
+pt = "Lembramos aos clientes que<br>NUNCA devem contar a<br>ninguém o PIN do banco ou<br>a senha, nem digitar o<br>PIN em nenhum formulário<br>de site.<br><br>Você já leu o guia do PIN<br>no site?"
+
+[.runtime_11]
+en = "You have requested that<br>your PIN be changed. This<br>will take effect in another<br>%1% day.<br><br>Your old PIN stays active<br>until then. To cancel, use<br>the button on the left."
+pt = "Você pediu para trocar o<br>seu PIN. Isso vai valer<br>daqui a mais %1% dia.<br><br>O PIN antigo continua<br>ativo até lá. Para cancelar,<br>use o botão à esquerda."
+
+[.runtime_12]
+en = "You have requested that<br>your PIN be changed. This<br>will take effect in another<br>%1% days.<br><br>Your old PIN stays active<br>until then. To cancel, use<br>the button on the left."
+pt = "Você pediu para trocar o<br>seu PIN. Isso vai valer<br>daqui a mais %1% dias.<br><br>O PIN antigo continua<br>ativo até lá. Para cancelar,<br>use o botão à esquerda."
+
+[.runtime_13]
+en = "You have requested that<br>your PIN be deleted. This<br>will take effect in another<br>%1% day.<br><br>Your PIN stays active until<br>then. To cancel, use the<br>button on the left."
+pt = "Você pediu para apagar o<br>seu PIN. Isso vai valer<br>daqui a mais %1% dia.<br><br>O PIN continua ativo até<br>lá. Para cancelar, use o<br>botão à esquerda."
+
+[.runtime_14]
+en = "You have requested that<br>your PIN be deleted. This<br>will take effect in another<br>%1% days.<br><br>Your PIN stays active until<br>then. To cancel, use the<br>button on the left."
+pt = "Você pediu para apagar o<br>seu PIN. Isso vai valer<br>daqui a mais %1% dias.<br><br>O PIN continua ativo até<br>lá. Para cancelar, use o<br>botão à esquerda."
+
+[.runtime_15]
+en = "Your recovery delay has<br>now been set to %1% days.<br><br>You would have to wait this<br>long to delete your PIN if<br>you forgot it. But you<br>do have one."
+pt = "O seu prazo de recuperação<br>agora é de %1% dias.<br><br>Você teria que esperar<br>esse tempo para apagar o<br>PIN se o esquecesse. E<br>você tem um PIN."
+
+[.runtime_16]
+en = "Your recovery delay has<br>now been set to %1% days.<br><br>You would have to wait this<br>long to delete your PIN if<br>you forgot it. But you<br>haven't got one..."
+pt = "O seu prazo de recuperação<br>agora é de %1% dias.<br><br>Você teria que esperar<br>esse tempo para apagar o<br>PIN se o esquecesse. Mas<br>você não tem um..."
+
+[.runtime_17]
+en = "The PIN deletion has been<br>cancelled.<br><br>Your PIN remains active."
+pt = "O pedido para apagar o PIN<br>foi cancelado.<br><br>O seu PIN continua ativo."
+
+[.runtime_18]
+en = "The PIN change has been<br>cancelled.<br><br>Your old PIN remains<br>active."
+pt = "A troca do PIN foi<br>cancelada.<br><br>O seu PIN antigo continua<br>ativo."
+
+[.runtime_19]
+en = "A PIN has been set on<br>your bank account.<br><br>You will be asked for it<br>next time you visit the<br>bank."
+pt = "Um PIN foi colocado na<br>sua conta do banco.<br><br>Ele será pedido na<br>próxima vez que você for<br>ao banco."
+
+[.runtime_20]
+en = "Your Bank PIN has now been<br>deleted.<br><br>This means that there is no<br>PIN protection on your bank<br>account."
+pt = "O seu PIN do banco foi<br>apagado.<br><br>Isso quer dizer que a sua<br>conta do banco não tem<br>proteção de PIN."
+
+[.runtime_21]
+en = "No changes made."
+pt = "Nada foi mudado."
+
+[.runtime_22]
+en = "That number wouldn't be very<br>hard to guess. Please try<br>something different!"
+pt = "Esse número seria fácil<br>demais de adivinhar. Tente<br>outro diferente!"
+
+[.runtime_23]
+en = "Those numbers did not<br>match.<br><br>Your PIN has not been set;<br>please try again if you wish<br>to set a new PIN."
+pt = "Os números não são<br>iguais.<br><br>O seu PIN não foi colocado;<br>tente de novo se quiser<br>colocar um PIN novo."
+
+[.runtime_24]
 en = "Congratulations! You've just reached Combat level %1%!"
 pt = "Parabéns! Você alcançou o nível de combate %1%!"
 
-[.skill_runtime_2]
+[.runtime_25]
 en = "<red>Well done! You've reached the Combat level %1% milestone!"
 pt = "<red>Muito bem! Você alcançou a marca do nível de combate %1%!"
 
-[.skill_runtime_3]
+[.runtime_26]
 en = "<red>Congratulations! Your Combat level is now 126 - the highest possible Combat level on free worlds!"
 pt = "<red>Parabéns! O seu nível de combate agora é 126 - o mais alto possível nos mundos gratuitos!"
 
-[.skill_runtime_4]
+[.runtime_27]
 en = "<red>Congratulations! Your Combat level is now 138! You've achieved the highest Combat level possible!"
 pt = "<red>Parabéns! O seu nível de combate agora é 138! Você alcançou o nível de combate mais alto possível!"
 
-[.skill_runtime_5]
+[.runtime_28]
 en = "You start to bleed as a result of the javelin strike."
 pt = "Você começa a sangrar por causa do golpe da azagaia (javelin)."
 
-[.skill_runtime_6]
+[.runtime_29]
 en = "This entrance does not lead anywhere."
 pt = "Esta entrada não leva a lugar nenhum."
 
-[.skill_runtime_7]
+[.runtime_30]
 en = "These stairs do no lead anywhere."
 pt = "Esta escada não leva a lugar nenhum."
 
-[.skill_runtime_8]
+[.runtime_31]
 en = "This entrance does not lead anywhere.<br>Enter building mode to build a room below."
 pt = "Esta entrada não leva a lugar nenhum.<br>Ative o modo de construção para construir um cômodo embaixo."
 
-[.skill_runtime_9]
+[.runtime_32]
 en = "This entrance does not lead anywhere.<br>Do you want to build a room below?"
 pt = "Esta entrada não leva a lugar nenhum.<br>Quer construir um cômodo embaixo?"
 
-[.skill_runtime_10]
+[.runtime_33]
 en = "These stairs do no lead anywhere.<br>Enter building mode to build a room at the top."
 pt = "Esta escada não leva a lugar nenhum.<br>Ative o modo de construção para construir um cômodo em cima."
 
-[.skill_runtime_11]
+[.runtime_34]
 en = "These stairs do no lead anywhere.<br>Enter building mode to build a room at the bottom."
 pt = "Esta escada não leva a lugar nenhum.<br>Ative o modo de construção para construir um cômodo embaixo."
 
-[.skill_runtime_12]
+[.runtime_35]
 en = "These stairs do no lead anywhere.<br>Do you want to build a room at the top?"
 pt = "Esta escada não leva a lugar nenhum.<br>Quer construir um cômodo em cima?"
 
-[.skill_runtime_13]
+[.runtime_36]
 en = "These stairs do no lead anywhere.<br>Do you want to build a room at the bottom?"
 pt = "Esta escada não leva a lugar nenhum.<br>Quer construir um cômodo embaixo?"
 
-[.skill_runtime_14]
+[.runtime_37]
 en = "There are %1% in the hopper. The grinder is set to automatic."
 pt = "Há no funil (hopper): %1%. O moedor está no modo automático."
 
-[.skill_runtime_15]
+[.runtime_38]
 en = "There are %1% in the hopper. The grinder is set to manual."
 pt = "Há no funil (hopper): %1%. O moedor está no modo manual."
 
-[.skill_runtime_16]
+[.runtime_39]
 en = "There is bonemeal waiting in the bin. The grinder is set to automatic."
 pt = "Há farinha de ossos (bonemeal) esperando na caixa. O moedor está no modo automático."
 
-[.skill_runtime_17]
+[.runtime_40]
 en = "There is bonemeal waiting in the bin. The grinder is set to manual."
 pt = "Há farinha de ossos (bonemeal) esperando na caixa. O moedor está no modo manual."
 
-[.skill_runtime_18]
+[.runtime_41]
 en = "The grinder is empty. The grinder is set to automatic."
 pt = "O moedor está vazio. Ele está no modo automático."
 
-[.skill_runtime_19]
+[.runtime_42]
 en = "The grinder is empty. The grinder is set to manual."
 pt = "O moedor está vazio. Ele está no modo manual."
