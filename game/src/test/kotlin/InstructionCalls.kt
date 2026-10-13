@@ -32,7 +32,7 @@ fun Player.itemOption(
     item: String = "",
     id: String = "inventory",
     component: String = "inventory",
-    optionIndex: Int = getOptionIndex(id, component, option) ?: getItemOptionIndex(item, option) ?: -1,
+    optionIndex: Int = getOptionIndex(id, component, option) ?: getItemOptionIndex(id, component, item, option) ?: -1,
     inventory: String = "inventory",
     slot: Int = inventories.inventory(inventory).indexOf(item),
 ) {
@@ -235,9 +235,20 @@ fun Player.skipDialogues() {
     }
 }
 
-private fun getItemOptionIndex(item: String, option: String): Int? {
+/**
+ * The client sends the inventory's fourth and fifth item options as 6 and 7, options 3-5 are bank options
+ */
+private fun getItemOptionIndex(id: String, component: String, item: String, option: String): Int? {
     val definition = ItemDefinitions.getOrNull(item) ?: return null
-    return definition.options.indexOf(option)
+    val index = definition.options.indexOf(option)
+    if (id != "inventory" || component != "inventory") {
+        return index
+    }
+    return when (index) {
+        3 -> 6
+        4 -> 7
+        else -> index
+    }
 }
 
 private fun getOptionIndex(id: String, componentId: String, option: String): Int? {
