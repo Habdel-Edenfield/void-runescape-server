@@ -441,6 +441,9 @@ GENERAL = [
         ("view_distance_set_far", "View distance set to far.", "Distância de visão: longe."),
         ("view_distance_set_very_far", "View distance set to very far.", "Distância de visão: muito longe."),
     ]),
+    ("World map - WorldMapWalk.kt, walking to the marker", [
+        ("world_map_walk_no_way", "You can't find a way to walk to your marker.", "Você não encontrou um caminho a pé até a sua marcação."),
+    ]),
     ("Glossary - short words skills insert into lines (rune types, metals, farming patches, directions); used where a pt line writes %1g% instead of %1%, see Translation.kt", [
         ("word_air", "air", "ar (air)"),
         ("word_mind", "mind", "mente (mind)"),

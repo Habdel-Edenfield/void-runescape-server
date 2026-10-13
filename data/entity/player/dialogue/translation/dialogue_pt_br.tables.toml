@@ -5530,6 +5530,12 @@ pt = "Distância de visão: longe."
 en = "View distance set to very far."
 pt = "Distância de visão: muito longe."
 
+# World map - WorldMapWalk.kt, walking to the marker
+
+[.world_map_walk_no_way]
+en = "You can't find a way to walk to your marker."
+pt = "Você não encontrou um caminho a pé até a sua marcação."
+
 # Glossary - short words skills insert into lines (rune types, metals, farming patches, directions); used where a pt line writes %1g% instead of %1%, see Translation.kt
 
 [.word_air]

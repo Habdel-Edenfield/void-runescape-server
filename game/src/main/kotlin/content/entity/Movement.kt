@@ -1,6 +1,7 @@
 package content.entity
 
 import content.area.misthalin.Border
+import content.entity.player.modal.map.MarkerWalk
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.instruction.instruction
 import world.gregs.voidps.engine.client.ui.closeInterfaces
@@ -69,6 +70,12 @@ class Movement : Script {
                 val tile = border.nearestTo(player.tile)
                 val endSide = Border.getOppositeSide(border, tile)
                 player.walkTo(endSide, noCollision = true, forceWalk = true)
+            } else if (minimap && player.tile.distanceTo(target) > MarkerWalk.NEAR) {
+                // A zoomed out minimap reaches further than the normal path finder searches
+                val walk = MarkerWalk(player, target)
+                if (walk.plan()) {
+                    player.mode = walk
+                }
             } else {
                 if (player.tile == target && player.mode != EmptyMode && player.mode != PauseMode) {
                     player.mode = EmptyMode
