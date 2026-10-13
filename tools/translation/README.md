@@ -9,6 +9,7 @@ O sistema todo está explicado em [`.claude/translation.md`](../../.claude/trans
 | `map_text.py` | Mapa de todo o texto do jogo e quanto está traduzido (JSON na saída padrão). |
 | `build_report.py` | Gera a página HTML do mapa a partir do JSON. |
 | `gen_dialogue.py` | Extrai as falas dos scripts Kotlin, junta com as traduções e **escreve a tabela** `dialogue_pt_br.tables.toml`. Com `--dump`, lista o que falta em `sources/missing.json`. |
+| `skill_text.py` | Lê as frases das habilidades (código de `content/skill`, colunas de mensagem de `data/skill` e `eat_message` dos itens) do mesmo jeito que `SkillTranslationTest`; `gen_dialogue.py` usa para as seções `skill_*`/`data_*`. |
 | `split_groups.py` | Divide `sources/missing.json` em grupos equilibrados para tradução em paralelo. |
 | `validate.py` | Confere um arquivo de tradução contra o seu grupo (falta, caractere proibido, marcador ou tag perdidos, tamanho). |
 | `gen_stages.py` | Escreve `tutorial_island_pt_br.tables.toml` (caixa de instruções da Ilha Tutorial). |

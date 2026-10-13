@@ -72,6 +72,26 @@ class TranslationTest : WorldTest() {
     }
 
     @Test
+    fun `Glossary words are translated only where the line asks for them`() {
+        val player = createPlayer()
+        player["portuguese_dialogue"] = true
+
+        assertEquals("Você retira uma barra de ferro (iron).", player.translate("You retrieve a bar of iron."))
+        assertEquals("O talismã está puxando para o nordeste.", player.translate("The talisman is pulling towards the north-east."))
+        // "rune" is a metal in the glossary but rune essence here, so this line doesn't use it
+        assertEquals(false, player.translate("This pouch contains rune essence, so you can only fill it with more rune essence.").contains("runita"))
+    }
+
+    @Test
+    fun `The line with the most fixed text wins`() {
+        val player = createPlayer()
+        player["portuguese_dialogue"] = true
+
+        assertEquals("Você martela a barra de ferro (iron) e faz: iron axe.", player.translate("You hammer the iron and make an iron axe."))
+        assertEquals("Você martela a barra de bronze e faz: bronze dagger.", player.translate("You hammer the bronze and make a bronze dagger."))
+    }
+
+    @Test
     fun `Level up is announced in Portuguese`() {
         val player = createPlayer()
         player["portuguese_dialogue"] = true

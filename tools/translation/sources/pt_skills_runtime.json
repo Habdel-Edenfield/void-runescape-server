@@ -1,0 +1,21 @@
+{
+ "Congratulations! You've just reached Combat level %1%!": "Parabéns! Você alcançou o nível de combate %1%!",
+ "<red>Well done! You've reached the Combat level %1% milestone!": "<red>Muito bem! Você alcançou a marca do nível de combate %1%!",
+ "<red>Congratulations! Your Combat level is now 126 - the highest possible Combat level on free worlds!": "<red>Parabéns! O seu nível de combate agora é 126 - o mais alto possível nos mundos gratuitos!",
+ "<red>Congratulations! Your Combat level is now 138! You've achieved the highest Combat level possible!": "<red>Parabéns! O seu nível de combate agora é 138! Você alcançou o nível de combate mais alto possível!",
+ "You start to bleed as a result of the javelin strike.": "Você começa a sangrar por causa do golpe da azagaia (javelin).",
+ "This entrance does not lead anywhere.": "Esta entrada não leva a lugar nenhum.",
+ "These stairs do no lead anywhere.": "Esta escada não leva a lugar nenhum.",
+ "This entrance does not lead anywhere.<br>Enter building mode to build a room below.": "Esta entrada não leva a lugar nenhum.<br>Ative o modo de construção para construir um cômodo embaixo.",
+ "This entrance does not lead anywhere.<br>Do you want to build a room below?": "Esta entrada não leva a lugar nenhum.<br>Quer construir um cômodo embaixo?",
+ "These stairs do no lead anywhere.<br>Enter building mode to build a room at the top.": "Esta escada não leva a lugar nenhum.<br>Ative o modo de construção para construir um cômodo em cima.",
+ "These stairs do no lead anywhere.<br>Enter building mode to build a room at the bottom.": "Esta escada não leva a lugar nenhum.<br>Ative o modo de construção para construir um cômodo embaixo.",
+ "These stairs do no lead anywhere.<br>Do you want to build a room at the top?": "Esta escada não leva a lugar nenhum.<br>Quer construir um cômodo em cima?",
+ "These stairs do no lead anywhere.<br>Do you want to build a room at the bottom?": "Esta escada não leva a lugar nenhum.<br>Quer construir um cômodo embaixo?",
+ "There are %1% in the hopper. The grinder is set to automatic.": "Há no funil (hopper): %1%. O moedor está no modo automático.",
+ "There are %1% in the hopper. The grinder is set to manual.": "Há no funil (hopper): %1%. O moedor está no modo manual.",
+ "There is bonemeal waiting in the bin. The grinder is set to automatic.": "Há farinha de ossos (bonemeal) esperando na caixa. O moedor está no modo automático.",
+ "There is bonemeal waiting in the bin. The grinder is set to manual.": "Há farinha de ossos (bonemeal) esperando na caixa. O moedor está no modo manual.",
+ "The grinder is empty. The grinder is set to automatic.": "O moedor está vazio. Ele está no modo automático.",
+ "The grinder is empty. The grinder is set to manual.": "O moedor está vazio. Ele está no modo manual."
+}

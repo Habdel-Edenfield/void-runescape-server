@@ -8,8 +8,13 @@ Usage:
 """
 import glob
 import json
+import os
 import re
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.dont_write_bytecode = True
+import skill_text  # noqa: E402
 
 ROOT = sys.argv[1]
 KOTLIN = ROOT + "/game/src/main/kotlin/"
@@ -276,7 +281,8 @@ PT = {
 
 if TRANSLATIONS:
     # pt_tasks*/pt_level_up*/pt_labels*/pt_ui* belong to the interfaces the client draws from the cache (tools/.../InterfaceTranslation.kt)
-    for file in sorted(f for f in glob.glob(TRANSLATIONS + "/pt_*.json") if not f.split("/")[-1].startswith(("pt_tasks", "pt_level_up", "pt_labels", "pt_ui"))):
+    # pt_skills_runtime* holds text only seen while playing (SkillActionTranslationTest), written as is
+    for file in sorted(f for f in glob.glob(TRANSLATIONS + "/pt_*.json") if not f.split("/")[-1].startswith(("pt_tasks", "pt_level_up", "pt_labels", "pt_ui", "pt_skills_runtime"))):
         PT.update({en: pt for en, pt in json.load(open(file)).items() if "\n" not in en})
 
 # Text shared across the game rather than said by one NPC: (header, [(row id, en, pt)]).
@@ -340,10 +346,10 @@ GENERAL = [
         ("mining_full", "Your inventory is too full to hold any more ore.", "O seu inventário está cheio demais para guardar mais minério."),
         ("mining_depleted", "There is currently no ore available in this rock.", "No momento não há minério nesta rocha."),
         ("smelting_bronze", "You smelt the copper and tin together in the furnace.", "Você funde o cobre e o estanho juntos na fornalha."),
-        ("smelting_retrieve", "You retrieve a bar of %1%.", "Você retira uma barra de %1%."),
+        ("smelting_retrieve", "You retrieve a bar of %1%.", "Você retira uma barra de %1g%."),
         ("smelting_no_ores", "You don't have any ores to smelt.", "Você não tem minérios para fundir."),
-        ("smithing_make_a", "You hammer the %1% and make a %2%.", "Você martela o %1% e faz: %2%."),
-        ("smithing_make_an", "You hammer the %1% and make an %2%.", "Você martela o %1% e faz: %2%."),
+        ("smithing_make_a", "You hammer the %1% and make a %2%.", "Você martela a barra de %1g% e faz: %2%."),
+        ("smithing_make_an", "You hammer the %1% and make an %2%.", "Você martela a barra de %1g% e faz: %2%."),
         ("smithing_no_hammer", "You need a Hammer to smith items.", "Você precisa de um martelo (Hammer) para forjar itens."),
         ("smithing_not_enough_bars", "You do not have enough bars to smith this item.", "Você não tem barras suficientes para forjar este item."),
         ("ranged_no_ammo", "There is no ammo left in your quiver.", "Não há mais munição na sua aljava."),
@@ -429,6 +435,59 @@ GENERAL = [
         ("view_distance_set_far", "View distance set to far.", "Distância de visão: longe."),
         ("view_distance_set_very_far", "View distance set to very far.", "Distância de visão: muito longe."),
     ]),
+    ("Glossary - short words skills insert into lines (rune types, metals, farming patches, directions); used where a pt line writes %1g% instead of %1%, see Translation.kt", [
+        ("word_air", "air", "ar (air)"),
+        ("word_mind", "mind", "mente (mind)"),
+        ("word_water", "water", "água (water)"),
+        ("word_earth", "earth", "terra (earth)"),
+        ("word_fire", "fire", "fogo (fire)"),
+        ("word_body", "body", "corpo (body)"),
+        ("word_cosmic", "cosmic", "cosmos (cosmic)"),
+        ("word_chaos", "chaos", "caos (chaos)"),
+        ("word_astral", "astral", "astral"),
+        ("word_nature", "nature", "natureza (nature)"),
+        ("word_law", "law", "lei (law)"),
+        ("word_death", "death", "morte (death)"),
+        ("word_blood", "blood", "sangue (blood)"),
+        ("word_soul", "soul", "alma (soul)"),
+        ("word_mist", "mist", "névoa (mist)"),
+        ("word_dust", "dust", "poeira (dust)"),
+        ("word_mud", "mud", "lama (mud)"),
+        ("word_smoke", "smoke", "fumaça (smoke)"),
+        ("word_steam", "steam", "vapor (steam)"),
+        ("word_lava", "lava", "lava"),
+        ("word_bronze", "bronze", "bronze"),
+        ("word_iron", "iron", "ferro (iron)"),
+        ("word_steel", "steel", "aço (steel)"),
+        ("word_mithril", "mithril", "mithril"),
+        ("word_adamant", "adamant", "adamante (adamant)"),
+        ("word_rune", "rune", "runita (rune)"),
+        ("word_blurite", "blurite", "blurita (blurite)"),
+        ("word_silver", "silver", "prata (silver)"),
+        ("word_gold", "gold", "ouro (gold)"),
+        ("word_allotment", "allotment", "canteiro de legumes (allotment)"),
+        ("word_herb_patch", "herb patch", "canteiro de ervas (herb patch)"),
+        ("word_flower_patch", "flower patch", "canteiro de flores (flower patch)"),
+        ("word_tree_patch", "tree patch", "canteiro de árvore (tree patch)"),
+        ("word_fruit_tree_patch", "fruit tree patch", "canteiro de árvore frutífera (fruit tree patch)"),
+        ("word_hops_patch", "hops patch", "canteiro de lúpulo (hops patch)"),
+        ("word_bush_patch", "bush patch", "canteiro de arbustos (bush patch)"),
+        ("word_cactus_patch", "cactus patch", "canteiro de cacto (cactus patch)"),
+        ("word_belladonna_patch", "belladonna patch", "canteiro de beladona (belladonna patch)"),
+        ("word_blindweed_patch", "blindweed patch", "canteiro de blindweed (blindweed patch)"),
+        ("word_calquat_tree_patch", "calquat tree patch", "canteiro de calquat (calquat tree patch)"),
+        ("word_evil_turnip_patch", "evil turnip patch", "canteiro de nabo maligno (evil turnip patch)"),
+        ("word_mushroom_patch", "mushroom patch", "canteiro de cogumelos (mushroom patch)"),
+        ("word_spirit_tree_patch", "spirit tree patch", "canteiro de árvore espiritual (spirit tree patch)"),
+        ("word_north", "north", "norte"),
+        ("word_north_east", "north-east", "nordeste"),
+        ("word_east", "east", "leste"),
+        ("word_south_east", "south-east", "sudeste"),
+        ("word_south", "south", "sul"),
+        ("word_south_west", "south-west", "sudoeste"),
+        ("word_west", "west", "oeste"),
+        ("word_north_west", "north-west", "noroeste"),
+    ]),
     ("Dialogue boxes - text the client fills in from the cache", [
         ("click_to_continue", "Click here to continue", "Clique aqui para continuar"),
     ]),
@@ -497,6 +556,52 @@ def toml(value):
     return '"' + value.replace('"', '\\"') + '"'
 
 
+def skill_rows(seen):
+    """Rows for the skills' code and data tables (see skill_text.py), and what's left to translate by file"""
+    out = []
+    missing = {}
+
+    def section(header, prefix, texts, source, kind):
+        rows = []
+        for text in texts:
+            if text in seen:
+                continue
+            seen.add(text)
+            if text not in PT:
+                missing.setdefault(source, []).append({"kind": kind(text) if callable(kind) else kind, "en": text})
+                continue
+            if max(len(text.encode()), len(PT[text].encode())) > MAX_BYTES:
+                print(f"SKIPPED, over {MAX_BYTES} bytes, stays in English: {text[:60]}...")
+                continue
+            rows += ["", f"[.{prefix}_{len(rows) // 4 + 1}]", f"en = {toml(text)}", f"pt = {toml(PT[text])}"]
+        if rows:
+            out.extend(["", f"# {header}"] + rows)
+
+    by_file = {}
+    for rel, kind, _, keys in skill_text.code_texts(ROOT):
+        by_file.setdefault(rel, []).append((kind, keys))
+    for rel, entries in by_file.items():
+        prefix = "skill_" + re.sub(r"[^a-z0-9]+", "_", rel.removesuffix(".kt").lower())
+        # The dump keeps whether each line is chat or dialogue; the table only needs the text
+        kinds = {key: kind for kind, keys in entries for key in keys}
+        section(f"Skills - {rel}", prefix, list(kinds), "skill/" + rel, lambda key: kinds[key])
+    for rel, texts in skill_text.data_texts(ROOT):
+        name = re.sub(r"[^a-z0-9]+", "_", rel.removesuffix(".toml").lower())
+        section(f"Skill data - data/{rel}", "data_" + name, texts, "data/" + rel, "data")
+    runtime = {}
+    for file in sorted(glob.glob(TRANSLATIONS + "/pt_skills_runtime*.json")):
+        runtime.update(json.load(open(file)))
+    rows = []
+    for en, pt in runtime.items():
+        if en in seen:
+            continue
+        seen.add(en)
+        rows += ["", f"[.skill_runtime_{len(rows) // 4 + 1}]", f"en = {toml(en)}", f"pt = {toml(pt)}"]
+    if rows:
+        out.extend(["", "# Skills - text only seen while playing (SkillActionTranslationTest): built from data the code reads, or sent by scripts outside content/skill"] + rows)
+    return out, missing
+
+
 def main():
     out = [
         "# Brazilian Portuguese dialogue, used by `Player.translate` when `portuguese_dialogue` is on.",
@@ -533,12 +638,17 @@ def main():
         for row, en, pt in rows:
             assert all(ord(c) <= 0xFF for c in pt), pt
             out += ["", f"[.{row}]", f"en = {toml(en)}", f"pt = {toml(pt)}"]
+            seen.add(en)
+    skills, skill_missing = skill_rows(seen)
+    out += skills
+    missing += [en for lines in skill_missing.values() for en in (line["en"] for line in lines)]
     if "--dump" in sys.argv:
         dump = {}
         for file, prefix, title in NPCS:
             lines = [{"kind": kind, "en": text} for kind, text in extract(file, with_kind=True) if text not in PT]
             if lines:
                 dump[file] = lines
+        dump.update(skill_missing)
         json.dump(dump, open(TRANSLATIONS + "/missing.json", "w"), indent=1, ensure_ascii=False)
         print(f"{sum(len(v) for v in dump.values())} untranslated lines in {len(dump)} scripts")
         return

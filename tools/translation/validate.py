@@ -17,7 +17,8 @@ for en in expected:
     if "\\" in text:
         problems.append(f"BACKSLASH: {text}")
     for token in set(re.findall(r"%server%|%\d+%", en)):
-        if token not in text:
+        # %1g% is %1% looked up in the glossary (word_ rows)
+        if token not in text and token[:-1] + "g%" not in text:
             problems.append(f"LOST {token}: {text}")
     for tag in re.findall(r"<[^>]+>", en):
         if tag not in text:

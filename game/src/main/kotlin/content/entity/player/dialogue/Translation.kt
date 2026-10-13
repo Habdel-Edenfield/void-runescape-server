@@ -42,6 +42,8 @@ class Translation : Script {
  * `%server%` in either column stands in for the `server.name` setting, and `%1%`, `%2%`...
  * in `en` match any text which is copied into the same placeholder in `pt`, translated when it's
  * a task name, difficulty or set from `interface_pt_br` (e.g. "You have completed the Task 'On the Run'...").
+ * `%1g%` in `pt` copies it through the glossary instead, the `word_` rows of short words skills insert
+ * ("air" -> "ar (air)", "iron" -> "ferro (iron)"), so only lines written for those words translate them.
  */
 fun Player.translate(text: String): String {
     if (!get("portuguese_dialogue", false)) {
@@ -55,9 +57,9 @@ fun Player.translate(text: String): String {
     }
     for ((english, portuguese) in index.placeholders) {
         val match = english.matchEntire(text) ?: continue
-        return placeholder.replace(portuguese) { token ->
+        return insertion.replace(portuguese) { token ->
             val value = match.groups["p${token.groupValues[1]}"]?.value ?: return@replace token.value
-            index.taskNames[value] ?: value
+            if (token.groupValues[2] == "g") index.words[value.lowercase()] ?: value else index.taskNames[value] ?: value
         }
     }
     missingTranslation(text)
@@ -78,6 +80,7 @@ private class TranslationIndex(
     val exact: Map<String, String>,
     val placeholders: List<Pair<Regex, String>>,
     val taskNames: Map<String, String>,
+    val words: Map<String, String>,
 )
 
 private var index: TranslationIndex? = null
@@ -92,22 +95,30 @@ private fun index(): TranslationIndex {
     }
     val exact = HashMap<String, String>()
     val placeholders = mutableListOf<Pair<Regex, String>>()
+    val words = HashMap<String, String>()
+    val fixedLength = HashMap<Regex, Int>()
     for (row in table.rows()) {
         val english = serverName(row.string("en"))
         val portuguese = serverName(row.string("pt"))
-        if (placeholder.containsMatchIn(english)) {
-            placeholders.add(pattern(english) to portuguese)
+        if (row.rowId.startsWith("word_")) {
+            words[english] = portuguese
+        } else if (placeholder.containsMatchIn(english)) {
+            val regex = pattern(english)
+            fixedLength[regex] = placeholder.replace(english, "").length
+            placeholders.add(regex to portuguese)
         } else {
             exact[english] = portuguese
         }
     }
+    // The line with the most fixed text wins, so "...and make an %2%." is tried before "...and make a %2%.", which would also match
+    placeholders.sortByDescending { (english, _) -> fixedLength[english] }
     val taskNames = HashMap<String, String>()
     for (row in tasks?.rows().orEmpty()) {
         if (taskNamePrefixes.any { row.rowId.startsWith(it) }) {
             taskNames[row.string("en")] = row.string("pt")
         }
     }
-    return TranslationIndex(table, tasks, name, exact, placeholders, taskNames).also { index = it }
+    return TranslationIndex(table, tasks, name, exact, placeholders, taskNames, words).also { index = it }
 }
 
 /** Rows of `interface_pt_br` the server inserts into task chat messages; the rest only exists in the cache */
@@ -119,6 +130,9 @@ private val logger = InlineLogger("Translation")
 private val missing = HashSet<String>()
 
 private val placeholder = Regex("%(\\d+)%")
+
+/** A placeholder in `pt`: `%1%`, or `%1g%` to look the text up in the glossary */
+private val insertion = Regex("%(\\d+)(g?)%")
 
 private val patterns = HashMap<String, Regex>()
 

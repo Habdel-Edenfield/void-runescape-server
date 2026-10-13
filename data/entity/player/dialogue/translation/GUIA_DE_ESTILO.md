@@ -15,7 +15,10 @@ Vale para todo texto em `dialogue_pt_br.tables.toml` e `tutorial_island_pt_br.ta
 - **Marcadores** `%1%`, `%2%`, `%server%` e **tags** `<col=...>`, `<br>`, `<red>`, `<blue>`, `</col>` sempre presentes; pode mudar de lugar conforme a gramática.
 - Só caracteres Latin-1: nada de aspas curvas, travessão (—), reticências de um caractere (…) ou emoji. Use ' " - e três pontos.
 - Comprimento próximo do original (até ~1,5×). Caixas de NPC quebram linha sozinhas; a caixa de instruções da ilha tem linhas fixas e um teste mede a largura em pixels.
-- Itens inseridos pelo jogo no meio da frase ficam em inglês; prefira construções neutras: "Você conseguiu: %1%." em vez de concordar gênero com uma palavra inglesa.
+- **Palavras inseridas pelo jogo no meio da frase** (decisão do Habdel, "opção D", 2026-10-12):
+  - Nome de item, criatura, NPC ou jogador fica em inglês, com construção neutra que não concorda gênero com a palavra: "Você come: %1%.", "Você capturou: %1%!", "Você conseguiu: %1%.".
+  - Palavras de um grupo pequeno (tipo de runa, metal, canteiro de agricultura, direção do talismã) vão para o português com o inglês entre parênteses pelo **glossário de palavras inseridas**: no `pt`, escreva `%1g%` no lugar de `%1%` e o jogo troca "air" por "ar (air)", "iron" por "ferro (iron)", "herb patch" por "canteiro de ervas (herb patch)", "north-east" por "nordeste". O glossário fica nas linhas `word_` (seção "Glossary" de `gen_dialogue.py`); só as frases com `g` usam, porque a mesma palavra pode ser outra coisa ("rune" é metal em "bar of rune", mas é item em "rune essence").
+  - Quando o próprio texto escreve o item (sem `%1%`), vale a regra de cima: português com o inglês entre parênteses ("Você lapida a safira (sapphire).").
 
 ## Glossário fixado
 

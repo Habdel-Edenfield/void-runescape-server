@@ -1,6 +1,6 @@
 # Tradução pt-BR (só neste fork)
 
-Tradução do texto que o servidor envia ao jogador e, para a janela de tarefas, do texto que o cliente desenha a partir do cache. Branch `feat/pt-br-dialogue-prototype` (sobre `fix/network-text-latin1`). Feitos: Ilha Tutorial, Lumbridge, a janela de tarefas (conjuntos Lumbridge/Draynor e Unstable Foundations), a janela de "subiu de nível" (sem a lista de desbloqueios), os rótulos fixos do item 1 do mapa e as janelas do item 2 (abas Logout, Opções, Habilidades, Quest Journal, Estilos de combate e Orações; amigos, ignorados, clã e chat; banco e loja). Mapa do que falta: `tools/translation/map_text.py` + `build_report.py`.
+Tradução do texto que o servidor envia ao jogador e, para a janela de tarefas, do texto que o cliente desenha a partir do cache. Branch `feat/pt-br-dialogue-prototype` (sobre `fix/network-text-latin1`). Feitos: Ilha Tutorial, Lumbridge, mensagens das habilidades (menos as conversas dos familiares), a janela de tarefas (conjuntos Lumbridge/Draynor e Unstable Foundations), a janela de "subiu de nível" (sem a lista de desbloqueios), os rótulos fixos do item 1 do mapa e as janelas do item 2 (abas Logout, Opções, Habilidades, Quest Journal, Estilos de combate e Orações; amigos, ignorados, clã e chat; banco e loja). Mapa do que falta: `tools/translation/map_text.py` + `build_report.py`.
 
 ## Como funciona
 
@@ -51,9 +51,14 @@ A janela de tarefas (interface 917), a aba lateral (1056), o aviso "Task Complet
 - `WorldTest` com `loadNpcs = true`: os spawns só entram no mundo depois de um `tick()`.
 - `TutorialIslandTranslationTest`/`LumbridgeTranslationTest` trocam `messageTranslator`/`missingTranslation`: restaure sempre no fim.
 
-## Próximo trabalho: mensagens das habilidades
+## Mensagens das habilidades
 
-741 mensagens de chat (167 com variável no meio) e 1.776 falas (45 com variável) em `content/skill/**`, mais mensagens em `data/skill/**/*.tables.toml` e `*.recipes.toml`. Antes de traduzir, o Habdel quer: (1) quantas têm palavra inserida em inglês (item, peixe, minério) separadas das que só têm número, e as opções para isso; (2) o teste pronto antes da tradução (não há "passeio por região": um teste por habilidade fazendo as ações, como `TutorialIslandTranslationTest`, ou percorrendo as linhas das tabelas de dados).
+Chat e caixas de fala de `content/skill/**`, mais as mensagens das tabelas de dados (`data/skill/**/*.tables.toml` e `*.recipes.toml`: colunas `message`, `cooked_message`, `burnt_message`, `tip`, `question`, `failure`, `requires_message`) e o `eat_message` dos itens. **Fora por enquanto**: conversas dos familiares de Summoning (`summoning/familiar/`, ~1.400 falas; as mensagens de chat deles entram), frases sobre a cabeça (`hungry_phrase` dos pets: `say` não passa pela tradução).
+
+- **Leitura**: `tools/translation/skill_text.py` lê as frases como o teste lê (literal Kotlin com `${...}` aninhado, comentários fora). Palavra que o código escolhe (`if (drink) "drink" else "eat"`, `"slot".plural(n)`, `.an()`, `when`) vira **uma linha por variação** ("You eat the %1%." e "You drink the %1%."), o resto `%1%`, `%2%`. Mais de 8 combinações (bolsa de gemas) ficam como `%n%`.
+- **Fontes**: `sources/pt_skills_N.json` (código e dados, por grupo) e `sources/pt_skills_runtime.json` (frases que só aparecem jogando: montadas de dados ou mandadas por scripts fora de `content/skill`, como o nível de combate). `gen_dialogue.py` escreve uma seção por arquivo (`skill_<arquivo>_N`, `data_<arquivo>_N`).
+- **Palavras inseridas (opção D)**: ver `GUIA_DE_ESTILO.md`. Glossário em linhas `word_` (runas, metais, canteiros, direções); no `pt`, `%1g%` passa o valor pelo glossário (`Translation.kt`, `insertion`).
+- **Testes**: `SkillTranslationTest` tem uma conferência por pasta de habilidade (lê o código e testa cada variação, com "5" no lugar do que o código calcula) e uma por arquivo de dados. `SkillActionTranslationTest` joga uma ação comum de cada habilidade com o português ligado (comer, enterrar ossos, subir nível de combate, cortar, pescar, cozinhar, minerar, fundir, artesanato, flechas, ervas e poção, runas, roubo, agilidade, teleporte, plantar, armadilha, tarefa de Slayer, opções da casa, familiar). **Prova feita**: apagar "You get some %1%." fez os dois falharem apontando a frase.
 
 ## Pendências
 
