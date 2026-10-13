@@ -8,6 +8,7 @@ amount_default = [1]
 chance = "int"
 chance_default = 255 # 100%
 message = "string"
+requires_message = "string"
 
 [.bronze_bar]
 level = 1
@@ -15,6 +16,7 @@ xp = 62
 ore = ["tin_ore", "copper_ore"]
 amount = [1, 1]
 message = "You smelt the copper and tin together in the furnace."
+requires_message = "You need one copper ore and one tin ore to make a bronze bar."
 
 [.blurite_bar]
 level = 13
@@ -28,6 +30,7 @@ xp = 75
 ore = ["elemental_ore", "coal"]
 amount = [1, 4]
 message = "You place the elemental ore and four heaps of coal into the furnace."
+requires_message = "You need one elemental ore and four heaps of coal to make an elemental bar."
 
 [.iron_bar]
 level = 15
@@ -42,6 +45,7 @@ xp = 175
 ore = ["iron_ore", "coal"]
 amount = [1, 2]
 message = "You place the iron and two heaps of coal into the furnace."
+requires_message = "You need one iron ore and two heaps of coal to make a steel bar."
 
 [.silver_bar]
 level = 20
@@ -61,6 +65,7 @@ xp = 300
 ore = ["mithril_ore", "coal"]
 amount = [1, 4]
 message = "You place the mithril and four heaps of coal into the furnace."
+requires_message = "You need one mithril ore and four heaps of coal to make a mithril bar."
 
 [.adamant_bar]
 level = 70
@@ -68,6 +73,7 @@ xp = 375
 ore = ["adamantite_ore", "coal"]
 amount = [1, 6]
 message = "You place the adamantite and six heaps of coal into the furnace."
+requires_message = "You need one adamantite ore and six heaps of coal to make an adamant bar."
 
 [.rune_bar]
 level = 85
@@ -75,3 +81,4 @@ xp = 500
 ore = ["runite_ore", "coal"]
 amount = [1, 8]
 message = "You place the runite and six heaps of coal into the furnace."
+requires_message = "You need one runite ore and eight heaps of coal to make a rune bar."

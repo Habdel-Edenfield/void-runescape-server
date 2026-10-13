@@ -1,9 +1,11 @@
 package content.skill.smithing
 
 import WorldTest
+import containsMessage
 import net.pearx.kasechange.toSentenceCase
 import objectOption
 import org.junit.jupiter.api.Assertions.assertNotEquals
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.DynamicTest.dynamicTest
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestFactory
@@ -156,5 +158,29 @@ class SmeltingTest : WorldTest() {
         assertEquals(1, player.inventory.count("iron_ore"))
         assertEquals(1, player.inventory.count("iron_bar"))
         assertEquals(12.5, player.experience.get(Skill.Smithing))
+    }
+
+    @TestFactory
+    fun `Missing ores tells the player what's needed`() = listOf(
+        listOf(Item("copper_ore", 6)) to "You need one copper ore and one tin ore to make a bronze bar.",
+        listOf(Item("tin_ore")) to "You need one copper ore and one tin ore to make a bronze bar.",
+        listOf(Item("mithril_ore"), Item("coal", 2)) to "You need one mithril ore and four heaps of coal to make a mithril bar.",
+        listOf(Item("coal")) to "You need one iron ore and two heaps of coal to make a steel bar.",
+        listOf(Item("bronze_bar")) to "You don't have any ores to smelt.",
+    ).map { (items, message) ->
+        dynamicTest("Smelt with ${items.joinToString { it.id }}") {
+            val player = createPlayer(Tile(3227, 3255))
+            player.levels.set(Skill.Smithing, 99)
+            player.inventory.add(items)
+            val furnace = GameObjects.find(Tile(3226, 3256), "furnace_lumbridge")
+
+            player.objectOption(furnace, "Smelt")
+            tick()
+
+            assertTrue(player.containsMessage(message))
+            for (item in items) {
+                assertEquals(item.amount, player.inventory.count(item.id))
+            }
+        }
     }
 }

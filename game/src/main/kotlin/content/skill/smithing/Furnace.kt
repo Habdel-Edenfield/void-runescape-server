@@ -95,11 +95,21 @@ class Furnace : Script {
         softTimers.start("smelting")
         if (available.isEmpty()) {
             softTimers.stop("smelting")
-            message("You don't have any ores to smelt.")
+            message(missingOres(bars) ?: "You don't have any ores to smelt.")
             return
         }
         val (item, amount) = makeAmount(available, "Make", max)
         smelt(this, gameObject, item, amount)
+    }
+
+    /**
+     * What's missing for the first bar the player has some, but not all, of the ores for.
+     * Bars the player has the ore for are picked over ones they only have the coal for.
+     */
+    private fun Player.missingOres(bars: List<String>): String? {
+        val started = bars.filter { bar -> requiredOres(bar).any { inventory.contains(it.id) } }
+        val bar = started.firstOrNull { bar -> requiredOres(bar).any { it.id != "coal" && inventory.contains(it.id) } } ?: started.firstOrNull() ?: return null
+        return Rows.getOrNull("bars.$bar")?.stringOrNull("requires_message")?.takeIf { it.isNotEmpty() }
     }
 
     fun smelt(player: Player, target: GameObject, id: String, amount: Int) {
