@@ -22,6 +22,7 @@ class CacheTranslationPatchTest {
     private val source = Source(CacheDelegate(root.resolve("data/cache").path + "/"))
     private val rows = CacheTranslationPatch.readTable(root.resolve(CacheTranslationPatch.TABLE_PATH))
     private val guide = CacheTranslationPatch.readTable(root.resolve(SkillGuideTranslation.TABLE_PATH))
+    private val walks = TaskWalkHint.read(root)
 
     private val kinds = mapOf(
         "name" to listOf("name_"),
@@ -72,7 +73,7 @@ class CacheTranslationPatchTest {
 
     @Test
     fun `Interface scripts read no English directly once patched`() {
-        val patch = CacheTranslationPatch.patch(source, rows, guide)
+        val patch = CacheTranslationPatch.patch(source, rows, guide, walks)
         val view = source.scriptIds().associateWith { patch.scripts[it] ?: source.script(it)!! } + patch.scripts
         val ours = setOf(patch.paramText, patch.taskEnum, patch.enumString, patch.tooltip) + patch.scripts.filterValues { it.name == CacheTranslationPatch.STRING }.keys
         val english = mutableListOf<String>()
@@ -142,7 +143,7 @@ class CacheTranslationPatchTest {
 
     @Test
     fun `Scripts the patch changes are written back byte for byte`() {
-        val patch = CacheTranslationPatch.patch(source, rows, guide)
+        val patch = CacheTranslationPatch.patch(source, rows, guide, walks)
         // Only the original scripts: the added ones hold Portuguese, which the decoder can't read back (UTF-8 vs Latin-1)
         for ((id, script) in patch.scripts) {
             if (script.name.orEmpty().startsWith("pt_br_")) {
@@ -155,7 +156,7 @@ class CacheTranslationPatchTest {
 
     @Test
     fun `The cache has the current translation`() {
-        val differences = CacheTranslationPatch.differences(source, CacheTranslationPatch.patch(source, rows, guide))
+        val differences = CacheTranslationPatch.differences(source, CacheTranslationPatch.patch(source, rows, guide, walks))
         assertTrue(
             differences.isEmpty(),
             "data/cache is missing the current interface translation; with the server stopped run " +

@@ -8,6 +8,7 @@ import world.gregs.voidps.cache.Index
 import world.gregs.voidps.cache.translation.CacheTranslationPatch
 import world.gregs.voidps.cache.translation.CacheTranslationPatch.Source
 import world.gregs.voidps.cache.translation.SkillGuideTranslation
+import world.gregs.voidps.cache.translation.TaskWalkHint
 import java.io.File
 import java.net.ServerSocket
 import kotlin.system.exitProcess
@@ -20,7 +21,7 @@ import kotlin.system.exitProcess
  *   dump  - writes the English texts in scope without translation to tools/translation/sources/missing_interfaces.json
  *   table - writes interface_pt_br.tables.toml from tools/translation/sources/pt_tasks*.json and pt_level_up*.json,
  *           and skill_guide_pt_br.guide.toml from pt_guide*.json
- *   patch - applies both tables to the cache
+ *   patch - applies both tables to the cache, with the walk to NPC icons of data/achievement/task_npcs.tables.toml
  * `--cache <dir>` and `--table <file>` point at another cache or table, e.g. a copy to try a change on.
  */
 object InterfaceTranslation {
@@ -199,7 +200,7 @@ object InterfaceTranslation {
                     exitProcess(1)
                 }
                 val guide = if (guideTable.exists()) CacheTranslationPatch.readTable(guideTable) else emptyList()
-                val patch = CacheTranslationPatch.patch(source, CacheTranslationPatch.readTable(table), guide)
+                val patch = CacheTranslationPatch.patch(source, CacheTranslationPatch.readTable(table), guide, TaskWalkHint.read(File(".")))
                 val differences = CacheTranslationPatch.differences(source, patch)
                 if (differences.isEmpty()) {
                     println("Cache already up to date.")

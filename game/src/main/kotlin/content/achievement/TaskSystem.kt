@@ -120,6 +120,9 @@ class TaskSystem : Script {
         interfaceOption("Hint", "task_system:hint_*") {
             val selected = get("task_slot_selected", 0)
             val index = indexOfSlot(this, selected) ?: return@interfaceOption
+            if (TaskWalk.walk(this, index, it.component.removePrefix("hint_").toInt())) {
+                return@interfaceOption
+            }
             val tile: Int = EnumDefinitions.getStructOrNull("task_structs", index, it.component.replace("hint_", "task_hint_tile_")) ?: return@interfaceOption
             // Marks the hint on the minimap and walks there like a world map marker; clicking it again clears it
             set("world_map_marker_custom", if (get("world_map_marker_custom", 0) == tile) 0 else tile)

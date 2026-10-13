@@ -447,6 +447,12 @@ GENERAL = [
     ("World map - WorldMapWalk.kt, walking to the marker", [
         ("world_map_walk_no_way", "You can't find a way to walk to your marker.", "Você não encontrou um caminho a pé até a sua marcação."),
     ]),
+    ("Task System - TaskWalk.kt, the hint's map icon walking to the task's NPC (%1% is already \"o Explorer Jack\" in Portuguese)", [
+        ("task_walk_no_way", "You can't find a way to walk to %1%.", "Você não encontrou um caminho a pé até %1%."),
+        ("task_walk_other_floor", "You couldn't reach %1%, who is on another floor.", "Não deu para chegar até %1%, que está em outro andar."),
+        ("task_walk_blocked", "You couldn't reach %1%: the way is blocked.", "Não deu para chegar até %1%: o caminho está fechado."),
+        ("task_walk_spawn", "This is where you'd usually find %1%.", "É aqui que %1% costuma ficar."),
+    ]),
     ("Glossary - short words skills insert into lines (rune types, metals, farming patches, directions); used where a pt line writes %1g% instead of %1%, see Translation.kt", [
         ("word_air", "air", "ar (air)"),
         ("word_mind", "mind", "mente (mind)"),

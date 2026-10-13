@@ -108,10 +108,10 @@ object CacheTranslationPatch {
     const val ENUM_STRING = "pt_br_enum_string"
     const val STRING = "pt_br_string"
     const val TOOLTIP = "pt_br_tooltip"
-    private const val ENUM_MARKER = Int.MIN_VALUE
+    internal const val ENUM_MARKER = Int.MIN_VALUE
 
     /** [ENUM_MARKER]'s value in an int enum, which can't hold the "pt_br" string */
-    private const val INT_MARKER = 0x70745F62
+    internal const val INT_MARKER = 0x70745F62
 
     /** A string constant a task script shows; [occurrence] picks one copy when the same text means different things */
     data class ScriptText(val script: Int, val english: String, val occurrence: Int? = null)
@@ -722,6 +722,7 @@ object CacheTranslationPatch {
         const val SSTORE = 36
         const val GOSUB = 40
         const val GET_VARC = 42
+        const val SET_VARC = 43
         const val ENUM_STRING = 3400
         const val ENUM = 3408
         const val ADD = 4000
@@ -732,8 +733,8 @@ object CacheTranslationPatch {
         val BRANCHES = setOf(6, 7, 8, 9, 10, 31, 32, 51)
     }
 
-    private const val KEY_INT = 105 // 'i'
-    private const val VALUE_STRING = 115 // 's'
+    internal const val KEY_INT = 105 // 'i'
+    internal const val VALUE_STRING = 115 // 's'
 
     /** Scripts and enums an earlier patch added, found by name and by a marker entry */
     private class Ours(source: Source) {
@@ -743,7 +744,7 @@ object CacheTranslationPatch {
         init {
             for (id in source.scriptIds()) {
                 val name = scriptName(source.scriptBytes(id) ?: continue)
-                if (name.startsWith("pt_br_")) {
+                if (name.startsWith("pt_br_") || name.startsWith(TaskWalkHint.PREFIX)) {
                     scripts[id] = source.script(id)!!
                 }
             }
@@ -808,6 +809,25 @@ object CacheTranslationPatch {
                     strings[i] = target.stringOperands!![3]
                 }
                 SkillGuideTranslation.COPY -> ints[i] = SkillGuideTranslation.originalOf(target)
+                TaskWalkHint.HINT -> {
+                    instructions[i] = Op.STRUCT_PARAM
+                    ints[i] = 0
+                }
+                TaskWalkHint.PROGRESS -> {
+                    instructions[i] = Op.GET_VARP
+                    ints[i] = TaskWalkHint.TUTORIAL_VARP
+                }
+                TaskWalkHint.TOOLTIP -> {
+                    // iload <component>, gosub after the tooltip's translation
+                    check(instructions[i - 1] == Op.ILOAD && instructions.none { it in Op.BRANCHES }) { "Can't remove the walk tooltip from script $id." }
+                    repeat(2) {
+                        instructions.removeAt(i - 1)
+                        ints.removeAt(i - 1)
+                        strings.removeAt(i - 1)
+                    }
+                    i--
+                    continue
+                }
                 TOOLTIP -> {
                     // A prefix hook: sload, gosub, sstore before the original first instruction
                     if (i == 1 && instructions[0] == Op.SLOAD && instructions[2] == Op.SSTORE) {
@@ -831,7 +851,7 @@ object CacheTranslationPatch {
         return copy(instructions = instructions.toIntArray(), intOperands = ints.toIntArray(), stringOperands = strings.toTypedArray())
     }
 
-    private class Builder(val name: String) {
+    internal class Builder(val name: String) {
         val instructions = mutableListOf<Int>()
         val ints = mutableListOf<Int>()
         val strings = mutableListOf<String?>()
@@ -998,8 +1018,11 @@ object CacheTranslationPatch {
         val guideCopies: Map<Int, Int>,
     )
 
-    /** Works out the patched scripts and enums for [rows] from the original cache, without writing anything */
-    fun patch(source: Source, rows: List<Row>, guide: List<Row> = emptyList()): Patch {
+    /**
+     * Works out the patched scripts and enums for [rows] from the original cache, without writing anything.
+     * [walks] adds the Task System tab's walk to NPC icons ([TaskWalkHint]).
+     */
+    fun patch(source: Source, rows: List<Row>, guide: List<Row> = emptyList(), walks: List<TaskWalkHint.Hint> = emptyList()): Patch {
         val ours = ours(source)
         val portuguese = rows.associate { it.id to it.portuguese }
         // Texts shared between params (a hint that's also a description) have one row, so these look up by kind
@@ -1197,6 +1220,23 @@ object CacheTranslationPatch {
             }
             check(changed) { "Script $id no longer calls the skill guide." }
             scripts[id] = caller.copy(intOperands = ints)
+        }
+
+        // Added last so the ids above stay the same with or without them
+        if (walks.isNotEmpty()) {
+            val lines = nextEnum++
+            val english = nextEnum++
+            val portugueseTips = nextEnum++
+            enums.putAll(TaskWalkHint.enums(walks, lines, english, portugueseTips))
+            val hint = nextScript++
+            val walkTooltip = nextScript++
+            val progress = nextScript++
+            scripts[hint] = TaskWalkHint.hint(hint, lines)
+            scripts[walkTooltip] = TaskWalkHint.tooltip(walkTooltip, lines, english, portugueseTips)
+            scripts[progress] = TaskWalkHint.progress(progress)
+            val drawer = scripts[TaskWalkHint.DRAW_HINTS] ?: source.script(TaskWalkHint.DRAW_HINTS)!!.original(source)
+            scripts[TaskWalkHint.DRAW_HINTS] = TaskWalkHint.callProgress(TaskWalkHint.callHint(drawer, hint), progress)
+            scripts[TOOLTIP_SCRIPT] = TaskWalkHint.callTooltip(scripts.getValue(TOOLTIP_SCRIPT), tooltip, walkTooltip)
         }
         return Patch(
             scripts = scripts,

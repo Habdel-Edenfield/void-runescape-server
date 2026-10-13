@@ -10,9 +10,12 @@ import org.junit.jupiter.api.Test
 import world.gregs.voidps.engine.client.ui.hasOpen
 import world.gregs.voidps.engine.client.ui.open
 import world.gregs.voidps.engine.data.definition.EnumDefinitions
+import world.gregs.voidps.engine.entity.character.npc.NPCs
 import world.gregs.voidps.type.Tile
 
 class TaskHintMarkerTest : WorldTest() {
+
+    override var loadNpcs: Boolean = true
 
     @Test
     fun `Map icon of a hint without an npc marks the minimap and walks there`() {
@@ -33,6 +36,28 @@ class TaskHintMarkerTest : WorldTest() {
         player.interfaceOption("task_system", "hint_1", "Hint")
 
         assertEquals(0, player["world_map_marker_custom", 0])
+        assertFalse(player.mode is MarkerWalk)
+    }
+
+    @Test
+    fun `Map icon of an npc hint marks the minimap too and clicking again clears it`() {
+        val player = createPlayer(Tile(3222, 3218))
+        player.open("task_system")
+        tick()
+        // Talk to Explorer Jack is pinned in the first slot, its first hint leads to him
+        assertEquals(3520, player["task_pinned", -1])
+
+        player.interfaceOption("task_system", "hint_1", "Hint")
+
+        val jack = NPCs.first { it.id == "explorer_jack" }
+        assertEquals(jack.tile.id, player["world_map_marker_custom", 0])
+        assertTrue(player.softTimers.contains("task_walk"))
+        tick(3)
+
+        player.interfaceOption("task_system", "hint_1", "Hint")
+
+        assertEquals(0, player["world_map_marker_custom", 0])
+        assertFalse(player.softTimers.contains("task_walk"))
         assertFalse(player.mode is MarkerWalk)
     }
 }

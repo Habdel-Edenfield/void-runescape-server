@@ -5548,6 +5548,24 @@ pt = "Distância de visão: muito longe."
 en = "You can't find a way to walk to your marker."
 pt = "Você não encontrou um caminho a pé até a sua marcação."
 
+# Task System - TaskWalk.kt, the hint's map icon walking to the task's NPC (%1% is already "o Explorer Jack" in Portuguese)
+
+[.task_walk_no_way]
+en = "You can't find a way to walk to %1%."
+pt = "Você não encontrou um caminho a pé até %1%."
+
+[.task_walk_other_floor]
+en = "You couldn't reach %1%, who is on another floor."
+pt = "Não deu para chegar até %1%, que está em outro andar."
+
+[.task_walk_blocked]
+en = "You couldn't reach %1%: the way is blocked."
+pt = "Não deu para chegar até %1%: o caminho está fechado."
+
+[.task_walk_spawn]
+en = "This is where you'd usually find %1%."
+pt = "É aqui que %1% costuma ficar."
+
 # Glossary - short words skills insert into lines (rune types, metals, farming patches, directions); used where a pt line writes %1g% instead of %1%, see Translation.kt
 
 [.word_air]

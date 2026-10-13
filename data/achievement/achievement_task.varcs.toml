@@ -31,3 +31,9 @@ format = "boolean"
 id = 1429
 format = "boolean"
 persist = true
+
+# Struct of the task the Task System tab drew last, written by the client's own scripts for the walk to NPC
+# icon (TaskWalkHint in the cache module); listed so nothing else takes it, the server never sets it
+[task_walk_struct]
+id = 2001
+format = "int"

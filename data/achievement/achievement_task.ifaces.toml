@@ -122,6 +122,15 @@ id = 79
 [.hint_3]
 id = 81
 
+[.hint_4]
+id = 83
+
+[.hint_5]
+id = 85
+
+[.hint_6]
+id = 87
+
 [.pin]
 id = 88
 

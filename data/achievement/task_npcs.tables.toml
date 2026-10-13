@@ -1,0 +1,164 @@
+# Tasks whose hints point at an NPC: the map icon on hint line `hint` of the Task System tab walks the player there.
+# Rows are task struct ids (data/client/structs.toml). `tile` is where the NPC spawns, used when it isn't around.
+# `name` and `pt` are how the NPC reads in a sentence ("Click to walk to the Cook." / "Clique para andar até o Cook.").
+# The cache reads this too (icon and tooltip, CacheTranslationPatch): after changing it, apply the patch to the cache.
+
+[task_npcs]
+npc = "npc"
+hint = "int"
+tile = "tile"
+name = "string"
+pt = "string"
+
+# Tutorial set
+
+[.introducing_explorer_jack_task]
+npc = "explorer_jack"
+hint = 1
+tile = { x = 3204, y = 3241 }
+name = "Explorer Jack"
+pt = "o Explorer Jack"
+
+# Lumbridge and Draynor
+
+[.a_grave_consideration_task]
+npc = "father_aereck"
+hint = 3
+tile = { x = 3246, y = 3205 }
+name = "Father Aereck"
+pt = "o Father Aereck"
+
+[.doom_task]
+npc = "doomsayer"
+hint = 2
+tile = { x = 3237, y = 3227 }
+name = "the Doomsayer"
+pt = "o Doomsayer"
+
+[.hail_to_the_duke_baby_task]
+npc = "duke_horacio"
+hint = 1
+tile = { x = 3212, y = 3220, level = 1 }
+name = "Duke Horacio"
+pt = "o Duke Horacio"
+
+[.window_shopping_task]
+npc = "shopkeeper_lumbridge"
+hint = 2
+tile = { x = 3214, y = 3240 }
+name = "the Shopkeeper"
+pt = "o Shopkeeper"
+
+[.sage_advice_task]
+npc = "lumbridge_sage"
+hint = 1
+tile = { x = 3238, y = 3219 }
+name = "the Lumbridge Sage"
+pt = "o Lumbridge Sage"
+
+[.passing_out_task]
+npc = "border_guard_al_kharid"
+hint = 1
+tile = { x = 3266, y = 3229 }
+name = "the Border Guard"
+pt = "o Border Guard"
+
+[.the_rules_of_engagement_task]
+npc = "town_crier_draynor"
+hint = 4
+tile = { x = 3079, y = 3249 }
+name = "the Town Crier"
+pt = "o Town Crier"
+
+[.the_fruit_of_the_sea_task]
+npc = "hank"
+hint = 2
+tile = { x = 3195, y = 3254 }
+name = "Hank"
+pt = "o Hank"
+
+[.bless_is_more_task]
+npc = "father_aereck"
+hint = 2
+tile = { x = 3246, y = 3205 }
+name = "Father Aereck"
+pt = "o Father Aereck"
+
+[.morgan_the_merrier_task]
+npc = "morgan"
+hint = 2
+tile = { x = 3098, y = 3268 }
+name = "Morgan"
+pt = "o Morgan"
+
+[.you_can_bank_on_us_task]
+npc = "banker_3"
+hint = 2
+tile = { x = 3208, y = 3222, level = 2 }
+name = "the Banker"
+pt = "o Banker"
+
+[.hang_on_to_something_task]
+npc = "banker_3"
+hint = 2
+tile = { x = 3208, y = 3222, level = 2 }
+name = "the Banker"
+pt = "o Banker"
+
+[.must_be_funny_in_a_rich_mans_world_task]
+npc = "explorer_jack"
+hint = 2
+tile = { x = 3204, y = 3241 }
+name = "Explorer Jack"
+pt = "o Explorer Jack"
+
+[.absolutely_enchanting_task]
+npc = "explorer_jack"
+hint = 4
+tile = { x = 3204, y = 3241 }
+name = "Explorer Jack"
+pt = "o Explorer Jack"
+
+[.tan_your_hide_task]
+npc = "ellis"
+hint = 1
+tile = { x = 3276, y = 3193 }
+name = "Ellis"
+pt = "o Ellis"
+
+# Quests
+
+[.the_blood_pact_task]
+npc = "xenia"
+hint = 1
+tile = { x = 3244, y = 3198 }
+name = "Xenia"
+pt = "a Xenia"
+
+[.the_restless_ghost]
+npc = "father_aereck"
+hint = 1
+tile = { x = 3246, y = 3205 }
+name = "Father Aereck"
+pt = "o Father Aereck"
+
+[.cooks_assistant]
+npc = "cook_lumbridge"
+hint = 1
+tile = { x = 3209, y = 3215 }
+name = "the Cook"
+pt = "o Cook"
+
+[.rune_mysteries]
+npc = "duke_horacio"
+hint = 1
+tile = { x = 3212, y = 3220, level = 1 }
+name = "Duke Horacio"
+pt = "o Duke Horacio"
+
+[.myths_of_the_white_lands_task]
+npc = "explorer_jack"
+hint = 1
+tile = { x = 3204, y = 3241 }
+name = "Explorer Jack"
+pt = "o Explorer Jack"
