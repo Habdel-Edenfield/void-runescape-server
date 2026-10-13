@@ -14,13 +14,14 @@ import java.io.File
  * The Task System interfaces (task list, sidebar tab, pop-up) and the level up pop-up are drawn by the client
  * from the cache, so these check what the client would show a Portuguese player: every text in scope has
  * Portuguese, no interface script reads the English directly once patched, and data/cache has the patch.
- * The level up pop-up's list of unlocks comes from the skill guides, which aren't translated yet.
+ * The skill guide and the level up pop-up's list of unlocks are checked in [SkillGuideTranslationTest].
  */
 class CacheTranslationPatchTest {
 
     private val root = generateSequence(File("").absoluteFile) { it.parentFile }.first { it.resolve("data/cache").isDirectory }
     private val source = Source(CacheDelegate(root.resolve("data/cache").path + "/"))
     private val rows = CacheTranslationPatch.readTable(root.resolve(CacheTranslationPatch.TABLE_PATH))
+    private val guide = CacheTranslationPatch.readTable(root.resolve(SkillGuideTranslation.TABLE_PATH))
 
     private val kinds = mapOf(
         "name" to listOf("name_"),
@@ -71,7 +72,7 @@ class CacheTranslationPatchTest {
 
     @Test
     fun `Interface scripts read no English directly once patched`() {
-        val patch = CacheTranslationPatch.patch(source, rows)
+        val patch = CacheTranslationPatch.patch(source, rows, guide)
         val view = source.scriptIds().associateWith { patch.scripts[it] ?: source.script(it)!! } + patch.scripts
         val ours = setOf(patch.paramText, patch.taskEnum, patch.enumString, patch.tooltip) + patch.scripts.filterValues { it.name == CacheTranslationPatch.STRING }.keys
         val english = mutableListOf<String>()
@@ -141,7 +142,7 @@ class CacheTranslationPatchTest {
 
     @Test
     fun `Scripts the patch changes are written back byte for byte`() {
-        val patch = CacheTranslationPatch.patch(source, rows)
+        val patch = CacheTranslationPatch.patch(source, rows, guide)
         // Only the original scripts: the added ones hold Portuguese, which the decoder can't read back (UTF-8 vs Latin-1)
         for ((id, script) in patch.scripts) {
             if (script.name.orEmpty().startsWith("pt_br_")) {
@@ -154,7 +155,7 @@ class CacheTranslationPatchTest {
 
     @Test
     fun `The cache has the current translation`() {
-        val differences = CacheTranslationPatch.differences(source, CacheTranslationPatch.patch(source, rows))
+        val differences = CacheTranslationPatch.differences(source, CacheTranslationPatch.patch(source, rows, guide))
         assertTrue(
             differences.isEmpty(),
             "data/cache is missing the current interface translation; with the server stopped run " +

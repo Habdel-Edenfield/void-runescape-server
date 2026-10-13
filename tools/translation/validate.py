@@ -1,7 +1,10 @@
-"""Validates a translation file against its group. Usage: python3 -I validate.py group_N.json pt_groupN.json"""
+"""Validates a translation file against its group. Usage: python3 -I validate.py group_N.json pt_groupN.json [--guide]
+
+--guide allows the longer skill guide sentences, where an item gets its English name in brackets."""
 import json, re, sys
 group = json.load(open(sys.argv[1]))
 pt = json.load(open(sys.argv[2]))
+guide = "--guide" in sys.argv[3:]
 expected = [line["en"] for lines in group.values() for line in lines]
 problems = []
 for en in expected:
@@ -9,7 +12,7 @@ for en in expected:
         problems.append(f"MISSING: {en}")
         continue
     text = pt[en]
-    if not text.strip():
+    if not text.strip() and en.strip():
         problems.append(f"EMPTY: {en}")
     bad = [c for c in text if ord(c) > 0xFF or ord(c) < 0x20]
     if bad:
@@ -23,7 +26,7 @@ for en in expected:
     for tag in re.findall(r"<[^>]+>", en):
         if tag not in text:
             problems.append(f"LOST TAG {tag}: {text}")
-    if len(text) > max(60, len(en) * 1.6):
+    if len(text) > (len(en) * 2.6 + 40 if guide else max(60, len(en) * 1.6)):
         problems.append(f"TOO LONG ({len(text)} vs {len(en)}): {text}")
 extra = [k for k in pt if k not in expected]
 for k in extra:

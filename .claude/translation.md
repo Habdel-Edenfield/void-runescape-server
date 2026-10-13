@@ -1,6 +1,6 @@
 # Tradução pt-BR (só neste fork)
 
-Tradução do texto que o servidor envia ao jogador e, para a janela de tarefas, do texto que o cliente desenha a partir do cache. Branch `feat/pt-br-dialogue-prototype` (sobre `fix/network-text-latin1`). Feitos: Ilha Tutorial, Lumbridge, mensagens das habilidades (com as conversas dos familiares de Summoning), a janela de tarefas (todos os conjuntos: as 509 tarefas), a janela de "subiu de nível" (sem a lista de desbloqueios), os rótulos fixos do item 1 do mapa e as janelas do item 2 (abas Logout, Opções, Habilidades, Quest Journal, Estilos de combate e Orações; amigos, ignorados, clã e chat; banco e loja). Mapa do que falta: `tools/translation/map_text.py` + `build_report.py`.
+Tradução do texto que o servidor envia ao jogador e, para a janela de tarefas, do texto que o cliente desenha a partir do cache. Branch `feat/pt-br-dialogue-prototype` (sobre `fix/network-text-latin1`). Feitos: Ilha Tutorial, Lumbridge, mensagens das habilidades (com as conversas dos familiares de Summoning), a janela de tarefas (todos os conjuntos: as 509 tarefas), a janela de "subiu de nível", o guia de habilidades (com a lista de desbloqueios), os rótulos fixos do item 1 do mapa e as janelas do item 2 (abas Logout, Opções, Habilidades, Quest Journal, Estilos de combate e Orações; amigos, ignorados, clã e chat; banco e loja). Mapa do que falta: `tools/translation/map_text.py` + `build_report.py`.
 
 ## Como funciona
 
@@ -23,6 +23,17 @@ A janela de tarefas (interface 917), a aba lateral (1056), o aviso "Task Complet
 - **Cliente**: baixa sozinho os arquivos que mudaram ao abrir (compara com o servidor). Depois de gravar o cache: reiniciar o servidor **e** fechar/abrir o cliente. Cópia do cache original em `~/Documents/void-downloads/cache-antes-tarefas-pt/`.
 - **Scripts conferidos**: `CHECKED_SCRIPTS` lista, para cada script das abas e do chat, o que fica em inglês de propósito (opções do botão direito, nomes de golpes e estilos, nomes de janela). O teste falha em qualquer outra frase com letras; assinaturas de hook e frases só de tags/números/pontuação passam sozinhas.
 - **Testes**: `CacheTranslationPatchTest` (módulo `cache`: todo texto das janelas tem português, nenhum script lê o inglês direto depois do patch, o `data/cache` está com a versão atual) e `TaskTranslationTest` (módulo `game`: chat, rótulos das janelas, varc). Os testes do módulo `tools` **não rodam** na suíte (`buildSrc/shared.gradle.kts`), por isso a lógica fica no `cache`.
+
+## Guia de habilidades (Skill Advance Guide)
+
+A janela do guia (499, `skill_guide`) e a lista do que se desbloqueia na janela de "subiu de nível" (741) leem o texto dos **scripts de dados do guia**: por habilidade, um com os nomes do menu e um com as entradas (nome da lista + frase "You can now..."), mais 2, 3 (Construction), 2787, 2788 (Prayer), 3354, 3355 (Dungeoneering). São ~9.700 textos. Eles só empilham constantes, então:
+
+- **Lógica** em `cache/.../translation/SkillGuideTranslation.kt`: cada script de dados ganha uma **cópia em português** (`pt_br_guide`, mesmas instruções; o texto traduzido vai no primeiro pedaço do `join_string` e os outros ficam vazios). A cópia começa chamando o original quando o varc 2000 não é 1. Os únicos que chamam os scripts de dados (13 menu, 14 entradas, 1567 extras do "subiu de nível") passam a chamar a cópia: troca de 1 instrução. Saltos e `switch` são relativos, então o prefixo não move nada.
+- **Unidade de tradução** = o texto inteiro como o jogador vê (pedaços juntados). Fontes `tools/translation/sources/pt_guide_N.json` (grupos `group_guide_N.json`), regras na seção "Guia de habilidades" do `GUIA_DE_ESTILO.md` (nome da lista em inglês; frase em português com o item em português + inglês entre parênteses, decisão de 2026-10-13).
+- **Tabela** `skill_guide_pt_br.guide.toml` (gerada pelo `translateInterfaces --args=table`; a extensão `.guide.toml` deixa o servidor de fora: só o cache usa). `patch` aplica as duas tabelas. Texto sem tradução fica em inglês (o `table` só conta).
+- Título: o nome da habilidade fica em inglês; " - Members Only" vai por `SCRIPT_TEXTS` (script 23); "More Info" pelas dicas da 499 (o subtítulo, como "Barbarian", vem dos nomes do menu).
+- O leitor de scripts do patch agora lê texto como Latin-1 (`Latin1Reader`), então scripts com acento ("Naïve") são lidos e regravados sem estragar.
+- **Testes**: `SkillGuideTranslationTest` (módulo `cache`): todo texto tem português, os chamadores só chamam as cópias, cada cópia roda as mesmas instruções e mostra o português.
 
 ## Método por região
 
@@ -67,7 +78,7 @@ Chat e caixas de fala de `content/skill/**`, mais as mensagens das tabelas de da
 - Erros do jogo original achados na tradução: falas trocadas entre bicho e jogador no Spirit Tz-Kih (conversa 0) e no Iron Titan (conversa 3); o Hoardstalker põe o nome do jogador onde deveria vir "hoardstalker".
 
 - Janela de tarefas: só o conjunto de Lumbridge tem a mensagem de quem entrega a recompensa (`TaskSystem.kt`); nos outros o servidor diz "someone somewhere" ("alguém em algum lugar").
-- Janela de "subiu de nível": a lista do que se desbloqueia vem do **guia de habilidades** (scripts 977-1022, 1566, 1567, 2787, 2788, 3354, 3355; ~8.200 frases, muitas montadas em pedaços) e continua em inglês. O guia é um projeto à parte. O título "Task List" e as opções do botão direito ficam em inglês pelo guia.
+- O título "Task List" e as opções do botão direito ficam em inglês pelo guia.
 
 - Fala da Xenia (história do Dragith Nurn) > 512 bytes: continua em inglês.
 - Uma segunda fala de Lumbridge falta no mapa (1.123/1.125): localizar com `map_text.py`.

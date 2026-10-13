@@ -68,5 +68,8 @@
  " If you die you will keep all your items, except items from the dispensors, logs, hammers and Penance eggs.": " Se você morrer, mantém todos os itens, menos os dos distribuidores, toras, martelos e ovos de Penance.",
  " If you die you will keep all the items you brought with you.": " Se você morrer, mantém todos os itens que trouxe.",
  ". See information to the left for a more detailed description.": ". Veja as informações à esquerda para mais detalhes.",
- "All items !": "Todos os itens!"
+ "All items !": "Todos os itens!",
+ " - Members Only": " - Só para membros",
+ "<u=000080>More Info</u>": "<u=000080>Mais informações</u>",
+ "<u=ffffff>More Info</u>": "<u=ffffff>Mais informações</u>"
 }

@@ -1,6 +1,7 @@
 package world.gregs.voidps.cache.translation
 
 import world.gregs.voidps.buffer.read.ArrayReader
+import world.gregs.voidps.buffer.read.Reader
 import world.gregs.voidps.buffer.write.ArrayWriter
 import world.gregs.voidps.cache.Cache
 import world.gregs.voidps.cache.Index
@@ -72,6 +73,7 @@ object CacheTranslationPatch {
         "friends_list" to 550, "ignore_list" to 551, "clan_chat" to 589, "chat_background" to 137, "filter_buttons" to 751,
         "bank" to 762, "shop" to 620,
         "quest_intro" to 178, "audio_options" to 743, "area_status_icon" to 745, "toplevel" to 548, "toplevel_full" to 746,
+        "skill_guide" to 499,
     )
 
     /** Month names, read with `enum` by the date of birth box and other dates */
@@ -144,6 +146,8 @@ object CacheTranslationPatch {
         ScriptText(3222, " ", occurrence = 0),
         ScriptText(3222, "To complete this Task, you must complete the "),
         ScriptText(3222, " quest."),
+        // Skill guide title: "Agility" + " - Members Only"
+        ScriptText(23, " - Members Only"),
         // Level up pop-up
         ScriptText(973, "You've just advanced 2 Herblore levels!"),
         ScriptText(973, "You've just advanced 3 Summoning levels!"),
@@ -552,7 +556,7 @@ object CacheTranslationPatch {
         fun script(id: Int): ClientScriptDefinition? {
             val data = scriptBytes(id) ?: return null
             val definition = ClientScriptDefinition(id)
-            ClientScriptDecoder().readLoop(definition, ArrayReader(data))
+            ClientScriptDecoder().readLoop(definition, Latin1Reader(ArrayReader(data)))
             return definition
         }
 
@@ -754,6 +758,18 @@ object CacheTranslationPatch {
         }
     }
 
+    /** Reads text as Latin-1, as the cache stores it, so scripts with accents are written back unchanged */
+    private class Latin1Reader(private val reader: ArrayReader) : Reader by reader {
+        override fun readString(): String {
+            val start = reader.position
+            val end = reader.array.indexOf(0, start)
+            reader.position(end + 1)
+            return String(reader.array, start, end - start, Charsets.ISO_8859_1)
+        }
+
+        private fun ByteArray.indexOf(value: Byte, from: Int): Int = (from until size).first { this[it] == value }
+    }
+
     /** Name at the start of a script, read as Latin-1 so translated text never trips the decoder */
     private fun scriptName(data: ByteArray): String = String(data, 0, data.indexOf(0), Charsets.ISO_8859_1)
 
@@ -791,6 +807,7 @@ object CacheTranslationPatch {
                     ints[i] = 0
                     strings[i] = target.stringOperands!![3]
                 }
+                SkillGuideTranslation.COPY -> ints[i] = SkillGuideTranslation.originalOf(target)
                 TOOLTIP -> {
                     // A prefix hook: sload, gosub, sstore before the original first instruction
                     if (i == 1 && instructions[0] == Op.SLOAD && instructions[2] == Op.SSTORE) {
@@ -977,10 +994,12 @@ object CacheTranslationPatch {
         val taskEnum: Int,
         val enumString: Int,
         val tooltip: Int,
+        /** Skill guide data script to its Portuguese copy */
+        val guideCopies: Map<Int, Int>,
     )
 
     /** Works out the patched scripts and enums for [rows] from the original cache, without writing anything */
-    fun patch(source: Source, rows: List<Row>): Patch {
+    fun patch(source: Source, rows: List<Row>, guide: List<Row> = emptyList()): Patch {
         val ours = ours(source)
         val portuguese = rows.associate { it.id to it.portuguese }
         // Texts shared between params (a hint that's also a description) have one row, so these look up by kind
@@ -1157,6 +1176,28 @@ object CacheTranslationPatch {
         for ((key, id) in stringScripts) {
             scripts[id] = string(id, key.first, key.second)
         }
+
+        // Skill guide: a Portuguese copy of each data script, called instead of it
+        val guideTexts = guide.associate { it.english to it.portuguese }
+        val guideCopies = mutableMapOf<Int, Int>()
+        for (id in SkillGuideTranslation.DATA_SCRIPTS) {
+            val copy = nextScript++
+            scripts[copy] = SkillGuideTranslation.copy(copy, source.script(id)!!, guideTexts)
+            guideCopies[id] = copy
+        }
+        for (id in SkillGuideTranslation.CALLERS) {
+            val caller = scripts[id] ?: source.script(id)!!.original(source)
+            val ints = caller.intOperands!!.copyOf()
+            var changed = false
+            for (i in caller.instructions.indices) {
+                if (caller.instructions[i] == Op.GOSUB && ints[i] in guideCopies) {
+                    ints[i] = guideCopies.getValue(ints[i])
+                    changed = true
+                }
+            }
+            check(changed) { "Script $id no longer calls the skill guide." }
+            scripts[id] = caller.copy(intOperands = ints)
+        }
         return Patch(
             scripts = scripts,
             enums = enums,
@@ -1167,11 +1208,12 @@ object CacheTranslationPatch {
             taskEnum = taskEnum,
             enumString = enumString,
             tooltip = tooltip,
+            guideCopies = guideCopies,
         )
     }
 
     fun encode(script: ClientScriptDefinition): ByteArray {
-        val writer = ArrayWriter(4096 + script.instructions.size * 8)
+        val writer = ArrayWriter(4096 + script.instructions.size * 8 + script.stringOperands.orEmpty().sumOf { it?.length ?: 0 })
         with(ClientScriptEncoder()) { writer.encode(script) }
         return writer.toArray()
     }

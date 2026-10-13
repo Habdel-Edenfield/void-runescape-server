@@ -7069,787 +7069,791 @@ pt = "Para concluir esta tarefa, você precisa completar a missão "
 en = " quest."
 pt = "."
 
-[.script_973_72]
+[.script_23_72]
+en = " - Members Only"
+pt = " - Só para membros"
+
+[.script_973_73]
 en = "You've just advanced 2 Herblore levels!"
 pt = "Você subiu 2 níveis em Herblore!"
 
-[.script_973_73]
+[.script_973_74]
 en = "You've just advanced 3 Summoning levels!"
 pt = "Você subiu 3 níveis em Summoning!"
 
-[.script_973_74]
+[.script_973_75]
 en = "You have now reached level "
 pt = "Agora você está no nível "
 
-[.script_973_75]
+[.script_973_76]
 en = "You've now reached the highest skill level that you can achieve during the tutorial. Once you finish the tutorial, you can advance this skill even further!"
 pt = "Você chegou ao nível mais alto desta habilidade durante o tutorial. Quando terminar o tutorial, poderá avançar ainda mais!"
 
-[.script_973_76]
+[.script_973_77]
 en = "Well done! You've reached the total level "
 pt = "Muito bem! Você atingiu o marco de nível total "
 
-[.script_973_77]
+[.script_973_78]
 en = "Well done! You've reached the Combat level "
 pt = "Muito bem! Você atingiu o marco de nível de combate "
 
-[.script_973_78]
+[.script_973_79]
 en = " milestone!"
 pt = "!"
 
-[.script_973_79]
+[.script_973_80]
 en = "Check out the skill advance guide to see what you'll be able to do when you reach even higher levels..."
 pt = "Veja no Skill Advance Guide o que você vai poder fazer em níveis ainda mais altos..."
 
-[.script_1025_80]
+[.script_1025_81]
 en = "Level "
 pt = "Nível "
 
-[.script_1025_81]
+[.script_1025_82]
 en = " is one of the requirements for "
 pt = " é um dos requisitos da missão "
 
-[.script_1025_82]
+[.script_1025_83]
 en = "You now have all the levels you need to complete "
 pt = "Agora você tem todos os níveis necessários para completar a missão "
 
-[.script_1104_83]
+[.script_1104_84]
 en = "When you have finished playing"
 pt = "Quando terminar de jogar"
 
-[.script_1104_84]
+[.script_1104_85]
 en = "RuneScape, always use a"
 pt = "RuneScape, use sempre um"
 
-[.script_1104_85]
+[.script_1104_86]
 en = "RuneScape, always use the"
 pt = "RuneScape, use sempre o"
 
-[.script_1104_86]
+[.script_1104_87]
 en = "button below to exit the game and logout safely."
 pt = "botão abaixo para sair do jogo com segurança."
 
-[.script_1104_87]
+[.script_1104_88]
 en = "Exit to Lobby"
 pt = "Sair para o lobby"
 
-[.script_1104_88]
+[.script_1104_89]
 en = "Exit to Login"
 pt = "Sair para o login"
 
-[.script_1104_89]
+[.script_1104_90]
 en = "Click here to log out"
 pt = "Clique aqui para sair"
 
-[.script_1264_90]
+[.script_1264_91]
 en = "Mouse buttons"
 pt = "Botões do mouse"
 
-[.script_1264_91]
+[.script_1264_92]
 en = "(currently 2)"
 pt = "(agora 2)"
 
-[.script_1264_92]
+[.script_1264_93]
 en = "(currently 1)"
 pt = "(agora 1)"
 
-[.script_1265_93]
+[.script_1265_94]
 en = "Chat effects"
 pt = "Efeitos do chat"
 
-[.script_1265_94]
+[.script_1265_95]
 en = "(currently off)"
 pt = "(agora desligado)"
 
-[.script_1265_95]
+[.script_1265_96]
 en = "(currently on)"
 pt = "(agora ligado)"
 
-[.script_1269_96]
+[.script_1269_97]
 en = "Accept aid"
 pt = "Aceitar ajuda"
 
-[.script_1271_97]
+[.script_1271_98]
 en = "Run (currently off)"
 pt = "Correr (agora desligado)"
 
-[.script_1271_98]
+[.script_1271_99]
 en = "Run (currently on)"
 pt = "Correr (agora ligado)"
 
-[.script_1272_99]
+[.script_1272_100]
 en = "House options"
 pt = "Opções da casa"
 
-[.script_544_100]
+[.script_544_101]
 en = "Total level: "
 pt = "Nível total: "
 
-[.script_547_101]
+[.script_547_102]
 en = "Members' Skill"
 pt = "Habilidade de membros"
 
-[.script_547_102]
+[.script_547_103]
 en = "Current Xp:"
 pt = "XP atual:"
 
-[.script_547_103]
+[.script_547_104]
 en = "Next level:"
 pt = "Próximo nível:"
 
-[.script_547_104]
+[.script_547_105]
 en = "Remainder:"
 pt = "Faltam:"
 
-[.script_547_105]
+[.script_547_106]
 en = "Target lvl:"
 pt = "Nível alvo:"
 
-[.script_547_106]
+[.script_547_107]
 en = "Target xp:"
 pt = "XP alvo:"
 
-[.script_547_107]
+[.script_547_108]
 en = "Target XP:"
 pt = "XP alvo:"
 
-[.script_943_108]
+[.script_943_109]
 en = "More advanced grouping options are available on a members' world."
 pt = "Mais opções de agrupamento estão disponíveis em mundos de membros."
 
-[.script_943_109]
+[.script_943_110]
 en = "More advanced grouping options will be available when you've finished the Tutorial."
 pt = "Mais opções de agrupamento ficam disponíveis quando você terminar o tutorial."
 
-[.script_2162_110]
+[.script_2162_111]
 en = "Showing all "
 pt = "Mostrando todos os "
 
-[.script_2162_111]
+[.script_2162_112]
 en = " items"
 pt = " itens"
 
-[.script_2162_112]
+[.script_2162_113]
 en = "Showing "
 pt = "Mostrando "
 
-[.script_2162_113]
+[.script_2162_114]
 en = " of "
 pt = " de "
 
-[.script_2162_114]
+[.script_2162_115]
 en = " (reversed)"
 pt = " (invertido)"
 
-[.script_2166_115]
+[.script_2166_116]
 en = "Quest Points: "
 pt = "Pontos de missão: "
 
-[.script_2168_116]
+[.script_2168_117]
 en = "More advanced sorting options are available on a members' world."
 pt = "Mais opções de ordenação estão disponíveis em mundos de membros."
 
-[.script_2168_117]
+[.script_2168_118]
 en = "More advanced sorting options are available after the Tutorial."
 pt = "Mais opções de ordenação ficam disponíveis depois do tutorial."
 
-[.script_2169_118]
+[.script_2169_119]
 en = "Free/Members"
 pt = "Grátis/Membros"
 
-[.script_2176_119]
+[.script_2176_120]
 en = "Click to hide the quests you cannot start."
 pt = "Clique para esconder as missões que você não pode começar."
 
-[.script_2176_120]
+[.script_2176_121]
 en = "Some recommended stats and abilities (such as combat levels) are left for you to decide."
 pt = "Alguns atributos recomendados (como o nível de combate) ficam a seu critério."
 
-[.script_2176_121]
+[.script_2176_122]
 en = "Click to show all quests regardless of requirements."
 pt = "Clique para mostrar todas as missões, sem olhar os requisitos."
 
-[.script_2176_122]
+[.script_2176_123]
 en = "Click to hide the quests you have completed."
 pt = "Clique para esconder as missões que você já completou."
 
-[.script_2176_123]
+[.script_2176_124]
 en = "Click to show all quests regardless of completion status."
 pt = "Clique para mostrar todas as missões, completas ou não."
 
-[.script_1131_124]
+[.script_1131_125]
 en = "Combat Lvl: "
 pt = "Nível de combate: "
 
-[.script_1133_125]
+[.script_1133_126]
 en = "Unarmed"
 pt = "Desarmado"
 
-[.script_1137_126]
+[.script_1137_127]
 en = "Special Attack ("
 pt = "Ataque especial ("
 
-[.script_1139_127]
+[.script_1139_128]
 en = "Auto Retaliate "
 pt = "Revide automático "
 
-[.script_1139_128]
+[.script_1139_129]
 en = "(Off)"
 pt = "(Desligado)"
 
-[.script_1139_129]
+[.script_1139_130]
 en = "(On)"
 pt = "(Ligado)"
 
-[.script_1142_130]
+[.script_1142_131]
 en = "Attack XP"
 pt = "XP de Attack"
 
-[.script_1142_131]
+[.script_1142_132]
 en = "Strength XP"
 pt = "XP de Strength"
 
-[.script_1142_132]
+[.script_1142_133]
 en = "Defence XP"
 pt = "XP de Defence"
 
-[.script_1142_133]
+[.script_1142_134]
 en = "Ranged XP"
 pt = "XP de Ranged"
 
-[.script_1142_134]
+[.script_1142_135]
 en = "Magic XP"
 pt = "XP de Magic"
 
-[.script_1142_135]
+[.script_1142_136]
 en = "Shared XP"
 pt = "XP dividida"
 
-[.script_1143_136]
+[.script_1143_137]
 en = "When active, you will automatically fight back if attacked."
 pt = "Ligado, você revida sozinho quando for atacado."
 
-[.script_1143_137]
+[.script_1143_138]
 en = "Select to perform a special attack."
 pt = "Selecione para fazer um ataque especial."
 
-[.script_1698_138]
+[.script_1698_139]
 en = "This is the effect that prayers and curses have during combat. It includes curses that have used against you. The adjustment has no effect outside of combat. The percentage shown is relative to your skill level and may vary depending on the enemy you are fighting, and the prayers or curses used. Partial percentages are not shown."
 pt = "Este é o efeito das orações e maldições (curses) durante o combate, incluindo as usadas contra você. O ajuste não vale fora do combate. A porcentagem é relativa ao seu nível na habilidade e pode variar conforme o inimigo e as orações ou maldições usadas. Porcentagens parciais não aparecem."
 
-[.script_1700_139]
+[.script_1700_140]
 en = "Hide stat adjustments."
 pt = "Esconder ajustes de atributos."
 
-[.script_1700_140]
+[.script_1700_141]
 en = "Show stat adjustments."
 pt = "Mostrar ajustes de atributos."
 
-[.script_2299_141]
+[.script_2299_142]
 en = "Select your quick curses:"
 pt = "Escolha suas maldições rápidas:"
 
-[.script_2299_142]
+[.script_2299_143]
 en = "Select your quick prayers:"
 pt = "Escolha suas orações rápidas:"
 
-[.script_84_143]
+[.script_84_144]
 en = "From "
 pt = "De "
 
-[.script_84_144]
+[.script_84_145]
 en = "To "
 pt = "Para "
 
-[.script_89_145]
+[.script_89_146]
 en = "System update in: "
 pt = "Atualização do sistema em: "
 
-[.script_175_146]
+[.script_175_147]
 en = "You can't do this while in the tutorial."
 pt = "Você não pode fazer isso durante o tutorial."
 
-[.script_175_147]
+[.script_175_148]
 en = "The friends list is still loading, your selection won't take effect immediately."
 pt = "A lista de amigos ainda está carregando; sua escolha não vale na hora."
 
-[.script_73_148]
+[.script_73_149]
 en = "Chat is not available until your Date of Birth is recorded. Please enter your DOB above."
 pt = "O chat só fica disponível depois que sua data de nascimento for registrada. Informe-a acima."
 
-[.script_73_149]
+[.script_73_150]
 en = "That player is not on your Friends list."
 pt = "Esse jogador não está na sua lista de amigos."
 
-[.script_73_150]
+[.script_73_151]
 en = "You haven't received any messages to which you can reply."
 pt = "Você não recebeu nenhuma mensagem para responder."
 
-[.script_73_151]
+[.script_73_152]
 en = "Use the reverse apostrophe (`) key to open the console to enter that command."
 pt = "Use a tecla de crase (`) para abrir o console e digitar esse comando."
 
-[.script_73_152]
+[.script_73_153]
 en = "It is usually located under the ESC key."
 pt = "Ela costuma ficar embaixo da tecla ESC."
 
-[.script_73_153]
+[.script_73_154]
 en = "You aren't in a Clan Chat channel."
 pt = "Você não está em um canal de Clan Chat."
 
-[.script_86_154]
+[.script_86_155]
 en = "You cannot add a friend until you have entered your date of birth"
 pt = "Você não pode adicionar amigos antes de informar sua data de nascimento"
 
-[.script_102_155]
+[.script_102_156]
 en = "Click here to continue"
 pt = "Clique aqui para continuar"
 
-[.script_107_156]
+[.script_107_157]
 en = "You can't do that while you're reporting abuse."
 pt = "Você não pode fazer isso enquanto faz uma denúncia."
 
-[.script_107_157]
+[.script_107_158]
 en = "Enter message to send to "
 pt = "Digite a mensagem para "
 
-[.script_1037_158]
+[.script_1037_159]
 en = "Search for: *"
 pt = "Buscar: *"
 
-[.script_1038_159]
+[.script_1038_160]
 en = "Search for: "
 pt = "Buscar: "
 
-[.script_1039_160]
+[.script_1039_161]
 en = "Too many results. Please refine your search."
 pt = "Resultados demais. Refine a busca."
 
-[.script_1039_161]
+[.script_1039_162]
 en = "No matching items found."
 pt = "Nada encontrado."
 
-[.script_1047_162]
+[.script_1047_163]
 en = "Please enter a value: *"
 pt = "Digite um valor: *"
 
-[.script_1048_163]
+[.script_1048_164]
 en = "Please enter a value: "
 pt = "Digite um valor: "
 
-[.script_1050_164]
+[.script_1050_165]
 en = "You need to be in a Clan Chat channel to use Clan Quick Chat."
 pt = "Você precisa estar em um canal de Clan Chat para usar o Clan Quick Chat."
 
-[.script_1062_165]
+[.script_1062_166]
 en = " To "
 pt = " Para "
 
-[.script_1062_166]
+[.script_1062_167]
 en = "Search "
 pt = "Buscar "
 
-[.script_1077_167]
+[.script_1077_168]
 en = "Sorry, this user is not on your Friends List."
 pt = "Desculpe, esse usuário não está na sua lista de amigos."
 
-[.script_1077_168]
+[.script_1077_169]
 en = "Sorry, your friend is no longer playing RuneScape."
 pt = "Desculpe, seu amigo não está mais jogando RuneScape."
 
-[.script_1900_169]
+[.script_1900_170]
 en = "Search phrases..."
 pt = "Buscar frases..."
 
-[.script_103_170]
+[.script_103_171]
 en = "Enter name of friend to add to list"
 pt = "Digite o nome do amigo para adicionar à lista"
 
-[.script_104_171]
+[.script_104_172]
 en = "Enter name of friend to delete from list"
 pt = "Digite o nome do amigo para tirar da lista"
 
-[.script_125_172]
+[.script_125_173]
 en = "Loading Friends List."
 pt = "Carregando a lista de amigos."
 
-[.script_125_173]
+[.script_125_174]
 en = "Please wait."
 pt = "Aguarde."
 
-[.script_125_174]
+[.script_125_175]
 en = "Connecting to Friend Server."
 pt = "Conectando ao servidor de amigos."
 
-[.script_125_175]
+[.script_125_176]
 en = "Last known as: "
 pt = "Antes conhecido como: "
 
-[.script_125_176]
+[.script_125_177]
 en = "Last known as:"
 pt = "Antes conhecido como:"
 
-[.script_126_177]
+[.script_126_178]
 en = "That player is currently offline."
 pt = "Esse jogador está offline agora."
 
-[.script_105_178]
+[.script_105_179]
 en = "Enter name of player to add to list"
 pt = "Digite o nome do jogador para adicionar à lista"
 
-[.script_1419_179]
+[.script_1419_180]
 en = "Enter name of player to delete from list"
 pt = "Digite o nome do jogador para tirar da lista"
 
-[.script_129_180]
+[.script_129_181]
 en = "Loading Ignore List."
 pt = "Carregando a lista de ignorados."
 
-[.script_111_181]
+[.script_111_182]
 en = "Enter the player name whose channel you wish to join:"
 pt = "Digite o nome do dono do canal em que quer entrar:"
 
-[.script_111_182]
+[.script_111_183]
 en = "Last name entered: "
 pt = "Último nome digitado: "
 
-[.script_111_183]
+[.script_111_184]
 en = "Your name: "
 pt = "Seu nome: "
 
-[.script_197_184]
+[.script_197_185]
 en = "Talking in: "
 pt = "Falando em: "
 
-[.script_197_185]
+[.script_197_186]
 en = "Owner: "
 pt = "Dono: "
 
-[.script_197_186]
+[.script_197_187]
 en = "Talking in: Not in chat"
 pt = "Falando em: nenhum chat"
 
-[.script_197_187]
+[.script_197_188]
 en = "Owner: None"
 pt = "Dono: ninguém"
 
-[.script_197_188]
+[.script_197_189]
 en = "Leave Chat"
 pt = "Sair do chat"
 
-[.script_197_189]
+[.script_197_190]
 en = "Join Chat"
 pt = "Entrar no chat"
 
-[.script_2688_190]
+[.script_2688_191]
 en = "Enter the player to ban from the channel:"
 pt = "Digite o jogador a banir do canal:"
 
-[.script_1465_191]
+[.script_1465_192]
 en = "Total number of "
 pt = "Total de espaços "
 
-[.script_1465_192]
+[.script_1465_193]
 en = "free"
 pt = "grátis"
 
-[.script_1465_193]
+[.script_1465_194]
 en = "member"
 pt = "de membro"
 
-[.script_1465_194]
+[.script_1465_195]
 en = "demo"
 pt = "demo"
 
-[.script_1465_195]
+[.script_1465_196]
 en = " bank slots used"
 pt = " usados no banco"
 
-[.script_1465_196]
+[.script_1465_197]
 en = "Note: this includes an overflow of "
 pt = "Obs.: inclui um excedente de "
 
-[.script_1465_197]
+[.script_1465_198]
 en = " free items"
 pt = " itens grátis"
 
-[.script_1465_198]
+[.script_1465_199]
 en = " member items"
 pt = " itens de membro"
 
-[.script_1465_199]
+[.script_1465_200]
 en = "Note: this includes an overflow of 1 free item"
 pt = "Obs.: inclui um excedente de 1 item grátis"
 
-[.script_1465_200]
+[.script_1465_201]
 en = "Note: this includes an overflow of 1 member item"
 pt = "Obs.: inclui um excedente de 1 item de membro"
 
-[.script_1479_201]
+[.script_1479_202]
 en = "Bank of RuneScape (no search entered)"
 pt = "Bank of RuneScape (nenhuma busca)"
 
-[.script_1479_202]
+[.script_1479_203]
 en = "Bank of RuneScape (search: '"
 pt = "Bank of RuneScape (busca: '"
 
-[.script_1480_203]
+[.script_1480_204]
 en = "Item is in tab "
 pt = "O item está na aba "
 
-[.script_1487_204]
+[.script_1487_205]
 en = "Switch to note withdrawal mode"
 pt = "Mudar para sacar em notas"
 
-[.script_1487_205]
+[.script_1487_206]
 en = "Switch to item withdrawal mode"
 pt = "Mudar para sacar em itens"
 
-[.script_1490_206]
+[.script_1490_207]
 en = "Switch to insert items mode"
 pt = "Mudar para o modo inserir"
 
-[.script_1490_207]
+[.script_1490_208]
 en = "Switch to swap items mode"
 pt = "Mudar para o modo trocar"
 
-[.script_1549_208]
+[.script_1549_209]
 en = "Enter the name of the item you wish to search for:"
 pt = "Digite o nome do item que quer buscar:"
 
-[.script_2706_209]
+[.script_2706_210]
 en = "You do not meet the requirements to use or wield this item."
 pt = "Você não tem os requisitos para usar ou empunhar este item."
 
-[.script_2706_210]
+[.script_2706_211]
 en = "You do not meet the requirements to use or wear this item."
 pt = "Você não tem os requisitos para usar ou vestir este item."
 
-[.script_2706_211]
+[.script_2706_212]
 en = "You can wield this item but not use it."
 pt = "Você pode empunhar este item, mas não usá-lo."
 
-[.script_2706_212]
+[.script_2706_213]
 en = "You can wear this item but not use it."
 pt = "Você pode vestir este item, mas não usá-lo."
 
-[.script_2706_213]
+[.script_2706_214]
 en = "You do not meet the requirements to use this item."
 pt = "Você não tem os requisitos para usar este item."
 
-[.script_2706_214]
+[.script_2706_215]
 en = "You can use this item but not wield it."
 pt = "Você pode usar este item, mas não empunhá-lo."
 
-[.script_2706_215]
+[.script_2706_216]
 en = "You can use this item but not wear it."
 pt = "Você pode usar este item, mas não vesti-lo."
 
-[.script_2706_216]
+[.script_2706_217]
 en = "You do not meet the requirements to wield this item."
 pt = "Você não tem os requisitos para empunhar este item."
 
-[.script_2706_217]
+[.script_2706_218]
 en = "You do not meet the requirements to wear this item."
 pt = "Você não tem os requisitos para vestir este item."
 
-[.script_2723_218]
+[.script_2723_219]
 en = "N/A"
 pt = "N/D"
 
-[.script_2726_219]
+[.script_2726_220]
 en = "Free"
 pt = "Grátis"
 
-[.script_1888_220]
+[.script_1888_221]
 en = "Your health is low! Run away from your attacker and speak to Xenia."
 pt = "Sua vida está baixa! Fuja do atacante e fale com a Xenia."
 
-[.script_1888_221]
+[.script_1888_222]
 en = "Your health is low! Find a safe place away from your attacker"
 pt = "Sua vida está baixa! Vá para um lugar seguro, longe do atacante,"
 
-[.script_1888_222]
+[.script_1888_223]
 en = "or eat some food to heal yourself."
 pt = "ou coma algo para se curar."
 
-[.script_118_223]
+[.script_118_224]
 en = "Items you will keep on death:"
 pt = "Itens que você mantém ao morrer:"
 
-[.script_118_224]
+[.script_118_225]
 en = "Items you will lose on death:"
 pt = "Itens que você perde ao morrer:"
 
-[.script_118_225]
+[.script_118_226]
 en = "Items you will keep on death (if not skulled):"
 pt = "Itens que você mantém ao morrer (sem caveira):"
 
-[.script_118_226]
+[.script_118_227]
 en = "Items you will lose on death (if not skulled):"
 pt = "Itens que você perde ao morrer (sem caveira):"
 
-[.script_118_227]
+[.script_118_228]
 en = "The normal amount of items kept is three."
 pt = "Normalmente você mantém três itens."
 
-[.script_118_228]
+[.script_118_229]
 en = " This reduces the items you keep from three to zero!"
 pt = " Isso reduz os itens que você mantém de três para zero!"
 
-[.script_118_229]
+[.script_118_230]
 en = "However, you also have the "
 pt = "Mas você também está com "
 
-[.script_118_230]
+[.script_118_231]
 en = " curse active, which saves you one extra item!"
 pt = " (maldição) ativa, o que salva um item a mais!"
 
-[.script_118_231]
+[.script_118_232]
 en = " prayer active, which saves you one extra item!"
 pt = " (oração) ativa, o que salva um item a mais!"
 
-[.script_118_232]
+[.script_118_233]
 en = "You have no factors affecting the items you keep."
 pt = "Nada está alterando os itens que você mantém."
 
-[.script_118_233]
+[.script_118_234]
 en = "You have the "
 pt = "Você está com "
 
-[.script_118_234]
+[.script_118_235]
 en = "Items with a "
 pt = "Itens com "
 
-[.script_118_235]
+[.script_118_236]
 en = "white outline"
 pt = "contorno branco"
 
-[.script_118_236]
+[.script_118_237]
 en = " are ones you will always lose."
 pt = " são os que você sempre perde."
 
-[.script_118_237]
+[.script_118_238]
 en = "You have items in a creature's inventory, which will be dropped where it is standing if it or you die."
 pt = "Você tem itens no inventário de uma criatura, que vão cair onde ela estiver se ela ou você morrer."
 
-[.script_118_238]
+[.script_118_239]
 en = "Max items kept on death :"
 pt = "Máx. de itens mantidos ao morrer:"
 
-[.script_118_239]
+[.script_118_240]
 en = "Carried wealth:"
 pt = "Riqueza carregada:"
 
-[.script_118_240]
+[.script_118_241]
 en = "Risked wealth:"
 pt = "Riqueza em risco:"
 
-[.script_118_241]
+[.script_118_242]
 en = "You're in a "
 pt = "Você está numa "
 
-[.script_118_242]
+[.script_118_243]
 en = "player-owned house"
 pt = "casa de jogador"
 
-[.script_118_243]
+[.script_118_244]
 en = "which is a "
 pt = "que é uma "
 
-[.script_118_244]
+[.script_118_245]
 en = "safe area"
 pt = "área segura"
 
-[.script_118_245]
+[.script_118_246]
 en = " If you die you will keep all your items except the items you would lose on leaving the house via the portal."
 pt = " Se você morrer, mantém todos os itens, menos os que perderia ao sair da casa pelo portal."
 
-[.script_118_246]
+[.script_118_247]
 en = "You're in a game of "
 pt = "Você está numa partida de "
 
-[.script_118_247]
+[.script_118_248]
 en = " If you die you will keep all your items, except the team banner should you be carrying it."
 pt = " Se você morrer, mantém todos os itens, menos o estandarte da equipe, se estiver com ele."
 
-[.script_118_248]
+[.script_118_249]
 en = " If you die you will keep all your items brought with you, including the Trouble Brewing manual, but will lose everything else."
 pt = " Se você morrer, mantém todos os itens que trouxe, inclusive o manual do Trouble Brewing, mas perde todo o resto."
 
-[.script_118_249]
+[.script_118_250]
 en = " If you die you will keep all your items, except items from the dispensors, logs, hammers and Penance eggs."
 pt = " Se você morrer, mantém todos os itens, menos os dos distribuidores, toras, martelos e ovos de Penance."
 
-[.script_118_250]
+[.script_118_251]
 en = " If you die you will keep all the items you brought with you."
 pt = " Se você morrer, mantém todos os itens que trouxe."
 
-[.script_118_251]
+[.script_118_252]
 en = ". See information to the left for a more detailed description."
 pt = ". Veja as informações à esquerda para mais detalhes."
 
-[.script_118_252]
+[.script_118_253]
 en = "All items !"
 pt = "Todos os itens!"
 
-[.script_2184_253]
+[.script_2184_254]
 en = "Click on items in your inventory to check their values."
 pt = "Clique nos itens do inventário para ver quanto valem."
 
-[.script_2184_254]
+[.script_2184_255]
 en = "Total value:"
 pt = "Valor total:"
 
-[.script_2184_255]
+[.script_2184_256]
 en = "Current trade limit:"
 pt = "Limite de troca atual:"
 
-[.script_2505_256]
+[.script_2505_257]
 en = "Limit: "
 pt = "Limite: "
 
-[.script_713_257]
+[.script_713_258]
 en = "Until"
 pt = "Até"
 
-[.script_713_258]
+[.script_713_259]
 en = "logout"
 pt = "sair"
 
-[.script_713_259]
+[.script_713_260]
 en = "1 hour"
 pt = "1 hora"
 
-[.script_713_260]
+[.script_713_261]
 en = " hours"
 pt = " horas"
 
-[.script_713_261]
+[.script_713_262]
 en = "Duration"
 pt = "Duração"
 
-[.script_776_262]
+[.script_776_263]
 en = "Multiplier:"
 pt = "Multipl.:"
 
-[.script_776_263]
+[.script_776_264]
 en = "Bonus:"
 pt = "Bônus:"
 
-[.script_776_264]
+[.script_776_265]
 en = "Elapsed:"
 pt = "Tempo:"
 
-[.script_517_265]
+[.script_517_266]
 en = "Lots!"
 pt = "Muito!"
 
-[.script_2268_266]
+[.script_2268_267]
 en = "Click the object to see more options."
 pt = "Clique no objeto para ver mais opções."
 
-[.script_2268_267]
+[.script_2268_268]
 en = "Right-click the object to see more options."
 pt = "Botão direito no objeto para mais opções."
 
@@ -8048,6 +8052,14 @@ pt = "Ponto quente de PvP"
 [.tooltip_48]
 en = "Time Until Grave Marker Collapses"
 pt = "Tempo até a lápide desabar"
+
+[.tooltip_49]
+en = "<u=000080>More Info</u>"
+pt = "<u=000080>Mais informações</u>"
+
+[.tooltip_50]
+en = "<u=ffffff>More Info</u>"
+pt = "<u=ffffff>Mais informações</u>"
 
 [.label_917_16]
 en = "Requirements"

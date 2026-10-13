@@ -80,3 +80,32 @@ Vale para todo texto em `dialogue_pt_br.tables.toml` e `tutorial_island_pt_br.ta
 Habilidades com glosa usada: Woodcutting, Firemaking, Fishing, Cooking (culinária), Mining e Smithing (mineração e forja), Prayer (oração), Magic (magia), Runecrafting (criação de runas), Fletching (confecção de arcos e flechas), Farming (agricultura), Crafting (artesanato).
 
 **Inconsistência conhecida**: "leprechaun" virou "duende" nas falas da Lost City e ficou "leprechaun" nas do Tool Leprechaun e do Vinesweeper. Decidir um só.
+
+## Guia de habilidades (Skill Advance Guide)
+
+Vale para `tools/translation/sources/pt_guide_*.json` (janela do guia, 499, e lista do que se desbloqueia na janela de "subiu de nível", 741). Cada linha é um texto inteiro como o jogador vê: um nome da lista da esquerda, um título de menu, um parágrafo de introdução ou uma frase "You can now...".
+
+- **Nome da lista da esquerda** (ao lado do ícone): nome de item, criatura, objeto, feitiço, oração, lugar ou missão **fica em inglês, exatamente como está** (é o nome do inventário e do botão direito). Traduza só o que está em volta: "Members: Bronze boots" = "Membros: Bronze boots"; "Hard leather body<br> (with 10 Defence)" = "Hard leather body<br> (com 10 em Defence)". Nome que é descrição, e não nome de coisa do jogo ("Possibility of stealing quadruple loot from a man", "Nurture basic evil tree saplings"), é traduzido.
+- **Frases** ("You can now wield ..."): tudo em português. A coisa destacada em azul (`<col=000080>...</col>`), quando é item, criatura ou objeto comum, vai em português com o inglês do original entre parênteses, dentro do azul: "Agora você pode empunhar <col=000080>escudos quadrados de bronze (bronze square shields)</col>." (decisão do Habdel, 2026-10-13). Nome próprio (NPC, lugar, missão, minijogo, feitiço, oração, curse, familiar de Summoning, andar de Daemonheim) fica só em inglês.
+- **Habilidades** em inglês, sem glosa (o guia repete muito): "(com 48 em Fishing e 15 em Strength)".
+- **Padrões fixos** (iguais em todo o guia):
+
+| Inglês | Português |
+|---|---|
+| Members: X | Membros: X |
+| You can now ... / Members can now ... | Agora você pode ... / Membros agora podem ... |
+| Members now have the Defence level required to wear X. (They also need level 40 Magic.) | Membros agora têm o nível de Defence para vestir X. (Também precisam de nível 40 em Magic.) |
+| (with 10 Defence) / (with level 10 Defence) | (com 10 em Defence) / (com nível 10 em Defence) |
+| (with 80 Defence and Constitution) | (com 80 em Defence e Constitution) |
+| (after Tourist Trap) / (after starting Zogre Flesh Eaters) | (depois de Tourist Trap) / (depois de começar Zogre Flesh Eaters) |
+| (Tier 3) | (categoria 3) |
+| 2 bars / 1 bar | 2 barras / 1 barra |
+| within Daemonheim / in Daemonheim | em Daemonheim |
+| in Stealing Creation | no Stealing Creation |
+| for your house / in your house | para a sua casa / na sua casa |
+| floor 12 of Daemonheim (once the previous floors are complete) | o andar 12 de Daemonheim (depois de completar os andares anteriores) |
+| Ancient Magicks / Lunar spellbook | grimório Ancient Magicks / grimório Lunar |
+
+- **Verbos**: wear = vestir; wield = empunhar; use = usar; smith = forjar; construct/build = construir; make = fazer; craft = fabricar; fletch = confeccionar; infuse (bolsas de Summoning) = infundir; plant = plantar; cook = cozinhar; slay = matar; throw = arremessar; cast = lançar; light = acender; clean (ervas) = limpar; pickpocket = furtar; steal from = roubar de; mine = minerar; chop down = cortar; net = pegar com rede; catch ... barehanded = pegar ... com as mãos; fight = enfrentar; access = acessar; display = expor.
+- **Itens frequentes**: platebody = peitoral de placas; chainbody = cota de malha; platelegs = calças de placas; plateskirt = saia de placas; full helm = elmo completo; medium helm = elmo médio; kiteshield = escudo pipa; square shield = escudo quadrado; defender = defensor; boots = botas; gauntlets = manoplas; gloves = luvas; vambraces = braçadeiras; coif = coifa; robe top/bottom = parte de cima/de baixo da túnica; hat = chapéu; sword = espada; longsword = espada longa; 2h sword = espada de duas mãos; scimitar = cimitarra; dagger = adaga; mace = maça; warhammer = martelo de guerra; battleaxe = machado de batalha; claws = garras; spear = lança; hasta = hasta; maul = marreta; rapier = florete; hatchet = machado; pickaxe = picareta; arrows = flechas; arrowtips = pontas de flecha; bolts = virotes; darts = dardos; javelins = azagaias; throwing axes = machados de arremesso; knives = facas; crossbow = besta; shortbow / longbow = arco curto / arco longo; staff/staves = cajado/cajados; logs = toras; ore = minério; bar = barra; tree = árvore; seed = semente; sapling = muda; pouch = bolsa; scroll = pergaminho; charm = amuleto (gold charm = amuleto dourado); shards = fragmentos; trap = armadilha; hide = couro; leather = couro curtido; essence = essência; implings = implings.
+- **Metais e materiais**: bronze; iron = ferro; steel = aço; black = preto; white = branco; mithril; adamant = adamante; rune = runa (o metal); dragon = dragão; oak = carvalho; willow = salgueiro; teak = teca; maple = bordo; mahogany = mogno; yew = teixo; magic (árvore) = mágica. Metais e madeiras de Daemonheim (novite, bathus, marmaros, kratonite, fractite, zephyrium, argonite, katagon, gorgonite, promethium, primal; tangle gum, seeping elm, blood spindle, utuku, spinebeam, bovistrangler, thigat, corpsethorn, entgallow, grave creeper) ficam em inglês.
