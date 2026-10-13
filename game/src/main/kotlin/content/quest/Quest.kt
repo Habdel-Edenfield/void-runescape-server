@@ -84,6 +84,7 @@ fun Player.questJournal(name: String, lines: List<String>, translated: Boolean =
     for (i in 0..301) {
         interfaces.sendText(QUEST_SCROLL_ID, "line${i + 1}", shown.getOrNull(i) ?: "")
     }
+    QuestJournalWalk.mark(this, shown)
 }
 
 /** Called with a journal's English lines and the lines shown, e.g. so tests can measure them */

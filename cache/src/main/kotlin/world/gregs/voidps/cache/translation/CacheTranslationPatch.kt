@@ -737,6 +737,7 @@ object CacheTranslationPatch {
         const val GOSUB = 40
         const val GET_VARC = 42
         const val SET_VARC = 43
+        const val IF_SETOP = 2300
         const val ENUM_STRING = 3400
         const val ENUM = 3408
         const val ADD = 4000
@@ -1268,6 +1269,8 @@ object CacheTranslationPatch {
             val drawer = scripts[TaskWalkHint.DRAW_HINTS] ?: source.script(TaskWalkHint.DRAW_HINTS)!!.original(source)
             scripts[TaskWalkHint.DRAW_HINTS] = TaskWalkHint.callProgress(TaskWalkHint.callHint(drawer, hint), progress)
             scripts[TOOLTIP_SCRIPT] = TaskWalkHint.callTooltip(scripts.getValue(TOOLTIP_SCRIPT), tooltip, walkTooltip)
+            check(nextScript <= TaskWalkHint.QUEST_LINE_OP_ID) { "Patch scripts reach ${TaskWalkHint.QUEST_LINE_OP_ID}, move the quest line option script." }
+            scripts[TaskWalkHint.QUEST_LINE_OP_ID] = TaskWalkHint.questLineOp(TaskWalkHint.QUEST_LINE_OP_ID)
         }
         return Patch(
             scripts = scripts,

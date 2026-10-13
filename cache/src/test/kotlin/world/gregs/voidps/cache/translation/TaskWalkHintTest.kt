@@ -58,6 +58,15 @@ class TaskWalkHintTest {
     }
 
     @Test
+    fun `Quest journal lines get their option from a fixed script`() {
+        val script = patch.scripts.getValue(TaskWalkHint.QUEST_LINE_OP_ID)
+        assertEquals(TaskWalkHint.QUEST_LINE_OP, script.name)
+        // if_setop pops the component, then the option number, then the text
+        assertEquals(listOf(Op.PUSH_INT to 1, Op.SLOAD to 0, Op.ILOAD to 0, Op.IF_SETOP to 0, Op.RETURN to 0), script.instructions.indices.map { script.instructions[it] to script.intOperands!![it] })
+        assertTrue(patch.scripts.keys.filter { it != TaskWalkHint.QUEST_LINE_OP_ID }.all { it < TaskWalkHint.QUEST_LINE_OP_ID })
+    }
+
+    @Test
     fun `Tooltip asks the walk tooltip after translating`() {
         val walkTooltip = patch.scripts.filterValues { it.name == TaskWalkHint.TOOLTIP }.keys.single()
         val script = patch.scripts.getValue(CacheTranslationPatch.TOOLTIP_SCRIPT)

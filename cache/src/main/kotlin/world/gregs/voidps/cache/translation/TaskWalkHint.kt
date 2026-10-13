@@ -19,15 +19,23 @@ import java.io.File
  * The hover text of every hint icon is the same cache constant, so the tooltip script (38) gets one more call,
  * [TOOLTIP], which swaps it for "Click to walk to ..." on that line's icon.
  * The same drawing script also gets its back button shown on the tutorial set's task ([progress]).
+ * Quest journal lines naming an npc get a "Walk to ..." option from the server through [questLineOp].
  */
 object TaskWalkHint {
     const val TABLE_PATH = "data/achievement/task_npcs.tables.toml"
     private const val STRUCTS_PATH = "data/client/structs.toml"
 
-    const val PREFIX = "void_task_"
+    const val PREFIX = "void_"
     const val HINT = "void_task_walk_hint"
     const val TOOLTIP = "void_task_walk_tooltip"
     const val PROGRESS = "void_task_tutorial_progress"
+    const val QUEST_LINE_OP = "void_quest_line_op"
+
+    /**
+     * [questLineOp]'s id, fixed as the server calls it by this id (`QuestJournalWalk`), past the ids the rest of the
+     * patch counts up from the cache's last script
+     */
+    const val QUEST_LINE_OP_ID = 6000
 
     /** Unstable Foundations' progress varp, which hides the tab's back button on tutorial set tasks below [BACK_STAGE] */
     const val TUTORIAL_VARP = 281
@@ -162,6 +170,15 @@ object TaskWalkHint {
         op(Op.PUSH_INT, BACK_STAGE)
         op(Op.RETURN)
     }.build(id)
+
+    /** (component, text) -> sets the first option of a quest journal line, which has none in the cache */
+    fun questLineOp(id: Int) = Builder(QUEST_LINE_OP).apply {
+        op(Op.PUSH_INT, 1)
+        op(Op.SLOAD, 0)
+        op(Op.ILOAD, 0)
+        op(Op.IF_SETOP)
+        op(Op.RETURN)
+    }.build(id, intArgs = 1, stringArgs = 1)
 
     /** [script] with the progress read deciding the back button, `get_varp 281, push_int 135`, swapped for a call to [progress] */
     fun callProgress(script: ClientScriptDefinition, progress: Int): ClientScriptDefinition {

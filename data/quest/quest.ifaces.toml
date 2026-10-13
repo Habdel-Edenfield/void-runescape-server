@@ -95,6 +95,7 @@ id = 2
 
 [.line0]
 id = "16-315"
+options = { Walk = 0 }
 
 [quest_complete]
 id = 277

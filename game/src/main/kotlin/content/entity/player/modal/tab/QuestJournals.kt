@@ -1,6 +1,7 @@
 package content.entity.player.modal.tab
 
 import com.github.michaelbull.logging.InlineLogger
+import content.quest.QuestJournalWalk
 import content.quest.refreshQuestJournal
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.clearCamera
@@ -49,7 +50,9 @@ class QuestJournals(
                 return@interfaceOption
             }
             closeInterfaces()
-            InterfaceApi.openQuestJournal(this, quest.stringId)
+            QuestJournalWalk.open(this, quest.stringId) {
+                InterfaceApi.openQuestJournal(this, quest.stringId)
+            }
         }
 
         interfaceOption("Filter quests", "quest_journals:filter") {

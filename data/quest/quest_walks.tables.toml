@@ -1,0 +1,419 @@
+# Quest journal lines naming one of these NPCs (the `text`, coloured as a name in the journal) can be clicked to walk
+# there (QuestJournalWalk.kt, TaskWalk.walkTo). `tile` is where the NPC spawns, used when it isn't around.
+# `name` and `pt` are how the NPC reads in a sentence ("Walk to the Cook" / "Andar até o Cook").
+
+[quest_walks]
+quest = "string"
+text = "string"
+npc = "npc"
+tile = "tile"
+name = "string"
+pt = "string"
+
+[.blood_pact_xenia]
+quest = "blood_pact"
+text = "Xenia"
+npc = "xenia"
+tile = { x = 3244, y = 3198 }
+name = "Xenia"
+pt = "a Xenia"
+
+[.cooks_assistant_cook_lumbridge]
+quest = "cooks_assistant"
+text = "Cook"
+npc = "cook_lumbridge"
+tile = { x = 3209, y = 3215 }
+name = "the Cook"
+pt = "o Cook"
+
+[.demon_slayer_gypsy_aris]
+quest = "demon_slayer"
+text = "Gypsy"
+npc = "gypsy_aris"
+tile = { x = 3202, y = 3424 }
+name = "Gypsy Aris"
+pt = "a Gypsy Aris"
+
+[.demon_slayer_sir_prysin]
+quest = "demon_slayer"
+text = "Sir Prysin"
+npc = "sir_prysin"
+tile = { x = 3204, y = 3471 }
+name = "Sir Prysin"
+pt = "o Sir Prysin"
+
+[.demon_slayer_traiborn]
+quest = "demon_slayer"
+text = "Traiborn"
+npc = "traiborn"
+tile = { x = 3112, y = 3162, level = 1 }
+name = "Traiborn"
+pt = "o Traiborn"
+
+[.demon_slayer_captain_rovin]
+quest = "demon_slayer"
+text = "Captain Rovin"
+npc = "captain_rovin"
+tile = { x = 3204, y = 3496, level = 2 }
+name = "Captain Rovin"
+pt = "o Captain Rovin"
+
+[.dorics_quest_doric]
+quest = "dorics_quest"
+text = "Doric"
+npc = "doric"
+tile = { x = 2952, y = 3451 }
+name = "Doric"
+pt = "o Doric"
+
+[.druidic_ritual_kaqemeex]
+quest = "druidic_ritual"
+text = "Kaqemeex"
+npc = "kaqemeex"
+tile = { x = 2925, y = 3486 }
+name = "Kaqemeex"
+pt = "o Kaqemeex"
+
+[.druidic_ritual_sanfew]
+quest = "druidic_ritual"
+text = "Sanfew"
+npc = "sanfew"
+tile = { x = 2897, y = 3426, level = 1 }
+name = "Sanfew"
+pt = "o Sanfew"
+
+[.imp_catcher_wizard_mizgog]
+quest = "imp_catcher"
+text = "Wizard Mizgog"
+npc = "wizard_mizgog"
+tile = { x = 3103, y = 3163, level = 2 }
+name = "Wizard Mizgog"
+pt = "o Wizard Mizgog"
+
+[.pirates_treasure_redbeard_frank_port_sarim]
+quest = "pirates_treasure"
+text = "Redbeard Frank"
+npc = "redbeard_frank_port_sarim"
+tile = { x = 3054, y = 3247 }
+name = "Redbeard Frank"
+pt = "o Redbeard Frank"
+
+[.pirates_treasure_wydin]
+quest = "pirates_treasure"
+text = "Wydin"
+npc = "wydin"
+tile = { x = 3014, y = 3204 }
+name = "Wydin"
+pt = "o Wydin"
+
+[.prince_ali_rescue_hassan]
+quest = "prince_ali_rescue"
+text = "Hassan"
+npc = "hassan"
+tile = { x = 3302, y = 3163 }
+name = "Chancellor Hassan"
+pt = "o Chancellor Hassan"
+
+[.prince_ali_rescue_osman]
+quest = "prince_ali_rescue"
+text = "Osman"
+npc = "osman"
+tile = { x = 3286, y = 3180 }
+name = "Osman"
+pt = "o Osman"
+
+[.prince_ali_rescue_leela]
+quest = "prince_ali_rescue"
+text = "Leela"
+npc = "leela"
+tile = { x = 3113, y = 3263 }
+name = "Leela"
+pt = "a Leela"
+
+[.prince_ali_rescue_lady_keli]
+quest = "prince_ali_rescue"
+text = "Lady Keli"
+npc = "lady_keli"
+tile = { x = 3128, y = 3244 }
+name = "Lady Keli"
+pt = "a Lady Keli"
+
+[.prince_ali_rescue_prince_ali]
+quest = "prince_ali_rescue"
+text = "Prince Ali"
+npc = "prince_ali"
+tile = { x = 3123, y = 3242 }
+name = "Prince Ali"
+pt = "o Prince Ali"
+
+[.rune_mysteries_duke_horacio]
+quest = "rune_mysteries"
+text = "Horacio"
+npc = "duke_horacio"
+tile = { x = 3212, y = 3220, level = 1 }
+name = "Duke Horacio"
+pt = "o Duke Horacio"
+
+[.rune_mysteries_aubury]
+quest = "rune_mysteries"
+text = "Aubury"
+npc = "aubury"
+tile = { x = 3253, y = 3402 }
+name = "Aubury"
+pt = "o Aubury"
+
+[.rune_mysteries_sedridor]
+quest = "rune_mysteries"
+text = "Sedridor"
+npc = "sedridor"
+tile = { x = 3103, y = 9571 }
+name = "Sedridor"
+pt = "o Sedridor"
+
+[.the_knights_sword_squire_asrol]
+quest = "the_knights_sword"
+text = "Squire"
+npc = "squire_asrol"
+tile = { x = 2975, y = 3343 }
+name = "the Squire"
+pt = "o Squire"
+
+[.the_knights_sword_reldo]
+quest = "the_knights_sword"
+text = "Reldo"
+npc = "reldo"
+tile = { x = 3209, y = 3495 }
+name = "Reldo"
+pt = "o Reldo"
+
+[.the_knights_sword_thurgo]
+quest = "the_knights_sword"
+text = "Thurgo"
+npc = "thurgo"
+tile = { x = 3001, y = 3144 }
+name = "Thurgo"
+pt = "o Thurgo"
+
+[.the_knights_sword_sir_vyvin]
+quest = "the_knights_sword"
+text = "Sir Vyvin"
+npc = "sir_vyvin"
+tile = { x = 2983, y = 3335, level = 2 }
+name = "Sir Vyvin"
+pt = "o Sir Vyvin"
+
+[.the_restless_ghost_father_aereck]
+quest = "the_restless_ghost"
+text = "Father Aereck"
+npc = "father_aereck"
+tile = { x = 3246, y = 3205 }
+name = "Father Aereck"
+pt = "o Father Aereck"
+
+[.the_restless_ghost_father_urhney]
+quest = "the_restless_ghost"
+text = "Father Urhney"
+npc = "father_urhney"
+tile = { x = 3208, y = 3150 }
+name = "Father Urhney"
+pt = "o Father Urhney"
+
+[.tears_of_guthix_juna]
+quest = "tears_of_guthix"
+text = "Juna"
+npc = "juna"
+tile = { x = 3252, y = 9517, level = 1 }
+name = "Juna"
+pt = "a Juna"
+
+[.priest_in_peril_king_roald]
+quest = "priest_in_peril"
+text = "King Roald"
+npc = "king_roald"
+tile = { x = 3222, y = 3476 }
+name = "King Roald"
+pt = "o King Roald"
+
+[.priest_in_peril_priestperiltrappedmonk_vis]
+quest = "priest_in_peril"
+text = "Drezel"
+npc = "priestperiltrappedmonk_vis"
+tile = { x = 3416, y = 3488, level = 2 }
+name = "Drezel"
+pt = "o Drezel"
+
+[.nature_spirit_priestperiltrappedmonk2]
+quest = "nature_spirit"
+text = "Drezel"
+npc = "priestperiltrappedmonk2"
+tile = { x = 3440, y = 9895 }
+name = "Drezel"
+pt = "o Drezel"
+
+[.gunnars_ground_gudrun]
+quest = "gunnars_ground"
+text = "Gudrun"
+npc = "gudrun"
+tile = { x = 3082, y = 3417 }
+name = "Gudrun"
+pt = "a Gudrun"
+
+[.gunnars_ground_dororan]
+quest = "gunnars_ground"
+text = "Dororan"
+npc = "dororan"
+tile = { x = 3098, y = 3422 }
+name = "Dororan"
+pt = "o Dororan"
+
+[.ghosts_ahoy_ahoy_velorina]
+quest = "ghosts_ahoy"
+text = "Velorina"
+npc = "ahoy_velorina"
+tile = { x = 3678, y = 3510 }
+name = "Velorina"
+pt = "a Velorina"
+
+[.ghosts_ahoy_ahoy_necrovarus]
+quest = "ghosts_ahoy"
+text = "Necrovarus"
+npc = "ahoy_necrovarus"
+tile = { x = 3660, y = 3516 }
+name = "Necrovarus"
+pt = "o Necrovarus"
+
+[.hand_in_the_sand_bert]
+quest = "hand_in_the_sand"
+text = "Bert"
+npc = "bert"
+tile = { x = 2550, y = 3100 }
+name = "Bert"
+pt = "o Bert"
+
+[.hand_in_the_sand_zavistic_rarve]
+quest = "hand_in_the_sand"
+text = "Zavistic Rarve"
+npc = "zavistic_rarve"
+tile = { x = 2588, y = 3091, level = 1 }
+name = "Zavistic Rarve"
+pt = "o Zavistic Rarve"
+
+[.jungle_potion_trufitus_tai_bwo_wannai]
+quest = "jungle_potion"
+text = "Trufitus"
+npc = "trufitus_tai_bwo_wannai"
+tile = { x = 2809, y = 3086 }
+name = "Trufitus"
+pt = "o Trufitus"
+
+[.plague_city_edmond_ardougne]
+quest = "plague_city"
+text = "Edmond"
+npc = "edmond_ardougne"
+tile = { x = 2568, y = 3334 }
+name = "Edmond"
+pt = "o Edmond"
+
+[.plague_city_alrena]
+quest = "plague_city"
+text = "Alrena"
+npc = "alrena"
+tile = { x = 2573, y = 3333 }
+name = "Alrena"
+pt = "a Alrena"
+
+[.plague_city_jethick]
+quest = "plague_city"
+text = "Jethick"
+npc = "jethick"
+tile = { x = 2540, y = 3305 }
+name = "Jethick"
+pt = "o Jethick"
+
+[.plague_city_milli_rehnison]
+quest = "plague_city"
+text = "Milli Rehnison"
+npc = "milli_rehnison"
+tile = { x = 2531, y = 3330, level = 1 }
+name = "Milli Rehnison"
+pt = "a Milli Rehnison"
+
+[.plague_city_bravek]
+quest = "plague_city"
+text = "Bravek"
+npc = "bravek"
+tile = { x = 2536, y = 3314, level = 1 }
+name = "Bravek"
+pt = "o Bravek"
+
+[.rum_deal_pirate_pete]
+quest = "rum_deal"
+text = "Pirate Pete"
+npc = "pirate_pete"
+tile = { x = 3680, y = 3537 }
+name = "Pirate Pete"
+pt = "o Pirate Pete"
+
+[.zogre_flesh_eaters_grish]
+quest = "zogre_flesh_eaters"
+text = "Grish"
+npc = "grish"
+tile = { x = 2443, y = 3051 }
+name = "Grish"
+pt = "o Grish"
+
+[.zogre_flesh_eaters_zavistic_rarve]
+quest = "zogre_flesh_eaters"
+text = "Zavistic Rarve"
+npc = "zavistic_rarve"
+tile = { x = 2588, y = 3091, level = 1 }
+name = "Zavistic Rarve"
+pt = "o Zavistic Rarve"
+
+[.biohazard_jerico]
+quest = "biohazard"
+text = "Jerico"
+npc = "jerico"
+tile = { x = 2612, y = 3324 }
+name = "Jerico"
+pt = "o Jerico"
+
+[.biohazard_king_lathas]
+quest = "biohazard"
+text = "King Lathas"
+npc = "king_lathas"
+tile = { x = 2577, y = 3298, level = 1 }
+name = "King Lathas"
+pt = "o King Lathas"
+
+[.biohazard_kilron_west_ardougne]
+quest = "biohazard"
+text = "Kilron"
+npc = "kilron_west_ardougne"
+tile = { x = 2556, y = 3266 }
+name = "Kilron"
+pt = "o Kilron"
+
+[.biohazard_omart_west_ardougne]
+quest = "biohazard"
+text = "Omart"
+npc = "omart_west_ardougne"
+tile = { x = 2559, y = 3266 }
+name = "Omart"
+pt = "o Omart"
+
+[.biohazard_guidor]
+quest = "biohazard"
+text = "Guidor"
+npc = "guidor"
+tile = { x = 3284, y = 3382 }
+name = "Guidor"
+pt = "o Guidor"
+
+[.biohazard_chemist_rimmington]
+quest = "biohazard"
+text = "Chemist"
+npc = "chemist_rimmington"
+tile = { x = 2934, y = 3210 }
+name = "the Chemist"
+pt = "o Chemist"
