@@ -29,7 +29,7 @@ class FloorItemOptionHandler : InstructionHandler<InteractFloorItem>() {
             return false
         }
         val options = floorItem.def.floorOptions
-        val selectedOption = options.getOrNull(optionIndex)
+        val selectedOption = options.getOrNull(optionIndex) ?: takeAll(options, optionIndex)
         if (selectedOption == null) {
             logger.warn { "Invalid floor item option $optionIndex ${options.contentToString()}" }
             return false
@@ -41,6 +41,16 @@ class FloorItemOptionHandler : InstructionHandler<InteractFloorItem>() {
         player.closeInterfaces()
         player.interactFloorItem(floorItem, selectedOption, -1)
         return true
+    }
+
+    /**
+     * No item uses floor option 2, so the client sends it for "Take all" on a pile of items.
+     */
+    private fun takeAll(options: Array<String?>, optionIndex: Int): String? = if (optionIndex == TAKE_ALL_INDEX && options.getOrNull(TAKE_INDEX) == "Take") "Take all" else null
+
+    companion object {
+        const val TAKE_ALL_INDEX = 1
+        private const val TAKE_INDEX = 2
     }
 }
 

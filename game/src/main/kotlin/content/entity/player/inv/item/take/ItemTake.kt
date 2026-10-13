@@ -5,6 +5,7 @@ import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.message
 import world.gregs.voidps.engine.entity.character.player.Player
 import world.gregs.voidps.engine.entity.character.player.chat.inventoryFull
+import world.gregs.voidps.engine.entity.character.player.name
 import world.gregs.voidps.engine.entity.character.sound
 import world.gregs.voidps.engine.entity.item.floor.FloorItem
 import world.gregs.voidps.engine.entity.item.floor.FloorItems
@@ -32,6 +33,35 @@ class ItemTake : Script {
                 anim("take")
             }
             Items.take(this, target)
+        }
+
+        floorItemOperate("Take all") { (target) ->
+            arriveDelay()
+            approachRange(-1)
+            var taken = false
+            var full = false
+            for (item in FloorItems.at(target.tile).toList()) {
+                if (item.owner != null && item.owner != name) {
+                    continue
+                }
+                if (inventory.isFull() && (!inventory.stackable(item.id) || !inventory.contains(item.id))) {
+                    full = true
+                    continue
+                }
+                if (!take(this, item)) {
+                    continue
+                }
+                AuditLog.event(this, "took", item, item.tile)
+                Items.take(this, item)
+                taken = true
+            }
+            if (full) {
+                inventoryFull()
+            }
+            if (taken && tile != target.tile) {
+                face(target.tile.delta(tile))
+                anim("take")
+            }
         }
 
         npcOperateFloorItem("Take") { (target) ->

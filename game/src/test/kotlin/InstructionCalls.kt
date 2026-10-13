@@ -3,6 +3,7 @@ import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Assertions
 import world.gregs.voidps.cache.definition.data.InterfaceDefinition
 import world.gregs.voidps.engine.client.instruction.InstructionHandlers
+import world.gregs.voidps.engine.client.instruction.handle.FloorItemOptionHandler
 import world.gregs.voidps.engine.client.instruction.handle.ObjectOptionHandler
 import world.gregs.voidps.engine.client.instruction.handle.interactItemOn
 import world.gregs.voidps.engine.client.ui.InterfaceApi
@@ -319,7 +320,8 @@ fun Player.objectOption(gameObject: GameObject, option: String = "", optionIndex
 }
 
 fun Player.floorItemOption(floorItem: FloorItem, option: String) = runTest {
-    instructions.send(InteractFloorItem(floorItem.def.id, floorItem.tile.x, floorItem.tile.y, floorItem.def.floorOptions.indexOf(option)))
+    val index = if (option == "Take all") FloorItemOptionHandler.TAKE_ALL_INDEX else floorItem.def.floorOptions.indexOf(option)
+    instructions.send(InteractFloorItem(floorItem.def.id, floorItem.tile.x, floorItem.tile.y, index))
 }
 
 fun Inventory.set(index: Int, id: String, amount: Int = 1) = transaction { set(index, Item(id, amount)) }
