@@ -12,6 +12,7 @@ import content.entity.player.dialogue.Quiz
 import content.entity.player.dialogue.Sad
 import content.entity.player.dialogue.Shifty
 import content.entity.player.dialogue.Shock
+import content.entity.player.dialogue.translate
 import content.entity.player.dialogue.type.ChoiceOption
 import content.entity.player.dialogue.type.choice
 import content.entity.player.dialogue.type.item
@@ -475,7 +476,8 @@ class WiseOldMan : Script {
         }
         val item: String = get("wise_old_man_task") ?: return
         val remaining: Int = get("wise_old_man_remaining") ?: return
-        npc<Happy>("${Tables.string("wise_old_man_items.$item.intro")} I still need $remaining.")
+        // The task's intro is translated on its own, then the sentence around it
+        npc<Happy>("${translate(Tables.string("wise_old_man_items.$item.intro"))} I still need $remaining.")
         hintItem(item)
     }
 
@@ -511,7 +513,7 @@ class WiseOldMan : Script {
         val item = tasks().random(random)
         set("wise_old_man_task", item)
         set("wise_old_man_remaining", amount)
-        val intro = Tables.string("wise_old_man_items.$item.intro")
+        val intro = translate(Tables.string("wise_old_man_items.$item.intro"))
         npc<Happy>("$intro. Please bring me $amount.")
         hintItem(item)
     }
