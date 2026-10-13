@@ -82,7 +82,7 @@ internal class WeakInteractionTest : WorldTest() {
         val target = player.tile.addY(10)
         player.walk(target)
         tick(4)
-        player.interfaceOption("inventory", "inventory", "Drop", 4, Item("vial"), 0)
+        player.interfaceOption("inventory", "inventory", "Drop", 7, Item("vial"), 0)
         tick(6)
 
         assertEquals(target, player.tile)

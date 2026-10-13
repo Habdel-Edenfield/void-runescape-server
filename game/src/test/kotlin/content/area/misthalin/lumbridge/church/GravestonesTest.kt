@@ -190,7 +190,7 @@ class GravestonesTest : WorldTest() {
         tick()
         player.inventory.add("bronze_sword")
 
-        player.interfaceOption("inventory", "inventory", "Drop", 4, Item("bronze_sword"), 0)
+        player.interfaceOption("inventory", "inventory", "Drop", 7, Item("bronze_sword"), 0)
         tick()
 
         assertFalse(player.inventory.isEmpty())

@@ -27,7 +27,7 @@ internal class DropTest : WorldTest() {
         val player = createPlayer()
         player.inventory.add("bronze_sword")
 
-        player.interfaceOption("inventory", "inventory", "Drop", 4, Item("bronze_sword"), 0)
+        player.interfaceOption("inventory", "inventory", "Drop", 7, Item("bronze_sword"), 0)
         tick()
 
         assertTrue(player.inventory.isEmpty())
@@ -57,7 +57,7 @@ internal class DropTest : WorldTest() {
         player.inventory.add("coins", 500)
         tick()
 
-        player.interfaceOption("inventory", "inventory", "Drop", 4, Item("coins", 500), 0)
+        player.interfaceOption("inventory", "inventory", "Drop", 7, Item("coins", 500), 0)
         tick()
 
         assertTrue(player.inventory.isEmpty())
@@ -72,7 +72,7 @@ internal class DropTest : WorldTest() {
         FloorItems.add(tile, "bronze_sword")
         player.inventory.add("bronze_sword")
 
-        player.interfaceOption("inventory", "inventory", "Drop", 4, Item("bronze_sword"), 0)
+        player.interfaceOption("inventory", "inventory", "Drop", 7, Item("bronze_sword"), 0)
         tick()
 
         assertTrue(player.inventory.isEmpty())
