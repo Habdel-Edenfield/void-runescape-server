@@ -23,6 +23,7 @@ import world.gregs.voidps.engine.entity.character.npc.NPC
 import world.gregs.voidps.engine.entity.character.player.Player
 import world.gregs.voidps.engine.entity.character.player.name
 import world.gregs.voidps.engine.entity.character.player.skill.Skill
+import world.gregs.voidps.engine.timer.epochSeconds
 import world.gregs.voidps.type.Tile
 
 class Combat(val combatDefinitions: CombatDefinitions) :
@@ -235,7 +236,7 @@ class Combat(val combatDefinitions: CombatDefinitions) :
             }
             (character as? Player)?.specialAttack = false
             var nextDelay = character.attackSpeed
-            if (character.hasClock("miasmic") && (character.fightStyle == "range" || character.fightStyle == "melee")) {
+            if (character.hasClock("miasmic", epochSeconds()) && (character.fightStyle == "range" || character.fightStyle == "melee")) {
                 nextDelay *= 2
             }
             character.start("action_delay", nextDelay)
