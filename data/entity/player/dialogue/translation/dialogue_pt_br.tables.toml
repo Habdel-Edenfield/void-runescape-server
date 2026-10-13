@@ -4982,6 +4982,2390 @@ pt = "Tudo bem, você que sabe."
 en = "Everyone has gone away on a honeymoon and left me here to clean up their mess."
 pt = "Todo mundo saiu em lua de mel e me deixou aqui para limpar a bagunça."
 
+# Sloane - Falador - Tutorial Island
+
+[.sloane_1]
+en = "What is that cape you're wearing?"
+pt = "Que capa é essa que você está usando?"
+
+# Akrisae - Falador - Tutorial Island
+
+[.akrisae_1]
+en = "Hello, adventurer."
+pt = "Olá, aventureiro."
+
+[.akrisae_2]
+en = "Hello, cleric."
+pt = "Olá, clérigo."
+
+# ApprenticeWorkman - Falador - Tutorial Island
+
+[.apprenticeworkman_1]
+en = "Hiya."
+pt = "Oi."
+
+[.apprenticeworkman_2]
+en = "Sorry, I haven't got time to chat. We've only just finished a collossal order of furniture for the Varrock area, and already there's more work coming in."
+pt = "Desculpe, não tenho tempo para conversa. A gente acabou de entregar uma encomenda colossal de móveis para a região de Varrock, e já tem mais trabalho chegando."
+
+[.apprenticeworkman_3]
+en = "Varrock?"
+pt = "Varrock?"
+
+[.apprenticeworkman_4]
+en = "Yeah, the Council's had it redecorated."
+pt = "É, o Conselho mandou redecorar tudo."
+
+[.apprenticeworkman_5]
+en = "angry"
+pt = "angry"
+
+[.apprenticeworkman_6]
+en = "You'd better let me get on with my work."
+pt = "É melhor me deixar continuar o meu trabalho."
+
+[.apprenticeworkman_7]
+en = "Ok, bye."
+pt = "Tá, tchau."
+
+# BarmaidsRisingSunInn - Falador - Tutorial Island
+
+[.barmaidsrisingsuninn_1]
+en = "Heya! What can I get you?"
+pt = "Oi! O que vai querer?"
+
+[.barmaidsrisingsuninn_2]
+en = "What ales are you serving?"
+pt = "Que cervejas vocês servem?"
+
+[.barmaidsrisingsuninn_3]
+en = "Well, we've got Asgarnian Ale, Wizard's Mind Bomb and Dwarven Stout, all for only 3 coins."
+pt = "Bem, temos Asgarnian Ale, Wizard's Mind Bomb e Dwarven Stout, todas por só 3 moedas."
+
+[.barmaidsrisingsuninn_4]
+en = "One Asgarnian Ale, please."
+pt = "Uma Asgarnian Ale, por favor."
+
+[.barmaidsrisingsuninn_5]
+en = "I'll try the Mind Bomb."
+pt = "Vou provar a Mind Bomb."
+
+[.barmaidsrisingsuninn_6]
+en = "Can I have a Dwarven Stout?"
+pt = "Pode me ver uma Dwarven Stout?"
+
+[.barmaidsrisingsuninn_7]
+en = "I don't feel like any of those."
+pt = "Não estou a fim de nenhuma dessas."
+
+[.barmaidsrisingsuninn_8]
+en = "I'm doing Alfred Grimhand's barcrawl."
+pt = "Estou fazendo o Alfred Grimhand's Barcrawl."
+
+[.barmaidsrisingsuninn_9]
+en = "I've got this beer glass..."
+pt = "Tenho aqui este copo de cerveja..."
+
+[.barmaidsrisingsuninn_10]
+en = "We'll buy it for a couple of coins if you're interested."
+pt = "A gente compra por umas moedinhas, se você quiser."
+
+[.barmaidsrisingsuninn_11]
+en = "I've got these beer glasses..."
+pt = "Tenho aqui estes copos de cerveja..."
+
+[.barmaidsrisingsuninn_12]
+en = "Ooh, we'll buy those off you if you're interested. 2 coins per glass."
+pt = "Ooh, a gente compra, se você quiser. 2 moedas por copo."
+
+[.barmaidsrisingsuninn_13]
+en = "I said 3 coins! You haven't got 3 coins!"
+pt = "Eu disse 3 moedas! Você não tem 3 moedas!"
+
+[.barmaidsrisingsuninn_14]
+en = "Sorry, I'll come back another day."
+pt = "Desculpe, volto outro dia."
+
+[.barmaidsrisingsuninn_15]
+en = "Thanks, Emily."
+pt = "Obrigado, Emily."
+
+[.barmaidsrisingsuninn_16]
+en = "Okay, sure."
+pt = "Tá bom, pode ser."
+
+[.barmaidsrisingsuninn_17]
+en = "No thanks, I like empty beer glasses."
+pt = "Não, obrigado, eu gosto de copos de cerveja vazios."
+
+[.barmaidsrisingsuninn_18]
+en = "Heehee, this'll be fun!"
+pt = "Hihi, isso vai ser divertido!"
+
+[.barmaidsrisingsuninn_19]
+en = "You'll be after our Hand of Death cocktail, then. Lots of expensive parts to the cocktail, though, so it will cost you 70 coins."
+pt = "Então você vai querer o nosso coquetel Hand of Death. Ele leva muitos ingredientes caros, então vai custar 70 moedas."
+
+# Cassie - Falador - Tutorial Island
+
+[.cassie_1]
+en = "I buy and sell shields; do you want to trade?"
+pt = "Compro e vendo escudos; quer negociar?"
+
+[.cassie_2]
+en = "No thank you."
+pt = "Não, obrigado."
+
+# Cuffs - Falador - Tutorial Island
+
+[.cuffs_1]
+en = "Hello. Nice day for a walk, isn't it?"
+pt = "Olá. Belo dia para uma caminhada, não é?"
+
+[.cuffs_2]
+en = "A walk? Oh yes, that's what we're doing. We're just out here for a walk."
+pt = "Uma caminhada? Ah, sim, é isso que estamos fazendo. Só estamos aqui fora dando uma caminhada."
+
+[.cuffs_3]
+en = "I'm glad you're just out here for a walk. A more suspicious person would think you were waiting here to attack weak-looking travellers."
+pt = "Que bom que vocês só estão aqui fora caminhando. Alguém mais desconfiado acharia que vocês estão esperando aqui para atacar viajantes com cara de fracos."
+
+[.cuffs_4]
+en = "Nope, we'd never do anything like that. Just a band of innocent walkers, that's us."
+pt = "Não, a gente nunca faria uma coisa dessas. Somos só um bando de caminhantes inocentes, nós mesmos."
+
+[.cuffs_5]
+en = "Alright, have a nice walk."
+pt = "Tá certo, boa caminhada."
+
+# Doric - Falador - Tutorial Island
+
+[.doric_1]
+en = "Have you got my materials yet, traveller?"
+pt = "Já conseguiu os meus materiais, viajante?"
+
+[.doric_2]
+en = "I have everything you need!"
+pt = "Tenho tudo de que você precisa!"
+
+[.doric_3]
+en = "Many thanks! Pass them here, please. I can spare you some coins for your trouble, and please use my anvils any time you want."
+pt = "Muito obrigado! Pode passar para cá, por favor. Posso lhe dar algumas moedas (coins) pelo trabalho, e use as minhas bigornas (anvils) sempre que quiser."
+
+[.doric_4]
+en = "Hello traveller, how is your metalworking coming along?"
+pt = "Olá, viajante, como vai o seu trabalho com metais?"
+
+[.doric_5]
+en = "Not too bad, Doric."
+pt = "Nada mal, Doric."
+
+[.doric_6]
+en = "Good, the love of metal is a thing close to my heart."
+pt = "Que bom, o amor pelo metal é algo muito querido para mim."
+
+[.doric_7]
+en = "Sorry, I don't have them all yet."
+pt = "Desculpe, ainda não tenho tudo."
+
+[.doric_8]
+en = "Not to worry, stick at it. Remember, I need 6 clay, 4 copper ore, and 2 iron ore."
+pt = "Sem problema, continue tentando. Lembre-se: preciso de 6 argilas (clay), 4 minérios de cobre e 2 de ferro."
+
+[.doric_9]
+en = "Where can I find those?"
+pt = "Onde encontro essas coisas?"
+
+[.doric_10]
+en = "You'll be able to find all those ores in the rocks just inside the Dwarven Mine. Head east from here and you'll find the entrance in the side of Ice Mountain."
+pt = "Você vai encontrar todos esses minérios nas rochas logo na entrada da Dwarven Mine. Vá para o leste daqui e você vai achar a entrada na encosta da Ice Mountain."
+
+[.doric_11]
+en = "But I'm not a good enough miner to get iron ore."
+pt = "Mas eu não sou um minerador bom o bastante para pegar minério de ferro."
+
+[.doric_12]
+en = "Oh well, you could practice mining until you can. Can't beat a bit of mining - it's a useful skill. Failing that, you might be able to find a more experienced adventurer to buy the iron ore off."
+pt = "Bom, você pode treinar Mining (mineração) até conseguir. Nada como minerar um pouco - é uma habilidade útil. Ou então talvez você ache um aventureiro mais experiente para comprar o minério de ferro."
+
+[.doric_13]
+en = "Certainly, I'll be right back!"
+pt = "Claro, já volto!"
+
+[.doric_14]
+en = "Hello traveller, what brings you to my humble smithy?"
+pt = "Olá, viajante, o que o traz à minha humilde ferraria?"
+
+[.doric_15]
+en = "I wanted to use your anvils."
+pt = "Eu queria usar as suas bigornas."
+
+[.doric_16]
+en = "My anvils get enough work with my own use. I make pickaxes, and it takes a lot of hard work. If you could get me some more materials, then I could let you use<br>them."
+pt = "As minhas bigornas já trabalham bastante comigo. Eu faço picaretas (pickaxes), e dá muito trabalho. Se você me conseguir mais materiais, aí eu deixo você usar<br>as bigornas."
+
+[.doric_17]
+en = "I want to use your whetstone."
+pt = "Quero usar a sua pedra de amolar."
+
+[.doric_18]
+en = "The whetstone is for more advanced smithing, but I could let you use it as well as my anvils if you could get me some more materials."
+pt = "A pedra de amolar (whetstone) é para Smithing (forja) mais avançado, mas posso deixar você usá-la, além das bigornas, se você me conseguir mais materiais."
+
+[.doric_19]
+en = "Mind your own business, shortstuff!"
+pt = "Cuide da sua vida, baixinho!"
+
+[.doric_20]
+en = "How nice to meet someone with such pleasant manners. Do come again when you need to shout at someone smaller than you!"
+pt = "Que prazer conhecer alguém com modos tão agradáveis. Volte sempre que precisar gritar com alguém menor que você!"
+
+[.doric_21]
+en = "I was just checking out the landscape."
+pt = "Só estava admirando a paisagem."
+
+[.doric_22]
+en = "Hope you like it. I do enjoy the solitude of my little home. If you get time, please say hi to my friends in the Dwarven Mine."
+pt = "Espero que goste. Eu adoro a tranquilidade da minha casinha. Se tiver tempo, dê um oi aos meus amigos da Dwarven Mine."
+
+[.doric_23]
+en = "Dwarven Mine?"
+pt = "Dwarven Mine?"
+
+[.doric_24]
+en = "Yep, the entrance is in the side of Ice Mountain just to the east of here. They're a friendly bunch. Stop in at Nurmof's store and buy one of my pickaxes!"
+pt = "Isso, a entrada fica na encosta da Ice Mountain, logo a leste daqui. É um pessoal simpático. Passe na loja do Nurmof e compre uma das minhas picaretas!"
+
+[.doric_25]
+en = "Will do!"
+pt = "Pode deixar!"
+
+[.doric_26]
+en = "What do you make here?"
+pt = "O que você faz aqui?"
+
+[.doric_27]
+en = "I make pickaxes. I am the best maker of pickaxes in the whole of Gielinor."
+pt = "Eu faço picaretas (pickaxes). Sou o melhor fabricante de picaretas de toda Gielinor."
+
+[.doric_28]
+en = "Do you have any to sell?"
+pt = "Você tem alguma para vender?"
+
+[.doric_29]
+en = "Sorry, but I've got a running order with Nurmof."
+pt = "Desculpe, mas tenho uma encomenda fixa com o Nurmof."
+
+[.doric_30]
+en = "Who's Nurmof?"
+pt = "Quem é Nurmof?"
+
+[.doric_31]
+en = "Nurmof has a store over in the Dwarven Mine. You can find the entrance on the side of Ice Mountain to the east of here."
+pt = "O Nurmof tem uma loja lá na Dwarven Mine. A entrada fica na encosta da Ice Mountain, a leste daqui."
+
+[.doric_32]
+en = "Ah, fair enough."
+pt = "Ah, justo."
+
+[.doric_33]
+en = "Before starting this quest, be aware that one or more of your skill levels are lower than recommended."
+pt = "Antes de começar esta missão, saiba que um ou mais dos seus níveis de habilidade estão abaixo do recomendado."
+
+[.doric_34]
+en = "Start Doric's Quest?"
+pt = "Começar a missão Doric's Quest?"
+
+[.doric_35]
+en = "Yes, I will get you the materials."
+pt = "Sim, vou buscar os materiais para você."
+
+[.doric_36]
+en = "Clay is what I use more than anything, to make casts. Could you get me 6 clay, 4 copper ore, and 2 iron ore, please? I could pay a little, and let you use my anvils. Take this pickaxe with you just in case you need it."
+pt = "Argila (clay) é o que eu mais uso, para fazer moldes. Você poderia me trazer 6 argilas, 4 minérios de cobre (copper ore) e 2 minérios de ferro (iron ore), por favor? Posso pagar um pouco e deixar você usar as minhas bigornas. Leve esta picareta (pickaxe), caso precise."
+
+[.doric_37]
+en = "You know, it's funny you should require those exact things!"
+pt = "Olha, que engraçado você precisar exatamente dessas coisas!"
+
+[.doric_38]
+en = "I can usually fit 28 things in my backpack and in a world full of quite literally limitless possibilities, a complete coincidence has occurred!"
+pt = "Normalmente cabem 28 coisas na minha mochila e, num mundo de possibilidades literalmente infinitas, aconteceu uma coincidência completa!"
+
+[.doric_39]
+en = "I don't quite understand what you're saying?"
+pt = "Não entendi bem o que você está dizendo."
+
+[.doric_40]
+en = "Well, out of pure coincidence, despite definitely not knowing what you were about to request, I just so happened to have carried those exact items!"
+pt = "Bom, por pura coincidência, apesar de eu não fazer a menor ideia do que você ia pedir, por acaso eu estava carregando exatamente esses itens!"
+
+[.doric_41]
+en = "Oh my, that is a coincidence! Pass them here, please. I can spare you some coins for your trouble, and please use my anvils any time you want."
+pt = "Nossa, que coincidência! Pode passar para cá, por favor. Posso lhe dar algumas moedas (coins) pelo trabalho, e use as minhas bigornas (anvils) sempre que quiser."
+
+[.doric_42]
+en = "No, hitting rocks is for the boring people, sorry."
+pt = "Não, bater em pedra é coisa de gente chata, desculpe."
+
+[.doric_43]
+en = "That is your choice. Nice to meet you anyway."
+pt = "A escolha é sua. Prazer em conhecê-lo, de qualquer forma."
+
+[.doric_44]
+en = "You hand the clay, copper, and iron to Doric."
+pt = "Você entrega a argila, o cobre e o ferro ao Doric."
+
+# DressingRoom - Falador - Tutorial Island
+
+# DrunkenManFalador - Falador - Tutorial Island
+
+[.drunkenmanfalador_1]
+en = "... whassup?"
+pt = "... e aí, beleeza?"
+
+[.drunkenmanfalador_2]
+en = "Are you alright?"
+pt = "Você está bem?"
+
+[.drunkenmanfalador_3]
+en = "... see ... two of you ... why there two of you?"
+pt = "... tô vendo ... dois de você ... por que tem dois de você?"
+
+[.drunkenmanfalador_4]
+en = "There's only one of me, friend."
+pt = "Só tem um de mim, amigo."
+
+[.drunkenmanfalador_5]
+en = "... no, two of you... you can't count...<br>... maybe you drunk too much..."
+pt = "... não, dois de você... você num sabe contar...<br>... vai ver bebeu demais..."
+
+[.drunkenmanfalador_6]
+en = "Whatever you say, friend."
+pt = "Se você diz, amigo."
+
+[.drunkenmanfalador_7]
+en = "... giant hairy cabbages..."
+pt = "... repolhos gigantes peludos..."
+
+# Flynn - Falador - Tutorial Island
+
+[.flynn_1]
+en = "Hello. Do you want to buy or sell any maces?"
+pt = "Olá. Quer comprar ou vender maças (maces)?"
+
+[.flynn_2]
+en = "Well, I'll have a look, at least."
+pt = "Bom, pelo menos vou dar uma olhada."
+
+# Gadrin - Falador - Tutorial Island
+
+# GardenSupplier - Falador - Tutorial Island
+
+[.gardensupplier_1]
+en = "Do you want to buy some garden plants?"
+pt = "Quer comprar algumas plantas de jardim?"
+
+[.gardensupplier_2]
+en = "Yes please!"
+pt = "Sim, por favor!"
+
+[.gardensupplier_3]
+en = "What are these plants for?"
+pt = "Para que servem essas plantas?"
+
+[.gardensupplier_4]
+en = "For planting in your house's garden, of course!"
+pt = "Para plantar no jardim da sua casa, é claro!"
+
+[.gardensupplier_5]
+en = "How do I do that?"
+pt = "E como eu faço isso?"
+
+[.gardensupplier_6]
+en = "The same way you make furniture. You'll find plant hotspots in your garden and you just need to have one of my bagged saplings with you when you build at them."
+pt = "Do mesmo jeito que você faz móveis. Você vai achar pontos de plantio no seu jardim, e só precisa ter uma das minhas mudas ensacadas com você quando construir neles."
+
+[.gardensupplier_7]
+en = "Ah, I see."
+pt = "Ah, entendi."
+
+[.gardensupplier_8]
+en = "So do you want to look at my stock?"
+pt = "Então, quer ver o meu estoque?"
+
+[.gardensupplier_9]
+en = "No thanks"
+pt = "Não, obrigado"
+
+[.gardensupplier_10]
+en = "I don't have a house."
+pt = "Eu não tenho casa."
+
+[.gardensupplier_11]
+en = "Well they won't do you much good then, will they?"
+pt = "Bem, então elas não vão te servir de muita coisa, não é?"
+
+# Gardener - Falador - Tutorial Island
+
+[.gardener_1]
+en = "Oi'm busy. If tha' wants owt, tha' can go find Wyson. He's ta boss 'round here. And KEEP YER TRAMPIN' FEET ORFF MA' FLOWERS!"
+pt = "Tô ocupado. Se cê qué arguma coisa, vai atrás do Wyson. Ele é o chefe por essas banda. E TIRA ESSES PÉ PISANDO DE CIMA DAS MINHAS FLOR!"
+
+# GiantMole - Falador - Tutorial Island
+
+# GuardFalador - Falador - Tutorial Island
+
+[.guardfalador_1]
+en = "You're a long way out from the city."
+pt = "Você está bem longe da cidade."
+
+[.guardfalador_2]
+en = "I know. We guards usually stay by banks and shops, but I got sent all the way out here to keep an eye on the brigands loitering just south of here."
+pt = "Eu sei. Nós, guardas, costumamos ficar perto dos bancos e das lojas, mas me mandaram até aqui para ficar de olho nos bandidos que rondam logo ao sul daqui."
+
+[.guardfalador_3]
+en = "It sounds more exciting than standing around guarding banks and shops."
+pt = "Parece mais emocionante do que ficar parado vigiando bancos e lojas."
+
+[.guardfalador_4]
+en = "It's not too bad. At least I don't get attacked so often out here. Guards in the cities get killed all the time."
+pt = "Não é tão ruim. Pelo menos aqui não sou atacado tantas vezes. Os guardas nas cidades morrem o tempo todo."
+
+[.guardfalador_5]
+en = "Honestly, people these days just don't know how to behave!"
+pt = "Sinceramente, o pessoal de hoje em dia não sabe se comportar!"
+
+# Hairdresser - Falador - Tutorial Island
+
+[.hairdresser_1]
+en = "Good afternoon %1%. In need of a haircut%2% are we?"
+pt = "Boa tarde, %1%. Precisando de um corte de cabelo%2g%, não é?"
+
+[.hairdresser_2]
+en = "Please select the hairstyle you would like from this brochure. I'll even throw in a free recolour."
+pt = "Por favor, escolha neste catálogo o penteado que gostaria. Ainda pinto o cabelo de graça."
+
+[.hairdresser_3]
+en = "No, thank you."
+pt = "Não, obrigado."
+
+[.hairdresser_4]
+en = "Very well. Come back if you change your mind."
+pt = "Muito bem. Volte se mudar de ideia."
+
+[.hairdresser_5]
+en = "hairdresser"
+pt = "hairdresser"
+
+[.hairdresser_6]
+en = "I don't feel comfortable cutting hair when you are wielding something. Please remove what you are holding first."
+pt = "Não me sinto à vontade cortando cabelo enquanto você empunha alguma coisa. Por favor, tire primeiro o que está segurando."
+
+[.hairdresser_7]
+en = "I can't cut your hair with that on your head."
+pt = "Não consigo cortar o seu cabelo com isso na sua cabeça."
+
+# Herquin - Falador - Tutorial Island
+
+[.herquin_1]
+en = "Do you wish to trade?"
+pt = "Quer negociar?"
+
+[.herquin_2]
+en = "Why, yes, this is a jewel shop after all."
+pt = "Ora, sim, afinal esta é uma joalheria."
+
+[.herquin_3]
+en = "Sorry, I don't want to talk to you, actually."
+pt = "Desculpe, na verdade não quero falar com você."
+
+[.herquin_4]
+en = "Huh, charming."
+pt = "Hunf, que simpatia."
+
+# Highwayman - Falador - Tutorial Island
+
+# Iconis - Falador - Tutorial Island
+
+[.iconis_1]
+en = "Good day! Would you like to have your picture taken?"
+pt = "Bom dia! Gostaria de tirar um retrato?"
+
+[.iconis_2]
+en = "Good day! I'm afraid you can't use the booth's services on a non-members world. Film costs a lot you know!"
+pt = "Bom dia! Infelizmente você não pode usar os serviços da cabine num mundo para não membros. Filme custa caro, sabia?"
+
+[.iconis_3]
+en = "What are pictures for?"
+pt = "Para que servem os retratos?"
+
+[.iconis_4]
+en = "They will be displayed on the forums every time you post there, showing what you look like to anyone who sees your post."
+pt = "Eles vão aparecer nos fóruns toda vez que você postar lá, mostrando a sua aparência para quem vir a sua postagem."
+
+[.iconis_5]
+en = "How does it work?"
+pt = "Como funciona?"
+
+[.iconis_6]
+en = "An imp uses its magic to capture your likeness. Due to the demands we place upon it, it can only take a picture once every two hours."
+pt = "Um diabrete (imp) usa a magia dele para capturar a sua imagem. Por causa do que exigimos dele, ele só consegue tirar um retrato a cada duas horas."
+
+[.iconis_7]
+en = "I have some other questions."
+pt = "Tenho outras perguntas."
+
+[.iconis_8]
+en = "As you wish."
+pt = "Como quiser."
+
+[.iconis_9]
+en = "Why an imp?"
+pt = "Por que um diabrete?"
+
+[.iconis_10]
+en = "I experimented with scrying orbs and cubes, but they distorted the picture terribly. One day an imp blundered into my workshop and destroyed my device,"
+pt = "Eu fiz experiências com orbes e cubos de vidência, mas eles distorciam terrivelmente a imagem. Um dia um diabrete entrou trapalhão na minha oficina e destruiu o meu aparelho,"
+
+[.iconis_11]
+en = "but in doing so it revealed a remarkable talent for taking pictures. We've worked together ever since."
+pt = "mas, ao fazer isso, revelou um talento notável para tirar retratos. Trabalhamos juntos desde então."
+
+[.iconis_12]
+en = "Is it safe?"
+pt = "É seguro?"
+
+[.iconis_13]
+en = "Perfectly! I've tested it on myself many times, and the booth is enchanted to protect your belongings while you're inside."
+pt = "Totalmente! Já testei em mim mesmo muitas vezes, e a cabine é encantada para proteger os seus pertences enquanto você está lá dentro."
+
+[.iconis_14]
+en = "There ya go, guv!"
+pt = "Prontinho, chefia!"
+
+# IkisKrum - Falador - Tutorial Island
+
+[.ikiskrum_1]
+en = "Good day, %1%. What brings you to this end of town?"
+pt = "Bom dia, %1%. O que te traz a este canto da cidade?"
+
+[.ikiskrum_2]
+en = "Well, what is there to do around here?"
+pt = "Bem, o que tem para fazer por aqui?"
+
+[.ikiskrum_3]
+en = "If you're into Mining, plenty! The dwarves have one of the largest mines in the world just under our feet. There's an entrance in the building just north-east of my house."
+pt = "Se você curte Mining (mineração), muita coisa! Os anões têm uma das maiores minas do mundo bem debaixo dos nossos pés. Tem uma entrada no prédio logo a nordeste da minha casa."
+
+[.ikiskrum_4]
+en = "If you're one of these young, loud, hipster sorts you could visit the Party Room, just north of here. That blasted Pete parties all night and I never get any sleep!"
+pt = "Se você é um desses jovens barulhentos e descolados, pode visitar a Party Room, logo ao norte daqui. Aquele maldito Pete festeja a noite toda e eu nunca consigo dormir!"
+
+# Jeff - Falador - Tutorial Island
+
+[.jeff_1]
+en = "Tell me, is the guard still watching us?"
+pt = "Me diga, o guarda ainda está nos vigiando?"
+
+[.jeff_2]
+en = "Why would you care if there's a guard watching you?"
+pt = "Por que você se importaria se tem um guarda te vigiando?"
+
+[.jeff_3]
+en = "Oh, forget it."
+pt = "Ah, esquece."
+
+# KarmaTheChameleon - Falador - Tutorial Island
+
+[.karmathechameleon_1]
+en = "Hsssssss ssssshssssss hssss hsss hssss!"
+pt = "Hsssssss ssssshssssss hssss hsss hssss!"
+
+[.karmathechameleon_2]
+en = "Hssshsss hssssh sssshssss sss.<br>(Party on, dude!)"
+pt = "Hssshsss hssssh sssshssss sss.<br>(Festa total, cara!)"
+
+[.karmathechameleon_3]
+en = "Hssshsss hssssh sssshssss sss.<br>(My name's Karma. I'm Pete's pet.)"
+pt = "Hssshsss hssssh sssshssss sss.<br>(Meu nome é Karma. Sou o bichinho de estimação do Pete.)"
+
+[.karmathechameleon_4]
+en = "That's nice."
+pt = "Que legal."
+
+[.karmathechameleon_5]
+en = "Hssshsss hssssh sssshssss sss.<br>(Oh yeah, man, it majorly rocks!)"
+pt = "Hssshsss hssssh sssshssss sss.<br>(Pois é, cara, é demais!)"
+
+[.karmathechameleon_6]
+en = "Rock on!"
+pt = "Manda ver!"
+
+[.karmathechameleon_7]
+en = "Hssshsss hssssh sssshssss sss.<br>(You betcha!)"
+pt = "Hssshsss hssssh sssshssss sss.<br>(Pode crer!)"
+
+# Lucy - Falador - Tutorial Island
+
+[.lucy_1]
+en = "Hi! I'm Lucy. Welcome to the Party Room!"
+pt = "Oi! Eu sou a Lucy. Bem-vindo à Party Room!"
+
+[.lucy_2]
+en = "Hi."
+pt = "Oi."
+
+[.lucy_3]
+en = "Would you like to buy a beer?"
+pt = "Gostaria de comprar uma cerveja?"
+
+[.lucy_4]
+en = "How much do they cost?"
+pt = "Quanto custa?"
+
+[.lucy_5]
+en = "Just 2 gold pieces."
+pt = "Só 2 moedas de ouro."
+
+[.lucy_6]
+en = "No thanks, I can't afford that."
+pt = "Não, obrigado, não posso pagar isso."
+
+[.lucy_7]
+en = "I see. Well, come and see me if you change your mind. You know where I am!"
+pt = "Entendo. Bem, venha me ver se mudar de ideia. Você sabe onde me encontrar!"
+
+[.lucy_8]
+en = "Coming right up %1%!"
+pt = "É pra já, %1%!"
+
+[.lucy_9]
+en = "I said 2 coins! You haven't got 2 coins!"
+pt = "Eu disse 2 moedas! Você não tem 2 moedas!"
+
+[.lucy_10]
+en = "Sorry. I'll come back another day."
+pt = "Desculpe. Volto outro dia."
+
+[.lucy_11]
+en = "Thanks, Lucy."
+pt = "Obrigado, Lucy."
+
+# MakeoverMage - Falador - Tutorial Island
+
+[.makeovermage_1]
+en = "Hello there! I am known as the Makeover Mage! I have spent many years researching magicks that can change your physical appearance."
+pt = "Olá! Eu sou conhecido como o Makeover Mage! Passei muitos anos pesquisando magias capazes de mudar a sua aparência física."
+
+[.makeovermage_2]
+en = "I call it a 'makeover'. Would you like me to perform my magicks on you?"
+pt = "Eu chamo isso de 'transformação'. Gostaria que eu fizesse minhas magias em você?"
+
+[.makeovermage_3]
+en = "That is no different from what you already have. I guess I shouldn't charge you if I'm not changing anything."
+pt = "Isso não é nada diferente do que você já tem. Acho que não devo te cobrar se não estou mudando nada."
+
+[.makeovermage_4]
+en = "Two arms, two legs, one head; it seems that spell finally worked okay."
+pt = "Dois braços, duas pernas, uma cabeça; parece que o feitiço finalmente funcionou direito."
+
+[.makeovermage_5]
+en = "Whew! That was lucky."
+pt = "Ufa! Essa foi por pouco."
+
+[.makeovermage_6]
+en = "What was?"
+pt = "O que foi por pouco?"
+
+[.makeovermage_7]
+en = "Nothing! It's all fine! You seem alive anyway."
+pt = "Nada! Está tudo bem! Pelo menos você parece estar vivo."
+
+[.makeovermage_8]
+en = "Hmm, you didn't feel any unexpected growths on your head just then, did you?"
+pt = "Hmm, você não sentiu nenhum crescimento inesperado na cabeça agora há pouco, sentiu?"
+
+[.makeovermage_9]
+en = "Er, no?"
+pt = "Hã, não?"
+
+[.makeovermage_10]
+en = "Good, good! I was worried for a second there."
+pt = "Ótimo, ótimo! Fiquei preocupado por um segundo."
+
+[.makeovermage_11]
+en = "Woah!"
+pt = "Uau!"
+
+[.makeovermage_12]
+en = "You still look human!"
+pt = "Você ainda parece humano!"
+
+[.makeovermage_13]
+en = "Uh, thanks, I guess."
+pt = "Hã, obrigado, eu acho."
+
+[.makeovermage_14]
+en = "Tell me more about this 'makeover'."
+pt = "Fale mais sobre essa 'transformação'."
+
+[.makeovermage_15]
+en = "Why, of course! Basically, and I will explain this so that you understand it correctly,"
+pt = "Ora, claro! Basicamente, e vou explicar de um jeito que você entenda direitinho,"
+
+[.makeovermage_16]
+en = "I use my secret magical technique to melt your body down into a puddle of its elements."
+pt = "eu uso minha técnica mágica secreta para derreter o seu corpo numa poça dos seus elementos."
+
+[.makeovermage_17]
+en = "When I have broken down all components of your body, I then rebuild it into the form I am thinking of."
+pt = "Depois de decompor todos os componentes do seu corpo, eu o reconstruo na forma que estou imaginando."
+
+[.makeovermage_18]
+en = "Or, you know, something vaguely close enough, anyway."
+pt = "Ou, sabe, em algo mais ou menos parecido, pelo menos."
+
+[.makeovermage_19]
+en = "Uh... that doesn't sound particularly safe to me."
+pt = "Hã... isso não me parece muito seguro."
+
+[.makeovermage_20]
+en = "It's as safe as houses! Why, I have only had thirty-six major accidents this month!"
+pt = "É seguro como uma casa! Ora, só tive trinta e seis acidentes graves este mês!"
+
+[.makeovermage_21]
+en = "So, what do you say? Feel like a change?"
+pt = "E então, o que me diz? Está a fim de uma mudança?"
+
+[.makeovermage_22]
+en = "Sure, do it."
+pt = "Claro, pode fazer."
+
+[.makeovermage_23]
+en = "You, of course, agree that if by some accident you are turned into a frog you have no rights for compensation or refund."
+pt = "Você, é claro, concorda que, se por algum acidente for transformado em sapo, não terá direito a indenização nem reembolso."
+
+[.makeovermage_24]
+en = "No, thanks. I'm happy as I am."
+pt = "Não, obrigado. Estou feliz assim."
+
+[.makeovermage_25]
+en = "Ehhh..suit yourself."
+pt = "Ehhh... você que sabe."
+
+[.makeovermage_26]
+en = "Cool amulet! Can I have one?"
+pt = "Que amuleto legal! Posso ter um?"
+
+[.makeovermage_27]
+en = "No problem, but please remember that the amulet I will sell you is only a copy of my own. It contains no magical powers and, as such, will only cost you %1% coins."
+pt = "Sem problema, mas lembre que o amuleto que vou te vender é só uma cópia do meu. Ele não tem poderes mágicos e, por isso, só vai te custar %1% moedas (coins)."
+
+[.makeovermage_28]
+en = "Oh, I don't have enough money for that."
+pt = "Ah, não tenho dinheiro suficiente para isso."
+
+[.makeovermage_29]
+en = "Sure, here you go."
+pt = "Claro, aqui está."
+
+[.makeovermage_30]
+en = "You receive an amulet in exchange for %1% coins"
+pt = "Você recebe um amuleto em troca de %1% moedas"
+
+[.makeovermage_31]
+en = "Um...you don't seem to have room to take the amulet. Maybe you should buy it some other time."
+pt = "Hã... parece que você não tem espaço para levar o amuleto. Talvez seja melhor comprar outra hora."
+
+[.makeovermage_32]
+en = "Oh yeah, that's true."
+pt = "Ah, é verdade."
+
+[.makeovermage_33]
+en = "No way! That's too expensive."
+pt = "De jeito nenhum! É caro demais."
+
+[.makeovermage_34]
+en = "That's fair enough, my jewellery is not to everyone's taste. Now, would you like a makeover?"
+pt = "É justo, minhas joias não agradam a todos. Agora, gostaria de uma transformação?"
+
+[.makeovermage_35]
+en = "I can alter your physical form if you wish. Would you like me to perform my magicks on you?"
+pt = "Posso alterar a sua forma física, se quiser. Gostaria que eu fizesse minhas magias em você?"
+
+[.makeovermage_36]
+en = "Can you make me a different colour?"
+pt = "Pode me deixar de outra cor?"
+
+[.makeovermage_37]
+en = "Why, of course! I have a wide array of colours for you to choose from."
+pt = "Ora, claro! Tenho uma grande variedade de cores para você escolher."
+
+# MaligniusMortifer - Falador - Tutorial Island
+
+[.maligniusmortifer_1]
+en = "So, %1%, your curiosity leads you to speak to me?"
+pt = "Então, %1%, a curiosidade te trouxe para falar comigo?"
+
+[.maligniusmortifer_2]
+en = "Oi - stop waving your items at me!"
+pt = "Ei - pare de balançar seus itens na minha cara!"
+
+[.maligniusmortifer_3]
+en = "You should take that pot a bit further away from me before you open it!"
+pt = "É melhor levar esse pote um pouco mais para longe de mim antes de abri-lo!"
+
+[.maligniusmortifer_4]
+en = "Who are you and what are you doing here?"
+pt = "Quem é você e o que faz aqui?"
+
+[.maligniusmortifer_5]
+en = "Can you teach me something about magic?"
+pt = "Pode me ensinar algo sobre magia?"
+
+[.maligniusmortifer_6]
+en = "Where can I get clothes like those?"
+pt = "Onde consigo roupas como essas?"
+
+[.maligniusmortifer_7]
+en = "Actually, I don't want to talk to you."
+pt = "Na verdade, não quero falar com você."
+
+[.maligniusmortifer_8]
+en = "About those enchanted secateurs again..."
+pt = "Sobre aquela tesoura de poda encantada..."
+
+[.maligniusmortifer_9]
+en = "Could you spare me a brown apron?"
+pt = "Pode me arranjar um avental marrom?"
+
+[.maligniusmortifer_10]
+en = "Can I have some more bone seeds?"
+pt = "Pode me dar mais sementes de osso?"
+
+[.maligniusmortifer_11]
+en = "... MORE ..."
+pt = "... MAIS ..."
+
+[.maligniusmortifer_12]
+en = "About those skeletal magi in the Colony..."
+pt = "Sobre aqueles magos esqueletos na Colônia..."
+
+[.maligniusmortifer_13]
+en = "Oh, if you must."
+pt = "Ah, se você insiste."
+
+[.maligniusmortifer_14]
+en = "Malignius Mortifer hands you a brown apron."
+pt = "Malignius Mortifer te entrega um avental marrom (brown apron)."
+
+[.maligniusmortifer_15]
+en = "Bah! Then go away!"
+pt = "Bah! Então vá embora!"
+
+[.maligniusmortifer_16]
+en = "I am the great Malignius Mortifer, wielder of strange and terrible powers. These lowly followers of mine are dedicated students of the magical arts. Their business is to follow me and learn all they can."
+pt = "Eu sou o grande Malignius Mortifer, detentor de poderes estranhos e terríveis. Estes meus humildes seguidores são estudantes dedicados das artes mágicas. A tarefa deles é me seguir e aprender tudo o que puderem."
+
+[.maligniusmortifer_17]
+en = "They don't look very tough."
+pt = "Eles não parecem muito durões."
+
+[.maligniusmortifer_18]
+en = "You may believe that, but even if you strike one down, another will rise up within minutes."
+pt = "Você pode até achar isso, mas mesmo que derrube um deles, outro se levanta em minutos."
+
+[.maligniusmortifer_19]
+en = "Yeah, right."
+pt = "Ah, tá."
+
+[.maligniusmortifer_20]
+en = "Each of my followers is a master of his chosen element. His life becomes bound to that element in a way you could not hope to understand."
+pt = "Cada um dos meus seguidores é mestre do elemento que escolheu. A vida dele fica ligada a esse elemento de um jeito que você nem sonharia em entender."
+
+[.maligniusmortifer_21]
+en = "I am mastering a branch of magic that few dare to attempt: Necromancy! The fools in the Guild of Wizards shun anyone who practices this art, but there are a few in this land who know the rudiments."
+pt = "Estou dominando um ramo da magia que poucos ousam tentar: a Necromancia! Os tolos do Guild of Wizards rejeitam quem pratica esta arte, mas há alguns nesta terra que conhecem o básico."
+
+[.maligniusmortifer_22]
+en = "Grayzag, Invrigar, Sithik... Even Melzar studied the methods of necromancy, until an accident affected his mind. Now his spells tend to result in..."
+pt = "Grayzag, Invrigar, Sithik... Até o Melzar estudou os métodos da necromancia, até que um acidente afetou a mente dele. Agora os feitiços dele costumam resultar em..."
+
+[.maligniusmortifer_23]
+en = "Grayzag and Invrigar... Even Melzar studied the methods of necromancy, until an accident affected his mind. Now his spells tend to result in..."
+pt = "Grayzag e Invrigar... Até o Melzar estudou os métodos da necromancia, até que um acidente afetou a mente dele. Agora os feitiços dele costumam resultar em..."
+
+[.maligniusmortifer_24]
+en = "... well, let us simply say that he does NOT raise armies of undead minions."
+pt = "... bem, digamos apenas que ele NÃO ergue exércitos de servos mortos-vivos."
+
+[.maligniusmortifer_25]
+en = "Is this like Summoning?"
+pt = "Isso é como Summoning?"
+
+[.maligniusmortifer_26]
+en = "Is this like Summoning? Can you teach me?"
+pt = "Isso é como Summoning? Pode me ensinar?"
+
+[.maligniusmortifer_27]
+en = "The obscure art of necromancy has nothing to do with Summoning."
+pt = "A obscura arte da necromancia não tem nada a ver com Summoning."
+
+[.maligniusmortifer_28]
+en = "Through necromancy, I may resurrect the bodies of those who have fallen, and bend them to my will, and even command them to tell me hidden knowledge."
+pt = "Pela necromancia, posso ressuscitar os corpos dos que tombaram, dobrá-los à minha vontade e até obrigá-los a me revelar conhecimentos ocultos."
+
+[.maligniusmortifer_29]
+en = "I shall not pass on my secrets lightly to any passer-by!"
+pt = "Não vou passar meus segredos assim fácil para qualquer um que passe por aqui!"
+
+[.maligniusmortifer_30]
+en = "Even a mighty hero like me?"
+pt = "Nem para um herói poderoso como eu?"
+
+[.maligniusmortifer_31]
+en = "Deluded lover of Guthix, you will get no secrets from me!"
+pt = "Iludido adorador de Guthix, você não vai arrancar segredo nenhum de mim!"
+
+[.maligniusmortifer_32]
+en = "Saradominist Fool! You will get no secrets from me!"
+pt = "Tolo saradominista! Você não vai arrancar segredo nenhum de mim!"
+
+[.maligniusmortifer_33]
+en = "Although I note your respects for our Lord Zamorak, I am afraid the subtle secrets of necromancy must remain beyond your grasp."
+pt = "Embora eu note o seu respeito pelo nosso Lorde Zamorak, receio que os sutis segredos da necromancia devam continuar fora do seu alcance."
+
+[.maligniusmortifer_34]
+en = "There are ways through which you may summon creatures to your side, but my own work is of a different sort."
+pt = "Há meios pelos quais você pode invocar criaturas para o seu lado, mas o meu trabalho é de outro tipo."
+
+[.maligniusmortifer_35]
+en = "What happened to Melzar?"
+pt = "O que aconteceu com o Melzar?"
+
+[.maligniusmortifer_36]
+en = "Why do you keep making fungi appear?"
+pt = "Por que você vive fazendo cogumelos aparecerem?"
+
+[.maligniusmortifer_37]
+en = "Thanks, I'll be off now."
+pt = "Obrigado, já vou indo."
+
+[.maligniusmortifer_38]
+en = "I am sure your curiosity will eventually draw you to speak to me again, %1%."
+pt = "Tenho certeza de que a sua curiosidade vai acabar te trazendo para falar comigo de novo, %1%."
+
+[.maligniusmortifer_39]
+en = "The forces required to wield power over the dead are very difficult to control."
+pt = "As forças necessárias para dominar os mortos são muito difíceis de controlar."
+
+[.maligniusmortifer_40]
+en = "Melzar's concentration slipped, and his spell rebounded upon him. Although he did not die, his mind broke."
+pt = "A concentração do Melzar falhou e o feitiço voltou contra ele. Ele não morreu, mas a mente dele se partiu."
+
+[.maligniusmortifer_41]
+en = "Now he dwells amidst the beasts that fill his strange home, and when he attempts to do magic he gets... amusing results."
+pt = "Agora ele vive entre as feras que enchem aquela casa estranha, e quando tenta fazer magia consegue resultados... divertidos."
+
+[.maligniusmortifer_42]
+en = "Necromancy is... still not fully understood. So few people dare to study it. Although my spells usually raise whichever undead creature I desire, they sometimes misfire; as Melzar has learnt!"
+pt = "A necromancia ainda... não é totalmente compreendida. Pouquíssimos ousam estudá-la. Meus feitiços costumam erguer a criatura morta-viva que eu quiser, mas às vezes falham, como o Melzar aprendeu!"
+
+[.maligniusmortifer_43]
+en = "What now, %1%, can't you just leave me alone to practice my art?"
+pt = "O que foi agora, %1%? Não pode me deixar em paz para praticar a minha arte?"
+
+[.maligniusmortifer_44]
+en = "Can I get another set of magic secateurs?"
+pt = "Posso conseguir outra tesoura de poda mágica?"
+
+[.maligniusmortifer_45]
+en = "Well I guess it's your lucky day! Since your last visit I've been thinking, I never use my enchanted secateurs anymore, I could sell them to you, if you like."
+pt = "Pois é o seu dia de sorte! Desde a sua última visita andei pensando: nunca mais uso a minha tesoura de poda encantada, então posso vendê-la a você, se quiser."
+
+[.maligniusmortifer_46]
+en = "That's great!"
+pt = "Que ótimo!"
+
+[.maligniusmortifer_47]
+en = "How much would they cost?"
+pt = "Quanto ela custaria?"
+
+[.maligniusmortifer_48]
+en = "I could let you have them for a mere 40,000 gp."
+pt = "Posso deixá-la com você por meros 40.000 gp."
+
+[.maligniusmortifer_49]
+en = "Sorry to have bothered you."
+pt = "Desculpe incomodar."
+
+[.maligniusmortifer_50]
+en = "That's ok, I shouldn't have been so abrupt with you."
+pt = "Tudo bem, eu não devia ter sido tão rude com você."
+
+[.maligniusmortifer_51]
+en = "40,000! That's outrageous!"
+pt = "40.000! Isso é um absurdo!"
+
+[.maligniusmortifer_52]
+en = "Well, that's my price. If you change your mind, you can come back and talk to me. Good day."
+pt = "Bem, esse é o meu preço. Se mudar de ideia, pode voltar e falar comigo. Bom dia."
+
+[.maligniusmortifer_53]
+en = "That's too expensive for me I'm afraid."
+pt = "É caro demais para mim, infelizmente."
+
+[.maligniusmortifer_54]
+en = "Ok, great."
+pt = "Certo, ótimo."
+
+[.maligniusmortifer_55]
+en = "You don't have room to hold them. Stop wasting my time."
+pt = "Você não tem espaço para carregá-la. Pare de desperdiçar o meu tempo."
+
+[.maligniusmortifer_56]
+en = "You don't have 40,000 gp with you! Do you take me for a fool?"
+pt = "Você não está com 40.000 gp! Acha que eu sou algum tolo?"
+
+[.maligniusmortifer_57]
+en = "Sorry, I didn't realise. I'll have to visit a bank."
+pt = "Desculpe, não tinha percebido. Vou ter que passar no banco."
+
+[.maligniusmortifer_58]
+en = "Fine, I might see you later then."
+pt = "Tudo bem, talvez eu te veja mais tarde, então."
+
+[.maligniusmortifer_59]
+en = "Malignius Mortifer hands you a pair of magic secateurs."
+pt = "Malignius Mortifer te entrega uma tesoura de poda mágica (magic secateurs)."
+
+[.maligniusmortifer_60]
+en = "A pleasure doing business with you, %1%."
+pt = "Um prazer fazer negócio com você, %1%."
+
+[.maligniusmortifer_61]
+en = "You fetch me a pot with a lid first."
+pt = "Primeiro me traga um pote com tampa."
+
+[.maligniusmortifer_62]
+en = "Fortunately I do have another pot with a lid."
+pt = "Por sorte, tenho outro pote com tampa."
+
+[.maligniusmortifer_63]
+en = "Yes, yes, have fun with them!"
+pt = "Sim, sim, divirta-se com elas!"
+
+[.maligniusmortifer_64]
+en = "Malignius Mortifer hands you some bone seeds."
+pt = "Malignius Mortifer te entrega algumas sementes de osso (bone seeds)."
+
+[.maligniusmortifer_65]
+en = "About those skeletal magi in the Colony - why don't they disappear now the Colony's safe?"
+pt = "Sobre aqueles magos esqueletos na Colônia - por que eles não somem agora que a Colônia está segura?"
+
+[.maligniusmortifer_66]
+en = "HAHAHA! I never specified how long they'd stay there!"
+pt = "HAHAHA! Eu nunca disse quanto tempo eles ficariam lá!"
+
+[.maligniusmortifer_67]
+en = "So when will they go away? They're in the dormitories, and that's a real nuisance for the colonists!"
+pt = "Então quando eles vão embora? Estão nos dormitórios, e isso é um incômodo e tanto para os colonos!"
+
+[.maligniusmortifer_68]
+en = "HAHAHA!"
+pt = "HAHAHA!"
+
+[.maligniusmortifer_69]
+en = "So you're not going to get rid of them?"
+pt = "Então você não vai se livrar deles?"
+
+[.maligniusmortifer_70]
+en = "Oh, forget I asked."
+pt = "Ah, esquece que eu perguntei."
+
+[.maligniusmortifer_71]
+en = "I see no glimmer of understanding in your eyes; my time would be wasted trying to teach you of the subtle arts."
+pt = "Não vejo nem um lampejo de compreensão nos seus olhos; seria perda de tempo tentar te ensinar as artes sutis."
+
+[.maligniusmortifer_72]
+en = "If you are truly interested in magic, perhaps you should go and speak to the Duke of Lumbridge, who lives east of this place. Perchance he will have a mission for you that will teach you something."
+pt = "Se você se interessa mesmo por magia, talvez deva falar com o Duke de Lumbridge, que mora a leste daqui. Quem sabe ele tenha uma missão que te ensine alguma coisa."
+
+[.maligniusmortifer_73]
+en = "Ah, you are an inquisitive fellow. I shall speak of the great Wizards' Tower, destroyed by fire many years ago..."
+pt = "Ah, você é um sujeito curioso. Vou falar da grande Wizards' Tower, destruída pelo fogo há muitos anos..."
+
+[.maligniusmortifer_74]
+en = "Many say it was the greatest building in the history of Gielinor, a magnificent monument to human ingenuity."
+pt = "Muitos dizem que foi a maior construção da história de Gielinor, um monumento magnífico à engenhosidade humana."
+
+[.maligniusmortifer_75]
+en = "Yet when humans are offered great power, they so often buy it at the cost of their principles."
+pt = "Mas quando os humanos recebem grande poder, muitas vezes o compram ao custo dos próprios princípios."
+
+[.maligniusmortifer_76]
+en = "Wizards who claimed allegiance to Saradomin began to insist that magic be restricted to the few they deemed 'worthy' of such powers."
+pt = "Os magos que juravam lealdade a Saradomin passaram a exigir que a magia ficasse restrita aos poucos que eles julgassem 'dignos' de tais poderes."
+
+[.maligniusmortifer_77]
+en = "Before long, those who did not share their fatuous obsession with Saradomin were excluded from the Tower completely. This state of affairs could not continue."
+pt = "Logo, quem não compartilhava da obsessão tola deles por Saradomin foi excluído da Torre por completo. Aquela situação não podia continuar."
+
+[.maligniusmortifer_78]
+en = "One dark night, a brave band of magi loyal to the great Lord Zamorak stormed the Tower. Despite heavy losses, they fought their way up the levels until they reached the Great Library."
+pt = "Numa noite escura, um bravo bando de magos leais ao grande Lorde Zamorak invadiu a Torre. Apesar de pesadas perdas, abriram caminho andar por andar até chegar à Grande Biblioteca."
+
+[.maligniusmortifer_79]
+en = "Alas, they were trapped and could not steal the precious records. But before they could be defeated, the bravest of them took it upon himself to blast the writings into nothingness, destroying the library."
+pt = "Infelizmente, ficaram encurralados e não conseguiram roubar os preciosos registros. Mas antes de serem derrotados, o mais bravo deles tomou para si a tarefa de reduzir os escritos a nada, destruindo a biblioteca."
+
+[.maligniusmortifer_80]
+en = "The ensuing fire raced through the tower, and none escaped its fury. Some say that Lord Zamorak himself fanned the flames to ensure the destruction of his enemies!"
+pt = "O incêndio que se seguiu correu pela torre, e ninguém escapou da sua fúria. Alguns dizem que o próprio Lorde Zamorak atiçou as chamas para garantir a destruição dos inimigos!"
+
+[.maligniusmortifer_81]
+en = "Much of that knowledge was lost, and some has never yet been rediscovered. Still, your efforts on behalf of my colleagues have not been wasted! Once again, the forces of Zamorak can create unlimited runestones!"
+pt = "Muito daquele conhecimento se perdeu, e parte dele nunca foi redescoberta. Ainda assim, seus esforços em favor dos meus colegas não foram em vão! Mais uma vez, as forças de Zamorak podem criar pedras rúnicas sem limite!"
+
+[.maligniusmortifer_82]
+en = "May the world cower in its boots!"
+pt = "Que o mundo trema nas botas!"
+
+[.maligniusmortifer_83]
+en = "I see..."
+pt = "Entendi..."
+
+[.maligniusmortifer_84]
+en = "I bid you farewell for now."
+pt = "Despeço-me de você por ora."
+
+[.maligniusmortifer_85]
+en = "Much of that knowledge was lost, and some has never yet been rediscovered. Still, the power of magic remains in the world, and we who dedicate our lives to its study may yet perform great works..."
+pt = "Muito daquele conhecimento se perdeu, e parte dele nunca foi redescoberta. Ainda assim, o poder da magia continua no mundo, e nós que dedicamos a vida ao seu estudo ainda podemos realizar grandes feitos..."
+
+[.maligniusmortifer_86]
+en = "Thanks, I'll be going now."
+pt = "Obrigado, já vou indo."
+
+[.maligniusmortifer_87]
+en = "Bah! Our garments are an outward sign of our dominance of the magical arts. You cannot simply buy them in a shop!"
+pt = "Bah! Nossas vestes são um sinal visível do nosso domínio das artes mágicas. Você não pode simplesmente comprá-las numa loja!"
+
+[.maligniusmortifer_88]
+en = "What happens if I kill you and take them?"
+pt = "E se eu te matar e pegar as suas?"
+
+[.maligniusmortifer_89]
+en = "Try it and see!"
+pt = "Tente e veja!"
+
+[.maligniusmortifer_90]
+en = "How about if you teach me enough about magic so I can wear those clothes too?"
+pt = "Que tal você me ensinar magia o bastante para eu também poder usar essas roupas?"
+
+[.maligniusmortifer_91]
+en = "How about if I turn you into a mushroom to make you stop bothering me?"
+pt = "Que tal eu te transformar num cogumelo para você parar de me incomodar?"
+
+[.maligniusmortifer_92]
+en = "MMMmmmph!"
+pt = "MMMmmmph!"
+
+# ManFalador - Falador - Tutorial Island
+
+[.manfalador_1]
+en = "What are you doing in my house?"
+pt = "O que você está fazendo na minha casa?"
+
+[.manfalador_2]
+en = "I was just exploring."
+pt = "Só estava explorando."
+
+[.manfalador_3]
+en = "You're exploring my house?"
+pt = "Você está explorando a minha casa?"
+
+[.manfalador_4]
+en = "You don't mind, do you?"
+pt = "Você não se importa, né?"
+
+[.manfalador_5]
+en = "But... why are you exploring my house?"
+pt = "Mas... por que você está explorando a minha casa?"
+
+[.manfalador_6]
+en = "Oh, I don't know. I just wandered in, saw you and thought it'd be fun to speak to you."
+pt = "Ah, sei lá. Só entrei por acaso, vi você e achei que seria divertido conversar com você."
+
+[.manfalador_7]
+en = "... you are very strange..."
+pt = "... você é muito estranho..."
+
+[.manfalador_8]
+en = "Perhaps I should go now."
+pt = "Acho melhor eu ir embora."
+
+[.manfalador_9]
+en = "Yes, please go away now."
+pt = "Sim, por favor, vá embora agora."
+
+# ManFalador2 - Falador - Tutorial Island
+
+[.manfalador2_1]
+en = "Oh, hello. I don't suppose you've seen a campsite around here, have you?"
+pt = "Ah, olá. Por acaso você não viu um acampamento por aqui, viu?"
+
+[.manfalador2_2]
+en = "No, sorry."
+pt = "Não, desculpa."
+
+[.manfalador2_3]
+en = "Curse this lousy sense of direction. All my stuff is at that campsite!"
+pt = "Maldito senso de direção. Todas as minhas coisas estão naquele acampamento!"
+
+[.manfalador2_4]
+en = "You've still got what you're carrying, though."
+pt = "Mas você ainda tem o que está carregando."
+
+[.manfalador2_5]
+en = "Well, yes. Not everything else of mine, though."
+pt = "Bem, sim. Mas não todo o resto das minhas coisas."
+
+# Megan - Falador - Tutorial Island
+
+[.megan_1]
+en = "Hi! I'm Megan. Welcome to the Party Room!"
+pt = "Oi! Eu sou a Megan. Bem-vindo ao Party Room!"
+
+[.megan_2]
+en = "One beer please Megan!"
+pt = "Uma cerveja, por favor, Megan!"
+
+[.megan_3]
+en = "Can you dance, Megan?"
+pt = "Você sabe dançar, Megan?"
+
+[.megan_4]
+en = "Can I dance?!"
+pt = "Se eu sei dançar?!"
+
+[.megan_5]
+en = "CAN I dance?!!"
+pt = "Se EU sei dançar?!!"
+
+[.megan_6]
+en = "Dance with me Megan!"
+pt = "Dance comigo, Megan!"
+
+[.megan_7]
+en = "Do you have any news?"
+pt = "Tem alguma novidade?"
+
+[.megan_8]
+en = "Not at the moment. I've heard that the known world is expanding as new places are discovered."
+pt = "No momento, não. Ouvi dizer que o mundo conhecido está crescendo, com novos lugares sendo descobertos."
+
+[.megan_9]
+en = "These are exciting times indeed!"
+pt = "São tempos empolgantes, sem dúvida!"
+
+[.megan_10]
+en = "Certainly %1%! Coming right up! That's two coins, please."
+pt = "Claro, %1%! É pra já! São duas moedas, por favor."
+
+[.megan_11]
+en = "Thanks, Megan."
+pt = "Obrigado, Megan."
+
+# Miazrqa - Falador - Tutorial Island
+
+[.miazrqa_1]
+en = "Thanks again for finding my pendant. I felt so lost without it."
+pt = "Obrigada de novo por achar o meu pingente. Eu me sentia tão perdida sem ele."
+
+[.miazrqa_2]
+en = "You're welcome. Goodbye."
+pt = "De nada. Adeus."
+
+[.miazrqa_3]
+en = "Oh hello."
+pt = "Ah, olá."
+
+[.miazrqa_4]
+en = "Who am I? Why, how impertinent! I am a princess and I will be spoken to like one. Now be off with you. I have no time for scruffy adventurers like yourself!"
+pt = "Quem sou eu? Ora, que impertinência! Sou uma princesa e exijo ser tratada como tal. Agora suma daqui. Não tenho tempo para aventureiros maltrapilhos como você!"
+
+[.miazrqa_5]
+en = "I notice that there is a dwarf up in the tower there. Why is he up there?"
+pt = "Reparei que tem um anão lá em cima da torre. Por que ele está lá?"
+
+[.miazrqa_6]
+en = "I do believe that is none of your business, young scallyrumpit! Now kindly leave."
+pt = "Creio que isso não é da sua conta, seu pirralho atrevido! Agora, faça o favor de se retirar."
+
+[.miazrqa_7]
+en = "Uh...ok. Never mind then!"
+pt = "Hã... tá. Deixa pra lá então!"
+
+# MiningGuildDwarf - Falador - Tutorial Island
+
+[.miningguilddwarf_1]
+en = "Welcome to the mining guild. Can I help you with anything?"
+pt = "Bem-vindo à guilda de mineração. Posso ajudar com alguma coisa?"
+
+[.miningguilddwarf_2]
+en = "Select an option"
+pt = "Selecione uma opção"
+
+[.miningguilddwarf_3]
+en = "What have you got in the guild?"
+pt = "O que tem na guilda?"
+
+[.miningguilddwarf_4]
+en = "All sorts of things!<br>There's plenty of coal rocks along with some iron,<br>mithril and adamantite as well."
+pt = "Todo tipo de coisa!<br>Tem muitas rochas de carvão (coal), além de algumas de ferro,<br>mithril e adamantite também."
+
+[.miningguilddwarf_5]
+en = "There's no better mining site anywhere!"
+pt = "Não há lugar melhor para minerar em canto nenhum!"
+
+[.miningguilddwarf_6]
+en = "What do you dwarves do with the ore you mine?"
+pt = "O que vocês, anões, fazem com o minério que mineram?"
+
+[.miningguilddwarf_7]
+en = "What do you think? We smelt it into bars, smith the metal to make armour and weapons, then we exchange them for goods and services."
+pt = "O que você acha? Fundimos em barras, forjamos o metal para fazer armaduras e armas, e depois trocamos por mercadorias e serviços."
+
+[.miningguilddwarf_8]
+en = "I don't see many dwarves<br>selling armour or weapons here."
+pt = "Não vejo muitos anões<br>vendendo armaduras ou armas aqui."
+
+[.miningguilddwarf_9]
+en = "No, this is only a mining outpost. We dwarves don't<br>much like to settle in human cities. Most of the ore is<br>carted off to Keldagrim, the great dwarven city.<br>They've got a special blast furnace up there - it makes"
+pt = "Não, aqui é só um posto de mineração. Nós, anões, não<br>gostamos muito de morar em cidades humanas. A maior parte do minério<br>é levada de carroça para Keldagrim, a grande cidade dos anões.<br>Eles têm uma fornalha especial (blast furnace) lá - ela deixa"
+
+[.miningguilddwarf_10]
+en = "smelting the ore so much easier. There are plenty of dwarven traders working in Keldagrim. Anyway, can I<br>help you with anything else?"
+pt = "a fundição do minério muito mais fácil. Há muitos comerciantes anões trabalhando em Keldagrim. Enfim, posso<br>ajudar com mais alguma coisa?"
+
+[.miningguilddwarf_11]
+en = "No thanks, I'm fine."
+pt = "Não, obrigado, estou bem."
+
+# Narf - Falador - Tutorial Island
+
+[.narf_1]
+en = "That's a funny name you've got."
+pt = "Que nome engraçado o seu."
+
+[.narf_2]
+en = "'Narf'? You think that's funny? At least I don't call myself %1%! Where did you get a name like that?"
+pt = "'Narf'? Você acha engraçado? Pelo menos eu não me chamo %1%! Onde você arrumou um nome desses?"
+
+[.narf_3]
+en = "It seemed like a good idea at the time!"
+pt = "Pareceu uma boa ideia na hora!"
+
+[.narf_4]
+en = "Bah!"
+pt = "Bah!"
+
+# PartyPete - Falador - Tutorial Island
+
+[.partypete_1]
+en = "Hi!"
+pt = "Oi!"
+
+[.partypete_2]
+en = "Hi! I'm Party Pete. Welcome to the Party Room!"
+pt = "Oi! Eu sou o Party Pete. Bem-vindo à Party Room!"
+
+[.partypete_3]
+en = "So, what's this room for?"
+pt = "Então, para que serve esta sala?"
+
+[.partypete_4]
+en = "This room is for partying the night away!"
+pt = "Esta sala é para festejar a noite toda!"
+
+[.partypete_5]
+en = "How do you have a party?"
+pt = "Como se faz uma festa?"
+
+[.partypete_6]
+en = "Get a few mates round, get the beers in and have fun! Some players organise parties so keep an eye open!"
+pt = "Chame uns amigos, traga as cervejas e divirta-se! Alguns jogadores organizam festas, então fique de olho!"
+
+[.partypete_7]
+en = "Woop! Thanks Pete!"
+pt = "Uhuu! Valeu, Pete!"
+
+[.partypete_8]
+en = "What's the big lever over there for?"
+pt = "Para que serve aquela alavanca grande ali?"
+
+[.partypete_9]
+en = "Simple. With the lever you can do some fun stuff."
+pt = "Simples. Com a alavanca você pode fazer umas coisas divertidas."
+
+[.partypete_10]
+en = "What kind of stuff?"
+pt = "Que tipo de coisa?"
+
+[.partypete_11]
+en = "A balloon drop costs 1000 gold. For this, you get 200 balloons dropped across the whole of the party room. You can then have fun popping the balloons!"
+pt = "Uma chuva de balões custa 1.000 moedas de ouro. Com isso, 200 balões caem por toda a Party Room. Depois é só se divertir estourando os balões!"
+
+[.partypete_12]
+en = "Any items in the Party Drop Chest will be put into balloons as soon as you pull the lever."
+pt = "Qualquer item no Party Drop Chest vai ser colocado nos balões assim que você puxar a alavanca."
+
+[.partypete_13]
+en = "When the balloons are released, you can burst them to get at the items!"
+pt = "Quando os balões forem soltos, você pode estourá-los para pegar os itens!"
+
+[.partypete_14]
+en = "For 500 gold, you can summon the Party Room Knights, who will dance for your delight. Their singing isn't a delight, though!"
+pt = "Por 500 moedas de ouro, você pode invocar os Party Room Knights, que vão dançar para o seu deleite. Já a cantoria deles não é nenhum deleite!"
+
+[.partypete_15]
+en = "What's the gold chest for?"
+pt = "Para que serve o baú dourado?"
+
+[.partypete_16]
+en = "Any items in the chest will be dropped inside the balloons when you pull the lever."
+pt = "Qualquer item no baú vai cair dentro dos balões quando você puxar a alavanca."
+
+[.partypete_17]
+en = "Cool! Sounds like a fun way to do a drop party."
+pt = "Legal! Parece um jeito divertido de fazer uma festa com chuva de itens."
+
+[.partypete_18]
+en = "Exactly! A word of warning, though. Any items that you put into the chest can't be taken out again, and it costs 1000 gold pieces for each drop party."
+pt = "Exatamente! Mas um aviso: itens colocados no baú não podem ser tirados de novo, e cada festa com chuva de itens custa 1.000 moedas de ouro."
+
+[.partypete_19]
+en = "I wanna party!"
+pt = "Eu quero festa!"
+
+[.partypete_20]
+en = "I've won the Dance Trophy at the Kandarin Ball three years in a trot!"
+pt = "Ganhei o Troféu de Dança no Baile de Kandarin três anos seguidos!"
+
+[.partypete_21]
+en = "Show me your moves Pete!"
+pt = "Mostra os seus passos, Pete!"
+
+[.partypete_22]
+en = "More."
+pt = "Mais."
+
+[.partypete_23]
+en = "I love your hair!"
+pt = "Adorei o seu cabelo!"
+
+[.partypete_24]
+en = "Isn't it groovy? I liked it so much, I had extras made for my party goers. Would you like to buy one?"
+pt = "Não é demais? Gostei tanto que mandei fazer uns extras para os meus convidados. Gostaria de comprar um?"
+
+[.partypete_25]
+en = "Would you like to buy one?"
+pt = "Gostaria de comprar um?"
+
+[.partypete_26]
+en = "Why's there a chameleon in here?"
+pt = "Por que tem um camaleão aqui?"
+
+[.partypete_27]
+en = "Karma's my pet. I got him for Christmas one year. He keeps the Party Room free of flies, and he loves watching me dance. Karma karma karma cha..."
+pt = "O Karma é o meu mascote. Ganhei ele num Natal. Ele mantém a Party Room livre de moscas e adora me ver dançar. Karma karma karma cha..."
+
+[.partypete_28]
+en = "Back."
+pt = "Voltar."
+
+[.partypete_29]
+en = "Can you talk to him?"
+pt = "Você consegue falar com ele?"
+
+[.partypete_30]
+en = "Sure, I talk to the little fellow all the time. My Summoning level's not high enough to understand what he says back, but he's still great company."
+pt = "Claro, falo com o carinha o tempo todo. Meu nível de Summoning (invocação) não é alto o bastante para entender o que ele responde, mas ele ainda é ótima companhia."
+
+[.partypete_31]
+en = "Christmas is over."
+pt = "O Natal já acabou."
+
+[.partypete_32]
+en = "Christmas is over. Why've you still got him hanging around?"
+pt = "O Natal já acabou. Por que ele ainda está por aqui?"
+
+[.partypete_33]
+en = "I couldn't chuck the little chappy out! A pet is for life!"
+pt = "Eu não podia botar o bichinho para fora! Mascote é para a vida toda!"
+
+[.partypete_34]
+en = "Aww, that's nice."
+pt = "Own, que fofo."
+
+# Rusty - Falador - Tutorial Island
+
+[.rusty_1]
+en = "Hiya. Are you carrying anything valuable?"
+pt = "Oi. Você está carregando alguma coisa de valor?"
+
+[.rusty_2]
+en = "Why are you asking?"
+pt = "Por que a pergunta?"
+
+[.rusty_3]
+en = "Um... It's a quiz. I'm asking everyone I meet if they're carrying anything valuable."
+pt = "Hã... É um questionário. Estou perguntando a todo mundo que encontro se carrega alguma coisa de valor."
+
+[.rusty_4]
+en = "What would you do if I said I had loads of expensive items with me?"
+pt = "O que você faria se eu dissesse que tenho um monte de itens caros comigo?"
+
+[.rusty_5]
+en = "Ooh, do you? It's been ages since anyone said they'd got anything worth stealing."
+pt = "Ooh, tem mesmo? Faz séculos que ninguém diz que tem alguma coisa que valha a pena roubar."
+
+[.rusty_6]
+en = "'Anything worth stealing'?"
+pt = "'Alguma coisa que valha a pena roubar'?"
+
+[.rusty_7]
+en = "Um... Not that I'd dream of stealing anything!"
+pt = "Hã... Não que eu sonhasse em roubar alguma coisa!"
+
+[.rusty_8]
+en = "Well, I'll say I'm not carrying anything valuable at all."
+pt = "Bom, vou dizer que não estou carregando nada de valor."
+
+[.rusty_9]
+en = "Oh, what a shame."
+pt = "Ah, que pena."
+
+# Silif - Falador - Tutorial Island
+
+[.silif_1]
+en = "Who, me? Oh, no one, I assure you. No one that you want to tangle with!"
+pt = "Quem, eu? Ah, ninguém, garanto. Ninguém com quem você queira se meter!"
+
+# SirVyvin - Falador - Tutorial Island
+
+[.sirvyvin_1]
+en = "HEY! Just WHAT do you THINK you are DOING??? STAY OUT of MY cupboard!"
+pt = "EI! O QUE você PENSA que está FAZENDO??? FIQUE LONGE do MEU armário!"
+
+[.sirvyvin_2]
+en = "There is just a load of junk in here."
+pt = "Só tem um monte de tralha aqui."
+
+[.sirvyvin_3]
+en = "You find a small portrait in here which you take."
+pt = "Você encontra aqui um pequeno retrato (portrait) e o pega."
+
+[.sirvyvin_4]
+en = "Greetings traveller."
+pt = "Saudações, viajante."
+
+[.sirvyvin_5]
+en = "Do you have anything to trade?"
+pt = "Você tem algo para negociar?"
+
+[.sirvyvin_6]
+en = "No, I'm sorry."
+pt = "Não, sinto muito."
+
+[.sirvyvin_7]
+en = "Why are there so many knights in this city?"
+pt = "Por que há tantos cavaleiros nesta cidade?"
+
+[.sirvyvin_8]
+en = "We are the White Knights of Falador. We are the most powerful order of knights in the land. We are helping the king Vallance rule the kingdom as he is getting old and tired."
+pt = "Somos os White Knights de Falador. Somos a ordem de cavaleiros mais poderosa do reino. Ajudamos o rei Vallance a governar, pois ele está ficando velho e cansado."
+
+[.sirvyvin_9]
+en = "Can I just distract you for a minute?"
+pt = "Posso distrair você um minutinho?"
+
+[.sirvyvin_10]
+en = "Can I just talk to you very slowly for a few minutes, while I distract you, so that my friend over there can do something while you're busy being distracted by me?"
+pt = "Posso falar com você bem devagar por alguns minutos, enquanto distraio você, para que o meu amigo ali possa fazer uma coisa enquanto você está ocupado sendo distraído por mim?"
+
+[.sirvyvin_11]
+en = "... ...what?"
+pt = "... ...o quê?"
+
+[.sirvyvin_12]
+en = "I'm... not sure what you're asking me... you want to join the White Knights?"
+pt = "Eu... não entendi o que você está me pedindo... você quer entrar para os White Knights?"
+
+[.sirvyvin_13]
+en = "Nope. I'm just trying to distract you."
+pt = "Não. Só estou tentando distrair você."
+
+[.sirvyvin_14]
+en = "... ...you are very odd."
+pt = "... ...você é muito esquisito."
+
+[.sirvyvin_15]
+en = "So can I distract you some more?"
+pt = "Então, posso distrair você mais um pouco?"
+
+[.sirvyvin_16]
+en = "... ...I don't think I want to talk to you anymore."
+pt = "... ...acho que não quero mais falar com você."
+
+[.sirvyvin_17]
+en = "Ok. My work here is done. 'Bye!"
+pt = "Tá. Meu trabalho aqui está feito. Tchau!"
+
+# SquireAsrol - Falador - Tutorial Island
+
+[.squireasrol_1]
+en = "Hello. I am the squire to Sir Vyvin."
+pt = "Olá. Eu sou o escudeiro de Sir Vyvin."
+
+[.squireasrol_2]
+en = "So how are you doing getting a sword?"
+pt = "E então, como vai a busca pela espada?"
+
+[.squireasrol_3]
+en = "I'm looking for Imcando dwarves to help me."
+pt = "Estou procurando os anões Imcando para me ajudar."
+
+[.squireasrol_4]
+en = "Please try and find them quickly... I am scared Sir Vyvin will find out!"
+pt = "Por favor, tente encontrá-los depressa... Tenho medo de que Sir Vyvin descubra!"
+
+[.squireasrol_5]
+en = "I've found an Imcando dwarf but he needs a picture of the sword before he can make it."
+pt = "Encontrei um anão Imcando, mas ele precisa de um desenho da espada antes de poder fazê-la."
+
+[.squireasrol_6]
+en = "A picture eh? Hmmm.... The only one I can think of is in a small portrait of Sir Vyvin's father... Sir Vyvin keeps it in a cupboard in his room I think."
+pt = "Um desenho, é? Hmmm.... O único que me vem à cabeça está num pequeno retrato (portrait) do pai de Sir Vyvin... Acho que Sir Vyvin o guarda num armário no quarto dele."
+
+[.squireasrol_7]
+en = "Ok, I'll try and get that then."
+pt = "Tá bom, vou tentar pegar então."
+
+[.squireasrol_8]
+en = "Please don't let him catch you! He MUSTN'T know what happened!"
+pt = "Por favor, não deixe ele pegar você! Ele NÃO PODE saber o que aconteceu!"
+
+[.squireasrol_9]
+en = "I have the picture. I'll just take it to the dwarf now!"
+pt = "Estou com o desenho. Vou levá-lo ao anão agora mesmo!"
+
+[.squireasrol_10]
+en = "Please hurry!"
+pt = "Por favor, depressa!"
+
+[.squireasrol_11]
+en = "I didn't get the picture yet."
+pt = "Ainda não consegui o desenho."
+
+[.squireasrol_12]
+en = "Please try and get it quickly... I am scared Sir Vyvin will find out!"
+pt = "Por favor, tente pegá-lo depressa... Tenho medo de que Sir Vyvin descubra!"
+
+[.squireasrol_13]
+en = "I have retrieved your sword for you."
+pt = "Recuperei a sua espada."
+
+[.squireasrol_14]
+en = "So can you un-equip it and hand it over to me now please?"
+pt = "Então pode tirá-la do corpo e me entregar agora, por favor?"
+
+[.squireasrol_15]
+en = "Thank you, thank you, thank you! I was seriously worried I would have to own up to Sir Vyvin!"
+pt = "Obrigado, obrigado, obrigado! Eu estava morrendo de medo de ter que confessar tudo a Sir Vyvin!"
+
+[.squireasrol_16]
+en = "You give the sword to the squire."
+pt = "Você entrega a espada ao escudeiro."
+
+[.squireasrol_17]
+en = "I got a replacement sword made."
+pt = "Mandei fazer uma espada nova."
+
+[.squireasrol_18]
+en = "Thank you! Can I have it?"
+pt = "Obrigado! Posso ficar com ela?"
+
+[.squireasrol_19]
+en = "I've got it stored safely."
+pt = "Ela está guardada em segurança."
+
+[.squireasrol_20]
+en = "Well could you go and get it for me then please? Quickly?"
+pt = "Bom, então você podia ir buscá-la para mim, por favor? Depressa?"
+
+[.squireasrol_21]
+en = "Yeah, okay."
+pt = "Tá, tudo bem."
+
+[.squireasrol_22]
+en = "I've found a dwarf who will make the sword. I've just got to find the materials for it now!"
+pt = "Encontrei um anão que vai fazer a espada. Agora só preciso achar os materiais para ela!"
+
+[.squireasrol_23]
+en = "And how is life as a squire?"
+pt = "E como é a vida de escudeiro?"
+
+[.squireasrol_24]
+en = "Well, Sir Vyvin is a good guy to work for, however, I'm in a spot of trouble today. I've gone and lost Sir Vyvin's sword!"
+pt = "Bom, Sir Vyvin é um ótimo patrão, mas hoje estou numa enrascada. Fui perder a espada (sword) de Sir Vyvin!"
+
+[.squireasrol_25]
+en = "Do you know where you lost it?"
+pt = "Você sabe onde a perdeu?"
+
+[.squireasrol_26]
+en = "Well now, if I knew THAT it wouldn't be lost, now would it?"
+pt = "Ora, se eu soubesse ISSO, ela não estaria perdida, não é mesmo?"
+
+[.squireasrol_27]
+en = "Well, do you know the VAGUE AREA you lost it in?"
+pt = "Bom, você sabe a REGIÃO MAIS OU MENOS onde a perdeu?"
+
+[.squireasrol_28]
+en = "No. I was carrying it for him all the way from where he had it stored in Lumbridge. It must have slipped from my pack during the trip, and you know what people are like these days..."
+pt = "Não. Eu a carreguei para ele desde Lumbridge, onde ele a guardava. Deve ter caído da minha mochila durante a viagem, e você sabe como as pessoas são hoje em dia..."
+
+[.squireasrol_29]
+en = "Someone will have just picked it up and kept it for themselves."
+pt = "Alguém deve ter pegado e ficado com ela."
+
+[.squireasrol_30]
+en = "Well the kingdom is fairly abundant with swords..."
+pt = "Bom, o reino é bem farto de espadas..."
+
+[.squireasrol_31]
+en = "Yes. You can get bronze swords anywhere. But THIS isn't any old sword."
+pt = "Sim. Espadas de bronze se encontram em qualquer lugar. Mas ESTA não é uma espada qualquer."
+
+[.squireasrol_32]
+en = "The thing is, this sword is a family heirloom. It has been passed down through Vyvin's family for five generations! It was originally made by the Imcando dwarves, who were"
+pt = "O caso é que esta espada é uma relíquia de família. Ela passou por cinco gerações da família de Vyvin! Foi feita pelos anões Imcando, que eram"
+
+[.squireasrol_33]
+en = "a particularly skilled tribe of dwarven smiths. I doubt anyone could make it in the style they do."
+pt = "uma tribo de ferreiros anões especialmente habilidosa. Duvido que alguém consiga fazê-la no estilo deles."
+
+[.squireasrol_34]
+en = "So would these dwarves make another one?"
+pt = "Então esses anões fariam outra?"
+
+[.squireasrol_35]
+en = "I'm not a hundred percent sure the Imcando tribe exists anymore. I should think Reldo, the palace librarian in Varrock, will know; he has done a lot of research on the races of Gielinor."
+pt = "Não tenho cem por cento de certeza de que a tribo Imcando ainda existe. Acho que o Reldo, o bibliotecário do palácio em Varrock, vai saber; ele pesquisou muito sobre os povos de Gielinor."
+
+[.squireasrol_36]
+en = "I don't suppose you could try and track down the Imcando dwarves for me? I've got so much work to do..."
+pt = "Será que você poderia tentar encontrar os anões Imcando para mim? Tenho tanto trabalho a fazer..."
+
+[.squireasrol_37]
+en = "Well, I hope you find it soon."
+pt = "Bom, espero que você a encontre logo."
+
+[.squireasrol_38]
+en = "Yes, me too. I'm not looking forward to telling Vyvin I've lost it. He's going to want it for the parade next week as well."
+pt = "Eu também. Não estou nada animado para contar ao Vyvin que a perdi. Ele vai querer a espada para o desfile da semana que vem, ainda por cima."
+
+[.squireasrol_39]
+en = "I can make a new sword if you like..."
+pt = "Posso fazer uma espada nova, se você quiser..."
+
+[.squireasrol_40]
+en = "Thanks for the offer. I'd be surprised if you could though."
+pt = "Obrigado pela oferta. Mas eu ficaria surpreso se você conseguisse."
+
+[.squireasrol_41]
+en = "Is he angry?"
+pt = "Ele está bravo?"
+
+[.squireasrol_42]
+en = "He doesn't know yet. I was hoping I could think of something to do before he does find out, But I find myself at a loss."
+pt = "Ele ainda não sabe. Eu esperava pensar em alguma coisa antes que ele descobrisse, mas estou sem saber o que fazer."
+
+[.squireasrol_43]
+en = "Wouldn't you prefer to be a squire for me?"
+pt = "Você não prefere ser o meu escudeiro?"
+
+[.squireasrol_44]
+en = "No, sorry, I'm loyal to Sir Vyvin."
+pt = "Não, desculpe, sou leal a Sir Vyvin."
+
+[.squireasrol_45]
+en = "Before starting this quest, be aware that one or more of your skill levels are lower than what is required to fully complete it. Your combat level is also lower than the recommended level of 20."
+pt = "Antes de começar esta missão, saiba que um ou mais dos seus níveis de habilidade estão abaixo do necessário para completá-la. O seu nível de combate também está abaixo do recomendado, que é 20."
+
+[.squireasrol_46]
+en = "Before starting this quest, be aware that one or more of your skill levels are lower than what is required to fully complete it."
+pt = "Antes de começar esta missão, saiba que um ou mais dos seus níveis de habilidade estão abaixo do necessário para completá-la."
+
+[.squireasrol_47]
+en = "Before starting this quest, be aware that your combat level is lower than the recommended level of 20."
+pt = "Antes de começar esta missão, saiba que o seu nível de combate está abaixo do recomendado, que é 20."
+
+[.squireasrol_48]
+en = "Start The Knight's Sword quest?"
+pt = "Começar a missão The Knight's Sword?"
+
+[.squireasrol_49]
+en = "Ok, I'll give it a go."
+pt = "Tá bom, vou tentar."
+
+[.squireasrol_50]
+en = "Thank you very much! As I say, the best place to start should be with Reldo..."
+pt = "Muito obrigado! Como eu disse, o melhor lugar para começar é com o Reldo..."
+
+[.squireasrol_51]
+en = "Oh man... I'm in such trouble..."
+pt = "Ai, ai... Estou numa enrascada daquelas..."
+
+[.squireasrol_52]
+en = "Hello friend! Many thanks for all of your help! Vyvin never even realised it was a different sword, and I still have my job!"
+pt = "Olá, amigo! Muito obrigado por toda a sua ajuda! Vyvin nem percebeu que era outra espada, e eu continuo com o meu emprego!"
+
+[.squireasrol_53]
+en = "I'm glad the new sword worked out alright."
+pt = "Que bom que a espada nova deu certo."
+
+# Wayne - Falador - Tutorial Island
+
+[.wayne_1]
+en = "Welcome to Wayne's Chains. <br>Do you wanna buy or sell some chainmail?"
+pt = "Bem-vindo ao Wayne's Chains. <br>Quer comprar ou vender cotas de malha (chainmail)?"
+
+# Wilfred - Falador - Tutorial Island
+
+# WomanFalador - Falador - Tutorial Island
+
+[.womanfalador_1]
+en = "Greetings! Have you come to gaze in rapture at the natural beauty of Falador's parkland?"
+pt = "Saudações! Veio contemplar extasiado a beleza natural do parque de Falador?"
+
+[.womanfalador_2]
+en = "Um, yes, very nice. Lots of... trees and stuff."
+pt = "Hã, sim, muito bonito. Um monte de... árvores e tal."
+
+[.womanfalador_3]
+en = "Trees! I do so love trees! And flowers! And squirrels!"
+pt = "Árvores! Eu adoro árvores! E flores! E esquilos!"
+
+[.womanfalador_4]
+en = "Sorry, I have a strange urge to be somewhere else."
+pt = "Desculpe, estou com uma vontade estranha de estar em outro lugar."
+
+[.womanfalador_5]
+en = "Come back to me soon and we can talk again about trees!"
+pt = "Volte logo e a gente conversa mais sobre árvores!"
+
+# Workman - Falador - Tutorial Island
+
+[.workman_1]
+en = "What do you want? I've got work to do!"
+pt = "O que você quer? Tenho trabalho a fazer!"
+
+[.workman_2]
+en = "Can you teach me anything?"
+pt = "Pode me ensinar alguma coisa?"
+
+[.workman_3]
+en = "No - I've got one lousy apprentice already, and that's quite enough hassle! Go away!"
+pt = "Não - já tenho um aprendiz imprestável, e isso já me dá dor de cabeça suficiente! Vai embora!"
+
+# WysonTheGardener - Falador - Tutorial Island
+
+[.wysonthegardener_1]
+en = "I'm the head gardener around here. If you're looking for woad leaves, or if you need help with owt, I'm yer man."
+pt = "Sou o jardineiro-chefe por aqui. Se tá atrás de folhas de woad (woad leaves), ou se precisa de ajuda com qualquer coisa, sou o seu homem."
+
+[.wysonthegardener_2]
+en = "What would you like to talk about?"
+pt = "Sobre o que você gostaria de conversar?"
+
+[.wysonthegardener_3]
+en = "Ask about the unusual flower bed."
+pt = "Perguntar sobre o canteiro de flores estranho."
+
+[.wysonthegardener_4]
+en = "Ask about trading for bird nests."
+pt = "Perguntar sobre trocas por ninhos de pássaro (bird's nests)."
+
+[.wysonthegardener_5]
+en = "Ask about woad leaves."
+pt = "Perguntar sobre as folhas de woad."
+
+[.wysonthegardener_6]
+en = "Ask for advice for fighting the Giant Mole."
+pt = "Pedir conselhos para enfrentar a Giant Mole."
+
+[.wysonthegardener_7]
+en = "Could you give me some advice for fighting the Giant Mole?"
+pt = "Você poderia me dar uns conselhos para enfrentar a Giant Mole?"
+
+[.wysonthegardener_8]
+en = "Alright. I'll give you some tips while you're down there."
+pt = "Tá certo. Vou te dar umas dicas enquanto você estiver lá embaixo."
+
+[.wysonthegardener_9]
+en = "Leave."
+pt = "Ir embora."
+
+[.wysonthegardener_10]
+en = "Sorry, but I'm not interested."
+pt = "Desculpe, mas não estou interessado."
+
+[.wysonthegardener_11]
+en = "Fair enough."
+pt = "Justo."
+
+[.wysonthegardener_12]
+en = "What's up with the strange flower bed?"
+pt = "O que houve com aquele canteiro de flores esquisito?"
+
+[.wysonthegardener_13]
+en = "Oh, the new lilies? Yes, we've just started..."
+pt = "Ah, os lírios novos? Pois é, a gente acabou de começar..."
+
+[.wysonthegardener_14]
+en = "No, I meant the distorted plants whose exposed roots reach down into darkness unknowable."
+pt = "Não, eu quis dizer as plantas deformadas cujas raízes expostas descem até uma escuridão insondável."
+
+[.wysonthegardener_15]
+en = "Ah."
+pt = "Ah."
+
+[.wysonthegardener_16]
+en = "I was hoping it wasn't that noticeable."
+pt = "Eu esperava que não desse tanto na vista."
+
+[.wysonthegardener_17]
+en = "I just wanted to make sure Falador had the best park in Gielinor, but I got carried away with some of 'Malignius Mortifer's Super-Ultra-Flora-Growth potion'."
+pt = "Eu só queria garantir que Falador tivesse o melhor parque de Gielinor, mas exagerei um pouco na 'Super-Ultra-Flora-Growth potion' de Malignius Mortifer."
+
+[.wysonthegardener_18]
+en = "To make matters worse, it's affected one of the local moles and she keeps ruining my flowerbeds."
+pt = "Pra piorar, ela afetou uma das toupeiras daqui, e a danada vive estragando os meus canteiros."
+
+[.wysonthegardener_19]
+en = "Is there anything I can do to help?"
+pt = "Tem algo que eu possa fazer para ajudar?"
+
+[.wysonthegardener_20]
+en = "Maybe someone could squeeze down there and deal with her."
+pt = "Quem sabe alguém consegue se espremer lá embaixo e dar um jeito nela."
+
+[.wysonthegardener_21]
+en = "Could you do it? I can offer you some bird nests in exchange for any claws or hides you find."
+pt = "Você faria isso? Posso te dar uns ninhos de pássaro em troca de qualquer garra ou pele que você encontrar."
+
+[.wysonthegardener_22]
+en = "Select an Option"
+pt = "Selecione uma opção"
+
+[.wysonthegardener_23]
+en = "Okay."
+pt = "Certo."
+
+[.wysonthegardener_24]
+en = "Why are you even collecting mole claws?"
+pt = "Por que você coleciona garras de toupeira, afinal?"
+
+[.wysonthegardener_25]
+en = "The wife loves them."
+pt = "A patroa adora."
+
+[.wysonthegardener_26]
+en = "... Okay."
+pt = "... Tá bom."
+
+[.wysonthegardener_27]
+en = "Leave"
+pt = "Ir embora"
+
+[.wysonthegardener_28]
+en = "Okay, I'll put a stop to it."
+pt = "Certo, vou dar um fim nisso."
+
+[.wysonthegardener_29]
+en = "Yes please, I need woad leaves."
+pt = "Sim, por favor, preciso de folhas de woad."
+
+[.wysonthegardener_30]
+en = "How much are you willing to pay?"
+pt = "Quanto você está disposto a pagar?"
+
+[.wysonthegardener_31]
+en = "How about 5 coins?"
+pt = "Que tal 5 moedas (coins)?"
+
+[.wysonthegardener_32]
+en = "How about 10 coins?"
+pt = "Que tal 10 moedas?"
+
+[.wysonthegardener_33]
+en = "How about 15 coins?"
+pt = "Que tal 15 moedas?"
+
+[.wysonthegardener_34]
+en = "How about 20 coins?"
+pt = "Que tal 20 moedas?"
+
+[.wysonthegardener_35]
+en = "Tell me your price."
+pt = "Diga o seu preço."
+
+[.wysonthegardener_36]
+en = "No no, that's far too little. Woad leaves are hard to get. I used to have plenty but someone kept stealing them off me."
+pt = "Não, não, isso é pouco demais. Folhas de woad são difíceis de achar. Eu tinha um montão, mas alguém vivia me roubando."
+
+[.wysonthegardener_37]
+en = "Mmmm... okay, that sounds fair."
+pt = "Hmmm... tá bom, parece justo."
+
+[.wysonthegardener_38]
+en = "You buy a woad leaf from Wyson."
+pt = "Você compra uma folha de woad (woad leaf) do Wyson."
+
+[.wysonthegardener_39]
+en = "I'll be around if you have any more gardening needs."
+pt = "Vou estar por aqui se precisar de mais alguma coisa de jardinagem."
+
+[.wysonthegardener_40]
+en = "I don't have enough coins to buy the leaves. I'll come back later."
+pt = "Não tenho moedas suficientes para comprar as folhas. Volto mais tarde."
+
+[.wysonthegardener_41]
+en = "Ok that's more than fair."
+pt = "Bom, isso é mais do que justo."
+
+[.wysonthegardener_42]
+en = "Here, have two. You're a generous person."
+pt = "Tome, leve duas. Você é uma pessoa generosa."
+
+[.wysonthegardener_43]
+en = "Wyson gives you a pair of woad leaves."
+pt = "Wyson te dá um par de folhas de woad (woad leaves)."
+
+[.wysonthegardener_44]
+en = "Hmph. The art of haggling really is lost these days. Fine. %1% coins a piece."
+pt = "Hunf. A arte de pechinchar se perdeu hoje em dia. Tá bom. %1% moedas cada uma."
+
+[.wysonthegardener_45]
+en = "If you get any mole claws, skins or noses from that giant beastie down there, I'll happily exchange them for some bird nests."
+pt = "Se você conseguir garras, peles ou focinhos daquele bichão gigante lá de baixo, troco com prazer por uns ninhos de pássaro."
+
+[.wysonthegardener_46]
+en = "Okay, I'll come back if I find any."
+pt = "Certo, volto se encontrar alguma."
+
+[.wysonthegardener_47]
+en = "If I'm not mistaken, you've got some mole bits there! I'll trade them for bird nests, if you like. I also see that you're a shield holder; a champion of Falador, eh? I'll throw some special seeds into the bargain."
+pt = "Se não me engano, você tem uns pedaços de toupeira aí! Troco por ninhos de pássaro, se quiser. E vejo que você carrega o escudo; um campeão de Falador, é? Vou incluir umas sementes especiais no negócio."
+
+[.wysonthegardener_48]
+en = "If I'm not mistaken, you've got some bits from a big mole there! I'll trade them for bird nests, if you like."
+pt = "Se não me engano, você tem uns pedaços de uma toupeira grandona aí! Troco por ninhos de pássaro, se quiser."
+
+[.wysonthegardener_49]
+en = "Choose an option:"
+pt = "Escolha uma opção:"
+
+[.wysonthegardener_50]
+en = "Yes, I will trade the mole claws."
+pt = "Sim, vou trocar as garras de toupeira (mole claws)."
+
+[.wysonthegardener_51]
+en = "Okay, I will trade the mole skin."
+pt = "Certo, vou trocar a pele de toupeira (mole skin)."
+
+[.wysonthegardener_52]
+en = "Can I trade the mole nose?"
+pt = "Posso trocar o focinho de toupeira (mole nose)?"
+
+[.wysonthegardener_53]
+en = "I'd like to trade both."
+pt = "Quero trocar os dois."
+
+[.wysonthegardener_54]
+en = "I'd like to trade all three."
+pt = "Quero trocar os três."
+
+[.wysonthegardener_55]
+en = "Actually, I've changed my mind."
+pt = "Na verdade, mudei de ideia."
+
+[.wysonthegardener_56]
+en = "If you don't plan on using those seeds, some of the other gardeners may be interested in them."
+pt = "Se você não pretende usar essas sementes, alguns dos outros jardineiros podem se interessar por elas."
+
+# ZandarHorfyre - Falador - Tutorial Island
+
+[.zandarhorfyre_1]
+en = "Zamorak curse that mage!"
+pt = "Que Zamorak amaldiçoe aquele mago!"
+
+[.zandarhorfyre_2]
+en = "Actually, I guess he already has!"
+pt = "Pensando bem, acho que ele já amaldiçoou!"
+
+[.zandarhorfyre_3]
+en = "My name is Zandar Horfyre. You, %1%, are trespassing in my tower, not to mention attacking my students! I thank you to leave immediately!"
+pt = "Meu nome é Zandar Horfyre. Você, %1%, está invadindo a minha torre, sem falar que está atacando os meus alunos! Agradeço se sair imediatamente!"
+
+[.zandarhorfyre_4]
+en = "Okay, I was going anyway."
+pt = "Tudo bem, eu já estava indo mesmo."
+
+[.zandarhorfyre_5]
+en = "Good! And don't forget to close the door behind you!"
+pt = "Ótimo! E não se esqueça de fechar a porta ao sair!"
+
+[.zandarhorfyre_6]
+en = "No, I think I'll stay for a bit."
+pt = "Não, acho que vou ficar mais um pouco."
+
+[.zandarhorfyre_7]
+en = "Actually, that wasn't an invitation. I've tried being polite, now we'll do it the hard way!"
+pt = "Na verdade, aquilo não foi um convite. Tentei ser educado, agora vai ser do jeito difícil!"
+
+# Sarah - Falador - Tutorial Island
+
+[.sarah_1]
+en = "Hello. How can I help you?"
+pt = "Olá. Como posso ajudar?"
+
+[.sarah_2]
+en = "What are you selling?"
+pt = "O que você vende?"
+
+[.sarah_3]
+en = "Can you give me any Farming advice?"
+pt = "Pode me dar algum conselho de Farming (agricultura)?"
+
+[.sarah_4]
+en = "Yes - ask a gardener."
+pt = "Posso - pergunte a um jardineiro."
+
+[.sarah_5]
+en = "Can you tell me how to use the loom?"
+pt = "Pode me explicar como usar o tear?"
+
+[.sarah_6]
+en = "Well, it's actually my loom, but I don't mind you using it, if you like. You can use it to weave sacks and baskets in which you can put vegetables and fruit."
+pt = "Bem, na verdade o tear é meu, mas não me importo que você use, se quiser. Dá para tecer sacos e cestos para guardar legumes e frutas."
+
+[.sarah_7]
+en = "What do I need to weave sacks?"
+pt = "Do que preciso para tecer sacos?"
+
+[.sarah_8]
+en = "Well, the best sacks are made with jute fibres; you can grow jute yourself in a hops patch. I'd say about 4 jute fibres should be enough to weave a sack."
+pt = "Bem, os melhores sacos são feitos com fibras de juta (jute fibres); você mesmo pode plantar juta num canteiro de lúpulo (hops patch). Eu diria que umas 4 fibras de juta bastam para tecer um saco."
+
+[.sarah_9]
+en = "Thank you, that's very kind."
+pt = "Obrigado, é muita gentileza."
+
+[.sarah_10]
+en = "What do I need to weave baskets?"
+pt = "Do que preciso para tecer cestos?"
+
+[.sarah_11]
+en = "Well, the best baskets are made with young branches cut from a willow tree. You'll need a very young willow tree; otherwise, the branches will have grown too thick to be able to weave. I suggest growing your own."
+pt = "Bem, os melhores cestos são feitos com galhos novos cortados de um salgueiro (willow tree). Você vai precisar de um salgueiro bem novinho; senão, os galhos já vão estar grossos demais para tecer. Sugiro plantar o seu."
+
+[.sarah_12]
+en = "You can cut the branches with a standard pair of secateurs. You will probably need about 6 willow branches to weave a complete basket."
+pt = "Dá para cortar os galhos com uma tesoura de poda (secateurs) comum. Você provavelmente vai precisar de uns 6 galhos de salgueiro (willow branches) para tecer um cesto inteiro."
+
+[.sarah_13]
+en = "I'm okay, thank you."
+pt = "Estou bem, obrigado."
+
+[.sarah_14]
+en = "You give the dog some nice bones.<br>It happily gnaws on them."
+pt = "Você dá uns ossos gostosos ao cachorro.<br>Ele os rói todo feliz."
+
+[.sarah_15]
+en = "You give the dog a nice piece of meat.<br>It gobbles it up."
+pt = "Você dá um belo pedaço de carne ao cachorro.<br>Ele devora tudo."
+
+# CraftingGuild - Falador - Tutorial Island
+
+[.craftingguild_1]
+en = "Sorry, only experienced crafters are allowed in here. You must be level 40 or above to enter."
+pt = "Desculpe, só artesãos experientes podem entrar aqui. Você precisa ter nível 40 ou mais para entrar."
+
+[.craftingguild_2]
+en = "Where's your brown apron? You can't come in here unless you're wearing one."
+pt = "Cadê o seu avental marrom (brown apron)? Você não pode entrar aqui sem estar usando um."
+
+[.craftingguild_3]
+en = "Welcome to the Guild of Master Craftsmen."
+pt = "Bem-vindo ao Guild of Master Craftsmen."
+
+[.craftingguild_4]
+en = "Hello, and welcome to the Crafting Guild. Accomplished crafters from all over the land come here to use our top notch workshops."
+pt = "Olá, e bem-vindo ao Crafting Guild. Artesãos talentosos de todo o reino vêm aqui usar as nossas oficinas de primeira."
+
+[.craftingguild_5]
+en = "Are you the person I need to talk to about buying a Skillcape of Crafting"
+pt = "Você é a pessoa com quem falo para comprar uma Skillcape of Crafting?"
+
+[.craftingguild_6]
+en = "I certainly am, and I can see that you are definitely talented enough to own one! Unfortunately, being such a prestigious item, they are appropriately expensive. I'm afraid I must ask you for 99000 gold."
+pt = "Sou eu mesmo, e vejo que você tem talento de sobra para ter uma! Infelizmente, por ser um item tão prestigiado, ela custa à altura. Receio que vou ter que te pedir 99.000 moedas de ouro."
+
+[.craftingguild_7]
+en = "99000 gold! Are you mad?"
+pt = "99.000 moedas de ouro! Você está louco?"
+
+[.craftingguild_8]
+en = "That's fine."
+pt = "Tudo bem."
+
+[.craftingguild_9]
+en = "Hey, what is that cape you're wearing? I don't recognise it."
+pt = "Ei, que capa é essa que você está usando? Não a reconheço."
+
+[.craftingguild_10]
+en = "This? This is a Skillcape of Crafting. It is a symbol of my ability and standing here in the Crafting Guild. If you should ever achieve level 99 Crafting come and talk to me and we'll see if we can sort you out with one."
+pt = "Esta? Esta é uma Skillcape of Crafting. É um símbolo da minha habilidade e da minha posição aqui no Crafting Guild. Se um dia você chegar ao nível 99 em Crafting (artesanato), venha falar comigo e veremos se arranjamos uma para você."
+
+[.craftingguild_11]
+en = "Yeah?"
+pt = "Que foi?"
+
+[.craftingguild_12]
+en = "Whassup?"
+pt = "E aí?"
+
+[.craftingguild_13]
+en = "So... are you here to give crafting tips?"
+pt = "Então... você está aqui para dar dicas de artesanato?"
+
+[.craftingguild_14]
+en = "Dude, do I look like I wanna talk to you?"
+pt = "Cara, eu tenho cara de quem quer falar com você?"
+
+[.craftingguild_15]
+en = "I suppose not."
+pt = "Acho que não."
+
+[.craftingguild_16]
+en = "Right on!"
+pt = "Isso aí!"
+
+# Ellis - Falador - Tutorial Island
+
+[.ellis_1]
+en = "Greetings friend. I am a manufacturer of leather."
+pt = "Saudações, amigo. Sou um fabricante de couro."
+
+[.ellis_2]
+en = "I see you have bought me some hides. Would you like me to tan them for you?"
+pt = "Vejo que você me trouxe alguns couros (hides). Quer que eu os curta para você?"
+
+[.ellis_3]
+en = "Very well, %1%, as you wish."
+pt = "Muito bem, %1%, como quiser."
+
+[.ellis_4]
+en = "Can I buy some leather then?"
+pt = "Então posso comprar couro?"
+
+[.ellis_5]
+en = "I make leather from animal hides. Bring me some cowhides and one gold coin per hide, and I'll tan them into soft leather for you."
+pt = "Eu faço couro curtido (leather) com peles de animais. Traga couros de vaca (cowhides) e uma moeda de ouro por couro, e eu os curto em couro macio para você."
+
+[.ellis_6]
+en = "Leather is rather weak stuff."
+pt = "Couro é um material bem fraco."
+
+[.ellis_7]
+en = "Normal leather may be quite weak, but it's very heap - I make it from cowhides for only 1 gp per hide - and it's so easy to craft that anyone can work with it."
+pt = "O couro comum pode ser bem fraco, mas é muito barato - faço com couro de vaca por só 1 gp cada - e é tão fácil de trabalhar que qualquer um consegue."
+
+[.ellis_8]
+en = "Alternatively you could try hard leather. It's not so easy to craft, but I only charge 3 gp per cowhide to prepare it, and it makes much sturdier armour."
+pt = "Ou você pode experimentar o couro duro (hard leather). Não é tão fácil de trabalhar, mas cobro só 3 gp por couro de vaca para prepará-lo, e ele dá uma armadura bem mais resistente."
+
+[.ellis_9]
+en = "I can also tan snake hides and dragonhides, suitable for crafting into the highest quality armour for rangers."
+pt = "Também curto couros de cobra e de dragão (dragonhides), próprios para fazer a armadura da mais alta qualidade para arqueiros."
+
+[.ellis_10]
+en = "Thanks, I'll bear it in mind."
+pt = "Obrigado, vou ter isso em mente."
+
+# BrotherBordiss - Falador - Tutorial Island
+
+[.brotherbordiss_1]
+en = "Hello there. What can I do for you?"
+pt = "Olá. O que posso fazer por você?"
+
+[.brotherbordiss_2]
+en = "Can you do anything with this sigil?"
+pt = "Você consegue fazer alguma coisa com este sigilo?"
+
+[.brotherbordiss_3]
+en = "What is a dwarf doing in a monastery?"
+pt = "O que um anão está fazendo num mosteiro?"
+
+[.brotherbordiss_4]
+en = "Most of my kin follow Guthix, it's true, but I found Saradomin's teachings spoke to me. Balance is all very well; I would rather leave the world better than I found it."
+pt = "A maioria do meu povo segue Guthix, é verdade, mas os ensinamentos de Saradomin falaram comigo. Equilíbrio é muito bom; eu prefiro deixar o mundo melhor do que o encontrei."
+
+[.brotherbordiss_5]
+en = "That is what my power station is for, and I have a forge here to keep my hands busy in the meantime."
+pt = "É para isso que serve a minha usina de energia, e tenho uma forja aqui para manter as mãos ocupadas enquanto isso."
+
+[.brotherbordiss_6]
+en = "Now that is a sigil of the corporeal beast! I never thought I'd hold one of those."
+pt = "Ora, isso é um sigilo (sigil) da corporeal beast! Nunca pensei que fosse segurar um desses."
+
+[.brotherbordiss_7]
+en = "If you have a blessed spirit shield, I could mount that sigil onto it for you. It is fiddly work, mind, and my furnace does not stoke itself."
+pt = "Se você tiver um blessed spirit shield, posso montar esse sigilo nele para você. É um trabalho delicado, veja bem, e a minha fornalha não se alimenta sozinha."
+
+[.brotherbordiss_8]
+en = "I would need 1,500,000 coins for the trouble. What do you say?"
+pt = "Eu precisaria de 1.500.000 moedas (coins) pelo trabalho. O que me diz?"
+
+[.brotherbordiss_9]
+en = "Yes, please!"
+pt = "Sim, por favor!"
+
+[.brotherbordiss_10]
+en = "That's a bit expensive!"
+pt = "Isso é meio caro!"
+
+[.brotherbordiss_11]
+en = "It is a fair price for work this delicate. Come and find me again if you change your mind."
+pt = "É um preço justo para um trabalho tão delicado. Venha me procurar de novo se mudar de ideia."
+
+[.brotherbordiss_12]
+en = "You'll need a blessed spirit shield for me to mount it on. Come back and see me once you have one."
+pt = "Você vai precisar de um blessed spirit shield para eu montar o sigilo. Volte para me ver quando tiver um."
+
+[.brotherbordiss_13]
+en = "I don't seem to have enough coins, I will return once I do."
+pt = "Parece que não tenho moedas suficientes, volto quando tiver."
+
+[.brotherbordiss_14]
+en = "There you go. Bear it well, and mind what you point it at."
+pt = "Aqui está. Use-o bem, e cuidado para onde aponta."
+
 # EstateAgent - Varrock - Tutorial Island
 
 [.estateagent_1]
@@ -5013,66 +7397,62 @@ en = "Do you want to buy a starter house?"
 pt = "Quer comprar uma casa inicial?"
 
 [.estateagent_8]
-en = "Yes please!"
-pt = "Sim, por favor!"
-
-[.estateagent_9]
 en = "I haven't got 1,000 coins on me."
 pt = "Não tenho 1.000 moedas comigo."
 
-[.estateagent_10]
+[.estateagent_9]
 en = "Well come back when you have it then."
 pt = "Então volte quando tiver."
 
-[.estateagent_11]
+[.estateagent_10]
 en = "Thank you. Go through the Rimmington house portal and you will find your house ready for you to start building in it."
 pt = "Obrigado. Passe pelo portal da casa em Rimmington e você vai encontrar a sua casa pronta para começar a construir."
 
-[.estateagent_12]
+[.estateagent_11]
 en = "This book will help you to start building your house."
 pt = "Este livro vai te ajudar a começar a construir a sua casa."
 
-[.estateagent_13]
+[.estateagent_12]
 en = "Well enjoy your player-owned cardboard box or wherever you're going to sleep tonight!"
 pt = "Bom, aproveite a sua caixa de papelão própria, ou onde quer que você vá dormir esta noite!"
 
-[.estateagent_14]
+[.estateagent_13]
 en = "Certainly. Where would you like it moved to?"
 pt = "Claro. Para onde você quer mudá-la?"
 
-[.estateagent_15]
+[.estateagent_14]
 en = "Your house is already in %1%!"
 pt = "A sua casa já fica em %1%!"
 
-[.estateagent_16]
+[.estateagent_15]
 en = "Your house has been moved to %1%."
 pt = "A sua casa foi mudada para %1%."
 
-[.estateagent_17]
+[.estateagent_16]
 en = "Certainly. My magic can rebuild the house in a completely new style! What style would you like?"
 pt = "Claro. A minha magia pode reconstruir a casa num estilo totalmente novo! Que estilo você quer?"
 
-[.estateagent_18]
+[.estateagent_17]
 en = "Your house is already built in that style!"
 pt = "A sua casa já está construída nesse estilo!"
 
-[.estateagent_19]
+[.estateagent_18]
 en = "Your house has been redecorated."
 pt = "A sua casa foi redecorada."
 
-[.estateagent_20]
+[.estateagent_19]
 en = "%1% (%2%)"
 pt = "%1% (%2%)"
 
-[.estateagent_21]
+[.estateagent_20]
 en = "More..."
 pt = "Mais..."
 
-[.estateagent_22]
+[.estateagent_21]
 en = "I'm afraid you need a Construction level of %1% for that."
 pt = "Receio que você precise de nível %1% em Construction para isso."
 
-[.estateagent_23]
+[.estateagent_22]
 en = "I haven't got %1% coins on me."
 pt = "Não tenho %1% moedas comigo."
 
@@ -6317,174 +8697,170 @@ en = "Dororan gives you a chisel."
 pt = "Dororan lhe dá um cinzel (chisel)."
 
 [.dororan_242]
-en = "Okay."
-pt = "Certo."
-
-[.dororan_243]
 en = "I've seen jewelcrafters use them for all sorts of precise work."
 pt = "Já vi joalheiros usarem cinzéis em todo tipo de trabalho delicado."
 
-[.dororan_244]
+[.dororan_243]
 en = "You're a poet too?"
 pt = "Você também é poeta?"
 
-[.dororan_245]
+[.dororan_244]
 en = "Ah! Then I'm sure you can identify with the arduous state of my life."
 pt = "Ah! Então tenho certeza de que você entende o árduo estado da minha vida."
 
-[.dororan_246]
+[.dororan_245]
 en = "Maybe a bit."
 pt = "Talvez um pouco."
 
-[.dororan_247]
+[.dororan_246]
 en = "Oh. Then maybe you can identify with the arduous state of my life."
 pt = "Oh. Então talvez você entenda o árduo estado da minha vida."
 
-[.dororan_248]
+[.dororan_247]
 en = "oh. How can I expect you to identify with the arduous state of my life?"
 pt = "Oh. Como posso esperar que você entenda o árduo estado da minha vida?"
 
-[.dororan_249]
+[.dororan_248]
 en = "My heart is stricken with that most audacious of maladies!"
 pt = "Meu coração foi tomado pelo mais audacioso dos males!"
 
-[.dororan_250]
+[.dororan_249]
 en = "Angina?"
 pt = "Angina?"
 
-[.dororan_251]
+[.dororan_250]
 en = "Hypertension?"
 pt = "Hipertensão?"
 
-[.dororan_252]
+[.dororan_251]
 en = "Coclearabsidosis?"
 pt = "Coclearabsidose?"
 
-[.dororan_253]
+[.dororan_252]
 en = "Love!"
 pt = "Amor!"
 
-[.dororan_254]
+[.dororan_253]
 en = "The walls of my heart are besieged by love's armies, and those walls begin to tumble!"
 pt = "As muralhas do meu coração estão sitiadas pelos exércitos do amor, e essas muralhas começam a ruir!"
 
-[.dororan_255]
+[.dororan_254]
 en = "In the barbarian village lives the fairest maiden I have witnessed in all my life."
 pt = "Na Barbarian Village vive a donzela mais bela que já vi em toda a minha vida."
 
-[.dororan_256]
+[.dororan_255]
 en = "What's so special about her?"
 pt = "O que ela tem de tão especial?"
 
-[.dororan_257]
+[.dororan_256]
 en = "I wouldn't know where to start! Her fiery spirit? Her proud bearing? Her winsome form?"
 pt = "Eu nem saberia por onde começar! O espírito ardente? O porte altivo? As formas encantadoras?"
 
-[.dororan_258]
+[.dororan_257]
 en = "But why is this making you sad?"
 pt = "Mas por que isso deixa você triste?"
 
-[.dororan_259]
+[.dororan_258]
 en = "What do you actually need?"
 pt = "Do que você precisa, afinal?"
 
-[.dororan_260]
+[.dororan_259]
 en = "Get to the point."
 pt = "Vá direto ao ponto."
 
-[.dororan_261]
+[.dororan_260]
 en = "The people of this village value strength, stature and riches. I have none of these things."
 pt = "O povo desta vila valoriza força, estatura e riqueza. Não tenho nada disso."
 
-[.dororan_262]
+[.dororan_261]
 en = "My people are indomitable warriors, dripping with gold and precious gems, but not I."
 pt = "Meu povo é de guerreiros indomáveis, cobertos de ouro e pedras preciosas, mas eu não."
 
-[.dororan_263]
+[.dororan_262]
 en = "I am not built for combat, and poetry has proven a life of poverty!"
 pt = "Não nasci para o combate, e a poesia se mostrou uma vida de pobreza!"
 
-[.dororan_264]
+[.dororan_263]
 en = "There must be something you can do."
 pt = "Deve haver alguma coisa que você possa fazer."
 
-[.dororan_265]
+[.dororan_264]
 en = "Not to mention low stature."
 pt = "Sem falar na baixa estatura."
 
-[.dororan_266]
+[.dororan_265]
 en = "You see!"
 pt = "Viu só!"
 
-[.dororan_267]
+[.dororan_266]
 en = "If Gudrun could ever love a dwarf, surely she would need to see my artisanry."
 pt = "Se a Gudrun algum dia puder amar um anão, ela com certeza vai precisar ver a minha arte."
 
-[.dororan_268]
+[.dororan_267]
 en = "Will you help me? I am no crafter of metal."
 pt = "Você me ajuda? Não sei trabalhar metal."
 
-[.dororan_269]
+[.dororan_268]
 en = "You need a Crafting level of at least 5 to start this quest."
 pt = "Você precisa de nível 5 em Crafting (artesanato) para começar esta missão."
 
-[.dororan_270]
+[.dororan_269]
 en = "Start Gunnar's Ground quest?"
 pt = "Começar a missão Gunnar's Ground?"
 
-[.dororan_271]
+[.dororan_270]
 en = "How are things?"
 pt = "Como vão as coisas?"
 
-[.dororan_272]
+[.dororan_271]
 en = "Every morning I wake to sunshine and birdsong! Life is marvellous!"
 pt = "Toda manhã acordo com sol e canto de passarinho! A vida é maravilhosa!"
 
-[.dororan_273]
+[.dororan_272]
 en = "This is a very large house."
 pt = "Esta casa é muito grande."
 
-[.dororan_274]
+[.dororan_273]
 en = "I know! I don't know where Gunthor would have got such a thing. Maybe Gudrun has some idea."
 pt = "Eu sei! Não sei onde o Gunthor teria arranjado uma coisa dessas. Talvez a Gudrun saiba."
 
-[.dororan_275]
+[.dororan_274]
 en = "I'd like to see the poem you wrote for Gunthor."
 pt = "Gostaria de ver o poema que você escreveu para o Gunthor."
 
-[.dororan_276]
+[.dororan_275]
 en = "Dororan gives you a copy of the poem."
 pt = "Dororan lhe dá uma cópia do poema."
 
-[.dororan_277]
+[.dororan_276]
 en = "There you go!"
 pt = "Aqui está!"
 
-[.dororan_278]
+[.dororan_277]
 en = "I seem to have mislaid my swanky boots."
 pt = "Parece que perdi minhas botas chiques (swanky boots)."
 
-[.dororan_279]
+[.dororan_278]
 en = "Not to worry! There are some left. Here you go."
 pt = "Não se preocupe! Ainda sobraram algumas. Aqui está."
 
-[.dororan_280]
+[.dororan_279]
 en = "you don't have room for the boots."
 pt = "você não tem espaço para as botas."
 
-[.dororan_281]
+[.dororan_280]
 en = "Dororan gives you some more boots."
 pt = "Dororan lhe dá mais um par de botas."
 
-[.dororan_282]
+[.dororan_281]
 en = "Be more careful with these ones! I don't have an infinite supply."
 pt = "Cuidado maior com estas! Meu estoque não é infinito."
 
-[.dororan_283]
+[.dororan_282]
 en = "Goodbye!"
 pt = "Tchau!"
 
-[.dororan_284]
+[.dororan_283]
 en = "Dororan hands you back the engraved ring."
 pt = "Dororan lhe devolve o anel gravado (engraved ring)."
 
@@ -7321,10 +9697,6 @@ en = "What that means, I don't know. That's probably old news by now though."
 pt = "O que isso quer dizer, eu não sei. Mas a essa altura já deve ser notícia velha."
 
 [.bartenderjollyboarinn_14]
-en = "I'm doing Alfred Grimhand's barcrawl."
-pt = "Estou fazendo o Alfred Grimhand's Barcrawl."
-
-[.bartenderjollyboarinn_15]
 en = "Thanksh very mush..."
 pt = "Brigadão messsmo..."
 
@@ -7383,10 +9755,6 @@ en = "Sorry, you don't have enough coins. It costs 50 coins."
 pt = "Desculpe, você não tem moedas suficientes. Custa 50 moedas."
 
 [.benny_14]
-en = "No thank you."
-pt = "Não, obrigado."
-
-[.benny_15]
 en = "Well, no cash, no paper. Live in ignorance."
 pt = "Bom, sem dinheiro, sem jornal. Viva na ignorância."
 
@@ -8073,14 +10441,10 @@ en = "Hello, do you need any help?"
 pt = "Olá, precisa de ajuda?"
 
 [.horvikarmourshop_2]
-en = "Yes, please!"
-pt = "Sim, por favor!"
-
-[.horvikarmourshop_3]
 en = "No thanks. I'm just looking around."
 pt = "Não, obrigado. Só estou dando uma olhada."
 
-[.horvikarmourshop_4]
+[.horvikarmourshop_3]
 en = "Well, come and see me if you're ever in need of armour!"
 pt = "Bom, venha me ver se um dia precisar de armadura!"
 
@@ -8289,10 +10653,6 @@ en = "Well, if you're sure. You know where to come if you do!"
 pt = "Bem, se tem certeza. Você sabe onde me achar se precisar!"
 
 [.teaseller_3]
-en = "What are you selling?"
-pt = "O que você vende?"
-
-[.teaseller_4]
 en = "Only the most delicious infusion of the leaves of the tea plant. Grown in the exotic regions of this world.<br>Buy yourself a cup!"
 pt = "Só a mais deliciosa infusão de folhas da planta do chá. Cultivada nas regiões exóticas deste mundo.<br>Compre uma xícara!"
 
@@ -8331,18 +10691,14 @@ en = "So, what do you say? Interested?"
 pt = "Então, o que me diz? Interessado?"
 
 [.thessalia_9]
-en = "No, thank you."
-pt = "Não, obrigado."
-
-[.thessalia_10]
 en = "A marvellous choice. You look splendid!"
 pt = "Uma escolha maravilhosa. Você está esplêndido!"
 
-[.thessalia_11]
+[.thessalia_10]
 en = "I'd just like to buy some clothes."
 pt = "Só quero comprar algumas roupas."
 
-[.thessalia_12]
+[.thessalia_11]
 en = "You're not able to try on my clothes with all that armour. Take it off and then speak to me again."
 pt = "Você não pode provar minhas roupas com toda essa armadura. Tire-a e depois fale comigo de novo."
 
@@ -8521,22 +10877,18 @@ en = "Why should I give you free food?"
 pt = "Por que eu daria comida de graça para você?"
 
 [.cookbluemooninn_16]
-en = "Oh, forget it."
-pt = "Ah, esquece."
-
-[.cookbluemooninn_17]
 en = "I don't want anything from this horrible kitchen."
 pt = "Não quero nada desta cozinha horrível."
 
-[.cookbluemooninn_18]
+[.cookbluemooninn_17]
 en = "How dare you? I put a lot of effort into cleaning this kitchen. My daily sweat and elbow-grease keep this kitchen clean!"
 pt = "Como se atreve? Eu me esforço muito para limpar esta cozinha. Meu suor e meu trabalho braçal de todo dia mantêm esta cozinha limpa!"
 
-[.cookbluemooninn_19]
+[.cookbluemooninn_18]
 en = "Ewww!"
 pt = "Eca!"
 
-[.cookbluemooninn_20]
+[.cookbluemooninn_19]
 en = "Oh, just leave me alone."
 pt = "Ah, me deixe em paz."
 
@@ -9311,10 +11663,6 @@ pt = "Vá falar com o Brugsen, que está ali, mais perto do prédio. Ele vai aju
 [.grandexchangetutor_9]
 en = "I'm okay thanks."
 pt = "Estou bem, obrigado."
-
-[.grandexchangetutor_10]
-en = "Fair enough."
-pt = "Justo."
 
 # HofuthandCombat - Varrock - Tutorial Island
 
@@ -11743,70 +14091,66 @@ en = "King Roald has been very generous with my salary, so I can spare you some 
 pt = "O King Roald tem sido muito generoso com o meu salário, então posso lhe dar algumas moedas pelo incômodo."
 
 [.reldo_11]
-en = "Do you have anything to trade?"
-pt = "Você tem algo para negociar?"
-
-[.reldo_12]
 en = "Only knowledge."
 pt = "Só conhecimento."
 
-[.reldo_13]
+[.reldo_12]
 en = "How much do you want for that then?"
 pt = "Quanto você quer por isso, então?"
 
-[.reldo_14]
+[.reldo_13]
 en = "No, sorry, that was just my little joke. I'm not the trading type."
 pt = "Não, desculpe, foi só uma brincadeirinha minha. Não sou do tipo que negocia."
 
-[.reldo_15]
+[.reldo_14]
 en = "Ah well."
 pt = "Ah, tudo bem."
 
-[.reldo_16]
+[.reldo_15]
 en = "What do you do?"
 pt = "O que você faz?"
 
-[.reldo_17]
+[.reldo_16]
 en = "I am the palace librarian."
 pt = "Sou o bibliotecário do palácio."
 
-[.reldo_18]
+[.reldo_17]
 en = "Ah. That's why you're in the library then."
 pt = "Ah. É por isso que você está na biblioteca, então."
 
-[.reldo_19]
+[.reldo_18]
 en = "Although I would probably be in here even if I didn't work here. I like reading. Someday I hope to catalogue all of the information stored in these books so all may read it."
 pt = "Embora eu provavelmente estivesse aqui mesmo se não trabalhasse aqui. Gosto de ler. Um dia espero catalogar todas as informações destes livros para que todos possam lê-las."
 
-[.reldo_20]
+[.reldo_19]
 en = "What do you know about the Imcando dwarves?"
 pt = "O que você sabe sobre os anões Imcando?"
 
-[.reldo_21]
+[.reldo_20]
 en = "The Imcando dwarves, you say?"
 pt = "Os anões Imcando, você diz?"
 
-[.reldo_22]
+[.reldo_21]
 en = "Ah yes... for many hundreds of years they were the world's most skilled smiths. They used secret smithing knowledge passed down from generation to generation."
 pt = "Ah, sim... por muitas centenas de anos eles foram os ferreiros mais habilidosos do mundo. Usavam um conhecimento secreto de forja passado de geração em geração."
 
-[.reldo_23]
+[.reldo_22]
 en = "Unfortunately, about a century ago, the once thriving race was wiped out during the barbarian invasions of that time."
 pt = "Infelizmente, há cerca de um século, essa raça antes próspera foi dizimada durante as invasões bárbaras daquela época."
 
-[.reldo_24]
+[.reldo_23]
 en = "So are there any Imcando left at all?"
 pt = "Então não sobrou nenhum Imcando?"
 
-[.reldo_25]
+[.reldo_24]
 en = "I believe a few of them survived, but with the bulk of their population destroyed their numbers have dwindled even further."
 pt = "Acredito que alguns sobreviveram, mas, com a maior parte da população destruída, o número deles diminuiu ainda mais."
 
-[.reldo_26]
+[.reldo_25]
 en = "They tend to keep to themselves, and they tend not to tell people they're descendants of the Imcando, which is why people think the tribe is extinct. However..."
 pt = "Eles costumam ficar na deles e não contam às pessoas que descendem dos Imcando, por isso todos acham que a tribo está extinta. Mas..."
 
-[.reldo_27]
+[.reldo_26]
 en = "... you could try taking them some redberry pie. They REALLY like redberry pie. I believe I remember a couple living in Asgarnia near the cliffs on the Asgarnian southern peninsula."
 pt = "... você podia tentar levar para eles uma torta de amora (redberry pie). Eles ADORAM redberry pie. Acho que me lembro de um casal que vive em Asgarnia, perto dos penhascos da península sul de Asgarnia."
 
@@ -13463,6 +15807,10 @@ en = "This is where you'd usually find %1%."
 pt = "É aqui que %1% costuma ficar."
 
 # Glossary - short words skills insert into lines (rune types, metals, farming patches, directions); used where a pt line writes %1g% instead of %1%, see Translation.kt
+
+[.word_or_shave]
+en = " or shave"
+pt = " ou fazer a barba"
 
 [.word_lad]
 en = "lad"
@@ -15271,58 +17619,54 @@ en = "Maybe some other time."
 pt = "Talvez outra hora."
 
 [.skill_hunter_falconry_10]
-en = "No thanks, I'm fine."
-pt = "Não, obrigado, estou bem."
-
-[.skill_hunter_falconry_11]
 en = "Your falcon gives up on its catch and returns to your glove."
 pt = "O seu falcão desiste da presa e volta para a sua luva."
 
-[.skill_hunter_falconry_12]
+[.skill_hunter_falconry_11]
 en = "You hand the falcon back to Matthias before leaving."
 pt = "Você devolve o falcão ao Matthias antes de sair."
 
-[.skill_hunter_falconry_13]
+[.skill_hunter_falconry_12]
 en = "You've already got one of my birds."
 pt = "Você já está com uma das minhas aves."
 
-[.skill_hunter_falconry_14]
+[.skill_hunter_falconry_13]
 en = "I'm afraid my birds are hard to handle. You'll need a Hunter level of at least 43 before I can let you use one."
 pt = "Infelizmente minhas aves são difíceis de controlar. Você precisa de pelo menos nível 43 em Hunter para eu deixar você usar uma."
 
-[.skill_hunter_falconry_15]
+[.skill_hunter_falconry_14]
 en = "You'll need both hands free to handle the bird. Come back once you've put away what you're holding."
 pt = "Você vai precisar das duas mãos livres para segurar a ave. Volte depois de guardar o que está segurando."
 
-[.skill_hunter_falconry_16]
+[.skill_hunter_falconry_15]
 en = "I'm afraid it's 500 coins if you want to borrow a bird, and it looks like you don't have enough on you."
 pt = "Infelizmente custa 500 moedas para pegar uma ave emprestada, e parece que você não tem o bastante aí."
 
-[.skill_hunter_falconry_17]
+[.skill_hunter_falconry_16]
 en = "Here you go then. Treat Valor well, and bring him back when you're done."
 pt = "Então aqui está. Trate bem o Valor e traga-o de volta quando terminar."
 
-[.skill_hunter_falconry_18]
+[.skill_hunter_falconry_17]
 en = "Your falcon is already off chasing prey."
 pt = "O seu falcão já está atrás de uma presa."
 
-[.skill_hunter_falconry_19]
+[.skill_hunter_falconry_18]
 en = "You need a trained falcon to catch this kebbit."
 pt = "Você precisa de um falcão treinado para capturar este kebbit."
 
-[.skill_hunter_falconry_20]
+[.skill_hunter_falconry_19]
 en = "The kebbit is too quick for your falcon."
 pt = "Este kebbit é rápido demais para o seu falcão."
 
-[.skill_hunter_falconry_21]
+[.skill_hunter_falconry_20]
 en = "Your falcon successfully swoops down on the kebbit."
 pt = "O seu falcão mergulha sobre o kebbit com sucesso."
 
-[.skill_hunter_falconry_22]
+[.skill_hunter_falconry_21]
 en = "This isn't your falcon."
 pt = "Este falcão não é seu."
 
-[.skill_hunter_falconry_23]
+[.skill_hunter_falconry_22]
 en = "You retrieve your falcon and its catch."
 pt = "Você recolhe o seu falcão e a presa dele."
 
@@ -17137,74 +19481,70 @@ en = "I'm here about blessed axes again."
 pt = "Vim de novo por causa dos machados abençoados."
 
 [.skill_slayer_master_slayermaster_15]
-en = "What is that cape you're wearing?"
-pt = "Que capa é essa que você está usando?"
-
-[.skill_slayer_master_slayermaster_16]
 en = "Er...nothing... "
 pt = "É... nada... "
 
-[.skill_slayer_master_slayermaster_17]
+[.skill_slayer_master_slayermaster_16]
 en = "You're still hunting %1%, you have %2% to go."
 pt = "Você ainda está caçando: %1%. Faltam %2%."
 
-[.skill_slayer_master_slayermaster_18]
+[.skill_slayer_master_slayermaster_17]
 en = "Although, it's not an assignment that I'd normally give... I guess I could give you a new assignment, if you'd like."
 pt = "Bem, não é uma tarefa que eu costumo dar... Acho que eu poderia te dar uma nova tarefa, se você quiser."
 
-[.skill_slayer_master_slayermaster_19]
+[.skill_slayer_master_slayermaster_18]
 en = "If you do get a new one, you will reset your task streak of %1%. Is that okay?"
 pt = "Se você pegar uma nova, vai zerar a sua sequência de %1% tarefas. Tudo bem?"
 
-[.skill_slayer_master_slayermaster_20]
+[.skill_slayer_master_slayermaster_19]
 en = "Although, it's a tougher assignment that I'd normally give... I guess I could give you a new assignment, if you'd like."
 pt = "Bem, é uma tarefa mais difícil do que as que eu costumo dar... Acho que eu poderia te dar uma nova tarefa, se você quiser."
 
-[.skill_slayer_master_slayermaster_21]
+[.skill_slayer_master_slayermaster_20]
 en = "Excellent, you're doing great. Your new task is to kill %1% %2%."
 pt = "Excelente, você está indo muito bem. Sua nova tarefa: matar %1% %2%."
 
-[.skill_slayer_master_slayermaster_22]
+[.skill_slayer_master_slayermaster_21]
 en = "Okay, great!"
 pt = "Certo, ótimo!"
 
-[.skill_slayer_master_slayermaster_23]
+[.skill_slayer_master_slayermaster_22]
 en = "Wow, can you teach me?"
 pt = "Uau, você pode me ensinar?"
 
-[.skill_slayer_master_slayermaster_24]
+[.skill_slayer_master_slayermaster_23]
 en = "Hmmm well I'm not so sure..."
 pt = "Hmmm, bem, não sei, não..."
 
-[.skill_slayer_master_slayermaster_25]
+[.skill_slayer_master_slayermaster_24]
 en = "Pleeeaasssse!"
 pt = "Por favooooor!"
 
-[.skill_slayer_master_slayermaster_26]
+[.skill_slayer_master_slayermaster_25]
 en = "Oh okay then, you twisted my arm. You'll have to train against specific groups of creatures."
 pt = "Ah, tá bom, você me convenceu. Você vai ter que treinar contra grupos específicos de criaturas."
 
-[.skill_slayer_master_slayermaster_27]
+[.skill_slayer_master_slayermaster_26]
 en = "Okay, what's first?"
 pt = "Certo, o que vem primeiro?"
 
-[.skill_slayer_master_slayermaster_28]
+[.skill_slayer_master_slayermaster_27]
 en = "We'll start you off hunting %1%, you'll need to kill %2% of them."
 pt = "Para começar, você vai caçar: %1%. Vai precisar matar %2%."
 
-[.skill_slayer_master_slayermaster_29]
+[.skill_slayer_master_slayermaster_28]
 en = "You'll also need this enchanted gem, it allows Slayer Masters like myself to contact you and update you on your progress. Don't worry if you lose it, you can buy another from any Slayer Master."
 pt = "Você também vai precisar desta gema encantada (enchanted gem). Com ela, mestres de Slayer como eu podem falar com você e atualizar o seu progresso. Se perder, não se preocupe: dá para comprar outra com qualquer mestre de Slayer."
 
-[.skill_slayer_master_slayermaster_30]
+[.skill_slayer_master_slayermaster_29]
 en = "Good luck! Don't forget to come back when you need a new assignment."
 pt = "Boa sorte! Não esqueça de voltar quando precisar de uma nova tarefa."
 
-[.skill_slayer_master_slayermaster_31]
+[.skill_slayer_master_slayermaster_30]
 en = "Sounds useless to me."
 pt = "Para mim, parece inútil."
 
-[.skill_slayer_master_slayermaster_32]
+[.skill_slayer_master_slayermaster_31]
 en = "Suit yourself."
 pt = "Você é quem sabe."
 
@@ -19531,70 +21871,66 @@ en = "Naabe, a hoardstalker has little or no experience of combat. I am told tha
 pt = "Naabe, um hoardstalker tem pouca ou nenhuma experiência em combate. Dizem que eu luto como um gato em pé nas patas de trás."
 
 [.skill_summoning_familiar_hoardstalker_4]
-en = "Choose an option:"
-pt = "Escolha uma opção:"
-
-[.skill_summoning_familiar_hoardstalker_5]
 en = "Don't worry, I have your back."
 pt = "Não se preocupe, eu protejo as suas costas."
 
-[.skill_summoning_familiar_hoardstalker_6]
+[.skill_summoning_familiar_hoardstalker_5]
 en = "Not just my back, I hope. I find a foe more terrifying when they run at me from the front. Although we do not die in our spirit form, we must rest for a week due to our spirit wounds, so others would have to perform my role for me."
 pt = "Não só as costas, espero. Acho um inimigo mais aterrorizante quando corre para cima de mim pela frente. Embora não morramos em forma espiritual, precisamos descansar uma semana pelas feridas do espírito, e outros teriam de fazer o meu papel."
 
-[.skill_summoning_familiar_hoardstalker_7]
+[.skill_summoning_familiar_hoardstalker_6]
 en = "They would be like a woodpecket attempting to feed from a tortoise. I'd come back to find the crops irrigated with milk, weapons dipped in water, and babies drinking poison. Churra, it is too terrible to think on."
 pt = "Seriam como um pica-pau tentando se alimentar de uma tartaruga. Eu voltaria e acharia as plantações regadas com leite, armas mergulhadas em água e bebês bebendo veneno. Churra, é terrível demais para pensar."
 
-[.skill_summoning_familiar_hoardstalker_8]
+[.skill_summoning_familiar_hoardstalker_7]
 en = "Then what use are you?"
 pt = "Então para que você serve?"
 
-[.skill_summoning_familiar_hoardstalker_9]
+[.skill_summoning_familiar_hoardstalker_8]
 en = "Churra! You have a closed mind on those shoulders. I may not be a towering bloodrager or a graceful deathslinger, but I can be useful where they cannot"
 pt = "Churra! Você tem uma mente fechada em cima desses ombros. Posso não ser um bloodrager imponente nem um deathslinger gracioso, mas posso ser útil onde eles não são."
 
-[.skill_summoning_familiar_hoardstalker_10]
+[.skill_summoning_familiar_hoardstalker_9]
 en = "Let me scavenge in these ruins, naabe. I will bring you such items that you would never question my place here."
 pt = "Deixe-me vasculhar estas ruínas, naabe. Trarei itens tais que você nunca mais questionará o meu lugar aqui."
 
-[.skill_summoning_familiar_hoardstalker_11]
+[.skill_summoning_familiar_hoardstalker_10]
 en = "Do you like it in Daemonheim? I can't imagine how anyone could."
 pt = "Você gosta de Daemonheim? Não imagino como alguém poderia gostar."
 
-[.skill_summoning_familiar_hoardstalker_12]
+[.skill_summoning_familiar_hoardstalker_11]
 en = "I see this place in a way that you do not, naabe. It amazes me how something can go down so deep, yet still be strong and broad. I cannot help but applaud the mind behind these dungeons."
 pt = "Vejo este lugar de um jeito que você não vê, naabe. Me espanta como algo pode descer tão fundo e ainda ser forte e largo. Não posso deixar de aplaudir a mente por trás destas masmorras."
 
-[.skill_summoning_familiar_hoardstalker_13]
+[.skill_summoning_familiar_hoardstalker_12]
 en = "The workmanship, too...it makes me want to put down my tools and reincarnate as a bloodrager. I feel like a sparrowhawk who has been chased off his kill by a dragon."
 pt = "E o acabamento, também... dá vontade de largar as ferramentas e reencarnar como bloodrager. Me sinto como um gavião expulso da própria presa por um dragão."
 
-[.skill_summoning_familiar_hoardstalker_14]
+[.skill_summoning_familiar_hoardstalker_13]
 en = "But this place is evil, and thousands died building it. I doubt you've murdered anyone to make a dagger, you know."
 pt = "Mas este lugar é maligno, e milhares morreram construindo-o. Duvido que você já tenha matado alguém para fazer uma adaga, sabe."
 
-[.skill_summoning_familiar_hoardstalker_15]
+[.skill_summoning_familiar_hoardstalker_14]
 en = "And that is some comfort. I feel I must be careful about what I learn and study on this plane. There are poisoned thorns among the flowering wonders"
 pt = "E isso é algum consolo. Sinto que devo tomar cuidado com o que aprendo e estudo neste plano. Há espinhos envenenados entre as maravilhas em flor."
 
-[.skill_summoning_familiar_hoardstalker_16]
+[.skill_summoning_familiar_hoardstalker_15]
 en = "Why are you called a hoardstalker? It seems a strange choice for a...blacksmith and scavenger, I guess."
 pt = "Por que você se chama hoardstalker? Parece uma escolha estranha para um... ferreiro e catador, eu acho."
 
-[.skill_summoning_familiar_hoardstalker_17]
+[.skill_summoning_familiar_hoardstalker_16]
 en = "We are not just required to make the tools of our clansmen, naabe, We must protect the tools from those who would take them."
 pt = "Não basta fazer as ferramentas do nosso clã, naabe. Também temos de protegê-las de quem quiser roubá-las."
 
-[.skill_summoning_familiar_hoardstalker_18]
+[.skill_summoning_familiar_hoardstalker_17]
 en = "Still, hoardstalker is a silly name."
 pt = "Mesmo assim, hoardstalker é um nome bobo."
 
-[.skill_summoning_familiar_hoardstalker_19]
+[.skill_summoning_familiar_hoardstalker_18]
 en = "Naabe, I have held this back from you until now, but the term %1%, in our tongue, means 'One-Who-Juggles-Piglets'. A less-mature gorajo would find that amusing."
 pt = "Naabe, escondi isto de você até agora, mas o termo %1%, na nossa língua, significa 'Aquele-Que-Faz-Malabarismo-Com-Leitões'. Um gorajo menos maduro acharia graça nisso."
 
-[.skill_summoning_familiar_hoardstalker_20]
+[.skill_summoning_familiar_hoardstalker_19]
 en = "No problem, naabe. Just make sure nothing sneaks past and hurts me."
 pt = "Sem problema, naabe. Só cuide para que nada passe escondido e me machuque."
 
@@ -21123,66 +23459,62 @@ en = "Rooooowl? (How about now?)"
 pt = "Rooooowl? (E agora?)"
 
 [.skill_summoning_familiar_spiritdagannoth_4]
-en = "No, sorry."
-pt = "Não, desculpa."
-
-[.skill_summoning_familiar_spiritdagannoth_5]
 en = "No, sorry. You might want to try again a little later."
 pt = "Não, desculpa. Talvez seja melhor tentar de novo mais tarde."
 
-[.skill_summoning_familiar_spiritdagannoth_6]
+[.skill_summoning_familiar_spiritdagannoth_5]
 en = "Groooooowl. Hsssssssssssssss! (The Deeps will swallow the lands. None will stand before us!)"
 pt = "Groooooowl. Hsssssssssssssss! (As Profundezas engolirão as terras. Ninguém ficará de pé diante de nós!)"
 
-[.skill_summoning_familiar_spiritdagannoth_7]
+[.skill_summoning_familiar_spiritdagannoth_6]
 en = "What if we build boats?"
 pt = "E se a gente construir barcos?"
 
-[.skill_summoning_familiar_spiritdagannoth_8]
+[.skill_summoning_familiar_spiritdagannoth_7]
 en = "Hsssssssss groooooowl? Hssssshsss grrooooooowl? (What are boats? The tasty wooden containers full of meat?)"
 pt = "Hsssssssss groooooowl? Hssssshsss grrooooooowl? (O que são barcos? Aqueles recipientes de madeira deliciosos cheios de carne?)"
 
-[.skill_summoning_familiar_spiritdagannoth_9]
+[.skill_summoning_familiar_spiritdagannoth_8]
 en = "I suppose they could be described as such, yes."
 pt = "Bom, dá para descrever assim, sim."
 
-[.skill_summoning_familiar_spiritdagannoth_10]
+[.skill_summoning_familiar_spiritdagannoth_9]
 en = "Hssssss graaaawl grooooowl, growwwwwwwwwl! (Oh how the bleak gulfs hunger for the Day of Rising.)"
 pt = "Hssssss graaaawl grooooowl, growwwwwwwwwl! (Ah, como os abismos sombrios anseiam pelo Dia da Ascensão.)"
 
-[.skill_summoning_familiar_spiritdagannoth_11]
+[.skill_summoning_familiar_spiritdagannoth_10]
 en = "My brain hurts when I listen to you talk..."
 pt = "Meu cérebro dói quando ouço você falar..."
 
-[.skill_summoning_familiar_spiritdagannoth_12]
+[.skill_summoning_familiar_spiritdagannoth_11]
 en = "Raaaaawl groooowl grrrrawl! (That's the truth biting into your clouded mind!)"
 pt = "Raaaaawl groooowl grrrrawl! (É a verdade mordendo a sua mente nublada!)"
 
-[.skill_summoning_familiar_spiritdagannoth_13]
+[.skill_summoning_familiar_spiritdagannoth_12]
 en = "Could you try using a little less truth please?"
 pt = "Dava para usar um pouquinho menos de verdade, por favor?"
 
-[.skill_summoning_familiar_spiritdagannoth_14]
+[.skill_summoning_familiar_spiritdagannoth_13]
 en = "Raaaawl! (Submit!)"
 pt = "Raaaawl! (Renda-se!)"
 
-[.skill_summoning_familiar_spiritdagannoth_15]
+[.skill_summoning_familiar_spiritdagannoth_14]
 en = "Submit to what?"
 pt = "Render-me a quê?"
 
-[.skill_summoning_familiar_spiritdagannoth_16]
+[.skill_summoning_familiar_spiritdagannoth_15]
 en = "Hssssssssss rawwwwwl graaaawl! (To the inevitable defeat of all life on the Surface!)"
 pt = "Hssssssssss rawwwwwl graaaawl! (À derrota inevitável de toda a vida da Superfície!)"
 
-[.skill_summoning_familiar_spiritdagannoth_17]
+[.skill_summoning_familiar_spiritdagannoth_16]
 en = "I think I'll wait a little longer before I just keep over and submit, thanks"
 pt = "Acho que vou esperar mais um pouco antes de cair duro e me render, obrigado."
 
-[.skill_summoning_familiar_spiritdagannoth_18]
+[.skill_summoning_familiar_spiritdagannoth_17]
 en = "Hsssss, grooooowl, raaaaawl. (Well, it's your choice, but those that submit first will be eaten first.)"
 pt = "Hsssss, grooooowl, raaaaawl. (Bom, a escolha é sua, mas quem se render primeiro será devorado primeiro.)"
 
-[.skill_summoning_familiar_spiritdagannoth_19]
+[.skill_summoning_familiar_spiritdagannoth_18]
 en = "I'll pass on that one, thanks."
 pt = "Essa eu dispenso, obrigado."
 
@@ -21233,58 +23565,54 @@ en = "Aww, of course I can I'll just... Oww! I think you drew blood that time."
 pt = "Own, claro que faço, é só... Ai! Acho que dessa vez saiu sangue."
 
 [.skill_summoning_familiar_spiritgraahk_12]
-en = "Hi!"
-pt = "Oi!"
-
-[.skill_summoning_familiar_spiritgraahk_13]
 en = "Hello. Are you going to spike me again?"
 pt = "Olá. Vai me espetar de novo?"
 
-[.skill_summoning_familiar_spiritgraahk_14]
+[.skill_summoning_familiar_spiritgraahk_13]
 en = "No, I got a present to apologise for last time."
 pt = "Não, eu trouxe um presente para pedir desculpas pela última vez."
 
-[.skill_summoning_familiar_spiritgraahk_15]
+[.skill_summoning_familiar_spiritgraahk_14]
 en = "That's really sweet, thank you."
 pt = "Que fofo, obrigado."
 
-[.skill_summoning_familiar_spiritgraahk_16]
+[.skill_summoning_familiar_spiritgraahk_15]
 en = "Here you go, it's a special cushion to make you comfortable."
 pt = "Aqui está, é uma almofada especial para você ficar confortável."
 
-[.skill_summoning_familiar_spiritgraahk_17]
+[.skill_summoning_familiar_spiritgraahk_16]
 en = "It's made of spikes!"
 pt = "Ela é feita de espinhos!"
 
-[.skill_summoning_familiar_spiritgraahk_18]
+[.skill_summoning_familiar_spiritgraahk_17]
 en = "Yes, but they're therapeutic spikes."
 pt = "Sim, mas são espinhos terapêuticos."
 
-[.skill_summoning_familiar_spiritgraahk_19]
+[.skill_summoning_familiar_spiritgraahk_18]
 en = "How's your day going?"
 pt = "Como está o seu dia?"
 
-[.skill_summoning_familiar_spiritgraahk_20]
+[.skill_summoning_familiar_spiritgraahk_19]
 en = "It's great! Actually I've got something to show you!"
 pt = "Ótimo! Aliás, tenho uma coisa para te mostrar!"
 
-[.skill_summoning_familiar_spiritgraahk_21]
+[.skill_summoning_familiar_spiritgraahk_20]
 en = "Oh? What's that?"
 pt = "É? O que é?"
 
-[.skill_summoning_familiar_spiritgraahk_22]
+[.skill_summoning_familiar_spiritgraahk_21]
 en = "You'll need to get closer!"
 pt = "Você vai ter que chegar mais perto!"
 
-[.skill_summoning_familiar_spiritgraahk_23]
+[.skill_summoning_familiar_spiritgraahk_22]
 en = "I can't see anything..."
 pt = "Não estou vendo nada..."
 
-[.skill_summoning_familiar_spiritgraahk_24]
+[.skill_summoning_familiar_spiritgraahk_23]
 en = "It's really small - even closer."
 pt = "É bem pequenininho - mais perto ainda."
 
-[.skill_summoning_familiar_spiritgraahk_25]
+[.skill_summoning_familiar_spiritgraahk_24]
 en = "Oww! I'm going to have your spikes trimmed!"
 pt = "Ai! Vou mandar aparar os seus espinhos!"
 
@@ -21887,102 +24215,98 @@ en = "I don't know, I was saving these for a pet."
 pt = "Sei lá, eu estava guardando pra um bichinho de estimação."
 
 [.skill_summoning_familiar_spiritspider_3]
-en = "I see..."
-pt = "Entendi..."
-
-[.skill_summoning_familiar_spiritspider_4]
 en = "Look, you can have some if you want."
 pt = "Olha, pode pegar umas, se quiser."
 
-[.skill_summoning_familiar_spiritspider_5]
+[.skill_summoning_familiar_spiritspider_4]
 en = "Oh, don't do me any favours."
 pt = "Ah, não precisa me fazer favor nenhum."
 
-[.skill_summoning_familiar_spiritspider_6]
+[.skill_summoning_familiar_spiritspider_5]
 en = "Look, here, have some!"
 pt = "Olha, toma, pega umas!"
 
-[.skill_summoning_familiar_spiritspider_7]
+[.skill_summoning_familiar_spiritspider_6]
 en = "Don't want them now."
 pt = "Agora não quero mais."
 
-[.skill_summoning_familiar_spiritspider_8]
+[.skill_summoning_familiar_spiritspider_7]
 en = "Siiiigh...spiders."
 pt = "Aaaaaff... aranhas."
 
-[.skill_summoning_familiar_spiritspider_9]
+[.skill_summoning_familiar_spiritspider_8]
 en = "Where are we going?"
 pt = "Pra onde a gente vai?"
 
-[.skill_summoning_familiar_spiritspider_10]
+[.skill_summoning_familiar_spiritspider_9]
 en = "I've not decided yet."
 pt = "Ainda não decidi."
 
-[.skill_summoning_familiar_spiritspider_11]
+[.skill_summoning_familiar_spiritspider_10]
 en = "Fine, don't tell me..."
 pt = "Tá bom, não me conta..."
 
-[.skill_summoning_familiar_spiritspider_12]
+[.skill_summoning_familiar_spiritspider_11]
 en = "Oh, okay, well, we are going..."
 pt = "Ah, tá, bom, a gente vai..."
 
-[.skill_summoning_familiar_spiritspider_13]
+[.skill_summoning_familiar_spiritspider_12]
 en = "Don't want to know now."
 pt = "Agora não quero mais saber."
 
-[.skill_summoning_familiar_spiritspider_14]
+[.skill_summoning_familiar_spiritspider_13]
 en = "Who is that?"
 pt = "Quem é aquele?"
 
-[.skill_summoning_familiar_spiritspider_15]
+[.skill_summoning_familiar_spiritspider_14]
 en = "The two-legs over there."
 pt = "O duas-pernas ali."
 
-[.skill_summoning_familiar_spiritspider_16]
+[.skill_summoning_familiar_spiritspider_15]
 en = "I can't see who you mean..."
 pt = "Não estou vendo quem você quer dizer..."
 
-[.skill_summoning_familiar_spiritspider_17]
+[.skill_summoning_familiar_spiritspider_16]
 en = "Never mind..."
 pt = "Deixa pra lá..."
 
-[.skill_summoning_familiar_spiritspider_18]
+[.skill_summoning_familiar_spiritspider_17]
 en = "Can you describe them a little better..."
 pt = "Dá pra descrever um pouco melhor..."
 
-[.skill_summoning_familiar_spiritspider_19]
+[.skill_summoning_familiar_spiritspider_18]
 en = "It doesn't matter now."
 pt = "Agora não importa mais."
 
-[.skill_summoning_familiar_spiritspider_20]
+[.skill_summoning_familiar_spiritspider_19]
 en = "What are you doing?"
 pt = "O que você está fazendo?"
 
-[.skill_summoning_familiar_spiritspider_21]
+[.skill_summoning_familiar_spiritspider_20]
 en = "Nothing that you should concern yourself with."
 pt = "Nada com que você precise se preocupar."
 
-[.skill_summoning_familiar_spiritspider_22]
+[.skill_summoning_familiar_spiritspider_21]
 en = "I see, you don't think I'm smart enough to understand..."
 pt = "Entendi, você acha que eu não sou esperto o bastante pra entender..."
 
-[.skill_summoning_familiar_spiritspider_23]
+[.skill_summoning_familiar_spiritspider_22]
 en = "That's not it at all! Look, I was..."
 pt = "Não é nada disso! Olha, eu estava..."
 
-[.skill_summoning_familiar_spiritspider_24]
+[.skill_summoning_familiar_spiritspider_23]
 en = "Don't wanna know now."
 pt = "Agora não quero saber."
 
-[.skill_summoning_familiar_spiritspider_25]
+[.skill_summoning_familiar_spiritspider_24]
 en = "What is it now?"
 pt = "O que foi agora?"
 
-[.skill_summoning_familiar_spiritspider_26]
+[.skill_summoning_familiar_spiritspider_25]
 en = "Nothing really."
 pt = "Nada, na verdade."
 
-[.skill_summoning_familiar_spiritspider_27]
+[.skill_summoning_familiar_spiritspider_26]
 en = "Oh, well that's a relief."
 pt = "Ufa, que alívio."
 
@@ -24449,102 +26773,98 @@ en = "How can I help you?"
 pt = "Como posso ajudar?"
 
 [.text_area_misthalin_lumbridge_men_5]
-en = "Do you wish to trade?"
-pt = "Quer negociar?"
-
-[.text_area_misthalin_lumbridge_men_6]
 en = "No, I have nothing I wish to get rid of. If you want to do some trading, there are plenty of shops and market stalls around though."
 pt = "Não, não tenho nada de que eu queira me livrar. Mas se quer negociar, tem muitas lojas e barracas de mercado por aí."
 
-[.text_area_misthalin_lumbridge_men_7]
+[.text_area_misthalin_lumbridge_men_6]
 en = "I'm in search of a quest."
 pt = "Estou em busca de uma missão."
 
-[.text_area_misthalin_lumbridge_men_8]
+[.text_area_misthalin_lumbridge_men_7]
 en = "I'm sorry I can't help you there."
 pt = "Sinto muito, não posso ajudar com isso."
 
-[.text_area_misthalin_lumbridge_men_9]
+[.text_area_misthalin_lumbridge_men_8]
 en = "I'm in search of enemies to kill."
 pt = "Estou em busca de inimigos para matar."
 
-[.text_area_misthalin_lumbridge_men_10]
+[.text_area_misthalin_lumbridge_men_9]
 en = "I've heard there are many fearsome creatures that dwell under the ground..."
 pt = "Ouvi dizer que há muitas criaturas temíveis vivendo debaixo da terra..."
 
-[.text_area_misthalin_lumbridge_men_11]
+[.text_area_misthalin_lumbridge_men_10]
 en = "Get out of my way, I'm in a hurry!"
 pt = "Sai da frente, estou com pressa!"
 
-[.text_area_misthalin_lumbridge_men_12]
+[.text_area_misthalin_lumbridge_men_11]
 en = "I'm fine, how are you?"
 pt = "Estou bem, e você?"
 
-[.text_area_misthalin_lumbridge_men_13]
+[.text_area_misthalin_lumbridge_men_12]
 en = "Very well thank you."
 pt = "Muito bem, obrigado."
 
-[.text_area_misthalin_lumbridge_men_14]
+[.text_area_misthalin_lumbridge_men_13]
 en = "Hello there! Nice weather we've been having."
 pt = "Olá! Que tempo bom tem feito, hein?"
 
-[.text_area_misthalin_lumbridge_men_15]
+[.text_area_misthalin_lumbridge_men_14]
 en = "I'm very well thank you."
 pt = "Estou muito bem, obrigado."
 
-[.text_area_misthalin_lumbridge_men_16]
+[.text_area_misthalin_lumbridge_men_15]
 en = "I'm a bold adventurer."
 pt = "Sou um aventureiro destemido."
 
-[.text_area_misthalin_lumbridge_men_17]
+[.text_area_misthalin_lumbridge_men_16]
 en = "Ah, a very noble profession."
 pt = "Ah, uma profissão muito nobre."
 
-[.text_area_misthalin_lumbridge_men_18]
+[.text_area_misthalin_lumbridge_men_17]
 en = "Do I know you? I'm in a hurry!"
 pt = "Eu te conheço? Estou com pressa!"
 
-[.text_area_misthalin_lumbridge_men_19]
+[.text_area_misthalin_lumbridge_men_18]
 en = "I think we need a new king. The one we've got isn't very good."
 pt = "Acho que precisamos de um rei novo. Esse que temos não é lá muito bom."
 
-[.text_area_misthalin_lumbridge_men_20]
+[.text_area_misthalin_lumbridge_men_19]
 en = "Not too bad thanks."
 pt = "Nada mal, obrigado."
 
-[.text_area_misthalin_lumbridge_men_21]
+[.text_area_misthalin_lumbridge_men_20]
 en = "Are you asking for a fight?"
 pt = "Está procurando briga?"
 
-[.text_area_misthalin_lumbridge_men_22]
+[.text_area_misthalin_lumbridge_men_21]
 en = "I'm busy right now."
 pt = "Estou ocupado agora."
 
-[.text_area_misthalin_lumbridge_men_23]
+[.text_area_misthalin_lumbridge_men_22]
 en = "None of your business."
 pt = "Não é da sua conta."
 
-[.text_area_misthalin_lumbridge_men_24]
+[.text_area_misthalin_lumbridge_men_23]
 en = "No I don't have any spare change."
 pt = "Não, não tenho nenhum trocado."
 
-[.text_area_misthalin_lumbridge_men_25]
+[.text_area_misthalin_lumbridge_men_24]
 en = "I'm a little worried - I've heard there's lots of people going about, killing citizens at random."
 pt = "Ando meio preocupado - ouvi dizer que tem muita gente por aí matando cidadãos a esmo."
 
-[.text_area_misthalin_lumbridge_men_26]
+[.text_area_misthalin_lumbridge_men_25]
 en = "No, I don't want to buy anything!"
 pt = "Não, não quero comprar nada!"
 
-[.text_area_misthalin_lumbridge_men_27]
+[.text_area_misthalin_lumbridge_men_26]
 en = "That is classified information."
 pt = "Isso é informação confidencial."
 
-[.text_area_misthalin_lumbridge_men_28]
+[.text_area_misthalin_lumbridge_men_27]
 en = "Have this flyer..."
 pt = "Pegue este panfleto..."
 
-[.text_area_misthalin_lumbridge_men_29]
+[.text_area_misthalin_lumbridge_men_28]
 en = "Yo, wassup!"
 pt = "E aí, beleza?!"
 
@@ -28821,222 +31141,226 @@ en = "Those numbers did not<br>match.<br><br>Your PIN has not been set;<br>pleas
 pt = "Os números não são<br>iguais.<br><br>O seu PIN não foi colocado;<br>tente de novo se quiser<br>colocar um PIN novo."
 
 [.runtime_24]
+en = "Oi - stop gabbing and get that chair finished!"
+pt = "Ei, chega de conversa e termine logo essa cadeira!"
+
+[.runtime_25]
 en = "Congratulations! You've just reached Combat level %1%!"
 pt = "Parabéns! Você alcançou o nível de combate %1%!"
 
-[.runtime_25]
+[.runtime_26]
 en = "<red>Well done! You've reached the Combat level %1% milestone!"
 pt = "<red>Muito bem! Você alcançou a marca do nível de combate %1%!"
 
-[.runtime_26]
+[.runtime_27]
 en = "<red>Congratulations! Your Combat level is now 126 - the highest possible Combat level on free worlds!"
 pt = "<red>Parabéns! O seu nível de combate agora é 126 - o mais alto possível nos mundos gratuitos!"
 
-[.runtime_27]
+[.runtime_28]
 en = "<red>Congratulations! Your Combat level is now 138! You've achieved the highest Combat level possible!"
 pt = "<red>Parabéns! O seu nível de combate agora é 138! Você alcançou o nível de combate mais alto possível!"
 
-[.runtime_28]
+[.runtime_29]
 en = "You start to bleed as a result of the javelin strike."
 pt = "Você começa a sangrar por causa do golpe da azagaia (javelin)."
 
-[.runtime_29]
+[.runtime_30]
 en = "This entrance does not lead anywhere."
 pt = "Esta entrada não leva a lugar nenhum."
 
-[.runtime_30]
+[.runtime_31]
 en = "These stairs do no lead anywhere."
 pt = "Esta escada não leva a lugar nenhum."
 
-[.runtime_31]
+[.runtime_32]
 en = "This entrance does not lead anywhere.<br>Enter building mode to build a room below."
 pt = "Esta entrada não leva a lugar nenhum.<br>Ative o modo de construção para construir um cômodo embaixo."
 
-[.runtime_32]
+[.runtime_33]
 en = "This entrance does not lead anywhere.<br>Do you want to build a room below?"
 pt = "Esta entrada não leva a lugar nenhum.<br>Quer construir um cômodo embaixo?"
 
-[.runtime_33]
+[.runtime_34]
 en = "These stairs do no lead anywhere.<br>Enter building mode to build a room at the top."
 pt = "Esta escada não leva a lugar nenhum.<br>Ative o modo de construção para construir um cômodo em cima."
 
-[.runtime_34]
+[.runtime_35]
 en = "These stairs do no lead anywhere.<br>Enter building mode to build a room at the bottom."
 pt = "Esta escada não leva a lugar nenhum.<br>Ative o modo de construção para construir um cômodo embaixo."
 
-[.runtime_35]
+[.runtime_36]
 en = "These stairs do no lead anywhere.<br>Do you want to build a room at the top?"
 pt = "Esta escada não leva a lugar nenhum.<br>Quer construir um cômodo em cima?"
 
-[.runtime_36]
+[.runtime_37]
 en = "These stairs do no lead anywhere.<br>Do you want to build a room at the bottom?"
 pt = "Esta escada não leva a lugar nenhum.<br>Quer construir um cômodo embaixo?"
 
-[.runtime_37]
+[.runtime_38]
 en = "There are %1% in the hopper. The grinder is set to automatic."
 pt = "Há no funil (hopper): %1%. O moedor está no modo automático."
 
-[.runtime_38]
+[.runtime_39]
 en = "There are %1% in the hopper. The grinder is set to manual."
 pt = "Há no funil (hopper): %1%. O moedor está no modo manual."
 
-[.runtime_39]
+[.runtime_40]
 en = "There is bonemeal waiting in the bin. The grinder is set to automatic."
 pt = "Há farinha de ossos (bonemeal) esperando na caixa. O moedor está no modo automático."
 
-[.runtime_40]
+[.runtime_41]
 en = "There is bonemeal waiting in the bin. The grinder is set to manual."
 pt = "Há farinha de ossos (bonemeal) esperando na caixa. O moedor está no modo manual."
 
-[.runtime_41]
+[.runtime_42]
 en = "The grinder is empty. The grinder is set to automatic."
 pt = "O moedor está vazio. Ele está no modo automático."
 
-[.runtime_42]
+[.runtime_43]
 en = "The grinder is empty. The grinder is set to manual."
 pt = "O moedor está vazio. Ele está no modo manual."
 
-[.runtime_43]
+[.runtime_44]
 en = "Beware of players trying to lure you into the wilderness. Your items cannot be returned if you lose them!"
 pt = "Cuidado com jogadores que tentam atrair você para a Wilderness. Os seus itens não podem ser devolvidos se você os perder!"
 
-[.runtime_44]
+[.runtime_45]
 en = "Did you know having a bank pin can help you secure your valuable items?"
 pt = "Sabia que ter um PIN no banco ajuda a proteger os seus itens valiosos?"
 
-[.runtime_45]
+[.runtime_46]
 en = "Did you know most skills have right click 'Make-X' options to help you train faster?"
 pt = "Sabia que a maioria das habilidades tem a opção 'Make-X' no botão direito para treinar mais rápido?"
 
-[.runtime_46]
+[.runtime_47]
 en = "Did you know that mithril equipment is very light?"
 pt = "Sabia que o equipamento de mithril é muito leve?"
 
-[.runtime_47]
+[.runtime_48]
 en = "Did you know that you can wear a shield with a crossbow?"
 pt = "Sabia que dá para usar um escudo junto com uma besta (crossbow)?"
 
-[.runtime_48]
+[.runtime_49]
 en = "Did you know you burn food less often on the range in Lumbridge castle than other ranges?"
 pt = "Sabia que você queima menos comida no fogão do Lumbridge Castle do que nos outros fogões?"
 
-[.runtime_49]
+[.runtime_50]
 en = "Did you know? Superheat Item means you never fail to smelt ore!"
 pt = "Sabia? Com Superheat Item você nunca falha ao fundir minério!"
 
-[.runtime_50]
+[.runtime_51]
 en = "Did you know? You burn food less often on a range than on a fire!"
 pt = "Sabia? Você queima menos comida num fogão do que numa fogueira!"
 
-[.runtime_51]
+[.runtime_52]
 en = "Don't use your %server% password on other sites. Keep your account safe!"
 pt = "Não use a sua senha do %server% em outros sites. Mantenha a sua conta segura!"
 
-[.runtime_52]
+[.runtime_53]
 en = "Feeling harassed? Don't forget your ignore list can be especially useful if a player seems to be picking on you!"
 pt = "Sentindo-se importunado? Lembre-se de que a sua lista de ignorados é muito útil se um jogador estiver implicando com você!"
 
-[.runtime_53]
+[.runtime_54]
 en = "If a player isn't sure of the rules, send them to me! I'll be happy to remind them!"
 pt = "Se um jogador não conhece as regras, mande-o até mim! Terei prazer em lembrá-lo!"
 
-[.runtime_54]
+[.runtime_55]
 en = "If the chat window is moving too quickly to report a player accurately, run to a quiet spot and review the chat at your leisure!"
 pt = "Se o chat estiver rápido demais para denunciar um jogador com precisão, vá para um lugar tranquilo e revise o chat com calma!"
 
-[.runtime_55]
+[.runtime_56]
 en = "If you see someone breaking the rules, report them!"
 pt = "Se vir alguém quebrando as regras, denuncie!"
 
-[.runtime_56]
+[.runtime_57]
 en = "If you think someone knows your password - change it!"
 pt = "Se acha que alguém sabe a sua senha, troque-a!"
 
-[.runtime_57]
+[.runtime_58]
 en = "If you're lost and have no idea where to go, use the Home Teleport spell for free!"
 pt = "Se estiver perdido sem saber para onde ir, use o feitiço Home Teleport de graça!"
 
-[.runtime_58]
+[.runtime_59]
 en = "%1% will never email you asking for your log-in details."
 pt = "%1% nunca vai mandar e-mail pedindo os seus dados de login."
 
-[.runtime_59]
+[.runtime_60]
 en = "Make your recovery questions and answers hard to guess but easy to remember."
 pt = "Faça perguntas e respostas de recuperação difíceis de adivinhar, mas fáceis de lembrar."
 
-[.runtime_60]
+[.runtime_61]
 en = "Melee armour actually gives you disadvantages when using magic attacks. It may be better to take off your armour entirely!"
 pt = "Armadura de combate corpo a corpo atrapalha os ataques mágicos. Pode ser melhor tirar a armadura de vez!"
 
-[.runtime_61]
+[.runtime_62]
 en = "Never let anyone else use your account."
 pt = "Nunca deixe outra pessoa usar a sua conta."
 
-[.runtime_62]
+[.runtime_63]
 en = "Never question a penguin."
 pt = "Nunca questione um pinguim."
 
-[.runtime_63]
+[.runtime_64]
 en = "Never tell your password to anyone, not even your best friend!"
 pt = "Nunca conte a sua senha a ninguém, nem ao seu melhor amigo!"
 
-[.runtime_64]
+[.runtime_65]
 en = "Players cannot trim armour. Don't fall for this popular scam!"
 pt = "Jogadores não podem enfeitar (trim) armaduras. Não caia nesse golpe famoso!"
 
-[.runtime_65]
+[.runtime_66]
 en = "The squirrels! The squirrels are coming! Noooo, get them out of my head!"
 pt = "Os esquilos! Os esquilos estão vindo! Nãããão, tirem eles da minha cabeça!"
 
-[.runtime_66]
+[.runtime_67]
 en = "Take time to check the second trade window carefully. Don't be scammed!"
 pt = "Confira com calma a segunda janela da troca. Não caia em golpe!"
 
-[.runtime_67]
+[.runtime_68]
 en = "There are no cheats in RuneScape! Never visit websites promising otherwise!"
 pt = "Não existem trapaças no RuneScape! Nunca visite sites que prometam o contrário!"
 
-[.runtime_68]
+[.runtime_69]
 en = "Summoning familiars can help you in combat and skilling!"
 pt = "Os familiares de Summoning ajudam no combate e no treino das habilidades!"
 
-[.runtime_69]
+[.runtime_70]
 en = "Have you tried Dungeoneering? It's a great way to train all your skills!"
 pt = "Já experimentou Dungeoneering? É um ótimo jeito de treinar todas as suas habilidades!"
 
-[.runtime_70]
+[.runtime_71]
 en = "Oh, it's a rune shop. No thank you, then."
 pt = "Ah, é uma loja de runas. Então não, obrigado."
 
-[.runtime_71]
+[.runtime_72]
 en = "Oh dear. I don't seem to have enough money."
 pt = "Ah, puxa. Parece que não tenho dinheiro suficiente."
 
-[.runtime_72]
+[.runtime_73]
 en = "Oh, it's you again. Please don't distract me now, I'm contemplating the sublime."
 pt = "Ah, você de novo. Por favor, não me distraia agora, estou contemplando o sublime."
 
-[.runtime_73]
+[.runtime_74]
 en = "Da Vinci does not feel sufficiently moved to talk."
 pt = "Da Vinci não se sente inspirado o bastante para conversar."
 
-[.runtime_74]
+[.runtime_75]
 en = "Look, I've got your vial but I'm not taking two. I always like to play the percentages."
 pt = "Olha, estou com o seu frasco, mas não vou levar dois. Sempre gosto de jogar com as probabilidades."
 
-[.runtime_75]
+[.runtime_76]
 en = "Chancy doesn't feel like talking."
 pt = "Chancy não está com vontade de conversar."
 
-[.runtime_76]
+[.runtime_77]
 en = "I suppose I'd better get going. I'll meet you at the Dancing Donkey Inn."
 pt = "Acho melhor eu ir andando. Encontro você na Dancing Donkey Inn."
 
-[.runtime_77]
+[.runtime_78]
 en = "He isn't in a fit state to talk."
 pt = "Ele não está em condições de conversar."
 
-[.runtime_78]
+[.runtime_79]
 en = "Jonny the beard is not interested in talking."
 pt = "Jonny the Beard não está interessado em conversar."
 

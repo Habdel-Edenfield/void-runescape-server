@@ -457,6 +457,8 @@ GENERAL = [
         ("task_walk_spawn", "This is where you'd usually find %1%.", "É aqui que %1% costuma ficar."),
     ]),
     ("Glossary - short words skills insert into lines (rune types, metals, farming patches, directions); used where a pt line writes %1g% instead of %1%, see Translation.kt", [
+        # The Falador hairdresser offers men "a haircut or shave"
+        ("word_or_shave", " or shave", " ou fazer a barba"),
         # Iffie calls the player "young lad/lass"
         ("word_lad", "lad", "rapaz"),
         ("word_lass", "lass", "moça"),
