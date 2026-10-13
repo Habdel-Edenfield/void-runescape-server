@@ -46,7 +46,8 @@ class Translation : Script {
  * ("air" -> "ar (air)", "iron" -> "ferro (iron)"), so only lines written for those words translate them.
  */
 fun Player.translate(text: String): String {
-    if (!get("portuguese_dialogue", false)) {
+    // Nothing to translate in "?", "....." or a number
+    if (!get("portuguese_dialogue", false) || text.none(Char::isLetter)) {
         return text
     }
     val index = index()

@@ -17,6 +17,7 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import skillCreation
 import world.gregs.voidps.engine.client.ui.dialogue
+import world.gregs.voidps.engine.data.definition.NPCDefinitions
 import world.gregs.voidps.engine.entity.character.player.Player
 import world.gregs.voidps.engine.entity.character.player.combatLevel
 import world.gregs.voidps.engine.entity.character.player.skill.Skill
@@ -389,11 +390,36 @@ class SkillActionTranslationTest : WorldTest() {
         player.levels.set(Skill.Summoning, 99)
         player.inventory.add("spirit_wolf_pouch")
 
-        // Talking to familiars is a later stage of the translation, so this only summons one
         player.itemOption("Summon", "spirit_wolf_pouch")
         tick(3)
 
         assertNotNull(player.follower)
+        assertTranslated()
+    }
+
+    @Test
+    fun `Every familiar talks in Portuguese`() {
+        setRandom(Random(0))
+        val familiars = NPCDefinitions.ids.keys.filter { it.endsWith("_familiar") && NPCDefinitions.get(it).options.contains("Interact") }.sorted()
+        assertTrue(familiars.size > 50, "Expected familiars, found ${familiars.size}")
+        val failures = mutableListOf<String>()
+        for (id in familiars) {
+            val player = portuguese()
+            val familiar = createNPC(id, player.tile.addY(1))
+            player.follower = familiar
+            // Each conversation is picked at random, so talk a few times to see more of them
+            repeat(6) {
+                try {
+                    player.npcOption(familiar, "Interact")
+                    tick(2)
+                    player.talkThrough()
+                } catch (e: Exception) {
+                    failures.add("$id: ${e.message}")
+                }
+            }
+        }
+
+        assertTrue(failures.isEmpty(), "Conversations that failed:\n${failures.joinToString("\n")}")
         assertTranslated()
     }
 

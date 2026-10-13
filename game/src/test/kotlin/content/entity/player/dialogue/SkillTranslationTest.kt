@@ -80,11 +80,7 @@ class SkillTranslationTest : WorldTest() {
                 // Admin console commands, and the console is never translated
                 continue
             }
-            val later = file.relativeTo(skills).invariantSeparatorsPath.startsWith(LATER)
             for (template in templates(file.readText())) {
-                if (later && template.dialogue) {
-                    continue
-                }
                 if (template.parts.none { it is Literal && it.text.any(Char::isLetter) } || template.parts.any { it is Literal && '\n' in it.text }) {
                     continue
                 }
@@ -106,7 +102,7 @@ class SkillTranslationTest : WorldTest() {
     private data class Literal(val text: String) : Part
     private data class Expression(val source: String) : Part
 
-    private class Template(val parts: List<Part>, val dialogue: Boolean) {
+    private class Template(val parts: List<Part>) {
         /** As written in the translation table, with each variable as `%1%`, `%2%`... */
         val pattern: String
             get() {
@@ -141,9 +137,6 @@ class SkillTranslationTest : WorldTest() {
 
         private val TOML_TEXT = Regex("""^([a-z_]+) = "((?:[^"\\]|\\.)*)"\s*(?:#.*)?$""")
 
-        /** Familiar conversations are translated in a later stage; their chat messages are checked with the rest of Summoning */
-        private const val LATER = "summoning/familiar/"
-
         /** Calls whose string argument is shown to the player: chat messages, then dialogue boxes, as read by tools/translation/skill_text.py */
         private val CHAT = Regex("""\bmessage\(\s*(?:text\s*=\s*)?(?=")""")
         private val DIALOGUE = listOf(
@@ -163,22 +156,22 @@ class SkillTranslationTest : WorldTest() {
 
         private fun templates(source: String): List<Template> {
             val code = withoutComments(source)
-            val starts = sortedMapOf<Int, Boolean>()
+            val starts = sortedSetOf<Int>()
             for (match in CHAT.findAll(code)) {
-                starts[match.range.last + 1] = false
+                starts.add(match.range.last + 1)
             }
             for (match in MESSAGE_WHEN.findAll(code)) {
                 val block = code.substring(0, blockEnd(code, match.range.last + 1))
                 for (branch in BRANCH.findAll(block, match.range.last + 1)) {
-                    starts[branch.range.last + 1] = false
+                    starts.add(branch.range.last + 1)
                 }
             }
             for (regex in DIALOGUE) {
                 for (match in regex.findAll(code)) {
-                    starts.putIfAbsent(match.range.last + 1, true)
+                    starts.add(match.range.last + 1)
                 }
             }
-            return starts.mapNotNull { (start, dialogue) -> if (code.startsWith("\"\"\"", start)) null else Template(read(code, start).first, dialogue) }.distinctBy { it.pattern }
+            return starts.mapNotNull { start -> if (code.startsWith("\"\"\"", start)) null else Template(read(code, start).first) }.distinctBy { it.pattern }
         }
 
         /** Blanks out comments, keeping string literals (which may contain "//") intact */

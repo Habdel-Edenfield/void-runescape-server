@@ -29,8 +29,6 @@ BRANCH = re.compile(r'->\s*(?=")')
 # Ids passed to calls with the same names: Tables.npc("traps.$trap.npc"), row.npc("caught")
 ID = re.compile(r"^[a-z0-9_.%]*[._][a-z0-9_.%]*$|^[a-z]+$")
 NOT_TEXT = {"  Room at (%1%, %2%) [%3%] contains key(s): [ %4% ]"}
-# Familiar conversations are a later stage; their chat messages are translated with the rest of Summoning
-LATER = ("summoning/familiar/",)
 
 TABLE_COLUMNS = {"message", "cooked_message", "burnt_message", "tip", "question", "failure", "requires_message"}
 ITEM_COLUMNS = {"eat_message", "cast"}
@@ -240,8 +238,6 @@ def code_texts(root):
                 continue
             text = pattern(parts)
             if text in seen or text in NOT_TEXT or ID.match(text):
-                continue
-            if kind == "dialogue" and rel.startswith(LATER):
                 continue
             seen.add(text)
             found.append((rel, kind, text, keys(parts)))
