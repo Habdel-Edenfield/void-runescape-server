@@ -1,6 +1,6 @@
 # Tradução pt-BR (só neste fork)
 
-Tradução do texto que o servidor envia ao jogador e, para a janela de tarefas, do texto que o cliente desenha a partir do cache. Branch `feat/pt-br-dialogue-prototype` (sobre `fix/network-text-latin1`). Feitos: Ilha Tutorial, Lumbridge, mensagens das habilidades (com as conversas dos familiares de Summoning), a janela de tarefas (todos os conjuntos: as 509 tarefas), a janela de "subiu de nível", o guia de habilidades (com a lista de desbloqueios), o diário das missões (Quest Journal), os rótulos fixos do item 1 do mapa e as janelas do item 2 (abas Logout, Opções, Habilidades, Quest Journal, Estilos de combate e Orações; amigos, ignorados, clã e chat; banco e loja). Mapa do que falta: `tools/translation/map_text.py` + `build_report.py`.
+Tradução do texto que o servidor envia ao jogador e, para a janela de tarefas, do texto que o cliente desenha a partir do cache. Branch `feat/pt-br-dialogue-prototype` (sobre `fix/network-text-latin1`). Feitos: Ilha Tutorial, Lumbridge, Varrock (com Grand Exchange, museu, palácio e os NPCs do Gunnar's Ground que nascem nos arquivos de Varrock), mensagens das habilidades (com as conversas dos familiares de Summoning), a janela de tarefas (todos os conjuntos: as 509 tarefas), a janela de "subiu de nível", o guia de habilidades (com a lista de desbloqueios), o diário das missões (Quest Journal), os rótulos fixos do item 1 do mapa e as janelas do item 2 (abas Logout, Opções, Habilidades, Quest Journal, Estilos de combate e Orações; amigos, ignorados, clã e chat; banco e loja). Mapa do que falta: `tools/translation/map_text.py` + `build_report.py`.
 
 ## Como funciona
 
@@ -45,11 +45,13 @@ O texto do pergaminho (`quest_scroll`, 275) é montado pelo servidor em `questJo
 
 ## Método por região
 
+Cada região tem `sources/<regiao>_scripts.json` (scripts que atendem os NPCs dela) e fontes `sources/pt_<regiao>_N.json`; `gen_dialogue.py` lê todos os `*_scripts.json` (Lumbridge primeiro, para os ids das linhas não mudarem). Frases que o extrator não vê (dicas sorteadas do Town Crier, mensagens passadas a funções auxiliares) ficam em `pt_<regiao>_runtime.json`. Varrock = os scripts que o mapa (`map_text.py`, região `misthalin/varrock`) liga aos NPCs dos arquivos de spawn de `data/area/misthalin/varrock/**`, mais todo `content/area/misthalin/varrock/**` e `Skillcape.kt`; o teste `VarrockTranslationTest` conversa com todo NPC desses arquivos de spawn.
+
 1. Mapear NPCs da região **e todos os handlers que os atendem, inclusive curingas** (`banker*`) e scripts fora da pasta da região. O que o jogador vê, não a pasta.
 2. `gen_dialogue.py --dump` → `split_groups.py` → um assistente por grupo, em paralelo. Prompt: ler os scripts para saber quem fala, seguir `GUIA_DE_ESTILO.md`, escrever `en → pt` com `json.dump(ensure_ascii=False)`, rodar `validate.py` até OK, e **responder com as 5 traduções de que menos tem certeza** + escolhas feitas.
 3. Revisar as dúvidas e uma amostra aleatória; validar todos os grupos; gerar a tabela.
 4. **Teste de passeio** da região (`LumbridgeTranslationTest`: conversa com cada NPC da área com `Talk-to`, uma vez por posição de opção 1..5) e, para atividades, um teste como `TutorialIslandTranslationTest`. **Prova obrigatória**: apagar uma tradução de propósito e ver o teste falhar apontando a frase.
-5. Suíte completa sem fail-fast: `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 ./gradlew --no-daemon --no-configuration-cache --continue -I <init sem failFast> test --rerun`. O init script: `gradle.projectsEvaluated { rootProject.allprojects { tasks.withType(Test).configureEach { failFast = false } } }`.
+5. Suíte completa sem fail-fast (com outra sessão rodando testes na mesma pasta, os resultados em `game/build/test-results` se misturam: mande os seus para outra pasta no init script com `reports.junitXml.outputLocation`, e use `--rerun`, porque o Gradle não vê mudança só na tabela): `LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 ./gradlew --no-daemon --no-configuration-cache --continue -I <init sem failFast> test --rerun`. O init script: `gradle.projectsEvaluated { rootProject.allprojects { tasks.withType(Test).configureEach { failFast = false } } }`.
 6. `spotlessApply`, depois **commit só quando o Habdel aprovar no jogo**, adicionando os arquivos um por um.
 
 ## Armadilhas

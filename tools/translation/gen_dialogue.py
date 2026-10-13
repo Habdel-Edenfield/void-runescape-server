@@ -51,8 +51,10 @@ NPCS = [
     # Shared scripts used by NPCs on the island, found by matching island spawns against every handler
     ("../../../entity/npc/Banker", "banker", "Banker - every banker, including on Tutorial Island"),
 ] + ([
-    (path, path.split("/")[-1].lower(), f"{path.split('/')[-1]} - Lumbridge")
-    for path in json.load(open(sys.argv[2] + "/lumbridge_scripts.json"))
+    # sources/<region>_scripts.json: the scripts answering a region's npcs, Lumbridge first so its row ids stay put
+    (path, path.split("/")[-1].lower(), f"{path.split('/')[-1]} - {region.title()}")
+    for region in ["lumbridge"] + sorted(f.split("/")[-1].removesuffix("_scripts.json") for f in glob.glob(sys.argv[2] + "/*_scripts.json") if not f.endswith("/lumbridge_scripts.json"))
+    for path in json.load(open(f"{sys.argv[2]}/{region}_scripts.json"))
 ] if len(sys.argv) > 2 else [])
 
 # Lines built from variables at runtime, written with the same %server% placeholder the table uses
@@ -455,6 +457,9 @@ GENERAL = [
         ("task_walk_spawn", "This is where you'd usually find %1%.", "É aqui que %1% costuma ficar."),
     ]),
     ("Glossary - short words skills insert into lines (rune types, metals, farming patches, directions); used where a pt line writes %1g% instead of %1%, see Translation.kt", [
+        # Iffie calls the player "young lad/lass"
+        ("word_lad", "lad", "rapaz"),
+        ("word_lass", "lass", "moça"),
         ("word_air", "air", "ar (air)"),
         ("word_mind", "mind", "mente (mind)"),
         ("word_water", "water", "água (water)"),
