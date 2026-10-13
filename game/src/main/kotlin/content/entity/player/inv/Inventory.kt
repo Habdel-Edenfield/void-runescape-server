@@ -2,6 +2,7 @@ package content.entity.player.inv
 
 import com.github.michaelbull.logging.InlineLogger
 import content.entity.combat.attacking
+import content.entity.player.bank.BankAnywhere.Companion.unlockInventoryOptions
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.ui.InterfaceApi
 import world.gregs.voidps.engine.client.ui.ItemOption
@@ -17,7 +18,7 @@ class Inventory : Script {
 
     init {
         interfaceRefresh("inventory") { id ->
-            interfaceOptions.unlockAll(id, "inventory", 0 until 28)
+            unlockInventoryOptions()
             interfaceOptions.unlock(id, "inventory", 28 until 56, "Drag")
             sendInventory(id)
         }

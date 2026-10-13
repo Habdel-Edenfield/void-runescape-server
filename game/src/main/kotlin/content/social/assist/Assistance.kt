@@ -1,5 +1,6 @@
 package content.social.assist
 
+import content.entity.player.bank.BankAnywhere.Companion.unlockInventoryOptions
 import world.gregs.voidps.engine.client.variable.hasClock
 import world.gregs.voidps.engine.client.variable.remaining
 import world.gregs.voidps.engine.entity.character.player.Player
@@ -18,7 +19,7 @@ object Assistance {
 
     fun toggleInventory(player: Player, enabled: Boolean) {
         if (enabled) {
-            player.interfaceOptions.unlockAll("inventory", "inventory", 0 until 28)
+            player.unlockInventoryOptions()
             player.interfaceOptions.unlock("inventory", "inventory", 28 until 56, "Drag")
         } else {
             player.interfaceOptions.lockAll("inventory", "inventory", 0 until 56)
