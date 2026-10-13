@@ -5184,6 +5184,18 @@ pt = "O seu inventário está cheio demais para guardar mais minério."
 en = "There is currently no ore available in this rock."
 pt = "No momento não há minério nesta rocha."
 
+[.mining_auto_on]
+en = "<green>Auto-mining on."
+pt = "<green>Mineração automática ligada."
+
+[.mining_auto_off]
+en = "<orange>Auto-mining off."
+pt = "<orange>Mineração automática desligada."
+
+[.mining_auto_not_here]
+en = "You can't auto-mine here."
+pt = "A mineração automática não funciona aqui."
+
 [.smelting_bronze]
 en = "You smelt the copper and tin together in the furnace."
 pt = "Você funde o cobre e o estanho juntos na fornalha."

@@ -65,3 +65,9 @@ tasks.register<JavaExec>("translateInterfaces") {
     mainClass.set("world.gregs.voidps.tools.cache.InterfaceTranslation")
     workingDir = rootDir
 }
+
+tasks.register<JavaExec>("autoMiningObjects") {
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass.set("world.gregs.voidps.tools.cache.AutoMiningObjects")
+    workingDir = rootDir
+}

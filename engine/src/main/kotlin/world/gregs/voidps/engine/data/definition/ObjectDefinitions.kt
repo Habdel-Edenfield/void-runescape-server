@@ -86,9 +86,30 @@ object ObjectDefinitions : DefinitionsDecoder<ObjectDefinition> {
                     }
                 }
             }
+            shareWithCopies()
             this.ids = ids
             ids.size
         }
         return this
+    }
+
+    /**
+     * An object which turns into itself or an unnamed copy of itself (e.g. one with an extra option for some players)
+     * gives the copy its string id and params, so content treats both the same.
+     */
+    private fun shareWithCopies() {
+        for (definition in definitions) {
+            val transforms = definition.transforms ?: continue
+            if (transforms[0] != definition.id || definition.stringId.isEmpty()) {
+                continue
+            }
+            for (id in transforms) {
+                val copy = definitions.getOrNull(id) ?: continue
+                if (copy.stringId.isEmpty() && copy.name == definition.name) {
+                    copy.stringId = definition.stringId
+                    copy.params = definition.params
+                }
+            }
+        }
     }
 }

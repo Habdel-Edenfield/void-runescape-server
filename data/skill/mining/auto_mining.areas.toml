@@ -1,0 +1,869 @@
+# Areas where rocks show the "Auto-mine" option (content.skill.mining.AutoMining).
+# Made for every mine on the map by `./gradlew :tools:autoMiningObjects --args=areas`, which rewrites this file.
+#
+# To turn a mine off: delete its block. To add an area: copy a block, give it a new name and change the corners,
+# x = [west, east] and y = [south, north] (the coordinates the game shows for the corner tiles), and level for
+# the floor (0 ground, 1 first floor...). Keep the tag line as it is, then restart the server.
+# Cover the whole mine: while a player is inside, every rock they can see shows the option, and rocks outside the
+# area only answer "You can't auto-mine here.".
+
+# coal 13, mithril 6, silver 3
+[auto_mining_coal_1057_4574]
+x = [1041, 1073]
+y = [4564, 4584]
+level = 0
+tags = ["auto_mining"]
+
+# mithril 8, adamantite 4, runite 3
+[auto_mining_mithril_1055_4515]
+x = [1045, 1065]
+y = [4506, 4524]
+level = 0
+tags = ["auto_mining"]
+
+# gold 11, silver 9, gem 7
+[auto_mining_near_chaos_tunnels_resource_dungeon_gold]
+x = [1168, 1201]
+y = [4501, 4522]
+level = 0
+tags = ["auto_mining"]
+
+# gold 4, coal 4, iron 4, silver 3, mithril 2
+[auto_mining_gold_1588_4372]
+x = [1580, 1597]
+y = [4361, 4383]
+level = 0
+tags = ["auto_mining"]
+
+# runite 1
+[auto_mining_runite_1993_4664]
+x = [1989, 1997]
+y = [4660, 4668]
+level = 0
+tags = ["auto_mining"]
+
+# adamantite 7
+[auto_mining_tirannwn_adamantite]
+x = [2274, 2285]
+y = [3152, 3168]
+level = 0
+tags = ["auto_mining"]
+
+# gold 4
+[auto_mining_gold_2309_4953]
+x = [2304, 2315]
+y = [4945, 4961]
+level = 0
+tags = ["auto_mining"]
+
+# copper 3
+[auto_mining_norther_fremennik_isles_copper]
+x = [2307, 2317]
+y = [3854, 3863]
+level = 0
+tags = ["auto_mining"]
+
+# gold 4
+[auto_mining_near_fremennik_isles_dungeon_gold]
+x = [2312, 2323]
+y = [10321, 10335]
+level = 2
+tags = ["auto_mining"]
+
+# gold 2
+[auto_mining_near_fremennik_isles_dungeon_gold_2]
+x = [2313, 2322]
+y = [10337, 10347]
+level = 2
+tags = ["auto_mining"]
+
+# gold 15
+[auto_mining_gold_2337_4946]
+x = [2319, 2355]
+y = [4928, 4964]
+level = 0
+tags = ["auto_mining"]
+
+# gold 5
+[auto_mining_gold_2331_4973]
+x = [2320, 2342]
+y = [4966, 4981]
+level = 0
+tags = ["auto_mining"]
+
+# silver 3
+[auto_mining_near_fremennik_isles_dungeon_silver]
+x = [2327, 2339]
+y = [10313, 10323]
+level = 2
+tags = ["auto_mining"]
+
+# iron 3, tin 2, copper 2, clay 2
+[auto_mining_piscatoris_iron]
+x = [2330, 2343]
+y = [3635, 3650]
+level = 0
+tags = ["auto_mining"]
+
+# gold 5
+[auto_mining_gold_2348_4978]
+x = [2338, 2359]
+y = [4972, 4985]
+level = 0
+tags = ["auto_mining"]
+
+# silver 2, gem 1, gold 1
+[auto_mining_near_fremennik_isles_dungeon_silver_2]
+x = [2351, 2362]
+y = [10342, 10353]
+level = 2
+tags = ["auto_mining"]
+
+# gem 3
+[auto_mining_near_fremennik_isles_dungeon_gem]
+x = [2353, 2363]
+y = [10320, 10330]
+level = 2
+tags = ["auto_mining"]
+
+# gold 4
+[auto_mining_gold_2369_4933]
+x = [2358, 2380]
+y = [4927, 4939]
+level = 0
+tags = ["auto_mining"]
+
+# coal 7, runite 1
+[auto_mining_norther_fremennik_isles_coal]
+x = [2368, 2380]
+y = [3844, 3857]
+level = 0
+tags = ["auto_mining"]
+
+# iron 3, tin 3, coal 3
+[auto_mining_near_fremennik_isles_dungeon_iron]
+x = [2371, 2391]
+y = [10187, 10206]
+level = 0
+tags = ["auto_mining"]
+
+# adamantite 6, iron 3
+[auto_mining_near_fremennik_isles_dungeon_adamantite]
+x = [2376, 2398]
+y = [10209, 10232]
+level = 0
+tags = ["auto_mining"]
+
+# gold 12
+[auto_mining_gold_2395_4976]
+x = [2381, 2410]
+y = [4962, 4991]
+level = 0
+tags = ["auto_mining"]
+
+# gold 21
+[auto_mining_gold_2403_4943]
+x = [2382, 2424]
+y = [4928, 4958]
+level = 0
+tags = ["auto_mining"]
+
+# tin 3
+[auto_mining_norther_fremennik_isles_tin]
+x = [2388, 2400]
+y = [3844, 3852]
+level = 0
+tags = ["auto_mining"]
+
+# adamantite 4, tin 3
+[auto_mining_near_waterbirth_island_dungeon_adamantite]
+x = [2388, 2414]
+y = [10178, 10195]
+level = 0
+tags = ["auto_mining"]
+
+# copper 3, coal 2
+[auto_mining_norther_fremennik_isles_copper_2]
+x = [2392, 2411]
+y = [3864, 3877]
+level = 0
+tags = ["auto_mining"]
+
+# iron 4
+[auto_mining_near_fremennik_isles_dungeon_iron_2]
+x = [2399, 2411]
+y = [10219, 10234]
+level = 0
+tags = ["auto_mining"]
+
+# tin 3, coal 3
+[auto_mining_near_fremennik_isles_dungeon_tin]
+x = [2400, 2419]
+y = [10204, 10214]
+level = 0
+tags = ["auto_mining"]
+
+# adamantite 1
+[auto_mining_near_fremennik_isles_dungeon_adamantite_2]
+x = [2414, 2422]
+y = [10221, 10229]
+level = 0
+tags = ["auto_mining"]
+
+# coal 2
+[auto_mining_norther_fremennik_isles_coal_2]
+x = [2415, 2424]
+y = [3864, 3873]
+level = 0
+tags = ["auto_mining"]
+
+# gold 3
+[auto_mining_gold_2423_4965]
+x = [2418, 2429]
+y = [4959, 4972]
+level = 0
+tags = ["auto_mining"]
+
+# tin 2
+[auto_mining_near_waterbirth_island_dungeon_tin]
+x = [2418, 2427]
+y = [10193, 10202]
+level = 0
+tags = ["auto_mining"]
+
+# adamantite 3
+[auto_mining_near_waterbirth_island_dungeon_adamantite_2]
+x = [2419, 2428]
+y = [10175, 10189]
+level = 0
+tags = ["auto_mining"]
+
+# iron 7, clay 5, silver 4, mithril 2
+[auto_mining_iron_2444_9906]
+x = [2431, 2457]
+y = [9894, 9919]
+level = 0
+tags = ["auto_mining"]
+
+# gold 3, silver 3
+[auto_mining_tzhaar_fight_cave_gold]
+x = [2451, 2466]
+y = [5163, 5177]
+level = 0
+tags = ["auto_mining"]
+
+# copper 2
+[auto_mining_south_ardougne_copper]
+x = [2466, 2479]
+y = [3251, 3260]
+level = 0
+tags = ["auto_mining"]
+
+# coal 1
+[auto_mining_coal_2472_9905]
+x = [2468, 2476]
+y = [9901, 9909]
+level = 0
+tags = ["auto_mining"]
+
+# tin 1
+[auto_mining_south_ardougne_tin]
+x = [2475, 2483]
+y = [3229, 3237]
+level = 0
+tags = ["auto_mining"]
+
+# coal 10, gold 4, clay 4, adamantite 3, mithril 2, iron 1
+[auto_mining_coal_2488_9912]
+x = [2478, 2498]
+y = [9903, 9921]
+level = 0
+tags = ["auto_mining"]
+
+# gold 4
+[auto_mining_gold_2501_4953]
+x = [2496, 2507]
+y = [4945, 4961]
+level = 0
+tags = ["auto_mining"]
+
+# coal 8, mithril 3, adamantite 2
+[auto_mining_near_tzhaar_fight_cave_coal]
+x = [2500, 2521]
+y = [5191, 5216]
+level = 0
+tags = ["auto_mining"]
+
+# coal 4
+[auto_mining_coal_2505_10286]
+x = [2500, 2511]
+y = [10280, 10293]
+level = 0
+tags = ["auto_mining"]
+
+# gold 15
+[auto_mining_gold_2529_4946]
+x = [2511, 2547]
+y = [4928, 4964]
+level = 0
+tags = ["auto_mining"]
+
+# gold 11
+[auto_mining_gold_2531_4975]
+x = [2512, 2551]
+y = [4966, 4985]
+level = 0
+tags = ["auto_mining"]
+
+# coal 8
+[auto_mining_miscellania_coal]
+x = [2522, 2533]
+y = [3886, 3899]
+level = 0
+tags = ["auto_mining"]
+
+# gold 4
+[auto_mining_gold_2561_4933]
+x = [2550, 2572]
+y = [4927, 4939]
+level = 0
+tags = ["auto_mining"]
+
+# coal 18
+[auto_mining_west_kandarin_coal]
+x = [2570, 2594]
+y = [3470, 3489]
+level = 0
+tags = ["auto_mining"]
+
+# gold 12
+[auto_mining_gold_2587_4976]
+x = [2573, 2602]
+y = [4962, 4991]
+level = 0
+tags = ["auto_mining"]
+
+# gold 21
+[auto_mining_gold_2595_4943]
+x = [2574, 2616]
+y = [4928, 4958]
+level = 0
+tags = ["auto_mining"]
+
+# iron 7
+[auto_mining_south_ardougne_iron]
+x = [2577, 2596]
+y = [3225, 3242]
+level = 0
+tags = ["auto_mining"]
+
+# iron 6, coal 4
+[auto_mining_south_ardougne_iron_2]
+x = [2598, 2612]
+y = [3219, 3241]
+level = 0
+tags = ["auto_mining"]
+
+# gold 3
+[auto_mining_gold_2615_4965]
+x = [2610, 2621]
+y = [4959, 4972]
+level = 0
+tags = ["auto_mining"]
+
+# iron 9, tin 7, clay 4, copper 4, mithril 3, coal 1
+[auto_mining_port_khazard_iron]
+x = [2621, 2645]
+y = [3127, 3157]
+level = 0
+tags = ["auto_mining"]
+
+# tin 2, mithril 1
+[auto_mining_port_khazard_tin]
+x = [2648, 2660]
+y = [3163, 3174]
+level = 0
+tags = ["auto_mining"]
+
+# iron 5, coal 5
+[auto_mining_iron_2671_9681]
+x = [2663, 2680]
+y = [9673, 9689]
+level = 0
+tags = ["auto_mining"]
+
+# coal 7, clay 4, silver 3
+[auto_mining_rellekka_coal]
+x = [2676, 2691]
+y = [3698, 3713]
+level = 0
+tags = ["auto_mining"]
+
+# coal 13, iron 11
+[auto_mining_ardougne_coast_coal]
+x = [2685, 2719]
+y = [3324, 3340]
+level = 0
+tags = ["auto_mining"]
+
+# clay 4
+[auto_mining_near_fremennik_slayer_dungeon_clay]
+x = [2694, 2704]
+y = [9901, 9912]
+level = 0
+tags = ["auto_mining"]
+
+# iron 9, mithril 2
+[auto_mining_rellekka_iron]
+x = [2718, 2732]
+y = [3683, 3700]
+level = 0
+tags = ["auto_mining"]
+
+# gold 10
+[auto_mining_brimhaven_gold]
+x = [2727, 2739]
+y = [3219, 3231]
+level = 0
+tags = ["auto_mining"]
+
+# gold 4
+[auto_mining_gold_2737_9689]
+x = [2731, 2744]
+y = [9679, 9699]
+level = 0
+tags = ["auto_mining"]
+
+# gold 6
+[auto_mining_brimhaven_gold_2]
+x = [2737, 2750]
+y = [3144, 3159]
+level = 0
+tags = ["auto_mining"]
+
+# gem 7
+[auto_mining_karamja_gem]
+x = [2816, 2829]
+y = [2994, 3007]
+level = 0
+tags = ["auto_mining"]
+
+# mithril 7
+[auto_mining_near_brimhaven_mithril]
+x = [2816, 2827]
+y = [3237, 3251]
+level = 0
+tags = ["auto_mining"]
+
+# iron 4
+[auto_mining_keldagrim_iron]
+x = [2819, 2835]
+y = [10146, 10162]
+level = 0
+tags = ["auto_mining"]
+
+# gem 5
+[auto_mining_gem_2833_9389]
+x = [2823, 2844]
+y = [9376, 9403]
+level = 0
+tags = ["auto_mining"]
+
+# coal 7, mithril 1
+[auto_mining_near_brimhaven_coal]
+x = [2827, 2841]
+y = [3286, 3301]
+level = 0
+tags = ["auto_mining"]
+
+# coal 3, adamantite 3
+[auto_mining_near_brimhaven_coal_2]
+x = [2831, 2842]
+y = [3239, 3250]
+level = 0
+tags = ["auto_mining"]
+
+# adamantite 2, mithril 2, silver 1, coal 1, iron 1
+[auto_mining_karamja_adamantite]
+x = [2842, 2855]
+y = [3026, 3041]
+level = 0
+tags = ["auto_mining"]
+
+# gem 3
+[auto_mining_gem_2853_9384]
+x = [2846, 2861]
+y = [9374, 9394]
+level = 0
+tags = ["auto_mining"]
+
+# tin 5
+[auto_mining_keldagrim_tin]
+x = [2850, 2867]
+y = [10157, 10175]
+level = 0
+tags = ["auto_mining"]
+
+# gold 4
+[auto_mining_karamja_dungeon_gold]
+x = [2855, 2867]
+y = [9572, 9584]
+level = 0
+tags = ["auto_mining"]
+
+# gold 3
+[auto_mining_near_falador_gold]
+x = [2857, 2866]
+y = [3283, 3292]
+level = 0
+tags = ["auto_mining"]
+
+# coal 5, copper 2
+[auto_mining_keldagrim_coal]
+x = [2858, 2877]
+y = [10111, 10128]
+level = 0
+tags = ["auto_mining"]
+
+# adamantite 10, gold 8, runite 2
+[auto_mining_keldagrim_adamantite]
+x = [2863, 2876]
+y = [10237, 10265]
+level = 0
+tags = ["auto_mining"]
+
+# rune_essence 1
+[auto_mining_essence_rune_essence]
+x = [2887, 2895]
+y = [4843, 4851]
+level = 0
+tags = ["auto_mining"]
+
+# rune_essence 1
+[auto_mining_essence_rune_essence_2]
+x = [2889, 2897]
+y = [4808, 4816]
+level = 0
+tags = ["auto_mining"]
+
+# tin 6, iron 3, copper 2, coal 2
+[auto_mining_falador_tin]
+x = [2899, 2914]
+y = [3349, 3370]
+level = 0
+tags = ["auto_mining"]
+
+# coal 11, adamantite 2, mithril 2, runite 2
+[auto_mining_near_dwarven_coal]
+x = [2911, 2946]
+y = [9878, 9921]
+level = 0
+tags = ["auto_mining"]
+
+# rune_essence 1
+[auto_mining_essence_rune_essence_3]
+x = [2921, 2929]
+y = [4844, 4852]
+level = 0
+tags = ["auto_mining"]
+
+# rune_essence 1
+[auto_mining_essence_rune_essence_4]
+x = [2923, 2931]
+y = [4810, 4818]
+level = 0
+tags = ["auto_mining"]
+
+# coal 9
+[auto_mining_keldagrim_coal_2]
+x = [2932, 2944]
+y = [10223, 10239]
+level = 0
+tags = ["auto_mining"]
+
+# gold 7, clay 6, silver 6
+[auto_mining_falador_gold]
+x = [2933, 2947]
+y = [3272, 3295]
+level = 0
+tags = ["auto_mining"]
+
+# iron 6, copper 5, gold 2, silver 2, clay 2
+[auto_mining_port_sarim_iron]
+x = [2964, 2991]
+y = [3229, 3252]
+level = 0
+tags = ["auto_mining"]
+
+# coal 34
+[auto_mining_wilderness_coal]
+x = [3005, 3027]
+y = [3582, 3602]
+level = 0
+tags = ["auto_mining"]
+
+# coal 31, mithril 19, iron 16, adamantite 8
+[auto_mining_wilderness_coal_2]
+x = [3010, 3045]
+y = [3783, 3817]
+level = 0
+tags = ["auto_mining"]
+
+# copper 4, clay 3, coal 3
+[auto_mining_dwarven_copper]
+x = [3017, 3043]
+y = [9794, 9814]
+level = 0
+tags = ["auto_mining"]
+
+# coal 45, mithril 7, iron 5, tin 5, copper 4, adamantite 3, gold 2
+[auto_mining_dwarven_coal]
+x = [3024, 3060]
+y = [9728, 9788]
+level = 0
+tags = ["auto_mining"]
+
+# copper 3, tin 2, iron 2
+[auto_mining_dwarven_copper_2]
+x = [3026, 3037]
+y = [9818, 9832]
+level = 0
+tags = ["auto_mining"]
+
+# runite 1
+[auto_mining_underground_wilderness_runite]
+x = [3042, 3050]
+y = [10261, 10269]
+level = 0
+tags = ["auto_mining"]
+
+# blurite 1
+[auto_mining_wyvern_cave_blurite]
+x = [3045, 3053]
+y = [9562, 9570]
+level = 0
+tags = ["auto_mining"]
+
+# coal 4, mithril 4, adamantite 1, iron 1
+[auto_mining_wilderness_coal_3]
+x = [3048, 3063]
+y = [3937, 3954]
+level = 0
+tags = ["auto_mining"]
+
+# tin 3, clay 2, iron 2
+[auto_mining_dwarven_tin]
+x = [3048, 3058]
+y = [9807, 9832]
+level = 0
+tags = ["auto_mining"]
+
+# runite 2
+[auto_mining_wilderness_runite]
+x = [3055, 3064]
+y = [3880, 3889]
+level = 0
+tags = ["auto_mining"]
+
+# blurite 1
+[auto_mining_wyvern_cave_blurite_2]
+x = [3055, 3063]
+y = [9560, 9568]
+level = 0
+tags = ["auto_mining"]
+
+# blurite 2
+[auto_mining_wyvern_cave_blurite_3]
+x = [3063, 3071]
+y = [9577, 9586]
+level = 0
+tags = ["auto_mining"]
+
+# tin 5, coal 4
+[auto_mining_barbarian_village_tin]
+x = [3075, 3087]
+y = [3415, 3426]
+level = 0
+tags = ["auto_mining"]
+
+# coal 3, iron 2
+[auto_mining_wilderness_coal_4]
+x = [3099, 3109]
+y = [3561, 3574]
+level = 0
+tags = ["auto_mining"]
+
+# coal 6, silver 3, iron 3, tin 2, adamantite 2, copper 2, mithril 1
+[auto_mining_near_varrock_sewers_coal]
+x = [3130, 3147]
+y = [9864, 9884]
+level = 0
+tags = ["auto_mining"]
+
+# coal 7, mithril 5, adamantite 2
+[auto_mining_lumbridge_swamp_west_coal]
+x = [3139, 3152]
+y = [3140, 3157]
+level = 0
+tags = ["auto_mining"]
+
+# copper 12, tin 12
+[auto_mining_copper_3166_4957]
+x = [3147, 3186]
+y = [4940, 4975]
+level = 0
+tags = ["auto_mining"]
+
+# sandstone 32, granite 26, coal 2, clay 2
+[auto_mining_south_kharidian_desert_sandstone]
+x = [3159, 3184]
+y = [2897, 2926]
+level = 0
+tags = ["auto_mining"]
+
+# tin 8, iron 3, silver 3, clay 3
+[auto_mining_varrock_south_west_tin]
+x = [3168, 3187]
+y = [3361, 3381]
+level = 0
+tags = ["auto_mining"]
+
+# magic 57
+[auto_mining_near_lumbridge_swamp_caves_magic]
+x = [3210, 3240]
+y = [9484, 9503]
+level = 2
+tags = ["auto_mining"]
+
+# tin 5, copper 5
+[auto_mining_lumbridge_swamp_east_tin]
+x = [3218, 3234]
+y = [3140, 3152]
+level = 0
+tags = ["auto_mining"]
+
+# copper 9, tin 6, iron 4
+[auto_mining_varrock_south_east_copper]
+x = [3277, 3294]
+y = [3357, 3374]
+level = 0
+tags = ["auto_mining"]
+
+# coal 4, copper 4, tin 4, iron 3
+[auto_mining_south_kharidian_desert_coal]
+x = [3280, 3308]
+y = [3011, 3029]
+level = 0
+tags = ["auto_mining"]
+
+# iron 7, silver 5, copper 3, mithril 3, adamantite 2, coal 2, tin 1
+[auto_mining_al_kharid_iron]
+x = [3289, 3307]
+y = [3295, 3321]
+level = 0
+tags = ["auto_mining"]
+
+# gold 2, iron 2
+[auto_mining_al_kharid_gold]
+x = [3292, 3304]
+y = [3282, 3292]
+level = 0
+tags = ["auto_mining"]
+
+# silver 1
+[auto_mining_silver_3303_5715]
+x = [3299, 3307]
+y = [5711, 5719]
+level = 0
+tags = ["auto_mining"]
+
+# adamantite 6, mithril 5, tin 4
+[auto_mining_near_pollnivneach_dungeon_upper_adamantite]
+x = [3299, 3328]
+y = [9458, 9472]
+level = 0
+tags = ["auto_mining"]
+
+# silver 11, iron 1
+[auto_mining_dorgesh_kaan_entrance_silver]
+x = [3305, 3328]
+y = [9634, 9654]
+level = 0
+tags = ["auto_mining"]
+
+# iron 8, silver 1
+[auto_mining_dorgesh_kaan_entrance_iron]
+x = [3307, 3329]
+y = [9611, 9632]
+level = 0
+tags = ["auto_mining"]
+
+# gold 5
+[auto_mining_south_kharidian_desert_gold]
+x = [3317, 3328]
+y = [2868, 2881]
+level = 0
+tags = ["auto_mining"]
+
+# silver 3
+[auto_mining_silver_3366_9749]
+x = [3361, 3372]
+y = [9744, 9755]
+level = 0
+tags = ["auto_mining"]
+
+# silver 3
+[auto_mining_silver_3366_9813]
+x = [3361, 3372]
+y = [9808, 9819]
+level = 0
+tags = ["auto_mining"]
+
+# silver 2
+[auto_mining_near_grotto_silver]
+x = [3380, 3388]
+y = [9745, 9756]
+level = 0
+tags = ["auto_mining"]
+
+# silver 2
+[auto_mining_silver_3384_9814]
+x = [3380, 3388]
+y = [9809, 9820]
+level = 0
+tags = ["auto_mining"]
+
+# clay 3
+[auto_mining_al_kharid_clay]
+x = [3396, 3406]
+y = [3149, 3159]
+level = 0
+tags = ["auto_mining"]
+
+# clay 7
+[auto_mining_al_kharid_clay_2]
+x = [3412, 3427]
+y = [3159, 3172]
+level = 0
+tags = ["auto_mining"]
+
+# silver 3
+[auto_mining_silver_3494_10069]
+x = [3489, 3500]
+y = [10064, 10075]
+level = 0
+tags = ["auto_mining"]
+
+# silver 2
+[auto_mining_silver_3512_10070]
+x = [3508, 3516]
+y = [10065, 10076]
+level = 0
+tags = ["auto_mining"]
+
+# coal 6
+[auto_mining_coal_6319_6319]
+x = [6315, 6324]
+y = [6314, 6324]
+level = 0
+tags = ["auto_mining"]
