@@ -12,11 +12,23 @@ import world.gregs.voidps.engine.data.definition.InterfaceDefinitions
 import world.gregs.voidps.engine.entity.character.player.Player
 import world.gregs.voidps.engine.timer.*
 import world.gregs.voidps.network.client.instruction.WorldMapClick
+import world.gregs.voidps.network.login.protocol.encode.HintArrow
+import world.gregs.voidps.network.login.protocol.encode.HintType
+import world.gregs.voidps.network.login.protocol.encode.arrowHint
 import world.gregs.voidps.network.login.protocol.encode.updateInterface
+import world.gregs.voidps.type.Tile
 
 class WorldMap : Script {
 
     init {
+        playerSpawn {
+            showMarker(this)
+        }
+
+        variableSet("world_map_marker_custom") { _, _, _ ->
+            showMarker(this)
+        }
+
         timerStart("world_map_check") { 5 }
 
         timerTick("world_map_check") {
@@ -88,9 +100,36 @@ class WorldMap : Script {
         }
     }
 
+    /**
+     * Points the minimap at the marker set on the world map, the same way a quest hint does.
+     * Uses a hint slot nothing else takes so tutorial and quest arrows don't replace it.
+     */
+    fun showMarker(player: Player) {
+        val viewport = player.viewport ?: return
+        val marker = player["world_map_marker_custom", 0]
+        if (marker == 0) {
+            if (viewport.hints[MARKER_HINT] != 0) {
+                player.client?.arrowHint(HintType.CLEAR, MARKER_HINT)
+                viewport.hints[MARKER_HINT] = 0
+            }
+            return
+        }
+        val tile = Tile(marker)
+        viewport.hints[MARKER_HINT] = HintType.TILE
+        // Minimap only arrow: shown at the marker when it's on the minimap, pointing at it from the edge when not
+        player.client?.arrowHint(HintType.TILE, MARKER_HINT, sprite = HintArrow.BLUE_MINIMAP, x = tile.x, y = tile.y, level = tile.level, radius = MARKER_RADIUS)
+    }
+
     fun updateMap(player: Player) {
         val tile = player.tile.id
         player["world_map_centre"] = tile
         player["world_map_marker_player"] = tile
+    }
+
+    companion object {
+        private const val MARKER_HINT = 6
+
+        // Distance in 32 tile steps, far enough to cover the whole map
+        private const val MARKER_RADIUS = 1000
     }
 }
