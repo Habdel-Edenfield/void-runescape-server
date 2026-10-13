@@ -275,8 +275,8 @@ PT = {
 }
 
 if TRANSLATIONS:
-    # pt_tasks*/pt_level_up*/pt_labels* belong to the interfaces the client draws from the cache (tools/.../InterfaceTranslation.kt)
-    for file in sorted(f for f in glob.glob(TRANSLATIONS + "/pt_*.json") if not f.split("/")[-1].startswith(("pt_tasks", "pt_level_up", "pt_labels"))):
+    # pt_tasks*/pt_level_up*/pt_labels*/pt_ui* belong to the interfaces the client draws from the cache (tools/.../InterfaceTranslation.kt)
+    for file in sorted(f for f in glob.glob(TRANSLATIONS + "/pt_*.json") if not f.split("/")[-1].startswith(("pt_tasks", "pt_level_up", "pt_labels", "pt_ui"))):
         PT.update({en: pt for en, pt in json.load(open(file)).items() if "\n" not in en})
 
 # Text shared across the game rather than said by one NPC: (header, [(row id, en, pt)]).

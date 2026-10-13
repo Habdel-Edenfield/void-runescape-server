@@ -27,6 +27,8 @@ class CacheTranslationPatchTest {
         "text" to listOf("desc_", "hint", "set_"),
         "difficulty" to listOf("difficulty_"),
         "level_up" to listOf("level_up_"),
+        "prayer" to listOf("prayer_"),
+        "month" to listOf("month_"),
         "area" to listOf("area_"),
         "script" to listOf("script_"),
         "tooltip" to listOf("tooltip_"),
@@ -71,7 +73,7 @@ class CacheTranslationPatchTest {
     fun `Interface scripts read no English directly once patched`() {
         val patch = CacheTranslationPatch.patch(source, rows)
         val view = source.scriptIds().associateWith { patch.scripts[it] ?: source.script(it)!! } + patch.scripts
-        val ours = setOf(patch.taskText, patch.taskEnum, patch.enumString, patch.tooltip) + patch.scripts.filterValues { it.name == CacheTranslationPatch.STRING }.keys
+        val ours = setOf(patch.paramText, patch.taskEnum, patch.enumString, patch.tooltip) + patch.scripts.filterValues { it.name == CacheTranslationPatch.STRING }.keys
         val english = mutableListOf<String>()
         for ((id, script) in reachable(view)) {
             if (id in ours) {
@@ -109,12 +111,27 @@ class CacheTranslationPatchTest {
                 english.add("tooltip \"$text\"")
             }
         }
-        val texts = patch.enums.getValue(patch.textEnum).map!!
-        for (task in source.tasks().filter { source.area(it) in CacheTranslationPatch.AREAS }) {
+        val inScope = source.tasks().filter { source.area(it) in CacheTranslationPatch.AREAS } +
+            source.structs.filter { it.params?.containsKey(CacheTranslationPatch.PRAYER_DESCRIPTION) == true }
+        for (struct in inScope) {
             for (param in CacheTranslationPatch.TEXT_PARAMS) {
-                val text = task.params?.get(param) as? String
-                if (!text.isNullOrEmpty() && CacheTranslationPatch.textKey(task.id, param) !in texts) {
-                    english.add("task ${task.id} param $param: $text")
+                val text = struct.params?.get(param) as? String
+                val translated = patch.paramEnums[param]?.let { patch.enums.getValue(it).map!!.containsKey(struct.id) } ?: false
+                if (!text.isNullOrEmpty() && !translated) {
+                    english.add("struct ${struct.id} param $param: $text")
+                }
+            }
+        }
+        // The tabs' own scripts, checked whole as they don't hang off the interfaces the way the task scripts do
+        for ((id, kept) in CacheTranslationPatch.CHECKED_SCRIPTS) {
+            val script = view.getValue(id)
+            val signatures = signatures(script)
+            for ((i, string) in script.stringOperands.orEmpty().withIndex()) {
+                if (string == null || i in signatures) {
+                    continue
+                }
+                if (string !in CacheTranslationPatch.SCRIPT_TEXT_KEPT && string !in kept && !CacheTranslationPatch.isSignature(string) && !string.isMarkup()) {
+                    english.add("script $id shows \"$string\"")
                 }
             }
         }
@@ -143,6 +160,21 @@ class CacheTranslationPatchTest {
                 "./gradlew :tools:translateInterfaces --args=patch\nOut of date: ${differences.joinToString()}",
         )
     }
+
+    /** Indices of the argument types pushed right before each hook a script registers ("iz", "IisiiIIIf"...) */
+    private fun signatures(script: ClientScriptDefinition): Set<Int> {
+        val ops = script.instructions
+        val found = mutableSetOf<Int>()
+        for ((i, op) in ops.withIndex()) {
+            if (op in 1400..1499 || op in 2400..2499) {
+                (i - 1 downTo maxOf(0, i - 2)).firstOrNull { ops[it] == Op.PUSH_STRING }?.let { found.add(it) }
+            }
+        }
+        return found
+    }
+
+    /** Tags, numbers and punctuation: nothing to translate */
+    private fun String.isMarkup() = replace(Regex("<[^>]+>"), "").none { it.isLetter() }
 
     /** The level up pop-up's own scripts; the skill guide scripts it borrows its list of unlocks from are left out */
     private val levelUp = setOf(972, 973, 974, 975, 976, 1023, 1025)

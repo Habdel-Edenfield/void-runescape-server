@@ -27,7 +27,8 @@ import java.io.File
  * and the English stays untouched.
  *
  * Every change is a one-for-one instruction swap, so no jump inside an original script moves:
- * - `struct_param` of a task text becomes a call to [TASK_TEXT] (task name, description, hints, set text)
+ * - `struct_param` of a text param ([STRUCT_TEXTS]: task names, descriptions and hints, prayer descriptions) becomes
+ *   a call to [PARAM_TEXT]
  * - `enum` of the area and difficulty names becomes a call to [TASK_ENUM], `enum_string` of the level up
  *   messages a call to [ENUM_STRING]
  * - each translated string constant becomes a call to a script returning the English or the Portuguese
@@ -41,7 +42,7 @@ object CacheTranslationPatch {
     const val TABLE_PATH = "data/entity/player/dialogue/translation/interface_pt_br.tables.toml"
 
     /** Translation sources in tools/translation/sources, `<prefix>*.json` mapping English to Portuguese */
-    val SOURCE_PREFIXES = listOf("pt_tasks", "pt_level_up", "pt_labels")
+    val SOURCE_PREFIXES = listOf("pt_tasks", "pt_level_up", "pt_labels", "pt_ui")
 
     /** Task sets translated so far: Lumbridge/Draynor and the tutorial's Unstable Foundations */
     val AREAS = setOf(1, 60)
@@ -54,13 +55,26 @@ object CacheTranslationPatch {
     const val TASK_DESCRIPTION = 1273
     const val TASK_SET = 1292
     val HINTS = 1274..1279
-    val TEXT_PARAMS = listOf(TASK_NAME, TASK_DESCRIPTION) + HINTS + TASK_SET
+    const val PRAYER_DESCRIPTION = 734
+
+    /** Struct params holding shown text, with the prefix of the table rows translating them */
+    val STRUCT_TEXTS: Map<Int, String> = mapOf(TASK_NAME to "name_", TASK_DESCRIPTION to "desc_") +
+        HINTS.associateWith { "hint" } + mapOf(TASK_SET to "set_", PRAYER_DESCRIPTION to "prayer_")
+    val TEXT_PARAMS = STRUCT_TEXTS.keys
     const val TOOLTIP_SCRIPT = 38
 
     /** "You've just advanced a Cooking level!" for each skill, read with `enum_string` */
     const val LEVEL_UP_MESSAGES = 1477
 
-    val INTERFACES = mapOf("task_list" to 917, "task_system" to 1056, "task_popup" to 1055, "skill_level_details" to 741)
+    val INTERFACES = mapOf(
+        "task_list" to 917, "task_system" to 1056, "task_popup" to 1055, "skill_level_details" to 741,
+        "logout" to 182, "options" to 261, "stats" to 320, "quest_journals" to 190, "combat_styles" to 884, "prayer_list" to 271,
+        "friends_list" to 550, "ignore_list" to 551, "clan_chat" to 589, "chat_background" to 137, "filter_buttons" to 751,
+        "bank" to 762, "shop" to 620,
+    )
+
+    /** Month names, read with `enum` by the date of birth box and other dates */
+    const val MONTHS = 950
 
     /**
      * Generic scripts hooks pass text to, with the instructions they must still have and where the translation
@@ -69,20 +83,28 @@ object CacheTranslationPatch {
     val HOOK_SCRIPTS = mapOf(
         TOOLTIP_SCRIPT to (intArrayOf(Op.ILOAD, Op.PUSH_INT, Op.ILOAD, Op.SLOAD, Op.ILOAD, Op.ILOAD, Op.GOSUB, Op.RETURN) to 4),
         2381 to (intArrayOf(Op.SLOAD, Op.ILOAD, 2112, Op.ILOAD, Op.ILOAD, 2101, Op.RETURN) to 1),
+        // The bank's tooltips
+        1160 to (intArrayOf(Op.ILOAD, Op.ILOAD, Op.ILOAD, Op.SLOAD, Op.ILOAD, Op.ILOAD, Op.GOSUB, Op.RETURN) to 4),
     )
 
-    const val TASK_TEXT = "pt_br_task_text"
+    const val PARAM_TEXT = "pt_br_param_text"
+
+    /** [PARAM_TEXT]'s name before it read any param, kept so an older patch can still be undone */
+    private const val TASK_TEXT = "pt_br_task_text"
     const val TASK_ENUM = "pt_br_task_enum"
     const val ENUM_STRING = "pt_br_enum_string"
     const val STRING = "pt_br_string"
     const val TOOLTIP = "pt_br_tooltip"
     private const val ENUM_MARKER = Int.MIN_VALUE
 
+    /** [ENUM_MARKER]'s value in an int enum, which can't hold the "pt_br" string */
+    private const val INT_MARKER = 0x70745F62
+
     /** A string constant a task script shows; [occurrence] picks one copy when the same text means different things */
     data class ScriptText(val script: Int, val english: String, val occurrence: Int? = null)
 
     /** Scripts whose every string constant is shown text, apart from [SCRIPT_TEXT_KEPT] */
-    private val WHOLE_SCRIPTS = listOf(3223, 3995, 976)
+    private val WHOLE_SCRIPTS = listOf(3223, 3995, 976, 178)
 
     private val SCRIPT_TEXTS = listOf(
         ScriptText(3997, "Progress:"),
@@ -125,6 +147,218 @@ object CacheTranslationPatch {
         ScriptText(1025, " ", occurrence = 0),
         ScriptText(1025, " is one of the requirements for "),
         ScriptText(1025, "You now have all the levels you need to complete "),
+        // Logout tab: "When you have finished playing<br>RuneScape, always use the<br>button below to exit the game and logout safely."
+        ScriptText(1104, "When you have finished playing"),
+        ScriptText(1104, "RuneScape, always use a"),
+        ScriptText(1104, "RuneScape, always use the"),
+        ScriptText(1104, "button below to exit the game and logout safely."),
+        // The button labels; the second copy of each is the right-click option
+        ScriptText(1104, "Exit to Lobby", occurrence = 0),
+        ScriptText(1104, "Exit to Login", occurrence = 0),
+        ScriptText(1104, "Click here to log out"),
+        // Options tab: "Mouse buttons<br>(currently 2)"
+        ScriptText(1264, "Mouse buttons"),
+        ScriptText(1264, "(currently 2)"),
+        ScriptText(1264, "(currently 1)"),
+        ScriptText(1265, "Chat effects"),
+        ScriptText(1265, "(currently off)"),
+        ScriptText(1265, "(currently on)"),
+        ScriptText(1269, "Accept aid"),
+        ScriptText(1269, "(currently off)"),
+        ScriptText(1269, "(currently on)"),
+        ScriptText(1271, "Run (currently off)"),
+        ScriptText(1271, "Run (currently on)"),
+        ScriptText(1272, "House options"),
+        // Stats tab and the skill hover box
+        ScriptText(544, "Total level: "),
+        ScriptText(547, "Members' Skill"),
+        ScriptText(547, "Current Xp:"),
+        ScriptText(547, "Next level:"),
+        ScriptText(547, "Remainder:"),
+        ScriptText(547, "Target lvl:"),
+        ScriptText(547, "Target xp:"),
+        ScriptText(547, "Target XP:"),
+        // Quest Journal: "Showing 12 of 188 items", "Quest Points: 7 / 300"
+        ScriptText(943, "More advanced grouping options are available on a members' world."),
+        ScriptText(943, "More advanced grouping options will be available when you've finished the Tutorial."),
+        ScriptText(2162, "Showing all "),
+        ScriptText(2162, " items"),
+        ScriptText(2162, "Showing "),
+        ScriptText(2162, " of "),
+        ScriptText(2162, " (reversed)"),
+        ScriptText(2166, "Quest Points: "),
+        ScriptText(2168, "More advanced sorting options are available on a members' world."),
+        ScriptText(2168, "More advanced sorting options are available after the Tutorial."),
+        ScriptText(2169, "Free/Members"),
+        ScriptText(2176, "Click to hide the quests you cannot start."),
+        ScriptText(2176, "Some recommended stats and abilities (such as combat levels) are left for you to decide."),
+        ScriptText(2176, "Click to show all quests regardless of requirements."),
+        ScriptText(2176, "Click to hide the quests you have completed."),
+        ScriptText(2176, "Click to show all quests regardless of completion status."),
+        // Combat styles tab: style and attack names stay in English, the experience they train is translated
+        ScriptText(1131, "Combat Lvl: "),
+        ScriptText(1133, "Unarmed"),
+        ScriptText(1137, "Special Attack ("),
+        ScriptText(1139, "Auto Retaliate "),
+        ScriptText(1139, "(Off)"),
+        ScriptText(1139, "(On)"),
+        ScriptText(1142, "Attack XP"),
+        ScriptText(1142, "Strength XP"),
+        ScriptText(1142, "Defence XP"),
+        ScriptText(1142, "Ranged XP"),
+        ScriptText(1142, "Magic XP"),
+        ScriptText(1142, "Shared XP"),
+        ScriptText(1143, "When active, you will automatically fight back if attacked."),
+        ScriptText(1143, "Select to perform a special attack."),
+        // Prayer tab
+        ScriptText(1698, "This is the effect that prayers and curses have during combat. It includes curses that have used against you. The adjustment has no effect outside of combat. The percentage shown is relative to your skill level and may vary depending on the enemy you are fighting, and the prayers or curses used. Partial percentages are not shown."),
+        ScriptText(1700, "Hide stat adjustments."),
+        ScriptText(1700, "Show stat adjustments."),
+        ScriptText(2299, "Select your quick curses:"),
+        ScriptText(2299, "Select your quick prayers:"),
+        // Chat box: private messages ("From Zezinho: oi"), system update timer and filter buttons
+        ScriptText(84, "From "),
+        ScriptText(84, "To "),
+        ScriptText(89, "System update in: "),
+        ScriptText(89, "From "),
+        ScriptText(89, "To "),
+        ScriptText(175, "You can't do this while in the tutorial."),
+        ScriptText(175, "The friends list is still loading, your selection won't take effect immediately."),
+        // Chat input: prompts and what it says while typing a private message or searching
+        ScriptText(73, "Chat is not available until your Date of Birth is recorded. Please enter your DOB above."),
+        ScriptText(73, "That player is not on your Friends list."),
+        ScriptText(73, "You haven't received any messages to which you can reply."),
+        ScriptText(73, "Use the reverse apostrophe (`) key to open the console to enter that command."),
+        ScriptText(73, "It is usually located under the ESC key."),
+        ScriptText(73, "You aren't in a Clan Chat channel."),
+        ScriptText(86, "You cannot add a friend until you have entered your date of birth"),
+        ScriptText(102, "Click here to continue"),
+        ScriptText(107, "You can't do that while you're reporting abuse."),
+        ScriptText(107, "Enter message to send to "),
+        ScriptText(1037, "To "),
+        ScriptText(1037, "Search for: *"),
+        ScriptText(1038, "Search for: "),
+        ScriptText(1039, "Too many results. Please refine your search."),
+        ScriptText(1039, "No matching items found."),
+        ScriptText(1044, "To "),
+        ScriptText(1047, "To "),
+        ScriptText(1047, "Please enter a value: *"),
+        ScriptText(1048, "Please enter a value: "),
+        ScriptText(1048, "Please enter a value: *"),
+        ScriptText(1050, "You need to be in a Clan Chat channel to use Clan Quick Chat."),
+        ScriptText(1062, " To "),
+        ScriptText(1062, "Search "),
+        ScriptText(1063, "From "),
+        ScriptText(1077, "Sorry, this user is not on your Friends List."),
+        ScriptText(1077, "Sorry, your friend is no longer playing RuneScape."),
+        ScriptText(1900, "Search phrases..."),
+        ScriptText(1900, "To "),
+        ScriptText(1900, "Search for: *"),
+        ScriptText(1901, "Search for: "),
+        ScriptText(1902, "Too many results. Please refine your search."),
+        ScriptText(1902, "No matching items found."),
+        // Friends and ignore lists
+        ScriptText(103, "Enter name of friend to add to list"),
+        ScriptText(104, "Enter name of friend to delete from list"),
+        ScriptText(125, "Loading Friends List."),
+        ScriptText(125, "Please wait."),
+        ScriptText(125, "Connecting to Friend Server."),
+        ScriptText(125, "Last known as: "),
+        ScriptText(125, "Last known as:"),
+        ScriptText(126, "That player is currently offline."),
+        ScriptText(105, "Enter name of player to add to list"),
+        ScriptText(1419, "Enter name of player to delete from list"),
+        ScriptText(129, "Loading Ignore List."),
+        ScriptText(129, "Please wait."),
+        ScriptText(129, "Last known as: "),
+        ScriptText(129, "Last known as:"),
+        // Clan chat
+        ScriptText(111, "Enter the player name whose channel you wish to join:"),
+        ScriptText(111, "Last name entered: "),
+        ScriptText(111, "Your name: "),
+        ScriptText(197, "Talking in: "),
+        ScriptText(197, "Owner: "),
+        ScriptText(197, "Talking in: Not in chat"),
+        ScriptText(197, "Owner: None"),
+        // The button labels; the second copy of each is the right-click option
+        ScriptText(197, "Leave Chat", occurrence = 0),
+        ScriptText(197, "Join Chat", occurrence = 0),
+        ScriptText(2688, "Enter the player to ban from the channel:"),
+        // Bank: "Total number of <col>free</col> bank slots used" keeps its order, "Total de espaços grátis usados no banco"
+        ScriptText(1465, "Total number of "),
+        ScriptText(1465, "free"),
+        ScriptText(1465, "member"),
+        ScriptText(1465, "demo"),
+        ScriptText(1465, " bank slots used"),
+        ScriptText(1465, "Note: this includes an overflow of "),
+        ScriptText(1465, " free items"),
+        ScriptText(1465, " member items"),
+        ScriptText(1465, "Note: this includes an overflow of 1 free item"),
+        ScriptText(1465, "Note: this includes an overflow of 1 member item"),
+        ScriptText(1479, "Bank of RuneScape (no search entered)"),
+        ScriptText(1479, "Bank of RuneScape (search: '"),
+        ScriptText(1480, "Item is in tab "),
+        ScriptText(1487, "Switch to note withdrawal mode"),
+        ScriptText(1487, "Switch to item withdrawal mode"),
+        ScriptText(1490, "Switch to insert items mode"),
+        ScriptText(1490, "Switch to swap items mode"),
+        ScriptText(1549, "Enter the name of the item you wish to search for:"),
+        // Shop: requirements shown for an item, and its price when there's none
+        ScriptText(2706, "You do not meet the requirements to use or wield this item."),
+        ScriptText(2706, "You do not meet the requirements to use or wear this item."),
+        ScriptText(2706, "You can wield this item but not use it."),
+        ScriptText(2706, "You can wear this item but not use it."),
+        ScriptText(2706, "You do not meet the requirements to use this item."),
+        ScriptText(2706, "You can use this item but not wield it."),
+        ScriptText(2706, "You can use this item but not wear it."),
+        ScriptText(2706, "You do not meet the requirements to wield this item."),
+        ScriptText(2706, "You do not meet the requirements to wear this item."),
+        ScriptText(2723, "N/A"),
+        ScriptText(2726, "Free"),
+    )
+
+    /** Scripts of the translated tabs checked for English left over, with what stays in English in each */
+    val CHECKED_SCRIPTS: Map<Int, Set<String>> = mapOf(
+        1104 to setOf("Exit to Lobby", "Exit to Login", "Logout"),
+        1264 to setOf(), 1265 to setOf(), 1269 to setOf(), 1271 to setOf(), 1272 to setOf(),
+        544 to setOf(), 547 to setOf(), 548 to setOf(),
+        943 to setOf(), 947 to setOf(" (r)", "Select"),
+        2160 to setOf("View Quest Overview", "View Quest Journal", "Show on the World Map"),
+        2162 to setOf("View Quest Journal", "View Quest Overview"),
+        2166 to setOf(), 2168 to setOf(), 2169 to setOf(), 2176 to setOf(),
+        1131 to setOf(), 1133 to setOf(), 1137 to setOf(), 1139 to setOf(), 1143 to setOf(),
+        // Style and attack names, and the attack types and skills they train
+        1142 to setOf(
+            "Accurate", "Aggressive", "Aim and fire", "Bash", "Blaze", "Block", "Chop", "Chuck", "Controlled", "Crush", "Defensive",
+            "Deflect", "Fend", "Flare", "Flick", "Focus", "Hack", "Impale", "Jab", "Kick", "Lash", "Lob", "Long fuse", "Long range",
+            "Lunge", "Magic", "Medium fuse", "Pound", "Pummel", "Punch", "Ranged", "Rapid", "Reap", "Scorch", "Short fuse", "Slash",
+            "Sling", "Smash", "Spike", "Stab", "Swipe",
+        ),
+        49 to setOf("Deactivate", "Activate"), 53 to setOf(), 1237 to setOf("Activate"), 1388 to setOf("Select", "Deselect"),
+        1698 to setOf(), 1700 to setOf("Hide stat adjustments", "Show stat adjustments"), 1706 to setOf(),
+        2290 to setOf("Deselect", "Select"),
+        2299 to setOf("Finish quick curse selection", "Finish quick prayer selection", "Select quick curses", "Select quick prayers"),
+        // Chat and friends: right-click options, and the friends list title naming the interface
+        84 to setOf(
+            "Accept alliance", "Accept challenge", "Accept trade", "Add friend", "Add ignore", "Give assistance", "Kick/ban", "Message",
+            "Open invitation", "Quick Response", "Report abuse", "Vote",
+        ),
+        89 to setOf("Message", "Add friend", "Add ignore", "Report abuse", "Quick Response"),
+        73 to setOf(), 86 to setOf(), 102 to setOf(), 103 to setOf(), 104 to setOf(), 105 to setOf(), 107 to setOf(),
+        111 to setOf("Use:"), 123 to setOf("Friends List - RuneScape "),
+        125 to setOf("Message", "Quick Message", "Delete", "Offline", "event_opbase"), 126 to setOf(), 129 to setOf("Delete"),
+        175 to setOf(), 178 to setOf(), 197 to setOf("Leave Chat", "Join Chat"),
+        1037 to setOf(), 1038 to setOf(), 1039 to setOf(), 1044 to setOf("non-alpha"), 1047 to setOf(), 1048 to setOf(), 1050 to setOf(),
+        1059 to setOf("X"), 1062 to setOf("Return to: ", "Select: ", "Send: ", "Search phrases", "X. ", "Enter. "), 1063 to setOf("Send: "),
+        1066 to setOf(), 1077 to setOf(), 1419 to setOf(),
+        1596 to setOf("Remove friend ", "Remove ignore ", "Add friend ", "Add ignore ", "Kick/ban user "),
+        1900 to setOf(), 1901 to setOf(), 1902 to setOf(), 2312 to setOf("Select"), 2688 to setOf(),
+        // Bank and shop: the bank's name, right-click options and the option names the shop compares against
+        1465 to setOf(), 1472 to setOf("Search"), 1474 to setOf("Bank of RuneScape"), 1479 to setOf(), 1480 to setOf(),
+        1487 to setOf(), 1490 to setOf(), 1549 to setOf(),
+        2706 to setOf("Wield", "Wear"),
+        2723 to setOf("Info", "Buy 1", "Examine", "Buy 5", "Buy 10", "Buy 50", "Buy 500"),
+        2726 to setOf("Info", "Take 1", "Take 5", "Take 10", "Take 50", "Examine"),
     )
 
     /**
@@ -134,12 +368,14 @@ object CacheTranslationPatch {
      */
     val SCRIPT_TEXT_KEPT = setOf(
         "", "<str>", "<br>", " -", ".", "null", "id", "160", "640", "2560", "<col=000080>", "<col=800000>",
+        "<col=ffff00>", "<col=ff0000>", "<col=00ffff>",
         "Summary for", "Summary", "Pin", "Unpin", "Pin/Unpin Task", "Turn-on", "Turn-off",
+        ",", ": ", "/", " / ", "%", "+", "%)", "<col=ff9040>",
         "Couldn't find the Task's struct.",
     )
 
     /** The argument types a script hook is registered with, e.g. "IIsii" */
-    fun isSignature(text: String) = text.isNotEmpty() && text.all { it in "iIsl1Y" }
+    fun isSignature(text: String) = text.isNotEmpty() && text.all { it in "iIsSl1Yd" }
 
     /**
      * Fixed interface labels (interface to components) the server replaces when the interface opens, as no script
@@ -160,6 +396,17 @@ object CacheTranslationPatch {
         13 to listOf(30), // bank_pin
         14 to listOf(60, 61, 62, 63, 64, 65, 68, 70), // bank_pin_settings
         620 to listOf(21, 22, 23, 24, 30, 31), // shop
+        261 to listOf(1), // options
+        320 to listOf(209, 211, 212, 213), // stats
+        190 to listOf(1, 9, 11), // quest_journals
+        884 to listOf(8), // combat_styles
+        271 to listOf(44), // prayer_list
+        751 to listOf(11, 13, 14, 16, 17, 19, 20, 22, 23, 25, 26, 28, 29, 31), // filter_buttons
+        550 to listOf(7, 8), // friends_list
+        551 to listOf(4, 5), // ignore_list
+        589 to listOf(16), // clan_chat
+        137 to listOf(10, 64, 110, 158, 169, 171), // chat_background
+        762 to listOf(94, 98, 99, 100, 101, 102, 103, 104, 105, 115, 116), // bank
     )
 
     /**
@@ -181,6 +428,17 @@ object CacheTranslationPatch {
         13 to (11..20) + listOf(28, 31), // digits; server: instruction, deletion
         14 to listOf(40, 41, 69, 71, 73, 86, 89, 91), // window name; server: messages, status, confirm
         620 to listOf(20), // server: shop name
+        261 to listOf(13), // script 1110
+        320 to listOf(7, 8, 15, 16, 24, 25, 32, 33, 40, 41, 48, 49, 56, 57, 64, 65, 72, 73, 80, 81, 89, 90, 97, 98, 106, 107, 114, 115, 122, 123, 130, 131, 138, 139, 146, 147, 154, 155, 161, 162, 168, 169, 175, 176, 182, 183, 189, 190, 196, 197, 201), // levels; script 544
+        190 to listOf(2, 8), // scripts 2166, 2162
+        884 to listOf(0, 1, 18), // scripts 1131, 1139
+        271 to listOf(12, 30, 31, 32, 33, 34, 46), // scripts 1700, 1707, 2299
+        751 to listOf(),
+        550 to listOf(6), // script 123: Friends List, the interface name
+        551 to listOf(3), // Ignore List, the interface name
+        589 to listOf(4, 5, 14, 15), // script 197; Clan Chat, the interface name
+        137 to listOf(8, 14, 125, 140), // scripts 1047, 1037/1900, 2334, 2316
+        762 to listOf(25, 26, 29, 30, 31, 32, 42, 45), // counts; script 1465; Bank PIN, the feature's name; script 1474: the bank's name
     )
 
     /** Text the server puts into task chat messages next to the task name and difficulty (see TaskSystem.kt) */
@@ -230,7 +488,7 @@ object CacheTranslationPatch {
     /** One text to translate: [row] is its id in the table */
     data class Text(val row: String, val kind: String, val english: String)
 
-    /** Every text the Task System interfaces can show, in table order; texts outside [AREAS] only when [all] */
+    /** Every text the translated interfaces can show, in table order; tasks outside [AREAS] only when [all] */
     fun texts(source: Source, all: Boolean = true): List<Text> {
         val texts = mutableListOf<Text>()
         val seen = mutableSetOf<String>()
@@ -259,6 +517,12 @@ object CacheTranslationPatch {
         }
         for ((key, value) in source.enums[LEVEL_UP_MESSAGES].map!!.toSortedMap()) {
             add("level_up_$key", "level_up", value as String)
+        }
+        for (struct in source.structs) {
+            add("prayer_${struct.id}", "prayer", struct.text(PRAYER_DESCRIPTION))
+        }
+        for ((key, value) in source.enums[MONTHS].map!!.toSortedMap()) {
+            add("month_$key", "month", value as String)
         }
         for ((script, english) in scriptTexts(source)) {
             add("script_${script}_${seen.count { it.startsWith("script:") }}", "script", english)
@@ -381,9 +645,6 @@ object CacheTranslationPatch {
     private const val KEY_INT = 105 // 'i'
     private const val VALUE_STRING = 115 // 's'
 
-    /** Key of a task text in the Portuguese text enum: params 1266..1292 fit in 5 bits */
-    fun textKey(struct: Int, param: Int) = struct * 32 + (param - TASK_NAME)
-
     /** Scripts and enums an earlier patch added, found by name and by a marker entry */
     private class Ours(source: Source) {
         val scripts = mutableMapOf<Int, ClientScriptDefinition>()
@@ -399,7 +660,8 @@ object CacheTranslationPatch {
             for (id in source.enumIds()) {
                 val definition = EnumDefinition(id)
                 EnumDecoder().readLoop(definition, ArrayReader(source.enumBytes(id) ?: continue))
-                if (definition.map?.get(ENUM_MARKER) == "pt_br") {
+                val marker = definition.map?.get(ENUM_MARKER)
+                if (marker == "pt_br" || marker == INT_MARKER) {
                     enums.add(id)
                 }
             }
@@ -426,7 +688,7 @@ object CacheTranslationPatch {
         while (i < instructions.size) {
             val target = if (instructions[i] == Op.GOSUB) ours.scripts[ints[i]] else null
             when (target?.name) {
-                TASK_TEXT -> {
+                PARAM_TEXT, TASK_TEXT -> {
                     instructions[i] = Op.STRUCT_PARAM
                     ints[i] = 0
                 }
@@ -502,19 +764,25 @@ object CacheTranslationPatch {
         )
     }
 
-    /** (struct, param) -> struct_param, or the Portuguese from [textEnum] when the language varc is 1 and it has one */
-    private fun taskText(id: Int, textEnum: Int) = Builder(TASK_TEXT).apply {
+    /**
+     * (struct, param) -> struct_param, or when the language varc is 1 the struct's entry in the Portuguese enum
+     * [paramEnums] gives for the param, if it has one.
+     */
+    private fun paramText(id: Int, paramEnums: Int) = Builder(PARAM_TEXT).apply {
         val english = languageIs(portuguese = false)
         op(Op.PUSH_INT, KEY_INT)
-        op(Op.PUSH_INT, VALUE_STRING)
-        op(Op.PUSH_INT, textEnum)
-        op(Op.ILOAD, 0)
-        op(Op.PUSH_INT, 32)
-        op(Op.MUL)
+        op(Op.PUSH_INT, KEY_INT)
+        op(Op.PUSH_INT, paramEnums)
         op(Op.ILOAD, 1)
-        op(Op.PUSH_INT, TASK_NAME)
-        op(Op.SUB)
-        op(Op.ADD)
+        op(Op.ENUM)
+        op(Op.ISTORE, 2)
+        op(Op.ILOAD, 2)
+        op(Op.PUSH_INT, -1)
+        val untranslated = branch(Op.IF_EQ)
+        op(Op.PUSH_INT, KEY_INT)
+        op(Op.PUSH_INT, VALUE_STRING)
+        op(Op.ILOAD, 2)
+        op(Op.ILOAD, 0)
         op(Op.ENUM)
         op(Op.SSTORE, 0)
         op(Op.SLOAD, 0)
@@ -525,12 +793,13 @@ object CacheTranslationPatch {
         op(Op.SLOAD, 0)
         op(Op.RETURN)
         land(english)
+        land(untranslated)
         land(empty)
         op(Op.ILOAD, 0)
         op(Op.ILOAD, 1)
         op(Op.STRUCT_PARAM)
         op(Op.RETURN)
-    }.build(id, intArgs = 2, stringVars = 1)
+    }.build(id, intArgs = 2, intVars = 3, stringVars = 1)
 
     /** (key type, value type, enum, key) -> enum, reading the Portuguese copy of [copies] when the language varc is 1 */
     private fun taskEnum(id: Int, copies: Map<Int, Int>) = Builder(TASK_ENUM).apply {
@@ -606,8 +875,9 @@ object CacheTranslationPatch {
         val enums: Map<Int, EnumDefinition>,
         val removeScripts: Set<Int>,
         val removeEnums: Set<Int>,
-        val textEnum: Int,
-        val taskText: Int,
+        val paramText: Int,
+        /** Text param to the enum holding its Portuguese, keyed by struct */
+        val paramEnums: Map<Int, Int>,
         val taskEnum: Int,
         val enumString: Int,
         val tooltip: Int,
@@ -617,46 +887,65 @@ object CacheTranslationPatch {
     fun patch(source: Source, rows: List<Row>): Patch {
         val ours = ours(source)
         val portuguese = rows.associate { it.id to it.portuguese }
-        val names = kind(rows, "name_")
-        val taskTexts = kind(rows, "desc_", "hint", "set_")
+        // Texts shared between params (a hint that's also a description) have one row, so these look up by kind
+        val lookups = mapOf(
+            "name_" to kind(rows, "name_"),
+            "text" to kind(rows, "desc_", "hint", "set_"),
+            "prayer_" to kind(rows, "prayer_"),
+        )
         val scriptStrings = kind(rows, "script_")
         val tooltipTexts = kind(rows, "tooltip_")
 
         // Fresh ids after the original cache
         var nextScript = source.scriptIds().filter { it !in ours.scripts }.max() + 1
         var nextEnum = source.enumIds().filter { it !in ours.enums }.max() + 1
-        val textEnum = nextEnum++
+        val paramEnum = nextEnum++
         val areaEnum = nextEnum++
         val difficultyEnum = nextEnum++
         val levelUpEnum = nextEnum++
-        val taskText = nextScript++
+        val monthEnum = nextEnum++
+        val paramText = nextScript++
         val taskEnum = nextScript++
         val tooltip = nextScript++
         val enumString = nextScript++
 
         val enums = mutableMapOf<Int, EnumDefinition>()
-        val texts = mutableMapOf<Int, Any>(ENUM_MARKER to "pt_br")
-        for (task in source.tasks()) {
-            for (param in TEXT_PARAMS) {
-                val english = task.text(param)
-                val pt = (if (param == TASK_NAME) names[english] else taskTexts[english]) ?: continue
-                if (english.isNotEmpty()) {
-                    texts[textKey(task.id, param)] = pt
-                }
-            }
-        }
-        enums[textEnum] = EnumDefinition(id = textEnum, keyType = 'i', valueType = 's', defaultString = "", length = texts.size, map = texts)
-        val copies = listOf(Triple(areaEnum, AREA_NAMES, "area"), Triple(difficultyEnum, DIFFICULTY_NAMES, "difficulty"), Triple(levelUpEnum, LEVEL_UP_MESSAGES, "level_up"))
+        val copies = listOf(
+            Triple(areaEnum, AREA_NAMES, "area"),
+            Triple(difficultyEnum, DIFFICULTY_NAMES, "difficulty"),
+            Triple(levelUpEnum, LEVEL_UP_MESSAGES, "level_up"),
+            Triple(monthEnum, MONTHS, "month"),
+        )
         for ((copy, original, prefix) in copies) {
             val enum = source.enums[original]
             val map = enum.map!!.mapValues { (key, value) -> portuguese["${prefix}_$key"] ?: value }.toMutableMap()
             map[ENUM_MARKER] = "pt_br"
             enums[copy] = enum.copy(id = copy, length = map.size, map = map)
         }
+        // One enum per text param, struct id to Portuguese, and [paramEnum] from param to that enum
+        val paramEnums = mutableMapOf<Int, Int>()
+        for ((param, prefix) in STRUCT_TEXTS) {
+            val lookup = lookups[prefix] ?: lookups.getValue("text")
+            val texts = mutableMapOf<Int, Any>(ENUM_MARKER to "pt_br")
+            for (struct in source.structs) {
+                val english = struct.text(param)
+                if (english.isNotEmpty()) {
+                    texts[struct.id] = lookup[english] ?: continue
+                }
+            }
+            if (texts.size > 1) {
+                val id = nextEnum++
+                enums[id] = EnumDefinition(id = id, keyType = 'i', valueType = 's', defaultString = "", length = texts.size, map = texts)
+                paramEnums[param] = id
+            }
+        }
+        val map = paramEnums.toMutableMap<Int, Any>()
+        map[ENUM_MARKER] = INT_MARKER
+        enums[paramEnum] = EnumDefinition(id = paramEnum, keyType = 'i', valueType = 'i', defaultInt = -1, length = map.size, map = map)
 
         val scripts = mutableMapOf<Int, ClientScriptDefinition>()
-        scripts[taskText] = taskText(taskText, textEnum)
-        scripts[taskEnum] = taskEnum(taskEnum, mapOf(AREA_NAMES to areaEnum, DIFFICULTY_NAMES to difficultyEnum))
+        scripts[paramText] = paramText(paramText, paramEnum)
+        scripts[taskEnum] = taskEnum(taskEnum, mapOf(AREA_NAMES to areaEnum, DIFFICULTY_NAMES to difficultyEnum, MONTHS to monthEnum))
         scripts[enumString] = enumString(enumString, mapOf(LEVEL_UP_MESSAGES to levelUpEnum))
         val tooltips = hookTexts(source).associateWith { tooltipTexts[it] }.filterValues { it != null }.mapValues { it.value!! }
         scripts[tooltip] = tooltip(tooltip, tooltips)
@@ -683,12 +972,12 @@ object CacheTranslationPatch {
                 // Task texts: push_int <param>, struct_param
                 if (instructions[i] == Op.STRUCT_PARAM && i > 0 && instructions[i - 1] == Op.PUSH_INT && ints[i - 1] in TEXT_PARAMS) {
                     instructions[i] = Op.GOSUB
-                    ints[i] = taskText
+                    ints[i] = paramText
                     changed = true
                 }
-                // Area and difficulty names: push_int 'i', push_int 's', push_int <enum>, <key>, enum
+                // Area, difficulty and month names: push_int 'i', push_int 's', push_int <enum>, <key>, enum
                 if (instructions[i] == Op.PUSH_INT &&
-                    ints[i] in setOf(AREA_NAMES, DIFFICULTY_NAMES) &&
+                    ints[i] in setOf(AREA_NAMES, DIFFICULTY_NAMES, MONTHS) &&
                     i > 1 &&
                     instructions[i - 1] == Op.PUSH_INT &&
                     ints[i - 1] == VALUE_STRING &&
@@ -707,7 +996,10 @@ object CacheTranslationPatch {
                     changed = true
                 }
                 // Level up messages: push_int <enum>, <key>, enum_string
-                if (instructions[i] == Op.ENUM_STRING && i > 1 && instructions[i - 2] == Op.PUSH_INT && ints[i - 2] == LEVEL_UP_MESSAGES &&
+                if (instructions[i] == Op.ENUM_STRING &&
+                    i > 1 &&
+                    instructions[i - 2] == Op.PUSH_INT &&
+                    ints[i - 2] == LEVEL_UP_MESSAGES &&
                     instructions[i - 1] in setOf(Op.PUSH_INT, Op.ILOAD, Op.GET_VARBIT, Op.GET_VARP, Op.GET_VARC)
                 ) {
                     instructions[i] = Op.GOSUB
@@ -763,8 +1055,8 @@ object CacheTranslationPatch {
             enums = enums,
             removeScripts = ours.scripts.keys - scripts.keys,
             removeEnums = ours.enums.toSet() - enums.keys,
-            textEnum = textEnum,
-            taskText = taskText,
+            paramText = paramText,
+            paramEnums = paramEnums,
             taskEnum = taskEnum,
             enumString = enumString,
             tooltip = tooltip,

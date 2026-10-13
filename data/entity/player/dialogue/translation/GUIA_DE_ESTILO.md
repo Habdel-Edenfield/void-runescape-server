@@ -53,6 +53,11 @@ Vale para todo texto em `dialogue_pt_br.tables.toml` e `tutorial_island_pt_br.ta
 | Pin / Back (botões) | Fixar / Voltar (a opção do botão direito continua 'Pin') |
 | Skill Advance Guide | fica em inglês (nome de janela): "Abrir o Skill Advance Guide" |
 | Congratulations! (subiu de nível) | Parabéns! — "Você subiu um nível em Cooking!", "Agora você está no nível 2." |
+| Nomes de janela | ficam em inglês: Task List, Friends List, Ignore List, Clan Chat, Equipment Bonuses, Items Kept on Death, Bank PIN, Bank of RuneScape |
+| Golpes e estilos de combate (Punch, Chop, Accurate...), nomes de oração e de feitiço | em inglês; o resto da frase em português ("XP de Attack", "Nível 01<br>Thick Skin<br>Aumenta Defence em 5%") |
+| Tab 1 (banco) | Aba 1 |
+| On / Off / Friends / Hide / All / Filter (filtros do chat) | Ligado / Desligado / Amigos / Esconder / Todos / Filtro |
+| From / To (mensagem privada) | De / Para |
 | melee / ranged / magic | corpo a corpo / à distância (longo alcance) / magia |
 | rangers | arqueiros |
 | the Duke | o Duke |

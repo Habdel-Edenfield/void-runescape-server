@@ -2669,6 +2669,254 @@ pt = "Você subiu um nível em Summoning!"
 en = "You've just advanced a Dungeoneering level!"
 pt = "Você subiu um nível em Dungeoneering!"
 
+[.prayer_660]
+en = "Level 01<br>Thick Skin<br>Increases your Defence by 5%"
+pt = "Nível 01<br>Thick Skin<br>Aumenta Defence em 5%"
+
+[.prayer_661]
+en = "Level 04<br>Burst of Strength<br>Increases your Strength by 5%"
+pt = "Nível 04<br>Burst of Strength<br>Aumenta Strength em 5%"
+
+[.prayer_662]
+en = "Level 07<br>Clarity of Thought<br>Increases your Attack by 5%"
+pt = "Nível 07<br>Clarity of Thought<br>Aumenta Attack em 5%"
+
+[.prayer_663]
+en = "Level 10<br>Rock Skin<br>Increases your Defence by 10%"
+pt = "Nível 10<br>Rock Skin<br>Aumenta Defence em 10%"
+
+[.prayer_664]
+en = "Level 13<br>Superhuman Strength<br>Increases your Strength by 10%"
+pt = "Nível 13<br>Superhuman Strength<br>Aumenta Strength em 10%"
+
+[.prayer_665]
+en = "Level 16<br>Improved Reflexes<br>Increases your Attack by 10%"
+pt = "Nível 16<br>Improved Reflexes<br>Aumenta Attack em 10%"
+
+[.prayer_666]
+en = "Level 19<br>Rapid Restore<br>2x restore rate for all stats<br>except Summoning and Prayer"
+pt = "Nível 19<br>Rapid Restore<br>Recupera os atributos 2x mais rápido,<br>exceto Summoning e Prayer"
+
+[.prayer_667]
+en = "Level 22<br>Rapid Heal<br>2x restore rate for<br>your health"
+pt = "Nível 22<br>Rapid Heal<br>Recupera a sua vida<br>2x mais rápido"
+
+[.prayer_668]
+en = "Level 25<br>Protect Item<br>Keep 1 extra item if you die"
+pt = "Nível 25<br>Protect Item<br>Guarda 1 item a mais se você morrer"
+
+[.prayer_669]
+en = "Level 28<br>Steel Skin<br>Increases your Defence by 15%"
+pt = "Nível 28<br>Steel Skin<br>Aumenta Defence em 15%"
+
+[.prayer_670]
+en = "Level 31<br>Ultimate Strength<br>Increases your Strength by 15%"
+pt = "Nível 31<br>Ultimate Strength<br>Aumenta Strength em 15%"
+
+[.prayer_671]
+en = "Level 34<br>Incredible Reflexes<br>Increases your Attack by 15%"
+pt = "Nível 34<br>Incredible Reflexes<br>Aumenta Attack em 15%"
+
+[.prayer_672]
+en = "Level 37<br>Protect from Magic<br>Protection from magical attacks"
+pt = "Nível 37<br>Protect from Magic<br>Proteção contra ataques mágicos"
+
+[.prayer_673]
+en = "Level 40<br>Protect from Missiles<br>Protection from ranged attacks"
+pt = "Nível 40<br>Protect from Missiles<br>Proteção contra ataques à distância"
+
+[.prayer_674]
+en = "Level 43<br>Protect from Melee<br>Protection from melee attacks"
+pt = "Nível 43<br>Protect from Melee<br>Proteção contra ataques corpo a corpo"
+
+[.prayer_675]
+en = "Level 46<br>Retribution<br>Inflicts damage to nearby<br>targets if you die"
+pt = "Nível 46<br>Retribution<br>Causa dano aos alvos<br>próximos se você morrer"
+
+[.prayer_676]
+en = "Level 49<br>Redemption<br>Heals you when damaged<br>and health falls<br>below 10%"
+pt = "Nível 49<br>Redemption<br>Cura você quando ferido<br>e a vida cai<br>abaixo de 10%"
+
+[.prayer_677]
+en = "Level 52<br>Smite<br>Opponent's Prayer stat is drained according to how much damage is done"
+pt = "Nível 52<br>Smite<br>Drena o Prayer do oponente conforme o dano causado"
+
+[.prayer_678]
+en = "Level 08<br>Sharp Eye<br>Increases your Ranged by 5%"
+pt = "Nível 08<br>Sharp Eye<br>Aumenta Ranged em 5%"
+
+[.prayer_679]
+en = "Level 09<br>Mystic Will<br>Increases your Magic by 5%"
+pt = "Nível 09<br>Mystic Will<br>Aumenta Magic em 5%"
+
+[.prayer_680]
+en = "Level 26<br>Hawk Eye<br>Increases your Ranged by 10%"
+pt = "Nível 26<br>Hawk Eye<br>Aumenta Ranged em 10%"
+
+[.prayer_681]
+en = "Level 27<br>Mystic Lore<br>Increases your Magic by 10%"
+pt = "Nível 27<br>Mystic Lore<br>Aumenta Magic em 10%"
+
+[.prayer_682]
+en = "Level 44<br>Eagle Eye<br>Increases your Ranged by 15%"
+pt = "Nível 44<br>Eagle Eye<br>Aumenta Ranged em 15%"
+
+[.prayer_683]
+en = "Level 45<br>Mystic Might<br>Increases your Magic by 15%"
+pt = "Nível 45<br>Mystic Might<br>Aumenta Magic em 15%"
+
+[.prayer_684]
+en = "Level 35<br>Protect from Summoning<br>Reduces the damage dealt through Summoning scrolls and prevents the use of a familiar's special attack."
+pt = "Nível 35<br>Protect from Summoning<br>Reduz o dano dos pergaminhos de Summoning e impede o ataque especial de familiares."
+
+[.prayer_685]
+en = "Level 60<br>Chivalry<br>Increases your Defence by 20%, Strength by 18%, and Attack by 15%."
+pt = "Nível 60<br>Chivalry<br>Aumenta Defence em 20%, Strength em 18% e Attack em 15%."
+
+[.prayer_686]
+en = "Level 70<br>Piety<br>Increases your Defence by 25%, Strength by 23%, and Attack by 20%."
+pt = "Nível 70<br>Piety<br>Aumenta Defence em 25%, Strength em 23% e Attack em 20%."
+
+[.prayer_888]
+en = "Level 50<br>Protect Item<br>Keep 1 extra item if you die"
+pt = "Nível 50<br>Protect Item<br>Guarda 1 item a mais se você morrer"
+
+[.prayer_889]
+en = "Level 50<br>Sap Warrior<br>Drains 10% of enemy Attack, Strength and Defence, increasing to 20% over time."
+pt = "Nível 50<br>Sap Warrior<br>Drena 10% de Attack, Strength e Defence do inimigo, subindo para 20% com o tempo."
+
+[.prayer_890]
+en = "Level 52<br>Sap Ranger<br>Drains 10% of enemy Ranged and Defence, increasing to 20% over time."
+pt = "Nível 52<br>Sap Ranger<br>Drena 10% de Ranged e Defence do inimigo, subindo para 20% com o tempo."
+
+[.prayer_891]
+en = "Level 54<br>Sap Mage<br>Drains 10% of enemy Magic and Defence, increasing to 20% over time."
+pt = "Nível 54<br>Sap Mage<br>Drena 10% de Magic e Defence do inimigo, subindo para 20% com o tempo."
+
+[.prayer_892]
+en = "Level 56<br>Sap Spirit<br>Drains enemy special attack energy."
+pt = "Nível 56<br>Sap Spirit<br>Drena a energia de ataque especial do inimigo."
+
+[.prayer_893]
+en = "Level 59<br>Berserker<br>Boosted stats last 15% longer"
+pt = "Nível 59<br>Berserker<br>Atributos aumentados duram 15% a mais"
+
+[.prayer_894]
+en = "Level 62<br>Deflect Summoning<br>Reduces damage dealt from Summoning scrolls, prevents the use of a familiar's special attack, and can deflect some of the damage back to the attacker."
+pt = "Nível 62<br>Deflect Summoning<br>Reduz o dano dos pergaminhos de Summoning, impede o ataque especial de familiares e pode devolver parte do dano ao atacante."
+
+[.prayer_895]
+en = "Level 65<br>Deflect Magic<br>Protects against magical attacks and can deflect some of the damage back to the attacker."
+pt = "Nível 65<br>Deflect Magic<br>Protege contra ataques mágicos e pode devolver parte do dano ao atacante."
+
+[.prayer_896]
+en = "Level 68<br>Deflect Missiles<br>Protects against ranged attacks and can deflect some of the damage back to the attacker."
+pt = "Nível 68<br>Deflect Missiles<br>Protege contra ataques à distância e pode devolver parte do dano ao atacante."
+
+[.prayer_897]
+en = "Level 71<br>Deflect Melee<br>Protects against melee attacks and can deflect some of the damage back to the attacker."
+pt = "Nível 71<br>Deflect Melee<br>Protege contra ataques corpo a corpo e pode devolver parte do dano ao atacante."
+
+[.prayer_898]
+en = "Level 74<br>Leech Attack<br>Boosts Attack by 5%, increasing to 10% over time, while draining enemy Attack by 10%, increasing to 25% over time."
+pt = "Nível 74<br>Leech Attack<br>Aumenta Attack em 5%, subindo para 10% com o tempo, e drena 10% do Attack do inimigo, subindo para 25% com o tempo."
+
+[.prayer_899]
+en = "Level 76<br>Leech Ranged<br>Boosts Ranged by 5%, increasing to 10% over time, while draining enemy Ranged by 10%, increasing to 25% over time."
+pt = "Nível 76<br>Leech Ranged<br>Aumenta Ranged em 5%, subindo para 10% com o tempo, e drena 10% do Ranged do inimigo, subindo para 25% com o tempo."
+
+[.prayer_900]
+en = "Level 78<br>Leech Magic<br>Boosts Magic by 5%, increasing to 10% over time, while draining enemy Magic by 10%, increasing to 25% over time."
+pt = "Nível 78<br>Leech Magic<br>Aumenta Magic em 5%, subindo para 10% com o tempo, e drena 10% do Magic do inimigo, subindo para 25% com o tempo."
+
+[.prayer_901]
+en = "Level 80<br>Leech Defence<br>Boosts Defence by 5%, increasing to 10% over time, while draining enemy Defence by 10%, increasing to 25% over time."
+pt = "Nível 80<br>Leech Defence<br>Aumenta Defence em 5%, subindo para 10% com o tempo, e drena 10% do Defence do inimigo, subindo para 25% com o tempo."
+
+[.prayer_902]
+en = "Level 82<br>Leech Strength<br>Boosts Strength by 5%, increasing to 10% over time, while draining enemy Strength by 10%, increasing to 25% over time."
+pt = "Nível 82<br>Leech Strength<br>Aumenta Strength em 5%, subindo para 10% com o tempo, e drena 10% do Strength do inimigo, subindo para 25% com o tempo."
+
+[.prayer_903]
+en = "Level 84<br>Leech Energy<br>Drains enemy run energy, while increasing your own"
+pt = "Nível 84<br>Leech Energy<br>Drena a energia de corrida do inimigo e aumenta a sua"
+
+[.prayer_904]
+en = "Level 86<br>Leech Special Attack<br>Drains enemy special attack energy, while increasing your own"
+pt = "Nível 86<br>Leech Special Attack<br>Drena a energia de ataque especial do inimigo e aumenta a sua"
+
+[.prayer_905]
+en = "Level 89<br>Wrath<br>Inflicts damage to nearby<br>targets if you die"
+pt = "Nível 89<br>Wrath<br>Causa dano aos alvos<br>próximos se você morrer"
+
+[.prayer_906]
+en = "Level 92<br>Soul Split<br>You gain 1 life point for every 5 damage you do to your opponent, and they lose 1 prayer point for every 50 damage."
+pt = "Nível 92<br>Soul Split<br>Você ganha 1 ponto de vida a cada 5 de dano no oponente, e ele perde 1 ponto de oração a cada 50 de dano."
+
+[.prayer_907]
+en = "Level 95<br>Turmoil<br>Increases Attack and Defence by 15%, plus 15% of enemy's level, and Strength by 23%, plus 10% of enemy's level."
+pt = "Nível 95<br>Turmoil<br>Aumenta Attack e Defence em 15%, mais 15% do nível do inimigo, e Strength em 23%, mais 10% do nível do inimigo."
+
+[.prayer_1005]
+en = "Level 65<br>Rapid Renewal<br>Restores life points at 5x the normal rate."
+pt = "Nível 65<br>Rapid Renewal<br>Recupera pontos de vida 5x mais rápido."
+
+[.prayer_1006]
+en = "Level 77<br>Augury<br>Increases magical accuracy by 20% and Defence by 25%."
+pt = "Nível 77<br>Augury<br>Aumenta a precisão mágica em 20% e Defence em 25%."
+
+[.prayer_1029]
+en = "Level 74<br>Rigour<br>Increases your Ranged by 20% and Defence by 25%."
+pt = "Nível 74<br>Rigour<br>Aumenta Ranged em 20% e Defence em 25%."
+
+[.month_0]
+en = "January"
+pt = "Janeiro"
+
+[.month_1]
+en = "February"
+pt = "Fevereiro"
+
+[.month_2]
+en = "March"
+pt = "Março"
+
+[.month_3]
+en = "April"
+pt = "Abril"
+
+[.month_4]
+en = "May"
+pt = "Maio"
+
+[.month_5]
+en = "June"
+pt = "Junho"
+
+[.month_6]
+en = "July"
+pt = "Julho"
+
+[.month_7]
+en = "August"
+pt = "Agosto"
+
+[.month_8]
+en = "September"
+pt = "Setembro"
+
+[.month_9]
+en = "October"
+pt = "Outubro"
+
+[.month_10]
+en = "November"
+pt = "Novembro"
+
+[.month_11]
+en = "December"
+pt = "Dezembro"
+
 [.script_3223_0]
 en = "You must have access to the fairy ring network to complete this Task."
 pt = "Você precisa ter acesso à rede de fairy rings para concluir esta tarefa."
@@ -2845,133 +3093,709 @@ pt = "Membros agora têm o nível de combate para pedir tarefas de Slayer ao Sla
 en = "Members now have the Combat level required to board the veteran lander in Pest Control."
 pt = "Membros agora têm o nível de combate para embarcar no barco de veteranos (veteran lander) do Pest Control."
 
-[.script_3997_44]
+[.script_178_44]
+en = "Filter"
+pt = "Filtro"
+
+[.script_178_45]
+en = "All"
+pt = "Todos"
+
+[.script_178_46]
+en = "Loading"
+pt = "Carregando"
+
+[.script_178_47]
+en = "Friends"
+pt = "Amigos"
+
+[.script_178_48]
+en = "Off"
+pt = "Desligado"
+
+[.script_178_49]
+en = "Hide"
+pt = "Esconder"
+
+[.script_178_50]
+en = "On"
+pt = "Ligado"
+
+[.script_3997_51]
 en = "Progress:"
 pt = "Progresso:"
 
-[.script_4002_45]
+[.script_4002_52]
 en = "Progress:  "
 pt = "Progresso:  "
 
-[.script_4017_46]
+[.script_4017_53]
 en = "Click to hide completed Tasks."
 pt = "Clique para esconder as tarefas concluídas."
 
-[.script_4017_47]
+[.script_4017_54]
 en = "Click to show completed Tasks."
 pt = "Clique para mostrar as tarefas concluídas."
 
-[.script_4017_48]
+[.script_4017_55]
 en = "Click to hide Tasks which are not in a set."
 pt = "Clique para esconder as tarefas fora de um conjunto."
 
-[.script_4017_49]
+[.script_4017_56]
 en = "Click to show Tasks which are not in a set."
 pt = "Clique para mostrar as tarefas fora de um conjunto."
 
-[.script_3991_50]
+[.script_3991_57]
 en = "Difficulty : "
 pt = "Dificuldade: "
 
-[.script_3991_51]
+[.script_3991_58]
 en = "Area : "
 pt = "Área: "
 
-[.script_3991_52]
+[.script_3991_59]
 en = "ten"
 pt = "dez"
 
-[.script_3991_53]
+[.script_3991_60]
 en = "forty"
 pt = "quarenta"
 
-[.script_3991_54]
+[.script_3991_61]
 en = "Completing this Task will earn you "
 pt = "Concluir esta tarefa vai render "
 
-[.script_3991_55]
+[.script_3991_62]
 en = " coins."
 pt = " moedas."
 
-[.script_3991_56]
+[.script_3991_63]
 en = "You're already owed a reward! You may claim it from Explorer Jack or any other taskmaster, or increase it by completing more Tasks. "
 pt = "Você já tem uma recompensa a receber! Pegue com o Explorer Jack ou outro taskmaster, ou aumente-a concluindo mais tarefas. "
 
-[.script_3991_57]
+[.script_3991_64]
 en = "You are also owed one or more items."
 pt = "Você também tem um ou mais itens a receber."
 
-[.script_3977_58]
+[.script_3977_65]
 en = "    Pin"
 pt = "    Fixar"
 
-[.script_3977_59]
+[.script_3977_66]
 en = "     Back"
 pt = "     Voltar"
 
-[.script_3977_60]
+[.script_3977_67]
 en = "You have already earned a sum of money, which you may claim by talking to any taskmaster or increase by continuing to complete Tasks."
 pt = "Você já ganhou uma quantia em dinheiro, que pode receber falando com qualquer taskmaster ou aumentar concluindo mais tarefas."
 
-[.script_3222_61]
+[.script_3222_68]
 en = "This Task requires "
 pt = "Esta tarefa exige nível "
 
-[.script_3222_62]
+[.script_3222_69]
 en = " "
 pt = " em "
 
-[.script_3222_63]
+[.script_3222_70]
 en = "To complete this Task, you must complete the "
 pt = "Para concluir esta tarefa, você precisa completar a missão "
 
-[.script_3222_64]
+[.script_3222_71]
 en = " quest."
 pt = "."
 
-[.script_973_65]
+[.script_973_72]
 en = "You've just advanced 2 Herblore levels!"
 pt = "Você subiu 2 níveis em Herblore!"
 
-[.script_973_66]
+[.script_973_73]
 en = "You've just advanced 3 Summoning levels!"
 pt = "Você subiu 3 níveis em Summoning!"
 
-[.script_973_67]
+[.script_973_74]
 en = "You have now reached level "
 pt = "Agora você está no nível "
 
-[.script_973_68]
+[.script_973_75]
 en = "You've now reached the highest skill level that you can achieve during the tutorial. Once you finish the tutorial, you can advance this skill even further!"
 pt = "Você chegou ao nível mais alto desta habilidade durante o tutorial. Quando terminar o tutorial, poderá avançar ainda mais!"
 
-[.script_973_69]
+[.script_973_76]
 en = "Well done! You've reached the total level "
 pt = "Muito bem! Você atingiu o marco de nível total "
 
-[.script_973_70]
+[.script_973_77]
 en = "Well done! You've reached the Combat level "
 pt = "Muito bem! Você atingiu o marco de nível de combate "
 
-[.script_973_71]
+[.script_973_78]
 en = " milestone!"
 pt = "!"
 
-[.script_973_72]
+[.script_973_79]
 en = "Check out the skill advance guide to see what you'll be able to do when you reach even higher levels..."
 pt = "Veja no Skill Advance Guide o que você vai poder fazer em níveis ainda mais altos..."
 
-[.script_1025_73]
+[.script_1025_80]
 en = "Level "
 pt = "Nível "
 
-[.script_1025_74]
+[.script_1025_81]
 en = " is one of the requirements for "
 pt = " é um dos requisitos da missão "
 
-[.script_1025_75]
+[.script_1025_82]
 en = "You now have all the levels you need to complete "
 pt = "Agora você tem todos os níveis necessários para completar a missão "
+
+[.script_1104_83]
+en = "When you have finished playing"
+pt = "Quando terminar de jogar"
+
+[.script_1104_84]
+en = "RuneScape, always use a"
+pt = "RuneScape, use sempre um"
+
+[.script_1104_85]
+en = "RuneScape, always use the"
+pt = "RuneScape, use sempre o"
+
+[.script_1104_86]
+en = "button below to exit the game and logout safely."
+pt = "botão abaixo para sair do jogo com segurança."
+
+[.script_1104_87]
+en = "Exit to Lobby"
+pt = "Sair para o lobby"
+
+[.script_1104_88]
+en = "Exit to Login"
+pt = "Sair para o login"
+
+[.script_1104_89]
+en = "Click here to log out"
+pt = "Clique aqui para sair"
+
+[.script_1264_90]
+en = "Mouse buttons"
+pt = "Botões do mouse"
+
+[.script_1264_91]
+en = "(currently 2)"
+pt = "(agora 2)"
+
+[.script_1264_92]
+en = "(currently 1)"
+pt = "(agora 1)"
+
+[.script_1265_93]
+en = "Chat effects"
+pt = "Efeitos do chat"
+
+[.script_1265_94]
+en = "(currently off)"
+pt = "(agora desligado)"
+
+[.script_1265_95]
+en = "(currently on)"
+pt = "(agora ligado)"
+
+[.script_1269_96]
+en = "Accept aid"
+pt = "Aceitar ajuda"
+
+[.script_1271_97]
+en = "Run (currently off)"
+pt = "Correr (agora desligado)"
+
+[.script_1271_98]
+en = "Run (currently on)"
+pt = "Correr (agora ligado)"
+
+[.script_1272_99]
+en = "House options"
+pt = "Opções da casa"
+
+[.script_544_100]
+en = "Total level: "
+pt = "Nível total: "
+
+[.script_547_101]
+en = "Members' Skill"
+pt = "Habilidade de membros"
+
+[.script_547_102]
+en = "Current Xp:"
+pt = "XP atual:"
+
+[.script_547_103]
+en = "Next level:"
+pt = "Próximo nível:"
+
+[.script_547_104]
+en = "Remainder:"
+pt = "Faltam:"
+
+[.script_547_105]
+en = "Target lvl:"
+pt = "Nível alvo:"
+
+[.script_547_106]
+en = "Target xp:"
+pt = "XP alvo:"
+
+[.script_547_107]
+en = "Target XP:"
+pt = "XP alvo:"
+
+[.script_943_108]
+en = "More advanced grouping options are available on a members' world."
+pt = "Mais opções de agrupamento estão disponíveis em mundos de membros."
+
+[.script_943_109]
+en = "More advanced grouping options will be available when you've finished the Tutorial."
+pt = "Mais opções de agrupamento ficam disponíveis quando você terminar o tutorial."
+
+[.script_2162_110]
+en = "Showing all "
+pt = "Mostrando todos os "
+
+[.script_2162_111]
+en = " items"
+pt = " itens"
+
+[.script_2162_112]
+en = "Showing "
+pt = "Mostrando "
+
+[.script_2162_113]
+en = " of "
+pt = " de "
+
+[.script_2162_114]
+en = " (reversed)"
+pt = " (invertido)"
+
+[.script_2166_115]
+en = "Quest Points: "
+pt = "Pontos de missão: "
+
+[.script_2168_116]
+en = "More advanced sorting options are available on a members' world."
+pt = "Mais opções de ordenação estão disponíveis em mundos de membros."
+
+[.script_2168_117]
+en = "More advanced sorting options are available after the Tutorial."
+pt = "Mais opções de ordenação ficam disponíveis depois do tutorial."
+
+[.script_2169_118]
+en = "Free/Members"
+pt = "Grátis/Membros"
+
+[.script_2176_119]
+en = "Click to hide the quests you cannot start."
+pt = "Clique para esconder as missões que você não pode começar."
+
+[.script_2176_120]
+en = "Some recommended stats and abilities (such as combat levels) are left for you to decide."
+pt = "Alguns atributos recomendados (como o nível de combate) ficam a seu critério."
+
+[.script_2176_121]
+en = "Click to show all quests regardless of requirements."
+pt = "Clique para mostrar todas as missões, sem olhar os requisitos."
+
+[.script_2176_122]
+en = "Click to hide the quests you have completed."
+pt = "Clique para esconder as missões que você já completou."
+
+[.script_2176_123]
+en = "Click to show all quests regardless of completion status."
+pt = "Clique para mostrar todas as missões, completas ou não."
+
+[.script_1131_124]
+en = "Combat Lvl: "
+pt = "Nível de combate: "
+
+[.script_1133_125]
+en = "Unarmed"
+pt = "Desarmado"
+
+[.script_1137_126]
+en = "Special Attack ("
+pt = "Ataque especial ("
+
+[.script_1139_127]
+en = "Auto Retaliate "
+pt = "Revide automático "
+
+[.script_1139_128]
+en = "(Off)"
+pt = "(Desligado)"
+
+[.script_1139_129]
+en = "(On)"
+pt = "(Ligado)"
+
+[.script_1142_130]
+en = "Attack XP"
+pt = "XP de Attack"
+
+[.script_1142_131]
+en = "Strength XP"
+pt = "XP de Strength"
+
+[.script_1142_132]
+en = "Defence XP"
+pt = "XP de Defence"
+
+[.script_1142_133]
+en = "Ranged XP"
+pt = "XP de Ranged"
+
+[.script_1142_134]
+en = "Magic XP"
+pt = "XP de Magic"
+
+[.script_1142_135]
+en = "Shared XP"
+pt = "XP dividida"
+
+[.script_1143_136]
+en = "When active, you will automatically fight back if attacked."
+pt = "Ligado, você revida sozinho quando for atacado."
+
+[.script_1143_137]
+en = "Select to perform a special attack."
+pt = "Selecione para fazer um ataque especial."
+
+[.script_1698_138]
+en = "This is the effect that prayers and curses have during combat. It includes curses that have used against you. The adjustment has no effect outside of combat. The percentage shown is relative to your skill level and may vary depending on the enemy you are fighting, and the prayers or curses used. Partial percentages are not shown."
+pt = "Este é o efeito das orações e maldições (curses) durante o combate, incluindo as usadas contra você. O ajuste não vale fora do combate. A porcentagem é relativa ao seu nível na habilidade e pode variar conforme o inimigo e as orações ou maldições usadas. Porcentagens parciais não aparecem."
+
+[.script_1700_139]
+en = "Hide stat adjustments."
+pt = "Esconder ajustes de atributos."
+
+[.script_1700_140]
+en = "Show stat adjustments."
+pt = "Mostrar ajustes de atributos."
+
+[.script_2299_141]
+en = "Select your quick curses:"
+pt = "Escolha suas maldições rápidas:"
+
+[.script_2299_142]
+en = "Select your quick prayers:"
+pt = "Escolha suas orações rápidas:"
+
+[.script_84_143]
+en = "From "
+pt = "De "
+
+[.script_84_144]
+en = "To "
+pt = "Para "
+
+[.script_89_145]
+en = "System update in: "
+pt = "Atualização do sistema em: "
+
+[.script_175_146]
+en = "You can't do this while in the tutorial."
+pt = "Você não pode fazer isso durante o tutorial."
+
+[.script_175_147]
+en = "The friends list is still loading, your selection won't take effect immediately."
+pt = "A lista de amigos ainda está carregando; sua escolha não vale na hora."
+
+[.script_73_148]
+en = "Chat is not available until your Date of Birth is recorded. Please enter your DOB above."
+pt = "O chat só fica disponível depois que sua data de nascimento for registrada. Informe-a acima."
+
+[.script_73_149]
+en = "That player is not on your Friends list."
+pt = "Esse jogador não está na sua lista de amigos."
+
+[.script_73_150]
+en = "You haven't received any messages to which you can reply."
+pt = "Você não recebeu nenhuma mensagem para responder."
+
+[.script_73_151]
+en = "Use the reverse apostrophe (`) key to open the console to enter that command."
+pt = "Use a tecla de crase (`) para abrir o console e digitar esse comando."
+
+[.script_73_152]
+en = "It is usually located under the ESC key."
+pt = "Ela costuma ficar embaixo da tecla ESC."
+
+[.script_73_153]
+en = "You aren't in a Clan Chat channel."
+pt = "Você não está em um canal de Clan Chat."
+
+[.script_86_154]
+en = "You cannot add a friend until you have entered your date of birth"
+pt = "Você não pode adicionar amigos antes de informar sua data de nascimento"
+
+[.script_102_155]
+en = "Click here to continue"
+pt = "Clique aqui para continuar"
+
+[.script_107_156]
+en = "You can't do that while you're reporting abuse."
+pt = "Você não pode fazer isso enquanto faz uma denúncia."
+
+[.script_107_157]
+en = "Enter message to send to "
+pt = "Digite a mensagem para "
+
+[.script_1037_158]
+en = "Search for: *"
+pt = "Buscar: *"
+
+[.script_1038_159]
+en = "Search for: "
+pt = "Buscar: "
+
+[.script_1039_160]
+en = "Too many results. Please refine your search."
+pt = "Resultados demais. Refine a busca."
+
+[.script_1039_161]
+en = "No matching items found."
+pt = "Nada encontrado."
+
+[.script_1047_162]
+en = "Please enter a value: *"
+pt = "Digite um valor: *"
+
+[.script_1048_163]
+en = "Please enter a value: "
+pt = "Digite um valor: "
+
+[.script_1050_164]
+en = "You need to be in a Clan Chat channel to use Clan Quick Chat."
+pt = "Você precisa estar em um canal de Clan Chat para usar o Clan Quick Chat."
+
+[.script_1062_165]
+en = " To "
+pt = " Para "
+
+[.script_1062_166]
+en = "Search "
+pt = "Buscar "
+
+[.script_1077_167]
+en = "Sorry, this user is not on your Friends List."
+pt = "Desculpe, esse usuário não está na sua lista de amigos."
+
+[.script_1077_168]
+en = "Sorry, your friend is no longer playing RuneScape."
+pt = "Desculpe, seu amigo não está mais jogando RuneScape."
+
+[.script_1900_169]
+en = "Search phrases..."
+pt = "Buscar frases..."
+
+[.script_103_170]
+en = "Enter name of friend to add to list"
+pt = "Digite o nome do amigo para adicionar à lista"
+
+[.script_104_171]
+en = "Enter name of friend to delete from list"
+pt = "Digite o nome do amigo para tirar da lista"
+
+[.script_125_172]
+en = "Loading Friends List."
+pt = "Carregando a lista de amigos."
+
+[.script_125_173]
+en = "Please wait."
+pt = "Aguarde."
+
+[.script_125_174]
+en = "Connecting to Friend Server."
+pt = "Conectando ao servidor de amigos."
+
+[.script_125_175]
+en = "Last known as: "
+pt = "Antes conhecido como: "
+
+[.script_125_176]
+en = "Last known as:"
+pt = "Antes conhecido como:"
+
+[.script_126_177]
+en = "That player is currently offline."
+pt = "Esse jogador está offline agora."
+
+[.script_105_178]
+en = "Enter name of player to add to list"
+pt = "Digite o nome do jogador para adicionar à lista"
+
+[.script_1419_179]
+en = "Enter name of player to delete from list"
+pt = "Digite o nome do jogador para tirar da lista"
+
+[.script_129_180]
+en = "Loading Ignore List."
+pt = "Carregando a lista de ignorados."
+
+[.script_111_181]
+en = "Enter the player name whose channel you wish to join:"
+pt = "Digite o nome do dono do canal em que quer entrar:"
+
+[.script_111_182]
+en = "Last name entered: "
+pt = "Último nome digitado: "
+
+[.script_111_183]
+en = "Your name: "
+pt = "Seu nome: "
+
+[.script_197_184]
+en = "Talking in: "
+pt = "Falando em: "
+
+[.script_197_185]
+en = "Owner: "
+pt = "Dono: "
+
+[.script_197_186]
+en = "Talking in: Not in chat"
+pt = "Falando em: nenhum chat"
+
+[.script_197_187]
+en = "Owner: None"
+pt = "Dono: ninguém"
+
+[.script_197_188]
+en = "Leave Chat"
+pt = "Sair do chat"
+
+[.script_197_189]
+en = "Join Chat"
+pt = "Entrar no chat"
+
+[.script_2688_190]
+en = "Enter the player to ban from the channel:"
+pt = "Digite o jogador a banir do canal:"
+
+[.script_1465_191]
+en = "Total number of "
+pt = "Total de espaços "
+
+[.script_1465_192]
+en = "free"
+pt = "grátis"
+
+[.script_1465_193]
+en = "member"
+pt = "de membro"
+
+[.script_1465_194]
+en = "demo"
+pt = "demo"
+
+[.script_1465_195]
+en = " bank slots used"
+pt = " usados no banco"
+
+[.script_1465_196]
+en = "Note: this includes an overflow of "
+pt = "Obs.: inclui um excedente de "
+
+[.script_1465_197]
+en = " free items"
+pt = " itens grátis"
+
+[.script_1465_198]
+en = " member items"
+pt = " itens de membro"
+
+[.script_1465_199]
+en = "Note: this includes an overflow of 1 free item"
+pt = "Obs.: inclui um excedente de 1 item grátis"
+
+[.script_1465_200]
+en = "Note: this includes an overflow of 1 member item"
+pt = "Obs.: inclui um excedente de 1 item de membro"
+
+[.script_1479_201]
+en = "Bank of RuneScape (no search entered)"
+pt = "Bank of RuneScape (nenhuma busca)"
+
+[.script_1479_202]
+en = "Bank of RuneScape (search: '"
+pt = "Bank of RuneScape (busca: '"
+
+[.script_1480_203]
+en = "Item is in tab "
+pt = "O item está na aba "
+
+[.script_1487_204]
+en = "Switch to note withdrawal mode"
+pt = "Mudar para sacar em notas"
+
+[.script_1487_205]
+en = "Switch to item withdrawal mode"
+pt = "Mudar para sacar em itens"
+
+[.script_1490_206]
+en = "Switch to insert items mode"
+pt = "Mudar para o modo inserir"
+
+[.script_1490_207]
+en = "Switch to swap items mode"
+pt = "Mudar para o modo trocar"
+
+[.script_1549_208]
+en = "Enter the name of the item you wish to search for:"
+pt = "Digite o nome do item que quer buscar:"
+
+[.script_2706_209]
+en = "You do not meet the requirements to use or wield this item."
+pt = "Você não tem os requisitos para usar ou empunhar este item."
+
+[.script_2706_210]
+en = "You do not meet the requirements to use or wear this item."
+pt = "Você não tem os requisitos para usar ou vestir este item."
+
+[.script_2706_211]
+en = "You can wield this item but not use it."
+pt = "Você pode empunhar este item, mas não usá-lo."
+
+[.script_2706_212]
+en = "You can wear this item but not use it."
+pt = "Você pode vestir este item, mas não usá-lo."
+
+[.script_2706_213]
+en = "You do not meet the requirements to use this item."
+pt = "Você não tem os requisitos para usar este item."
+
+[.script_2706_214]
+en = "You can use this item but not wield it."
+pt = "Você pode usar este item, mas não empunhá-lo."
+
+[.script_2706_215]
+en = "You can use this item but not wear it."
+pt = "Você pode usar este item, mas não vesti-lo."
+
+[.script_2706_216]
+en = "You do not meet the requirements to wield this item."
+pt = "Você não tem os requisitos para empunhar este item."
+
+[.script_2706_217]
+en = "You do not meet the requirements to wear this item."
+pt = "Você não tem os requisitos para vestir este item."
+
+[.script_2723_218]
+en = "N/A"
+pt = "N/D"
+
+[.script_2726_219]
+en = "Free"
+pt = "Grátis"
 
 [.tooltip_0]
 en = "Click to toggle a map hint for this step."
@@ -3036,6 +3860,82 @@ pt = "<u=FFFFFA>Abrir o Skill Advance Guide</u>"
 [.tooltip_15]
 en = "<u=0000FF>Open Skill Advance Guide</u>"
 pt = "<u=0000FF>Abrir o Skill Advance Guide</u>"
+
+[.tooltip_16]
+en = "Options for changing how clan-chat and private chat are displayed"
+pt = "Opções de como o chat do clã e o chat privado aparecem"
+
+[.tooltip_17]
+en = "Options for changing your graphics settings"
+pt = "Opções de gráficos"
+
+[.tooltip_18]
+en = "Options for changing your audio settings"
+pt = "Opções de áudio"
+
+[.tooltip_19]
+en = "Total Friends"
+pt = "Total de amigos"
+
+[.tooltip_20]
+en = "Total Ignored Players"
+pt = "Total de ignorados"
+
+[.tooltip_21]
+en = "Toggle-LootShare"
+pt = "Toggle-LootShare"
+
+[.tooltip_22]
+en = "Here you can enter a user to temporarily kick/ban from the clan chat."
+pt = "Aqui você digita um usuário para expulsar ou banir temporariamente do clan chat."
+
+[.tooltip_23]
+en = "Toggle between swap and insert modes"
+pt = "Alternar entre trocar e inserir"
+
+[.tooltip_24]
+en = "Click here to search your bank"
+pt = "Clique aqui para buscar no banco"
+
+[.tooltip_25]
+en = "Toggle between item and note withdrawal modes"
+pt = "Alternar entre sacar itens e notas"
+
+[.tooltip_26]
+en = "Total amount of available <col=BA1626>Demo</col> bank space"
+pt = "Espaço <col=BA1626>demo</col> disponível no banco"
+
+[.tooltip_27]
+en = "Total amount of available <col=BA1626>free</col> bank space"
+pt = "Espaço <col=BA1626>grátis</col> disponível no banco"
+
+[.tooltip_28]
+en = "Total amount of available <col=BA1626>members</col> bank space"
+pt = "Espaço de <col=BA1626>membro</col> disponível no banco"
+
+[.tooltip_29]
+en = "Empty your backpack into your bank"
+pt = "Guardar no banco tudo o que está na mochila"
+
+[.tooltip_30]
+en = "Empty the items you are wearing into your bank"
+pt = "Guardar no banco o que você está vestindo"
+
+[.tooltip_31]
+en = "Empty your beast of burden's inventory into your bank"
+pt = "Guardar no banco o que a sua besta de carga leva"
+
+[.tooltip_32]
+en = "Click here to view the full contents of your bank"
+pt = "Clique aqui para ver tudo o que há no banco"
+
+[.tooltip_33]
+en = "View equipment stats"
+pt = "Ver os bônus do equipamento"
+
+[.tooltip_34]
+en = "This is a General Store; it will buy most tradeable items from you."
+pt = "Este é um armazém (General Store): ele compra quase todos os itens negociáveis."
 
 [.label_917_16]
 en = "Requirements"
@@ -3510,6 +4410,282 @@ en = "Stock"
 pt = "Estoque"
 interface = 620
 component = 31
+
+[.label_261_1]
+en = "Options"
+pt = "Opções"
+interface = 261
+component = 1
+
+[.label_320_209]
+en = "Close"
+pt = "Fechar"
+interface = 320
+component = 209
+
+[.label_320_211]
+en = "You can also right-click for a menu which will let you assign level or experience targets for each skill."
+pt = "Com o botão direito, você também pode definir metas de nível ou de experiência para cada habilidade."
+interface = 320
+component = 211
+
+[.label_320_212]
+en = "Left-clicking on a box will show a guide explaining the benefits of gaining levels in that skill."
+pt = "Clicar num quadro mostra um guia com as vantagens de subir de nível naquela habilidade."
+interface = 320
+component = 212
+
+[.label_320_213]
+en = "This screen shows you the current and maximum level of each of your skills. Hover your mouse over one for more information."
+pt = "Esta tela mostra o nível atual e o máximo de cada habilidade. Passe o mouse sobre uma para mais informações."
+interface = 320
+component = 213
+
+[.label_190_1]
+en = "Quests"
+pt = "Missões"
+interface = 190
+component = 1
+
+[.label_190_9]
+en = "Filter"
+pt = "Filtro"
+interface = 190
+component = 9
+
+[.label_190_11]
+en = "Hide done"
+pt = "Esconder feitas"
+interface = 190
+component = 11
+
+[.label_884_8]
+en = "S P E C I A L  A T T A C K"
+pt = "A T A Q U E  E S P E C I A L"
+interface = 884
+component = 8
+
+[.label_271_44]
+en = "Confirm"
+pt = "Confirmar"
+interface = 271
+component = 44
+
+[.label_751_11]
+en = "Report Abuse"
+pt = "Denunciar"
+interface = 751
+component = 11
+
+[.label_751_13]
+en = "Assist"
+pt = "Ajuda"
+interface = 751
+component = 13
+
+[.label_751_14]
+en = "On"
+pt = "Ligado"
+interface = 751
+component = 14
+
+[.label_751_16]
+en = "Trade"
+pt = "Troca"
+interface = 751
+component = 16
+
+[.label_751_17]
+en = "On"
+pt = "Ligado"
+interface = 751
+component = 17
+
+[.label_751_19]
+en = "Clan"
+pt = "Clã"
+interface = 751
+component = 19
+
+[.label_751_20]
+en = "On"
+pt = "Ligado"
+interface = 751
+component = 20
+
+[.label_751_22]
+en = "Private"
+pt = "Privado"
+interface = 751
+component = 22
+
+[.label_751_23]
+en = "On"
+pt = "Ligado"
+interface = 751
+component = 23
+
+[.label_751_25]
+en = "Public"
+pt = "Público"
+interface = 751
+component = 25
+
+[.label_751_26]
+en = "On"
+pt = "Ligado"
+interface = 751
+component = 26
+
+[.label_751_28]
+en = "Game"
+pt = "Jogo"
+interface = 751
+component = 28
+
+[.label_751_29]
+en = "All"
+pt = "Todos"
+interface = 751
+component = 29
+
+[.label_751_31]
+en = "All"
+pt = "Todos"
+interface = 751
+component = 31
+
+[.label_550_7]
+en = "Add Friend"
+pt = "Adicionar"
+interface = 550
+component = 7
+
+[.label_550_8]
+en = "Del Friend"
+pt = "Remover"
+interface = 550
+component = 8
+
+[.label_551_4]
+en = "Add Name"
+pt = "Adicionar"
+interface = 551
+component = 4
+
+[.label_551_5]
+en = "Del Name"
+pt = "Remover"
+interface = 551
+component = 5
+
+[.label_589_16]
+en = "Chat Setup"
+pt = "Configurar"
+interface = 589
+component = 16
+
+[.label_137_10]
+en = "Please select an option from the list below:"
+pt = "Escolha uma opção da lista abaixo:"
+interface = 137
+component = 10
+
+[.label_137_64]
+en = "Enter your date of birth to enable chat"
+pt = "Informe sua data de nascimento para liberar o chat"
+interface = 137
+component = 64
+
+[.label_137_110]
+en = "Year"
+pt = "Ano"
+interface = 137
+component = 110
+
+[.label_137_158]
+en = "Submit"
+pt = "Enviar"
+interface = 137
+component = 158
+
+[.label_137_169]
+en = "As you are under thirteen years of age, you are restricted to Quick Chat only. If you later wish to enable full, unrestricted chat we will require a parent's or guardian's consent. The fastest way to prove parental consent is by upgrading to a full members' account with a credit card."
+pt = "Como você tem menos de treze anos, só pode usar o Quick Chat. Se depois quiser liberar o chat completo, vamos precisar do consentimento de um dos pais ou responsável. O jeito mais rápido de provar esse consentimento é assinar uma conta de membro com cartão de crédito."
+interface = 137
+component = 169
+
+[.label_137_171]
+en = "Click here to continue..."
+pt = "Clique aqui para continuar..."
+interface = 137
+component = 171
+
+[.label_762_94]
+en = "Tab 1"
+pt = "Aba 1"
+interface = 762
+component = 94
+
+[.label_762_98]
+en = "Tab 9"
+pt = "Aba 9"
+interface = 762
+component = 98
+
+[.label_762_99]
+en = "Tab 8"
+pt = "Aba 8"
+interface = 762
+component = 99
+
+[.label_762_100]
+en = "Tab 7"
+pt = "Aba 7"
+interface = 762
+component = 100
+
+[.label_762_101]
+en = "Tab 6"
+pt = "Aba 6"
+interface = 762
+component = 101
+
+[.label_762_102]
+en = "Tab 5"
+pt = "Aba 5"
+interface = 762
+component = 102
+
+[.label_762_103]
+en = "Tab 4"
+pt = "Aba 4"
+interface = 762
+component = 103
+
+[.label_762_104]
+en = "Tab 3"
+pt = "Aba 3"
+interface = 762
+component = 104
+
+[.label_762_105]
+en = "Tab 2"
+pt = "Aba 2"
+interface = 762
+component = 105
+
+[.label_762_115]
+en = "No matches found!"
+pt = "Nada encontrado!"
+interface = 762
+component = 115
+
+[.label_762_116]
+en = "No search term entered!"
+pt = "Nenhuma busca digitada!"
+interface = 762
+component = 116
 
 [.chat_0]
 en = "Lumbridge and Draynor"
