@@ -12,12 +12,7 @@ class Mubariz : Script {
 
     init {
         npcOperate("Talk-to", "mubariz") {
-            npc<Happy>(
-                """
-                Welcome to the Duel Arena!
-                What can I do for you?
-            """,
-            )
+            npc<Happy>("Welcome to the Duel Arena! What can I do for you?")
             menu()
         }
     }
