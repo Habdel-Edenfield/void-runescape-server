@@ -16386,6 +16386,12 @@ pt = "Houve um problema ao devolver o seu item."
 en = "Your item has been returned."
 pt = "Seu item foi devolvido."
 
+# Text - entity/player/bank/BankAnywhere.kt
+
+[.text_entity_player_bank_bankanywhere_1]
+en = "This item cannot be banked."
+pt = "Este item não pode ir para o banco."
+
 # Text - entity/player/bank/BankDeposit.kt
 
 [.text_entity_player_bank_bankdeposit_1]
@@ -16401,34 +16407,30 @@ en = "Your familiar has no items to deposit."
 pt = "O seu familiar não tem itens para depositar."
 
 [.text_entity_player_bank_bankdeposit_4]
-en = "This item cannot be banked."
-pt = "Este item não pode ir para o banco."
-
-[.text_entity_player_bank_bankdeposit_5]
 en = "Your bank is too full to deposit any more."
 pt = "O seu banco está cheio demais para depositar mais."
 
-[.text_entity_player_bank_bankdeposit_6]
+[.text_entity_player_bank_bankdeposit_5]
 en = "How many would you like to deposit?"
 pt = "Quantos você quer depositar?"
 
-[.text_entity_player_bank_bankdeposit_7]
+[.text_entity_player_bank_bankdeposit_6]
 en = "One"
 pt = "Um"
 
-[.text_entity_player_bank_bankdeposit_8]
+[.text_entity_player_bank_bankdeposit_7]
 en = "Both"
 pt = "Os dois"
 
-[.text_entity_player_bank_bankdeposit_9]
+[.text_entity_player_bank_bankdeposit_8]
 en = "Five"
 pt = "Cinco"
 
-[.text_entity_player_bank_bankdeposit_10]
+[.text_entity_player_bank_bankdeposit_9]
 en = "X"
 pt = "X"
 
-[.text_entity_player_bank_bankdeposit_11]
+[.text_entity_player_bank_bankdeposit_10]
 en = "All"
 pt = "Todos"
 
@@ -21029,3 +21031,2709 @@ pt = "O moedor está vazio. Ele está no modo automático."
 [.runtime_42]
 en = "The grinder is empty. The grinder is set to manual."
 pt = "O moedor está vazio. Ele está no modo manual."
+
+# Quest journals (QuestJournalTranslationTest): one sentence each, its lines joined with <br> (Quest.kt, translateJournal)
+
+[.journal_1]
+en = "<str>I have spoken to Pirate Pete, and have agreed to help him<br><str>find his Family Sword."
+pt = "<str>Falei com o Pirate Pete e concordei em ajudá-lo a encontrar<br><str>a espada da família dele."
+
+[.journal_2]
+en = "<str>I have agreed to help Pirate Pete slay Barrelor the<br><str>Destroyer so that he can reclaim his lands."
+pt = "<str>Concordei em ajudar o Pirate Pete a matar Barrelor the<br><str>Destroyer para que ele possa recuperar suas terras."
+
+[.journal_3]
+en = "<str>I have a splitting headache. Captain Braindeath has<br><str>explained the situation to me, and I have agreed to help<br><str>brew up a batch of 'rum'."
+pt = "<str>Estou com uma dor de cabeça terrível. O Captain Braindeath<br><str>me explicou a situação, e concordei em ajudar a preparar<br><str>um lote de 'rum'."
+
+[.journal_4]
+en = "<str>I have been given some Blindweed Seeds, and told to grow<br><str>them in the Herb Patch outside. Captain Braindeath<br><str>recommended that I try and intimidate the Swabs guarding<br><str>the Herb Patch if I want them to stop attacking me."
+pt = "<str>Recebi algumas sementes de Blindweed (Blindweed Seeds) e<br><str>devo plantá-las no canteiro de ervas (Herb Patch) lá fora.<br><str>O Captain Braindeath recomendou que eu tente intimidar os<br><str>Swabs que guardam o canteiro de ervas, se quiser que<br><str>parem de me atacar."
+
+[.journal_5]
+en = "<str>I have planted my Blindweed Seeds, and should wait for<br><str>them to grow."
+pt = "<str>Plantei minhas sementes de Blindweed e devo esperar que<br><str>cresçam."
+
+[.journal_6]
+en = "<str>I have grown some Blindweed, I should show it to Captain"
+pt = "<str>Cultivei um pouco de Blindweed e devo mostrá-lo ao Captain"
+
+[.journal_7]
+en = "<str>Braindeath so that he can tell me what to do with it."
+pt = "<str>Braindeath para que ele me diga o que fazer com ele."
+
+[.journal_8]
+en = "<str>I have shown my Blindweed to Captain Braindeath. He told<br><str>me to put it into the Intake Hopper."
+pt = "<str>Mostrei meu Blindweed ao Captain Braindeath. Ele me disse<br><str>para colocá-lo no Intake Hopper."
+
+[.journal_9]
+en = "<str>I have added the Blindweed to the hopper. I should ask"
+pt = "<str>Coloquei o Blindweed no Hopper. Devo perguntar ao"
+
+[.journal_10]
+en = "<str>Captain Braindeath what he wants me to do next."
+pt = "<str>Captain Braindeath o que ele quer que eu faça agora."
+
+[.journal_11]
+en = "<str>Captain Braindeath has told me to fetch a bucket of<br><str>Stagnant Water from the Stagnant Lake near the top of<br><str>the Volcano to the North."
+pt = "<str>O Captain Braindeath me mandou buscar um balde de água<br><str>estagnada (Stagnant Water) no Stagnant Lake, perto do topo<br><str>do vulcão ao norte."
+
+[.journal_12]
+en = "<str>Using superior cunning and stealth I have managed to exit<br><str>the Brewery compound and have collected a bucket of<br><str>Stagnant Water."
+pt = "<str>Com astúcia e furtividade superiores, consegui sair do<br><str>complexo da cervejaria e enchi um balde de água<br><str>estagnada (Stagnant Water)."
+
+[.journal_13]
+en = "<str>I have poured the Stagnant Water into the Intake Hopper. I<br><str>should speak to Captain Braindeath again to see what else<br><str>he needs."
+pt = "<str>Despejei a água estagnada no Intake Hopper. Devo falar<br><str>com o Captain Braindeath de novo para ver do que mais ele<br><str>precisa."
+
+[.journal_14]
+en = "<str>Captain Braindeath has told me to fish with a Fishbowl and<br><str>Big Net in the Squid Fishing Spot. Whatever 5 Sea"
+pt = "<str>O Captain Braindeath me mandou pescar com um Fishbowl e uma<br><str>Big Net no ponto de pesca de lulas. As 5 criaturas"
+
+[.journal_15]
+en = "<str>Creatures I dredge up are to be put into a barrel and<br><str>pressurised."
+pt = "<str>marinhas que eu pescar devem ir para um barril e ser<br><str>pressurizadas."
+
+[.journal_16]
+en = "<str>I have pressurised the Assorted Sea Creatures in the<br><str>Pressure Barrel. I should see Captain Braindeath to check<br><str>if this is all he needs me to do."
+pt = "<str>Pressurizei as Assorted Sea Creatures no Pressure Barrel.<br><str>Devo falar com o Captain Braindeath para saber se é só<br><str>isso que ele precisa que eu faça."
+
+[.journal_17]
+en = "<str>Apparently the Brewing Equipment has become possessed."
+pt = "<str>Pelo jeito, o equipamento da cervejaria foi possuído."
+
+[.journal_18]
+en = "<str>Captain Braindeath has given me a Wrench and told me to<br><str>sort it out. I should check amongst the Brewers to see<br><str>which of them can bless it for me."
+pt = "<str>O Captain Braindeath me deu uma chave inglesa (Wrench) e<br><str>mandou eu dar um jeito nisso. Devo procurar entre os<br><str>Brewers quem pode abençoá-la para mim."
+
+[.journal_19]
+en = "<str>I am now the proud owner of a Holy Wrench. I will take up<br><str>this Holy Wrench and strike the Brewing Controls until they<br><str>are very, very sorry."
+pt = "<str>Agora sou o orgulhoso dono de uma Holy Wrench. Vou empunhar<br><str>esta Holy Wrench e golpear os controles da cervejaria até<br><str>que eles se arrependam muito, muito mesmo."
+
+[.journal_20]
+en = "<str>I have banished the Evil Spirit. Captain Braindeath told me<br><str>there is one more ingredient left. I should ask him what<br><str>this is."
+pt = "<str>Bani o Evil Spirit. O Captain Braindeath me disse que<br><str>falta mais um ingrediente. Devo perguntar a ele qual é."
+
+[.journal_21]
+en = "<str>Captain Braindeath wants me to kill a Fever Spider, and put<br><str>its Body into the Intake Hopper. He told me to wear Slayer"
+pt = "<str>O Captain Braindeath quer que eu mate uma Fever Spider e<br><str>coloque o corpo dela no Intake Hopper. Ele me disse<br><str>para usar Slayer"
+
+[.journal_22]
+en = "<str>Gloves (Available from the Slayer Masters apparently)<br><str>while I did so, as they carry a nasty disease. Mental Note;<br><str>do not drink whatever comes out of that machine."
+pt = "<str>Gloves (à venda com os Slayer Masters, pelo visto)<br><str>enquanto faço isso, pois as aranhas transmitem uma doença<br><str>horrível. Nota mental: não beber o que quer que saia<br><str>daquela máquina."
+
+[.journal_23]
+en = "<str>I have placed the Fever Spider Body in the Hopper. Captain"
+pt = "<str>Coloquei o Fever Spider Body no Hopper. O Captain"
+
+[.journal_24]
+en = "<str>Braindeath will be able to produce some 'rum' when I tell<br><str>him."
+pt = "<str>Braindeath vai poder produzir 'rum' quando eu<br><str>mandar."
+
+[.journal_25]
+en = "<str>Captain Braindeath has filled the Output Vat with 'rum'. I<br><str>should take a bucket of the stuff to Captain Donnie and<br><str>give it to him."
+pt = "<str>O Captain Braindeath encheu o Output Vat de 'rum'. Devo<br><str>levar um balde dessa coisa ao Captain Donnie e entregá-lo<br><str>a ele."
+
+[.journal_26]
+en = "<navy>I have spoken to <maroon>Captain Donnie<navy>, and have found out the<br><navy>name of his boss, <maroon>Rabid Jack<navy>.  I should tell <maroon>Captain"
+pt = "<navy>Falei com o <maroon>Captain Donnie<navy> e descobri o nome do chefe<br><navy>dele, <maroon>Rabid Jack<navy>. Devo contar isso ao <maroon>Captain"
+
+[.journal_27]
+en = "<maroon>Braindeath<navy> about this."
+pt = "<maroon>Braindeath<navy>."
+
+[.journal_28]
+en = "<navy>I have been given some <maroon>Blindweed Seeds<navy>, and told to grow<br><navy>them in the <maroon>Herb Patch<navy> outside. <maroon>Captain Braindeath<br><navy>recommended that I try and intimidate the <maroon>Swabs<navy> guarding<br><navy>the <maroon>Herb Patch<navy> if I want them to stop attacking me."
+pt = "<navy>Recebi algumas <maroon>sementes de Blindweed (Blindweed Seeds)<navy> e<br><navy>devo plantá-las no <maroon>canteiro de ervas (Herb Patch)<navy> lá fora.<br><navy>O <maroon>Captain Braindeath<navy> recomendou que eu tente intimidar os<br><maroon>Swabs<navy> que guardam o <maroon>canteiro de ervas<navy>, se quiser que<br><navy>parem de me atacar."
+
+[.journal_29]
+en = "<navy>I have spoken to <maroon>Pirate Pete<navy>, and I have agreed to help him<br><navy>find his <maroon>Family Sword<navy>."
+pt = "<navy>Falei com o <maroon>Pirate Pete<navy> e concordei em ajudá-lo a encontrar<br><navy>a <maroon>espada da família<navy> dele."
+
+[.journal_30]
+en = "<maroon>Captain Braindeath<navy> has filled the <maroon>Output Vat<navy> with <maroon>'rum'<navy>. I<br><navy>should take a bucket of the stuff to <maroon>Captain Donnie<navy> and<br><navy>give it to him."
+pt = "<navy>O <maroon>Captain Braindeath<navy> encheu o <maroon>Output Vat<navy> de <maroon>'rum'<navy>. Devo<br><navy>levar um balde dessa coisa ao <maroon>Captain Donnie<navy> e entregá-lo<br><navy>a ele."
+
+[.journal_31]
+en = "<maroon>Captain Braindeath<navy> has told me to fish with a <maroon>Fishbowl and<br><maroon>Big Net<navy> in the <maroon>Squid Fishing Spot<navy>. Whatever <maroon>5 Sea"
+pt = "<navy>O <maroon>Captain Braindeath<navy> me mandou pescar com um <maroon>Fishbowl e uma<br><maroon>Big Net<navy> no <maroon>ponto de pesca de lulas<navy>. As <maroon>5 criaturas"
+
+[.journal_32]
+en = "<maroon>Creatures<navy> I dredge up are to be put into a barrel and<br><navy>pressurised."
+pt = "<maroon>marinhas<navy> que eu pescar devem ir para um barril e ser<br><navy>pressurizadas."
+
+[.journal_33]
+en = "<navy>I have placed the <maroon>Fever Spider Body<navy> in the <maroon>Hopper<navy>. <maroon>Captain"
+pt = "<navy>Coloquei o <maroon>Fever Spider Body<navy> no <maroon>Hopper<navy>. O <maroon>Captain"
+
+[.journal_34]
+en = "<maroon>Braindeath<navy> will be able to produce some <maroon>'rum'<navy> when I tell<br><navy>him."
+pt = "<maroon>Braindeath<navy> vai poder produzir <maroon>'rum'<navy> quando eu<br><navy>mandar."
+
+[.journal_35]
+en = "<navy>I have just realised that I will have a hard time getting my<br><maroon>Wrench<navy> blessed now that I have thrown it away. I think I<br><navy>should see <maroon>Captain Braindeath<navy> to get a replacement<br><navy>before the situation deteriorates further."
+pt = "<navy>Acabo de perceber que vai ser difícil conseguir abençoar a<br><navy>minha <maroon>Wrench<navy> agora que joguei ela fora. Acho que devo<br><navy>falar com o <maroon>Captain Braindeath<navy> para conseguir outra antes<br><navy>que a situação piore ainda mais."
+
+[.journal_36]
+en = "<navy>I need to speak to <maroon>Pirate Pete<navy> in Port Phasmatys."
+pt = "<navy>Preciso falar com o <maroon>Pirate Pete<navy> em Port Phasmatys."
+
+[.journal_37]
+en = "<maroon>40 Farming"
+pt = "<maroon>Nível 40 em Farming"
+
+[.journal_38]
+en = "<maroon>50 Fishing"
+pt = "<maroon>Nível 50 em Fishing"
+
+[.journal_39]
+en = "<maroon>47 Prayer"
+pt = "<maroon>Nível 47 em Prayer"
+
+[.journal_40]
+en = "<maroon>42 Crafting"
+pt = "<maroon>Nível 42 em Crafting"
+
+[.journal_41]
+en = "<maroon>42 Slayer"
+pt = "<maroon>Nível 42 em Slayer"
+
+[.journal_42]
+en = "<maroon>I must have completed Zogre Flesh Eaters"
+pt = "<maroon>Ter concluído a missão Zogre Flesh Eaters"
+
+[.journal_43]
+en = "<maroon>To be able to defeat a level 150 Monster"
+pt = "<maroon>Ser capaz de derrotar um monstro de nível 150"
+
+[.journal_44]
+en = "<str>40 Farming"
+pt = "<str>Nível 40 em Farming"
+
+[.journal_45]
+en = "<str>50 Fishing"
+pt = "<str>Nível 50 em Fishing"
+
+[.journal_46]
+en = "<str>47 Prayer"
+pt = "<str>Nível 47 em Prayer"
+
+[.journal_47]
+en = "<str>42 Crafting"
+pt = "<str>Nível 42 em Crafting"
+
+[.journal_48]
+en = "<str>42 Slayer"
+pt = "<str>Nível 42 em Slayer"
+
+[.journal_49]
+en = "<str>I must have completed Zogre Flesh Eaters"
+pt = "<str>Ter concluído a missão Zogre Flesh Eaters"
+
+[.journal_50]
+en = "<navy>I have banished the <maroon>Evil Spirit<navy>. <maroon>Captain Braindeath<navy> told me<br><navy>there is one more ingredient left. I should ask him what<br><navy>this is."
+pt = "<navy>Bani o <maroon>Evil Spirit<navy>. O <maroon>Captain Braindeath<navy> me disse que<br><navy>falta mais um ingrediente. Devo perguntar a ele qual é."
+
+[.journal_51]
+en = "<navy>I have grown some <maroon>Blindweed<navy>, I should show it to <maroon>Captain"
+pt = "<navy>Cultivei um pouco de <maroon>Blindweed<navy> e devo mostrá-lo ao <maroon>Captain"
+
+[.journal_52]
+en = "<maroon>Braindeath<navy> so that he can tell me what to do with it."
+pt = "<maroon>Braindeath<navy> para que ele me diga o que fazer com ele."
+
+[.journal_53]
+en = "<navy>Having lost my <maroon>Blindweed<navy> I should go and see <maroon>Captain"
+pt = "<navy>Como perdi meu <maroon>Blindweed<navy>, devo ir falar com o <maroon>Captain"
+
+[.journal_54]
+en = "<maroon>Braindeath<navy>, he may have some kept to one side for use in<br><navy>an emergency."
+pt = "<maroon>Braindeath<navy>; ele talvez tenha um pouco guardado para<br><navy>uma emergência."
+
+[.journal_55]
+en = "<navy>I have agreed to help <maroon>Pirate Pete<navy> slay <maroon>Barrelor the<br><maroon>Destroyer<navy> so that he can reclaim his lands."
+pt = "<navy>Concordei em ajudar o <maroon>Pirate Pete<navy> a matar <maroon>Barrelor the<br><maroon>Destroyer<navy> para que ele possa recuperar suas terras."
+
+[.journal_56]
+en = "<navy>I have shown my <maroon>Blindweed<navy> to <maroon>Captain Braindeath<navy>. He told<br><navy>me to put it into the <maroon>Intake Hopper<navy>."
+pt = "<navy>Mostrei meu <maroon>Blindweed<navy> ao <maroon>Captain Braindeath<navy>. Ele me disse<br><navy>para colocá-lo no <maroon>Intake Hopper<navy>."
+
+[.journal_57]
+en = "<navy>I have a splitting headache. <maroon>Captain Braindeath<navy> has<br><navy>explained the situation to me, and I have agreed to help<br><navy>brew up a batch of <maroon>'rum'<navy>."
+pt = "<navy>Estou com uma dor de cabeça terrível. O <maroon>Captain Braindeath<navy><br><navy>me explicou a situação, e concordei em ajudar a preparar<br><navy>um lote de <maroon>'rum'<navy>."
+
+[.journal_58]
+en = "<str>I have spoken to Captain Donnie, and have found out the<br><str>name of his boss, Rabid Jack.  I should tell Captain"
+pt = "<str>Falei com o Captain Donnie e descobri o nome do chefe<br><str>dele, Rabid Jack. Devo contar isso ao Captain"
+
+[.journal_59]
+en = "<str>Braindeath about this."
+pt = "<str>Braindeath."
+
+[.journal_60]
+en = "<str>I have spoken to Captain Braindeath, who has decided to<br><str>stay on the island and keep the Zombie Pirates drunk!"
+pt = "<str>Falei com o Captain Braindeath, que decidiu ficar na ilha e<br><str>manter os piratas zumbis bêbados!"
+
+[.journal_61]
+en = "<str>Despite claiming he has never heard of Rabid Jack he was<br><str>more than happy with my performance, and rewarded me<br><str>with Farming, Fishing and Prayer experience, as well as the<br><str>Blessed Wrench."
+pt = "<str>Mesmo dizendo que nunca ouviu falar de Rabid Jack, ele<br><str>ficou mais do que satisfeito com o meu desempenho e me<br><str>recompensou com experiência em Farming, Fishing e Prayer,<br><str>além da Blessed Wrench."
+
+[.journal_62]
+en = "<navy>I have pressurised the <maroon>Assorted Sea Creatures<navy> in the<br><maroon>Pressure Barrel<navy>. I should see <maroon>Captain Braindeath<navy> to check<br><navy>if this is all he needs me to do."
+pt = "<navy>Pressurizei as <maroon>Assorted Sea Creatures<navy> no<br><maroon>Pressure Barrel<navy>. Devo falar com o <maroon>Captain Braindeath<navy> para<br><navy>saber se é só isso que ele precisa que eu faça."
+
+[.journal_63]
+en = "<navy>Using superior cunning and stealth I have managed to exit<br><navy>the Brewery compound and have collected a bucket of<br><maroon>Stagnant Water<navy>."
+pt = "<navy>Com astúcia e furtividade superiores, consegui sair do<br><navy>complexo da cervejaria e enchi um balde de<br><maroon>água estagnada (Stagnant Water)<navy>."
+
+[.journal_64]
+en = "<navy>Due to my inferior ability to hold objects I have lost my<br><maroon>Bucket of Stagnant Water<navy>. I should go and see <maroon>Captain"
+pt = "<navy>Por causa da minha péssima habilidade de segurar objetos,<br><navy>perdi meu <maroon>Bucket of Stagnant Water<navy>. Devo falar com o <maroon>Captain"
+
+[.journal_65]
+en = "<maroon>Braindeath<navy> to see what he wants me to do about this<br><navy>situation."
+pt = "<maroon>Braindeath<navy> para saber o que ele quer que eu faça nessa<br><navy>situação."
+
+[.journal_66]
+en = "<navy>I have added the <maroon>Blindweed<navy> to the <maroon>Intake Hopper<navy>. I should<br><navy>ask <maroon>Captain Braindeath<navy> what he wants me to do next."
+pt = "<navy>Coloquei o <maroon>Blindweed<navy> no <maroon>Intake Hopper<navy>. Devo perguntar ao<br><maroon>Captain Braindeath<navy> o que ele quer que eu faça agora."
+
+[.journal_67]
+en = "<navy>I have poured the <maroon>Stagnant Water<navy> into the <maroon>Intake Hopper<navy>. I<br><navy>should speak to <maroon>Captain Braindeath<navy> again to see what else<br><navy>he needs."
+pt = "<navy>Despejei a <maroon>água estagnada<navy> no <maroon>Intake Hopper<navy>. Devo falar<br><navy>com o <maroon>Captain Braindeath<navy> de novo para ver do que mais ele<br><navy>precisa."
+
+[.journal_68]
+en = "<maroon>Captain Braindeath<navy> has told me to fetch a bucket of<br><maroon>Stagnant Water<navy> from the <maroon>Stagnant Lake<navy> near the top of<br><navy>the <maroon>Volcano<navy> to the North."
+pt = "<navy>O <maroon>Captain Braindeath<navy> me mandou buscar um balde de<br><maroon>água estagnada (Stagnant Water)<navy> no <maroon>Stagnant Lake<navy>, perto do<br><navy>topo do <maroon>vulcão<navy> ao norte."
+
+[.journal_69]
+en = "<maroon>Captain Braindeath<navy> wants me to kill a <maroon>Fever Spider<navy>, and put<br><navy>its <maroon>Body<navy> into the <maroon>Intake Hopper<navy>. He told me to wear <maroon>Slayer"
+pt = "<navy>O <maroon>Captain Braindeath<navy> quer que eu mate uma <maroon>Fever Spider<navy> e<br><navy>coloque o <maroon>corpo<navy> dela no <maroon>Intake Hopper<navy>. Ele me disse<br><navy>para usar <maroon>Slayer"
+
+[.journal_70]
+en = "<maroon>Gloves<navy> (Available from the <maroon>Slayer Masters<navy> apparently)<br><navy>while I did so, as they carry a nasty disease. <maroon>Mental Note;<br><navy>do not drink whatever comes out of that machine."
+pt = "<maroon>Gloves<navy> (à venda com os <maroon>Slayer Masters<navy>, pelo visto)<br><navy>enquanto faço isso, pois as aranhas transmitem uma doença<br><navy>horrível. <maroon>Nota mental:<navy> não beber o que quer que saia<br><navy>daquela máquina."
+
+[.journal_71]
+en = "<str>I've not started this quest yet."
+pt = "<str>Ainda não comecei esta missão."
+
+[.journal_72]
+en = "<str>I can start this quest by speaking to Father Aereck in the<br><str>church east of Lumbridge Castle in the centre of<br><str>Lumbridge"
+pt = "<str>Posso começar esta missão falando com o Father Aereck na<br><str>igreja a leste do Lumbridge Castle, no centro de<br><str>Lumbridge"
+
+[.journal_73]
+en = "<str>I should find Father Urhney, who is an expert on ghosts."
+pt = "<str>Devo encontrar o Father Urhney, especialista em fantasmas."
+
+[.journal_74]
+en = "<str>He lives in a shack in the south of Lumbridge Swamp, near<br><str>the coastline"
+pt = "<str>Ele mora num barraco no sul do Lumbridge Swamp, perto<br><str>do litoral"
+
+[.journal_75]
+en = "<str>I should talk to the ghost in the crypt south of<br><str>Lumbridge church to find out why it is haunting the<br><str>graveyard I must make sure to wear my ghostspeak<br><str>amulet when doing so."
+pt = "<str>Devo falar com o fantasma na cripta ao sul da igreja de<br><str>Lumbridge para descobrir por que ele assombra o<br><str>cemitério. Preciso lembrar de usar meu Amulet of<br><str>ghostspeak quando fizer isso."
+
+[.journal_76]
+en = "<navy>I should go and search the <maroon>Mining spot <navy>on the coast <maroon>south<br><maroon>of Lumbridge <navy>for the <maroon>ghost's skull."
+pt = "<navy>Devo vasculhar o <maroon>ponto de mineração (Mining spot) <navy>no litoral<br><maroon>ao sul de Lumbridge <navy>em busca do <maroon>crânio do fantasma."
+
+[.journal_77]
+en = "<str>I can start this quest by speaking to Father Aereck in the<br><str>church east of Lumbridge Castle in the centre of<br><str>Lumbridge."
+pt = "<str>Posso começar esta missão falando com o Father Aereck na<br><str>igreja a leste do Lumbridge Castle, no centro de<br><str>Lumbridge."
+
+[.journal_78]
+en = "<navy>I should find <maroon>Father Urhney, <navy>who is an expert on <maroon>ghosts."
+pt = "<navy>Devo encontrar o <maroon>Father Urhney, <navy>especialista em <maroon>fantasmas."
+
+[.journal_79]
+en = "<navy>He lives in a <maroon>shack <navy>in the south of <maroon>Lumbridge Swamp, <navy>near<br><navy>the coastline."
+pt = "<navy>Ele mora num <maroon>barraco <navy>no sul do <maroon>Lumbridge Swamp, <navy>perto<br><navy>do litoral."
+
+[.journal_80]
+en = "<str>I should go and search the Mining spot south of Lumbridge<br><str>for the ghost's skull."
+pt = "<str>Devo vasculhar o ponto de mineração (Mining spot) ao sul de<br><str>Lumbridge em busca do crânio do fantasma."
+
+[.journal_81]
+en = "<str>I should take the skull back to the ghost so it can rest in peace."
+pt = "<str>Devo levar o crânio de volta ao fantasma para que ele possa<br><str>descansar em paz."
+
+[.journal_82]
+en = "<str>He lives in a shack in the south of Lumbridge Swamp, near<br><str>the coastline."
+pt = "<str>Ele mora num barraco no sul do Lumbridge Swamp, perto<br><str>do litoral."
+
+[.journal_83]
+en = "<navy>I should talk to the <maroon>ghost <navy>in the crypt south of Lumbridge<br><navy>church to find out why it is haunting the <maroon>graveyard <navy>I must<br><navy>make sure to wear my ghostspeak amulet when doing so."
+pt = "<navy>Devo falar com o <maroon>fantasma <navy>na cripta ao sul da igreja de<br><navy>Lumbridge para descobrir por que ele assombra o <maroon>cemitério<navy>.<br><navy>Preciso lembrar de usar meu Amulet of ghostspeak quando<br><navy>fizer isso."
+
+[.journal_84]
+en = "<navy>I seem to have loast my <maroon>Amulet of Ghost speak. <navy>I should talk to<br><maroon>Father Urhney <navy>and see if he has a replacement."
+pt = "<navy>Parece que perdi meu <maroon>Amulet of ghostspeak. <navy>Devo falar com o<br><maroon>Father Urhney <navy>e ver se ele tem outro."
+
+[.journal_85]
+en = "<navy>I can start this quest by speaking to <maroon>Father Aereck <navy>in the<br><maroon>church <navy>next to <maroon>Lumbridge Castle."
+pt = "<navy>Posso começar esta missão falando com o <maroon>Father Aereck <navy>na<br><maroon>igreja <navy>ao lado do <maroon>Lumbridge Castle."
+
+[.journal_86]
+en = "<navy>I can start this quest by speaking to <maroon>Juna the serpent<navy> who lives<br><navy>deep in the <maroon>Lumbridge Swamp Caves<navy>."
+pt = "<navy>Posso começar esta missão falando com <maroon>Juna, a serpente<navy>,<br><navy>que vive nas profundezas das <maroon>Lumbridge Swamp Caves<navy>."
+
+[.journal_87]
+en = "<str>I met Juna the serpent in a deep chasm beneath the<br><str>Lumbridge Swamp Caves."
+pt = "<str>Conheci Juna, a serpente, num abismo profundo sob as<br><str>Lumbridge Swamp Caves."
+
+[.journal_88]
+en = "<navy>I told her a story and she said she would let me into the Tears of<br><navy>Guthix cave if I brought her a <maroon>bowl<navy> made from the stone in <maroon>the<br><maroon>cave on the South side of the chasm<navy>."
+pt = "<navy>Contei uma história a ela, e ela disse que me deixaria entrar<br><navy>na caverna das Tears of Guthix se eu lhe trouxesse uma<br><maroon>tigela (bowl)<navy> feita com a pedra da <maroon>caverna do lado sul do<br><maroon>abismo<navy>."
+
+[.journal_89]
+en = "<str>I met Juna the serpent in a deep chasm beneath the<br><str>Lumbridge Swamp Caves. I made a bowl out of magical stone in<br><str>order to catch the Tears of Guthix."
+pt = "<str>Conheci Juna, a serpente, num abismo profundo sob as<br><str>Lumbridge Swamp Caves. Fiz uma tigela (bowl) de pedra<br><str>mágica para recolher as Tears of Guthix."
+
+[.journal_90]
+en = "<navy>Now Juna will let me into the cave to collect the Tears if I <maroon>tell<br><maroon>her stories<navy> of my adventures."
+pt = "<navy>Agora Juna vai me deixar entrar na caverna para coletar as<br><navy>Tears se eu <maroon>contar histórias<navy> das minhas aventuras."
+
+[.journal_91]
+en = "<navy>I have had enough adventures to tell Juna more stories, and a week<br><navy>has passed since I last collected the Tears. I can visit Juna again<br><navy>now."
+pt = "<navy>Já vivi aventuras suficientes para contar mais histórias a<br><navy>Juna, e já se passou uma semana desde a última vez que<br><navy>coletei as Tears. Posso visitar Juna de novo agora."
+
+[.journal_92]
+en = "<navy>I will be able to collect the Tears of Guthix <maroon>in %1% day<navy>."
+pt = "<navy>Poderei coletar as Tears of Guthix <maroon>em %1% dia<navy>."
+
+[.journal_93]
+en = "<navy>I will be able to collect the Tears of Guthix <maroon>in %1% days<navy>."
+pt = "<navy>Poderei coletar as Tears of Guthix <maroon>em %1% dias<navy>."
+
+[.journal_94]
+en = "<str>I've spoken to Edmond in East Ardougne. He's asked to<br><str>help find his daughter Elena, who's gone missing while <br><str>trying to help plague victims in West Ardougne."
+pt = "<str>Falei com Edmond em East Ardougne. Ele pediu ajuda para<br><str>achar a filha, Elena, que sumiu enquanto tentava ajudar<br><str>as vítimas da praga em West Ardougne."
+
+[.journal_95]
+en = "<str>Alrena has given me a Gas Mask to protect me from the<br><str>Plague while in West Ardougne. She's made me a spare one<br><str>and left it in he wardrobe for if I lose this one."
+pt = "<str>Alrena me deu uma Gas Mask para me proteger da praga em<br><str>West Ardougne. Ela fez uma reserva e deixou no guarda-roupa,<br><str>caso eu perca esta."
+
+[.journal_96]
+en = "<str>I've spoken to Edmond about getting into West Ardougne."
+pt = "<str>Falei com Edmond sobre como entrar em West Ardougne."
+
+[.journal_97]
+en = "<str>He thinks I can get into the city through the sewers beneath<br><str>his home."
+pt = "<str>Ele acha que posso entrar na cidade pelos esgotos embaixo<br><str>da casa dele."
+
+[.journal_98]
+en = "<str>I've softened the ground in Edmond's garden enough to dig<br><str>down into the Sewers."
+pt = "<str>Amoleci a terra do jardim de Edmond o bastante para cavar<br><str>até os esgotos."
+
+[.journal_99]
+en = "<str>I've dug a tunnel into the Ardougne sewers from Edmond's garden"
+pt = "<str>Cavei um túnel do jardim de Edmond até os Ardougne Sewers."
+
+[.journal_100]
+en = "<str>I've found a pipe that leads out of the Ardougne Sewers<br><str>and into West Ardougne."
+pt = "<str>Achei um cano que sai dos Ardougne Sewers e vai dar em<br><str>West Ardougne."
+
+[.journal_101]
+en = "<str>I entered West Ardougne and found Jethick, an old friend<br><str>of Edmond. He thinks that Elena was staying with the<br><str>Rehnison Family."
+pt = "<str>Entrei em West Ardougne e achei Jethick, um velho amigo de<br><str>Edmond. Ele acha que Elena estava hospedada com a<br><str>Rehnison Family."
+
+[.journal_102]
+en = "<str>I visited the home of the Rehnison Family. in the north of<br><str>the city to see if I could find Elena."
+pt = "<str>Visitei a casa da Rehnison Family, no norte da cidade, para<br><str>ver se achava Elena."
+
+[.journal_103]
+en = "<str>According to Milli Rehnison, Elena was captured and taken<br><str>into a Plague House in the south east corner of the city"
+pt = "<str>Segundo Milli Rehnison, Elena foi capturada e levada para<br><str>uma Plague House no canto sudeste da cidade."
+
+[.journal_104]
+en = "<str>I tried to get into the Plague House but was denied entry"
+pt = "<str>Tentei entrar na Plague House, mas fui barrado."
+
+[.journal_105]
+en = "<str>Apparently, I need clearance from either the Head"
+pt = "<str>Parece que preciso de autorização do Head"
+
+[.journal_106]
+en = "<str>Mourner or Bravek, the City Warder."
+pt = "<str>Mourner ou de Bravek, o City Warder."
+
+[.journal_107]
+en = "<str>Bravek, the City Warder, gave me a Warrant to enter the<br><str>Plague House. However, I need to bring him a<br><str><maroon>Hangover Cure<navy> first. He gave me a recipe for this cure."
+pt = "<str>Bravek, o City Warder, me deu um Warrant para entrar na<br><str>Plague House. Mas antes preciso levar a ele uma<br><str><maroon>Hangover Cure<navy>. Ele me deu a receita dessa cura."
+
+[.journal_108]
+en = "<navy>According to <maroon>Milli Rehnison, Elena <navy> was captured and taken<br><navy>into a <maroon>Plague House <navy>in the south east corner of the city I<br><navy>should go there and see if I can get into the house."
+pt = "<navy>Segundo <maroon>Milli Rehnison, Elena <navy>foi capturada e levada<br><navy>para uma <maroon>Plague House <navy>no canto sudeste da cidade.<br><navy>Devo ir até lá e ver se consigo entrar na casa."
+
+[.journal_109]
+en = "<navy>I now need to dig a tunnel into the <maroon>Ardougne Sewers <navy>from<br><maroon>Edmond's <navy>garden."
+pt = "<navy>Agora preciso cavar um túnel do jardim de <maroon>Edmond<br><navy>até os <maroon>Ardougne Sewers<navy>."
+
+[.journal_110]
+en = "<navy>I need to talk to <maroon>Edmond <navy>about getting into <maroon>West Ardougne."
+pt = "<navy>Preciso falar com <maroon>Edmond <navy>sobre como entrar em<br><maroon>West Ardougne."
+
+[.journal_111]
+en = "<str>Bravek, the City Warder, gave me a Warrant to enter the<br><str>Plague House in return for a Hangover Cure"
+pt = "<str>Bravek, o City Warder, me deu um Warrant para entrar na<br><str>Plague House em troca de uma Hangover Cure."
+
+[.journal_112]
+en = "<str>I managed to get into the Plague House"
+pt = "<str>Consegui entrar na Plague House."
+
+[.journal_113]
+en = "<str>I successfully freed Elena from the Plague House. I<br><str>returned to Edmond who thanked me for rescuing her. He<br><str>game me a new spell to learn as a reward."
+pt = "<str>Libertei Elena da Plague House. Voltei até Edmond, que me<br><str>agradeceu por resgatá-la. Como recompensa, ele me ensinou<br><str>um feitiço novo."
+
+[.journal_114]
+en = "<navy>I visited the home of the <maroon>Rehnison Family. <navy>in the north of<br><navy>the city to see if I could find <maroon>Elena. <navy>According to her<br><navy>parents, <maroon>Milli Rehnison <navy>may have seen <maroon>Elena."
+pt = "<navy>Visitei a casa da <maroon>Rehnison Family. <navy>no norte da cidade,<br><navy>para ver se achava <maroon>Elena. <navy>Segundo os pais dela,<br><maroon>Milli Rehnison <navy>pode ter visto <maroon>Elena."
+
+[.journal_115]
+en = "<navy>I can start this quest by talking to <maroon>Edmond <navy>at his home in northern"
+pt = "<navy>Posso começar esta missão falando com <maroon>Edmond <navy>na casa dele,"
+
+[.journal_116]
+en = "<maroon>East Ardougne."
+pt = "<navy>no norte de <maroon>East Ardougne."
+
+[.journal_117]
+en = "<navy>I successfully freed <maroon>Elena <navy>from the <maroon>Plague House. <navy>I should<br><navy>return to <maroon>Edmond <navy>and let him know."
+pt = "<navy>Libertei <maroon>Elena <navy>da <maroon>Plague House. <navy>Devo voltar até<br><maroon>Edmond <navy>e contar a ele."
+
+[.journal_118]
+en = "<navy>I need to dig a tunnel down into the <maroon>Ardougne Sewers<navy> from<br><navy><maroon>Edmond's<navy> garden. However, I first need to use some <maroon>Buckets<br><maroon>of Water<navy> to soften the ground. <maroon>Edmond<navy> reckons four <maroon>Buckets<br><maroon>of Water<navy> should be enough."
+pt = "<navy>Preciso cavar um túnel até os <maroon>Ardougne Sewers<navy> a partir<br><navy>do jardim de <maroon>Edmond<navy>. Mas antes preciso usar alguns<br><maroon>Buckets of Water<navy> para amolecer a terra. <maroon>Edmond<navy> acha<br><navy>que quatro <maroon>Buckets of Water<navy> devem bastar."
+
+[.journal_119]
+en = "<navy>I need to dig a tunnel down into the <maroon>Ardougne Sewers <navy>from<br><maroon>Edmond's <navy>garden. However, I first need to use some"
+pt = "<navy>Preciso cavar um túnel até os <maroon>Ardougne Sewers <navy>a partir<br><navy>do jardim de <maroon>Edmond<navy>. Mas antes preciso usar alguns"
+
+[.journal_120]
+en = "<maroon>Bucket of Water <navy>to soften the ground.<maroon>Edmond <navy>reckons<br><navy>four <maroon>Bucket of Water <navy>should be enough."
+pt = "<maroon>Bucket of Water <navy>para amolecer a terra. <maroon>Edmond <navy>acha<br><navy>que quatro <maroon>Bucket of Water <navy>devem bastar."
+
+[.journal_121]
+en = "<navy>I've used two <maroon>Bucket of Water <navy>so far."
+pt = "<navy>Já usei dois <maroon>Bucket of Water <navy>até agora."
+
+[.journal_122]
+en = "<navy>I tried to get into the <maroon>Plague House <navy>but was denied entry"
+pt = "<navy>Tentei entrar na <maroon>Plague House<navy>, mas fui barrado."
+
+[.journal_123]
+en = "<navy>Apparently, I need clearance from either the <maroon>Head"
+pt = "<navy>Parece que preciso de autorização do <maroon>Head"
+
+[.journal_124]
+en = "<maroon>Mourner <navy>or <maroon>Bravek<navy>, the <maroon>City Warder."
+pt = "<maroon>Mourner <navy>ou de <maroon>Bravek<navy>, o <maroon>City Warder."
+
+[.journal_125]
+en = "<navy>I entered <maroon>West Ardougne <navy>and found <maroon>Jethick<navy>, an old friend<br><navy>of <maroon>Edmond. <navy>He thinks that <maroon>Elena <navy>was staying with the<br><maroon>Rehnison Family. <navy>According to him, they live in a timber<br><navy>house in the north of the city."
+pt = "<navy>Entrei em <maroon>West Ardougne <navy>e achei <maroon>Jethick<navy>, um velho amigo<br><navy>de <maroon>Edmond. <navy>Ele acha que <maroon>Elena <navy>estava hospedada com a<br><maroon>Rehnison Family. <navy>Segundo ele, eles moram numa casa de<br><navy>madeira no norte da cidade."
+
+[.journal_126]
+en = "<navy>I've used three <maroon>Bucket of Water <navy>so far."
+pt = "<navy>Já usei três <maroon>Bucket of Water <navy>até agora."
+
+[.journal_127]
+en = "<navy>I entered <maroon>West Ardougne<navy> and found <maroon>Jethick<navy>, an old friend of<br><navy><maroon>Edmond<navy>. He seemed willing to help me find <maroon>Elena<navy> but didn't<br><navy>know what she looked like. He suggested I get a picture of her."
+pt = "<navy>Entrei em <maroon>West Ardougne<navy> e achei <maroon>Jethick<navy>, um velho amigo<br><navy>de <maroon>Edmond<navy>. Ele parecia disposto a me ajudar a achar<br><maroon>Elena<navy>, mas não sabia como ela era. Ele sugeriu que eu<br><navy>arrumasse um retrato dela."
+
+[.journal_128]
+en = "<navy>Perhaps <maroon>Edmond<navy> and <maroon>Alrena<navy> have one."
+pt = "<navy>Talvez <maroon>Edmond<navy> e <maroon>Alrena<navy> tenham um."
+
+[.journal_129]
+en = "<navy>I've used one <maroon>Bucket of Water <navy>so far."
+pt = "<navy>Já usei um <maroon>Bucket of Water <navy>até agora."
+
+[.journal_130]
+en = "<navy>I entered the <maroon>Plague House <navy>and found <maroon>Elena. <navy>Now I just<br><navy>need to free her. She thinks the key to her cell is hidden<br><navy>somewhere in the house."
+pt = "<navy>Entrei na <maroon>Plague House <navy>e achei <maroon>Elena. <navy>Agora só<br><navy>preciso libertá-la. Ela acha que a chave da cela está<br><navy>escondida em algum lugar da casa."
+
+[.journal_131]
+en = "<maroon>Edmond <navy>told me that his wife, <maroon>Alrena, <navy>can make me a <maroon>gas"
+pt = "<maroon>Edmond <navy>me disse que a esposa dele, <maroon>Alrena, <navy>pode me fazer"
+
+[.journal_132]
+en = "<maroon>Mask <navy>to protect myself from the <maroon>plague."
+pt = "<navy>uma <maroon>Gas Mask <navy>para me proteger da <maroon>praga."
+
+[.journal_133]
+en = "<navy>I have the <maroon>Dwellberries <navy>she needs to make it."
+pt = "<navy>Tenho as <maroon>Dwellberries <navy>de que ela precisa para fazê-la."
+
+[.journal_134]
+en = "<navy>I should give them to her."
+pt = "<navy>Devo entregá-las a ela."
+
+[.journal_135]
+en = "<navy>I've found a pipe that leads out of the <maroon>Ardougne Sewers<br><navy>and into <maroon>West Ardougne. <navy>However, there's a <maroon>Grill <navy>blocking<br><navy>my way. I've tied a rope to the <maroon>Grill <navy>but I need help to pull it<br><navy>off, I should ask <maroon>Edmond <navy>for some help."
+pt = "<navy>Achei um cano que sai dos <maroon>Ardougne Sewers <navy>e vai dar em<br><maroon>West Ardougne. <navy>Mas tem uma <maroon>Grill <navy>no caminho.<br><navy>Amarrei uma corda na <maroon>Grill<navy>, mas preciso de ajuda para<br><navy>arrancá-la. Devo pedir ajuda a <maroon>Edmond."
+
+[.journal_136]
+en = "<navy>I need to find a way out of the <maroon>Ardougne Sewers <navy>and into<br><maroon>West Ardougne."
+pt = "<navy>Preciso achar um jeito de sair dos <maroon>Ardougne Sewers <navy>e<br><navy>entrar em <maroon>West Ardougne."
+
+[.journal_137]
+en = "<navy>I can now enter <maroon>West Ardougne. Edmond <navy>told me to look out<br><navy>for a old family friend named <maroon>Jethick<navy>, who might be able<br><navy>to help me find <maroon>Elena. <navy>I should make sure I wear my <maroon>gas"
+pt = "<navy>Agora posso entrar em <maroon>West Ardougne. Edmond <navy>me disse<br><navy>para procurar um velho amigo da família chamado <maroon>Jethick<navy>,<br><navy>que pode me ajudar a achar <maroon>Elena. <navy>Devo usar minha <maroon>gas"
+
+[.journal_138]
+en = "<maroon>Mask <navy>while in <maroon>West Ardougne."
+pt = "<maroon>Mask <navy>enquanto estiver em <maroon>West Ardougne."
+
+[.journal_139]
+en = "<str>I've spoken to Elena, the Mourners stole her distillator."
+pt = "<str>Falei com Elena: os Mourners roubaram o distillator dela."
+
+[.journal_140]
+en = "<str>I've spoken to Jerico about getting into West Ardougne."
+pt = "<str>Falei com Jerico sobre como entrar em West Ardougne."
+
+[.journal_141]
+en = "<maroon>Omart <navy>will be able to get me over the wall."
+pt = "<maroon>Omart <navy>pode me ajudar a pular o muro."
+
+[.journal_142]
+en = "<navy>He's waiting at the <maroon>South <navy>end of the wall."
+pt = "<navy>Ele está esperando na ponta <maroon>sul <navy>do muro."
+
+[.journal_143]
+en = "<navy>I've chucked some birdfeed onto the Watch Tower."
+pt = "<navy>Joguei um pouco de ração de pássaro na Watch Tower."
+
+[.journal_144]
+en = "<str>I've crossed the wall into West Ardougne."
+pt = "<str>Pulei o muro e entrei em West Ardougne."
+
+[.journal_145]
+en = "<str>Omart and Kilron will stay to help me out again."
+pt = "<str>Omart e Kilron vão ficar para me ajudar de novo."
+
+[.journal_146]
+en = "<str>Elena gave me some chemicals to take to Guidor."
+pt = "<str>Elena me deu uns produtos químicos para levar a Guidor."
+
+[.journal_147]
+en = "<str>I've given all the items to Guidor."
+pt = "<str>Entreguei todos os itens a Guidor."
+
+[.journal_148]
+en = "<str>I've told Elena of Guidor's findings, she was horrified!"
+pt = "<str>Contei a Elena o que Guidor descobriu. Ela ficou horrorizada!"
+
+[.journal_149]
+en = "<str>I've spoken to King Lathas, he admits the Plague was fake!"
+pt = "<str>Falei com King Lathas. Ele admitiu que a praga era falsa!"
+
+[.journal_150]
+en = "<str>I have been given permission to use the Royal Training"
+pt = "<str>Recebi permissão para usar os Royal Training"
+
+[.journal_151]
+en = "<str>Grounds which are located in North West of Ardougne."
+pt = "<str>Grounds, que ficam no noroeste de Ardougne."
+
+[.journal_152]
+en = "<col=ff0000>QUEST COMPLETE!"
+pt = "<col=ff0000>MISSÃO CONCLUÍDA!"
+
+[.journal_153]
+en = "<navy>Somewhere in the city is <maroon>Elena's distillator <navy>- I must find it<br><navy>and return it to her."
+pt = "<navy>Em algum lugar da cidade está o <maroon>distillator <navy>de Elena -<br><navy>preciso achá-lo e devolvê-lo a ela."
+
+[.journal_154]
+en = "<navy>I need to confront the <maroon>King of East Ardougne<navy>."
+pt = "<navy>Preciso confrontar o <maroon>rei de East Ardougne<navy>."
+
+[.journal_155]
+en = "<maroon>Guidor's <navy>findings were very interesting."
+pt = "<navy>O que <maroon>Guidor <navy>descobriu foi muito interessante."
+
+[.journal_156]
+en = "<navy>Apparently there is no <maroon>Plague!"
+pt = "<navy>Parece que não existe <maroon>praga!"
+
+[.journal_157]
+en = "<navy>I should see what Elena thinks of this."
+pt = "<navy>Devo ver o que Elena acha disso."
+
+[.journal_158]
+en = "<str>I managed to find Elena's distillator."
+pt = "<str>Consegui achar o distillator de Elena."
+
+[.journal_159]
+en = "<navy>I seem to have mislaid the <maroon>distillator"
+pt = "<navy>Parece que perdi o <maroon>distillator"
+
+[.journal_160]
+en = "<navy>I had better try to find another, or <maroon>Elena <navy>will be upset."
+pt = "<navy>É melhor eu achar outro, ou <maroon>Elena <navy>vai ficar chateada."
+
+[.journal_161]
+en = "<navy>I have rather unkindly poisoned the mourners' stew by<br><navy>putting rotten apples into it!"
+pt = "<navy>Fui bem maldoso e envenenei o ensopado dos mourners<br><navy>colocando maçãs podres nele!"
+
+[.journal_162]
+en = "<navy>At least the mourners aren't very nice people, so I don't<br><navy>feel bad about this."
+pt = "<navy>Pelo menos os mourners não são gente muito boa, então não<br><navy>me sinto mal com isso."
+
+[.journal_163]
+en = "<navy>The Watch Tower is now surrounded by flapping pigeons!"
+pt = "<navy>A Watch Tower agora está cercada de pombos batendo asas!"
+
+[.journal_164]
+en = "<navy>Maybe I can sneak over the wall while the mourners are<br><navy>distracted."
+pt = "<navy>Talvez eu consiga pular o muro escondido enquanto os<br><navy>mourners estão distraídos."
+
+[.journal_165]
+en = "<navy>I need to talk to <maroon>Jerico <navy>about getting over the wall and into<br><maroon>West Ardougne<navy>."
+pt = "<navy>Preciso falar com <maroon>Jerico <navy>sobre como pular o muro e entrar<br><navy>em <maroon>West Ardougne<navy>."
+
+[.journal_166]
+en = "<str>I've found Elena's distillator and returned it to her."
+pt = "<str>Achei o distillator de Elena e o devolvi a ela."
+
+[.journal_167]
+en = "<navy>Elena's asked me to take the following items to <maroon>Guidor <navy>who<br><navy>lives in <maroon>Varrock<navy>."
+pt = "<navy>Elena me pediu para levar os itens abaixo a <maroon>Guidor<navy>, que<br><navy>mora em <maroon>Varrock<navy>."
+
+[.journal_168]
+en = "<maroon>Plague Sample <navy>from <maroon>Elena<navy>."
+pt = "<maroon>Plague Sample <navy>de <maroon>Elena<navy>."
+
+[.journal_169]
+en = "<maroon>Liquid Honey"
+pt = "<maroon>Liquid Honey"
+
+[.journal_170]
+en = "<maroon>Sulphuric Broline"
+pt = "<maroon>Sulphuric Broline"
+
+[.journal_171]
+en = "<maroon>Ethenea"
+pt = "<maroon>Ethenea"
+
+[.journal_172]
+en = "<maroon>Touch Paper <navy>from the <maroon>Chemist <navy>in <maroon>Rimmington<navy>."
+pt = "<maroon>Touch Paper <navy>do <maroon>Chemist <navy>em <maroon>Rimmington<navy>."
+
+[.journal_173]
+en = "<navy>I can start this quest by speaking to <maroon>Elena <navy>who is in <maroon>East"
+pt = "<navy>Posso começar esta missão falando com <maroon>Elena<navy>, que está em <maroon>East"
+
+[.journal_174]
+en = "<maroon>Ardougne<navy>."
+pt = "<maroon>Ardougne<navy>."
+
+[.journal_175]
+en = "<navy>Requirements."
+pt = "<navy>Requisitos."
+
+[.journal_176]
+en = "<navy>I need to complete <maroon>Plague City <navy>before I can attempt this<br><navy>quest."
+pt = "<navy>Preciso completar <maroon>Plague City <navy>antes de tentar esta<br><navy>missão."
+
+[.journal_177]
+en = "<str>I need to complete Plague City before I can attempt this<br><str>quest."
+pt = "<str>Preciso completar Plague City antes de tentar esta<br><str>missão."
+
+[.journal_178]
+en = "<navy>The Varrock guards are looking out for someone carrying<br><navy>suspicious materials. I must smuggle the items to <maroon>Guidor<br><navy>secretly."
+pt = "<navy>Os guardas de Varrock estão de olho em quem leva materiais<br><navy>suspeitos. Preciso contrabandear os itens até <maroon>Guidor<br><navy>em segredo."
+
+[.journal_179]
+en = "<str>According to one of the adventurers in Lumbridge Swamp the<br><str>entrance to Zanaris is somewhere around there."
+pt = "<str>Segundo um dos aventureiros do Lumbridge Swamp, a entrada<br><str>de Zanaris fica em algum lugar por ali."
+
+[.journal_180]
+en = "<str>I found a Leprechaun hiding in a nearby tree."
+pt = "<str>Achei um duende escondido numa árvore ali perto."
+
+[.journal_181]
+en = "<navy>He told me that the entrance to <maroon>Zanaris <navy>is in the <maroon>shed <navy>in <br><maroon>Lumbridge Swamp<navy>, but only if I am carrying a <maroon>dramen staff."
+pt = "<navy>Ele me disse que a entrada de <maroon>Zanaris <navy>fica no <maroon>galpão <navy>do<br><maroon>Lumbridge Swamp<navy>, mas só se eu estiver com um <maroon>dramen staff."
+
+[.journal_182]
+en = "<navy>I can find a <maroon>dramen tree <navy>in a cave somewhere on <maroon>Entrana"
+pt = "<navy>Posso achar uma <maroon>dramen tree <navy>numa caverna em <maroon>Entrana"
+
+[.journal_183]
+en = "<str>He told me that the entrance to Zanaris is in the shed in<br><str>Lumbridge swamp but only if I am carrying a Dramen Staff."
+pt = "<str>Ele me disse que a entrada de Zanaris fica no galpão do<br><str>Lumbridge Swamp, mas só se eu estiver com um Dramen Staff."
+
+[.journal_184]
+en = "<str>The Dramen Tree was guarded by a powerful Tree Spirit."
+pt = "<str>A Dramen Tree era guardada por um poderoso Tree Spirit."
+
+[.journal_185]
+en = "<str>I cut a branch from the tree and crafted a Dramen Staff."
+pt = "<str>Cortei um galho da árvore e fiz um Dramen Staff."
+
+[.journal_186]
+en = "<navy>I should enter <maroon>Zanaris <navy>by going to the <maroon>shed <navy>in <maroon>Lumbridge Swamp <br><navy>while wielding a <maroon>dramen staff."
+pt = "<navy>Devo entrar em <maroon>Zanaris <navy>indo ao <maroon>galpão <navy>do<br><maroon>Lumbridge Swamp <navy>com um <maroon>dramen staff <navy>empunhado."
+
+[.journal_187]
+en = "<str>According to one of the adventurers in Lumbridge Swamp, <br><str>the entrance to Zanaris is somewhere around there."
+pt = "<str>Segundo um dos aventureiros do Lumbridge Swamp, a entrada<br><str>de Zanaris fica em algum lugar por ali."
+
+[.journal_188]
+en = "<navy>Apparently, there is a <maroon>leprechaun <navy>hiding in a tree nearby <br><navy>who can tell me how to enter the <maroon>lost city of Zanaris."
+pt = "<navy>Parece que tem um <maroon>duende <navy>escondido numa árvore ali<br><navy>perto que sabe como entrar na <maroon>cidade perdida de Zanaris."
+
+[.journal_189]
+en = "<str>With the mystical Dramen Staff in my possession I was able to<br><str>enter Zanaris through the shed in Lumbridge swamp."
+pt = "<str>Com o místico Dramen Staff em mãos, consegui entrar em<br><str>Zanaris pelo galpão do Lumbridge Swamp."
+
+[.journal_190]
+en = "<navy>I can start this quest by speaking to the <maroon>adventurers <navy>in the <br><navy>south part of <maroon>Lumbridge Swamp."
+pt = "<navy>Posso começar esta missão falando com os <maroon>aventureiros<br><navy>no sul do <maroon>Lumbridge Swamp."
+
+[.journal_191]
+en = "<navy>With the <maroon>spirit <navy>defeated, I can cut a <maroon>branch <navy>from the dramen tree."
+pt = "<navy>Com o <maroon>espírito <navy>derrotado, posso cortar um <maroon>galho <navy>da<br><navy>dramen tree."
+
+[.journal_192]
+en = "<navy>I can start this quest by speaking to the <maroon>Gypsy<navy> in the <maroon>tent<br><navy>in <maroon>Varrock's main square."
+pt = "<navy>Posso começar esta missão falando com a <maroon>Gypsy<navy> na<br><maroon>tenda<navy> da <maroon>praça principal de Varrock."
+
+[.journal_193]
+en = "<navy>I must be able to defeat a level 27 <maroon>apocalyptic demon<navy>!"
+pt = "<navy>Preciso ser capaz de derrotar um <maroon>demônio apocalíptico<navy><br><navy>de nível 27!"
+
+[.journal_194]
+en = "<str>I spoke to Aris in Varrock Square who saw my future."
+pt = "<str>Falei com Aris na praça de Varrock, e ela viu meu futuro."
+
+[.journal_195]
+en = "<str>Unfortunately it involved killing a demon who nearly<br><str>destroyed Varrock over 150 years ago."
+pt = "<str>Infelizmente, ele envolvia matar um demônio que quase<br><str>destruiu Varrock há mais de 150 anos."
+
+[.journal_196]
+en = "<navy>To defeat the <maroon>demon<navy> I need the magical sword <maroon>Silverlight<navy>."
+pt = "<navy>Para derrotar o <maroon>demônio<navy>, preciso da espada mágica<br><maroon>Silverlight<navy>."
+
+[.journal_197]
+en = "<navy>I should ask <maroon>Sir Prysin<navy> in <maroon>Varrock Palace<navy> where it is."
+pt = "<navy>Devo perguntar a <maroon>Sir Prysin<navy>, no <maroon>Varrock Palace<navy>, onde ela está."
+
+[.journal_198]
+en = "<maroon>Sir Prysin<navy> needs <maroon>3 keys<navy> before he can give me <maroon>Silverlight<navy>."
+pt = "<maroon>Sir Prysin<navy> precisa de <maroon>3 chaves<navy> para me dar a <maroon>Silverlight<navy>."
+
+[.journal_199]
+en = "<navy>The <maroon>1st Key<navy> was dropped down the <maroon>palace kitchen drains<navy>."
+pt = "<navy>A <maroon>1ª chave<navy> caiu no <maroon>ralo da cozinha do palácio<navy>."
+
+[.journal_200]
+en = "<navy>Maybe some water can dislodge it."
+pt = "<navy>Talvez um pouco de água consiga soltá-la."
+
+[.journal_201]
+en = "<navy>The <maroon>2nd Key<navy> is with Captain Rovin in Varrock Palace."
+pt = "<navy>A <maroon>2ª chave<navy> está com Captain Rovin no Varrock Palace."
+
+[.journal_202]
+en = "<navy>The <maroon>3rd Key<navy> is with Wizard Traiborn at the Wizards' Tower,<br><navy>south of Draynor Village."
+pt = "<navy>A <maroon>3ª chave<navy> está com Wizard Traiborn na Wizards' Tower,<br><navy>ao sul de Draynor Village."
+
+[.journal_203]
+en = "<str>I reclaimed the magical sword Silverlight from Sir Prysin."
+pt = "<str>Recuperei a espada mágica Silverlight com Sir Prysin."
+
+[.journal_204]
+en = "<str>Using its power I managed to destroy the demon Delrith<br><str>like the great hero Wally did many years before."
+pt = "<str>Com o poder dela, consegui destruir o demônio Delrith,<br><str>como o grande herói Wally fez muitos anos antes."
+
+[.journal_205]
+en = "<maroon>Traiborn<navy> needs <maroon>%1%<navy> more <maroon>bones<navy>."
+pt = "<maroon>Traiborn<navy> precisa de mais <maroon>%1%<navy> <maroon>ossos (bones)<navy>."
+
+[.journal_206]
+en = "<str>I talked to a stranger called Vanstrom Klause in the 'Hair<br><str>of the Dog Inn' located in the town of Canifis."
+pt = "<str>Conversei com um estranho chamado Vanstrom Klause na<br><str>'Hair of the Dog Inn', na cidade de Canifis."
+
+[.journal_207]
+en = "<maroon>Vanstrom Klause <navy>asked me to take some <maroon>weapons <navy>to a<br><navy>group called '<maroon>The Myreque<navy>'."
+pt = "<maroon>Vanstrom Klause <navy>me pediu para levar algumas <maroon>armas <navy>a um<br><navy>grupo chamado '<maroon>The Myreque<navy>'."
+
+[.journal_208]
+en = "<navy>The weapons I need to collect are:"
+pt = "<navy>As armas que preciso juntar são:"
+
+[.journal_209]
+en = "<str>1 x Steel Longsword"
+pt = "<str>1 x Steel Longsword"
+
+[.journal_210]
+en = "<str>2 x Steel Sword"
+pt = "<str>2 x Steel Sword"
+
+[.journal_211]
+en = "<str>1 x Steel Dagger"
+pt = "<str>1 x Steel Dagger"
+
+[.journal_212]
+en = "<str>1 x Steel Mace"
+pt = "<str>1 x Steel Mace"
+
+[.journal_213]
+en = "<str>1 x Steel Warhammer"
+pt = "<str>1 x Steel Warhammer"
+
+[.journal_214]
+en = "<str>The boatman says he won't take me to the Myreque"
+pt = "<str>O barqueiro diz que não vai me levar até os Myreque."
+
+[.journal_215]
+en = "<str>Vanstrom did say that I have to be persuasive."
+pt = "<str>Vanstrom bem que disse que eu teria de ser persuasivo."
+
+[.journal_216]
+en = "<str>A guard named Curpile asked me some questions about the<br><str>Myreque which I answered, he'll unlock the door for me<br><str>now"
+pt = "<str>Um guarda chamado Curpile me fez algumas perguntas sobre os<br><str>Myreque, que eu respondi; agora ele vai destrancar a porta<br><str>para mim."
+
+[.journal_217]
+en = "<navy>I need to find the <maroon>entrance <navy>to the <maroon>Myreque's hideout."
+pt = "<navy>Preciso encontrar a <maroon>entrada <navy>do <maroon>esconderijo dos Myreque."
+
+[.journal_218]
+en = "<str>I borrowed the boat and travelled to the 'Hollows' in the<br><str>middle of Mort Myre in search of the Myreque."
+pt = "<str>Peguei o barco emprestado e fui até os 'Hollows', no meio<br><str>de Mort Myre, em busca dos Myreque."
+
+[.journal_219]
+en = "<str>While looking for the hideout, I came across a guard called<br><str>Curpile, he may know where the Myreque are hidden."
+pt = "<str>Procurando o esconderijo, encontrei um guarda chamado<br><str>Curpile; talvez ele saiba onde os Myreque se escondem."
+
+[.journal_220]
+en = "<navy>A guard named <maroon>Curpile <navy>asked me to answer some<br><navy>questions before he'll let me continue my search for the<br><maroon>Myreque<navy>."
+pt = "<navy>Um guarda chamado <maroon>Curpile <navy>me pediu para responder a<br><navy>algumas perguntas antes de me deixar continuar a busca<br><navy>pelos <maroon>Myreque<navy>."
+
+[.journal_221]
+en = "<str>The boatman loaned me the use of his boat."
+pt = "<str>O barqueiro me emprestou o barco dele."
+
+[.journal_222]
+en = "<navy>I borrowed the <maroon>boat <navy>and travelled to the '<maroon>Hollows<navy>' in the<br><navy>middle of <maroon>Mort Myre <navy>in search of the <maroon>Myreque."
+pt = "<navy>Peguei o <maroon>barco <navy>emprestado e fui até os '<maroon>Hollows<navy>', no<br><navy>meio de <maroon>Mort Myre<navy>, em busca dos <maroon>Myreque."
+
+[.journal_223]
+en = "<maroon>1 x Steel Longsword"
+pt = "<maroon>1 x Steel Longsword"
+
+[.journal_224]
+en = "<maroon>2 x Steel Sword"
+pt = "<maroon>2 x Steel Sword"
+
+[.journal_225]
+en = "<maroon>1 x Steel Dagger"
+pt = "<maroon>1 x Steel Dagger"
+
+[.journal_226]
+en = "<maroon>1 x Steel Mace"
+pt = "<maroon>1 x Steel Mace"
+
+[.journal_227]
+en = "<maroon>1 x Steel Warhammer"
+pt = "<maroon>1 x Steel Warhammer"
+
+[.journal_228]
+en = "<str>I entered an underground area, it might be the Myreque<br><str>hideout. I'd better look around fully to try and find them."
+pt = "<str>Entrei numa área subterrânea; pode ser o esconderijo dos<br><str>Myreque. É melhor eu explorar tudo para tentar encontrá-los."
+
+[.journal_229]
+en = "<str>I met Veliaf, he seems to be the leader of the Myreque."
+pt = "<str>Conheci o Veliaf; ele parece ser o líder dos Myreque."
+
+[.journal_230]
+en = "<maroon>Veliaf <navy>is busy, he's asked me to introduce myself to the<br><navy>other <maroon>members <navy>of the <maroon>Myreque<navy>."
+pt = "<maroon>Veliaf <navy>está ocupado e me pediu para me apresentar aos<br><navy>outros <maroon>membros <navy>dos <maroon>Myreque<navy>."
+
+[.journal_231]
+en = "<navy>I need to talk to:"
+pt = "<navy>Preciso falar com:"
+
+[.journal_232]
+en = "<navy>Sani Piliu"
+pt = "<navy>Sani Piliu"
+
+[.journal_233]
+en = "<navy>Harold Evans"
+pt = "<navy>Harold Evans"
+
+[.journal_234]
+en = "<navy>Radigad Ponfit"
+pt = "<navy>Radigad Ponfit"
+
+[.journal_235]
+en = "<navy>Polmafi Ferdygris"
+pt = "<navy>Polmafi Ferdygris"
+
+[.journal_236]
+en = "<navy>Ivan Strom"
+pt = "<navy>Ivan Strom"
+
+[.journal_237]
+en = "<str>I tried talking to Veliaf but he was still busy."
+pt = "<str>Tentei falar com o Veliaf, mas ele ainda estava ocupado."
+
+[.journal_238]
+en = "<navy>I should try <maroon>talking <navy>to <maroon>Veliaf <navy>in a <maroon>few minutes <navy>when he's<br><navy>less busy."
+pt = "<navy>Devo tentar <maroon>falar <navy>com o <maroon>Veliaf <navy>daqui a <maroon>alguns minutos<navy>,<br><navy>quando ele estiver menos ocupado."
+
+[.journal_239]
+en = "<str>Vanstrom Klause asked me to take some weapons to a<br><str>group called 'The Myreque'."
+pt = "<str>Vanstrom Klause me pediu para levar algumas armas a um<br><str>grupo chamado 'The Myreque'."
+
+[.journal_240]
+en = "<str>I was tricked by Vanstrom, he was a vampire after all!"
+pt = "<str>Fui enganado pelo Vanstrom; no fim, ele era mesmo um vampiro!"
+
+[.journal_241]
+en = "<str>Maybe someone can show me the way out of here?"
+pt = "<str>Será que alguém pode me mostrar a saída daqui?"
+
+[.journal_242]
+en = "<navy>I talked to <maroon>Veliaf<navy>, he says that I can get into the <maroon>basement<br><navy>of the <maroon>Inn <navy>through a <maroon>secret wall<navy>."
+pt = "<navy>Falei com o <maroon>Veliaf<navy>; ele diz que posso entrar no <maroon>porão<br><navy>da <maroon>taverna <navy>por uma <maroon>parede secreta<navy>."
+
+[.journal_243]
+en = "<str>I've persuaded the boatman to help me find the Myreque."
+pt = "<str>Convenci o barqueiro a me ajudar a encontrar os Myreque."
+
+[.journal_244]
+en = "<navy>The <maroon>boatman <navy>won't take me to the <maroon>Myreque <navy>but I can use<br><navy>his <maroon>boat<navy>."
+pt = "<navy>O <maroon>barqueiro <navy>não vai me levar até os <maroon>Myreque<navy>, mas posso<br><navy>usar o <maroon>barco <navy>dele."
+
+[.journal_245]
+en = "<str>I went through the secret wall Veliaf told me about into the<br><str>basement of the inn."
+pt = "<str>Passei pela parede secreta de que o Veliaf falou e cheguei<br><str>ao porão da taverna."
+
+[.journal_246]
+en = "<navy>I should try to find a way up to the <maroon>surface <navy>from the<br><maroon>basement <navy>of the <maroon>Inn<navy>."
+pt = "<navy>Devo achar um caminho do <maroon>porão <navy>da <maroon>taverna <navy>até a<br><maroon>superfície<navy>."
+
+[.journal_247]
+en = "<str>I climbed up the ladder in the Inn basement to find my way<br><str>out."
+pt = "<str>Subi a escada do porão da taverna para achar a<br><str>saída."
+
+[.journal_248]
+en = "<navy>I climbed out of the <maroon>basement <navy>of the <maroon>Inn <navy>to find myself in<br><navy>the town of <maroon>Canifis <navy>where I first met that double crossing"
+pt = "<navy>Saí do <maroon>porão <navy>da <maroon>taverna <navy>e me vi na cidade de <maroon>Canifis<navy>,<br><navy>onde conheci aquele traidor do"
+
+[.journal_249]
+en = "<maroon>Vanstrom<navy>. I wonder if I can still find him there?"
+pt = "<maroon>Vanstrom<navy>. Será que ainda consigo encontrá-lo lá?"
+
+[.journal_250]
+en = "<navy>I can start this quest by talking to a <maroon>stranger <navy>in the '<maroon>Hair<br><maroon>of the Dog Inn<navy>' located in the town of <maroon>Canifis <navy>in the land of<br><maroon>Morytania<navy>."
+pt = "<navy>Posso começar esta missão falando com um <maroon>estranho <navy>na<br><navy>'<maroon>Hair of the Dog Inn<navy>', na cidade de <maroon>Canifis<navy>, na terra<br><navy>de <maroon>Morytania<navy>."
+
+[.journal_251]
+en = "<navy>I need to complete the following quest:"
+pt = "<navy>Preciso completar a seguinte missão:"
+
+[.journal_252]
+en = "<maroon>Nature Spirit"
+pt = "<maroon>Nature Spirit"
+
+[.journal_253]
+en = "<navy>I also need to be able to defeat a level 97 foe."
+pt = "<navy>Também preciso ser capaz de derrotar um inimigo de nível 97."
+
+[.journal_254]
+en = "<str>Nature Spirit"
+pt = "<str>Nature Spirit"
+
+[.journal_255]
+en = "<str>Veliaf was busy, so I introduced myself to the other<br><str>members of the Myreque."
+pt = "<str>Veliaf estava ocupado, então me apresentei aos outros<br><str>membros dos Myreque."
+
+[.journal_256]
+en = "<str>While talking to Veliaf a mist cloud appeared in the room."
+pt = "<str>Enquanto eu falava com o Veliaf, uma nuvem de névoa<br><str>apareceu na sala."
+
+[.journal_257]
+en = "<str>The mist transformed into Vanstrom, he's a vampire!"
+pt = "<str>A névoa se transformou no Vanstrom; ele é um vampiro!"
+
+[.journal_258]
+en = "<str>Vanstrom killed Sani and Harold then summoned a hell<br><str>hound!"
+pt = "<str>Vanstrom matou Sani e Harold e depois invocou um<br><str>hell hound!"
+
+[.journal_259]
+en = "<navy>I have to try and kill the <maroon>hell hound <navy>to save the <maroon>Myreque<navy>."
+pt = "<navy>Preciso tentar matar o <maroon>hell hound <navy>para salvar os <maroon>Myreque<navy>."
+
+[.journal_260]
+en = "<str>I was set a quest by Vanstrom Klause to deliver weapons<br><str>to a group called the Myreque. After negotiating with a<br><str>boatman, fixing a broken rope bridge and answering a<br><str>guard's questions I eventually found the group called the<br><str>Myreque."
+pt = "<str>Vanstrom Klause me deu a missão de entregar armas a um<br><str>grupo chamado Myreque. Depois de negociar com um barqueiro,<br><str>consertar uma ponte de corda quebrada e responder às<br><str>perguntas de um guarda, finalmente encontrei os Myreque."
+
+[.journal_261]
+en = "<str>However, it seems that I was tricked by Vanstrom who<br><str>turned out to be a vampire following me to the Myreque's<br><str>hideout. He killed Sani and Harold, both young members of<br><str>the Myreque."
+pt = "<str>Porém, parece que fui enganado pelo Vanstrom, que se revelou<br><str>um vampiro e me seguiu até o esconderijo dos Myreque. Ele<br><str>matou Sani e Harold, dois jovens membros dos Myreque."
+
+[.journal_262]
+en = "<str>During the quest I found a quicker route between Mort'ton<br><str>and Canifis, and I feel that I better understand the reason<br><str>for the darkness of Morytania."
+pt = "<str>Durante a missão, encontrei um caminho mais rápido entre<br><str>Mort'ton e Canifis, e sinto que entendo melhor o motivo da<br><str>escuridão de Morytania."
+
+[.journal_263]
+en = "<str>Perhaps in the future, I can offer help to the Myreque?"
+pt = "<str>Quem sabe, no futuro, eu possa ajudar os Myreque?"
+
+[.journal_264]
+en = "<navy>I need to look for the <maroon>members <navy>of the <maroon>Myreque <navy>now."
+pt = "<navy>Agora preciso procurar os <maroon>membros <navy>dos <maroon>Myreque<navy>."
+
+[.journal_265]
+en = "<navy>The <maroon>boatman <navy>won't take me to the <maroon>Myreque's hideout<navy>."
+pt = "<navy>O <maroon>barqueiro <navy>não vai me levar ao <maroon>esconderijo dos Myreque<navy>."
+
+[.journal_266]
+en = "<navy>Vanstrom did say that I have to be persuasive."
+pt = "<navy>Vanstrom bem que disse que eu teria de ser persuasivo."
+
+[.journal_267]
+en = "<str>I killed the hell hound and saved the rest of the Myreque."
+pt = "<str>Matei o hell hound e salvei o resto dos Myreque."
+
+[.journal_268]
+en = "<navy>I was tricked by <maroon>Vanstrom<navy>, he was a <maroon>vampire <navy>after all!"
+pt = "<navy>Fui enganado pelo <maroon>Vanstrom<navy>; no fim, ele era mesmo um <maroon>vampiro<navy>!"
+
+[.journal_269]
+en = "<navy>Maybe someone can show me the <maroon>way out <navy>of here?"
+pt = "<navy>Será que alguém pode me mostrar a <maroon>saída <navy>daqui?"
+
+[.journal_270]
+en = "<navy>I've <maroon>persuaded <navy>the <maroon>boatman <navy>to help me find the <maroon>Myreque."
+pt = "<maroon>Convenci <navy>o <maroon>barqueiro <navy>a me ajudar a encontrar os <maroon>Myreque."
+
+[.journal_271]
+en = "<navy>He won't lend the <maroon>boat <navy>unless I can defend against"
+pt = "<navy>Ele só empresta o <maroon>barco <navy>se eu conseguir me defender dos"
+
+[.journal_272]
+en = "<maroon>Ghasts<navy>."
+pt = "<maroon>Ghasts<navy>."
+
+[.journal_273]
+en = "<navy>I need to collect <maroon>%1% <navy>more <maroon>wooden planks"
+pt = "<navy>Preciso juntar mais <maroon>%1% <navy>tábuas de madeira (<maroon>wooden planks<navy>)."
+
+[.journal_274]
+en = "<navy>To start this quest I need to speak to <maroon>Velorina<navy>,<br><navy>a ghost of <maroon>Port Phasmatys<navy>."
+pt = "<navy>Para começar esta missão, preciso falar com a <maroon>Velorina<navy>,<br><navy>uma fantasma de <maroon>Port Phasmatys<navy>."
+
+[.journal_275]
+en = "<navy>I must have at least:"
+pt = "<navy>Preciso ter pelo menos:"
+
+[.journal_276]
+en = "<maroon>level 25 agility<br><maroon>level 20 cooking."
+pt = "<maroon>nível 25 em Agility<br><maroon>nível 20 em Cooking."
+
+[.journal_277]
+en = "<navy>I must also be able to defeat a <maroon>level 32 monster<navy>."
+pt = "<navy>Também preciso ser capaz de derrotar um <maroon>monstro de nível 32<navy>."
+
+[.journal_278]
+en = "<navy>I must also have completed the following quests:"
+pt = "<navy>Também preciso ter completado as seguintes missões:"
+
+[.journal_279]
+en = "<str>level 25 agility<br><str>level 20 cooking."
+pt = "<str>nível 25 em Agility<br><str>nível 20 em Cooking."
+
+[.journal_280]
+en = "<str>I have spoken with Velorina, who has told me the sad<br><str>history of the ghosts of Port Phasmatys. She has asked<br><str>me to plead with Necrovarus in the Phasmatyan Temple to<br><str>let any ghost who so wishes pass over into the next world."
+pt = "<str>Falei com a Velorina, que me contou a triste história dos<br><str>fantasmas de Port Phasmatys. Ela me pediu para implorar ao<br><str>Necrovarus, no Phasmatyan Temple, que deixe passar para o<br><str>outro mundo qualquer fantasma que assim desejar."
+
+[.journal_281]
+en = "<navy>I should speak to <maroon>Necrovarus<navy> in the <maroon>Temple<navy>."
+pt = "<navy>Devo falar com o <maroon>Necrovarus<navy> no <maroon>Templo<navy>."
+
+[.journal_282]
+en = "<str>I pleaded with Necrovarus, to no avail."
+pt = "<str>Implorei ao Necrovarus, mas foi inútil."
+
+[.journal_283]
+en = "<navy>I should tell <maroon>Velorina<navy> that <maroon>Necrovarus<navy> will not listen to<br><navy>reason."
+pt = "<navy>Devo dizer à <maroon>Velorina<navy> que o <maroon>Necrovarus<navy> não quer ouvir a<br><navy>voz da razão."
+
+[.journal_284]
+en = "<str>Velorina was crestfallen at Necrovarus' refusal to lift his<br><str>ban, and she told me of a woman who fled Port Phasmatys<br><str>before the townsfolk died, and to seek her out, as she<br><str>may know of a way around Necrovarus' stubbornness."
+pt = "<str>A Velorina ficou arrasada com a recusa do Necrovarus em<br><str>suspender a proibição, e me falou de uma mulher que fugiu<br><str>de Port Phasmatys antes de os moradores morrerem. Devo<br><str>procurá-la, pois ela talvez saiba como contornar a teimosia<br><str>do Necrovarus."
+
+[.journal_285]
+en = "<navy>I should find the <maroon>old woman<navy> that <maroon>Velorina<navy> speaks of."
+pt = "<navy>Devo encontrar a <maroon>velha<navy> de quem a <maroon>Velorina<navy> falou."
+
+[.journal_286]
+en = "<str>I found the old woman, who told me of an enchantment she<br><str>can perform on the Amulet of Ghostspeak, which will then<br><str>let me command Necrovarus to do my bidding"
+pt = "<str>Encontrei a velha, que me falou de um encantamento que ela<br><str>pode fazer no Amulet of Ghostspeak, com o qual poderei<br><str>mandar o Necrovarus fazer o que eu quiser."
+
+[.journal_287]
+en = "<navy>I need to bring the <maroon>old woman<navy> the following items:"
+pt = "<navy>Preciso levar para a <maroon>velha<navy> os seguintes itens:"
+
+[.journal_288]
+en = "<maroon>The Book of Haricanto"
+pt = "<maroon>O Book of Haricanto"
+
+[.journal_289]
+en = "<maroon>The Robes of Necrovarus"
+pt = "<maroon>As Robes of Necrovarus"
+
+[.journal_290]
+en = "<maroon>Something to translate the Book of Haricanto"
+pt = "<maroon>Algo para traduzir o Book of Haricanto"
+
+[.journal_291]
+en = "<str>I brought the old woman the Book of Haricanto, the Robes<br><str>of Necrovarus, and a translation manual."
+pt = "<str>Levei para a velha o Book of Haricanto, as Robes of<br><str>Necrovarus e um manual de tradução."
+
+[.journal_292]
+en = "<navy>I need to bring the <maroon>Amulet of Ghostspeak<navy> to the old woman<br><navy>so that she can perform the enchantment."
+pt = "<navy>Preciso levar o <maroon>Amulet of Ghostspeak<navy> para a velha, para<br><navy>que ela faça o encantamento."
+
+[.journal_293]
+en = "<str>The old woman used the items I brought her to perform the<br><str>enchantment on the Amulet of Ghostspeak."
+pt = "<str>A velha usou os itens que levei para fazer o encantamento<br><str>no Amulet of Ghostspeak."
+
+[.journal_294]
+en = "<navy>I need to return to the <maroon>Temple of Phasmatys<navy> and use the<br><navy>enchanted <maroon>Amulet of Ghostspeak<navy> to command <maroon>Necrovarus<navy>."
+pt = "<navy>Preciso voltar ao <maroon>Temple of Phasmatys<navy> e usar o <maroon>Amulet<br><maroon>of Ghostspeak<navy> encantado para dar ordens ao <maroon>Necrovarus<navy>."
+
+[.journal_295]
+en = "<str>I have commanded Necrovarus to remove his ban."
+pt = "<str>Ordenei ao Necrovarus que suspendesse a proibição."
+
+[.journal_296]
+en = "<navy>I need to tell <maroon>Velorina<navy> that I have successfully commanded"
+pt = "<navy>Preciso contar à <maroon>Velorina<navy> que consegui ordenar ao"
+
+[.journal_297]
+en = "<navy><maroon>Necrovarus<navy> to lift his ban."
+pt = "<navy><maroon>Necrovarus<navy> que suspenda a proibição."
+
+[.journal_298]
+en = "<str>I have told Velorina that Necrovarus has been commanded<br><str>to remove his ban, and to allow any ghost who so desires<br><str>to pass over into the next plane of existence. Velorina<br><str>gave me the Ectophial in return, which I can use to teleport<br><str>to the Temple of Phasmatys."
+pt = "<str>Contei à Velorina que o Necrovarus recebeu ordem de<br><str>suspender a proibição e de deixar passar para o outro plano<br><str>de existência qualquer fantasma que desejar. Em troca, a<br><str>Velorina me deu o Ectophial, que posso usar para me<br><str>teletransportar até o Temple of Phasmatys."
+
+[.journal_299]
+en = "<navy>I have spoken to <maroon>Redbeard Frank<navy>. He has agreed to tell me<br><navy>the location of some <maroon>treasure<navy> for some <maroon>Karamja Rum<navy>."
+pt = "<navy>Falei com o <maroon>Redbeard Frank<navy>. Ele aceitou me contar onde<br><navy>está um <maroon>tesouro<navy> em troca de um pouco de <maroon>Karamja Rum<navy>."
+
+[.journal_300]
+en = "<str>I have smuggled some rum off Karamja, and retrieved it<br><str>from the back room of Wydin's shop."
+pt = "<str>Contrabandeei um pouco de rum de Karamja e o recuperei nos<br><str>fundos da loja do Wydin."
+
+[.journal_301]
+en = "<navy>I have given the rum to <maroon>Redbeard Frank<navy>. He has told me<br><navy>that the <maroon>treasure<navy> is hidden in the chest in the upstairs<br><navy>room of the <maroon>Blue Moon Inn<navy> in <maroon>Varrock<navy>."
+pt = "<navy>Dei o rum ao <maroon>Redbeard Frank<navy>. Ele me contou que o<br><maroon>tesouro<navy> está escondido no baú do quarto do andar de cima<br><navy>da <maroon>Blue Moon Inn<navy>, em <maroon>Varrock<navy>."
+
+[.journal_302]
+en = "<navy>I have lost the <maroon>key<navy> that <maroon>Redbeard Frank<navy> gave me. I should<br><navy>see if he has another."
+pt = "<navy>Perdi a <maroon>chave<navy> que o <maroon>Redbeard Frank<navy> me deu. Devo ver se<br><navy>ele tem outra."
+
+[.journal_303]
+en = "<navy>I have opened the chest in the <maroon>Blue Moon<navy>, and found a<br><maroon>note<navy> inside. I think it will tell me where to dig."
+pt = "<navy>Abri o baú na <maroon>Blue Moon<navy> e encontrei um <maroon>bilhete<navy> dentro.<br><navy>Acho que ele vai me dizer onde cavar."
+
+[.journal_304]
+en = "<str>I have opened the chest in the Blue Moon, and found a<br><str>note inside. I think it will tell me where to dig."
+pt = "<str>Abri o baú na Blue Moon e encontrei um bilhete dentro.<br><str>Acho que ele vai me dizer onde cavar."
+
+[.journal_305]
+en = "<navy>The note reads: <maroon>'Visit the city of the White Knights. In the<br><maroon>park, Saradomin points to the X which marks the spot.'<navy>"
+pt = "<navy>O bilhete diz: <maroon>'Visite a cidade dos White Knights. No<br><maroon>parque, Saradomin aponta para o X que marca o lugar.'<navy>"
+
+[.journal_306]
+en = "<navy>I need to go to <maroon>Karamja<navy> and buy some <maroon>rum<navy>. I hope it is not<br><navy>too expensive."
+pt = "<navy>Preciso ir a <maroon>Karamja<navy> e comprar um pouco de <maroon>rum<navy>. Espero<br><navy>que não seja caro demais."
+
+[.journal_307]
+en = "<str>I have spoken to Redbeard Frank. He has agreed to tell me<br><str>the location of some treasure for some Karamja Rum."
+pt = "<str>Falei com o Redbeard Frank. Ele aceitou me contar onde está<br><str>um tesouro em troca de um pouco de Karamja Rum."
+
+[.journal_308]
+en = "<str>I have given the rum to Redbeard Frank. He has told me<br><str>that the treasure is hidden in the chest in the upstairs<br><str>room of the Blue Moon Inn in Varrock."
+pt = "<str>Dei o rum ao Redbeard Frank. Ele me contou que o tesouro<br><str>está escondido no baú do quarto do andar de cima da<br><str>Blue Moon Inn, em Varrock."
+
+[.journal_309]
+en = "<str>The note reads 'Visit the city of the White Knights. In the<br><str>park, Saradomin points to the X which marks the spot.'"
+pt = "<str>O bilhete diz: 'Visite a cidade dos White Knights. No<br><str>parque, Saradomin aponta para o X que marca o lugar.'"
+
+[.journal_310]
+en = "<navy>I've found the treasure, gained 2 Quest Points and gained<br><navy>access to the Pay-fare option to travel to and from<br><navy>Karamja!"
+pt = "<navy>Encontrei o tesouro, ganhei 2 pontos de missão e passei a<br><navy>ter acesso à opção 'Pay-fare' para viajar de e para<br><navy>Karamja!"
+
+[.journal_311]
+en = "<navy>I can start this quest by speaking to <maroon>Redbeard Frank<navy> who<br><navy>is at <maroon>Port Sarim<navy>, south of the <maroon>Rusty Anchor<navy>."
+pt = "<navy>Posso começar esta missão falando com o <maroon>Redbeard Frank<navy>,<br><navy>que fica em <maroon>Port Sarim<navy>, ao sul do <maroon>Rusty Anchor<navy>."
+
+[.journal_312]
+en = "<navy>It's the <maroon>Duke of Lumbridge's <navy>birthday and I have to help<br><navy>his <maroon>Cook <navy>make him a <maroon>birthday cake. <navy>To do this I need to<br><navy>bring the cook the following ingredients:"
+pt = "<navy>É aniversário do <maroon>Duke of Lumbridge <navy>e preciso ajudar o<br><maroon>Cook <navy>dele a fazer um <maroon>bolo de aniversário. <navy>Para isso,<br><navy>preciso levar ao cozinheiro os seguintes ingredientes:"
+
+[.journal_313]
+en = "<navy>I need to find a <maroon>bucket of top-quality milk."
+pt = "<navy>Preciso achar um <maroon>balde de leite especial (top-quality milk)."
+
+[.journal_314]
+en = "<navy>I need to find a <maroon>pot of extra fine flour."
+pt = "<navy>Preciso achar um <maroon>pote de farinha extrafina (extra fine flour)."
+
+[.journal_315]
+en = "<navy>I need to find a <maroon>super large egg."
+pt = "<navy>Preciso achar um <maroon>ovo supergrande (super large egg)."
+
+[.journal_316]
+en = "<navy>According to the <maroon>cook, <navy>I can find the ingredients in the<br><navy>vicinity of <maroon>Lumbridge. <navy>he has noted certain possible<br><navy>locations of the ingredients on my world map."
+pt = "<navy>Segundo o <maroon>cozinheiro, <navy>posso encontrar os ingredientes nos<br><navy>arredores de <maroon>Lumbridge. <navy>Ele marcou alguns lugares<br><navy>possíveis dos ingredientes no meu mapa do mundo."
+
+[.journal_317]
+en = "<str>It was the Duke of Lumbridge's birthday, but his cook had<br><str>forgotten to buy the ingredients he needed to bake a <br><str>birthday cake. I brought the cook an egg, a pot of flour<br><str>and a bucket of milk and the cook made a delicious-looking<br><str>cake with them"
+pt = "<str>Era aniversário do Duke of Lumbridge, mas o cozinheiro dele<br><str>tinha esquecido de comprar os ingredientes para assar um<br><str>bolo de aniversário. Levei ao cozinheiro um ovo, um pote de<br><str>farinha e um balde de leite, e ele fez um bolo com cara de<br><str>delicioso."
+
+[.journal_318]
+en = "<str>As a reward he now lets me use his high quality range<br><str>which lets me burn things less whenever I wish to cook there"
+pt = "<str>Como recompensa, ele agora me deixa usar o fogão de alta<br><str>qualidade dele, onde queimo menos a comida quando cozinho lá."
+
+[.journal_319]
+en = "<navy>I can start this quest by speaking to the <maroon>Cook <navy>in the<br><maroon>kitchen <navy>of <maroon>Lumbridge Castle."
+pt = "<navy>Posso começar esta missão falando com o <maroon>Cook <navy>na<br><maroon>cozinha <navy>do <maroon>Lumbridge Castle."
+
+[.journal_320]
+en = "<str>After talking to Drezel in the temple of Saradomin I've<br><str>agreed to look for a Druid called Filliman Tarlock."
+pt = "<str>Depois de falar com Drezel no templo de Saradomin, aceitei<br><str>procurar um druida chamado Filliman Tarlock."
+
+[.journal_321]
+en = "<navy>I need to look for <maroon>Filliman Tarlock<navy> in the <maroon>Swamps<navy> of Mort"
+pt = "<navy>Preciso procurar <maroon>Filliman Tarlock<navy> nos <maroon>pântanos<navy> de Mort"
+
+[.journal_322]
+en = "<navy>Myre. I should be wary of the <maroon>Ghasts<navy>."
+pt = "<navy>Myre. Devo tomar cuidado com os <maroon>Ghasts<navy>."
+
+[.journal_323]
+en = "<str>I've found a spirit in the swamp which I think might be"
+pt = "<str>Encontrei no pântano um espírito que acho que pode ser"
+
+[.journal_324]
+en = "<str>Filliman Tarlock."
+pt = "<str>Filliman Tarlock."
+
+[.journal_325]
+en = "<str>I've communicated with Filliman using the amulet of<br><str>ghostspeak."
+pt = "<str>Conversei com Filliman usando o amuleto<br><str>(amulet of ghostspeak)."
+
+[.journal_326]
+en = "<str>I managed to convince Filliman that he's a ghost."
+pt = "<str>Consegui convencer Filliman de que ele é um fantasma."
+
+[.journal_327]
+en = "<str>Filliman is looking for his journal to help him plan what his<br><str>next step is."
+pt = "<str>Filliman está procurando o diário dele para ajudar a planejar<br><str>o próximo passo."
+
+[.journal_328]
+en = "<str>I've given Filliman his journal. I wonder what he plans to do<br><str>now?"
+pt = "<str>Entreguei o diário a Filliman. O que será que ele pretende<br><str>fazer agora?"
+
+[.journal_329]
+en = "<str>I've agreed to help Filliman become a nature spirit."
+pt = "<str>Aceitei ajudar Filliman a se tornar um espírito da natureza."
+
+[.journal_330]
+en = "<str>I need to find 'something from nature', 'something of<br><str>faith' and 'something of the spirit-to-become freely<br><str>given'."
+pt = "<str>Preciso encontrar 'algo da natureza', 'algo de fé' e<br><str>'algo do futuro espírito, dado de livre vontade'."
+
+[.journal_331]
+en = "<str>I've been blessed at the temple by Drezel."
+pt = "<str>Fui abençoado no templo por Drezel."
+
+[.journal_332]
+en = "<str>I collected a Mort Myre Fungi."
+pt = "<str>Coletei um Mort Myre Fungi."
+
+[.journal_333]
+en = "<str>I managed to get all of the required items that Filliman asked<br><str>for. He says that he can cast the spell now which will<br><str>transform him into a Nature Spirit."
+pt = "<str>Consegui todos os itens que Filliman pediu. Ele diz que agora<br><str>pode lançar o feitiço que vai transformá-lo em um espírito<br><str>da natureza."
+
+[.journal_334]
+en = "<str>I entered Filliman's grotto as he asked me to."
+pt = "<str>Entrei na gruta de Filliman, como ele me pediu."
+
+[.journal_335]
+en = "<str>Filliman has turned into a nature spirit, it was an<br><str>impressive transformation!"
+pt = "<str>Filliman se transformou em um espírito da natureza, foi uma<br><str>transformação impressionante!"
+
+[.journal_336]
+en = "<str>Filliman says he can help me to defeat the ghasts."
+pt = "<str>Filliman diz que pode me ajudar a derrotar os ghasts."
+
+[.journal_337]
+en = "<str>Filliman has blessed the silver sickle for me."
+pt = "<str>Filliman abençoou a foice de prata (silver sickle) para mim."
+
+[.journal_338]
+en = "<str>I cast the bloom spell in the swamp."
+pt = "<str>Lancei o feitiço bloom no pântano."
+
+[.journal_339]
+en = "<str>I collected some bloomed items from the swamp."
+pt = "<str>Coletei alguns itens que floresceram no pântano."
+
+[.journal_340]
+en = "<str>I collected some bloomed items from the swamp and put<br><str>them into a druid pouch."
+pt = "<str>Coletei alguns itens que floresceram no pântano e os<br><str>coloquei em uma bolsa de druida (druid pouch)."
+
+[.journal_341]
+en = "<maroon>Filliman<navy> asked me to kill <maroon>three ghasts<navy>."
+pt = "<maroon>Filliman<navy> me pediu para matar <maroon>três ghasts<navy>."
+
+[.journal_342]
+en = "<str>I've killed three ghasts now."
+pt = "<str>Já matei três ghasts."
+
+[.journal_343]
+en = "<navy>I should tell <maroon>Filliman<navy> that I've killed the <maroon>three ghasts<navy>."
+pt = "<navy>Devo contar a <maroon>Filliman<navy> que matei os <maroon>três ghasts<navy>."
+
+[.journal_344]
+en = "<maroon>Filliman<navy> asked me to get a <maroon>silver sickle<navy>."
+pt = "<maroon>Filliman<navy> me pediu para conseguir uma<br><maroon>foice de prata (silver sickle)<navy>."
+
+[.journal_345]
+en = "<navy>I need to use the <maroon>sickle<navy> to make the swamp bloom."
+pt = "<navy>Preciso usar a <maroon>foice<navy> para fazer o pântano florescer."
+
+[.journal_346]
+en = "<navy>I think I need to convince this poor fellow <maroon>Tarlock<navy> that he's<br><navy>actually <maroon>dead<navy>!"
+pt = "<navy>Acho que preciso convencer o pobre <maroon>Tarlock<navy> de que ele<br><navy>está mesmo <maroon>morto<navy>!"
+
+[.journal_347]
+en = "<navy>Perhaps I should try to help <maroon>Filliman<navy> to find his <maroon>journal<navy>?"
+pt = "<navy>Talvez eu deva ajudar <maroon>Filliman<navy> a encontrar o <maroon>diário<navy> dele?"
+
+[.journal_348]
+en = "<maroon>Filliman<navy> asked me to meet him in his <maroon>grotto<navy>."
+pt = "<maroon>Filliman<navy> me pediu para encontrá-lo na <maroon>gruta<navy> dele."
+
+[.journal_349]
+en = "<maroon>Filliman<navy> gave me a '<maroon>bloom<navy>' spell but I need to be <maroon>blessed<navy> at<br><navy>the <maroon>temple<navy> before I can cast it. I am supposed to collect<br><navy>'<maroon>something from nature<navy>'."
+pt = "<maroon>Filliman<navy> me deu um feitiço '<maroon>bloom<navy>', mas preciso ser<br><navy><maroon>abençoado<navy> no <maroon>templo<navy> antes de lançá-lo. Devo coletar<br><navy>'<maroon>algo da natureza<navy>'."
+
+[.journal_350]
+en = "<navy>I need to collect '<maroon>something from nature<navy>'."
+pt = "<navy>Preciso coletar '<maroon>algo da natureza<navy>'."
+
+[.journal_351]
+en = "<navy>I can start this quest by speaking to <maroon>Drezel<navy> in the temple<br><navy>to <maroon>Saradomin<navy> at the mouth of the river <maroon>Salve."
+pt = "<navy>Posso começar esta missão falando com <maroon>Drezel<navy> no templo<br><navy>de <maroon>Saradomin<navy>, na foz do rio <maroon>Salve."
+
+[.journal_352]
+en = "<navy>I first need to complete:"
+pt = "<navy>Primeiro preciso completar:"
+
+[.journal_353]
+en = "<maroon>The Restless Ghost"
+pt = "<maroon>The Restless Ghost"
+
+[.journal_354]
+en = "<navy>In order to complete this quest <maroon>level 18 Crafting<navy> would be<br><navy>an advantage."
+pt = "<navy>Para completar esta missão, ter <maroon>nível 18 em Crafting<navy> seria<br><navy>uma vantagem."
+
+[.journal_355]
+en = "<str>The Restless Ghost"
+pt = "<str>The Restless Ghost"
+
+[.journal_356]
+en = "<navy>I need to find '<maroon>something from nature<navy>'."
+pt = "<navy>Preciso encontrar '<maroon>algo da natureza<navy>'."
+
+[.journal_357]
+en = "<navy>I need to find '<maroon>Something with faith<navy>'."
+pt = "<navy>Preciso encontrar '<maroon>algo de fé<navy>'."
+
+[.journal_358]
+en = "<navy>I need to find:"
+pt = "<navy>Preciso encontrar:"
+
+[.journal_359]
+en = "<navy>'<maroon>Something of the spirit-to-become freely given<navy>.'"
+pt = "<navy>'<maroon>Algo do futuro espírito, dado de livre vontade<navy>.'"
+
+[.journal_360]
+en = "<maroon>Filliman<navy> said something about a '<maroon>druid pouch<navy>' perhaps this<br><navy>will help with the <maroon>ghasts<navy>."
+pt = "<maroon>Filliman<navy> falou algo sobre uma '<maroon>druid pouch<navy>'; talvez isso<br><navy>ajude com os <maroon>ghasts<navy>."
+
+[.journal_361]
+en = "<navy>I have a <maroon>Mort Myre Fungi<navy>, I hope this is what <maroon>Filliman<br><navy>wanted."
+pt = "<navy>Tenho um <maroon>Mort Myre Fungi<navy>, espero que seja o que <maroon>Filliman<br><navy>queria."
+
+[.journal_362]
+en = "<maroon>Filliman<navy> said something about collecting '<maroon>natures bounty<navy>'."
+pt = "<maroon>Filliman<navy> falou algo sobre coletar a '<maroon>dádiva da natureza<navy>'."
+
+[.journal_363]
+en = "<str>Drezel, a priest of Saradomin, asked me to look for the<br><str>druid Filliman Tarlock in the swamps of Mort Myre. However"
+pt = "<str>Drezel, um sacerdote de Saradomin, me pediu para procurar o<br><str>druida Filliman Tarlock nos pântanos de Mort Myre. Porém,"
+
+[.journal_364]
+en = "<str>Filliman had been slain and appeared as a ghost. After<br><str>persuading Filliman that he was in fact dead I helped him to<br><str>make a transformation into a Nature Spirit."
+pt = "<str>Filliman tinha sido morto e aparecia como fantasma. Depois de<br><str>convencer Filliman de que ele estava mesmo morto, ajudei-o a<br><str>se transformar em um espírito da natureza."
+
+[.journal_365]
+en = "<str>In return for this help, Filliman blessed a silver sickle and<br><str>showed me how to defeat the ghasts of Mort Myre."
+pt = "<str>Em troca dessa ajuda, Filliman abençoou uma foice de prata e<br><str>me mostrou como derrotar os ghasts de Mort Myre."
+
+[.journal_366]
+en = "<str>He also gave me some skill experience in crafting,<br><str>hitpoints and defence."
+pt = "<str>Ele também me deu experiência em Crafting,<br><str>Hitpoints e Defence."
+
+[.journal_367]
+en = "<str>I've cast the bloom spell in the swamp."
+pt = "<str>Já lancei o feitiço bloom no pântano."
+
+[.journal_368]
+en = "<navy>I need to collect '<maroon>something of nature<navy>'."
+pt = "<navy>Preciso coletar '<maroon>algo da natureza<navy>'."
+
+[.journal_369]
+en = "<str>The druid pouch made a ghost appear which I attacked and<br><str>killed."
+pt = "<str>A druid pouch fez aparecer um fantasma, que eu ataquei e<br><str>matei."
+
+[.journal_370]
+en = "<navy>I've killed <maroon>two<navy> ghasts, I have <maroon>one<navy> more to kill."
+pt = "<navy>Já matei <maroon>dois<navy> ghasts, falta matar mais <maroon>um<navy>."
+
+[.journal_371]
+en = "<navy>I've killed <maroon>one<navy> ghast, I have <maroon>two<navy> more to kill."
+pt = "<navy>Já matei <maroon>um<navy> ghast, faltam matar mais <maroon>dois<navy>."
+
+[.journal_372]
+en = "<maroon>Filliman<navy> might need <maroon>my help<navy> with his <maroon>plan<navy>."
+pt = "<maroon>Filliman<navy> pode precisar da <maroon>minha ajuda<navy> com o <maroon>plano<navy> dele."
+
+[.journal_373]
+en = "<str>Bert the sandpit worker in Yanille has asked me to<br><str>investigate the hand that he found in the sand."
+pt = "<str>Bert, o trabalhador do areal de Yanille, me pediu para<br><str>investigar a mão que ele encontrou na areia."
+
+[.journal_374]
+en = "<str>I have spoken to the Guard Captain."
+pt = "<str>Falei com o Guard Captain."
+
+[.journal_375]
+en = "<str>I have shown the hand to the Wizards in Yanille."
+pt = "<str>Mostrei a mão aos magos de Yanille."
+
+[.journal_376]
+en = "<str>I have Bert's copy of the Rota."
+pt = "<str>Tenho a cópia da escala (rota) de Bert."
+
+[.journal_377]
+en = "<str>I have Sandy's copy of the Rota."
+pt = "<str>Tenho a cópia da escala (rota) de Sandy."
+
+[.journal_378]
+en = "<str>I have taken the scroll to Zavistic Rarve."
+pt = "<str>Levei o pergaminho a Zavistic Rarve."
+
+[.journal_379]
+en = "<str>I have distracted Sandy successfully."
+pt = "<str>Consegui distrair Sandy."
+
+[.journal_380]
+en = "<str>I have drugged Sandy's coffee."
+pt = "<str>Droguei o café de Sandy."
+
+[.journal_381]
+en = "<str>I have activated the magical scrying orb."
+pt = "<str>Ativei o orbe mágico de vidência."
+
+[.journal_382]
+en = "<str>I have interogated Sandy."
+pt = "<str>Interroguei Sandy."
+
+[.journal_383]
+en = "<str>I have returned the information from the orb."
+pt = "<str>Entreguei as informações do orbe."
+
+[.journal_384]
+en = "<navy>Find and return <maroon>5 earth runes<navy> and <maroon>a bucket of sand<navy> to<br><navy><maroon>Zavistic Rarve<navy> in Yanille."
+pt = "<navy>Encontrar e levar <maroon>5 runas de terra (earth runes)<navy> e<br><maroon>um balde de areia (bucket of sand)<navy> a <maroon>Zavistic Rarve<navy><br><navy>em Yanille."
+
+[.journal_385]
+en = "<navy>Ask <maroon>Sandy<navy> about <maroon>Hand in the Sand<navy>."
+pt = "<navy>Perguntar a <maroon>Sandy<navy> sobre <maroon>Hand in the Sand<navy>."
+
+[.journal_386]
+en = "<navy>I must activate the magical scrying orb to record the<br><navy>interview with <maroon>Sandy<navy>."
+pt = "<navy>Preciso ativar o orbe mágico de vidência para gravar a<br><navy>conversa com <maroon>Sandy<navy>."
+
+[.journal_387]
+en = "<navy>I need to speak to the <maroon>Guard Captain<navy> who is in the <maroon>Dragon"
+pt = "<navy>Preciso falar com o <maroon>Guard Captain<navy>, que está no <maroon>Dragon"
+
+[.journal_388]
+en = "<maroon>Inn<navy> south of the <maroon>sandpit<navy>."
+pt = "<maroon>Inn<navy>, ao sul do <maroon>areal<navy>."
+
+[.journal_389]
+en = "<navy>I can start this quest by speaking to <maroon>Bert<navy> in <maroon>Yanille<navy> in the<br><navy>house near the <maroon>Sandpit<navy>."
+pt = "<navy>Posso começar esta missão falando com <maroon>Bert<navy> em <maroon>Yanille<navy>, na<br><navy>casa perto do <maroon>areal (Sandpit)<navy>."
+
+[.journal_390]
+en = "<navy>Before I begin I will need to:"
+pt = "<navy>Antes de começar, vou precisar:"
+
+[.journal_391]
+en = "<navy>Have level 17 <maroon>Thieving<navy>."
+pt = "<navy>Ter nível 17 em <maroon>Thieving<navy>."
+
+[.journal_392]
+en = "<navy>Have level 49 <maroon>Crafting<navy>."
+pt = "<navy>Ter nível 49 em <maroon>Crafting<navy>."
+
+[.journal_393]
+en = "<str>Have level 17 Thieving."
+pt = "<str>Ter nível 17 em Thieving."
+
+[.journal_394]
+en = "<str>Have level 49 Crafting."
+pt = "<str>Ter nível 49 em Crafting."
+
+[.journal_395]
+en = "<str>The Sandpit has been enchanted."
+pt = "<str>O areal foi encantado."
+
+[.journal_396]
+en = "<str>I have retrieved the head of a wizard."
+pt = "<str>Recuperei a cabeça de um mago."
+
+[.journal_397]
+en = "<navy>Return the <maroon>wizard head<navy> to <maroon>Zavistic Rarve<navy> in <maroon>Yanille<navy>."
+pt = "<navy>Levar a <maroon>cabeça do mago<navy> a <maroon>Zavistic Rarve<navy> em <maroon>Yanille<navy>."
+
+[.journal_398]
+en = "<navy>Ring the bell at the Wizard Guild in <maroon>Yanille<navy> and give <maroon>scroll<navy> to<br><navy><maroon>Zavistic Rarve<navy>."
+pt = "<navy>Tocar o sino da Wizard Guild em <maroon>Yanille<navy> e entregar o<br><navy><maroon>pergaminho<navy> a <maroon>Zavistic Rarve<navy>."
+
+[.journal_399]
+en = "<navy>I should ask <maroon>Sandy<navy> in the <maroon>Sand Corp<navy> Offices in <maroon>Brimhaven<navy><br><navy>about Bert's rota."
+pt = "<navy>Devo perguntar a <maroon>Sandy<navy>, nos escritórios da <maroon>Sand Corp<navy> em<br><navy><maroon>Brimhaven<navy>, sobre a escala de Bert."
+
+[.journal_400]
+en = "<str>The dead wizard has been buried and Sandy arrested for<br><str>murder."
+pt = "<str>O mago morto foi enterrado e Sandy foi presa por<br><str>assassinato."
+
+[.journal_401]
+en = "<navy>For an extra reward I must speak to Bert and tell him about<br><navy>his pension."
+pt = "<navy>Por uma recompensa extra, devo falar com Bert e contar a<br><navy>ele sobre a aposentadoria."
+
+[.journal_402]
+en = "<navy>Return the information gathered to <maroon>Zavistic Rarve<navy> in<br><navy><maroon>Yanille<navy> wizard guild."
+pt = "<navy>Levar as informações reunidas a <maroon>Zavistic Rarve<navy>, na<br><navy>Wizard Guild de <maroon>Yanille<navy>."
+
+[.journal_403]
+en = "<navy>Visit the <maroon>sandpit<navy> on the island of <maroon>Entrana<navy> and return any<br><navy>other wizard parts."
+pt = "<navy>Visitar o <maroon>areal<navy> na ilha de <maroon>Entrana<navy> e levar as outras<br><navy>partes do mago."
+
+[.journal_404]
+en = "<navy>Find out why <maroon>Bert's<navy> hours have changed."
+pt = "<navy>Descobrir por que o horário de <maroon>Bert<navy> mudou."
+
+[.journal_405]
+en = "<navy>I need to see if the <maroon>Wizards<navy> in the guild in Yanille know<br><navy>anything about the <maroon>hand<navy>."
+pt = "<navy>Preciso ver se os <maroon>magos<navy> da guilda de Yanille sabem<br><navy>algo sobre a <maroon>mão<navy>."
+
+[.journal_406]
+en = "<navy>Show <maroon>Bert<navy> the changes in his hours."
+pt = "<navy>Mostrar a <maroon>Bert<navy> as mudanças no horário dele."
+
+[.journal_407]
+en = "<maroon>Betty<navy> in <maroon>Port Sarim<navy> will guide you on how to make some"
+pt = "<maroon>Betty<navy>, em <maroon>Port Sarim<navy>, vai ensinar como fazer um pouco de"
+
+[.journal_408]
+en = "<maroon>Truth Serum<navy>."
+pt = "<maroon>soro da verdade (Truth Serum)<navy>."
+
+[.journal_409]
+en = "<navy>Find a way to make <maroon>Sandy<navy> drink the <maroon>Truth Serum<navy>."
+pt = "<navy>Dar um jeito de fazer <maroon>Sandy<navy> beber o <maroon>Truth Serum<navy>."
+
+[.journal_410]
+en = "<str>I spoke to King Roald who asked me to investigate why his<br><str>friend Priest Drezel has stopped communicating with him."
+pt = "<str>Falei com o King Roald, que me pediu para investigar por que<br><str>seu amigo, o sacerdote Drezel, parou de falar com ele."
+
+[.journal_411]
+en = "<str>I headed to the temple where Drezel lives, but it was all<br><str>locked shut. I spoke through the locked door to Drezel."
+pt = "<str>Fui ao templo onde Drezel mora, mas estava tudo trancado.<br><str>Falei com Drezel pela porta trancada."
+
+[.journal_412]
+en = "<str>He told me that there was an annoying dog below the<br><str>temple, and asked me to kill it, which I did easily."
+pt = "<str>Ele me disse que havia um cachorro irritante embaixo do<br><str>templo e me pediu para matá-lo, o que fiz com facilidade."
+
+[.journal_413]
+en = "<str>When I told Roald what I had done, he was furious. The<br><str>person who told me to kill the dog wasn't Drezel at all!"
+pt = "<str>Quando contei a Roald o que tinha feito, ele ficou furioso.<br><str>Quem me mandou matar o cachorro não era o Drezel!"
+
+[.journal_414]
+en = "<str>I returned to the temple and found the real Drezel locked<br><str>in a makeshift cell upstairs, guarded by a vampire."
+pt = "<str>Voltei ao templo e encontrei o verdadeiro Drezel trancado<br><str>em uma cela improvisada no andar de cima, vigiado por um<br><str>vampiro."
+
+[.journal_415]
+en = "<str>I used a key from the monument to open the cell door and<br><str>used Holy Water to trap the vampire in his coffin."
+pt = "<str>Usei uma chave do monumento para abrir a porta da cela e<br><str>usei água benta (Holy Water) para prender o vampiro no<br><str>caixão dele."
+
+[.journal_416]
+en = "<str>I followed Drezel downstairs only to find that the Salve<br><str>had been contaminated and now needed purifying."
+pt = "<str>Segui Drezel até o andar de baixo e descobri que o rio Salve<br><str>tinha sido contaminado e precisava ser purificado."
+
+[.journal_417]
+en = "<navy>I need to bring <maroon>%1%<navy> rune essences<navy> to undo the damage<br><navy>done by the Zamorakians and <maroon>purify the salve"
+pt = "<navy>Preciso levar <maroon>%1%<navy> essências de runa<navy> para desfazer o estrago<br><navy>dos zamorakianos e <maroon>purificar o Salve"
+
+[.journal_418]
+en = "<navy>I need to find the <maroon>key<navy> to his cell and free him!"
+pt = "<navy>Preciso encontrar a <maroon>chave<navy> da cela dele e libertá-lo!"
+
+[.journal_419]
+en = "<str>I brought Drezel fifty rune essences and the<br><str>contaminants were dissolved from the Salve, and Drezel<br><str>rewarded me for all of my help with an ancient holy weapon<br><str>to fight with."
+pt = "<str>Levei cinquenta essências de runa a Drezel, e os<br><str>contaminantes foram dissolvidos do Salve. Drezel me<br><str>recompensou por toda a ajuda com uma antiga arma sagrada<br><str>para lutar."
+
+[.journal_420]
+en = "<navy>He told me that there was an annoying <maroon>dog<navy> below the<br><navy>temple, and has asked me to <maroon>kill it<navy> for him"
+pt = "<navy>Ele me disse que havia um <maroon>cachorro<navy> irritante embaixo do<br><navy>templo e me pediu para <maroon>matá-lo<navy> para ele"
+
+[.journal_421]
+en = "<navy>I should tell <maroon>King Roald<navy> everything's fine with <maroon>Drezel<navy> now I<br><navy>have killed that <maroon>dog<navy> for him, and claim my <maroon>reward."
+pt = "<navy>Devo dizer ao <maroon>King Roald<navy> que está tudo bem com <maroon>Drezel<navy>, agora<br><navy>que matei aquele <maroon>cachorro<navy> para ele, e pedir a <maroon>recompensa."
+
+[.journal_422]
+en = "<str>I used a key from the monument to open the cell door"
+pt = "<str>Usei uma chave do monumento para abrir a porta da cela"
+
+[.journal_423]
+en = "<navy>But I still have to do something about that <maroon>vampire."
+pt = "<navy>Mas ainda preciso fazer algo a respeito daquele <maroon>vampiro."
+
+[.journal_424]
+en = "<navy>I should head downstairs to the <maroon>monument<navy> like <maroon>Drezel<br><navy>asked me to, and assess what <maroon>damage<navy> has been done"
+pt = "<navy>Devo descer até o <maroon>monumento<navy>, como <maroon>Drezel<br><navy>pediu, e ver que <maroon>estrago<navy> foi feito"
+
+[.journal_425]
+en = "<navy>I should speak to <maroon>Drezel<navy> again."
+pt = "<navy>Devo falar com <maroon>Drezel<navy> de novo."
+
+[.journal_426]
+en = "<navy>I can start this quest by speaking to <maroon>King Roald<navy> in <maroon>Varrock"
+pt = "<navy>Posso começar esta missão falando com <maroon>King Roald<navy> no <maroon>Varrock"
+
+[.journal_427]
+en = "<maroon>Palace"
+pt = "<maroon>Palace"
+
+[.journal_428]
+en = "<navy>I must be able to defeat a <maroon>level 30 enemy"
+pt = "<navy>Preciso ser capaz de derrotar um <maroon>inimigo de nível 30"
+
+[.journal_429]
+en = "<maroon>Drezel<navy> lives in a <maroon>temple<navy> to the <maroon>east<navy> of Varrock Palace. I<br><navy>should head there and <maroon>investigate<navy> what's happened to him"
+pt = "<maroon>Drezel<navy> mora em um <maroon>templo<navy> a <maroon>leste<navy> do Varrock Palace. Devo<br><navy>ir até lá e <maroon>investigar<navy> o que aconteceu com ele"
+
+[.journal_430]
+en = "<navy>I must return to the <maroon>temple<navy> and find out what happened to<br><navy>the real <maroon>Drezel<navy>, or the King will have me executed!"
+pt = "<navy>Preciso voltar ao <maroon>templo<navy> e descobrir o que aconteceu com<br><navy>o verdadeiro <maroon>Drezel<navy>, ou o rei vai mandar me executar!"
+
+[.journal_431]
+en = "<str>Xenia, an old adventurer, said she had seen some Zamorakian<br><str>cultists entering the catacombs beneath Lumbridge Church."
+pt = "<str>Xenia, uma velha aventureira, disse que viu alguns cultistas<br><str>de Zamorak entrando nas catacumbas sob a Lumbridge Church."
+
+[.journal_432]
+en = "<str>She asked me to go with her into the catacombs to deal with them."
+pt = "<str>Ela me pediu para ir com ela às catacumbas para lidar com<br><str>eles."
+
+[.journal_433]
+en = "<str>Inside the catacombs, Xenia and I overheard the cultists talking<br><str>about a blood pact."
+pt = "<str>Dentro das catacumbas, Xenia e eu ouvimos os cultistas<br><str>falando sobre um pacto de sangue."
+
+[.journal_434]
+en = "<str>The first cultist shot Xenia, wounding her badly."
+pt = "<str>O primeiro cultista atirou em Xenia e a feriu gravemente."
+
+[.journal_435]
+en = "<str>She will not be able to fight."
+pt = "<str>Ela não vai poder lutar."
+
+[.journal_436]
+en = "<str>I defeated the first cultist."
+pt = "<str>Derrotei o primeiro cultista."
+
+[.journal_437]
+en = "<str>I defeated the second cultist."
+pt = "<str>Derrotei o segundo cultista."
+
+[.journal_438]
+en = "<navy>I need to defeat the <maroon>third cultist<navy>."
+pt = "<navy>Preciso derrotar o <maroon>terceiro cultista<navy>."
+
+[.journal_439]
+en = "<str>I defeated the third cultist."
+pt = "<str>Derrotei o terceiro cultista."
+
+[.journal_440]
+en = "<str>The death of the third cultist completed the ritual."
+pt = "<str>A morte do terceiro cultista completou o ritual."
+
+[.journal_441]
+en = "<str>A tomb in the catacombs collapsed, revealing a staircase."
+pt = "<str>Um túmulo nas catacumbas desabou e revelou uma escada."
+
+[.journal_442]
+en = "<str>I untied the prisoner and escaped from the catacombs."
+pt = "<str>Desamarrei a prisioneira e fugi das catacumbas."
+
+[.journal_443]
+en = "<str>Xenia thanked me for my help."
+pt = "<str>Xenia me agradeceu pela ajuda."
+
+[.journal_444]
+en = "<red>QUEST COMPLETE!"
+pt = "<red>MISSÃO CONCLUÍDA!"
+
+[.journal_445]
+en = "<navy>I need to defeat the <maroon>first cultist<navy>."
+pt = "<navy>Preciso derrotar o <maroon>primeiro cultista<navy>."
+
+[.journal_446]
+en = "<navy>I should speak to <maroon>Xenia."
+pt = "<navy>Devo falar com <maroon>Xenia."
+
+[.journal_447]
+en = "<navy>I need to defeat the <maroon>second cultist<navy>."
+pt = "<navy>Preciso derrotar o <maroon>segundo cultista<navy>."
+
+[.journal_448]
+en = "<maroon>Xenia<navy>, an old adventurer, said she had seen some Zamorakian <br><navy>cultists entering the catacombs beneath Lumbridge Church. "
+pt = "<maroon>Xenia<navy>, uma velha aventureira, disse que viu alguns cultistas<br><navy>de Zamorak entrando nas catacumbas sob a Lumbridge Church."
+
+[.journal_449]
+en = "<navy>She asked me to go with her into the <maroon>catacombs <br><navy>to deal with them."
+pt = "<navy>Ela me pediu para ir com ela às <maroon>catacumbas<br><navy>para lidar com eles."
+
+[.journal_450]
+en = "<navy>I should accompany Xenia to fight the <maroon>first cultist."
+pt = "<navy>Devo acompanhar Xenia para enfrentar o <maroon>primeiro cultista."
+
+[.journal_451]
+en = "<navy> I can start this quest by speaking to <maroon>Xenia <navy>in the<br><maroon>Lumbridge cemetery."
+pt = "<navy>Posso começar esta missão falando com <maroon>Xenia<navy> no<br><maroon>cemitério de Lumbridge."
+
+[.journal_452]
+en = "<str>I told Kaqemeex I would help them prepare their ceremony"
+pt = "<str>Disse a Kaqemeex que ajudaria a preparar a cerimônia deles"
+
+[.journal_453]
+en = "<str>The ceremony required various meats being placed in the<br><str>Cauldron of Thunder. I did this and gave them to Sanfew."
+pt = "<str>A cerimônia exigia colocar várias carnes no Cauldron of<br><str>Thunder. Fiz isso e as entreguei a Sanfew."
+
+[.journal_454]
+en = "<navy>I should speak to <maroon>Kaqemeex <navy>again and claim my <maroon>reward"
+pt = "<navy>Devo falar com <maroon>Kaqemeex<navy> de novo e pegar minha <maroon>recompensa"
+
+[.journal_455]
+en = "<maroon>Sanfew <navy>told me for the ritual they would need me to place<br><maroon>raw bear meat<navy>, <maroon>raw chicken<navy>, <maroon>raw rat meat <navy>and <maroon>raw beef <navy>in<br><navy>the <maroon>Cauldron of Thunder <navy>in the <maroon>dungeon South <navy>of <maroon>Taverley"
+pt = "<maroon>Sanfew<navy> me disse que, para o ritual, eu precisaria colocar<br><maroon>raw bear meat<navy>, <maroon>raw chicken<navy>, <maroon>raw rat meat<navy> e <maroon>raw beef<navy> no<br><navy><maroon>Cauldron of Thunder<navy>, na <maroon>masmorra ao sul<navy> de <maroon>Taverley"
+
+[.journal_456]
+en = "<navy>I should speak to <maroon>Sanfew <navy>in the village to the <maroon>South"
+pt = "<navy>Devo falar com <maroon>Sanfew<navy> no vilarejo ao <maroon>sul"
+
+[.journal_457]
+en = "<str>Kaqemeex then tought me the basics of the skill Herblore."
+pt = "<str>Depois, Kaqemeex me ensinou o básico da habilidade Herblore."
+
+[.journal_458]
+en = "<navy>I can start this quest by talking to <maroon>Kaqemeex <navy>at the<maroon> Taverley Stone Circle."
+pt = "<navy>Posso começar esta missão falando com <maroon>Kaqemeex<navy> no<br><maroon>Taverley Stone Circle."
+
+[.journal_459]
+en = "<navy>I started this quest by talking to <maroon>Grish<navy>, he asked me to<br><navy>check out the underground area where some <maroon>Zombie ogres<br><navy>(Zogres)<navy> were coming from."
+pt = "<navy>Comecei esta missão falando com <maroon>Grish<navy>, que me pediu<br><navy>para investigar a área subterrânea de onde vinham uns<br><maroon>ogros zumbis<navy> (Zogres)<navy>."
+
+[.journal_460]
+en = "<navy>I have to <maroon>find a way into<navy> the <maroon>ceremonial dance area<navy> and<br><navy>then <maroon>underground<navy>"
+pt = "<navy>Preciso <maroon>achar um jeito de entrar<navy> na <maroon>área cerimonial<br><maroon>de dança<navy> e depois descer ao <maroon>subterrâneo<navy>"
+
+[.journal_461]
+en = "<str>I talked to an ogre called Grish who asked me to look into<br><str>the problem. After some searching around in a tomb, I<br><str>found some clues which pointed me to the human<br><str>habitation of Yannile."
+pt = "<str>Falei com um ogro chamado Grish, que me pediu para investigar<br><str>o problema. Depois de procurar bastante em uma tumba,<br><str>encontrei pistas que apontavam para a povoação humana de<br><str>Yanille."
+
+[.journal_462]
+en = "<str>With the help of Zavistic Rarve, the grand secretary of<br><str>the Wizards guild I was able to piece the clues together<br><str>and discover that a Wizard named 'Sithik Ints' was<br><str>responsible."
+pt = "<str>Com a ajuda de Zavistic Rarve, o grande secretário da<br><str>Wizards' Guild, consegui juntar as pistas e descobrir que<br><str>um mago chamado 'Sithik Ints' era o responsável."
+
+[.journal_463]
+en = "<str>Unfortunately I couldn't remove the curse from the area,<br><str>however, I was able to return some important artefacts to<br><str>Grish, who can now set up a new ceremonial dance area for<br><str>the ogres of Gu' Tanoth."
+pt = "<str>Infelizmente não consegui tirar a maldição da área, mas<br><str>consegui devolver alguns artefatos importantes a Grish, que<br><str>agora pode montar uma nova área cerimonial de dança para<br><str>os ogros de Gu'Tanoth."
+
+[.journal_464]
+en = "<str>Sithik Ints also told me how to make Brutal arrows which are<br><str>more effective against Zogres, and he also told me how to<br><str>make a disease balm."
+pt = "<str>Sithik Ints também me ensinou a fazer flechas brutais<br><str>(Brutal arrows), que são mais eficazes contra Zogres, e<br><str>também a fazer um bálsamo contra doenças."
+
+[.journal_465]
+en = "<str>I started this quest by talking to Grish, he asked me to<br><str>check out the underground area where some Zombie ogres<br><str>(Zogres) were coming from."
+pt = "<str>Comecei esta missão falando com Grish, que me pediu para<br><str>investigar a área subterrânea de onde vinham uns ogros<br><str>zumbis (Zogres)."
+
+[.journal_466]
+en = "<str>I have to find a way into the ceremonial dance area and<br><str>then underground."
+pt = "<str>Eu precisava achar um jeito de entrar na área cerimonial de<br><str>dança e depois descer ao subterrâneo."
+
+[.journal_467]
+en = "<str>I persuaded a guard to let me past, I only had to mention"
+pt = "<str>Convenci um guarda a me deixar passar, bastou mencionar o"
+
+[.journal_468]
+en = "<str>Grish's name and the guard smashed the barricade down. I<br><str>can enter now."
+pt = "<str>nome de Grish e o guarda derrubou a barricada. Agora<br><str>posso entrar."
+
+[.journal_469]
+en = "<str>The guard has smashed the barricade down. I can enter<br><str>now. I need to find out what happened here"
+pt = "<str>O guarda derrubou a barricada. Agora posso entrar.<br><str>Preciso descobrir o que aconteceu aqui"
+
+[.journal_470]
+en = "<str>I've spoken to Sithik, I need to see if he was involved with<br><str>the Undead Ogres at 'Jiggig' in some way."
+pt = "<str>Falei com Sithik, preciso ver se ele estava envolvido de<br><str>alguma forma com os ogros mortos-vivos de 'Jiggig'."
+
+[.journal_471]
+en = "<str>I talked to Zavistic Rarve regarding the prism and the torn<br><str>page, he gave some information on a student called Sithik"
+pt = "<str>Falei com Zavistic Rarve sobre o prisma e a página rasgada,<br><str>e ele me deu informações sobre um estudante chamado Sithik"
+
+[.journal_472]
+en = "<str>Ints, he may know more about what's happening here."
+pt = "<str>Ints, que talvez saiba mais sobre o que está acontecendo aqui."
+
+[.journal_473]
+en = "<str>Zavistic has given me some sort of potion, apparently I<br><str>need to give it to Sithik."
+pt = "<str>Zavistic me deu uma espécie de poção, parece que preciso<br><str>dá-la a Sithik."
+
+[.journal_474]
+en = "<navy>I have put some of the <maroon>potion<navy> into <maroon>Sithik's tea<navy>, the <maroon>potion<br><navy>will take some time to act. Perhaps I should <maroon>get out of here<navy><br><navy>in case there are any <maroon>side effects<navy>?"
+pt = "<navy>Coloquei um pouco da <maroon>poção<navy> no <maroon>chá de Sithik<navy>. A <maroon>poção<br><navy>vai levar um tempo para agir. Talvez eu deva <maroon>sair daqui<navy><br><navy>caso haja <maroon>efeitos colaterais<navy>?"
+
+[.journal_475]
+en = "<str>I came back into Sithik's room to find that he had been<br><str>turned into an Ogre!"
+pt = "<str>Voltei ao quarto de Sithik e descobri que ele tinha sido<br><str>transformado em um ogro!"
+
+[.journal_476]
+en = "<navy><maroon>Sithik<navy> has told me that there is no way I can <maroon>remove<navy> the<br><navy>effects of the <maroon>necromantic curse spell<navy> from the <maroon>Jiggig<navy><br><navy>area. I'll have to go back and let <maroon>Grish<navy> know."
+pt = "<navy><maroon>Sithik<navy> me disse que não há como <maroon>remover<navy> os efeitos<br><navy>do <maroon>feitiço de maldição necromântica<navy> da área de <maroon>Jiggig<navy>.<br><navy>Vou ter que voltar e avisar <maroon>Grish<navy>."
+
+[.journal_477]
+en = "<navy><maroon>Zavistic<navy> gave me some sort of <maroon>potion<navy>, but I don't have it<br><navy>on me anymore. Apparently I need to give some to <maroon>Sithik<navy>."
+pt = "<navy><maroon>Zavistic<navy> me deu uma espécie de <maroon>poção<navy>, mas não estou mais<br><navy>com ela. Parece que preciso dar um pouco a <maroon>Sithik<navy>."
+
+[.journal_478]
+en = "<str>Sithik has told me how to make 'brutal arrows', which<br><str>should be more effective against Zogres."
+pt = "<str>Sithik me ensinou a fazer 'flechas brutais' (brutal arrows),<br><str>que devem ser mais eficazes contra Zogres."
+
+[.journal_479]
+en = "<str>Sithik has given me some pointers on how I can make a<br><str>cure disease potion, though I'm still not sure exactly which<br><str>herbs I should use."
+pt = "<str>Sithik me deu algumas dicas de como fazer uma poção que<br><str>cura doenças, mas ainda não sei exatamente quais ervas<br><str>devo usar."
+
+[.journal_480]
+en = "<str>I've told Grish to relocate the dance area, but he needs<br><str>me to get something from the tomb to so that he can do<br><str>this."
+pt = "<str>Disse a Grish para mudar a área de dança de lugar, mas ele<br><str>precisa que eu pegue algo na tumba para poder fazer isso."
+
+[.journal_481]
+en = "<navy>I need to go back into the <maroon>tomb<navy> and look for some <maroon>'old'<br><navy>items<navy> that <maroon>Grish<navy> has asked for."
+pt = "<navy>Preciso voltar à <maroon>tumba<navy> e procurar alguns <maroon>itens 'antigos'<br><navy>que <maroon>Grish<navy> pediu."
+
+[.journal_482]
+en = "<str>I've killed a monster called Slash Bash...it was a huge"
+pt = "<str>Matei um monstro chamado Slash Bash... era um enorme"
+
+[.journal_483]
+en = "<str>Zogre!"
+pt = "<str>Zogre!"
+
+[.journal_484]
+en = "<navy><maroon>Slash Bash<navy> was wearing some odd <maroon>artefacts<navy>, I can only<br><navy>assume that these were what <maroon>Grish<navy> wanted."
+pt = "<navy><maroon>Slash Bash<navy> usava uns <maroon>artefatos<navy> estranhos, só posso<br><navy>imaginar que era isso que <maroon>Grish<navy> queria."
+
+[.journal_485]
+en = "<navy>I can start this quest by talking to <maroon>Grish<navy> at the Ugrish<br><navy>ceremonial dance place called <maroon>Jiggig<navy>."
+pt = "<navy>Posso começar esta missão falando com <maroon>Grish<navy> no local de<br><navy>dança cerimonial dos ogros chamado <maroon>Jiggig<navy>."
+
+[.journal_486]
+en = "<navy>To start this <maroon>quest<navy> I should complete these quests:-"
+pt = "<navy>Para começar esta <maroon>missão<navy> devo completar estas missões:-"
+
+[.journal_487]
+en = "<maroon>Jungle Potion."
+pt = "<maroon>Jungle Potion."
+
+[.journal_488]
+en = "<maroon>Big Chompy Bird Hunting."
+pt = "<maroon>Big Chompy Bird Hunting."
+
+[.journal_489]
+en = "<navy>It would help if I had the following skill levels:-"
+pt = "<navy>Ajudaria ter os seguintes níveis de habilidade:-"
+
+[.journal_490]
+en = "<maroon>Ranged level: 30"
+pt = "<maroon>Nível de Ranged: 30"
+
+[.journal_491]
+en = "<maroon>Fletching level: 30"
+pt = "<maroon>Nível de Fletching: 30"
+
+[.journal_492]
+en = "<maroon>Smithing level: 4"
+pt = "<maroon>Nível de Smithing: 4"
+
+[.journal_493]
+en = "<maroon>Herblore level: 4"
+pt = "<maroon>Nível de Herblore: 4"
+
+[.journal_494]
+en = "<navy>Must be able to defeat a <maroon>level 111<navy> foe."
+pt = "<navy>Preciso ser capaz de derrotar um inimigo de <maroon>nível 111<navy>."
+
+[.journal_495]
+en = "<str>Jungle Potion."
+pt = "<str>Jungle Potion."
+
+[.journal_496]
+en = "<str>Ranged level: 30"
+pt = "<str>Nível de Ranged: 30"
+
+[.journal_497]
+en = "<str>Fletching level: 30"
+pt = "<str>Nível de Fletching: 30"
+
+[.journal_498]
+en = "<str>Smithing level: 4"
+pt = "<str>Nível de Smithing: 4"
+
+[.journal_499]
+en = "<str>Herblore level: 4"
+pt = "<str>Nível de Herblore: 4"
+
+[.journal_500]
+en = "<navy>I need to find out what happened here."
+pt = "<navy>Preciso descobrir o que aconteceu aqui."
+
+[.journal_501]
+en = "<str>I spoke to Hassan, the Chancellor to the Emir of Al Kharid, in<br><str>the Al Kharid Palace. He asked for my help with an urgent<br><str>matter, and directed me to speak to Osman, Al Kharid's"
+pt = "<str>Falei com Hassan, o Chanceler do Emir de Al Kharid, no<br><str>Al Kharid Palace. Ele pediu minha ajuda com um assunto<br><str>urgente e me mandou falar com Osman, o"
+
+[.journal_502]
+en = "<str>Spymaster."
+pt = "<str>mestre-espião de Al Kharid."
+
+[.journal_503]
+en = "<navy>I spoke to <maroon>Osman<navy> outside the <maroon>Al Kharid Palace<navy>. He informed me<br><navy>that <maroon>Prince Ali<navy>, the <maroon>Emir's<navy> heir, was captured by a group of<br><navy><maroon>Bandits<navy> and taken to an <maroon>Abandoned Jail<navy> east of <maroon>Draynor"
+pt = "<navy>Falei com <maroon>Osman<navy> do lado de fora do <maroon>Al Kharid Palace<navy>. Ele<br><navy>me contou que <maroon>Prince Ali<navy>, herdeiro do <maroon>Emir<navy>, foi capturado<br><navy>por um grupo de <maroon>bandidos<navy> e levado a uma <maroon>prisão abandonada<br><navy>a leste de <maroon>Draynor"
+
+[.journal_504]
+en = "<maroon>Village<navy>. <maroon>Osman<navy> asked for my help in rescuing <maroon>Prince Ali<navy>, and<br><navy>suggested I speak with <maroon>Leela<navy>, who I can find spying on the<br><navy><maroon>Jail<navy>."
+pt = "<maroon>Village<navy>. <maroon>Osman<navy> pediu minha ajuda para resgatar <maroon>Prince Ali<navy><br><navy>e sugeriu que eu falasse com <maroon>Leela<navy>, que está espionando a<br><maroon>prisão<navy>."
+
+[.journal_505]
+en = "<str>I spoke to Osman outside the Al Kharid Palace. He informed me<br><str>that Prince Ali, the Emir's heir, was captured by a group of<br><str>Bandits and taken to an Abandoned Jail east of Draynor"
+pt = "<str>Falei com Osman do lado de fora do Al Kharid Palace. Ele me<br><str>contou que Prince Ali, herdeiro do Emir, foi capturado por<br><str>um grupo de bandidos e levado a uma prisão abandonada a<br><str>leste de"
+
+[.journal_506]
+en = "<str>Village. Osman asked for my help in rescuing Prince Ali, and<br><str>suggested I speak with Leela in Draynor Village."
+pt = "<str>Draynor Village. Osman pediu minha ajuda para resgatar<br><str>Prince Ali e sugeriu que eu falasse com Leela em Draynor<br><str>Village."
+
+[.journal_507]
+en = "<str>With help from Osman and Leela, I created a disguise to make"
+pt = "<str>Com a ajuda de Osman e Leela, criei um disfarce para fazer"
+
+[.journal_508]
+en = "<str>Prince Ali look like Lady Keli, the leader of the Bandits. I also<br><str>made a copy of the key to his cell."
+pt = "<str>Prince Ali parecer Lady Keli, a líder dos bandidos. Também<br><str>fiz uma cópia da chave da cela dele."
+
+[.journal_509]
+en = "<str>To stop Prince Ali's Personal Guard from being a problem, I<br><str>gave him some Beer to get him drunk."
+pt = "<str>Para que o guarda pessoal de Prince Ali não fosse um<br><str>problema, dei a ele um pouco de cerveja (Beer) para deixá-lo<br><str>bêbado."
+
+[.journal_510]
+en = "<str>To get Lady Keli out of the way, I tied her up and put her in a<br><str>Cupboard."
+pt = "<str>Para tirar Lady Keli do caminho, amarrei-a e a coloquei em<br><str>um armário."
+
+[.journal_511]
+en = "<navy>With <maroon>Lady Keli<navy> dealt with, I was able to free <maroon>Prince Ali<navy> and get<br><navy>him to safety. I should now return to <maroon>Chancellor Hassan<navy> in the<br><navy><maroon>Al Kharid Palace<navy>."
+pt = "<navy>Com <maroon>Lady Keli<navy> fora do caminho, consegui libertar <maroon>Prince Ali<navy><br><navy>e levá-lo em segurança. Agora devo voltar ao <maroon>Chancellor<br><maroon>Hassan<navy> no <maroon>Al Kharid Palace<navy>."
+
+[.journal_512]
+en = "<str>With Lady Keli dealt with, I was able to free Prince Ali and get<br><str>him to safety. I returned to Al Kharid, where Hassan rewarded<br><str>me for my work."
+pt = "<str>Com Lady Keli fora do caminho, consegui libertar Prince Ali e<br><str>levá-lo em segurança. Voltei a Al Kharid, onde Hassan me<br><str>recompensou pelo trabalho."
+
+[.journal_513]
+en = "<navy>Before I can free <maroon>Prince Ali<navy>, I need to deal with his <maroon>Personal"
+pt = "<navy>Antes de libertar <maroon>Prince Ali<navy>, preciso lidar com seu <maroon>guarda"
+
+[.journal_514]
+en = "<maroon>Guard<navy>. <maroon>Leela<navy> suggested I speak with the <maroon>Guard<navy> to try and<br><navy>determine any weaknesses he might have."
+pt = "<maroon>pessoal<navy>. <maroon>Leela<navy> sugeriu que eu fale com o <maroon>guarda<navy> para<br><navy>tentar descobrir alguma fraqueza que ele tenha."
+
+[.journal_515]
+en = "<navy>I spoke to <maroon>Chancellor Hassan<navy>, the <maroon>Chancellor<navy> to the <maroon>Emir of Al"
+pt = "<navy>Falei com o <maroon>Chancellor Hassan<navy>, o <maroon>chanceler<navy> do <maroon>Emir de Al"
+
+[.journal_516]
+en = "<maroon>Kharid<navy>, in the <maroon>Al Kharid Palace<navy>. He asked for my help with an<br><navy>urgent matter, and directed me to speak to <maroon>Osman<navy>, <maroon>Al"
+pt = "<maroon>Kharid<navy>, no <maroon>Al Kharid Palace<navy>. Ele pediu minha ajuda com<br><navy>um assunto urgente e me mandou falar com <maroon>Osman<navy>, o<br><maroon>mestre-espião"
+
+[.journal_517]
+en = "<maroon>Kharid's Spymaster<navy>, just outside the <maroon>Palace<navy>."
+pt = "<maroon>de Al Kharid<navy>, logo do lado de fora do <maroon>palácio<navy>."
+
+[.journal_518]
+en = "<navy>To get <maroon>Lady Keli<navy> out of the way, I tied her up and put her in a<br><navy><maroon>Cupboard<navy>. I can now free <maroon>Prince Ali<navy>. I'll need to make sure I<br><navy>give him his disguise when I do."
+pt = "<navy>Para tirar <maroon>Lady Keli<navy> do caminho, amarrei-a e a coloquei<br><navy>em um <maroon>armário<navy>. Agora posso libertar <maroon>Prince Ali<navy>. Preciso<br><navy>lembrar de entregar o disfarce a ele quando fizer isso."
+
+[.journal_519]
+en = "<navy>To stop <maroon>Prince Ali's Personal Guard<navy> from being a problem, I<br><navy>gave him some <maroon>Beer<navy> to get him drunk. The last thing I need to<br><navy>do is deal with <maroon>Lady Keli<navy>. <maroon>Leela<navy> might know how I can do this."
+pt = "<navy>Para que o <maroon>guarda pessoal de Prince Ali<navy> não fosse um<br><navy>problema, dei a ele um pouco de <maroon>cerveja (Beer)<navy> para deixá-lo<br><navy>bêbado. Falta só lidar com <maroon>Lady Keli<navy>. <maroon>Leela<navy> talvez saiba<br><navy>como fazer isso."
+
+[.journal_520]
+en = "<maroon>Guard<navy>. Luckily, it seems the <maroon>Guard<navy> has a love for <maroon>Beer<navy> If I<br><navy>bring him some, I should be able to get him drunk."
+pt = "<maroon>pessoal<navy>. Por sorte, parece que o <maroon>guarda<navy> adora <maroon>cerveja<navy>.<br><navy>Se eu levar um pouco, devo conseguir deixá-lo bêbado."
+
+[.journal_521]
+en = "<navy>I can start his quest by talking to <maroon>Chancellor Hassan<navy> in <maroon>Al Kharid Palace<navy>."
+pt = "<navy>Posso começar esta missão falando com o <maroon>Chancellor Hassan<br><navy>no <maroon>Al Kharid Palace<navy>."
+
+[.journal_522]
+en = "<navy>I can start this quest by speaking to the <maroon>Squire <navy>in the<br><navy>courtyard of the <maroon>White Knight's Castle <navy>in <maroon>southern Falador"
+pt = "<navy>Posso começar esta missão falando com o <maroon>Squire <navy>no<br><navy>pátio do <maroon>White Knights' Castle <navy>no <maroon>sul de Falador"
+
+[.journal_523]
+en = "<navy>To complete this quest I need:"
+pt = "<navy>Para completar esta missão preciso de:"
+
+[.journal_524]
+en = "<maroon>Level 10 Mining<br><navy>and to be unafraid of <maroon>Level 57 Ice Warriors."
+pt = "<maroon>Nível 10 em Mining<br><navy>e não ter medo de <maroon>Ice Warriors de nível 57."
+
+[.journal_525]
+en = "<str>I told the Squire I would help him to replace the sword he<br><str>had lost. It could only be made by an Imcando Dwarf."
+pt = "<str>Disse ao Squire que o ajudaria a substituir a espada que ele<br><str>perdeu. Ela só poderia ser feita por um anão Imcando."
+
+[.journal_526]
+en = "<navy>The Squire suggests I speak to <maroon>Reldo <navy>in the <maroon>Varrock Palace"
+pt = "<navy>O Squire sugere que eu fale com <maroon>Reldo <navy>na <maroon>biblioteca do"
+
+[.journal_527]
+en = "<maroon>Library<navy> for information about the <maroon>Imcando Dwarves."
+pt = "<maroon>Varrock Palace<navy> para saber mais sobre os <maroon>anões Imcando."
+
+[.journal_528]
+en = "<navy>Reldo couldn't give me much information about the<br><maroon>Imcando <navy>except a few live on the <maroon>southern peninsula of<br><maroon>Asgarnia, <navy>they dislike strangers, and LOVE <maroon>redberry pies."
+pt = "<navy>Reldo não soube me dizer muito sobre os <maroon>Imcando<navy>, só que<br><navy>alguns vivem na <maroon>península sul de Asgarnia<navy>, não gostam<br><navy>de estranhos e ADORAM <maroon>tortas de redberry (redberry pies)."
+
+[.journal_529]
+en = "<str>I found an Imcando Dwarf named Thurgo thanks to<br><str>information provided by Reldo. He wasn't very talkative<br><str>until I gave him a Redberry pie, which he gobbled up."
+pt = "<str>Encontrei um anão Imcando chamado Thurgo graças às<br><str>informações de Reldo. Ele não falou muito até eu lhe dar<br><str>uma torta de redberry (Redberry pie), que ele devorou."
+
+[.journal_530]
+en = "<navy>He will help me now I have gained his trust through <maroon>pie."
+pt = "<navy>Ele vai me ajudar, agora que ganhei sua confiança com <maroon>torta."
+
+[.journal_531]
+en = "<maroon>Thurgo <navy>needs a <maroon>picture of the sword <navy>before he can help."
+pt = "<maroon>Thurgo <navy>precisa de um <maroon>desenho da espada <navy>antes de ajudar."
+
+[.journal_532]
+en = "<navy>I should probably ask the <maroon>Squire <navy>about obtaining one."
+pt = "<navy>Acho que devo perguntar ao <maroon>Squire <navy>como conseguir um."
+
+[.journal_533]
+en = "<str>Thurgo needed a picture of the sword to replace."
+pt = "<str>Thurgo precisava de um desenho da espada a substituir."
+
+[.journal_534]
+en = "<navy>The Squire told me about a <maroon>portrait <navy>of Sir Vyvin's father<br><navy>which has a <maroon>picture of the sword <navy>in <maroon>Sir Vyvin's room."
+pt = "<navy>O Squire me falou de um <maroon>retrato <navy>do pai de Sir Vyvin que<br><navy>tem um <maroon>desenho da espada<navy>, no <maroon>quarto de Sir Vyvin."
+
+[.journal_535]
+en = "<str>Thurgo needed a picture of the sword before he could<br><str>start work on a replacement. I took him a portrait of it."
+pt = "<str>Thurgo precisava de um desenho da espada antes de começar<br><str>a fazer outra. Levei para ele um retrato com a espada."
+
+[.journal_536]
+en = "<navy>According to <maroon>Thurgo <navy>to make a <maroon>replica sword <navy>he will need<br><maroon>two Iron Bars <navy>and some <maroon>Blurite Ore. Blurite Ore <navy>can only be<br><navy>found <maroon>deep in the caves below Thurgo's house<navy>. I should<br><navy>prepare myself to fend off Ice giants."
+pt = "<navy>Segundo <maroon>Thurgo<navy>, para fazer uma <maroon>réplica da espada <navy>ele vai<br><navy>precisar de <maroon>duas barras de ferro (Iron Bars) <navy>e um pouco de<br><maroon>minério de blurite (Blurite Ore)<navy>. Esse minério só é<br><navy>encontrado <maroon>no fundo das cavernas sob a casa de Thurgo<navy>.<br><navy>Devo me preparar para enfrentar Ice giants."
+
+[.journal_537]
+en = "<str>After bringing Thurgo two iron bars and some blurite ore<br><str>he made me a fine replica of Sir Vyvin's Sword, which I<br><str>returned to the Squire for a reward."
+pt = "<str>Depois que levei a Thurgo duas barras de ferro e um pouco<br><str>de minério de blurite, ele fez para mim uma ótima réplica<br><str>da espada de Sir Vyvin, que devolvi ao Squire em troca de<br><str>uma recompensa."
+
+[.journal_538]
+en = "<str>I spoke to Trufitus, he needs to commune with the<br><str>gods, he's asked me to help him by collecting herbs."
+pt = "<str>Falei com Trufitus, ele precisa entrar em comunhão com os<br><str>deuses e me pediu ajuda para coletar ervas."
+
+[.journal_539]
+en = "<str>I've given Snakeweed and Ardrigal to Trufitus."
+pt = "<str>Entreguei Snakeweed e Ardrigal a Trufitus."
+
+[.journal_540]
+en = "<navy>I need to pick some fresh <maroon>Sito Foil <navy>for <maroon>Trufitus."
+pt = "<navy>Preciso colher <maroon>Sito Foil <navy>fresco para <maroon>Trufitus."
+
+[.journal_541]
+en = "<str>I've given Snakeweed, Ardrigal and Sito Foil<br><str>to Trufitus."
+pt = "<str>Entreguei Snakeweed, Ardrigal e Sito Foil<br><str>a Trufitus."
+
+[.journal_542]
+en = "<navy>I need to pick some fresh <maroon>Volencia Moss <navy>for <maroon>Trufitus."
+pt = "<navy>Preciso colher <maroon>Volencia Moss <navy>fresco para <maroon>Trufitus."
+
+[.journal_543]
+en = "<navy>I need to pick some fresh <maroon>Snakeweed <navy>for <maroon>Trufitus."
+pt = "<navy>Preciso colher <maroon>Snakeweed <navy>fresco para <maroon>Trufitus."
+
+[.journal_544]
+en = "<str>Trufitus Shakaya of Tai Bwo Wannai village needed<br><str>some jungle herbs in order to make a potion which would<br><str>help him commune with the gods. I collected five lots<br><str>of jungle herbs for him and he was able to<br><str>commune with the gods."
+pt = "<str>Trufitus Shakaya, da vila de Tai Bwo Wannai, precisava<br><str>de algumas ervas da selva para fazer uma poção que o<br><str>ajudaria a entrar em comunhão com os deuses. Colhi cinco<br><str>porções de ervas da selva para ele, e ele conseguiu entrar<br><str>em comunhão com os deuses."
+
+[.journal_545]
+en = "<str>As a reward he showed me some herblore techniques. "
+pt = "<str>Como recompensa, ele me ensinou algumas técnicas de Herblore. "
+
+[.journal_546]
+en = "<str>I've given Snakeweed, Ardrigal, Sito Foil<br><str>and Volencia Moss to Trufitus."
+pt = "<str>Entreguei Snakeweed, Ardrigal, Sito Foil<br><str>e Volencia Moss a Trufitus."
+
+[.journal_547]
+en = "<navy>I need to pick some fresh <maroon>Rogues Purse <navy>for <maroon>Trufitus."
+pt = "<navy>Preciso colher <maroon>Rogues Purse <navy>fresco para <maroon>Trufitus."
+
+[.journal_548]
+en = "<str>I've given Snakeweed to Trufitus."
+pt = "<str>Entreguei Snakeweed a Trufitus."
+
+[.journal_549]
+en = "<navy>I need to pick some fresh <maroon>Ardrigal <navy>for <maroon>Trufitus."
+pt = "<navy>Preciso colher <maroon>Ardrigal <navy>fresco para <maroon>Trufitus."
+
+[.journal_550]
+en = "<navy>I can start this quest by speaking to <maroon>Trufitus Shakaya<br><navy>who lives in the main hut in <maroon> Tai Bwo Wannai<br><navy>village on the island of <maroon>Karamja."
+pt = "<navy>Posso começar esta missão falando com <maroon>Trufitus Shakaya<navy>,<br><navy>que mora na cabana principal da vila de <maroon>Tai Bwo Wannai<navy>,<br><navy>na ilha de <maroon>Karamja."
+
+[.journal_551]
+en = "<str>I have spoken to Doric."
+pt = "<str>Falei com Doric."
+
+[.journal_552]
+en = "<navy>I need to collect some items and bring them to <maroon>Doric."
+pt = "<navy>Preciso juntar alguns itens e levá-los a <maroon>Doric."
+
+[.journal_553]
+en = "<maroon>6 Clay<navy> - I need %1% more."
+pt = "<maroon>6 Clay<navy> - preciso de mais %1%."
+
+[.journal_554]
+en = "<maroon>4 Copper Ore<navy> - I need %1% more."
+pt = "<maroon>4 Copper Ore<navy> - preciso de mais %1%."
+
+[.journal_555]
+en = "<maroon>2 Iron Ore<navy> - I need %1% more."
+pt = "<maroon>2 Iron Ore<navy> - preciso de mais %1%."
+
+[.journal_556]
+en = "<str>I have collected some Clay, Copper Ore, and Iron Ore."
+pt = "<str>Juntei argila, minério de cobre e minério de ferro."
+
+[.journal_557]
+en = "<str>Doric rewarded me for all my hard work."
+pt = "<str>Doric me recompensou por todo o meu esforço."
+
+[.journal_558]
+en = "<str>I can now use Doric's Anvils whenever I want."
+pt = "<str>Agora posso usar as bigornas de Doric quando quiser."
+
+[.journal_559]
+en = "<navy>I can start this quest by speaking to <maroon>Doric<navy> who is <maroon>North of<br><maroon>Falador"
+pt = "<navy>Posso começar esta missão falando com <maroon>Doric<navy>, que fica<br><maroon>ao norte de Falador"
+
+[.journal_560]
+en = "<navy>There aren't any requirements but <maroon>Level 15 Mining<navy> will help."
+pt = "<navy>Não há requisitos, mas <maroon>nível 15 em Mining<navy> ajuda."
+
+[.journal_561]
+en = "<str>6 Clay."
+pt = "<str>6 Clay."
+
+[.journal_562]
+en = "<str>4 Copper Ore."
+pt = "<str>4 Copper Ore."
+
+[.journal_563]
+en = "<str>2 Iron Ore."
+pt = "<str>2 Iron Ore."
+
+[.journal_564]
+en = "<str>I met an unhappy dwarf named Dororan just outside the<br><str>barbarian village."
+pt = "<str>Conheci um anão infeliz chamado Dororan logo fora da<br><str>Barbarian Village."
+
+[.journal_565]
+en = "<str>Dororan, outside the barbarian village, wants me to bring him<br><str>a gold ring he Specifically wants a ring from Jeffery in Edgeville."
+pt = "<str>Dororan, fora da Barbarian Village, quer que eu lhe traga<br><str>um anel de ouro (gold ring). Ele quer especificamente um anel<br><str>do Jeffery, em Edgeville."
+
+[.journal_566]
+en = "<str>Dororan wants me to engrave the words <br><str>'Gudrun the Fair, Gudrun the Fiery' onto the gold ring with a chisel."
+pt = "<str>Dororan quer que eu grave as palavras<br><str>'Gudrun the Fair, Gudrun the Fiery' no anel de ouro<br><str>com um cinzel (chisel)."
+
+[.journal_567]
+en = "<str>I need to show the engraved ring to Dororan,<br><str>outside the barbarian village."
+pt = "<str>Preciso mostrar o anel gravado (engraved ring) ao Dororan,<br><str>fora da Barbarian Village."
+
+[.journal_568]
+en = "<str>Dororan wants me to take the engraved ring to Gudrun<br><str>in the barbarian village"
+pt = "<str>Dororan quer que eu leve o anel gravado à Gudrun,<br><str>na Barbarian Village."
+
+[.journal_569]
+en = "<str>He asked that I not reveal that he is a dwarf just yet."
+pt = "<str>Ele pediu que eu ainda não revelasse que ele é um anão."
+
+[.journal_570]
+en = "<str>Gudrun says that her father, Gunthor, would never allow her to<br><str>have a relationship with an outsider. She wondered if I could<br><str>convince him otherwise. He can be found at the longhouse in the<br><str>barbarian village."
+pt = "<str>Gudrun diz que o pai dela, Gunthor, nunca a deixaria<br><str>namorar um forasteiro. Ela perguntou se eu conseguiria<br><str>convencê-lo do contrário. Ele fica na casa comunal<br><str>(longhouse) da Barbarian Village."
+
+[.journal_571]
+en = "<str>Gunthor was not accommodating. He told me to ask Gudrun<br><str>in the barbarian village what someone called Gunnar would think."
+pt = "<str>Gunthor não foi nada receptivo. Ele mandou eu perguntar à<br><str>Gudrun, na Barbarian Village, o que um tal de Gunnar<br><str>pensaria disso."
+
+[.journal_572]
+en = "<str>Gudrun suggested I see if Dororan, outside the<br><str>barbarian village, can think of anything to help convince Gunthor."
+pt = "<str>Gudrun sugeriu que eu visse se o Dororan, fora da<br><str>Barbarian Village, tem alguma ideia para convencer o Gunthor."
+
+[.journal_573]
+en = "<str>Dororan, outside the barbarian village, is going to try to write<br><str>a poem to convince Gunthor. I should check how he's getting on."
+pt = "<str>Dororan, fora da Barbarian Village, vai tentar escrever<br><str>um poema para convencer o Gunthor. Devo ver como ele está<br><str>indo."
+
+[.journal_574]
+en = "<str>I need to take the poem to Gudrun in the barbarian village<br><str>and ask her to read it to her father."
+pt = "<str>Preciso levar o poema à Gudrun na Barbarian Village<br><str>e pedir que ela o leia para o pai."
+
+[.journal_575]
+en = "<navy>I should talk to <maroon>Gudrun <navy>in the <maroon>barbarian village<br><navy>once I'm ready for her to read the poem to her father."
+pt = "<navy>Devo falar com a <maroon>Gudrun <navy>na <maroon>Barbarian Village<br><navy>quando estiver pronto para ela ler o poema para o pai."
+
+[.journal_576]
+en = "<maroon>Dororan <navy>outside the <maroon>barbarian village, <navy>wants me to bring him a<br><maroon>Gold ring <navy>he Specifically wants a ring from <maroon>Jeffery <navy>in <maroon>Edgeville."
+pt = "<maroon>Dororan, <navy>fora da <maroon>Barbarian Village, <navy>quer que eu lhe traga<br><navy>um <maroon>anel de ouro (Gold ring)<navy>. Ele quer especificamente um<br><navy>anel do <maroon>Jeffery <navy>em <maroon>Edgeville."
+
+[.journal_577]
+en = "<navy>Items I need:"
+pt = "<navy>Itens de que preciso:"
+
+[.journal_578]
+en = "<maroon>Ring from Jeffery"
+pt = "<maroon>Anel do Jeffery"
+
+[.journal_579]
+en = "<maroon>Dororan, <navy>outside the <maroon>barbarian village, <navy>is going to try to write<br><navy>a poem to convince Gunthor. I should check how he's getting on."
+pt = "<maroon>Dororan, <navy>fora da <maroon>Barbarian Village, <navy>vai tentar escrever<br><navy>um poema para convencer o Gunthor. Devo ver como ele está<br><navy>indo."
+
+[.journal_580]
+en = "<navy>Gudrun suggested I see if <maroon>Dororan, <navy>outside the<br><maroon>barbarian village, <navy>can think of anything to help convince Gunthor."
+pt = "<navy>Gudrun sugeriu que eu visse se o <maroon>Dororan, <navy>fora da<br><maroon>Barbarian Village, <navy>tem alguma ideia para convencer o Gunthor."
+
+[.journal_581]
+en = "<navy>Gudrun says that her father, <maroon>Gunthor, <navy>would never allow her to<br><navy>have a relationship with an outsider. She wondered if I could<br><navy>convince him otherwise. He can be found at the <maroon>longhouse <navy>in the<br><maroon>barbarian village."
+pt = "<navy>Gudrun diz que o pai dela, <maroon>Gunthor, <navy>nunca a deixaria<br><navy>namorar um forasteiro. Ela perguntou se eu conseguiria<br><navy>convencê-lo do contrário. Ele fica na <maroon>casa comunal<br><maroon>(longhouse) <navy>da <maroon>Barbarian Village."
+
+[.journal_582]
+en = "<navy>I can start this quest by talking to <maroon>Dororan, <navy>the dwarf<br><navy>just outside the <maroon>barbarian village."
+pt = "<navy>Posso começar esta missão falando com <maroon>Dororan, <navy>o anão<br><navy>logo fora da <maroon>Barbarian Village."
+
+[.journal_583]
+en = "<navy>I need to show the <maroon>engraved ring <navy>to <maroon>Dororan, <navy>outside<br><navy>the <maroon>barbarian village."
+pt = "<navy>Preciso mostrar o <maroon>anel gravado (engraved ring) <navy>ao<br><maroon>Dororan, <navy>fora da <maroon>Barbarian Village."
+
+[.journal_584]
+en = "<navy>I should talk to <maroon>Gudrun <navy>or <maroon>Dororan <navy>in the<br><maroon>barbarian village <navy>about how the recital went."
+pt = "<navy>Devo falar com a <maroon>Gudrun <navy>ou o <maroon>Dororan <navy>na<br><maroon>Barbarian Village <navy>sobre como foi a declamação."
+
+[.journal_585]
+en = "<str>I should talk to Gudrun or Dororan in the<br><str>barbarian village about how the recital went."
+pt = "<str>Devo falar com a Gudrun ou o Dororan na<br><str>Barbarian Village sobre como foi a declamação."
+
+[.journal_586]
+en = "<str>Dororan has moved into a large house, east of the<br><str>barbarian village and across the river. The house is north<br><str>of the road and has roses outside"
+pt = "<str>Dororan se mudou para uma casa grande, a leste da<br><str>Barbarian Village, do outro lado do rio. A casa fica ao norte<br><str>da estrada e tem rosas na frente."
+
+[.journal_587]
+en = "<navy>I need to take the poem to <maroon>Gudrun <navy>in the <maroon>barbarian village<br><navy>and ask her to read it to her father."
+pt = "<navy>Preciso levar o poema à <maroon>Gudrun <navy>na <maroon>Barbarian Village<br><navy>e pedir que ela o leia para o pai."
+
+[.journal_588]
+en = "<navy>Gunthor was not accommodating. He told me to ask <maroon>Gudrun<br><navy>in the <maroon>barbarian village <navy>what someone called Gunnar would think."
+pt = "<navy>Gunthor não foi nada receptivo. Ele mandou eu perguntar à<br><maroon>Gudrun<navy>, na <maroon>Barbarian Village<navy>, o que um tal de Gunnar<br><navy>pensaria disso."
+
+[.journal_589]
+en = "<navy>I met an unhappy dwarf named <maroon>Dororan <navy>just outside the<br><maroon>barbarian village."
+pt = "<navy>Conheci um anão infeliz chamado <maroon>Dororan <navy>logo fora da<br><maroon>Barbarian Village."
+
+[.journal_590]
+en = "<navy>Dororan wants me to take the <maroon>engraved ring <navy>to <maroon>Gudrun<br><navy>in the <maroon>barbarian village"
+pt = "<navy>Dororan quer que eu leve o <maroon>anel gravado <navy>à <maroon>Gudrun<br><navy>na <maroon>Barbarian Village."
+
+[.journal_591]
+en = "<navy>He asked that I not reveal that he is a dwarf just yet."
+pt = "<navy>Ele pediu que eu ainda não revelasse que ele é um anão."
+
+[.journal_592]
+en = "<navy>Dororan wants me to engrave the words <br><navy>'Gudrun the Fair, Gudrun the Fiery' onto the <maroon>gold ring <navy>with a <maroon>chisel."
+pt = "<navy>Dororan quer que eu grave as palavras<br><navy>'Gudrun the Fair, Gudrun the Fiery' no <maroon>anel de ouro<br><navy>com um <maroon>cinzel (chisel)."
+
+[.journal_593]
+en = "<str>I spoke to Duke Horacio in Lumbridge Castle. He told me<br><str>that he'd found a Strange Talisman in the Castle which<br><str>might be of use to the Order of Wizards at the Wizards'"
+pt = "<str>Falei com o Duke Horacio em Lumbridge Castle. Ele me contou<br><str>que tinha achado um Strange Talisman no castelo, que talvez<br><str>fosse útil à Order of Wizards da Wizards'"
+
+[.journal_594]
+en = "<str>Tower. He asked me to take it there and give it to a wizard<br><str>called Sedridor."
+pt = "<str>Tower. Ele me pediu que o levasse até lá e o entregasse a um<br><str>mago chamado Sedridor."
+
+[.journal_595]
+en = "<str>I delivered the Strange Talisman to Sedridor in the<br><str>Wizards' Tower. He believed it might be key to discovering<br><str>a Teleportation Incantation to the lost Rune Essence Mine."
+pt = "<str>Entreguei o Strange Talisman ao Sedridor na Wizards' Tower.<br><str>Ele achou que podia ser a chave para descobrir um<br><str>Encantamento de Teletransporte para a perdida<br><str>Rune Essence Mine."
+
+[.journal_596]
+en = "<str>He asked me to help confirm this by delivering a Package<br><str>to Aubury, an expert on Runecrafting."
+pt = "<str>Ele me pediu para ajudar a confirmar isso entregando um<br><str>pacote ao Aubury, um especialista em Runecrafting."
+
+[.journal_597]
+en = "<navy>I delivered the <maroon>Package<navy> to <maroon>Aubury<navy> at his <maroon>Rune Shop<navy> in<br><navy>south east <maroon>Varrock<navy> . He confirmed <maroon>Sedridor's<navy> suspicions<br><navy>and asked me to take some <maroon>Research Notes<navy> . back to him. I<br><navy>can find <maroon>Sedridor<navy> in the basement of the <maroon>Wizards' Tower<navy>."
+pt = "<navy>Entreguei o <maroon>pacote<navy> ao <maroon>Aubury<navy> na <maroon>Rune Shop<navy> dele, no<br><navy>sudeste de <maroon>Varrock<navy>. Ele confirmou as suspeitas do <maroon>Sedridor<navy><br><navy>e me pediu para levar umas <maroon>anotações de pesquisa<navy> de volta<br><navy>a ele. Encontro o <maroon>Sedridor<navy> no porão da <maroon>Wizards' Tower<navy>."
+
+[.journal_598]
+en = "<navy>If I lose the <maroon>Research Notes<navy> I'll need to ask <maroon>Aubury<navy> for<br><navy>some more."
+pt = "<navy>Se eu perder as <maroon>anotações de pesquisa<navy>, vou precisar pedir<br><navy>mais ao <maroon>Aubury<navy>."
+
+[.journal_599]
+en = "<navy>I delivered the <maroon>Strange Talisman<navy> to <maroon>Sedridor<navy> in the<br><navy>basement of the <maroon>Wizards' Tower.<navy> He believes it might be<br><navy>key to discovering a <maroon>Teleportation Incantation<navy> to the lost"
+pt = "<navy>Entreguei o <maroon>Strange Talisman<navy> ao <maroon>Sedridor<navy> no porão<br><navy>da <maroon>Wizards' Tower.<navy> Ele acredita que pode ser a chave<br><navy>para descobrir um <maroon>Encantamento de Teletransporte<navy> para a<br><navy>perdida"
+
+[.journal_600]
+en = "<maroon>Rune Essence Mine.<navy> He asked me to help confirm this by<br><navy>delivering a <maroon>Package<navy> to <maroon>Aubury<navy> , an expert on<br><maroon>Runecrafting.<navy> I can find him in his <maroon>Rune Shop<navy> in south east<br><maroon>Varrock."
+pt = "<maroon>Rune Essence Mine.<navy> Ele me pediu para ajudar a confirmar isso<br><navy>entregando um <maroon>pacote<navy> ao <maroon>Aubury<navy>, um especialista em<br><maroon>Runecrafting.<navy> Ele fica na <maroon>Rune Shop<navy> dele, no sudeste de<br><maroon>Varrock."
+
+[.journal_601]
+en = "<navy>If I lose the <maroon>Package<navy> , I'll need to ask <maroon>Sedridor<navy> for<br><navy>another."
+pt = "<navy>Se eu perder o <maroon>pacote<navy>, vou precisar pedir outro ao<br><maroon>Sedridor<navy>."
+
+[.journal_602]
+en = "<navy>I spoke to <maroon>Duke Horacio<navy> in <maroon>Lumbridge Castle.<navy> He told me<br><navy>that he'd found a <maroon>Strange Talisman<navy> in the <maroon>Castle<navy> which<br><navy>might be of use to the <maroon>Order of Wizards<navy> at the <maroon>Wizards'"
+pt = "<navy>Falei com o <maroon>Duke Horacio<navy> em <maroon>Lumbridge Castle.<navy> Ele me<br><navy>contou que tinha achado um <maroon>Strange Talisman<navy> no <maroon>castelo<navy>,<br><navy>que talvez fosse útil à <maroon>Order of Wizards<navy> da <maroon>Wizards'"
+
+[.journal_603]
+en = "<maroon>Tower. He asked me to take it there and give it to a wizard<br><navy>called <maroon>Sedridor.<navy> I can find the <maroon>Wizards' Tower<navy> south west of<br><maroon>Lumbridge, across the bridge from <maroon>Draynor Village."
+pt = "<maroon>Tower.<navy> Ele me pediu que o levasse até lá e o entregasse a um<br><navy>mago chamado <maroon>Sedridor.<navy> A <maroon>Wizards' Tower<navy> fica a sudoeste de<br><maroon>Lumbridge<navy>, depois da ponte que sai de <maroon>Draynor Village."
+
+[.journal_604]
+en = "<navy>If I lose the <maroon>Strange Talisman<navy> , I'll need to ask <maroon>Duke Horacio<navy> for<br><navy>another."
+pt = "<navy>Se eu perder o <maroon>Strange Talisman<navy>, vou precisar pedir outro<br><navy>ao <maroon>Duke Horacio<navy>."
+
+[.journal_605]
+en = "<str>I delivered the Package to Aubury in Varrock. He confirmed"
+pt = "<str>Entreguei o pacote ao Aubury em Varrock. Ele confirmou"
+
+[.journal_606]
+en = "<str>Sedridor's suspicions and asked me to take some"
+pt = "<str>as suspeitas do Sedridor e me pediu para levar umas"
+
+[.journal_607]
+en = "<str>Research Notes back to him. I did so, and Sedridor used<br><str>them to discover the Teleportation Incantation to the lost"
+pt = "<str>anotações de pesquisa de volta a ele. Foi o que fiz, e o<br><str>Sedridor as usou para descobrir o Encantamento de<br><str>Teletransporte para a perdida"
+
+[.journal_608]
+en = "<str>Rune Essence Mine. As a thank you for my help, he<br><str>granted me permission to use the Rune Essence Mine<br><str>whenever I please."
+pt = "<str>Rune Essence Mine. Como agradecimento pela ajuda, ele<br><str>me deu permissão para usar a Rune Essence Mine<br><str>sempre que eu quiser."
+
+[.journal_609]
+en = "<navy>I delivered the <maroon>Strange Talisman<navy> to <maroon>Sedridor<navy> in the<br><navy>basement of the <maroon>Wizards' Tower.<navy> I should see what he can<br><navy>tell me about it."
+pt = "<navy>Entreguei o <maroon>Strange Talisman<navy> ao <maroon>Sedridor<navy> no porão<br><navy>da <maroon>Wizards' Tower.<navy> Devo ver o que ele pode<br><navy>me contar sobre o talismã."
+
+[.journal_610]
+en = "<navy>I can start this quest by speaking to <maroon>Duke Horacio of<br><maroon>Lumbridge<navy> upstairs in <maroon>Lumbridge Castle."
+pt = "<navy>Posso começar esta missão falando com o <maroon>Duke Horacio of<br><maroon>Lumbridge<navy>, no andar de cima de <maroon>Lumbridge Castle."
+
+[.journal_611]
+en = "<navy>I delivered the <maroon>Package<navy> to <maroon>Aubury<navy> at his <maroon>Rune Shop<navy> in<br><navy>south east <maroon>Varrock<navy> . I should see what he can tell me about<br><navy>the <maroon>Teleportation Incantation."
+pt = "<navy>Entreguei o <maroon>pacote<navy> ao <maroon>Aubury<navy> na <maroon>Rune Shop<navy> dele, no<br><navy>sudeste de <maroon>Varrock<navy>. Devo ver o que ele pode me contar<br><navy>sobre o <maroon>Encantamento de Teletransporte."
+
+[.journal_612]
+en = "<str>I read the signpost in Canifis, which tells of a butler<br><str>position that is available at the castle to the northeast."
+pt = "<str>Li a placa em Canifis, que fala de uma vaga de mordomo<br><str>no castelo a nordeste."
+
+[.journal_613]
+en = "<str>I spoke to Fenkenstrain, who wanted me to find him some<br><str>body parts so that he could build a creature."
+pt = "<str>Falei com o Fenkenstrain, que queria que eu achasse partes<br><str>de corpo para ele montar uma criatura."
+
+[.journal_614]
+en = "<str>I gave a torso, some arms and legs, and a head to<br><str>Fenkenstrain, who then wanted a needle and 5 lots of<br><str>thread, so that he could sew the bodyparts together and<br><str>create his creature."
+pt = "<str>Dei um tronco, braços, pernas e uma cabeça ao<br><str>Fenkenstrain, que então quis uma agulha (needle) e 5 porções<br><str>de linha (thread), para costurar as partes do corpo e<br><str>criar a criatura dele."
+
+[.journal_615]
+en = "<str>I brought Fenkenstrain a needle and 5 quantities of<br><str>thread."
+pt = "<str>Levei ao Fenkenstrain uma agulha e 5 porções de<br><str>linha."
+
+[.journal_616]
+en = "<str>I repaired the lightning conductor, and Fenkenstrain<br><str>brought the Creature to life."
+pt = "<str>Consertei o para-raios, e o Fenkenstrain<br><str>deu vida à Criatura."
+
+[.journal_617]
+en = "<str>The Creature went on a rampage, and Fenkenstrain sent<br><str>me up to the Tower to destroy it."
+pt = "<str>A Criatura saiu destruindo tudo, e o Fenkenstrain me mandou<br><str>subir até a torre para destruí-la."
+
+[.journal_618]
+en = "<maroon>Fenkenstrain<navy> has ordered me to go and destroy the<br><navy>Creature."
+pt = "<maroon>Fenkenstrain<navy> me mandou ir destruir a<br><navy>Criatura."
+
+[.journal_619]
+en = "<navy>I need to find these body parts for <maroon>Fenkenstrain<navy>:"
+pt = "<navy>Preciso achar estas partes de corpo para o <maroon>Fenkenstrain<navy>:"
+
+[.journal_620]
+en = "<navy>a pair of <maroon>arms<br><navy>a pair of <maroon>legs<br><navy>a <maroon>torso<br><navy>a <maroon>head"
+pt = "<navy>um par de <maroon>braços (arms)<br><navy>um par de <maroon>pernas (legs)<br><navy>um <maroon>tronco (torso)<br><navy>uma <maroon>cabeça (head)"
+
+[.journal_621]
+en = "<navy>Apparently the soil of <maroon>Morytania<navy> has a unique quality<br><navy>which preserves the bodies of the dead better than<br><navy>elsewhere, so perhaps I should look at the graves in the<br><navy>local area."
+pt = "<navy>Parece que o solo de <maroon>Morytania<navy> tem uma qualidade única<br><navy>que conserva os corpos dos mortos melhor do que<br><navy>em outros lugares, então talvez eu deva olhar os túmulos<br><navy>da região."
+
+[.journal_622]
+en = "<navy>I need to bring <maroon>Fenkenstrain<navy> a <maroon>needle."
+pt = "<navy>Preciso levar ao <maroon>Fenkenstrain<navy> uma <maroon>agulha (needle)."
+
+[.journal_623]
+en = "<navy>I need to bring Fenkenstrain <maroon>%1%<navy> quantities of <maroon>thread."
+pt = "<navy>Preciso levar ao Fenkenstrain <maroon>%1%<navy> porções de <maroon>linha (thread)."
+
+[.journal_624]
+en = "<navy>I should go to <maroon>Fenkenstrain<navy> to see if he is pleased with my<br><navy>work on the lightning conductor."
+pt = "<navy>Devo ir até o <maroon>Fenkenstrain<navy> ver se ele gostou do meu<br><navy>trabalho no para-raios."
+
+[.journal_625]
+en = "<str>The Creature convinced me to stop Fenkenstrain's<br><str>experiments once and for all, and has told me the true<br><str>history of Fenkenstrain's treachery."
+pt = "<str>A Criatura me convenceu a acabar de vez com os experimentos<br><str>do Fenkenstrain e me contou a verdadeira<br><str>história da traição do Fenkenstrain."
+
+[.journal_626]
+en = "<str>I stole Fenkenstrain's Ring of Charos, and he released me<br><str>from his service"
+pt = "<str>Roubei o Ring of Charos do Fenkenstrain, e ele me dispensou<br><str>do serviço."
+
+[.journal_627]
+en = "<maroon>Fenkenstrain<navy> has ordered me to repair the lightning<br><navy>conductor."
+pt = "<maroon>Fenkenstrain<navy> me mandou consertar o<br><navy>para-raios."
+
+[.journal_628]
+en = "<navy>I can start this quest by reading the signpost in the<br><navy>centre of <maroon>Canifis."
+pt = "<navy>Posso começar esta missão lendo a placa no<br><navy>centro de <maroon>Canifis."
+
+[.journal_629]
+en = "<navy>I must be able to defeat a <maroon>level 51 monster<navy>, and need the<br><navy>following skill levels:"
+pt = "<navy>Preciso conseguir derrotar um <maroon>monstro de nível 51<navy> e ter<br><navy>os seguintes níveis de habilidade:"
+
+[.journal_630]
+en = "<navy>Level 20 <maroon>Crafting"
+pt = "<navy>Nível 20 em <maroon>Crafting"
+
+[.journal_631]
+en = "<navy>Level 25 <maroon>Thieving"
+pt = "<navy>Nível 25 em <maroon>Thieving"
+
+[.journal_632]
+en = "<navy>I also need to have completed the following quests:"
+pt = "<navy>Também preciso ter completado estas missões:"
+
+[.journal_633]
+en = "<maroon>Priest in Peril"
+pt = "<maroon>Priest in Peril"
+
+[.journal_634]
+en = "<maroon>Restless Ghost"
+pt = "<maroon>Restless Ghost"
+
+[.journal_635]
+en = "<str>Level 20 Crafting"
+pt = "<str>Nível 20 em Crafting"
+
+[.journal_636]
+en = "<str>Level 25 Thieving"
+pt = "<str>Nível 25 em Thieving"
+
+[.journal_637]
+en = "<str>Priest in Peril"
+pt = "<str>Priest in Peril"
+
+[.journal_638]
+en = "<str>Restless Ghost"
+pt = "<str>Restless Ghost"
+
+[.journal_639]
+en = "<navy>I have all the requirements to start this quest."
+pt = "<navy>Tenho todos os requisitos para começar esta missão."
+
+[.journal_640]
+en = "<navy>I must find a way to stop <maroon>Fenkenstrain<navy>'s experiments."
+pt = "<navy>Preciso achar um jeito de impedir os experimentos do<br><maroon>Fenkenstrain<navy>."
+
+[.journal_641]
+en = "<str>I have spoken to the golem."
+pt = "<str>Falei com o golem."
+
+[.journal_642]
+en = "<str>I have repaired the golem."
+pt = "<str>Consertei o golem."
+
+[.journal_643]
+en = "<str>The golem asked me to open the portal so it can defeat a<br><str>demon."
+pt = "<str>O golem me pediu para abrir o portal para que ele possa<br><str>derrotar um demônio."
+
+[.journal_644]
+en = "<str>To open the portal I will need to find a missing statuette."
+pt = "<str>Para abrir o portal, vou precisar achar uma estatueta perdida."
+
+[.journal_645]
+en = "<str>I have visited the demon's lair and seen its skeleton."
+pt = "<str>Visitei o covil do demônio e vi o esqueleto dele."
+
+[.journal_646]
+en = "<navy>I should inform the <maroon>golem<navy> that the <maroon>demon<navy> is dead."
+pt = "<navy>Devo avisar o <maroon>golem<navy> que o <maroon>demônio<navy> está morto."
+
+[.journal_647]
+en = "<navy>The golem asked me to open the <maroon>portal<navy> so it can defeat a<br><navy><maroon>demon<navy>."
+pt = "<navy>O golem me pediu para abrir o <maroon>portal<navy> para que ele possa<br><navy>derrotar um <maroon>demônio<navy>."
+
+[.journal_648]
+en = "<navy>I should go down the stairs in <maroon>Uzer <navy>and work out how to open."
+pt = "<navy>Devo descer as escadas em <maroon>Uzer <navy>e descobrir como abrir"
+
+[.journal_649]
+en = "<navy>the <maroon>portal<navy>."
+pt = "<navy>o <maroon>portal<navy>."
+
+[.journal_650]
+en = "<navy>The <maroon>golem<navy> asked me to repair him."
+pt = "<navy>O <maroon>golem<navy> me pediu para consertá-lo."
+
+[.journal_651]
+en = "<navy>I should find out what happened to the <maroon>demon<navy>."
+pt = "<navy>Devo descobrir o que aconteceu com o <maroon>demônio<navy>."
+
+[.journal_652]
+en = "<str>I told the golem that the demon was dead, but it did not<br><str>believe me!"
+pt = "<str>Contei ao golem que o demônio estava morto, mas ele não<br><str>acreditou em mim!"
+
+[.journal_653]
+en = "<str>I reprogrammed the golem so that it knows its task is<br><str>complete."
+pt = "<str>Reprogramei o golem para que ele saiba que a tarefa dele<br><str>está cumprida."
+
+[.journal_654]
+en = "<navy>I should find some way to convince the <maroon>golem<navy> that its task<br><navy>is done."
+pt = "<navy>Devo achar um jeito de convencer o <maroon>golem<navy> de que a tarefa<br><navy>dele está cumprida."
+
+[.journal_655]
+en = "<navy>I can start this quest by talking to the golem who is in the<br><navy>ruined city of <maroon>Uzer<navy>, which is in the desert to the east of<br><navy>the <maroon>Shantay Pass<navy>."
+pt = "<navy>Posso começar esta missão falando com o golem que está na<br><navy>cidade em ruínas de <maroon>Uzer<navy>, no deserto a leste<br><navy>do <maroon>Shantay Pass<navy>."
+
+[.journal_656]
+en = "<navy>I will need to have:"
+pt = "<navy>Vou precisar ter:"
+
+[.journal_657]
+en = "<maroon>level 20 crafting."
+pt = "<maroon>nível 20 em Crafting."
+
+[.journal_658]
+en = "<maroon>level 25 thieving."
+pt = "<maroon>nível 25 em Thieving."
+
+[.journal_659]
+en = "<str>level 20 crafting."
+pt = "<str>nível 20 em Crafting."
+
+[.journal_660]
+en = "<str>level 25 thieving."
+pt = "<str>nível 25 em Thieving."
+
+[.journal_661]
+en = "<navy>I have all the skill requirements to start this quest."
+pt = "<navy>Tenho todos os níveis de habilidade para começar esta missão."
+
+[.journal_662]
+en = "<navy>I can start this quest by speaking to <maroon>Wizard Mizgog<navy> who is<br><navy>in the <maroon>Wizards' Tower<navy>."
+pt = "<navy>Posso começar esta missão falando com o <maroon>Wizard Mizgog<navy>, que<br><navy>está na <maroon>Wizards' Tower<navy>."
+
+[.journal_663]
+en = "<navy>There aren't any requirements for this quest."
+pt = "<navy>Esta missão não tem requisitos."
+
+[.journal_664]
+en = "<str>I have spoken to Wizard Mizgog."
+pt = "<str>Falei com o Wizard Mizgog."
+
+[.journal_665]
+en = "<navy>I need to collect some items by killing <maroon>Imps."
+pt = "<navy>Preciso coletar alguns itens matando <maroon>diabretes (Imps)."
+
+[.journal_666]
+en = "<maroon>1 Black Bead."
+pt = "<maroon>1 Black Bead."
+
+[.journal_667]
+en = "<maroon>1 Red Bead."
+pt = "<maroon>1 Red Bead."
+
+[.journal_668]
+en = "<maroon>1 White Bead."
+pt = "<maroon>1 White Bead."
+
+[.journal_669]
+en = "<maroon>1 Yellow Bead."
+pt = "<maroon>1 Yellow Bead."
+
+[.journal_670]
+en = "<str>I have collected all the beads."
+pt = "<str>Coletei todas as contas (beads)."
+
+[.journal_671]
+en = "<str>Wizard Mizgog thanked me for finding his beads and gave me."
+pt = "<str>O Wizard Mizgog me agradeceu por achar as contas dele e me deu"
+
+[.journal_672]
+en = "<str>an Amulet of Accuracy."
+pt = "<str>um Amulet of Accuracy."
+
+[.journal_673]
+en = "<str>1 Black Bead."
+pt = "<str>1 Black Bead."
+
+[.journal_674]
+en = "<str>1 Red Bead."
+pt = "<str>1 Red Bead."
+
+[.journal_675]
+en = "<str>1 White Bead."
+pt = "<str>1 White Bead."
+
+[.journal_676]
+en = "<str>1 Yellow Bead."
+pt = "<str>1 Yellow Bead."

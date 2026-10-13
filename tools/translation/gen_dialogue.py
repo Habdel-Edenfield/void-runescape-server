@@ -280,9 +280,10 @@ PT = {
 }
 
 if TRANSLATIONS:
-    # pt_tasks*/pt_level_up*/pt_labels*/pt_ui* belong to the interfaces the client draws from the cache (tools/.../InterfaceTranslation.kt)
+    # pt_tasks*/pt_level_up*/pt_labels*/pt_ui*/pt_guide* belong to the interfaces the client draws from the cache (tools/.../InterfaceTranslation.kt)
     # pt_*_runtime.json hold text only seen while playing (SkillActionTranslationTest, BankPinTranslationTest), written as is
-    for file in sorted(f for f in glob.glob(TRANSLATIONS + "/pt_*.json") if not f.split("/")[-1].startswith(("pt_tasks", "pt_level_up", "pt_labels", "pt_ui")) and not f.endswith("_runtime.json")):
+    # pt_journal_*.json hold quest journal sentences (QuestJournalTranslationTest), also written as is
+    for file in sorted(f for f in glob.glob(TRANSLATIONS + "/pt_*.json") if not f.split("/")[-1].startswith(("pt_tasks", "pt_level_up", "pt_labels", "pt_ui", "pt_guide", "pt_journal")) and not f.endswith("_runtime.json")):
         PT.update({en: pt for en, pt in json.load(open(file)).items() if "\n" not in en})
 
 # Text shared across the game rather than said by one NPC: (header, [(row id, en, pt)]).
@@ -625,6 +626,20 @@ def skill_rows(seen):
         rows += ["", f"[.runtime_{len(rows) // 4 + 1}]", f"en = {toml(en)}", f"pt = {toml(pt)}"]
     if rows:
         out.extend(["", "# Text only seen while playing (SkillActionTranslationTest, BankPinTranslationTest): built from data the code reads, passed in as variables, or Bank PIN messages joined line by line with <br>"] + rows)
+    journal = {}
+    for file in sorted(glob.glob(TRANSLATIONS + "/pt_journal_*.json")):
+        journal.update(json.load(open(file)))
+    rows = []
+    for en, pt in journal.items():
+        if en in seen:
+            continue
+        seen.add(en)
+        if max(len(en.encode()), len(pt.encode())) > MAX_BYTES:
+            print(f"SKIPPED, over {MAX_BYTES} bytes, stays in English: {en[:60]}...")
+            continue
+        rows += ["", f"[.journal_{len(rows) // 4 + 1}]", f"en = {toml(en)}", f"pt = {toml(pt)}"]
+    if rows:
+        out.extend(["", "# Quest journals (QuestJournalTranslationTest): one sentence each, its lines joined with <br> (Quest.kt, translateJournal)"] + rows)
     return out, missing
 
 

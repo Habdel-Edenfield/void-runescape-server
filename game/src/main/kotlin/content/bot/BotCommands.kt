@@ -304,7 +304,7 @@ class BotCommands(
                 info.add("<blue>${frame.behaviour.id} - ${frame.state}")
             }
         }
-        player.questJournal("Bots List", info.take(300))
+        player.questJournal("Bots List", info.take(300), translated = false)
     }
 
     fun toggle(player: Player, args: List<String>) {

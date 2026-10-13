@@ -31,6 +31,7 @@ class CacheTranslationPatchTest {
         "level_up" to listOf("level_up_"),
         "prayer" to listOf("prayer_"),
         "month" to listOf("month_"),
+        "quest_group" to listOf("quest_group_"),
         "area" to listOf("area_"),
         "script" to listOf("script_"),
         "tooltip" to listOf("tooltip_"),
@@ -86,11 +87,14 @@ class CacheTranslationPatchTest {
                 if (op == Op.STRUCT_PARAM && i > 0 && script.instructions[i - 1] == Op.PUSH_INT && ints[i - 1] in CacheTranslationPatch.TEXT_PARAMS) {
                     english.add("script $id reads task text param ${ints[i - 1]} at $i")
                 }
-                if (op == Op.PUSH_INT && ints[i] in setOf(CacheTranslationPatch.AREA_NAMES, CacheTranslationPatch.DIFFICULTY_NAMES) && i > 1 && ints[i - 1] == 115) {
+                if (op == Op.PUSH_INT && ints[i] in setOf(CacheTranslationPatch.AREA_NAMES, CacheTranslationPatch.DIFFICULTY_NAMES, CacheTranslationPatch.QUEST_GROUPS) && i > 1 && ints[i - 1] == 115) {
                     val next = (i + 1 until script.instructions.size).first { script.instructions[it] == Op.ENUM || script.instructions[it] == Op.GOSUB }
                     if (script.instructions[next] == Op.ENUM) {
                         english.add("script $id reads enum ${ints[i]} at $next")
                     }
+                }
+                if (op == Op.ENUM && id in CacheTranslationPatch.VARIABLE_ENUM_SCRIPTS && i > 3 && script.instructions[i - 1] == Op.ILOAD && script.instructions[i - 2] == Op.ILOAD && ints[i - 3] == 115 && ints[i - 4] == 105) {
+                    english.add("script $id reads a string enum from a local at $i")
                 }
                 if (op == Op.ENUM_STRING && i > 1 && script.instructions[i - 2] == Op.PUSH_INT && ints[i - 2] == CacheTranslationPatch.LEVEL_UP_MESSAGES) {
                     english.add("script $id reads enum ${CacheTranslationPatch.LEVEL_UP_MESSAGES} at $i")

@@ -120,5 +120,12 @@
  "Filter": "Filtro",
  "Hide done": "Esconder feitas",
  "S P E C I A L  A T T A C K": "A T A Q U E  E S P E C I A L",
- "Confirm": "Confirmar"
+ "Confirm": "Confirmar",
+ "Members": "Membros",
+ "Seasonal quest": "Missão sazonal",
+ "Seasonal event": "Evento sazonal",
+ "Tutorial": "Tutorial",
+ "<u=000080>Get QuestHelp</u>": "<u=000080>Abrir QuestHelp</u>",
+ "Saving your game and loading QuestHelp": "Salvando o jogo e abrindo o QuestHelp",
+ "View quest overview": "Ver resumo da missão"
 }

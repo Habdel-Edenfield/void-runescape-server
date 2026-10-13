@@ -30,7 +30,7 @@ import java.io.File
  * Every change is a one-for-one instruction swap, so no jump inside an original script moves:
  * - `struct_param` of a text param ([STRUCT_TEXTS]: task names, descriptions and hints, prayer descriptions) becomes
  *   a call to [PARAM_TEXT]
- * - `enum` of the area and difficulty names becomes a call to [TASK_ENUM], `enum_string` of the level up
+ * - `enum` of the area, difficulty, month and quest list group names becomes a call to [TASK_ENUM], `enum_string` of the level up
  *   messages a call to [ENUM_STRING]
  * - each translated string constant becomes a call to a script returning the English or the Portuguese
  * - the generic scripts hooks pass text to (tooltips, the level up link) get one call added to translate it
@@ -78,6 +78,15 @@ object CacheTranslationPatch {
 
     /** Month names, read with `enum` by the date of birth box and other dates */
     const val MONTHS = 950
+
+    /** Group headers of the Quest Journal tab's list ("Free", "Members"...), read with `enum` */
+    const val QUEST_GROUPS = 2246
+
+    /**
+     * Scripts reading a string `enum` whose id is in a local (`push_int 'i', push_int 's', iload, iload, enum`), e.g.
+     * the quest list (2162) reading [QUEST_GROUPS] through a struct param; [TASK_ENUM] swaps the id when it's one it copies
+     */
+    val VARIABLE_ENUM_SCRIPTS = setOf(2162)
 
     /**
      * Generic scripts hooks pass text to, with the instructions they must still have and where the translation
@@ -468,6 +477,7 @@ object CacheTranslationPatch {
         741 to listOf(5, 10),
         371 to listOf(2, 27), // tutorial_overlay
         277 to listOf(3, 6, 9), // quest_complete
+        275 to listOf(14, 15, 317), // quest_scroll
         178 to listOf(15, 16, 17, 18, 19, 30, 57, 67, 72, 76, 77, 78), // quest_intro
         335 to listOf(17, 19, 36, 37, 40, 41, 44, 83, 87), // trade_main
         334 to listOf(31, 32, 34, 35, 36, 45), // trade_confirm
@@ -505,6 +515,7 @@ object CacheTranslationPatch {
         741 to listOf(),
         371 to listOf(1), // server: percent
         277 to listOf(4, 7) + (10..17), // server: quest name, points, rewards
+        275 to listOf(2) + (16..315), // server: quest name, journal lines
         178 to (9..14) + 70, // "( ? )", divider, server: status
         335 to listOf(15, 38, 43, 45), // server: title, status; script 2505: wealth limit
         334 to listOf(33, 37, 38, 39, 41, 42, 43), // server: status and item lists
@@ -613,6 +624,9 @@ object CacheTranslationPatch {
         }
         for ((key, value) in source.enums[MONTHS].map!!.toSortedMap()) {
             add("month_$key", "month", value as String)
+        }
+        for ((key, value) in source.enums[QUEST_GROUPS].map!!.toSortedMap()) {
+            add("quest_group_$key", "quest_group", value as String)
         }
         for ((script, english) in scriptTexts(source)) {
             add("script_${script}_${seen.count { it.startsWith("script:") }}", "script", english)
@@ -1042,6 +1056,7 @@ object CacheTranslationPatch {
         val difficultyEnum = nextEnum++
         val levelUpEnum = nextEnum++
         val monthEnum = nextEnum++
+        val questGroupEnum = nextEnum++
         val paramText = nextScript++
         val taskEnum = nextScript++
         val tooltip = nextScript++
@@ -1053,6 +1068,7 @@ object CacheTranslationPatch {
             Triple(difficultyEnum, DIFFICULTY_NAMES, "difficulty"),
             Triple(levelUpEnum, LEVEL_UP_MESSAGES, "level_up"),
             Triple(monthEnum, MONTHS, "month"),
+            Triple(questGroupEnum, QUEST_GROUPS, "quest_group"),
         )
         for ((copy, original, prefix) in copies) {
             val enum = source.enums[original]
@@ -1083,7 +1099,7 @@ object CacheTranslationPatch {
 
         val scripts = mutableMapOf<Int, ClientScriptDefinition>()
         scripts[paramText] = paramText(paramText, paramEnum)
-        scripts[taskEnum] = taskEnum(taskEnum, mapOf(AREA_NAMES to areaEnum, DIFFICULTY_NAMES to difficultyEnum, MONTHS to monthEnum))
+        scripts[taskEnum] = taskEnum(taskEnum, mapOf(AREA_NAMES to areaEnum, DIFFICULTY_NAMES to difficultyEnum, MONTHS to monthEnum, QUEST_GROUPS to questGroupEnum))
         scripts[enumString] = enumString(enumString, mapOf(LEVEL_UP_MESSAGES to levelUpEnum))
         val tooltips = hookTexts(source).associateWith { tooltipTexts[it] }.filterValues { it != null }.mapValues { it.value!! }
         scripts[tooltip] = tooltip(tooltip, tooltips)
@@ -1113,9 +1129,24 @@ object CacheTranslationPatch {
                     ints[i] = paramText
                     changed = true
                 }
-                // Area, difficulty and month names: push_int 'i', push_int 's', push_int <enum>, <key>, enum
+                // An enum read whose id is a local: push_int 'i', push_int 's', iload, iload, enum
+                if (id in VARIABLE_ENUM_SCRIPTS &&
+                    instructions[i] == Op.ENUM &&
+                    i > 3 &&
+                    instructions[i - 1] == Op.ILOAD &&
+                    instructions[i - 2] == Op.ILOAD &&
+                    instructions[i - 3] == Op.PUSH_INT &&
+                    ints[i - 3] == VALUE_STRING &&
+                    instructions[i - 4] == Op.PUSH_INT &&
+                    ints[i - 4] == KEY_INT
+                ) {
+                    instructions[i] = Op.GOSUB
+                    ints[i] = taskEnum
+                    changed = true
+                }
+                // Area, difficulty, month and quest group names: push_int 'i', push_int 's', push_int <enum>, <key>, enum
                 if (instructions[i] == Op.PUSH_INT &&
-                    ints[i] in setOf(AREA_NAMES, DIFFICULTY_NAMES, MONTHS) &&
+                    ints[i] in setOf(AREA_NAMES, DIFFICULTY_NAMES, MONTHS, QUEST_GROUPS) &&
                     i > 1 &&
                     instructions[i - 1] == Op.PUSH_INT &&
                     ints[i - 1] == VALUE_STRING &&

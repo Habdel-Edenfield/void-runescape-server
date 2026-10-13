@@ -104,7 +104,7 @@ class AdventurersLogs(
                 list.add("")
             }
         }
-        player.questJournal("Adventurer's Log", list)
+        player.questJournal("Adventurer's Log", list, translated = false)
     }
 
     companion object {

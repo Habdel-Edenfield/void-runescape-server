@@ -223,7 +223,7 @@ class MetaCommands(
                 }
             }
         }
-        player.questJournal("Commands List", list)
+        player.questJournal("Commands List", list, translated = false)
     }
 
     private val utf8Regex = "[^\\x20-\\x7e]".toRegex()

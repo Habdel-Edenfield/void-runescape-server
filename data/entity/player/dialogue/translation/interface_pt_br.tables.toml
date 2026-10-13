@@ -6781,6 +6781,26 @@ pt = "Novembro"
 en = "December"
 pt = "Dezembro"
 
+[.quest_group_0]
+en = "Free"
+pt = "Grátis"
+
+[.quest_group_1]
+en = "Members"
+pt = "Membros"
+
+[.quest_group_2]
+en = "Seasonal event"
+pt = "Evento sazonal"
+
+[.quest_group_3]
+en = "Seasonal quest"
+pt = "Missão sazonal"
+
+[.quest_group_4]
+en = "Tutorial"
+pt = "Tutorial"
+
 [.script_3223_0]
 en = "You must have access to the fairy ring network to complete this Task."
 pt = "Você precisa ter acesso à rede de fairy rings para concluir esta tarefa."
@@ -8258,6 +8278,24 @@ en = "You are awarded:"
 pt = "Você recebeu:"
 interface = 277
 component = 9
+
+[.label_275_14]
+en = "<u=000080>Get QuestHelp</u>"
+pt = "<u=000080>Abrir QuestHelp</u>"
+interface = 275
+component = 14
+
+[.label_275_15]
+en = "Saving your game and loading QuestHelp"
+pt = "Salvando o jogo e abrindo o QuestHelp"
+interface = 275
+component = 15
+
+[.label_275_317]
+en = "View quest overview"
+pt = "Ver resumo da missão"
+interface = 275
+component = 317
 
 [.label_178_15]
 en = "Start point:"

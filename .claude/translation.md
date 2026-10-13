@@ -1,6 +1,6 @@
 # Tradução pt-BR (só neste fork)
 
-Tradução do texto que o servidor envia ao jogador e, para a janela de tarefas, do texto que o cliente desenha a partir do cache. Branch `feat/pt-br-dialogue-prototype` (sobre `fix/network-text-latin1`). Feitos: Ilha Tutorial, Lumbridge, mensagens das habilidades (com as conversas dos familiares de Summoning), a janela de tarefas (todos os conjuntos: as 509 tarefas), a janela de "subiu de nível", o guia de habilidades (com a lista de desbloqueios), os rótulos fixos do item 1 do mapa e as janelas do item 2 (abas Logout, Opções, Habilidades, Quest Journal, Estilos de combate e Orações; amigos, ignorados, clã e chat; banco e loja). Mapa do que falta: `tools/translation/map_text.py` + `build_report.py`.
+Tradução do texto que o servidor envia ao jogador e, para a janela de tarefas, do texto que o cliente desenha a partir do cache. Branch `feat/pt-br-dialogue-prototype` (sobre `fix/network-text-latin1`). Feitos: Ilha Tutorial, Lumbridge, mensagens das habilidades (com as conversas dos familiares de Summoning), a janela de tarefas (todos os conjuntos: as 509 tarefas), a janela de "subiu de nível", o guia de habilidades (com a lista de desbloqueios), o diário das missões (Quest Journal), os rótulos fixos do item 1 do mapa e as janelas do item 2 (abas Logout, Opções, Habilidades, Quest Journal, Estilos de combate e Orações; amigos, ignorados, clã e chat; banco e loja). Mapa do que falta: `tools/translation/map_text.py` + `build_report.py`.
 
 ## Como funciona
 
@@ -34,6 +34,14 @@ A janela do guia (499, `skill_guide`) e a lista do que se desbloqueia na janela 
 - Título: o nome da habilidade fica em inglês; " - Members Only" vai por `SCRIPT_TEXTS` (script 23); "More Info" pelas dicas da 499 (o subtítulo, como "Barbarian", vem dos nomes do menu).
 - O leitor de scripts do patch agora lê texto como Latin-1 (`Latin1Reader`), então scripts com acento ("Naïve") são lidos e regravados sem estragar.
 - **Testes**: `SkillGuideTranslationTest` (módulo `cache`): todo texto tem português, os chamadores só chamam as cópias, cada cópia roda as mesmas instruções e mostra o português.
+
+## Diário das missões (Quest Journal)
+
+O texto do pergaminho (`quest_scroll`, 275) é montado pelo servidor em `questJournal` (`content/quest/Quest.kt`), uma linha por componente. `translateJournal` junta as linhas de cada **frase** com `<br>` e traduz a frase inteira (como as recompensas e o PIN do banco), e o português quebra as linhas no seu lugar. Uma frase termina numa linha vazia, numa linha que acaba em `. ! ? :` ou antes de uma linha que começa com maiúscula ou número (listas sem ponto), a não ser que a linha de cima acabe numa palavra que pede continuação ("in the", `joining`). Frases que o original corta no meio de um nome ("Personal" / "Guard") ficam em dois pedaços, traduzidos para fazer sentido lidos em ordem.
+
+- **Fontes** `sources/pt_journal_N.json` (grupos `group_journal_N.json`), escritas como estão na seção `journal_` da tabela por `gen_dialogue.py`. Números que mudam viram `%1%` (essências do Nature Spirit, linhas do Doric, ossos do Traiborn, dias das Tears of Guthix, tábuas do Myreque).
+- **Teste** `QuestJournalTranslationTest`: abre o diário de cada missão em cada etapa (valores da variável da missão), como jogador novo e como jogador com tudo no 99 e as outras missões feitas (requisitos riscados), e falha com frase sem tradução ou linha mais larga que a mais larga do inglês. Com `TRANSLATION_DUMP=<arquivo>` grava as frases que faltam (missão + tab + frase), para montar os grupos com `tools/translation/journal_groups.py`.
+- **Fora**: listas sem frases (`translated = false`): comandos, bots, canteiros, Adventurer's Log, NPC Kills/Time Records e Penguin Hide and Seek. O link "Get QuestHelp" no pé do pergaminho é imagem, não texto.
 
 ## Método por região
 
@@ -77,6 +85,7 @@ Chat e caixas de fala de `content/skill/**`, mais as mensagens das tabelas de da
 - Texto do servidor montado em pedaços, ainda em inglês: tempo do empréstimo (`Loan.getExpiry`, "in 1 hour 5 minutes"), espera da Juna ("3 days"), tempo da lápide ("5 minutes"), inspecionar canteiro (`FarmingPatchInspect.kt`). O PIN do banco já vai inteiro: `Player.translateLines` traduz as linhas juntas (com `<br>`) e `BankPinTranslationTest` mede a largura.
 - Erros do jogo original achados na tradução: falas trocadas entre bicho e jogador no Spirit Tz-Kih (conversa 0) e no Iron Titan (conversa 3); o Hoardstalker põe o nome do jogador onde deveria vir "hoardstalker".
 
+- Lista de missões: os títulos de grupo "Free", "Members", "Seasonal quest"... vêm do enum 2246 do cache (precisa da troca de `enum` como nos conjuntos de tarefa). Os nomes das missões ficam em inglês pelo guia.
 - Janela de tarefas: só o conjunto de Lumbridge tem a mensagem de quem entrega a recompensa (`TaskSystem.kt`); nos outros o servidor diz "someone somewhere" ("alguém em algum lugar").
 - O título "Task List" e as opções do botão direito ficam em inglês pelo guia.
 

@@ -152,7 +152,7 @@ class KillTracker(val accounts: AccountDefinitions) : Script {
         }
         player.start("commands_delay", 1)
         val list = target.kills.toList().sortedByDescending { it.second }.map { "${it.first.toTitleCase()} = ${it.second.toDigitGroupString()}" }
-        player.questJournal("NPC Kills List", list)
+        player.questJournal("NPC Kills List", list, translated = false)
     }
 
     private fun listRecords(player: Player, args: List<String>) {
@@ -176,7 +176,7 @@ class KillTracker(val accounts: AccountDefinitions) : Script {
             val name = it.first.replace("_duo", " (Duo)").replace("_trio", " (Trio)").replace("_quad", " (Quad)").replace("_mass", " (Mass)")
             "${name.toTitleCase()}: ${timestamp(it.second.toLong())}"
         }
-        player.questJournal("Time Records List", list)
+        player.questJournal("Time Records List", list, translated = false)
     }
 
     companion object {

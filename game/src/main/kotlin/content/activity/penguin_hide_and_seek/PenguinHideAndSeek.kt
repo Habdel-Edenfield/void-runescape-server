@@ -287,6 +287,6 @@ class PenguinHideAndSeek(
         } else {
             list.add("Polar Bear")
         }
-        player.questJournal("Penguin Hide and Seek", list)
+        player.questJournal("Penguin Hide and Seek", list, translated = false)
     }
 }

@@ -88,7 +88,7 @@ class DemonSlayer : Script {
         if (rovin) {
             list.add("<str>I have the 2nd Key with me.")
         } else {
-            list.add("<navyThe <maroon>2nd Key<navy> is with Captain Rovin in Varrock Palace.")
+            list.add("<navy>The <maroon>2nd Key<navy> is with Captain Rovin in Varrock Palace.")
         }
 
         if (traiborn) {

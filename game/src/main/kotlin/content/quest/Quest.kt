@@ -1,6 +1,7 @@
 package content.quest
 
 import content.entity.player.dialogue.translate
+import content.entity.player.dialogue.translateLines
 import world.gregs.voidps.engine.client.sendScript
 import world.gregs.voidps.engine.client.ui.open
 import world.gregs.voidps.engine.data.Settings
@@ -72,15 +73,66 @@ fun Player.refreshQuestJournal() {
 
 private const val QUEST_SCROLL_ID = "quest_scroll"
 
-fun Player.questJournal(name: String, lines: List<String>) {
+/** [translated] false for lists of names and numbers (commands, kill counts) which have no sentences to translate */
+fun Player.questJournal(name: String, lines: List<String>, translated: Boolean = true) {
+    val shown = if (translated) translateJournal(lines) else lines
+    journalShown(lines, shown)
     interfaces.open(QUEST_SCROLL_ID)
-    sendScript("quest_journal_length", lines.size + 1)
+    sendScript("quest_journal_length", shown.size + 1)
     interfaces.sendText(QUEST_SCROLL_ID, "quest_name", name)
     interfaces.sendText(QUEST_SCROLL_ID, "line0", "")
     for (i in 0..301) {
-        interfaces.sendText(QUEST_SCROLL_ID, "line${i + 1}", lines.getOrNull(i) ?: "")
+        interfaces.sendText(QUEST_SCROLL_ID, "line${i + 1}", shown.getOrNull(i) ?: "")
     }
 }
+
+/** Called with a journal's English lines and the lines shown, e.g. so tests can measure them */
+var journalShown: (english: List<String>, shown: List<String>) -> Unit = { _, _ -> }
+
+private val tags = "<[^>]*>".toRegex()
+
+/**
+ * Journal sentences run over several lines, so each one is translated whole (lines joined by `<br>`)
+ * and the Portuguese breaks its own lines. A sentence ends at a blank line, a line ending in . ! ? or :,
+ * or before a line starting with a capital or a number (lists like "1 x Steel Sword" have no full stops),
+ * unless the line before ends in a word that needs the next one ("in the", "Lumbridge cemetery.").
+ */
+fun Player.translateJournal(lines: List<String>): List<String> {
+    if (!get("portuguese_dialogue", false)) {
+        return lines
+    }
+    val result = mutableListOf<String>()
+    val sentence = mutableListOf<String>()
+    fun flush() {
+        if (sentence.isNotEmpty()) {
+            result.addAll(translateLines(sentence))
+            sentence.clear()
+        }
+    }
+    for (line in lines) {
+        if (line.isBlank()) {
+            flush()
+            result.add(line)
+            continue
+        }
+        val text = line.replace(tags, "").trim()
+        val previous = sentence.lastOrNull()?.replace(tags, "")?.trim()
+        if (previous != null && text.first().let { it.isUpperCase() || it.isDigit() } && previous.substringAfterLast(' ') !in joining) {
+            flush()
+        }
+        sentence.add(line)
+        if (text.lastOrNull() in sentenceEnds) {
+            flush()
+        }
+    }
+    flush()
+    return result
+}
+
+private val sentenceEnds = setOf('.', '!', '?', ':')
+
+/** Words which carry a sentence on to the next line even when it starts with a name */
+private val joining = setOf("the", "a", "an", "to", "of", "in", "into", "on", "at", "by", "for", "from", "with", "and", "or", "but", "me", "my", "his", "her", "their", "is", "was", "named", "called", "near", "north", "south", "east", "west", "about", "as")
 
 fun Player.questComplete(name: String, vararg lines: String, item: String = "") {
     questComplete(name, lines.toList(), if (item == "") Item.EMPTY else Item(item))

@@ -65,7 +65,7 @@ class FarmingCommands(
                 list.add("")
             }
         }
-        player.questJournal("Active Farming Patches", list)
+        player.questJournal("Active Farming Patches", list, translated = false)
     }
 
     fun growthInfo(player: Player, args: List<String>) {
