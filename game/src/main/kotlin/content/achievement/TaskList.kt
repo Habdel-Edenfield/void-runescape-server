@@ -3,7 +3,6 @@ package content.achievement
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.sendScript
 import world.gregs.voidps.engine.client.ui.close
-import world.gregs.voidps.engine.client.ui.open
 import world.gregs.voidps.engine.data.definition.EnumDefinitions
 import world.gregs.voidps.engine.data.definition.VariableDefinitions
 import world.gregs.voidps.engine.entity.character.player.Player
@@ -76,10 +75,8 @@ class TaskList : Script {
             val selected = get("task_slot_selected", 0)
             val index = indexOfSlot(this, selected) ?: return@interfaceOption
             val tile: Int = EnumDefinitions.getStructOrNull("task_structs", index, it.component.replace("hint_", "task_hint_tile_")) ?: return@interfaceOption
-            // TODO I expect the functionality is actually minimap highlights not world map
-            set("world_map_marker_1", tile)
-            set("world_map_marker_text_1", "")
-            open("world_map")
+            // Marks the hint on the minimap and walks there like a world map marker; clicking it again clears it
+            set("world_map_marker_custom", if (get("world_map_marker_custom", 0) == tile) 0 else tile)
         }
     }
 
