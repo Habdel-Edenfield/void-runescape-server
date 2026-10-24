@@ -1,5 +1,6 @@
 package world.gregs.voidps.engine.data.definition
 
+import com.github.michaelbull.logging.InlineLogger
 import it.unimi.dsi.fastutil.Hash
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap
 import it.unimi.dsi.fastutil.ints.IntOpenHashSet
@@ -12,6 +13,8 @@ import world.gregs.voidps.cache.definition.data.ObjectDefinition
 import world.gregs.voidps.engine.timedLoad
 
 object ObjectDefinitions : DefinitionsDecoder<ObjectDefinition> {
+
+    private val logger = InlineLogger()
 
     override lateinit var definitions: Array<ObjectDefinition>
     override lateinit var ids: Map<String, Int>
@@ -74,6 +77,11 @@ object ObjectDefinitions : DefinitionsDecoder<ObjectDefinition> {
                                 }
                                 else -> params[Params.id(key)] = value()
                             }
+                        }
+                        if (id !in definitions.indices) {
+                            // e.g. an object a cache patch adds which this cache doesn't have yet
+                            logger.warn { "Object '$stringId' id $id isn't in the cache, skipped." }
+                            continue
                         }
                         require(!ids.containsKey(stringId)) { "Duplicate object id found '$stringId' at $path." }
                         require(intIds.add(id)) { "Duplicate object id $id found '$stringId' at $path, already defined as '${definitions[id].stringId}'." }

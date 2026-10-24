@@ -46,7 +46,7 @@ class SeamanTest : WorldTest() {
         player.npcOption(tobias, "Talk-to")
         chat(player)
         player.dialogueOption("line2") // No, thank you.
-        chat(player)
+        tick()
 
         assertFalse(player.containsMessage("You board the ship."))
         assertEquals(30, player.inventory.count("coins"))

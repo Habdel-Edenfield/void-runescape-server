@@ -11,6 +11,7 @@ import world.gregs.voidps.engine.data.Storage
 import world.gregs.voidps.engine.data.definition.AccountDefinitions
 import world.gregs.voidps.engine.entity.World
 import world.gregs.voidps.engine.entity.character.player.Player
+import world.gregs.voidps.engine.entity.character.player.PlayerRights
 import world.gregs.voidps.engine.entity.character.player.Players
 import world.gregs.voidps.engine.entity.character.player.name
 import world.gregs.voidps.engine.entity.character.player.rights
@@ -103,7 +104,8 @@ class PlayerAccountLoader(
                 return@withContext
             }
             logger.info { "${if (viewport) "Player" else "Bot"} logged in ${player.accountName} index ${player.index}." }
-            client.login(player.name, player.index, player.rights.ordinal, member = World.members, membersWorld = World.members)
+            // The client won't send "::" commands typed into chat for admins (client script 73), so it's never told more than mod
+            client.login(player.name, player.index, player.rights.ordinal.coerceAtMost(PlayerRights.Mod.ordinal), member = World.members, membersWorld = World.members)
             accounts.spawn(player, client)
             AuditLog.event(player, "connected", player.tile)
         }

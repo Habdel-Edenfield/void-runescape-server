@@ -1,0 +1,112 @@
+/* A trilha das cadeias de produção, na casca do Organizador do Hardgaard (hardgaard-15.23/tools/organizador/index.html,
+   que segue o Livro do Hardgaard): as mesmas cores, letras, topo, abas, busca, cartões com o caminho pontilhado até o
+   slot do item e linhas com o item a 1x. As regras vieram de lá em 13/10/2026; o que é só desta página está no fim. */
+:root {
+  color-scheme: dark;
+  --bg: #111111; --elev: #151515; --arte: #1b1614; --sunk: #1c1c1c;
+  --linha: #242424; --linha-forte: #2e2e2e;
+  --tinta: #ededed; --tinta-2: #d6d6d6; --apagado: #8f8f8f; --fraco: #5f5f5f;
+  --acento: #f4693a; --look: #00eb00;
+  --ok: #7cc47f; --ok-soft: #17291a; --otc: #7fb2ec; --otc-soft: #15263a; --cpp: #e0b44a; --cpp-soft: #2e250e;
+  --cli: #c49af0; --cli-soft: #271a37; --warn: #f08a80; --warn-soft: #351714;
+  --sans: "Inter", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body { margin: 0; background: var(--bg); color: var(--tinta); font: 400 15px/1.6 var(--sans); -webkit-font-smoothing: antialiased; }
+p { margin: 0 0 var(--s4); }
+h1, h2, h3 { margin: 0; color: var(--tinta); text-wrap: balance; }
+h1 { font-size: 30px; line-height: 1.2; font-weight: 700; letter-spacing: -.02em; }
+h2 { font-size: 22px; line-height: 1.3; font-weight: 700; letter-spacing: -.01em; }
+h3 { font-size: 16px; line-height: 1.35; font-weight: 600; }
+.eyebrow { margin: 0; font: 600 12px/1.3 var(--mono); letter-spacing: .04em; text-transform: uppercase; color: var(--apagado); }
+.lede { margin: 0; max-width: 72ch; font-size: 17px; line-height: 1.55; color: var(--apagado); }
+code { font-family: var(--mono); font-size: .86em; background: var(--sunk); padding: .1em .35em; border-radius: 4px; overflow-wrap: anywhere; }
+a { color: var(--acento); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+[hidden] { display: none !important; }
+img.px { display: block; max-width: none; image-rendering: pixelated; }
+button { font: inherit; color: inherit; }
+
+/* ---------------------------------------------------------------- topo, busca, abas (os do Livro) */
+.largura { max-width: 2400px; margin: 0 auto; padding: 0 32px; }
+.topo { position: sticky; top: 0; z-index: 30; background: var(--bg); border-bottom: 1px solid var(--linha); }
+.topo-linha { display: grid; grid-template-columns: minmax(max-content, 1fr) minmax(0, 1fr); align-items: stretch; gap: 16px; }
+.abas { justify-self: start; display: flex; gap: 28px; height: 52px; align-items: stretch; overflow-x: auto; scrollbar-width: none; }
+.abas a { display: flex; align-items: center; gap: 8px; font: 500 14px var(--sans); color: var(--apagado); border-bottom: 2px solid transparent; white-space: nowrap; }
+.abas a:hover { color: var(--tinta); text-decoration: none; }
+.abas a[aria-current] { color: var(--acento); border-bottom-color: var(--acento); }
+.abas .conta { font: 500 12px var(--mono); color: var(--fraco); }
+.bandeira { width: 11px; height: 11px; flex: none; image-rendering: pixelated; }
+.abas a:not([aria-current]) .bandeira { filter: grayscale(1) brightness(1.1); opacity: .55; }
+.lado { display: flex; align-items: center; justify-content: flex-end; gap: 10px; align-self: center; min-width: 0; }
+.lado .busca { flex: 0 1 320px; min-width: 150px; }
+.busca label { display: flex; align-items: center; gap: 8px; width: 100%; height: 36px; padding: 0 8px 0 12px; background: var(--elev);
+               border: 1px solid var(--linha-forte); border-radius: 8px; color: var(--apagado); cursor: text; }
+.busca label:focus-within { border-color: var(--fraco); }
+.busca input { flex: 1; min-width: 0; background: none; border: 0; outline: 0; color: var(--tinta); font: 400 14px var(--sans); }
+.busca input::placeholder { color: var(--apagado); }
+kbd { font: 500 10.5px/1 var(--mono); color: var(--apagado); border: 1px solid var(--linha-forte); border-radius: 4px; padding: 3px 5px; }
+main.largura { padding-top: 24px; }
+
+/* ---------------------------------------------------------------- o cartão, a arte e a linha (os do Organizador) */
+.cartao { position: relative; display: grid; background: var(--elev); border: 1px solid var(--linha); border-radius: 12px; overflow: hidden;
+          color: var(--tinta); text-align: left; padding: 0; transition: border-color .15s; }
+.linha { display: grid; grid-template-columns: 36px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 6px 8px 6px 6px;
+         background: var(--elev); border: 1px solid var(--linha); border-radius: 10px; }
+.linha .txt { display: grid; min-width: 0; }
+.linha b { font-size: 13.5px; font-weight: 600; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.linha small { font: 500 11.5px/1.3 var(--mono); color: var(--fraco); }
+.linha img { width: 36px; height: 32px; }
+.arte { position: relative; height: 112px; overflow: hidden; background-color: var(--arte);
+        background-image: linear-gradient(rgba(255, 255, 255, .028) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .028) 1px, transparent 1px);
+        background-size: 32px 32px; background-position: center center; }
+.arte.capa { height: 184px; border-bottom: 1px solid var(--linha); }
+.arte svg { position: absolute; left: 50%; top: 50%; width: 1px; height: 1px; overflow: visible; }
+.arte path, .arte rect { fill: none; stroke: rgba(244, 105, 58, .8); stroke-width: 2; stroke-dasharray: 0 6; stroke-linecap: round; }
+.arte .slot { position: absolute; left: calc(50% - 18px); top: calc(50% - 16px); width: 36px; height: 32px; }
+.corpo { display: grid; gap: 6px; padding: 12px 14px 14px; }
+.corpo h3 { font-size: 15px; }
+.corpo p { margin: 0; font-size: 13.5px; line-height: 1.5; color: var(--apagado); }
+.meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.tag { display: inline-flex; align-items: center; height: 20px; padding: 0 7px; border-radius: 4px; font: 500 11.5px/1 var(--mono);
+       background: var(--sunk); color: var(--apagado); white-space: nowrap; }
+.tag.nivel { background: var(--cpp-soft); color: var(--cpp); }
+.tag.bonus { background: var(--otc-soft); color: var(--otc); }
+.tag.quest { background: var(--warn-soft); color: var(--warn); }
+.tag.feito { background: var(--ok-soft); color: var(--ok); }
+figure { margin: 0; display: grid; gap: 10px; }
+figure .rolar { overflow-x: auto; max-width: 100%; border: 1px solid var(--linha); border-radius: 8px; background: #000; }
+figcaption { font-size: 13px; line-height: 1.45; color: var(--apagado); max-width: 78ch; }
+figcaption b { display: block; margin-bottom: 2px; font: 600 14px/1.35 var(--sans); color: var(--tinta); }
+
+/* ---------------------------------------------------------------- a trilha (só desta página) */
+.capitulo { max-width: 760px; margin: 0 auto 20px; display: grid; gap: 6px; }
+.capitulo .lede { font-size: 16px; }
+.trilha { max-width: 760px; margin: 0 auto; display: grid; gap: 0; padding-bottom: 24px; }
+.trilha .cartao.alvo { border-color: var(--acento); }
+.trilha .corpo { gap: 10px; padding: 14px 16px 16px; }
+.trilha .corpo > p { color: var(--tinta-2); font-size: 14px; }
+.trilha .eyebrow { margin-top: 6px; }
+.trilha .grupo { margin: 4px 0 0; font: 600 11.5px/1.3 var(--mono); letter-spacing: .03em; text-transform: uppercase; color: var(--fraco); }
+.trilha .linhas { display: grid; gap: 6px; }
+.trilha .linha .lado-direito { display: flex; gap: 4px; }
+.trilha figure { margin: 4px 0 0; }
+.trilha figure .rolar { justify-self: start; }
+.trilha figure img { display: block; }
+.trilha .sem-janela { margin: 4px 0 0; padding: 10px 12px; border: 1px dashed var(--linha-forte); border-radius: 8px; font-size: 13px; color: var(--apagado); }
+.liga { display: flex; justify-content: center; height: 56px; }
+.liga svg { height: 56px; width: 24px; overflow: visible; }
+.liga path { fill: none; stroke: rgba(244, 105, 58, .8); stroke-width: 2; stroke-dasharray: 0 6; stroke-linecap: round; }
+.escondido { display: none !important; }
+.rodape-pagina { max-width: 760px; margin: 0 auto; padding: 0 0 48px; font: 500 12px/1.6 var(--mono); color: var(--fraco); }
+.rodape-pagina code { font-size: inherit; }
+@media (max-width: 900px) {
+  .topo-linha { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .lado { justify-content: stretch; padding-bottom: 10px; }
+  .lado .busca { flex: 1; min-width: 0; }
+}
+@media (max-width: 520px) { .largura { padding: 0 16px; } }

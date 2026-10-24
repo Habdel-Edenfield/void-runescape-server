@@ -124,8 +124,7 @@ class WizardMizgog : Script {
                     option<Neutral>("Got any more quests?") {
                         npc<Neutral>("No, everything is good with the world today.")
                     }
-                    option("Do you know any interesting spells you could teach me?") {
-                        player<Neutral>("Do you know any interesting spells you could teach me?")
+                    option<Neutral>("Do you know any interesting spells you could teach me?") {
                         npc<Laugh>("I don't think so, the type of magic I study involves years of meditation and research.")
                     }
                     option<Quiz>("Do you have any more amulets of accuracy?") {

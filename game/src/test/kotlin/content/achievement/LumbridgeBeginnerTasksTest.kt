@@ -802,7 +802,6 @@ internal class LumbridgeBeginnerTasksTest : WorldTest() {
         tick()
         player.dialogueContinue(2)
         player.dialogueOption("line1")
-        player.dialogueContinue()
 
         assertTrue(player["passing_out_task", false])
     }

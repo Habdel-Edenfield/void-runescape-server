@@ -35,8 +35,7 @@ class Seaman : Script {
                     travel("You pay 30 coins and board the ship.")
                 }
                 if (charmed) {
-                    option("Or I could pay you nothing at all...") {
-                        player<Shifty>("Or I could pay you nothing at all...")
+                    option<Shifty>("Or I could pay you nothing at all...") {
                         npc<Quiz>("Mmmm, nothing at all, you say...")
                         npc<Happy>("Yes, why not - jump aboard then.")
                         travel("You board the ship.")

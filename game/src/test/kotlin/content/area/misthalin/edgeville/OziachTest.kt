@@ -68,9 +68,9 @@ class OziachTest : WorldTest() {
         tick(2)
         dialogueContinue() // "What can I do for ye, mighty dragon slayer?"
         dialogueOption(1) // "Can you do anything with this draconic visage?"
-        dialogueContinue(5) // repeated player line + Oziach's offer
+        dialogueContinue(4) // Oziach's offer
         dialogueOption(1) // "Yes, please!"
-        dialogueContinue(2)
+        dialogueContinue()
         tick()
     }
 

@@ -8,6 +8,8 @@ import world.gregs.voidps.cache.definition.Params
 import world.gregs.voidps.cache.definition.data.ObjectDefinition
 import world.gregs.voidps.cache.definition.decoder.ObjectDecoder
 import java.io.File
+import kotlin.test.assertEquals
+import kotlin.test.assertFalse
 
 internal class ObjectDefinitionsTest : DefinitionsDecoderTest<ObjectDefinition, ObjectDecoder, ObjectDefinitions>() {
 
@@ -36,6 +38,19 @@ internal class ObjectDefinitionsTest : DefinitionsDecoderTest<ObjectDefinition, 
         assertThrows<IllegalArgumentException> {
             definitions.load(listOf(file.path))
         }
+    }
+
+    @Test
+    fun `Ids past the end of the cache are skipped`(@TempDir dir: File) {
+        val file = dir.resolve("patched.objs.toml")
+        file.writeText("[door_closed]\nid = 3\n\n[added_by_a_cache_patch]\nid = ${definitions.size}\n")
+        val definitions = definitions()
+
+        assertDoesNotThrow {
+            definitions.load(listOf(file.path))
+        }
+        assertEquals(3, definitions.get("door_closed").id)
+        assertFalse(definitions.contains("added_by_a_cache_patch"))
     }
 
     @Test

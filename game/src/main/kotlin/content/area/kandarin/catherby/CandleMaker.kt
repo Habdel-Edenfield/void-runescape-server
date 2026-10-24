@@ -12,13 +12,11 @@ class CandleMaker : Script {
             npc<Neutral>("Hi! Would you be interested in some of my fine candles?")
 
             choice {
-                option("Yes please.") {
-                    player<Neutral>("Yes please.")
+                option<Neutral>("Yes please.") {
                     openShop("candle_shop")
                 }
 
-                option("No thank you.") {
-                    player<Neutral>("No thank you.")
+                option<Neutral>("No thank you.") {
                     // Ends dialogue naturally
                 }
             }

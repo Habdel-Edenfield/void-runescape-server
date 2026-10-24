@@ -79,7 +79,7 @@ class TheGolemTest : WorldTest() {
         tick(2)
         player.dialogueContinue() // npc "Hello there."
         player.dialogueOption("line3") // I found a letter in the desert...
-        player.dialogueContinue(5)
+        player.dialogueContinue(4)
         assertEquals(2, player["golem_b", 0])
 
         // Take Varmen's notes from the Exam Centre bookcase
@@ -99,10 +99,10 @@ class TheGolemTest : WorldTest() {
         tick(2)
         player.dialogueContinue() // npc "Welcome to the museum of Varrock."
         player.dialogueOption("line3") // I'm looking for a statuette...
-        player.dialogueContinue(5)
+        player.dialogueContinue(4)
         assertEquals("find_statuette", player["the_golem", "unstarted"])
         player.dialogueOption("line2") // Well, I, er, just want it.
-        player.dialogueContinue(2)
+        player.dialogueContinue()
 
         player.npcOption(curator, "Pickpocket")
         tick(2)

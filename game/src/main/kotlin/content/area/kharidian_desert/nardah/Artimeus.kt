@@ -6,7 +6,6 @@ import content.entity.player.dialogue.Neutral
 import content.entity.player.dialogue.Quiz
 import content.entity.player.dialogue.type.choice
 import content.entity.player.dialogue.type.npc
-import content.entity.player.dialogue.type.player
 import world.gregs.voidps.engine.Script
 
 class Artimeus : Script {
@@ -18,8 +17,7 @@ class Artimeus : Script {
                     npc<Happy>("Take a look for yourself.")
                     openShop(target.def["shop"])
                 }
-                option("I'm not in the market for Hunter equipment right now, thanks.") {
-                    player<Neutral>("I'm not in the market for Hunter equipment right now, thanks.")
+                option<Neutral>("I'm not in the market for Hunter equipment right now, thanks.") {
                     npc<Neutral>("Maybe another time, then.")
                 }
             }

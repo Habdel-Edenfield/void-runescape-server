@@ -87,8 +87,7 @@ class SirPrysin : Script {
         }
     }
 
-    fun ChoiceOption.arisWantsToTalk(): Unit = option("Aris said I should come and talk to you.") {
-        player<Neutral>("Aris said I should come and talk to you.")
+    fun ChoiceOption.arisWantsToTalk(): Unit = option<Neutral>("Aris said I should come and talk to you.") {
         npc<Neutral>("Aris? Is she still alive? I remember her from when I was pretty young. Well what do you need to talk to me about?")
         choice {
             option("I need to find Silverlight.") {
@@ -114,8 +113,7 @@ class SirPrysin : Script {
                 npc<Neutral>("Well if the ball says so, I'd better help you.")
                 problemIs()
             }
-            option("He's back and unfortunately I've got to deal with him.") {
-                player<Sad>("He's back and unfortunately I've got to deal with him.")
+            option<Sad>("He's back and unfortunately I've got to deal with him.") {
                 npc<Neutral>("You don't look up to much. I suppose Silverlight may be good enough to carry you through though.")
                 problemIs()
             }
@@ -127,13 +125,11 @@ class SirPrysin : Script {
         player<Sad>("You mean you don't have it?")
         npc<Neutral>("Oh I do have it, but it is so powerful that the king made me put it in a special box which needs three different keys to open it. That way it won't fall into the wrong hands.")
         choice {
-            option("So give me the keys!") {
-                player<Angry>("So give me the keys!")
+            option<Angry>("So give me the keys!") {
                 npc<Sad>("Um, well, it's not so easy.")
                 theKeys()
             }
-            option("And why is this a problem?") {
-                player<Neutral>("And why is this a problem?")
+            option<Neutral>("And why is this a problem?") {
                 theKeys()
             }
         }
@@ -151,8 +147,7 @@ class SirPrysin : Script {
         }
     }
 
-    fun ChoiceOption.wheresWizard(): Unit = option("Where does the wizard live?") {
-        player<Neutral>("Where does the wizard live?")
+    fun ChoiceOption.wheresWizard(): Unit = option<Neutral>("Where does the wizard live?") {
         npc<Neutral>("He is one of the wizards who lives in the tower on the little island just off the south coast. I believe his quarters are on the first floor of the tower.")
         choice {
             giveYourKey()
@@ -161,8 +156,7 @@ class SirPrysin : Script {
         }
     }
 
-    fun ChoiceOption.wheresCaptainRovin(): Unit = option("Where can I find Captain Rovin?") {
-        player<Neutral>("Where can I find Captain Rovin?")
+    fun ChoiceOption.wheresCaptainRovin(): Unit = option<Neutral>("Where can I find Captain Rovin?") {
         npc<Neutral>("Captain Rovin lives at the top of the guards' quarters in the north-west wing of this palace.")
         choice {
             giveYourKey()
@@ -196,8 +190,7 @@ class SirPrysin : Script {
         }
     }
 
-    fun ChoiceOption.giveYourKey(): Unit = option("Can you give me your key?") {
-        player<Neutral>("Can you give me your key?")
+    fun ChoiceOption.giveYourKey(): Unit = option<Neutral>("Can you give me your key?") {
         npc<Sad>("Um.... ah....")
         npc<Sad>("Well there's a problem there as well.")
         npc<Sad>("I managed to drop the key in the drain just outside the palace kitchen. It is just inside and I can't reach it.")
@@ -218,8 +211,7 @@ class SirPrysin : Script {
         }
     }
 
-    fun ChoiceOption.huntingTime(): Unit = option("Well I'd better go key hunting.") {
-        player<Neutral>("Well I'd better go key hunting.")
+    fun ChoiceOption.huntingTime(): Unit = option<Neutral>("Well I'd better go key hunting.") {
         npc<Neutral>("Ok, goodbye.")
     }
 
@@ -233,13 +225,11 @@ class SirPrysin : Script {
         npc<Neutral>("Well I've never met you before.")
     }
 
-    fun ChoiceOption.remindMe(): Unit = option("Can you remind me where all the keys were again?") {
-        player<Neutral>("Can you remind me where all the keys were again?")
+    fun ChoiceOption.remindMe(): Unit = option<Neutral>("Can you remind me where all the keys were again?") {
         theKeys()
     }
 
-    fun ChoiceOption.stillLooking(): Unit = option("I'm still looking.") {
-        player<Neutral>("I'm still looking.")
+    fun ChoiceOption.stillLooking(): Unit = option<Neutral>("I'm still looking.") {
         npc<Neutral>("Ok, tell me when you've got them all.")
     }
 

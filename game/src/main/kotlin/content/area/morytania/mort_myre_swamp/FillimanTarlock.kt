@@ -202,8 +202,7 @@ class FillimanTarlock : Script {
         convinceHesAGhost()
     }
 
-    private fun ChoiceOption.whatLikeBeingGhost() = option("What's it like being a ghost?") {
-        player<Neutral>("What's it like being a ghost?")
+    private fun ChoiceOption.whatLikeBeingGhost() = option<Neutral>("What's it like being a ghost?") {
         npc<Sad>("Oh, it's quite... Oh... Trying to catch me out were you! Anyone can clearly see that I am not a ghost!")
         player<Neutral>("But you are a ghost, look at yourself! I can see straight through you! You're as dead as this swamp! Err... No offence or anything...")
         npc<Sad>("No I won't take offence because I'm not dead and I'm afraid you'll have to come up with some pretty conclusive proof before I believe it. What a strange dream this is.")

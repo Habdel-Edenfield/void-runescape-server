@@ -73,7 +73,7 @@ class CreatureOfFenkenstrainTest : WorldTest() {
         player.npcOption(fenkenstrain, "Talk-to")
         tick(2)
         player.dialogueOption("line1") // I have some body parts for you. (option<Neutral>)
-        player.dialogueContinue(8) // player chathead + 4x part accepts + 3x sewingTransition
+        player.dialogueContinue(7) // player chathead + 4x part accepts + 3x sewingTransition
         assertEquals("sewing", player["creature_of_fenkenstrain", "unstarted"])
         assertFalse(player.inventory.contains("fenk_torso"))
 

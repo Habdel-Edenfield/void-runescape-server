@@ -43,7 +43,6 @@ class BloodPactTest : WorldTest() {
         player.dialogueOption(1) // What do you need help with?
         player.skipDialogues() // Cultists explanation
         player.dialogueOption(1) // I'll help you.
-        player.skipDialogues()
         assertEquals("quest_intro", player.menu)
         player.interfaceOption("quest_intro", "startyes_layer", "Yes")
         player.skipDialogues() // "I knew you would!" / "We've got no time to lose..."

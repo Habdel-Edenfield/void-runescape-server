@@ -50,9 +50,7 @@ class Daga : Script {
                                 TransactionError.None -> npc<Shifty>("There you go. Pleasure doing business with you.")
                                 else -> npc<Shifty>("Sorry, you don't have enough coins. <br>It costs 100,000 gold coins.")
                             }
-                            option("No.") {
-                                player<Shifty>("No.")
-                            }
+                            option<Shifty>("No.")
                         }
                     }
                 }

@@ -510,7 +510,6 @@ class Drezel : Script {
     }
 
     fun ChoiceOption.fillimanStory(): Unit = option<Quiz>("What's the story with Filliman Tarlock?") {
-        player<Quiz>("What's the story with Filliman Tarlock?")
         npc<Neutral>("Filliman is a druid of some considerable power. He helped many people in Morytania escape when the evil descended upon the land. His knowledge of plants and nature was exceptional.")
         npc<Neutral>("But one day, he was betrayed by some of the people who he had tried to help. This naturally made him more careful when dealing with strangers again and so instead of showing himself, he would follow them.")
         fillimanHelpChoice()

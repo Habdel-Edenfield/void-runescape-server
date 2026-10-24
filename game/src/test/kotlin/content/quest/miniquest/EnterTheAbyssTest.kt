@@ -43,14 +43,14 @@ internal class EnterTheAbyssTest : WorldTest() {
         player.dialogueContinue(5)
         assertTrue(player["enter_abyss_where_runes", false])
         player.dialogueOption("line1") // Where do you get your runes from
-        player.dialogueContinue(8)
+        player.dialogueContinue(7)
         player.dialogueOption("line2") // But I'm a loyal servant
-        player.dialogueContinue(8)
+        player.dialogueContinue(7)
         player.dialogueOption("line1") // I did it to steal their secrets
-        player.dialogueContinue(3)
+        player.dialogueContinue(2)
         assertTrue(player["enter_abyss_offer", false])
         player.dialogueOption("line1") // Deal
-        player.dialogueContinue(13)
+        player.dialogueContinue(12)
         assertTrue(player["enter_abyss_has_orb", false])
         assertEquals("scrying", player["enter_the_abyss", "unstarted"])
 

@@ -14,8 +14,10 @@ import world.gregs.voidps.engine.data.exchange.Claim
 import world.gregs.voidps.engine.data.exchange.OpenOffers
 import world.gregs.voidps.engine.data.exchange.PriceHistory
 import world.gregs.voidps.engine.entity.character.player.Player
+import world.gregs.voidps.engine.entity.character.player.PlayerRights
 import world.gregs.voidps.engine.entity.character.player.Players
 import world.gregs.voidps.engine.entity.character.player.chat.clan.Clan
+import world.gregs.voidps.engine.entity.character.player.rights
 import world.gregs.voidps.engine.script.KoinMock
 import world.gregs.voidps.network.Response
 import world.gregs.voidps.network.client.Client
@@ -139,6 +141,22 @@ internal class PlayerAccountLoaderTest : KoinMock() {
             queue.await()
             client.login("name", 4, 0, member = false, membersWorld = false)
             accounts.spawn(player, client)
+        }
+    }
+
+    @Test
+    fun `Admins are shown to the client as mods so commands typed into chat get sent`() = runTest {
+        mockkStatic("world.gregs.voidps.network.login.protocol.encode.LoginEncoderKt")
+        val client: Client = mockk(relaxed = true)
+        val player = Player(index = 4, accountName = "name", passwordHash = "\$2a\$10\$cPB7bqICWrOILrWnXuYNDu1EsbZal9AjxYMbmpMOtI1kwruazGiby", variables = mutableMapOf("display_name" to "name"))
+        player.rights = PlayerRights.Admin
+        coEvery { queue.await() } just Runs
+        every { accounts.index(any()) } returns true
+
+        loader.connect(player, client, 2)
+
+        coVerify {
+            client.login("name", 4, 1, member = false, membersWorld = false)
         }
     }
 

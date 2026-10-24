@@ -61,7 +61,6 @@ class SearchMyrequeTest : WorldTest() {
         player.dialogueOption("line4") // Perhaps I could help you out here.
         player.skipDialogues()
         player.dialogueOption("line4") // Yes, I'll do it!
-        player.dialogueContinue()
 
         assertEquals("agreed_to_help", player["in_search_of_the_myreque", "unstarted"])
     }
@@ -304,7 +303,6 @@ class SearchMyrequeTest : WorldTest() {
         tick(4)
         player.dialogueContinue() // It costs 10 gold to cover the loan of the boat. Will you pay?
         player.dialogueOption("line1") // Yes. I'll pay the ten gold.
-        player.dialogueContinue()
         tick(20)
 
         // Arriving is what counts, not clicking through the message that follows it

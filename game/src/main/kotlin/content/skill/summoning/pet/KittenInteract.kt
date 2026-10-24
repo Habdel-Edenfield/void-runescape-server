@@ -187,23 +187,19 @@ suspend fun Player.talkToCatWithAmulet(cat: NPC) {
     }
     suspend fun menu() {
         choice("What would you like to ask?") {
-            option("How are you doing?") {
-                player<Quiz>("How are you doing?")
+            option<Quiz>("How are you doing?") {
                 npc<Happy>(cat.id, "I'm good. But could we go adventuring soon? I'm tired of talkin, meeoow.")
                 menu()
             }
-            option("How old are you now?") {
-                player<Quiz>("How old are you now?")
+            option<Quiz>("How old are you now?") {
                 npc<Happy>(cat.id, "I'm not too old, and not too young. In fact I think I'm just right.")
                 menu()
             }
-            option("Where do you want to go?") {
-                player<Quiz>("Where do you want to go?")
+            option<Quiz>("Where do you want to go?") {
                 npc<Happy>(cat.id, "Can we go to Varrock Sewer and chase some rats?")
                 menu()
             }
-            option("What do you want to do now?") {
-                player<Quiz>("What do you want to do now?")
+            option<Quiz>("What do you want to do now?") {
                 npc<Happy>(cat.id, "I want to go chase things, kill them and then eat them. Purrr.")
                 menu()
             }
@@ -273,25 +269,21 @@ private suspend fun Player.icthlarinRecap(cat: NPC) {
 /** Hellcat catspeak Talk-to: separate option tree with wily/lazy hellcat flavour. */
 private suspend fun Player.talkToHellcatWithAmulet(cat: NPC) {
     choice("What would you like to ask?") {
-        option("How are you doing?") {
-            player<Quiz>("How are you doing?")
+        option<Quiz>("How are you doing?") {
             npc<Happy>(cat.id, "I'm as happy as a demon in a lava pit.")
             talkToHellcatWithAmulet(cat)
         }
-        option("How old are you now?") {
-            player<Quiz>("How old are you now?")
+        option<Quiz>("How old are you now?") {
             npc<Happy>(cat.id, "I'm feeling a bit like a ghost in a cake shop.")
             player<Quiz>("A ghost in a cake shop? What do you mean?")
             npc<Happy>(cat.id, "You know, in need of exorcise.")
             talkToHellcatWithAmulet(cat)
         }
-        option("Where do you want to go?") {
-            player<Quiz>("Where do you want to go?")
+        option<Quiz>("Where do you want to go?") {
             npc<Happy>(cat.id, "Let's go steal some things from stalls...")
             talkToHellcatWithAmulet(cat)
         }
-        option("What do you want to do now?") {
-            player<Quiz>("What do you want to do now?")
+        option<Quiz>("What do you want to do now?") {
             npc<Happy>(cat.id, "Curling up on a nice rug in front of a fire...")
             talkToHellcatWithAmulet(cat)
         }

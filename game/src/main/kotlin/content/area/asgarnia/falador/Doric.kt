@@ -80,8 +80,7 @@ class Doric : Script {
             option<Frustrated>("Mind your own business, shortstuff!") {
                 npc<Frustrated>("How nice to meet someone with such pleasant manners. Do come again when you need to shout at someone smaller than you!")
             }
-            option("I was just checking out the landscape.") {
-                player<Idle>("I was just checking out the landscape.")
+            option<Idle>("I was just checking out the landscape.") {
                 npc<Happy>("Hope you like it. I do enjoy the solitude of my little home. If you get time, please say hi to my friends in the Dwarven Mine.")
                 choice {
                     option<Quiz>("Dwarven Mine?") {
@@ -90,8 +89,7 @@ class Doric : Script {
                     option<Happy>("Will do!")
                 }
             }
-            option("What do you make here?") {
-                player<Quiz>("What do you make here?")
+            option<Quiz>("What do you make here?") {
                 npc<Happy>("I make pickaxes. I am the best maker of pickaxes in the whole of Gielinor.")
                 player<Quiz>("Do you have any to sell?")
                 npc<Idle>("Sorry, but I've got a running order with Nurmof.")
@@ -110,8 +108,7 @@ class Doric : Script {
             statement("Before starting this quest, be aware that one or more of your skill levels are lower than recommended.")
         }
         choice("Start Doric's Quest?") {
-            option("Yes, I will get you the materials.") {
-                player<Happy>("Yes, I will get you the materials.")
+            option<Happy>("Yes, I will get you the materials.") {
                 set("dorics_quest", "started")
                 if (inventory.isFull()) {
                     FloorItems.add(tile, "bronze_pickaxe", disappearTicks = 300, owner = this)
@@ -130,8 +127,7 @@ class Doric : Script {
                     takeOre()
                 }
             }
-            option("No, hitting rocks is for the boring people, sorry.") {
-                player<Bored>("No, hitting rocks is for the boring people, sorry.")
+            option<Bored>("No, hitting rocks is for the boring people, sorry.") {
                 npc<Confused>("That is your choice. Nice to meet you anyway.")
             }
         }

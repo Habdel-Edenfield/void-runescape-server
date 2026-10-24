@@ -44,8 +44,7 @@ class ProfessorOddenstein : Script {
                     }
                 }
                 option<Neutral>("Thanks, I think I'll stay here for a while then.")
-                option("Thanks for the warning, but I'm not scared of any monster.") {
-                    player<Neutral>("Thanks for the warning, but I'm not scared of any monster.")
+                option<Neutral>("Thanks for the warning, but I'm not scared of any monster.") {
                     npc<Neutral>("Ok. Just don't say I didn't warn you")
                     tele(2677, 5214, 2)
                 }

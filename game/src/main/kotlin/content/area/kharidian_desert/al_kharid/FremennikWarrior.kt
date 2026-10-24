@@ -8,7 +8,6 @@ import content.entity.player.dialogue.Sad
 import content.entity.player.dialogue.type.ChoiceOption
 import content.entity.player.dialogue.type.choice
 import content.entity.player.dialogue.type.npc
-import content.entity.player.dialogue.type.player
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.entity.character.player.Player
 import world.gregs.voidps.engine.entity.character.player.male
@@ -41,8 +40,7 @@ class FremennikWarrior : Script {
     }
 
     private fun ChoiceOption.whatDoYouNeed() {
-        option("What do you need?") {
-            player<Quiz>("What do you need?")
+        option<Quiz>("What do you need?") {
             npc<Happy>("My Fremennik clansmen and I have embarked on a test of skill and combat in the far north.")
             npc<Sad>("Unfortunately, it's proving more of a challenge than we had anticipated.")
             npc<Happy>("They need reinforcements to explore the dungeons there: to fight, or, if not, to provide support to those who do.")
@@ -61,8 +59,7 @@ class FremennikWarrior : Script {
     }
 
     private fun ChoiceOption.howDangerousIsThis() {
-        option("How dangerous is this?") {
-            player<Quiz>("How dangerous is this?")
+        option<Quiz>("How dangerous is this?") {
             npc<Pleased>("There are challenges for adventurers of all skill-levels.")
             npc<Pleased>("My clansmen can explain more when you arrive.")
             followUp()
@@ -70,15 +67,13 @@ class FremennikWarrior : Script {
     }
 
     private fun ChoiceOption.soundsGood() {
-        option("Sounds good!") {
-            player<Happy>("Sounds good!")
+        option<Happy>("Sounds good!") {
             npc<Happy>("Excellent! Just look for the jetty nearby. There, a boat will take you to your destination.")
         }
     }
 
     private fun ChoiceOption.tooBusy() {
-        option("Sorry, I'm too busy.") {
-            player<Neutral>("Sorry, I'm too busy.")
+        option<Neutral>("Sorry, I'm too busy.") {
             npc<Neutral>("Suit yourself. We'll be here if you change your mind.")
         }
     }

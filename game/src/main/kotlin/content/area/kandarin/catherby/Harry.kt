@@ -21,8 +21,7 @@ class Harry : Script {
                 }
 
                 if (carriesItem("fishbowl_water") || carriesItem("fishbowl_seaweed")) {
-                    option("Can I get a fish for this bowl?") {
-                        player<Neutral>("Can I get a fish for this bowl?")
+                    option<Neutral>("Can I get a fish for this bowl?") {
 
                         when {
                             carriesItem("fishbowl_water") -> {
@@ -45,9 +44,7 @@ class Harry : Script {
                                             npc<Idle>("It looks like you don't have enough coins.")
                                         }
                                     }
-                                    option("No, thanks; later, maybe.") {
-                                        player<Idle>("No, thanks; later, maybe.")
-                                    }
+                                    option<Idle>("No, thanks; later, maybe.")
                                 }
                             }
                         }
@@ -57,8 +54,7 @@ class Harry : Script {
                 // TODO: add fishing spot for tiny_net & get pet_fish to work like it is in real runescape
 
                 if (carriesItem("fishbowl_water") || carriesItem("fishbowl_seaweed") || carriesItem("fishbowl")) {
-                    option("Do you have any fish food?") {
-                        player<Neutral>("Do you have any fish food?")
+                    option<Neutral>("Do you have any fish food?") {
                         npc<Neutral>("Sorry, I'm all out. I used up the last of it feeding the fish in the aquarium. I have some empty boxes, though - they have the ingredients written on the back.")
                         npc<Idle>("I'm sure if you pick up a pestle and mortar you will be able to make your own.")
                         inventory.add("empty_box_fish")

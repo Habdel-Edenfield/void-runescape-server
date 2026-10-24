@@ -1,0 +1,7 @@
+# Inside of each house in world_houses.tables.toml
+[world_house_draynor_north]
+x = [3097, 3102]
+y = [3277, 3281]
+level = 0
+tags = ["world_house"]
+

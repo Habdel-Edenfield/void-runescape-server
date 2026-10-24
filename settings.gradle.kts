@@ -33,3 +33,4 @@ includeBuild("build-logic")
 
 // Local tool: exporter for the Montador de Interfaces (kept apart from the upstream modules)
 include("tools:montador")
+include("tools:cadeias")

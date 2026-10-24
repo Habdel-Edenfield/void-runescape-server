@@ -301,7 +301,6 @@ internal class MageArenaTest : WorldTest() {
         player.skipDialogues()
         player.dialogueOption(1) // Access my bank account
         tick(1)
-        player.skipDialogues()
         tick(2)
         assertTrue(player.hasOpen("bank"))
 

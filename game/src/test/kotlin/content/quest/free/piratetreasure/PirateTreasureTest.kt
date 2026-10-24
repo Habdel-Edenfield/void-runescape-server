@@ -119,7 +119,7 @@ class PirateTreasureTest : WorldTest() {
         player.npcOption(frank, "Talk-to")
         chat(player)
         player.dialogueOption("line1") // Ok thanks, I'll go and get it.
-        chat(player)
+        tick()
         assertEquals("chest_key", player.stage)
         assertFalse(player.inventory.contains("karamjan_rum"))
         assertTrue(player.inventory.contains("chest_key_pirates_treasure"))

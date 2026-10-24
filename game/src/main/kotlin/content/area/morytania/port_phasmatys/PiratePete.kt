@@ -144,13 +144,11 @@ class PiratePete : Script {
         npc<Sad>("Barrelor is an awesome opponent, and to reclaim my family sword you will need to defeat him, for he guards it within the deadly Trapped Pit of Barrelor.")
         npc<Quiz>("Wanna give it a shot?")
         choice {
-            option("Of course, I fear no demon!") {
-                player<Neutral>("Of course, I fear no demon!")
+            option<Neutral>("Of course, I fear no demon!") {
                 set("rum_deal", "slay_barrelor")
                 offerPayment(pete)
             }
-            option("Not a chance, this sounds too dangerous.") {
-                player<Neutral>("Not a chance, this sounds too dangerous.")
+            option<Neutral>("Not a chance, this sounds too dangerous.") {
                 waitForSomeoneHeroic()
             }
         }
@@ -165,8 +163,7 @@ class PiratePete : Script {
                 player<Happy>("Nonsense! Keep the money! I will dispose of this evil half-brother of yours and leave you what little money is left to feed your family.")
                 setOff(pete)
             }
-            option("Great, I'll take the cash in used coins please.") {
-                player<Neutral>("Great, I'll take the cash in used coins please.")
+            option<Neutral>("Great, I'll take the cash in used coins please.") {
                 npc<Shifty>("Er...")
                 waitForSomeoneHeroic()
             }
@@ -180,8 +177,7 @@ class PiratePete : Script {
         npc<Happy>("Oh! Yes! The demon, with the oppression and stuff!")
         npc<Sad>("No, not yet. Why?")
         choice {
-            option("Because I came to offer to help.") {
-                player<Happy>("Because I came to offer to help.")
+            option<Happy>("Because I came to offer to help.") {
                 set("rum_deal", "slay_barrelor")
                 offerPayment(pete)
             }

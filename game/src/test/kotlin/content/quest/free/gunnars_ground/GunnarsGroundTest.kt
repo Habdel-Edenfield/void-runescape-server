@@ -83,7 +83,6 @@ class GunnarsGroundTest : WorldTest() {
 
         player.skipDialogues()
         player.dialogueOption(2)
-        player.skipDialogues()
 
         assertNull(player.dialogue)
         assertEquals(1, player.inventory.count("love_poem"))
@@ -123,7 +122,6 @@ class GunnarsGroundTest : WorldTest() {
         player.dialogueOption(1)
         player.skipDialogues()
         player.dialogueOption(2)
-        player.skipDialogues()
 
         assertNull(player.dialogue)
         assertEquals(1, player.inventory.count("chisel"))
@@ -153,7 +151,6 @@ class GunnarsGroundTest : WorldTest() {
         player.dialogueOption(1)
         player.skipDialogues()
         player.dialogueOption(2)
-        player.skipDialogues()
 
         assertNull(player.dialogue)
         assertEquals("show_gudrun", player.quest("gunnars_ground"))
@@ -174,7 +171,6 @@ class GunnarsGroundTest : WorldTest() {
         player.dialogueOption(1)
         player.skipDialogues()
         player.dialogueOption(2)
-        player.skipDialogues()
 
         assertNull(player.dialogue)
         assertEquals("meet_chieftain", player.quest("gunnars_ground"))
@@ -195,7 +191,6 @@ class GunnarsGroundTest : WorldTest() {
         player.dialogueOption(1)
         player.skipDialogues()
         player.dialogueOption(1)
-        player.skipDialogues()
 
         assertNull(player.dialogue)
         assertEquals("tell_gudrun", player.quest("gunnars_ground"))
@@ -242,7 +237,6 @@ class GunnarsGroundTest : WorldTest() {
         player.dialogueOption(3)
         player.skipDialogues()
         player.dialogueOption(1)
-        player.skipDialogues()
 
         assertNull(player.dialogue)
         assertEquals("poem", player.quest("gunnars_ground"))
@@ -265,7 +259,6 @@ class GunnarsGroundTest : WorldTest() {
         player.dialogueOption(2)
         player.skipDialogues()
         player.dialogueOption(1)
-        player.skipDialogues()
 
         tick(6)
 

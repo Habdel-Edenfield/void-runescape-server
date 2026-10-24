@@ -18,8 +18,7 @@ class GardenSupplier : Script {
         npcOperate("Talk-to", "garden_supplier") {
             npc<Happy>("Do you want to buy some garden plants?")
             choice {
-                option("Yes please!") {
-                    player<Happy>("Yes please!")
+                option<Happy>("Yes please!") {
                     openShop("garden_centre")
                 }
                 option<Quiz>("What are these plants for?") {

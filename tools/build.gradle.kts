@@ -71,3 +71,10 @@ tasks.register<JavaExec>("autoMiningObjects") {
     mainClass.set("world.gregs.voidps.tools.cache.AutoMiningObjects")
     workingDir = rootDir
 }
+
+// Doors and furniture of the houses players can buy in the open world (content.social.house): --args=check|patch (see WorldHouseObjects)
+tasks.register<JavaExec>("worldHouseObjects") {
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass.set("world.gregs.voidps.tools.cache.WorldHouseObjects")
+    workingDir = rootDir
+}

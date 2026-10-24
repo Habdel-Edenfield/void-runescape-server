@@ -54,7 +54,6 @@ class PrinceAliRescueTest : WorldTest() {
         player.dialogueContinue()
         player.dialogueOption("line1")
         player.dialogueContinue()
-        player.dialogueContinue()
         assertNull(player.dialogue)
         assertEquals("osman", player.quest("prince_ali_rescue"))
 
@@ -74,13 +73,10 @@ class PrinceAliRescueTest : WorldTest() {
         tick()
         player.dialogueContinue() // Hello
         player.dialogueOption("line1") // Other things
-        player.dialogueContinue()
         player.dialogueContinue() // Sure
         player.dialogueOption("line2") // Wig
-        player.dialogueContinue()
         player.dialogueContinue() // Sure
         player.dialogueOption("line1") // I have them
-        player.dialogueContinue()
         player.dialogueContinue() // Okay
         player.dialogueContinue() // Give wig
         assertTrue(player.inventory.contains("wig_grey"))
@@ -98,7 +94,6 @@ class PrinceAliRescueTest : WorldTest() {
         player.dialogueContinue()
         player.dialogueContinue() // Mix now?
         player.dialogueOption("line1") // Yes
-        player.dialogueContinue()
         player.dialogueContinue() // Please give items
         player.dialogueContinue() // You hand the items
         player.dialogueContinue() // Gives paste
@@ -139,7 +134,6 @@ class PrinceAliRescueTest : WorldTest() {
         player.dialogueContinue() // Prisoner
         player.dialogueContinue() // Reward
         player.dialogueOption("line3") // Escape
-        player.dialogueContinue()
         player.dialogueContinue() // Impossible
         player.dialogueContinue() // Key
         player.dialogueOption("line1") // Can I see it?
@@ -147,7 +141,6 @@ class PrinceAliRescueTest : WorldTest() {
         player.dialogueContinue() // Sure
         player.dialogueContinue() // Shows the key
         player.dialogueOption("line1") // Can I touch it?
-        player.dialogueContinue()
         player.dialogueContinue() // Okay
         player.dialogueContinue() // Take print
         assertTrue(player.inventory.contains("key_print"))
@@ -165,7 +158,6 @@ class PrinceAliRescueTest : WorldTest() {
         assertFalse(player.inventory.contains("bronze_bar"))
         player.dialogueContinue() // Talk to Leela
         player.dialogueOption("line1") // Thanks
-        player.dialogueContinue()
         assertEquals("leela", player.quest("prince_ali_rescue"))
         assertTrue(player["prince_ali_rescue_key_made", false])
         assertFalse(player["prince_ali_rescue_key_given", false])
@@ -180,7 +172,6 @@ class PrinceAliRescueTest : WorldTest() {
         assertTrue(player.inventory.contains("bronze_key_prince_ali_rescue"))
         player.dialogueContinue() // Ready
         player.dialogueOption("line5") // Not sure
-        player.dialogueContinue()
         player.dialogueContinue() // Talk to him
         assertEquals("guard", player.quest("prince_ali_rescue"))
         assertNull(player.dialogue)
@@ -191,7 +182,6 @@ class PrinceAliRescueTest : WorldTest() {
         player.npcOption(joe, "Talk-to")
         tick()
         player.dialogueOption("line1") // Have beer
-        player.dialogueContinue()
         player.dialogueContinue() // Lovely
         player.dialogueContinue() // Drink
         assertEquals(2, player.inventory.count("beer"))

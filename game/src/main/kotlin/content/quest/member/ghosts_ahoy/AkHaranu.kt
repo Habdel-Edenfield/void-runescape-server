@@ -36,8 +36,7 @@ class AkHaranu : Script {
         player<Neutral>("What would you like me to do?")
         npc<Neutral>("Please get Master Bowman sign an oak longbow for me, so Ak-Haranu can show family and friends when returning home and become much admired. Then I give you book in exchange.")
         choice {
-            option("Okay, wait here - I'll get you your bow.") {
-                player<Neutral>("Okay, wait here - I'll get you your bow.")
+            option<Neutral>("Okay, wait here - I'll get you your bow.") {
                 set("ahoy_subquest_bow", 1)
             }
             option<Neutral>("Sorry, I have too much to do at the moment.")

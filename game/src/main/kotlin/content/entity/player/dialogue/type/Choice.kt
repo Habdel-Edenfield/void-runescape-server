@@ -27,7 +27,8 @@ suspend fun Player.choice(title: String? = null, block: suspend ChoiceOption.() 
     block.invoke(builder)
     val lines = builder.build()
     if (lines.size == 1) {
-        builder.invoke(0, this)
+        // No menu shown so repeat the option as player dialogue
+        builder.invoke(0, this, repeat = true)
         return
     }
     val choice = choice(lines, title)

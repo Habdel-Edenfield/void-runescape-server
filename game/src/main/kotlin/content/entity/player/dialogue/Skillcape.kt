@@ -60,15 +60,13 @@ suspend fun Player.skillcapeOffer(
 ) {
     npc<Neutral>("Ah, but I see you are already $mastery, perhaps you have come to me to purchase a Skillcape of ${skill.name}, and thus join the elite few who have mastered this exacting skill?")
     choice {
-        option("Yes, I'd like to buy one please.") {
-            player<Happy>("Yes, I'd like to buy one please.")
+        option<Happy>("Yes, I'd like to buy one please.") {
             npc<Neutral>("Most certainly; unfortunately being such a prestigious item, they are appropriately expensive. I'm afraid I must ask you for 99,000 gold.")
             choice {
                 option<Quiz>("99,000 coins? That's much too expensive.") {
                     npc<Idle>("Not at all; there are many other adventurers who would love the opportunity to purchase such a prestigious item! You can find me here if you change your mind.")
                 }
-                option("I think I have the money right here, actually.") {
-                    player<Happy>("I think I have the money right here, actually.")
+                option<Happy>("I think I have the money right here, actually.") {
                     buySkillcape(skill, success)
                 }
             }
@@ -90,8 +88,7 @@ suspend fun Player.skillcapeMasterDialogue(
         skillcapeOffer(skill, mastery, success)
     } else {
         choice {
-            option("Please tell me more about skillcapes.") {
-                player<Happy>("Please tell me more about skillcapes.")
+            option<Happy>("Please tell me more about skillcapes.") {
                 npc<Neutral>("Of course. Skillcapes are a symbol of achievement. Only people who have mastered a skill and reached level 99 can get their hands on them and gain the benefits they carry.")
             }
             option<Neutral>("Bye.") {

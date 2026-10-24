@@ -5,7 +5,6 @@ import content.entity.player.dialogue.Neutral
 import content.entity.player.dialogue.Quiz
 import content.entity.player.dialogue.type.choice
 import content.entity.player.dialogue.type.npc
-import content.entity.player.dialogue.type.player
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.ui.open
 import world.gregs.voidps.engine.entity.character.player.Player
@@ -38,9 +37,7 @@ class FarmerBlinkin : Script {
             option<Quiz>("Can I buy some ogleroots?") {
                 buyOgleroots()
             }
-            option<Neutral>("Not right now.") {
-                player<Neutral>("Not right now.")
-            }
+            option<Neutral>("Not right now.")
         }
     }
 }

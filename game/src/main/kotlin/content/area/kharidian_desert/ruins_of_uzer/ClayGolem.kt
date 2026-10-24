@@ -99,24 +99,21 @@ class ClayGolem : Script {
     }
 
     private fun ChoiceOption.noConvo() {
-        option("I'm not going to find a conversation here!") {
-            player<Unamused>("I'm not going to find a conversation here!")
+        option<Unamused>("I'm not going to find a conversation here!") {
             npc<Angry>("Graar!")
             npc<Angry>("Must... not... injure... human...")
         }
     }
 
     private fun ChoiceOption.openPortal() {
-        option("How do I open the portal?") {
-            player<Quiz>("How do I open the portal?")
+        option<Quiz>("How do I open the portal?") {
             npc<Neutral>("The four statuettes in the temple must be turned to the correct pattern.")
             npc<Neutral>("I do not know the pattern. Golems are not permitted to open the portal.")
         }
     }
 
     private fun ChoiceOption.defeatDemon() {
-        option("What makes you think you can defeat the demon?") {
-            player<Quiz>("What makes you think you can defeat the demon?")
+        option<Quiz>("What makes you think you can defeat the demon?") {
             npc<Neutral>("If not I, then who else?  No living being can destroy the demon. That is why the golems were created in the first place.")
             npc<Neutral>("But the demon was badly wounded and elder-demons heal very slowly indeed. It was almost dead when it retreated to its own dimension.")
             npc<Neutral>("Now that I am repaired, I will be able to destroy it easily!")
@@ -124,9 +121,7 @@ class ClayGolem : Script {
     }
 
     private fun ChoiceOption.leave() {
-        option("I'll get right on it.") {
-            player<Happy>("I'll get right on it.")
-        }
+        option<Happy>("I'll get right on it.")
     }
 
     private suspend fun Player.golemQuestions() {

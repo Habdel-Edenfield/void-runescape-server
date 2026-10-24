@@ -229,7 +229,6 @@ class GhostsAhoyTest : WorldTest() {
         tick(1)
         player.skipDialogues()
         player.dialogueOption(1)
-        player.skipDialogues()
         tick(10)
         assertEquals(Tile(3792, 3559), player.tile)
 
@@ -246,7 +245,6 @@ class GhostsAhoyTest : WorldTest() {
         tick(1)
         player.skipDialogues()
         player.dialogueOption(1)
-        player.skipDialogues()
         assertEquals(1, player["ahoy_subquest_bow", 0])
 
         // Robin

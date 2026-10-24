@@ -39,9 +39,9 @@ class LostCityTest : WorldTest() {
         player.dialogueOption("line1")
         player.dialogueContinue(2)
         player.dialogueOption("line1") // Who's zanaris?
-        player.dialogueContinue(2)
+        player.dialogueContinue()
         player.dialogueOption("line1") // How find?
-        player.dialogueContinue(2)
+        player.dialogueContinue()
         player.dialogueOption("line2") // You don't know
         player.dialogueContinue(3)
         assertEquals("started", player["lost_city", "unstarted"])
@@ -52,7 +52,7 @@ class LostCityTest : WorldTest() {
         tick(2)
         player.dialogueContinue(5)
         player.dialogueOption("line2") // Been in that shed
-        player.dialogueContinue(7)
+        player.dialogueContinue(6)
         assertEquals("find_staff", player["lost_city", "unstarted"])
 
         player.tele(2821, 3374)
@@ -61,7 +61,6 @@ class LostCityTest : WorldTest() {
         tick(1)
         player.dialogueContinue(3)
         player.dialogueOption("line2") // Risk it
-        player.dialogueContinue(1)
         assertEquals(Tile(2822, 9774), player.tile)
 
         player.tele(2859, 9735)

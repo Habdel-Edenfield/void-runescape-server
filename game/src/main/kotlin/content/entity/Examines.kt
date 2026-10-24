@@ -1,5 +1,6 @@
 package content.entity
 
+import content.social.house.WorldHouses
 import world.gregs.voidps.engine.Script
 import world.gregs.voidps.engine.client.instruction.instruction
 import world.gregs.voidps.engine.client.message
@@ -61,6 +62,9 @@ class Examines : Script {
 
         instruction<ExamineObject> { player ->
             val definition = ObjectDefinitions.get(objectId)
+            if (WorldHouses.examine(player, definition.stringId)) {
+                return@instruction
+            }
             if (definition.contains("examine")) {
                 player.message(definition["examine"], ChatType.Game)
             }

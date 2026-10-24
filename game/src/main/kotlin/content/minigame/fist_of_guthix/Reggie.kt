@@ -117,9 +117,7 @@ class Reggie : Script {
             option("I still have more questions.") {
                 questions()
             }
-            option<Neutral>("Okay, I'll do that.") {
-                player<Neutral>("Okay, I'll do that.")
-            }
+            option<Neutral>("Okay, I'll do that.")
         }
     }
 

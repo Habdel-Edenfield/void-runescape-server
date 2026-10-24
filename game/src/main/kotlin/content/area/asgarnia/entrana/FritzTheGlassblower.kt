@@ -30,8 +30,7 @@ class FritzTheGlassblower : Script {
                     player<Neutral>("That sounds good. How much will you pay me?")
                     npc<Neutral>("Tell you what, because you've been interested in my art, I'll pay you the premium price of 20 gold pieces for each piece of molten glass you bring me.")
                 }
-                option("No thanks, I doubt I'll ever turn my hand to glassblowing.") {
-                    player<Neutral>("No thanks, I doubt I'll ever turn my hand to glassblowing.")
+                option<Neutral>("No thanks, I doubt I'll ever turn my hand to glassblowing.") {
                     npc<Sad>("Ok, suit yourself. Nobody seems to be interested in the skilled crafts these days.")
                 }
             }

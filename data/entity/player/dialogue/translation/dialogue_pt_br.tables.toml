@@ -38434,6 +38434,186 @@ pt = "Ele não está em condições de conversar."
 en = "Jonny the beard is not interested in talking."
 pt = "Jonny the Beard não está interessado em conversar."
 
+[.runtime_223]
+en = "The door is locked. You already own a house."
+pt = "A porta está trancada. Você já tem uma casa."
+
+[.runtime_224]
+en = "The door is locked. %1% is the house of %2%."
+pt = "A porta está trancada. %1% é a casa de %2%."
+
+[.runtime_225]
+en = "%1% is for sale for %2% coins. Buy it?"
+pt = "%1% está à venda por %2% moedas. Quer comprar?"
+
+[.runtime_226]
+en = "You bought %1%! Only you and the people you invite can open its door."
+pt = "Você comprou %1%! Só você e quem você convidar podem abrir a porta."
+
+[.runtime_227]
+en = "%1% is for sale for %2% coins. Click the door to buy it."
+pt = "%1% está à venda por %2% moedas. Clique na porta para comprar."
+
+[.runtime_228]
+en = "%1% is your house. Right-click the door to invite people."
+pt = "%1% é a sua casa. Clique com o botão direito na porta para convidar pessoas."
+
+[.runtime_229]
+en = "%1% is the house of %2%."
+pt = "%1% é a casa de %2%."
+
+[.runtime_230]
+en = "You knock at the door."
+pt = "Você bate na porta."
+
+[.runtime_231]
+en = "Nobody answers."
+pt = "Ninguém atende."
+
+[.runtime_232]
+en = "%1% is knocking at the door of %2%."
+pt = "%1% está batendo na porta de %2%."
+
+[.runtime_233]
+en = "Yes, buy the house."
+pt = "Sim, comprar a casa."
+
+[.runtime_234]
+en = "You need %1% coins to buy this house."
+pt = "Você precisa de %1% moedas para comprar esta casa."
+
+[.runtime_235]
+en = "Invite someone."
+pt = "Convidar alguém."
+
+[.runtime_236]
+en = "Remove a guest."
+pt = "Tirar um convidado."
+
+[.runtime_237]
+en = "Send visitors out."
+pt = "Mandar as visitas embora."
+
+[.runtime_238]
+en = "Give up the house."
+pt = "Devolver a casa."
+
+[.runtime_239]
+en = "You can invite up to %1% people."
+pt = "Você pode convidar até %1% pessoas."
+
+[.runtime_240]
+en = "Enter the name of the player to invite:"
+pt = "Digite o nome de quem você quer convidar:"
+
+[.runtime_241]
+en = "There's no player called %1%."
+pt = "Não existe nenhum jogador chamado %1%."
+
+[.runtime_242]
+en = "You can always open your own door."
+pt = "Você sempre pode abrir a sua própria porta."
+
+[.runtime_243]
+en = "%1% is already invited."
+pt = "%1% já está na sua lista de convidados."
+
+[.runtime_244]
+en = "%1% can now open your door."
+pt = "%1% agora pode abrir a sua porta."
+
+[.runtime_245]
+en = "%1% invited you to their house."
+pt = "%1% convidou você para a casa."
+
+[.runtime_246]
+en = "You haven't invited anyone."
+pt = "Você ainda não convidou ninguém."
+
+[.runtime_247]
+en = "Guests: %1%"
+pt = "Convidados: %1%"
+
+[.runtime_248]
+en = "Enter the name of the guest to remove:"
+pt = "Digite o nome do convidado que vai sair da lista:"
+
+[.runtime_249]
+en = "%1% isn't one of your guests."
+pt = "%1% não está na sua lista de convidados."
+
+[.runtime_250]
+en = "%1% can no longer open your door."
+pt = "%1% não pode mais abrir a sua porta."
+
+[.runtime_251]
+en = "You are no longer invited to this house."
+pt = "O seu convite para esta casa foi retirado."
+
+[.runtime_252]
+en = "There's no one else in your house."
+pt = "Não tem mais ninguém na sua casa."
+
+[.runtime_253]
+en = "The owner sent you out of the house."
+pt = "O dono mandou você sair da casa."
+
+[.runtime_254]
+en = "You sent %1% visitor out."
+pt = "Você mandou %1% visita embora."
+
+[.runtime_255]
+en = "You sent %1% visitors out."
+pt = "Você mandou %1% visitas embora."
+
+[.runtime_256]
+en = "Pick up your things from the floor before giving up the house."
+pt = "Pegue as suas coisas do chão antes de devolver a casa."
+
+[.runtime_257]
+en = "Give up the house? It goes back on sale and the coins aren't returned."
+pt = "Devolver a casa? Ela volta a ficar à venda e as moedas não são devolvidas."
+
+[.runtime_258]
+en = "Yes, give it up."
+pt = "Sim, devolver."
+
+[.runtime_259]
+en = "You gave up the house."
+pt = "Você devolveu a casa."
+
+[.runtime_260]
+en = "You aren't allowed in this house."
+pt = "Você não tem permissão para ficar nesta casa."
+
+[.runtime_261]
+en = "You can only leave items in your own house."
+pt = "Você só pode deixar itens na sua própria casa."
+
+[.runtime_262]
+en = "You don't own a house."
+pt = "Você não tem uma casa."
+
+[.runtime_263]
+en = "You put out the fire."
+pt = "Você apaga o fogo."
+
+[.runtime_264]
+en = "You light the fire."
+pt = "Você acende o fogo."
+
+[.runtime_265]
+en = "Only the owner can change the furniture."
+pt = "Só o dono pode mexer nos móveis."
+
+[.runtime_266]
+en = "Remove the nearest furniture."
+pt = "Tirar o móvel mais perto."
+
+[.runtime_267]
+en = "There's no furniture you built near you."
+pt = "Não há nenhum móvel construído por você aqui perto."
+
 # Quest journals (QuestJournalTranslationTest): one sentence each, its lines joined with <br> (Quest.kt, translateJournal)
 
 [.journal_1]

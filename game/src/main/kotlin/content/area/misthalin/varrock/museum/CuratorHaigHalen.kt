@@ -58,8 +58,7 @@ class CuratorHaigHalen : Script {
     }
 
     private fun ChoiceOption.anyNews() {
-        option("Have you any interesting news?") {
-            player<Neutral>("Have you any interesting news?")
+        option<Neutral>("Have you any interesting news?") {
             npc<Neutral>("Yes, we found a rather interesting island to the north of Morytania. We believe it may be of archaeological significance.")
             player<Quiz>("Oh? That sounds interesting.")
             npc<Neutral>("Indeed. I suspect we'll be looking for qualified archaeologists once we have built the transport we need to get there.")
@@ -71,8 +70,7 @@ class CuratorHaigHalen : Script {
     }
 
     private fun ChoiceOption.findAnyTreasure() {
-        option("Do you know where I could find any treasure?") {
-            player<Quiz>("Do you know where I could find any treasure?")
+        option<Quiz>("Do you know where I could find any treasure?") {
             npc<Happy>("Look around you! This museum is full of treasures!")
             player<Angry>("No, I meant treasures for ME.")
             npc<Happy>("Any treasures this museum knows about it goes to great lengths to acquire.")
@@ -80,8 +78,7 @@ class CuratorHaigHalen : Script {
     }
 
     private fun ChoiceOption.lookingForStatuette() {
-        option("I'm looking for a statuette recovered from the city of Uzer.") {
-            player<Neutral>("I'm looking for a statuette recovered from the city of Uzer.")
+        option<Neutral>("I'm looking for a statuette recovered from the city of Uzer.") {
             set("the_golem", "find_statuette")
             refreshQuestJournal()
             npc<Happy>("Ah yes, a very impressive artefact. The people of that city were excellent sculptors.")
@@ -101,15 +98,13 @@ class CuratorHaigHalen : Script {
     }
 
     private fun ChoiceOption.openAPortal() {
-        option("I want to open a portal to the lair of an elder-demon.") {
-            player<Neutral>("I want to open a portal to the lair of an elder-demon.")
+        option<Neutral>("I want to open a portal to the lair of an elder-demon.") {
             npc<Shock>("Good heavens! I'd never let you do such a dangerous<br>thing.")
         }
     }
 
     private fun ChoiceOption.justWantIt() {
-        option("Well, I, er, just want it.") {
-            player<Confused>("Well, I, er, just want it.")
+        option<Confused>("Well, I, er, just want it.") {
             npc<Angry>("Well, you can't have it! This museum never lets go of its treasures.")
         }
     }

@@ -28,21 +28,17 @@ class Faruq : Script {
                         option("Let me see, then.") {
                             openShop(shop)
                         }
-                        option("These tools, are they complicated?") {
-                            player<Neutral>("These tools, are they complicated?")
+                        option<Neutral>("These tools, are they complicated?") {
                             npc<Neutral>("No, $name, they are not complicated.")
                             npc<Neutral>("I have a book that explains them, should you need.")
                             openShop(shop)
                         }
-                        option("I don't think this is for me.") {
-                            player<Neutral>("I don't think this is for me.")
+                        option<Neutral>("I don't think this is for me.") {
                             npc<Neutral>("That is a shame. I shall be here if you change your mind.")
                         }
                     }
                 }
-                option("No, thanks.") {
-                    player<Neutral>("No, thanks.")
-                }
+                option<Neutral>("No, thanks.")
             }
         }
 

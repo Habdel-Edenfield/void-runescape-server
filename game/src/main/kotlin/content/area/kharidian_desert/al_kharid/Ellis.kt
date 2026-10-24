@@ -35,12 +35,10 @@ class Ellis : Script {
             }
             npc<Neutral>("I see you have bought me some hides. Would you like me to tan them for you?")
             choice {
-                option("Yes please.") {
-                    player<Neutral>("Yes please.")
+                option<Neutral>("Yes please.") {
                     open("tanner")
                 }
-                option("No thanks.") {
-                    player<Disheartened>("No thanks.")
+                option<Disheartened>("No thanks.") {
                     npc<Neutral>("Very well, ${if (male) "sir" else "madam"}, as you wish.")
                 }
             }

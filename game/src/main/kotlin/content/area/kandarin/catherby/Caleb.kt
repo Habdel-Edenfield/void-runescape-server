@@ -13,8 +13,7 @@ class Caleb : Script {
             npc<Neutral>("Who are you? What are you after?")
 
             choice {
-                option("Nothing, I will be on my way.") {
-                    player<Neutral>("Nothing, I will be on my way.")
+                option<Neutral>("Nothing, I will be on my way.") {
                     // Ends dialogue naturally
                 }
 

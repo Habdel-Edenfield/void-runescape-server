@@ -50,7 +50,7 @@ class AbbotLangleyTest : WorldTest() {
         tick(6)
         player.dialogueContinue() // "I'm sorry but only members of our order are allowed..."
         player.dialogueOption(1) // "Well can I join your order?"
-        player.dialogueContinue(2) // repeated player line + Langley accepting
+        player.dialogueContinue() // Langley accepting
         tick(4)
 
         assertTrue(player["edgeville_monastery_order_member", false])
@@ -69,9 +69,9 @@ class AbbotLangleyTest : WorldTest() {
         tick(2)
         dialogueContinue() // "Greetings traveller."
         dialogueOption(3) // "How do I get further into the monastery?"
-        dialogueContinue(2) // repeated player line + Langley's refusal
+        dialogueContinue() // Langley's refusal
         dialogueOption(1) // "Well can I join your order?"
-        dialogueContinue(2)
+        dialogueContinue()
         tick()
     }
 

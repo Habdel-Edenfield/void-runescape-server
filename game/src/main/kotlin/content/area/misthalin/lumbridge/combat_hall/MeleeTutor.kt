@@ -52,8 +52,7 @@ class MeleeTutor : Script {
         npc<Idle>("To find out which style an attack type uses, hover your mouse cursor over the style button.")
         npc<Quiz>("Is there anything else you would like to know?")
         choice {
-            option("What if I wanted to fight something a bit more... human.") {
-                player<Idle>("What if I wanted to fight something a bit more... human.")
+            option<Idle>("What if I wanted to fight something a bit more... human.") {
                 npc<Happy>("Well adventurer, there are a few places you might be able to do this.")
                 npc<Idle>("You could try your luck at castle wars. Here, two teams fight each other to defend their respective flags. To win the game you will need to get the other team's flag and return it to your flag stand.")
                 player<Happy>("Capture the flag, sounds like a lot of fun.")
@@ -118,8 +117,7 @@ class MeleeTutor : Script {
             option<Quiz>("99000 coins? That's much too expensive.") {
                 npc<Idle>("Not at all; there are many other adventurers who would love the opportunity to purchase such a prestigious item! You can find me here if you change your mind.")
             }
-            option("I think I have the money right here, actually.") {
-                player<Happy>("I think I have the money right here, actually.")
+            option<Happy>("I think I have the money right here, actually.") {
                 buySkillcape(Skill.Defence)
             }
         }

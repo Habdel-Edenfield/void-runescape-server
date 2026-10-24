@@ -34,11 +34,8 @@ class Saniboch : Script {
                                 statement("You pay Saniboch 875 coins.")
                                 npc<Neutral>("Many thanks. You may now pass the door. May your death be a glorious one!")
                             }
-                            option("Never mind.") {
-                                player<Neutral>("Never mind.")
-                            }
-                            option("Why is it worth the entry cost?") {
-                                player<Neutral>("Why is it worth the entry cost?")
+                            option<Neutral>("Never mind.")
+                            option<Neutral>("Why is it worth the entry cost?") {
                                 npc<Neutral>("It leads to a huge fearsome dungeon, populated by giants and strange dogs. Adventurers come from all around to explore its depths.")
                                 npc<Neutral>("I know not what lies deeper in myself, for my skills in agility and woodcutting are inadequate, but I hear tell of even greater dangers deeper in.")
                             }
@@ -56,12 +53,9 @@ class Saniboch : Script {
                     npc<Neutral>("I know not what lies deeper in myself, for my skills in agility and woodcutting are inadequate.")
                 }
 
-                option("Good day to you too.") {
-                    player<Neutral>("Good day to you too.")
-                }
+                option<Neutral>("Good day to you too.")
 
-                option("I'm impressed, that tree is growing on that shed.") {
-                    player<Neutral>("I'm impressed, that tree is growing on that shed.")
+                option<Neutral>("I'm impressed, that tree is growing on that shed.") {
                     npc<Neutral>("My employer tells me it is an uncommon sort of tree called the Fyburglars tree.")
                 }
             }

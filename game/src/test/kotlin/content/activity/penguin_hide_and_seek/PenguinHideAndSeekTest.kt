@@ -167,7 +167,7 @@ class PenguinHideAndSeekTest : WorldTest() {
         player.interfaces = interfaces
         player.dialogueContinue()
         player.dialogueOption("line2")
-        player.dialogueContinue(2)
+        player.dialogueContinue()
         verify {
             interfaces.sendText("dialogue_npc_chat1", "line1", "I've heard there's a penguin located around Ardougne.")
         }

@@ -80,6 +80,10 @@ class ItemTake : Script {
     companion object {
         private val logger = InlineLogger()
         suspend fun take(player: Player, target: FloorItem, telegrab: Boolean = false): Boolean {
+            // Another player's private item can't be seen, so it can't be taken either
+            if (target.owner != null && target.owner != player.name) {
+                return false
+            }
             val item = Items.takeable(player, target, telegrab) ?: return false
             if (player.inventory.isFull() && (!player.inventory.stackable(item) || !player.inventory.contains(item))) {
                 player.inventoryFull()

@@ -1,0 +1,39 @@
+# Objects of the houses in world_houses.tables.toml and world_house_furniture.tables.toml,
+# written by `./gradlew :tools:worldHouseObjects --args=patch` (see WorldHouseObjects).
+
+[world_house_draynor_north_visitor_door]
+id = 57623
+
+[world_house_draynor_north_sale_door]
+id = 57622
+
+[world_house_draynor_north_owner_door]
+id = 57624
+
+[world_house_draynor_north_door_closed]
+id = 57625
+opened = "door_opened"
+
+[world_house_draynor_north_chair_build]
+id = 57627
+
+[world_house_draynor_north_chair]
+id = 57626
+
+[world_house_draynor_north_bookcase_build]
+id = 57629
+
+[world_house_draynor_north_bookcase]
+id = 57628
+
+[world_house_draynor_north_drawers_build]
+id = 57631
+
+[world_house_draynor_north_drawers]
+id = 57630
+
+[world_house_draynor_north_fireplace]
+id = 57632
+
+[world_house_draynor_north_fireplace_unlit]
+id = 57633

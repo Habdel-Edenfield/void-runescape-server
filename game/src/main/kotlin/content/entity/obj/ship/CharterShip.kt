@@ -50,8 +50,7 @@ class CharterShip(val ships: CharterShips, val teles: ObjectTeleports) : Script 
         npcOperate("Talk-To", "trader_stan,trader_crewmember*") { (target) ->
             npc<Quiz>("Can I help you?")
             choice {
-                option("Yes, who are you?") {
-                    player<Quiz>("Yes, who are you?")
+                option<Quiz>("Yes, who are you?") {
                     npc<Happy>("${if (target.id == "trader_stan") "Why, I'm Trader Stan, owner and operator" else "I'm one of Trader Stan's crew; we are all part"} of the largest fleet of trading ships and chartered vessels to ever sail the seas!")
                     if (target.id == "trader_stan") {
                         npc<Neutral>("If you want to get to a port in a hurry then you can charter one of my ships to take you there - if the price is right...")
@@ -65,8 +64,7 @@ class CharterShip(val ships: CharterShips, val teles: ObjectTeleports) : Script 
                         trading()
                         charter(target)
                         if (target.id != "trader_stan") {
-                            option("Isn't it tricky to sail about in those clothes?") {
-                                player<Quiz>("Isn't it tricky to sail about in those clothes?")
+                            option<Quiz>("Isn't it tricky to sail about in those clothes?") {
                                 npc<Shock>("Tricky? Tricky!")
                                 npc<Neutral>("Do you have even the slightest idea how tricky it is to sail in this stuff?")
                                 npc<Shifty>("Some of us tried tearing it and arguing that it was too fragile to wear when on a boat, but he just had it enchanted to re-stitch itself.")

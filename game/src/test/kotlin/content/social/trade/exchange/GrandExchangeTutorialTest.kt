@@ -23,7 +23,7 @@ class GrandExchangeTutorialTest : WorldTest() {
 
         player.dialogueContinue(3)
         player.dialogueOption("line1")
-        player.dialogueContinue(7)
+        player.dialogueContinue(6)
         assertEquals("exchange_offers_tutorial", player.menu)
         player.interfaceOption("exchange_offers_tutorial", "continue", "Continue")
         player.interfaceOption("exchange_offers_tutorial", "continue", "Continue")
@@ -40,9 +40,8 @@ class GrandExchangeTutorialTest : WorldTest() {
         assertNull(player.menu)
         player.dialogueContinue(5)
         player.dialogueOption("line3")
-        player.dialogueContinue()
         player.dialogueOption("line1")
-        player.dialogueContinue(2)
+        player.dialogueContinue()
         assertEquals("common_item_costs", player.menu)
     }
 }

@@ -11,7 +11,6 @@ import npcOption
 import objectOption
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
-import skipDialogues
 import world.gregs.voidps.engine.client.ui.open
 import world.gregs.voidps.engine.entity.character.move.tele
 import world.gregs.voidps.engine.entity.character.player.Player
@@ -308,9 +307,7 @@ class VinesweeperTest : WorldTest() {
         player.dialogueContinue()
         tick()
         player.dialogueOption("line1") // Yes please.
-        tick()
         val origin = player.tile
-        player.skipDialogues()
         tick(2)
         assertEquals(origin, player.tile) // the projectile lands and the impact graphic plays first
         tick(4)

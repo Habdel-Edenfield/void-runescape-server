@@ -122,7 +122,6 @@ class LletyaTest : WorldTest() {
         tick(2)
         player.dialogueContinue() // "Can I help you at all?"
         player.dialogueOption(1) // "Yes please. What are you selling?"
-        player.dialogueContinue() // repeated player line
         tick(2)
 
         assertTrue(player.hasOpen("shop"))

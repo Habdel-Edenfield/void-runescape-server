@@ -157,8 +157,7 @@ class Fiara : Script {
             npc<Neutral>("Now, do you have any questions?")
             gameQuestionsMenu()
         }
-        option("How do I get charges?") {
-            player<Quiz>("How do I get charges?")
+        option<Quiz>("How do I get charges?") {
             npc<Neutral>("You can only get charges while you are in the role of the hunted. When the game starts, look around you - there should be a stone dispenser nearby. Pick up a magical stone from there and wield it to gather charges. The closer to the centre you are, the more charges you will get.")
             moreQuestionsMenu()
         }
@@ -167,8 +166,7 @@ class Fiara : Script {
             npc<Neutral>("There must be enough players in the waiting room for a game to start. Also, there can only be a certain amount of players in the game at any time.")
             moreQuestionsMenu()
         }
-        option("I keep losing all the time!") {
-            player<Angry>("I keep losing all the time!")
+        option<Angry>("I keep losing all the time!") {
             npc<Neutral>("That was not a question, but I will give you some tips.")
             npc<Neutral>("Remember that the closer you are to the centre of the arena, the weaker you will become. If you find yourself getting defeated easily and that your armour does you no good, you may want to try to flee to the outer edges of the arena where you will be less weakened. This also applies to your opponent. If it is someone who appears to be a lot stronger than you, he or she will still be very weak closer to the centre - this is where you should strike. You should also know that while you are in the very centre, the energy from the Fist of Guthix will help you replenish your run energy much faster than usual.")
             npc<Neutral>("Also, use the ruins of the past to your advantage. Hide behind rubble and make a run for it when your opponent is out of reach. Use the buildings to hide or as a means of escape.")

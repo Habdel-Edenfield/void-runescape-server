@@ -36,9 +36,9 @@ internal class GadrinTest : WorldTest() {
         tick()
         player.dialogueContinue(4)
         player.dialogueOption(1)
-        player.dialogueContinue(2)
+        player.dialogueContinue()
         player.dialogueOption(2)
-        player.dialogueContinue(2)
+        player.dialogueContinue()
 
         assertEquals(1, player.inventory.count("mining_cape"))
         assertEquals(1, player.inventory.count("mining_hood"))

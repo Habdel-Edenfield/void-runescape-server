@@ -1,0 +1,22 @@
+# Houses in the open world that a player can buy (fork only, not Construction's instanced house)
+# name: shown on the door's right click options and when examined
+# area: the inside tiles, in world_houses.areas.toml
+# door/door_object: the only way in and the door the map had there; after adding a house run
+#   `./gradlew :tools:worldHouseObjects --args=patch` (server stopped) to put the house's own door there
+# entrance: the tile outside the door where anyone not allowed in is put
+# price: coins paid once at the door
+[world_houses]
+name = "string"
+area = "string"
+door = "tile"
+door_object = "obj"
+entrance = "tile"
+price = "int"
+
+[.draynor_north]
+name = "Willow Cottage"
+area = "world_house_draynor_north"
+door = { x = 3100, y = 3276 }
+door_object = "door_14_closed"
+entrance = { x = 3100, y = 3275 }
+price = 100

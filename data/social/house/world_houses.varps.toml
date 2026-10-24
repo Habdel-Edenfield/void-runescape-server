@@ -1,0 +1,5 @@
+# How each house's door and furniture look to the player: 0 visitor, 1 for sale, 2 owner (WorldHouseObjects)
+
+[world_house_draynor_north_view]
+id = 1900
+format = "int"

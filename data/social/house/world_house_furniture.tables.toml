@@ -1,0 +1,57 @@
+# Furniture of the houses in world_houses.tables.toml (fork only). After a change run
+# `./gradlew :tools:worldHouseObjects --args=patch` (server stopped) to give the pieces their options.
+# house: row of world_houses
+# piece: name of the house's copy of the piece; pieces alike share one
+# tile: where the map has it
+# map_object: id of the object the map has there (a number, as some have no name)
+# hotspot: Construction hotspot (house_hotspots) whose furniture the owner can build in its place
+# unlit_object: for a fire, the object whose look it has while put out (its brightness is dropped to match)
+[world_house_furniture]
+house = "string"
+piece = "string"
+tile = "tile"
+map_object = "int"
+hotspot = "string"
+unlit_object = "int"
+
+[.draynor_north_chair_north]
+house = "draynor_north"
+piece = "chair"
+tile = { x = 3101, y = 3279 }
+map_object = 1088
+hotspot = "parlour_chair_space"
+
+[.draynor_north_chair_middle]
+house = "draynor_north"
+piece = "chair"
+tile = { x = 3101, y = 3278 }
+map_object = 1088
+hotspot = "parlour_chair_space"
+
+[.draynor_north_chair_south]
+house = "draynor_north"
+piece = "chair"
+tile = { x = 3102, y = 3277 }
+map_object = 1088
+hotspot = "parlour_chair_space"
+
+[.draynor_north_bookcase]
+house = "draynor_north"
+piece = "bookcase"
+tile = { x = 3102, y = 3281 }
+map_object = 381
+hotspot = "parlour_bookcase_space"
+
+[.draynor_north_drawers]
+house = "draynor_north"
+piece = "drawers"
+tile = { x = 3097, y = 3277 }
+map_object = 350
+hotspot = "bedroom_wardrobe_space"
+
+[.draynor_north_fireplace]
+house = "draynor_north"
+piece = "fireplace"
+tile = { x = 3101, y = 3281 }
+map_object = 2724
+unlit_object = 9441
